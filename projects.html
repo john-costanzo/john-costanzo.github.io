@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2016-07-24 Sun 19:26 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<style>.timestamp { color: red; }</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgheadline30" class="outline-2">
+<h2 id="orgheadline30"><span class="section-number-2">1</span> Syndication Hub&#xa0;&#xa0;&#xa0;<span class="tag"><span class="SynHub">SynHub</span></span></h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-orgheadline12" class="outline-3">
+<h3 id="orgheadline12"><span class="section-number-3">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">2016-06-16 Thu </span></span> "Syndication Hub Roadmap" (meeting notes)</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-orgheadline1" class="outline-4">
+<h4 id="orgheadline1"><span class="section-number-4">1.1.1</span> Agenda:</h4>
+</div>
+<div id="outline-container-orgheadline2" class="outline-4">
+<h4 id="orgheadline2"><span class="section-number-4">1.1.2</span> Attendees <code>[5/8]</code>:</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<ul class="org-ul">
+<li class="off"><span class="checkbox">&#x2610;</span> "Chris Nelligan" &lt;chris.cn.nelligan@dowjones.com&gt;</li>
+<li class="off"><span class="checkbox">&#x2610;</span> "Clancy Childs" &lt;clancy.childs@dowjones.com&gt;</li>
+<li class="off"><span class="checkbox">&#x2610;</span> "Dylan Roy" &lt;dylan.roy@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Jason Motylinski" &lt;jason.motylinski@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Joshua Ewer" &lt;joshua.ewer@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Ted Krysa" &lt;ted.krysa@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Thani Sokka" &lt;thani.sokka@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "John Costanzo" &lt;John.Costanzo@dowjones.com&gt;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline6" class="outline-4">
+<h4 id="orgheadline6"><span class="section-number-4">1.1.3</span> Discussion Points:</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div><div id="outline-container-orgheadline5" class="outline-5">
+<h5 id="orgheadline5"><span class="section-number-5">1.1.3.1</span> (Thani) Roadmap Items</h5>
+<div class="outline-text-5" id="text-1-1-3-1">
+</div><div id="outline-container-orgheadline3" class="outline-6">
+<h6 id="orgheadline3"><span class="section-number-6">1.1.3.1.1</span> Alpha Release</h6>
+<div class="outline-text-6" id="text-1-1-3-1-1">
+<ol class="org-ol">
+<li>royalty reporting</li>
+<li>source restrictions (e.g., honoring active/discontinued status plus whitelist)
+<ul class="org-ul">
+<li>we currently use static information</li>
+<li>need to switch over to using CDB</li>
+</ul></li>
+<li>propagating deletes
+<ul class="org-ul">
+<li>need to propagate</li>
+</ul></li>
+<li>load 10-years' content
+<ul class="org-ul">
+<li>Jason indicates that <span class="timestamp-wrapper"><span class="timestamp">[2016-07-01 Fri] </span></span> is in serious jeopardy</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgheadline4" class="outline-6">
+<h6 id="orgheadline4"><span class="section-number-6">1.1.3.1.2</span> Wizeline Roadmap</h6>
+<div class="outline-text-6" id="text-1-1-3-1-2">
+<ul class="org-ul">
+<li>we had a quick look at TS's roadmap</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline11" class="outline-4">
+<h4 id="orgheadline11"><span class="section-number-4">1.1.4</span> Action Items:</h4>
+<div class="outline-text-4" id="text-1-1-4">
+</div><div id="outline-container-orgheadline7" class="outline-5">
+<h5 id="orgheadline7"><span class="section-number-5">1.1.4.1</span> <span class="todo TODO">TODO</span> (Thani) Can we remain with our static approach to filtering</h5>
+<div class="outline-text-5" id="text-1-1-4-1">
+<p><span class="timestamp-wrapper"></span></p>
+</div>
+</div>
+<div id="outline-container-orgheadline8" class="outline-5">
+<h5 id="orgheadline8"><span class="section-number-5">1.1.4.2</span> <span class="todo TODO">TODO</span> (Ted) send details to Jason on CDB feed</h5>
+<div class="outline-text-5" id="text-1-1-4-2">
+<p><span class="timestamp-wrapper"></span></p>
+</div>
+</div>
+<div id="outline-container-orgheadline9" class="outline-5">
+<h5 id="orgheadline9"><span class="section-number-5">1.1.4.3</span> <span class="todo TODO">TODO</span> (Jason) send Thani date for launching alpha</h5>
+<div class="outline-text-5" id="text-1-1-4-3">
+<p><span class="timestamp-wrapper"></span></p>
+</div>
+</div>
+<div id="outline-container-orgheadline10" class="outline-5">
+<h5 id="orgheadline10"><span class="section-number-5">1.1.4.4</span> <span class="todo TODO">TODO</span> (Thani) send link to Wizeline project</h5>
+<div class="outline-text-5" id="text-1-1-4-4">
+<p><span class="timestamp-wrapper"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline22" class="outline-3">
+<h3 id="orgheadline22"><span class="section-number-3">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">2016-06-15 Wed </span></span> "Discuss Synd Hub Content Requirements" (meeting notes)</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-orgheadline13" class="outline-4">
+<h4 id="orgheadline13"><span class="section-number-4">1.2.1</span> Agenda:</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+We would like to discuss how royalty tracking occurs in current solutions.
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline14" class="outline-4">
+<h4 id="orgheadline14"><span class="section-number-4">1.2.2</span> Attendees <code>[8/9]</code>:</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li class="on"><span class="check">&#x2611;</span> "Annabel Tierney" &lt;annabel.tierney@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "David Arnold" &lt;david.arnold@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Jason Motylinski" &lt;jason.motylinski@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Jonathan Palmer" &lt;jonathan.palmer@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Joshua Ewer" &lt;joshua.ewer@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Ken Troise" &lt;ken.troise@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Ted Krysa" &lt;ted.krysa@dowjones.com&gt;,</li>
+<li class="off"><span class="checkbox">&#x2610;</span> "Thani Sokka" &lt;thani.sokka@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "John Costanzo" &lt;John.Costanzo@dowjones.com&gt;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline18" class="outline-4">
+<h4 id="orgheadline18"><span class="section-number-4">1.2.3</span> Discussion Points:</h4>
+<div class="outline-text-4" id="text-1-2-3">
+</div><div id="outline-container-orgheadline15" class="outline-5">
+<h5 id="orgheadline15"><span class="section-number-5">1.2.3.1</span> Multiple Royalty Pools</h5>
+<div class="outline-text-5" id="text-1-2-3-1">
+<ul class="org-ul">
+<li>First cut will have a single pool</li>
+<li>Post launch, we'll evaluate</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline16" class="outline-5">
+<h5 id="orgheadline16"><span class="section-number-5">1.2.3.2</span> Redistribution Rights</h5>
+<div class="outline-text-5" id="text-1-2-3-2">
+<ul class="org-ul">
+<li>we will honor the document's status at point of ingestion</li>
+<li>Palmer is under the impression that Alpha will be sending only active sources; not discontinued
+<dl class="org-dl">
+<dt>white list</dt><dd>active sources</dd>
+<dt>black list</dt><dd>discontinued sources</dd>
+<dt>gray list </dt><dd>sources on the black list that we want to push to the white list</dd>
+<dt>(no term)</dt><dd>we have roughly 15k sources; half of which are active</dd>
+</dl></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline17" class="outline-5">
+<h5 id="orgheadline17"><span class="section-number-5">1.2.3.3</span> Obligation for Deleting content</h5>
+<div class="outline-text-5" id="text-1-2-3-3">
+<ul class="org-ul">
+<li>tens of thousands of documents get deleted each day</li>
+<li>Palmer: we need to inform customers of deletes</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline19" class="outline-4">
+<h4 id="orgheadline19"><span class="section-number-4">1.2.4</span> Questions <code>[/]</code>:</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<ul class="org-ul">
+<li class="off"><span class="checkbox">&#x2610;</span> Does Syndication Hub need to be able to distribute distribute sources?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline21" class="outline-4">
+<h4 id="orgheadline21"><span class="section-number-4">1.2.5</span> Action Items:</h4>
+<div class="outline-text-4" id="text-1-2-5">
+</div><div id="outline-container-orgheadline20" class="outline-5">
+<h5 id="orgheadline20"><span class="section-number-5">1.2.5.1</span> <span class="done CANCELED">CANCELED</span> (John) follow up with Thani on active/discontinued and handling deletes</h5>
+<div class="outline-text-5" id="text-1-2-5-1">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2016-07-05 Tue 08:38] </span> <span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2016-06-16 Thu 08:22&gt;</span></span></p>
+<ul class="org-ul">
+<li>State "CANCELED"   from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2016-07-05 Tue 08:38] </span></span> <br  />
+MNP taking over</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline24" class="outline-3">
+<h3 id="orgheadline24"><span class="section-number-3">1.3</span> Royalty Report Format</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+See <a href="https://mail.google.com/mail/u/0/#inbox/155318cf32498516">Xiufang's email</a>:
+</p>
+<table id="orgtable1" border="2" cellspacing="0" cellpadding="6" rules="all" frame="all">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Field</td>
+<td class="org-left">Description</td>
+<td class="org-left">Value</td>
+<td class="org-left">Type</td>
+<td class="org-left">Comments</td>
+</tr>
+
+<tr>
+<td class="org-left">UsageMonth</td>
+<td class="org-left">The year and month the usage for</td>
+<td class="org-left">YYYY-MM</td>
+<td class="org-left">CHAR(7)</td>
+<td class="org-left">Examples: “2016-06”, "2011-01"</td>
+</tr>
+
+<tr>
+<td class="org-left">AccountId</td>
+<td class="org-left">Identifies the account</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">CHAR(10)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">ClientTypeCode</td>
+<td class="org-left">How the user accesses the service</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">CHAR(1)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PublicationCode</td>
+<td class="org-left">Identifies the publication or source of the data</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">VARCHAR</td>
+<td class="org-left">At most 8 characters</td>
+</tr>
+
+<tr>
+<td class="org-left">UsageCount</td>
+<td class="org-left">Number of documents extracted for this Account and PublicationCode on the specified UsageMonth</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">VARCHAR</td>
+<td class="org-left">string of digits representing decimal value</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgheadline23" class="outline-4">
+<h4 id="orgheadline23"><span class="section-number-4">1.3.1</span> Sample</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+2016-06|9ZZZ002100|S|NYTF|397\n
+2016-06|9ZZZ002100|S|J|219\n
+2016-05|9ZZZ002100|S|NYTF|122\n
+2016-05|9ZZZ003200|S|CHEMEC|38\n
+2016-04|9ZZZ004300|S|CHEMEC|2\n
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline29" class="outline-3">
+<h3 id="orgheadline29"><span class="section-number-3">1.4</span> <span class="timestamp-wrapper"><span class="timestamp">2016-06-13 Mon </span></span> "Quick Sync on Transition Plan for Syndication Hub" (meeting notes)</h3>
+<div class="outline-text-3" id="text-1-4">
+</div><div id="outline-container-orgheadline25" class="outline-4">
+<h4 id="orgheadline25"><span class="section-number-4">1.4.1</span> Agenda:</h4>
+</div>
+<div id="outline-container-orgheadline26" class="outline-4">
+<h4 id="orgheadline26"><span class="section-number-4">1.4.2</span> Attendees <code>[4/5]</code>:</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<ul class="org-ul">
+<li class="on"><span class="check">&#x2611;</span> "Chris Nelligan" &lt;chris.cn.nelligan@dowjones.com&gt;</li>
+<li class="off"><span class="checkbox">&#x2610;</span> "Clancy Childs" &lt;clancy.childs@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Jason Motylinski" &lt;jason.motylinski@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "Thani Sokka" &lt;thani.sokka@dowjones.com&gt;</li>
+<li class="on"><span class="check">&#x2611;</span> "John Costanzo" &lt;John.Costanzo@dowjones.com&gt;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline28" class="outline-4">
+<h4 id="orgheadline28"><span class="section-number-4">1.4.3</span> Discussion Points:</h4>
+<div class="outline-text-4" id="text-1-4-3">
+</div><div id="outline-container-orgheadline27" class="outline-5">
+<h5 id="orgheadline27"><span class="section-number-5">1.4.3.1</span> we agree that:</h5>
+<div class="outline-text-5" id="text-1-4-3-1">
+<ul class="org-ul">
+<li>JC's team would be responsible for delivering content into GCP</li>
+<li>Jason's would take it from there</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: John Costanzo (<a href="mailto:John.Costanzo@dowjones.com?subject=Meeting+Notes+Feedback">John.Costanzo@dowjones.com</a>)</p><i>Feel free to reply with comments and clarifications.</i></p>
+</div>
+</body>
+</html>
