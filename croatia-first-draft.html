@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-03-18 Mon 13:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgbecacee" class="outline-2">
+<h2 id="orgbecacee">Background</h2>
+<div class="outline-text-2" id="text-orgbecacee">
+<p>
+Tracey found a deal on TravelZoo: $1,300 for a 9-day guided tour of Croatia with a stop in Slovenia, including flights, hotel, breakfasts and some lunches/dinners. It was too good to pass up. So we are going with Loo-Loo and her friend Cindy as well as Greg and Mary Ann. We're to fly into Zürich, then on to Venice and then a 3+ hour bus ride to Opatija!
+</p>
+
+<p>
+We arrived at the airport with plenty of time to kill and have a leisurely dinner and Volo Vino; Mac and cheese, a salad and flat bread. And wine. The waitress encouraged us to get a bottle instead of 3 glasses: it would only be $25&#x2026; oh yeah, plus a $12 corkage fee&#x2026; for a bottle with a twist off cap(!)
+</p>
+
+<p>
+The flight was delayed 3 hours due to snow. We spent a good chunk of that time waiting for and then actually deicing the plane. But after take off the rest of the flight was good. T gave me the window seat and I was able to get a few hours of shut-eye; T, not so much.
+</p>
+
+<p>
+T believes she did <b>not</b> order vegetarian meals for us but &#x2013; lo and behold! &#x2013; she wound up with the vegetarian meal for dinner (steamed rice and veggies minus the "flavor packet") while I had to make due with the vegetarian choice of cheese tortellini (which, though overcooked, was quite tasty!).  For breakfast, it was the opposite: we both got a warm croissant, but I had applesauce instead of yogurt. Oh, and, of course the special vegetarian meal assumed we were strict vegans. And diabetic. And on a calorie-restricted diet. And Kosher. And were allergic to&#x2026; <i>flavor</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84092c4" class="outline-2">
+<h2 id="org84092c4">Zürich</h2>
+<div class="outline-text-2" id="text-org84092c4">
+<p>
+What with the delay in taking off, we landed in Zürich after our flight to Venice had left. But what impressed us most was that Swiss Air had booked us on a later flight and was waiting for us with boarding passes. Cindy remarked how much different an experience this would have been in the States: "So you were delayed? Wadda you want me to do about it?"
+</p>
+
+<p>
+Swiss Air even gave us a coupon for a free sandwich and beverage!
+</p>
+
+<p>
+We hung around Zürich airport for a few hours and then caught the 47 minute flight to Venice. We met a few people on the flight who were on our tour. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6695422" class="outline-2">
+<h2 id="org6695422">Venice</h2>
+<div class="outline-text-2" id="text-org6695422">
+<p>
+When we landed in Venice, we collected our luggage, walked through the "nothing to declare" lane, past a gaggle of Caribiners (who were too engrossed in conversation to even know we were there) and met our driver, Jan, from Gate 1. We were able to confirm that Gate 1 had picked up a Greg Heimburg earlier in the day.
+</p>
+
+<p>
+Jan then shepherded eight of us into a van and explained that he'd be driving us some three and a quarter hours past the Slovenian border to our hotel in Opatia, near where he lives. Originally from Holland, he's lived in Croatia for the past 17 years and finds it beautiful. (<i>We will soon agree with him!</i>)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgee47106" class="outline-2">
+<h2 id="orgee47106">Opatija</h2>
+<div class="outline-text-2" id="text-orgee47106">
+<p>
+We arrived at our hotel in Opatija after a journey of some 24 hours, a bit weary but none the worse for wear. 
+</p>
+
+<p>
+We checked into the hotel and dropped in on Greg and MaryAnn where we exchange combat stories and then trundle off to sleep. 
+</p>
+
+<p>
+The next morning we had a quick breakfast after having decided that, yes, indeed, we want to go on the optional trip to Pula and Rovinj.  We absolutely made the right choice since our guide, Sandy, was terrific: she was upbeat, giving us insight into the local customs, geography and history. We wended our way along the Istrian peninsula where she left us in Nada's capable hands. Nada was a local expert who took us around Pula, showing off the Roman amphitheatre and local architecture.
+</p>
+
+<p>
+The amphitheatre was in great shape, for being 2,000 years old. Nada explained that there is no difference between an amphitheatre and an arena and that Rome's Colliseum was merely the largest of them.
+</p>
+
+<p>
+She did a great job of showing off the vibrant yellows and blues that the Hapsburgs used to color their warm and welcoming vacation resorts in the mid 19th century. And the orderly, martial facades courtesy of Musilini. And the stark, utilitarian and boring-as-hell industrial housing complexes, courtesy of the Socialists. Sometimes these three styles would be in a row of three buildings, cheek by jowl.
+</p>
+
+<p>
+Nada also pointed out that while her grandfather was born in Austria and her father in Italy and she in Yugoslavia and her children in Croatia&#x2026; they were all born in the same city!
+</p>
+
+<p>
+We had a lovely lunch featuring fresh homade pasta resplendent with lots of finely shaved truffles and a bottle of local white wine. 
+</p>
+
+<p>
+Next it was off to Rovinj where we strolled through this compact town gushing with charm. We hiked to the top of a hill, took in the <a href="https://www.wikiwand.com/en/Euphrasian_Basilica">church of St. Eufesia</a> as well as a gorgeous panoramic view of the Adriatic and the sidled back down the hill with its close-knit warren of streets.
+</p>
+
+<p>
+Taking the highway back to Opatija, we drove through Croatia's third longest tunnels, popping out the other side of a mountain to feast our eyes on Opatija as it lay in the valley below us. 
+</p>
+
+<p>
+We catch up with Greg and MaryAnn and head out to dinner at Roco's down the street. MaryAnn, Tracey and Cindy have the seabass, Linda the pasta Genovese, Greg the seafood risotto (that even he admits is too much to eat) and I can't resist the pizza Istrian, suffuse with arugula and truffles: yum! (I had briefly considered pizza Valium but thought it too weird, until I learned that the guy who invented Valium was born in Opatija!)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga09470a" class="outline-2">
+<h2 id="orga09470a">Zadar</h2>
+<div class="outline-text-2" id="text-orga09470a">
+<p>
+We had a nice trip to Zadar and an even nicer walk around the town once we got there. It features a sea organ (where the movement of the sea and air plays music), the ruins of a Roman forum and a round church built of some of the ruins. After touring, we stopped at a bakery for some pastries (one cheese and another potato) and a donut. We washed that down with a beer and "lizarded". But that didn't stop us from going back to the bakery and buying a loaf of bread for 7 kunas ($1.15). 
+</p>
+
+<p>
+Then, back on the bus to complete the journey to Split and our Croatian language lesson. Learning "hvala" ("thanks") and "zivily" ("cheers") was a bit easier after Sandy poured us each a shot of grappe.
+</p>
+
+<p>
+I ask Sandy why we see so many buildings in distress and without roofs. She explained that some were due to the war, others were due to the fact that the owners hadn't accumulated enough money and time to finish the job and still others had moved out of the smaller towns and into the big cities (a trend that is reversing).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc625c31" class="outline-2">
+<h2 id="orgc625c31">Split</h2>
+<div class="outline-text-2" id="text-orgc625c31">
+<p>
+We arrive in Split just in time for dinner. And it's a surprise! Gate 1 is unexpectedly picking up the tab at a Greek taverna. Good food, drink and a duo playing accordion and guitar. The music ranged from traditional folk songs to Neil Diamond and Elvis to Hava Nagila to everything in between. A good time was had by all. 
+</p>
+
+<p>
+Sandy pointed out problems that "The Property Brothers" would have: houses in Croatia are built to last forever so making an open floor plan would involve removing 30 cm of rock. And secondly, people tend to live in the same house for their entire life as opposed to moving every few years. 
+</p>
+
+<p>
+By tradition, houses are built with three floors: lower level for the family and the top two for the two children when they establish families. 
+</p>
+
+<p>
+Socialism: nationalize property so that everyone has one house/plot of land. Joining the EU required unwinding this system. But how to compensate people who have lived in a house for four or five decades? Snarled in the courts to this day.
+</p>
+
+<p>
+Rent a 2 bedroom apartment for €309-400/month. 
+</p>
+
+<p>
+We went for an entertaining tour of the old city of Split with Jelena. She described the meglomaniacal Roman ruler <a href="https://www.wikiwand.com/en/Diocletian">Diocletian</a> from the third century who thought himself the son of Jupiter and immortal. And as a tribute to himself, he commanded that an enormous palace be built within ten years. He had very exacting standards and would kill workmen whose efforts he didn't care for. This did not endear him to his people.
+</p>
+
+<p>
+The palace was, naturally, designed by the immortal one, a former Roman soldier. It took up a city block and its first floor was at sea level where it was delibertely flooded. This was to fool any invading force who would have to stumble around in the dark water while Mr. Immortal's soldiers could navigate a mirror image second floor and repel the invading force. 
+</p>
+
+<p>
+Diocletian was also paranoid and commanded that an aqueduct be built to bring fresh water from miles away and, to avoid being poisoned, using a dedicated lead pipe. Ironically, the lead added to his paranoia and he began to run out of people to kill, so, accusing his wife and only daughter if treason, he killed them. Months later, the immortal one himself was dead. 
+</p>
+
+<p>
+The people wasted little time in unceremoniously dumping his body into the  Adriatic. Several hundred families immediately moved into the palace and installed a tribute to the immortal's archenemy, a Catholic bishop. The families lived well for a while, but soon discovered that the palace had really only been built for a family of three. The current residents were faced with the problem of how to get of their garbage and sewage. Necessity being the Mother of Invention, they simply cut holes in the second floor and drained their waste into the first, allowing the tides if the Adriatic to act as a giant toilet. Problem solved. 
+</p>
+
+<p>
+Except the tide of the Adriatic is only about five inches. It did not do a very good job flushing the waste. After a few hundred years, the families were faced with the situation where their housing development was sitting atop raw sewage several meters high. 
+</p>
+
+<p>
+Eventually, the Tito regime cleaned out the mess (with the help of the University of Minnesota's archeology department) and the palace has become a UNESECO world heritage site. 
+</p>
+
+<p>
+The same families continue to live in the palace, having handed down their properties from one generation to the next for 1,700 years(!).
+</p>
+
+<p>
+We toured more of the old city and lizarded with some beer and coffee.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgebc6397" class="outline-2">
+<h2 id="orgebc6397">Bosnia and Herznegovia</h2>
+<div class="outline-text-2" id="text-orgebc6397">
+<p>
+We stop at the B and H border for a passport check. All this to enable our 15km drive so we can re-enter Croatia. A very stern looking policeman collected the passport of everyone on the bus and disappeared with them for some 10 minutes before returning them. The agent had to individually scan each passport and wait for clearance before going onto the next one.  Sandy warned us to not take any photos; the last time one of her tourists did, the police took her aside and gave her an earful for ten minutes, leaving her feeling "squeezed".
+</p>
+</div>
+</div>
+
+<div id="outline-container-org346841f" class="outline-2">
+<h2 id="org346841f">Dubrovnik</h2>
+<div class="outline-text-2" id="text-org346841f">
+</div>
+
+<div id="outline-container-org2c3b1b3" class="outline-3">
+<h3 id="org2c3b1b3">Dubrovnik: Day 1</h3>
+<div class="outline-text-3" id="text-org2c3b1b3">
+<p>
+We went for a nice swim and sauna before eating our buffet dinner (not much for vegetarians but, oh, the desserts!). Later on we strolled on the beach and played Wizards and Jesters with Greg and MaryAnn. 
+</p>
+
+<p>
+The rooms at the five-star President hotel are very nice: large and each one faces the Adriatic with a walk-out balcony. When you enter the room, a small device on the wall flashes to remind you to insert your key-card to enable electricity &#x2013; a reminder we do not require, but handy never the less. And, when electricity is enabled, a light automatically comes on in the closet: another nice amenity. But put the two together and you have an annoyance: when we turned in for the night, we wanted to leave the card-key in (so we could charge a phone). But that meant the closet would shine light through the many seams in the closet, into our faces. Remove the key-card and the device flashes throughout the room. I began to wonder who awarded the hotel its five stars: was it done via a double-blind review team?
+</p>
+
+<p>
+Friday we toured the old city of Dubrovnik. All agreed it was a magical place of fairy book proportions. It's a walled city constructed hundreds of years ago and people continue to live in it. The imposing walls, the quaint narrow streets, the charming, if tiny apartments dotting neighborhoods that tightly interlock to form a vibrant community. After walking some 14,000 paces, climbing a few hundred steps, eating a nice lunch at a vegan restaurant (with a complimentary dessert thrown in for International Women's Day!) we took the number 6 bus back to our hotel.
+</p>
+
+<p>
+The staff had fixed our closet light (by switching off its breaker) so we had a quick nap and shared happy hour with Linda and Cindy (who had had a <b>big</b> headstart on us). Then we met up with Greg and MaryAnn with plans to walk to the nearby pub.  Bad news: it was booked for both Friday and Saturday evening. We wound up eating at the restaurant next door (vegetable platter, grilled sea bass, pasta bolonaise and ribeye steak). A nice bottle of local white wine and we finished with ice cream-filled crepes and honey liquor. Everyone enjoyed the tasty, leisurely meal. The only thing we could not understand is why there was only one other couple in the place all night. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb6e7ea3" class="outline-3">
+<h3 id="orgb6e7ea3">Dubrovnik: Day 2</h3>
+<div class="outline-text-3" id="text-orgb6e7ea3">
+<p>
+We took the bus into town and strolled the old city again. (They sure do have a lot of churches in the town!)
+</p>
+
+<p>
+Then Tracey bought one of the gelatos that everyone seemed to be eating. They were huge and cost only 10 kuna ($1.66). She chose something traditional in the <a href="https://www.wikiwand.com/en/Stracciatella_(ice_cream)">stracciatella</a>. But one taste told her she didn't like it. So I convinced her to get another (it was cheap enough). She went back and the clerk asked "did you drop your cone?" "No.  I just didn't like the taste. But my husband is eating it." So she ordered a caramel flavored one and the clerk refused payment for it!
+</p>
+
+<p>
+We got some wine (one local bottle was on sale for slightly more than $7!) and took the bus home. 
+</p>
+
+<p>
+Then we spent some relaxing time in the spa: sauna and pool. In the sauna, I met a pair of friendly Croatians. 
+</p>
+
+<p>
+They were speaking to each other as I heard one say something like "Zhrthepata kryorakata plthhhh pribythzha <b>Amerikanika</b>." and pointed to a gaggle of eight women who had just sauntered into the spa area. And then one of the Croatians turned to me and asked (in English) "Where are <i>you</i> from?" 
+</p>
+
+<p>
+"America," I rejoined.
+</p>
+
+<p>
+"Oh?" retorted the Croation. "From which part of that large Communist country are you from?"
+</p>
+
+<p>
+"New Jersey," says I. 
+</p>
+
+<p>
+"Ah, yes. That's where all my euros go to fund my children's education. One has graduated and then took a trip to San Diego and Hollywood and San Francisco."
+</p>
+
+<p>
+Later in the evening we have some wine and cheese (love that Pag!) and then G, MA, T and I played another game if Wizards and Jesters &#x2026; a fine time was had by all (well, because Greg won both times!).
+</p>
+
+<p>
+Tomorrow it's bags out by 6:45 and on to Vodice by 7:30. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaf55495" class="outline-2">
+<h2 id="orgaf55495">Vodice</h2>
+<div class="outline-text-2" id="text-orgaf55495">
+<p>
+On the way to Vodice, besides the obligatory "comfort stops" we stopped for lunch at the Etno Center: the first private museum in Croatia. It shows traditional life and culture. We were greeted by Anna, a Croatian with impeccable English and pronunciation and, most importantly, shots of cherry schnaps. Zhivili!
+</p>
+
+<p>
+Lunch was a cole slaw salad, bread plus vegetable risotto for us (chicken, pork and potatoes slow-cooked under a bell for everyone else).
+</p>
+
+<p>
+Then off to the Krka National Park where we had a guided tour of what is essentially a single waterfall, but which has about seven levels. We also saw the first hydroelectric plant in Europe (built with Tesla's technical help), which would have been the first in the world, but Niagara Falls beat it by two days. As the Dalmatians say, "Ne problema".
+</p>
+
+<p>
+We don't really see any of Vodice. We ate in the hotel, which featured a buffet dinner with heaping helpings of meh. (I want to be open-minded but, honestly, they seem to have left the flavor packet out of every dish). 
+</p>
+
+<p>
+Tracey did see a bit of Vodice&#x2026; unfortunately. She had developed an infection in her eye but it worsened overnight. So in the morning she set out on foot from the hotel at 7:05 to rush to the pharmacist. The pharmacist took one look and said, "It looks kinda serious" before admitting he could not do anything for her. She (somehow!) made it back to the hotel by 7:45. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org41411bc" class="outline-2">
+<h2 id="org41411bc">Zagreb</h2>
+<div class="outline-text-2" id="text-org41411bc">
+<p>
+It is quite chilly (6-9 degrees C) as we drive all morning to Zagreb. We hit a bit of sleet as well. 
+</p>
+
+<p>
+Sandy keeps the ride interesting with facts about Croatia:
+</p>
+<dl class="org-dl">
+<dt>Croatian Taxes</dt><dd><ul class="org-ul">
+<li>Income 12 - 28% depending on salary</li>
+<li>VAT on all consumer goods (4% on food, more on luxury goods)</li>
+<li>corporate</li>
+</ul></dd>
+</dl>
+
+<p>
+Croatia is Roman Catholic but most people aren't very observant. The Church doesn't exert much power over civil policy (e.g. abortion is legal, homosexuality is accepted (but Croatia is less progressive than Germany, more so than Greece)).
+</p>
+
+<p>
+We discuss various cultural differences (e.g., why no wash cloths? We had to explain to Sandy what they are even used for).  Sandy summed up with the phrase "if customs were the same everywhere, why would you need to travel?"
+</p>
+
+<p>
+By the time we got to Zagreb, Tracey's eye was really bothering her. So she asked Sandy if she could arrange for her to see a doctor. Sandy explained that she wouldn't be eligible to see a public doctor (since she wasn't a citizen of Croatia) and that since there were no private primary care physicians, she'd need to see a private opthalmologist. Sandy marshalled her network and found one. But, Sandy informed Tracey that as we had had a city tour of Zagreb planned, she wouldn't be able to join. All Tracey was thinking was "I want some to make the infection in my eye go  away." I gave her all my kunas and wished her well. 
+</p>
+
+<p>
+We toured Zagreb in the cold and rainy weather and by the time we were seeing the Cathedral, Tracey had already seen the opthalmologist, gotten a prescription filled and had &#x2013; coincidentally &#x2013; wandered into the same cathedral. It was a minor miracle that she had caught up with us at all, let alone so quickly. And a major miracle that the exam (200 kuna) plus two prescriptions (75 kuna) cost less than a $50 copay would have in the U.S.!
+</p>
+
+<p>
+We strolled through downtown Zagreb and hit a bakery for some pastries (spinach and cheese <a href="https://www.wikiwand.com/en/B%C3%B6rek">burek</a> and sour cherry danish). 
+</p>
+
+<p>
+We hit the road to Bled. But the border experience seemed weird. We waited at the Croatian border where we had to depart the bus, queue up for an agent to stamp our passports and the reboard the bus, which had pulled up about 50 feet. It turns out that while Croatia is a member of the EU, it is not a member of the <a href="https://www.wikiwand.com/en/Schengen_Area">Schengen area</a> nations (yet) and they wanted to confirm we hadn't been in Croatia for more than 90 days in the past six months. So the bus pulls up to the Slovenian border, we wait and get our passports stamped there.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org74275de" class="outline-2">
+<h2 id="org74275de">Bled</h2>
+<div class="outline-text-2" id="text-org74275de">
+<p>
+It's dark when we arri at the Grand Hotel Toplice. And what a stately hotel she is. She is like a hotel in a Masterpiece Theater presentation: imposing wooden desk, rich carpeting, clunky actual keys. 
+</p>
+
+<p>
+We take a few photos of the surroundings and then hang out with Linda, Cindy, MaryAnn and Greg.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc0e10a3" class="outline-2">
+<h2 id="orgc0e10a3">Ljubljana</h2>
+<div class="outline-text-2" id="text-orgc0e10a3">
+<p>
+The next morning we drive to Ljubljana, Slovenia's captial, for another city tour. This city oozes with charm and beautiful architecture. We encounter a delegation from Bulgaria as well as shnapps and chocolate shops. We split some <a href="https://www.youtube.com/watch?v=4IjW9s6SVKc">Štrukli</a> (dumplings) for lunch (one vegetable and another cheese and raisin for dessert).  
+</p>
+</div>
+</div>
+
+<div id="outline-container-org95c6837" class="outline-2">
+<h2 id="org95c6837">Bled</h2>
+<div class="outline-text-2" id="text-org95c6837">
+<p>
+The next day we took a city tour of the charming town of Bled as well as its castle.
+</p>
+
+<p>
+Back at the hotel, Tracey went for a nap and I to check out the spa. The pool was a bracing 22°C since it was filled from a mineral spring each day. I also went for a Finnish sauna and felt great. 
+</p>
+
+<p>
+Later on, we decide to lizard over some wine, beer, coffee and &#x2013; especially &#x2013; some <a href="https://www.nationalgeographic.com/people-and-culture/food/the-plate/2015/10/02/lake-bled-cream-cake-a-confection-straight-from-the-storybooks/">vanilla cream cake</a>, <a href="https://theadventurebite.com/slovenian-cream-cake-recipe/">recipe</a>(!). The cake was delicious: two pieces of flaky pastry sandwiched an ethereal layer of impossibly light pudding and another of whipped cream. It's no wonder they sell a half million of these sublime desserts each year.
+</p>
+
+<p>
+As evening broke, Gate 1 held a final "goodbye" reception where we thanked Dado for his expect driving and Sandy for her really excellent service as a tour guide. 
+</p>
+
+<p>
+Afterward, we were a bit hungry and hit on a vegan cafe. We ordered pumpkin (actually: butternut squash) soup, chickpea fritters, salad, roast potatoes and hummus. Really tasty food!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org40a3674" class="outline-2">
+<h2 id="org40a3674">Venice</h2>
+<div class="outline-text-2" id="text-org40a3674">
+<p>
+As soon as we crossed the border into Italy, we noticed a drastic reduction in the Austrian architectural influence.  We had a nice four hour ride through the countryside, following miles of vineyards and open fields to arrive at Venice airport. 
+</p>
+
+<p>
+At the airport, we had a nice lunch of pizza (great crust, tasty sauce) and made-to-order pasta (taglietelle with creamy mushroom sauce). And then we waited for them to announce our gate&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf1d4178" class="outline-2">
+<h2 id="orgf1d4178">Zürich</h2>
+<div class="outline-text-2" id="text-orgf1d4178">
+<p>
+&#x2026;and after less than an hour's flight we landed in Zürich. Linda and Cindy were seated ahead of us and so we were surprised when we deplaned that they were nowhere to be seen. We progressed through passport control and headed for the tram, but still no sight of them. We let a tram go by and eventually they caught up with us. How we missed each other, we'll never know.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org45e8783" class="outline-2">
+<h2 id="org45e8783">General</h2>
+<div class="outline-text-2" id="text-org45e8783">
+</div>
+<div id="outline-container-org705d3c9" class="outline-3">
+<h3 id="org705d3c9">Melting Pot</h3>
+<div class="outline-text-3" id="text-org705d3c9">
+<p>
+Croatia
+</p>
+</div>
+</div>
+
+<div id="outline-container-org00102c0" class="outline-3">
+<h3 id="org00102c0">Language</h3>
+<div class="outline-text-3" id="text-org00102c0">
+<ul class="org-ul">
+<li>"Fresh and Crispy"</li>
+<li id=""Chop Chop""><i>quickly</i></li>
+</ul>
+<p>
+"It's as if we took all the vowels out of the Croatian language and threw them across the Adriatic: Italian has cornered them." &#x2013; Sandy
+"The drop that becomes a sea: a good reason to use the WC when one is available."
+</p>
+</div>
+</div>
+
+<div id="outline-container-org54496c7" class="outline-3">
+<h3 id="org54496c7">Random Thoughts</h3>
+<div class="outline-text-3" id="text-org54496c7">
+<p>
+Lots of dentists. It's not that Croatians have bad teeth; in fact they are quite good. But there are many European tourists looking for cheap dental work (looking at you Britain!). It's not only cheaper but you get a vacation in a charming resort to boot. 
+</p>
+
+<p>
+Croatia has 1,248 islands, second in Europe only to Greece. The country has only 1 sandy beach (plus a few more man-made ones). Most are rock and that's why the water is crystal clear. 
+</p>
+
+<p>
+4.2M people live in Croatia. There is a feeling that everyone knows everyone else. 
+</p>
+
+<p>
+Sandy lives near Split.
+</p>
+
+<p>
+The history of Europe is like a soap opera: everyone has been at war with everyone, is sleeping with everyone, is killing everyone&#x2026;
+</p>
+
+<p>
+During the Cold War, Yugoslavia (6 republics) was not aligned with West or East. Socialist, but not a USSR client. Led by Tito, who died in 1980. 
+</p>
+
+<p>
+Broke up in 1991. 
+</p>
+
+<p>
+Spring has arrived as evidenced by the white and pink blossoms of the almond trees, which blanket the countryside. 
+</p>
+
+<p>
+Having a coffee, luxuriating for 30 minutes in the sun is called "lizarding". It's a highly social activity and a good opportunity to exchange information. 
+</p>
+
+<p>
+Jugo blows strong winds and threatens to bring rain. Weather forecasters will advise how to tend to personal affairs while Jugo blows (e.g. stay home with a camomile, don't sign a contract today, etc.). 
+</p>
+
+<p>
+Croats love their wine, especially dry, thick reds. They have many songs about red wine but only one about white: 
+</p>
+<pre class="example">
+Oh white wine
+Oh white wine
+Why aren't you red?
+</pre>
+
+
+<p>
+Sandra ("Sandrina") Nicolitch ("little" or "of" Nicola). 92% of surnames end in "itch".
+</p>
+</div>
+</div>
+<div id="outline-container-org959dee2" class="outline-3">
+<h3 id="org959dee2">Social Structure</h3>
+<div class="outline-text-3" id="text-org959dee2">
+<p>
+Education and Health are a right for all&#x2026; and free. You <b>want</b> a doctor who went to public school since only the best will be able to get in.  This is largely true throughout Europe. 
+</p>
+
+<p>
+Goal is to keep highest and lowest salaries within 10% of each other
+</p>
+</div>
+</div>
+
+<div id="outline-container-org672675f" class="outline-3">
+<h3 id="org672675f">What's to like about Croatia?</h3>
+<div class="outline-text-3" id="text-org672675f">
+<ul class="org-ul">
+<li>Socialism
+<ul class="org-ul">
+<li>Especially the notion that "every human person is entitled to a free education (until 28 or so) and healthcare (for life).</li>
+</ul></li>
+<li>Natural beauty</li>
+<li>Leisurely pace of life</li>
+<li>Warm, welcoming people</li>
+<li>Rich history going back to Rome and before</li>
+<li>The weather</li>
+<li>Stunning villages nestled along the Adriatic</li>
+<li>Strong family fiber</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc5826ce" class="outline-3">
+<h3 id="orgc5826ce">What's <b>not</b> to like about Croatia?</h3>
+<div class="outline-text-3" id="text-orgc5826ce">
+<ul class="org-ul">
+<li>They haven't been at war for (only) 30 years</li>
+<li>Moderately high smoking rate</li>
+<li>Heavily tourist-driven economy, which is quite seasonal as these 4 million residents are flooded between May and September.</li>
+<li>Earthquakes and high winds (at least in Split)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2019-03-18 Mon 13:39</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
