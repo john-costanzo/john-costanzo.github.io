@@ -1248,6 +1248,34 @@ You might want to cut in half or freeze  half of batter for later.
 *** Credits
 Mary Malgieri [2018-10-24 Wed] 
 "Also I sprinkle a bit of sugar in the raw on top before baking to give a crispy muffin top."
+** Claridge’s Scones
+*** Ingredients
+- 11 1/2	ounces (330 g.) plain flour, plus extra for dusting
+- 2 1/4	ounces (60 g.) caster sugar
+- 1 1/2	tablespoons baking powder
+- 1/4	teaspoon salt
+- 3 1/4	ounces cold unsalted butter, cubed
+- 2 1/2	ounces (70 g.) raisins (optional)
+- 3 3/4	ounces (fluid ounce) (110 ml.) buttermilk
+- 3	ounces (fluid ounce) (90 ml.) milk
+- 1	beaten with a pinch of salt, for the egg wash
+*** Method
+1. In a large bowl, combine the flour, sugar, baking powder and salt, then add the butter and rub into the flour mixture with your fingers until you have a fine crumb (you could also pulse this five to six times in a food processor to achieve the same sandy texture, but it’s almost as fast to work by hand).
+2. If you’re making raisin scones, stir the raisins in now.
+3. Transfer to a smaller container, cover and leave to rest in the refrigerator overnight, or until thoroughly chilled.
+4. The next morning, preheat the oven to 475 degrees Fahrenheit (240 degrees Celsius), Gas Mark 9.
+5. Transfer the butter and flour mixture to the standing mixer. Slowly mix in the buttermilk and milk until the dough comes together.
+6. On a lightly floured surface, roll out the dough to form a circle, about 8 inches (21 cm.) in diameter and 3/4 inch (2 cm.) thick, then cut out 12 scones using the pastry cutter. Transfer the scones to the prepared baking tray.
+7. Using a pastry brush, carefully brush the tops with the egg wash. We like to let our scones sit out for 20 minutes at room temperature to give the baking powder a chance to activate before we bake them.
+8. Bake until evenly golden, about 12–13 minutes. Leave to cool for 5 minutes, then serve warm.
+9. To serve: We strongly suggest serving these only on the day of baking. Leftover scones can be frozen and will remain good for up to three weeks: as needed, defrost completely, then reheat in a preheated 350 degree Fahrenheit (180 degree Celsius), Gas Mark 4 oven for 3 minutes.
+*** Yield
+Makes: 12 small scones 
+Prep time: 4 hrs 40 min 
+Cook time: 12 min
+*** Credits
+https://food52.com/recipes/80618-claridge-s-scones
+[2019-03-17 Sun]: Made for TC. The batter was /very/ sticky. I couldn't think of slicing the dough, so I used a biscuit cutter to roughly shape and move a bit of dough to the pan. The cutter I used was too large (4"?) so I lowered the heat to 450 degrees, but the scones turned out fine. (I did have them spend a bit of time on convection to crisp them up.) I also sprinkled with some coarse sugar. Oh yeah, and half of the flour I used was [[https://www.whitelily.com/white-lily-biscuits][White Lily]]. And oh yeah, instead of raisins, I threw some frozen blueberries in. The dough turned purple, but it was ok.
 ** Scones, Irish
 *** Ingredients
 - 2 1/2 cup flour
@@ -2340,6 +2368,53 @@ Chronicle Books (2012). Reprinted with permission.
 - Per 8 oz serving: 94 calories, 3.5 g protein, 1.2 g fat, 19 g carbs, 4.3 g dietary fiber
 - [As served during Easter weeken at Tracey and John's; April 2004; Recipe Source: Moosewood Restaurant Low-Fat Favorites, page 94]
 - (date created: 6/27/2007 4:42:13 PM)
+** General Tso's Cauliflower
+Prep time 15 mins
+Cook time 15 mins
+Total time 30 mins
+Serves: 6-8 servings
+*** Ingredients
+**** for the General Tso’s sauce:
+- 1 tablespoon sesame oil
+- 3 cloves garlic, minced
+- 1 knob of ginger, grated
+- 1/2 cup chicken or vegetable broth
+- 1/2 cup soy sauce
+- 1/3 cup rice vinegar
+- 1/4 cup sugar (more to taste)
+- 2 tablespoons tomato paste
+- 2 tablespoons cornstarch, dissolved in 1-2 tablespoons of cold water
+**** for the Batter:
+- 1 cup flour
+- 2/3 cup cornstarch
+- 1 1/2 teaspoons baking powder
+- 2 teaspoons salt
+- 4 eggs
+- water as needed (about 1/2 cup)
+**** other ingredients:
+- 1 head cauliflower, cut into small florets
+- a deep layer of oil for frying
+- scallions and sesame seeds for topping
+*** Instructions
+**** General Tso’s Sauce: 
+1. Heat the sesame oil in a small saucepan over medium low heat.
+2. Add the ginger and garlic and stir fry for a minute or two.
+3. Add remaining ingredients and whisk to combine.
+4. Bring to a low boil; simmer for another 20-30 minutes or until sauce is thickened.
+5. Add more sweetness, citrus, etc. to your taste.
+**** Cauliflower Batter:
+1. Whisk all the batter ingredients until a loose batter forms.The batter should be thick enough to cling to the cauliflower and cover it but stay loose enough to easily drip off (adjust thickness with water).
+**** Cauliflower Frying: 
+1. Pour oil into a heavy bottomed skillet to make it deep enough so it will cover the cauliflower about halfway (probably ends up being a few cups).
+2. Heat the oil over medium heat.
+3. Drop a small bit of batter in the oil to test it – when it rises to the top and bubbles, the oil is ready.
+4. Dip cauliflower florets in the batter and let the excess drip off before gently setting in the oil.
+5. Fry for a few minutes on each side, then flip, repeating sides several times if necessary until you get a nice golden brown fried exterior.
+6. The additional frying time helps make it a little crunchier, which I very much like.
+7. Remove and set on a cooling rack with paper towels underneath (again, rather than putting it all on a plate or bowl with paper towels, this keeps it crispy vs. soggy).
+**** Serving:
+1. Toss the fried cauliflower with the sauce (enough just to cover) and sprinkle with scallions and sesame seeds for serving.
+2. Serve with rice.
 ** General Tso's Tofu
 Prep time 15 mins
 Cook time 15 mins
@@ -2866,13 +2941,13 @@ Servings: 6-8
 - 1 cup onion, diced
 - 1 cup celery, diced
 - 1 cup carrots, diced
-- 1 cup peas
 - 1/3 cup melted butter
 - 1/2 cup all-purpose flour
 - 2 cups broth
 - 1 cup half-and-half
 - 1 teaspoon salt
 - 1/4 teaspoon pepper
+- 1 cup peas
 - 1 cup TVP (optional)
 - 2 pie crusts (either store bought or your own recipe)
 *** Method
@@ -3063,7 +3138,7 @@ Makes 1 cup; serves 4-6
 *** Credits
 - (date created: 5/17/2008 7:56:05 AM)
 ** Chipotle Ranch Dressing
-*** Ingredients
+*** Ingredients, Version 1:
 1. 1 cup mayonnaise
 2. 1 cup sour cream
 3. 1 cup buttermilk
@@ -3074,11 +3149,20 @@ Makes 1 cup; serves 4-6
 8. 1 1/2 teaspoons dried chipotle powder
 9. 1 1/2 teaspoons lime juice
 10. 1 1/2 teaspoons salt
+*** Ingredients, Version 2:
+1. 1/2 cup mayo (or use sour cream, vegan mayo “Veganaise” – or make with silken tofu, see notes below)
+2. 1 tablespoon water (for a thinner sauce)
+3. 1 - 2 teaspoons lime juice (to taste)
+4. 1/8 teaspoon salt, more to taste
+5. 1/2 teaspoon chili powder
+6. 1 teaspoon smoked paprika
+7. 1/8 - 1/4 teaspoon chipotle powder – you can also use one canned chipotle pepper (blending it with the mayo in a blender) or just stir in a teaspoon or two of the spicy smoky adobo sauce from the can. Start conservatively, adding more to taste.
 *** Method
-- Mix in mixer or food processor on low speed until well mixed.
+- Mix in mixer or food processor on low speed until well mixed. Or whisk.
 - Refrigerate.
 *** Credits
 http://www.food.com/recipeprint.do?rid=250131
+https://www.feastingathome.com/chipotle-mayo/
 Made [2017-07-02 Sun]. Tasty!
 ** Easy Red Pepper Hummus
 Serves 8
