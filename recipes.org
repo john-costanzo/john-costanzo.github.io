@@ -298,8 +298,8 @@ http://www.kingarthurflour.com/recipes/PrintRecipe?RID=1927&radio=3
 ** Custardy Popovers
 *** Ingredients
 - 4 eggs
-- 1 cup unbleached white flour
 - 1 cup milk
+- 1 cup unbleached white flour
 - 1/2 tsp. salt
 - 4 Tbs. melted butter
 *** Method
@@ -1244,6 +1244,39 @@ Serves: 14 (4-inch) pancakes
 *** Credits
 - Betty Crocker's Cookbook
 - (date created: 6/27/2007 4:42:14 PM)
+# -*- mode: org; coding: utf-8 -*-
+** Pancakes, Classic Sourdough
+*** Ingredients
+**** Overnight Sponge
+- 2 cups (240g) King Arthur Unbleached All-Purpose Flour
+- 2 tablespoons (28g) sugar
+- 2 cups (454g) buttermilk
+- 1 cup (240g) sourdough starter, unfed/discard
+**** Waffle Or Pancake Batter
+- all of the overnight sponge
+- 2 large eggs
+- 1/4 cup (50g) vegetable oil or melted butter
+- 3/4 teaspoon salt
+- 1 teaspoon baking soda
+*** Method
+1. To make the overnight sponge, stir down your refrigerated starter, and remove 1 cup. Note: This is a good opportunity to feed the remainder, if necessary.
+2. In a large mixing bowl, stir together the 1 cup unfed starter, flour, sugar, and buttermilk.
+3. Cover and let rest at cool room temperature (about 65°F to 70°F) for about 12 hours, or overnight.
+4. In a small bowl or mixing cup, beat together the eggs, and oil or butter. Add to the overnight sponge.
+5. Add the salt and baking soda, stirring to combine. The batter will bubble.
+6. Pour batter onto your preheated, greased iron, and bake according to the manufacturer's instructions.
+7. Serve immediately, to ensure crispness. Or hold in a warm oven till ready to serve.
+8. Yield: 1 dozen 8" waffles or about 2 dozen medium pancakes.
+*** Credits
+- https://www.kingarthurflour.com/recipes/classic-sourdough-waffles-or-pancakes-recipe
+- (date created: 4/26/2019 9:33:00 AM)
+*** Notes on Sourdough Starter
+- Mari's ice cream container (without the top) weighs 100g empty.
+- 1 cup sourdough starter (unfed/discard) == 241g
+- To refresh the starter, combine equal parts (by weight) of starter, flour and filtered water. Let sit on counter for 2 hours and return to refrigerator.
+- Tip: don't use more than, say, 300g starter + 300g flour + 300g water.
+    + You can safely mix this amount of starter in the container, but not much more.
+- Feed weekly.
 ** Pancakes
 *** Ingredients
 - 1 egg
