@@ -184,6 +184,24 @@ instructions
 *** Credits
 http://www.ohsweetbasil.com/herby-garlicky-cheesy-bread.html
 Made for 4th of July party [2016-07-03 Sun]. They were a big hit with the crowd, but I thought they were a lot like the stuff you get at Olive Garden.
+** Chewy Sourdough Italian Bread
+*** Ingredients
+- 1 cup active sourdough starter, at its peak
+- 4 1/2 cup bread flour, plus more for kneading
+- 1 1/2 cup water
+- 1 Tbsp. honey
+- 1 Tbsp. olive oil
+- 2 1/2 tsp. salt
+*** Method
+1. Mix all ingredients except salt in a large bowl, being sure that all of the ingredients are hydrated. The dough should be shaggy and wet. Cover and allow to sit, or autolyse, for 30 minutes.
+2. Sprinkle the salt over the dough and mix it in, stretching and folding the dough over itself as you go. The dough will be sticky but less so as the salt mixes in. Flour a clean work surface and turn the dough out onto it. Sprinkle the dough lightly with flour and knead gently for 5-8 minutes, adding more flour as needed. The dough should be tacky but not so sticky that it isn’t workable.
+3. Once the dough is soft and pliable, form it into a ball. Oil the mixing bowl you started with and place dough in, rough side up. Move the ball of dough around in the bowl so that the smooth portion is coated in oil. Flip it over and cover tightly with a lid or plastic wrap. Set aside to ferment for 8-12 hours, or overnight.
+4. In the morning, slice the dough in half while still in the bowl, being careful not to deflate it too much. Oil a baking sheet generously or line it with parchment paper. Sprinkle the oiled pan or parchment paper generously with flour or a coarse semolina or cornmeal. Flour your hands and scoop out one of the portions of dough. It will be fairly wet and sticky. Shape it roughly into a torpedo loaf, approximately 12″ long, pushing the dough together to make it as high and thin as you can. Place it on one side of the sheet pan. Repeat with the other dough. (Or use a 
+5. Cover with a damp towel or plastic wrap and allow to proof for 1.5 – 2 hours or until it is puffy. It won’t double in size but should spring up nicely in the oven.
+6. Preheat the oven to 450 degrees for 30 minutes. Remove the plastic wrap from the loaves, slash as desired with a very sharp knife, and place in hot oven. Bake for 15 minutes, rotate sheet pan, and bake an additional 10-15 minutes or until it makes a hollow sound when the bottom is thumped or it reaches an internal temperature of 190 degrees.
+7. Move to a cooling rack. Serve warm, torn and dipped in olive oil or spread with butter. Or, cool completely and use for garlic bread or sub sandwiches.
+*** Credits
+https://www.culturesforhealth.com/learn/recipe/sourdough-recipes/chewy-sourdough-italian-bread/
 ** Cinnabons (using Bread Machine)
 *** Ingredients
 - 1/4 cup butter, melted
@@ -313,6 +331,20 @@ http://www.kingarthurflour.com/recipes/PrintRecipe?RID=1927&radio=3
 [[http://galsonfamilycookbook.blogspot.com/2010/11/custardy-popovers-from-moosewood.html][Galson Family Cookbook]], taken from the first Moosewood book
 I've made these a few times; always a hit!
 But you've got to eat them quick; they have a short shelf life.
+** New York Variation Pizza Dough
+*** Ingredients
+- 285g	Type 00 White Flour (I used Central Milling Type 00 Normal)	90.00%
+- 32g	Whole Wheat Flour (I used Giusto’s Stoneground)	10.00%
+- - 212g	H2O @ Room Temperature	67.00%
+- - 6g	Diastatic Malt (optional)	2.00%
+- - 9g	Salt	2.90%
+- 47g	Mature, liquid starter	15.00% (I used 256g)
+*** Method
+1. Combine water, starter, flour, salt and malt in mixing bowl. Attach dough hook and turn on to speed #2 for 4-5 minutes or until the dough coheres, but perhaps not smooth.
+2. Place in bowl and allow bulk fermentation for 2.5 hours, stretching and folding every 30 mintues.
+*** Credits
+- https://www.theperfectloaf.com/sourdough-pizza-dough-and-recipes/
+- (date created: 1/16/2019 08:14:03 PM)
 ** Homemade Pretzels
 *** Ingredients
 - 1 (1/4 ounce) package active dry years
@@ -768,6 +800,19 @@ Makes 2 large loaves
 - (I've tried preheating to 500 degrees, then lowering to 450 degrees and baking for 20 minutes on speed bake. Crispy crust, moist and tender, but a bit gummy inside.)
 - From http://www.thefreshloaf.com/recipes/rusticbread February 2011
 - (date created: 3/4/2011 7:26:21 AM)
+# -*- mode: org; coding: utf-8 -*-
+** Notes on Sourdough Starter
+- Container weights:
+    + Mari's ice cream container (without the top) weighs 100g empty.
+    + An empty quart container weighs something like 62g.
+    + Green container = 81g.
+    + Deep red-top squarish bucket = 107g
+    + big green bowl = 114g
+- 1 cup sourdough starter (unfed/discard) == 241g
+- To refresh the starter, combine equal parts (by weight) of starter, flour and filtered water. Let sit on counter for 2 hours and return to refrigerator.
+- Tip: don't use more than, say, 300g starter + 300g flour + 300g water.
+    + You can safely mix this amount of starter in the container, but not much more.
+- Feed weekly.
 ** Texas-Style Cornbread
 By Diana Rattray, About.com
 *** Ingredients
@@ -1237,6 +1282,27 @@ Serves: 14 (4-inch) pancakes
 *** Credits
 - (date created: 4/19/2009 7:29:37 AM)
 # -*- mode: org; coding: utf-8 -*-
+** Overnight Oats
+*** Ingredients
+- 2 cups old-fashioned rolled oats
+- 2 cups dairy milk or unsweetened non-dairy milk
+- 1 cup plain Greek or non-dairy yogurt
+- 3 tablespoons maple syrup or honey
+- 1 tablespoon chia seeds (optional)
+- 1/4 teaspoon ground cinnamon
+- 1/4 teaspoon kosher salt
+- Optional toppings: fruits, nuts, seeds, nut butter
+*** Method
+1. Place all the ingredients in a large bowl.
+2. Stir together until well combined.
+3. Cover and refrigerate overnight. You can divide the oats into individual jars at this point if desired. Cover and refrigerate for at least 4 hours, preferably overnight.
+4. Stir again before serving with desired toppings.
+*** Yield 
+Serves 4.
+*** Credits
+https://www.thekitchn.com/overnight-oats-268370
+- (date created: 6/2/2019 6:29:00 PM)
+# -*- mode: org; coding: utf-8 -*-
 ** Pancakes, Buttermilk
 *** Ingredients
 - 1 egg
@@ -1256,14 +1322,27 @@ Serves: 14 (4-inch) pancakes
 - Betty Crocker's Cookbook
 - (date created: 6/27/2007 4:42:14 PM)
 # -*- mode: org; coding: utf-8 -*-
-** Pancakes, Classic Sourdough
+** Pancakes, Sourdough
 *** Ingredients
-**** Overnight Sponge
+**** Single Recipe
+***** Overnight Sponge 
+- 1 cups (120g) King Arthur Unbleached All-Purpose Flour
+- 1 tablespoon (14g) sugar
+- 1 cups (227g) buttermilk
+- 1/2 cup (120g) sourdough starter, unfed/discard
+***** Waffle Or Pancake Batter
+- all of the overnight sponge
+- 1 large egg
+- 1/8 cup (25g) vegetable oil or melted butter
+- 3/8 teaspoon salt
+- 1/2 teaspoon baking soda
+**** Double Recipe
+***** Overnight Sponge 
 - 2 cups (240g) King Arthur Unbleached All-Purpose Flour
 - 2 tablespoons (28g) sugar
 - 2 cups (454g) buttermilk
 - 1 cup (240g) sourdough starter, unfed/discard
-**** Waffle Or Pancake Batter
+***** Waffle Or Pancake Batter
 - all of the overnight sponge
 - 2 large eggs
 - 1/4 cup (50g) vegetable oil or melted butter
@@ -1277,17 +1356,12 @@ Serves: 14 (4-inch) pancakes
 5. Add the salt and baking soda, stirring to combine. The batter will bubble.
 6. Pour batter onto your preheated, greased iron, and bake according to the manufacturer's instructions.
 7. Serve immediately, to ensure crispness. Or hold in a warm oven till ready to serve.
-8. Yield: 1 dozen 8" waffles or about 2 dozen medium pancakes.
+*** Yield 
+1 dozen 8" waffles or about 2 dozen medium pancakes.
 *** Credits
 - https://www.kingarthurflour.com/recipes/classic-sourdough-waffles-or-pancakes-recipe
 - (date created: 4/26/2019 9:33:00 AM)
-*** Notes on Sourdough Starter
-- Mari's ice cream container (without the top) weighs 100g empty.
-- 1 cup sourdough starter (unfed/discard) == 241g
-- To refresh the starter, combine equal parts (by weight) of starter, flour and filtered water. Let sit on counter for 2 hours and return to refrigerator.
-- Tip: don't use more than, say, 300g starter + 300g flour + 300g water.
-    + You can safely mix this amount of starter in the container, but not much more.
-- Feed weekly.
+#+INCLUDE: "../Bread/Sourdough Notes.org"
 ** Pancakes
 *** Ingredients
 - 1 egg
@@ -1796,7 +1870,7 @@ Pudding was good. I used well-ground coffee beans and didn't strain it.
 ** Classic Pie Crust (King Arthur)
 *** Ingredients
 **** 2 Crusts
-- 297g (2 1/2 cups) King Arthur Unbleached All-Purpose Flour or 283g King Arthur Perfect Pastry Blend
+- 297g (2 1/2 cups) King Arthur Unbleached All-Purpose Flour   or   283g King Arthur Perfect Pastry Blend
 - 1 1/4 teaspoons salt*
 - 46g (1/4 cup) vegetable shortening
 - 142g (10 tablespoons) very cold unsalted butter
