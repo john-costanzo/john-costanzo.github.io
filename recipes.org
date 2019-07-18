@@ -561,6 +561,43 @@ By Carroll Pellegrinelli, About.com
 9. Remove bread from oven and place on a cooling rack to cool.
 *** Credits
 http://www.simplysogood.com/2013/03/artisan-no-knead-bread.html
+** Pain de Campagne
+*** Ingredients
+**** Levain
+- 50g mature whole wheat starter
+- 100g water
+- 100g whole wheat flour
+**** Main Dough
+- 200g of the levain
+- 350g water
+- 50g rye
+- 1/2 tsp diastatic malt
+- 450g bread flour
+- 10g salt (about 0.56 Tablespoons)
+*** Method
+1. Mix levain ingredients. Allow to peak, between four and five hours in a 28 degrees C kitchen. It ought to have a nice fruity aroma that wasn't at all sour.
+2. Disperse the levain in the water with a wire whisk until it has a good foam on top. Next, whisk in rye and malt powder. Then add bread flour with spatula and mix until all the flour has been moistened.
+3. Autolyse for 50 minutes.
+4. Add salt.
+5. Knead to medium gluten development.
+6. Bulk ferment for 1 hour with a turn at 30 minutes.
+7. Pre-shape dough and allow to rest for 10 minutes.
+8. Shape final dough and put into well-floured banneton.
+9. Let rise for about half an hour, covered.
+10. Retard dough for 12 hours in the refrigerator.
+11. Insert baking stone and preheat oven to 230 degrees C (= 446 degrees F) for 30 minutes.
+12. Bake with steam for 15 minutes.
+13. Reduce heat to 200 C (= 392 degrees F) and bake for a further 30 - 35 minutes until golden brown.
+14. Cool completely on a wire rack.
+*** Credits
+http://www.thefreshloaf.com/node/38229/pain-de-campagne
+**** [2019-07-06 Sat] icymi
+- My starter was comprised of white flour and I used KA AP flour instead of bread flour and all of the levain.
+- I skipped the 12 hour dough retard.
+- I made a double batch.
+- *Issue*: the two loaves ran together on the peel and stone. I had to saw them apart while they were in the oven.
+- Good oven spring. Moist, with a nice crumb and not too sour (although T disagreed on the latter point).
+- Made French toast the next morning, but, frankly, the bread was better as plain ol' toast.
 ** Black Bread Castelvetrano
 To make the "Castelvetrano black bread" of this recipe, I used only the durum wheat flour Russello, Biancolilla and Tumminia (called also timilia); integral, biological and ground stone. More precisely, 31% of Russello, 31% of Biancolilla and 38% of Tumminia.
 The following doses are sufficient for two loaves of half weight
@@ -2255,6 +2292,34 @@ Makes 25-30 sandwich cookies
 *** Credits
 - [As served at Easter Brunch at Tracey and John's, April 2004. Recipe source: The Complete Italian Vegetarian Cookbook, by Jack Bishop, page 245.]
 - (date created: 6/27/2007 4:42:13 PM)
+** Black Bean and Rice Enchiladas
+*** Ingredients
+- 1 tablespoon olive oil
+- 1 green bell pepper, chopped
+- 1 onion, chopped
+- 3 cloves garlic, minced
+- 1 (15 ounce) can black beans, rinsed and drained
+- 1 (14.5 ounce) can diced tomatoes and green chilies
+- 1/4 cup picante sauce
+- 1 tablespoon chili powder
+- 1 teaspoon ground cumin
+- 1/4 teaspoon red pepper flakes
+- 2 cups cooked brown rice
+- 8 (6 inch) flour tortillas, warmed
+- 1 cup salsa
+- 1 cup shredded Cheddar cheese
+- 3 tablespoons chopped fresh cilantro leaves
+- 1/4 cup shredded Cheddar cheese
+*** Method
+1. Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x13-inch baking dish.
+2. Heat oil in a large skillet over medium heat; cook and stir green pepper, onion, and garlic until tender, about 7 minutes.
+3. Stir in beans, tomatoes, picante sauce, chili powder, cumin, and red pepper flakes; bring to a boil. Reduce heat to low and simmer, uncovered, until heated through and mixture thickens, about 5 minutes.
+4. Fold in rice and 1 cup Cheddar cheese; cook until heated through, about 5 minutes.
+5. Spoon a rounded 1/2 cup bean mixture down the center of each tortilla. Fold sides over filling and roll up. Place enchiladas seam side down in baking dish; spoon salsa over each tortilla. Cover baking dish with aluminum foil.
+6. Bake in preheated oven for 25 minutes.
+7. Uncover and sprinkle with cilantro and 1/4 cup Cheddar cheese. Bake until cheese is melted, 2 to 3 minutes.
+*** Credits
+https://www.allrecipes.com/recipe/222598/black-bean-and-rice-enchiladas/print/?recipeType=Recipe&servings=8&isMetric=false
 ** Butternut Squash Soup
 *** Ingredients
 - 3 lbs butternut squash
