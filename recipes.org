@@ -333,17 +333,37 @@ I've made these a few times; always a hit!
 But you've got to eat them quick; they have a short shelf life.
 ** New York Variation Pizza Dough
 *** Ingredients
+**** Two Small or One Large Crust
+- 47g	Mature, liquid starter	15.00% (I used 256g)
 - 285g	Type 00 White Flour (I used Central Milling Type 00 Normal)	90.00%
 - 32g	Whole Wheat Flour (I used Giusto’s Stoneground)	10.00%
-- - 212g	H2O @ Room Temperature	67.00%
-- - 6g	Diastatic Malt (optional)	2.00%
-- - 9g	Salt	2.90%
-- 47g	Mature, liquid starter	15.00% (I used 256g)
+- 212g	H2O @ Room Temperature	67.00%
+- 6g	Diastatic Malt (optional)	2.00%
+- 9g	Salt	2.90%
+**** Six Small or Three Large Crusts
+- 141g	Mature, liquid starter	15.00% (I used 256g)
+- 855g	Type 00 White Flour (I used Central Milling Type 00 Normal)	90.00%
+- 96g	Whole Wheat Flour (I used Giusto’s Stoneground)	10.00%
+- 636g	H2O @ Room Temperature	67.00%
+- 18g	Diastatic Malt (optional)	2.00%
+- 27g	Salt	2.90%
 *** Method
+**** Dough making process:
 1. Combine water, starter, flour, salt and malt in mixing bowl. Attach dough hook and turn on to speed #2 for 4-5 minutes or until the dough coheres, but perhaps not smooth.
-2. Place in bowl and allow bulk fermentation for 2.5 hours, stretching and folding every 30 mintues.
+2. Place in bowl and allow bulk fermentation for 2.5 hours, stretching and folding every 30 minutes.
+**** In a nutshell, here is my pizza baking process:
+1. Take 290g dough ball out of the fridge and shape out to a disc on parchment paper
+2. Turn oven from Bake setting (hopefully at 550ºF) to maximum Broiler setting
+3. Top dough disc with toppings
+4. Open oven and launch (slide in) pizza dough on top of parchment paper
+5. Quickly spritz all sides of dough with a handheld water mister and then close the oven door
+6. Bake for 1.5 – 2 minutes (broiler should be on)
+7. Turn broiler off and oven back to Bake at 550ºF
+8. After 1 minute rotate pizza disc 180º using a pizza peel and carefully grabbing the corner of the parchment paper
+9. Bake for an additional 4-5 minutes or until done to your liking
 *** Credits
 - https://www.theperfectloaf.com/sourdough-pizza-dough-and-recipes/
+- [2019-07-15 Mon] Made with about double the starter. The dough is already too wet to work with and doesn't quite crisp up as I like. Try using the called-for amount of starter *and* less water.
 - (date created: 1/16/2019 08:14:03 PM)
 ** Homemade Pretzels
 *** Ingredients
@@ -561,6 +581,31 @@ By Carroll Pellegrinelli, About.com
 9. Remove bread from oven and place on a cooling rack to cool.
 *** Credits
 http://www.simplysogood.com/2013/03/artisan-no-knead-bread.html
+** Pain au Levain
+Makes 2 loaves
+Takes a minimum of ~6 hours: 30 mixing + 4.5 rising + 1 baking
+*** Ingredients
+- 454 grams ripe starter (2 1/2 cups; 1 pound)
+- 600 grams unbleached, all-purpose flour (5 cups; 1 pound, 5 oz.)
+- 85 grams whole wheat flour (2/3 cups; 3 oz.)
+- 397 grams water (1 3/4 cups; 14 oz.)
+- 12.5 grams (2 1/2 teaspoons) salt
+*** Method
+1. Combine the flours, water and starter and mix using bread attachment of a mixer.
+2. Cover the bowl loosely with plastic and let the dough rest for 20 to 30 minutes.
+3. Add the salt and knead the dough until it becomes smooth, supple and slightly tacky. (Avoid adding flour!)
+4. Cover and let rise for 1 hour.
+5. Fold dough.
+6. Cover and let rise for 1 hour.
+7. Divide the dough into two pieces and preshape each piece into a loose ball. Place the dough smooth side up on a lightly floured surface. Cover and let rest for about 20 minutes.
+8. Shape the loaves into loaves and place in loaf pan.
+9. Cover and let rise for 2 hours.
+10. An hour before baking, preheat oven to 450 degrees.
+11. Spritz loaves with water and place in oven.
+12. Bake for 40 minutes, until the crust is richly colored and the internal temperature of the loaf is about 200 degrees.
+*** Credits
+- The King Arthur Flour Baker's Companion, page 279-280
+- (date created: 8/2/2019 10:26:21 PM)
 ** Pain de Campagne
 *** Ingredients
 **** Levain
@@ -1387,7 +1432,7 @@ https://www.thekitchn.com/overnight-oats-268370
 - 1 teaspoon baking soda
 *** Method
 1. To make the overnight sponge, stir down your refrigerated starter, and remove 1 cup. Note: This is a good opportunity to feed the remainder, if necessary.
-2. In a large mixing bowl, stir together the 1 cup unfed starter, flour, sugar, and buttermilk.
+2. In a large mixing bowl, stir together the unfed starter, flour, sugar, and buttermilk.
 3. Cover and let rest at cool room temperature (about 65°F to 70°F) for about 12 hours, or overnight.
 4. In a small bowl or mixing cup, beat together the eggs, and oil or butter. Add to the overnight sponge.
 5. Add the salt and baking soda, stirring to combine. The batter will bubble.
@@ -1746,6 +1791,42 @@ https://www.kingarthurflour.com/recipes/cinnamon-apple-twist-bread-recipe
 - [2017-11-11 Sat]
     + *DO NOT USE WAX PAPER UNDER THE PIES!* (They stick!)
     + I used 4 cups of strawberries, which made me go wild with filling. I think I filled some way too much. Not a help!
+** Blueberry Zucchini Snack Cake with Lemon Buttercream
+Prep Time: 20 minutes
+Cook Time: 50 minutes
+Total Time: 1 hour, 10 minutes
+*** Ingredients
+**** Cake
+- 3 large eggs
+- 1 cup vegetable oil
+- 1 Tbsp vanilla extract
+- 2 1/4 cups sugar
+- 2 cups shredded zucchini
+- 3 cups all purpose flour
+- 1 tsp salt
+- 1 tsp baking powder
+- 1/4 tsp baking soda
+- 1 pint blueberries (tossed in 1 tsp flour)
+**** Lemon Buttercream
+- 1 cup butter, (2 sticks, 8 ounces) at room temperature
+- 4 cups confectioners' sugar
+- juice of one lemon
+*** Method
+1. Set oven to 350F.
+2. Lightly grease and flour a 9x13 baking pan.
+3. Beat the eggs, oil, vanilla and sugar until well blended. Fold in the zucchini.
+4. Whisk the flour, salt, baking powder, and baking soda to combine. Slowly add it to the wet mixture, mixing just enough to blend.
+5. Fold in the blueberries, and pour the batter into the prepared pan.
+6. Bake for about 50 minutes, just until the top is turning golden and a toothpick inserted in the center comes out without wet batter clinging to it.
+7. Cool on a rack.
+8. To make the frosting, put the softened butter into the bowl of a food processor and process until creamy. Add the sifted powdered sugar, one cup at a time, processing till smooth after each addition. After the second cup of sugar add in the lemon juice. Scrape down the sides of the machine as necessary. Adjust the texture by adding a little more lemon or a little more sugar.
+9. Frost the cooled cake and store in the refrigerator.
+*** Yield
+Serves 12
+*** Credits
+Author: Sue Moran
+https://theviewfromgreatisland.com/blueberry-zucchini-snack-cake-with-lemon-buttercream/
+[2019-08-22 Thu]
 ** Bread Pudding
 *** Ingredients
 - 2 eggs
