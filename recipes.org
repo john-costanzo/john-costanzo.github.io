@@ -186,11 +186,11 @@ http://www.ohsweetbasil.com/herby-garlicky-cheesy-bread.html
 Made for 4th of July party [2016-07-03 Sun]. They were a big hit with the crowd, but I thought they were a lot like the stuff you get at Olive Garden.
 ** Chewy Sourdough Italian Bread
 *** Ingredients
-- 1 cup active sourdough starter, at its peak
-- 4 1/2 cup bread flour, plus more for kneading
-- 1 1/2 cup water
-- 1 Tbsp. honey
-- 1 Tbsp. olive oil
+- 1 cup (~225 grams) active sourdough starter, at its peak
+- 4 1/2 cup (540 grams) bread flour, plus more for kneading
+- 1 1/2 (355 ml) cup water
+- 1 Tbsp. (21 grams) honey
+- 1 Tbsp. (14 grams) olive oil
 - 2 1/2 tsp. salt
 *** Method
 1. Mix all ingredients except salt in a large bowl, being sure that all of the ingredients are hydrated. The dough should be shaggy and wet. Cover and allow to sit, or autolyse, for 30 minutes.
@@ -334,10 +334,10 @@ But you've got to eat them quick; they have a short shelf life.
 ** New York Variation Pizza Dough
 *** Ingredients
 **** Two Small or One Large Crust
-- 47g	Mature, liquid starter	15.00% (I used 256g)
+- 47g	Mature, liquid starter	15.00%
+- 212g	H2O @ Room Temperature	67.00%
 - 285g	Type 00 White Flour (I used Central Milling Type 00 Normal)	90.00%
 - 32g	Whole Wheat Flour (I used Giusto’s Stoneground)	10.00%
-- 212g	H2O @ Room Temperature	67.00%
 - 6g	Diastatic Malt (optional)	2.00%
 - 9g	Salt	2.90%
 **** Six Small or Three Large Crusts
@@ -349,7 +349,7 @@ But you've got to eat them quick; they have a short shelf life.
 - 27g	Salt	2.90%
 *** Method
 **** Dough making process:
-1. Combine water, starter, flour, salt and malt in mixing bowl. Attach dough hook and turn on to speed #2 for 4-5 minutes or until the dough coheres, but perhaps not smooth.
+1. Combine starter, water, flour, salt and malt in mixing bowl. Attach dough hook and turn on to speed #2 for 4-5 minutes or until the dough coheres, but perhaps not smooth.
 2. Place in bowl and allow bulk fermentation for 2.5 hours, stretching and folding every 30 minutes.
 **** In a nutshell, here is my pizza baking process:
 1. Take 290g dough ball out of the fridge and shape out to a disc on parchment paper
@@ -499,7 +499,9 @@ Slash a criss-cross design into the top of the free-form loaves no deeper than 1
 *** Credits
 Baking Bread: /Old and New Traditions/ By Beth Hensperger pg 42-43
 [2018-04-15 Sun] Boy did I screw up this time! 
-I was in a rush in making the sponge and while I used all the Sponge ingredients, I added the amount of flour from /Dough/. It was very dry and I realized what I had done, so I threw in another cup of water. The next day I used just one cup of water and the Sponge flour. It was a bit tough to mix together and the dough was *very* wet. I added even more flour. It came out ok.
+I was in a rush in making the sponge and while I used all the Sponge ingredients, I added the amount of flour from /Dough/. It was very dry and I realized what I had done, so I threw in another cup of water. The next day I used just one cup of water and the Sponge flour. It was a bit tough to mix together and the dough was *very* wet. I added even more flour. It came out oak.
+[2019-09-09 Mon] I screwed up yet again. 
+Again in a rush, I made the sponge. And only the sponge. I went ahead and baked it anyway.
 ** Japanese Milk Bread Rolls
 *** Ingredients
 **** TANGZHONG (starter)
@@ -892,7 +894,7 @@ Makes 2 large loaves
     + big green bowl = 114g
 - 1 cup sourdough starter (unfed/discard) == 241g
 - To refresh the starter, combine equal parts (by weight) of starter, flour and filtered water. Let sit on counter for 2 hours and return to refrigerator.
-- Tip: don't use more than, say, 300g starter + 300g flour + 300g water.
+- Tip: don't use more than, say, 200g starter + 200g flour + 200g water.
     + You can safely mix this amount of starter in the container, but not much more.
 - Feed weekly.
 ** Texas-Style Cornbread
@@ -1407,12 +1409,12 @@ https://www.thekitchn.com/overnight-oats-268370
 ** Pancakes, Sourdough
 *** Ingredients
 **** Single Recipe
-***** Overnight Sponge 
+***** Overnight Sponge
+- 1/2 cup (120g) sourdough starter, unfed/discard
 - 1 cups (120g) King Arthur Unbleached All-Purpose Flour
 - 1 tablespoon (14g) sugar
 - 1 cups (227g) buttermilk
-- 1/2 cup (120g) sourdough starter, unfed/discard
-***** Waffle Or Pancake Batter
+***** Pancake Or Waffle Batter
 - all of the overnight sponge
 - 1 large egg
 - 1/8 cup (25g) vegetable oil or melted butter
@@ -1420,18 +1422,18 @@ https://www.thekitchn.com/overnight-oats-268370
 - 1/2 teaspoon baking soda
 **** Double Recipe
 ***** Overnight Sponge 
+- 1 cup (240g) sourdough starter, unfed/discard
 - 2 cups (240g) King Arthur Unbleached All-Purpose Flour
 - 2 tablespoons (28g) sugar
 - 2 cups (454g) buttermilk
-- 1 cup (240g) sourdough starter, unfed/discard
-***** Waffle Or Pancake Batter
+***** Pancake Or Waffle Batter
 - all of the overnight sponge
 - 2 large eggs
 - 1/4 cup (50g) vegetable oil or melted butter
 - 3/4 teaspoon salt
 - 1 teaspoon baking soda
 *** Method
-1. To make the overnight sponge, stir down your refrigerated starter, and remove 1 cup. Note: This is a good opportunity to feed the remainder, if necessary.
+1. To make the overnight sponge, stir down your refrigerated starter, and remove this amount your need. Note: This is a good opportunity to feed the remainder, if necessary.
 2. In a large mixing bowl, stir together the unfed starter, flour, sugar, and buttermilk.
 3. Cover and let rest at cool room temperature (about 65°F to 70°F) for about 12 hours, or overnight.
 4. In a small bowl or mixing cup, beat together the eggs, and oil or butter. Add to the overnight sponge.
@@ -1600,6 +1602,35 @@ This macaroon type dough is rolled in sliced almonds for a double tasty treat!
 *** Credits
 - From Cathy Petrakis, 31Dec08
 - (date created: 1/1/2009 12:36:08 PM)
+** Apple Crisp
+*** Ingredients
+**** Base
+- 3 lbs. apples peeled, cored, cut into 1/4-inch slices
+- 2 Tbsp. butter or vegan butter substitute
+- ½ cup coconut sugar or white sugar
+- 1 tsp. apple pie spice
+- ¼ tsp. salt
+- 1 Tbsp. lemon juice
+**** Apple Crisp Topping
+- 6 Tbsp. butter softened, or vegan butter substitute
+- ⅓ cup coconut sugar or white sugar
+- ⅔ cup flour gluten-free 1-to-1
+- ½ cup oats old-fashioned, gluten-free
+- ½ cup pecans coarsely chopped
+- ½ tsp. cinnamon
+*** Method
+1. Preheat oven to 350 degrees.
+2. Add butter to a large skillet over medium heat. Once butter is melted, add sliced, peeled, and cored apples, coconut sugar, apple pie spice, and salt. Cook for 8-10 minutes or until apples become slightly tender.
+3. Turn off heat and stir in lemon juice.
+4. While apples are cooking, add coconut sugar and softened butter to a medium-sized bowl. Using a fork or a pastry cutter mix the ingredients together. Add oats, flour, pecans, and cinnamon and continue cutting them together until the mixture forms coarse crumbs.
+5. Spray a 9 x 13-inch baking dish with cooking spray and pour apples into the pan. Sprinkle crumb topping all over the apples.
+6. Bake apple crisp in the oven for 30-35 minutes or until topping is lightly browned and crunchy.
+7. Serve apple crisp with vanilla ice cream or coconut whipped cream and enjoy!
+*** Yield 
+8 (10?) servings
+*** Credits
+- (date created: 10/070/2019 108:49:30 AM)
+- https://www.evolvingtable.com/apple-crisp-recipe/
 ** Apple Fritters 
 *** Ingredients
 - Points: 4
@@ -1792,9 +1823,9 @@ https://www.kingarthurflour.com/recipes/cinnamon-apple-twist-bread-recipe
     + *DO NOT USE WAX PAPER UNDER THE PIES!* (They stick!)
     + I used 4 cups of strawberries, which made me go wild with filling. I think I filled some way too much. Not a help!
 ** Blueberry Zucchini Snack Cake with Lemon Buttercream
-Prep Time: 20 minutes
-Cook Time: 50 minutes
-Total Time: 1 hour, 10 minutes
+- Prep Time: 20 minutes
+- Cook Time: 50 minutes
+- Total Time: 1 hour, 10 minutes
 *** Ingredients
 **** Cake
 - 3 large eggs
@@ -1824,9 +1855,9 @@ Total Time: 1 hour, 10 minutes
 *** Yield
 Serves 12
 *** Credits
-Author: Sue Moran
-https://theviewfromgreatisland.com/blueberry-zucchini-snack-cake-with-lemon-buttercream/
-[2019-08-22 Thu]
+- Author: Sue Moran
+- https://theviewfromgreatisland.com/blueberry-zucchini-snack-cake-with-lemon-buttercream/
+- [2019-08-22 Thu]
 ** Bread Pudding
 *** Ingredients
 - 2 eggs
@@ -1988,15 +2019,15 @@ Pudding was good. I used well-ground coffee beans and didn't strain it.
 ** Classic Pie Crust (King Arthur)
 *** Ingredients
 **** 2 Crusts
+- 46g (1/4 cup) vegetable shortening
 - 297g (2 1/2 cups) King Arthur Unbleached All-Purpose Flour   or   283g King Arthur Perfect Pastry Blend
 - 1 1/4 teaspoons salt*
-- 46g (1/4 cup) vegetable shortening
 - 142g (10 tablespoons) very cold unsalted butter
 - 85g to 142g (6 to 10 tablespoons) ice water**
 **** 1 Crust
+- 23g (1/8 cup) vegetable shortening
 - 148.5g (1 1/4 cups) King Arthur Unbleached All-Purpose Flour or 141.5g King Arthur Perfect Pastry Blend
 - 3/8 teaspoons salt*
-- 23g (1/8 cup) vegetable shortening
 - 71g (5 tablespoons) very cold unsalted butter
 - 42.5g to 71g (3 to 5 tablespoons) ice water**
 **** Notes
