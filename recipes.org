@@ -583,6 +583,53 @@ By Carroll Pellegrinelli, About.com
 9. Remove bread from oven and place on a cooling rack to cool.
 *** Credits
 http://www.simplysogood.com/2013/03/artisan-no-knead-bread.html
+** Nina White’s One-Day Sourdough Bread
+Makes 2 large loaves
+*** Ingredients
+**** For 1 loaf:
+***** Preferment:
+- 200g starter
+- 100g water at 90 degrees F
+- 100 grams unbleached all-purpose wheat flour
+***** Final dough:
+- 275g water
+- 530g flour
+- all of the preferment
+- 15g salt
+**** For 2 loaves:
+***** Preferment:
+- 400g starter
+- 200g water at 90 degrees F
+- 200 grams unbleached all-purpose wheat flour
+***** Final dough:
+- 550g water
+- 1060g flour
+- all of the preferment
+- 30g salt
+*** Method
+1. Whisk together starter and water until starter has dissolved.
+2. Stir in wheat flour.
+3. Cover the bowl loosely and leave a room temperature for 6 hours.
+4. Add final dough’s water and flour to the pre-ferment and mix at low speed, until flour is moistened.
+5. Cover and let the dough rest for 30 minutes so it can experience autolyze.
+6. Sprinkle salt onto dough and mix on low speed until dough comes together, about 1 minute.
+7. Using a curved dough scraper, scoop dough onto a lightly flour surface.
+8. Fold dough in half. Rotate it 90 degrees and fold it in half again. (Maybe a few more times, until the dough’s surface is a “firm as the tip of your nose”.) Avoid adding too much more flour.
+9. Gently round the dough into a ball and place it in a bowl that will accommodate a doubling in bulk.
+10. Let rise, covered for about 2 hours.
+11. Gently scrape the dough out of the bowl and form into a rough football shape. Place in pan and cover with a (damp) towel.
+12. Let the pan rest for about 2 hours.
+13. Preheat oven to 550 degrees F for 25 minutes.
+14. Score the top of the loaf with a lame.
+15. Place three ice cubes in a container on the floor of the oven.
+16. Bake for 15 minutes.
+17. Reduce the temperature to 400 degrees F.
+18. Cook for 30 minutes more, until the crust is nicely browned and the internal temperature is 205 degrees F.
+19. Remove pan from oven and loaf from pan.
+20. Cool for at least an hour.
+*** Credits
+- From edible Jersey Holiday 2019 
+- (date created: 12/2/2019 6:04:21 PM)
 ** Pain au Levain
 Makes 2 loaves
 Takes a minimum of ~6 hours: 30 mixing + 4.5 rising + 1 baking
@@ -1211,6 +1258,33 @@ Serve these muffins with butter and honey -- or not.
 - http://www.cooks.com/rec/doc/0,165,130177-249195,00.html
 - (date created: 3/23/2009 8:41:32 AM)
 Three recipes fit into deep dish pan.
+** Gingerbread Granola
+*** Ingredients
+**** Dry
+- 293 g rolled oats (GF for gluten-free eaters)
+- 193 g raw nuts (I used almonds, pecans, and a few walnuts)
+- 37 g organic cane sugar (or sub extra molasses or maple syrup mixed in with wet ingredients)
+- 1/4 tsp sea salt
+- 1 1/2 tsp ground cinnamon
+- 3/4 tsp ground ginger
+- 1 pinch ground cloves (optional)
+**** Wet
+- 60 ml coconut or olive oil
+- 80 ml maple syrup (sub agave, or honey if not vegan)
+- 30 ml molasses
+- 1 tsp vanilla extract (optional)
+*** Method
+1. Preheat oven to 325 degrees F (162 C).
+2. Mix the dry ingredients together in a large bowl.
+3. In a small saucepan over medium low heat, warm the coconut oil, maple syrup, molasses and vanilla extract. Pour over the dry ingredients and mix well.
+4. Spread the mixture evenly onto a a large baking sheet and bake for 18–22 minutes, stirring near the halfway point to ensure even cooking. The coconut oil will help this granola crisp up nicely, but be sure to watch it carefully as it browns quickly.
+5. Once the granola is visibly browned (about 19 minutes for me), remove from the oven and let cool completely on the pan before storing. Consider turning the oven off and leaving the pan in it for the granola to get extra crispy.
+6. Keep in a container that has an air-tight seal and it should keep for a few weeks.
+*** Yield
+10 1/2-cup servings
+*** Credits
+- https://minimalistbaker.com/gingerbread-granola/
+- (date created: 12/2/2019 5:39:19 PM)
 ** Great Granola
 *** Ingredients
 - 1/4 cup butter
@@ -1912,8 +1986,10 @@ Serves 12
 5. Or, once cool, frost the cake with this simple chocolate frosting: Heat the chocolate chips with the half & half until the chips melt. Stir until smooth, and pour/spread over the cake. For a non-dairy icing, substitute 1/3 cup cold brewed coffee (or water) for the half-and-half.
 6. Store cake, well covered, at room temperature for several days; freeze for longer storage.
 *** Yield
+one 8" square or 9" round cake
 *** Credits
 https://www.kingarthurflour.com/recipes/king-arthur-flours-original-cake-pan-cake-recipe
+[2019-09-23 Mon]
 ** Chocolate Chip Cookies
 *** Ingredients
 - 1 cup unbleached flour (I use King Arthur - organic if I can find it)
@@ -2843,7 +2919,7 @@ Serves: 4 servings
 - (date created: 9/5/2010 10:02:09 PM)
 ** Mexican Lasagna
 *** Ingredients
-- 1 pound canned pinto, pink or black beans, drained and rinsed
+- 1 pound canned pinto, pink and/or black beans, drained and rinsed
 - 14 ounce can diced or stewed tomatoes
 - 4 ounce can chopped mild green chilies
 - 2 cups frozen corn kernels, thawed
@@ -2854,12 +2930,12 @@ Serves: 4 servings
 - 1 1/2 cups grated cheese (Monterrey Jack or cheddar)
 - reduced-fat sour cream
 *** Method
-1. Preheat the oven to 400 degrees
+1. Preheat the oven to 400 degrees.
 2. Combine the first 7 ingredients in a mixing bowl. Mix thoroughly.
 3. Lightly oil a wide, 2-quart casserole dish and layer as follows:
-     - 4 tortillas, overlapping each other
-     - half the bean mixture
-     - half the cheese
+     + 4 tortillas, overlapping each other
+     + half the bean mixture
+     + half the cheese
 4. Repeat layers.
 5. Bake the casserole for 12 to 15 minutes, until cheese is bubbly. Let stand for a minute or two, then cut into squares to serve. Top with sour cream, if desired.
 *** Credits
@@ -2977,38 +3053,6 @@ Serves 6
 *** Credits
 https://www.pizzamaking.com/deepdish.php
 JC found this after Nancy made America's Test Kitchen's version of Uno's deep-dish pizza.
-** Vegetable Pot Pie
-*** Ingredients
-- 1 cup potato, diced
-- 1 cup onion, diced
-- 1 cup celery, diced
-- 1 cup carrot, diced
-- 1/3 cup melted butter
-- 1/2 cup all-purpose flour
-- 2 cups vegetable broth
-- 1 cup half-and-half
-- 1 teaspoon salt
-- 1/4 teaspoon pepper
-- 1/2 teaspoon of rosemary (optional)
-- 1/2 teaspoon of thyme (optional)
-- 1/2 cup TVP and/or mock meat (optional)
-- 1 pie crust (either store bought or your own recipe)
-*** Method
-1. Preheat oven to 400 degrees F.
-2. Saute onion, celery, carrots and potatoes in butter for 10 minutes.
-3. Add flour to sauteed mixture, stirring well, cook one minute stirring constantly.
-4. Combine broth and half and half.
-5. Gradually stir into vegetable mixture.
-6. Cook over medium heat stirring constantly until thickened and bubbly.
-7. Stir in salt and pepper; add TVP and/or mock meat and stir well.
-8. Pour into shallow 2 quart casserole dish and top with pie shells.
-9. Cut slits to allow steam to escape.
-10. Bake for 40-50 minutes or until pastry is golden brown and filling is bubbly and cooked through.
-*** Credits
-Recommended by Louise.
-Prep Time: 1 hr
-Total Time: 1 hr 45 mins
-Servings: 6-8
 ** Quiche
 *** Ingredients
 - red onion
@@ -3305,24 +3349,27 @@ Servings: 6-8
 - 1 cup carrots, diced
 - 1/3 cup melted butter
 - 1/2 cup all-purpose flour
-- 2 cups broth
+- 2 cups vegetable broth
 - 1 cup half-and-half
 - 1 teaspoon salt
 - 1/4 teaspoon pepper
+- 1/2 teaspoon of rosemary (optional)
+- 1/2 teaspoon of thyme (optional)
 - 1 cup peas
-- 1 cup TVP (optional)
-- 2 pie crusts (either store bought or your own recipe)
+- 1 cup TVP or other mock meat (optional)
+- 1 pie crust (either store bought or your own recipe)
 *** Method
-1. Preheat oven to 400 degreesF.
+1. Preheat oven to 400 degrees F.
 2. Saute onion, celery, carrots and potatoes in butter for 10 minutes.
 3. Add flour to sauteed mixture, stirring well, cook one minute stirring constantly.
 4. Combine broth and half and half; gradually stir into vegetable mixture.
-6. Cook over medium heat stirring constantly until thickened and bubbly.
-7. Stir in salt and pepper; add peas and TVP (if using) and stir well.
-8. Pour into shallow 2 quart casserole dish and top with pie shells.
-9. Cut slits to allow steam to escape.
-10. Bake for 40-50 minutes or until pastry is golden brown and filling is bubbly and cooked through.
+5. Cook over medium heat stirring constantly until thickened and bubbly.
+6. Stir in salt and pepper; add peas and TVP or other mock meat (if using) and stir well.
+7. Pour into shallow 2 quart casserole dish and top with pie shell.
+8. Cut slits to allow steam to escape.
+9. Bake for 40-50 minutes or until pastry is golden brown and filling is bubbly and cooked through.
 *** Credits
+Recommended by Louise.
 By Vincy Bramblett on August 07, 2001 97.40%;  708 Reviews
 https://www.epicurious.com/recipes/member/views/delicious-chicken-pot-pie-52349241
 http://www.geniuskitchen.com/recipe/delicious-chicken-pot-pie-10744
@@ -3630,15 +3677,39 @@ Time: 30 to 60 minutes, depending on the type of rice
 - (date created: 7/31/2008 9:53:08 AM)
 ** Japanese Ginger Dressing
 *** Ingredients
-1. 1/2 onion
-2. 1/2 cup canola oil
-3. 1/2 cup rice vinegar
-4. 1/4 cup soy sauce
-5. 1 inch chunk of fresh ginger
-6. 1 tbs sugar
-7. Salt and pepper to taste
++ 1/2 onion
++ 1/2 cup canola oil
++ 1/2 cup rice vinegar
++ 1/4 cup soy sauce
++ 1 inch chunk of fresh ginger
++ 1 tbs sugar
++ Salt and pepper to taste
 *** Method
-Mix everything
+Mix everything and serve
+** Lentil and Black Bean Soup with Smoked Paprika
+*** Ingredients
+- 1 tablespoon olive oil
+- 1/2 large onion chopped
+- 2 large stalks celery diced
+- 2 cloves garlic minced
+- 2 teaspoons smoked paprika
+- 2 bay leaves
+- 1 14 ounces can diced tomatoes
+- 1 cup dried brown lentils
+- 4 3/4 cup low-sodium vegetable or chicken broth divided
+- 3 cups water
+- 1 14 ounces can black beans, drained and rinsed
+- 1/4 cup chopped parsley
+- salt and pepper to taste
+*** Method
+1. Heat olive oil in a large sauce pan set over medium heat. Add onions and celery and cook, stirring occasionally, until the vegetables are beginning to soften, 6 to 7 minutes.
+2. Add garlic, smoked paprika and bay leaves and saute for 30 seconds.
+3. Stir in diced tomatoes with juices, lentils, 3 cups vegetable or chicken broth and 3 cups water. Increase heat to medium-high and bring the mixture to a boil. Reduce the heat slightly and cook, stirring occasionally, until lentils are tender, 25 to 35 minutes.
+4. Remove from the heat and let cool for about 10 minutes. Remove and discard the bay leaves. Transfer half of the lentil mixture, half of the black beans and ¾ cup vegetable or chicken broth to the bowl of a blender or food processor. Pulse until combined, but not pureed. It should be a chunky texture.
+5. Pour the blender mixture back into the lentils in the saucepan, along with the remaining 1 cup of chicken broth and remaining black beans. Stir and reheat over medium heat.
+*** Credits
+https://www.cookincanuck.com/hearty-lentil-black-bean-soup-with-smoked-paprika-recipe/
+(date created: 11/25/2019 7:50:21 AM)
 ** Patatas Bravas
 *** Ingredients
 **** Dipping Sauce:
@@ -3757,23 +3828,45 @@ http://query.nytimes.com/gst/fullpage.html?res=9E05E6D7153FF93AA25753C1A9639C8B6
 - (date created: 6/27/2007 4:42:13 PM)
 ** White Corn Tortilla Soup
 *** Ingredients
-- 3 T Olive Oil
+**** For 5 servings:
+- 3 Tablespoon olive oil
 - 1 1/2 tortillas cut into 1" squares
-- 1 1/2 T minced garlic
-- 2 T minced white onions
-- l 1/2 t minced jalapeno pepper
+- 1 1/2 Tablespoon minced garlic
+- 2 Tablespoon minced white onions
+- 1 1/2 teaspoon minced jalapeño pepper
 - 1 lb white corn kernels
 - 1 1/2 lb chopped tomatoes
 - 1/3 C tomato paste
-- 2 1/2 t ground cumin
-- 1 T Kosher salt
-- 1/8 t ground white pepper
-- 1/2 t chili powder
-- 1 1/2 C water
-- 1 Quart (chicken) stock
+- 2 1/2 teaspoon ground cumin
+- 1 Tablespoon Kosher salt
+- 1/8 teaspoon ground white pepper
+- 1/2 teaspoon chili powder
+- 1 1/2 cup water
+- 1 quart vegetable stock
+- 24 blue corn chips (optional garnish)
+- 2 cups shredded cheddar cheese (optional garnish)
+- 1/2 cup chopped fresh cilantro (optional garnish)
+**** For 10 servings:
+- 6 Tablespoon olive oil
+- 3 tortillas cut into 1" squares
+- 3 Tablespoon minced garlic
+- 4 Tablespoon minced white onions
+- 3 teaspoon minced jalapeño pepper
+- 2 lb white corn kernels
+- 3 lb chopped tomatoes
+- 2/3 C tomato paste
+- 5 teaspoon ground cumin
+- 2 Tablespoon Kosher salt
+- 1/4 teaspoon ground white pepper
+- 1 teaspoon chili powder
+- 3 cup water
+- 2 quart vegetable stock
+- 48 blue corn chips (optional garnish)
+- 4 cups shredded cheddar cheese (optional garnish)
+- 1 cup chopped fresh cilantro (optional garnish)
 *** Method
 1. Fry tortilla squares in olive oil until they begin to crisp.
-2. Add onion, garlic, and jalapeno.
+2. Add onion, garlic and jalapeño.
 3. Cook 1 - 2 minutes until onion becomes translucent.
 4. Add half the corn and all other ingredients.
 5. Bring soup to a low, even boil.
