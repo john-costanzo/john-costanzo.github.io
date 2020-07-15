@@ -17,7 +17,7 @@
 .searchBoxElement{
     position: fixed;
     bottom: 16px;
-    left: 146px;
+    left: 64px;
     z-index: 10000;
 }
 
@@ -35,7 +35,7 @@
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 250px;
+    width: 200px;
     background-color: lightgrey;
     color: black;
     text-align: center;
@@ -47,7 +47,7 @@
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -100px;
 
     /* Fade in tooltip */
     opacity: 0;
