@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 8px;
+	  font-size: 16px;
+	  border: none;
+          width: 200px;
+	  z-index: 1000;
+      }
+
+      .dropdown {
+	  position: -webkit-sticky; /* Safari */
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  display: inline-block;
+          z-index: 1000;
+      }
+
+      .dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  width: 200px;
+	  font-size: 14px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1000;
+      }
+
+      .dropdown-content a {
+	  color: black;
+	  padding: 6px 8px;
+	  text-decoration: none;
+	  display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #ddd;}
+      .dropdown:hover .dropdown-content {display: block;}
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+      body {
+	  margin: 0;
+	  padding: 2rem;
+      }
+
+      table {
+	  text-align: left;
+	  position: relative;
+	  border-collapse: collapse;
+      }
+      td, th {
+	  border: 1px solid #dddddd;
+	  padding: 8px;
+      }
+      h1 {
+	  text-align: center;
+      }
+      tr:nth-child(even) {
+	  background-color: #dddddd;
+      }
+      th {
+	  text-align: center;
+	  background: white;
+	  position: sticky;
+	  top: 0; /* Don't forget this, required for the stickiness */
+	  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+
+
+                    <div class="dropdown">
+                      <button class="dropbtn">Reports</button>
+                      <div class="dropdown-content">
+                
+<a href="Summary_of_Viewed_Videos.html">Summary of Viewed Videos</a>
+<a href="Every_Viewed_Video__by_date_.html">Every Viewed Video (by date)</a>
+<a href="Number_of_Videos_Viewed__ordered_by_month_.html">Number of Videos Viewed (ordered by month)</a>
+<a href="Number_of_Videos_Viewed__ordered_by_number_of_videos_viewed_.html">Number of Videos Viewed (ordered by number of videos viewed)</a>
+<a href="Videos_Viewed__by_month_.html">Videos Viewed (by month)</a>
+<a href="Episode_Analysis__ordered_by_number_of_episodes_watched_.html">Episode Analysis (ordered by number of episodes watched)</a>
+<a href="Episode_Analysis__ordered_by_number_of_days_between_episodes,_where___episodes_1_.html">Episode Analysis (ordered by number of days between episodes, where # episodes>1)</a>
+<a href="graph_Episodes_Viewed__by_month_.html">Episodes Viewed (by month) [graph]</a>
+
+                      </div>
+                    </div>
+                
+<h1>Summary of Viewed Videos</h1>
+
+    <table >
+
+ <tr> <th>Total Videos viewed</th> <th>Start</th> <th>End</th> </tr>
+<TR><TD>2,539</TD>
+<TD>2007-08-10</TD>
+<TD>2020-11-04</TD>
+</TR>
+
+
+      <table>
+
+
+  </body>
+</html>
+
