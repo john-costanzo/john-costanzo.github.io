@@ -1,0 +1,15 @@
+# -*- mode: org; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://john-costanzo.github.io/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://john-costanzo.github.io/css/bigblow.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://john-costanzo.github.io/css/bigblow-hideshow.css"/>
+
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/jquery-1.11.0.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/jquery-ui-1.10.2.min.js"></script>
+
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/jquery.localscroll-min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/jquery.zclip.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/bigblow.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/hideshow.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://john-costanzo.github.io/js/jquery.stickytableheaders.min.js"></script>
