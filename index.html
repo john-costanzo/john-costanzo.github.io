@@ -3,7 +3,6 @@
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head>
-    <!-- 2019-01-29 Tue 11:03 -->
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>John's Favorite Areas</title>
@@ -13,6 +12,15 @@
 	  font-weight: bold;
 	  margin: 10px 0;
       }
+      a:link {
+	  text-decoration: none;
+      }
+      a:hover {
+	  text-decoration: underline;
+      }
+      .favorite {
+	  margin-left: 10px;
+	  margin-right: 10px;
     </style>
   </head>
 
@@ -26,11 +34,11 @@
       <li><a href="Summary_of_Viewed_Videos.html">Netflix Usage Analysis</a></li>
       <li><a href="https://www.internet-radio.com/">Internet radio stations:</a></li>
       <font size=+2>
-      Stations:&nbsp;&nbsp;
-	<a href="http://uk5.internet-radio.com:8296/stream">Hits</a>&nbsp;&nbsp;
-	<a href="http://66.147.225.141:8021/autodj">Crooners</a>&nbsp;&nbsp;
+      Favorite Stations:
+	<span class="favorite"><a href="http://uk5.internet-radio.com:8296/stream">Pop Hits</a></span>
+	<span class="favorite"><a href="http://66.147.225.141:8021/autodj" class="favorite">Crooners</a></span>
 	<!--
-	<li><a href="">  </a></li>&nbsp;&nbsp;
+	<span class="favorite"><li><a href="" class="favorite">  </a></li></span>
 	-->
       <p>
       Searches:
