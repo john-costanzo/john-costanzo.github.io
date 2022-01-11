@@ -1,0 +1,972 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 8px;
+	  font-size: 16px;
+	  border: none;
+          width: 200px;
+	  z-index: 1000;
+      }
+
+      .dropdown {
+	  position: -webkit-sticky; /* Safari */
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  display: inline-block;
+          z-index: 1000;
+      }
+
+      .dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  width: 200px;
+	  font-size: 14px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1000;
+      }
+
+      .dropdown-content a {
+	  color: black;
+	  padding: 6px 8px;
+	  text-decoration: none;
+	  display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #ddd;}
+      .dropdown:hover .dropdown-content {display: block;}
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+      .footer {
+	  font-size: 8px;
+	  position: fixed;
+	  bottom: 0;
+	  right: 0;
+      }
+
+      body {
+	  margin: 0;
+	  padding: 2rem;
+      }
+
+      table {
+	  text-align: left;
+	  position: relative;
+	  border-collapse: collapse;
+      }
+      td, th {
+	  border: 1px solid #dddddd;
+	  padding: 8px;
+      }
+      h1 {
+	  text-align: center;
+      }
+      tr:nth-child(even) {
+	  background-color: #dddddd;
+      }
+      th {
+	  text-align: center;
+	  background: white;
+	  position: sticky;
+	  top: 0; /* Don't forget this, required for the stickiness */
+	  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+
+
+                    <div class="dropdown">
+                      <button class="dropbtn">Reports</button>
+                      <div class="dropdown-content">
+                
+<a href="Summary_of_Viewed_Videos.html">Summary of Viewed Videos</a>
+<a href="Every_Viewed_Video__by_date_.html">Every Viewed Video (by date)</a>
+<a href="Number_of_Videos_Viewed__sorted_by_month_.html">Number of Videos Viewed (sorted by month)</a>
+<a href="Number_of_Videos_Viewed__sorted_by_number_of_videos_viewed_.html">Number of Videos Viewed (sorted by number of videos viewed)</a>
+<a href="Videos_Viewed__by_month_.html">Videos Viewed (by month)</a>
+<a href="Episode_Analysis__sorted_by_number_of_episodes_watched_.html">Episode Analysis (sorted by number of episodes watched)</a>
+<a href="Episode_Analysis__sorted_by_number_of_days_between_episodes,_where___episodes_2_.html">Episode Analysis (sorted by number of days between episodes, where # episodes>2)</a>
+
+                      </div>
+                    </div>
+                
+<h1>Episode Analysis (sorted by number of days between episodes, where # episodes>2)</h1>
+
+    <table >
+
+ <tr> <th>Series</th> <th>Start</th>  <th>End</th>  <th>Episodes Watched</th> <th>Average Days Between Episodes</th> </tr>
+<TR><TD>The Politician&#39;s Husband</TD>
+<TD>2014-11-02</TD>
+<TD>2014-11-02</TD>
+<TD>3</TD>
+<TD>0.0</TD>
+</TR>
+<TR><TD>The Stranger</TD>
+<TD>2021-12-03</TD>
+<TD>2021-12-05</TD>
+<TD>8</TD>
+<TD>0.3</TD>
+</TR>
+<TR><TD>Unorthodox</TD>
+<TD>2020-03-30</TD>
+<TD>2020-03-31</TD>
+<TD>4</TD>
+<TD>0.3</TD>
+</TR>
+<TR><TD>Damages</TD>
+<TD>2013-11-08</TD>
+<TD>2013-11-09</TD>
+<TD>3</TD>
+<TD>0.3</TD>
+</TR>
+<TR><TD>P.D. James: Original Sin: Original Sin</TD>
+<TD>2011-09-25</TD>
+<TD>2011-09-26</TD>
+<TD>3</TD>
+<TD>0.3</TD>
+</TR>
+<TR><TD>Top of the Lake</TD>
+<TD>2017-03-06</TD>
+<TD>2017-03-09</TD>
+<TD>7</TD>
+<TD>0.4</TD>
+</TR>
+<TR><TD>Cobra Kai</TD>
+<TD>2021-01-11</TD>
+<TD>2021-01-25</TD>
+<TD>30</TD>
+<TD>0.5</TD>
+</TR>
+<TR><TD>Cuckoo</TD>
+<TD>2022-01-02</TD>
+<TD>2022-01-06</TD>
+<TD>8</TD>
+<TD>0.5</TD>
+</TR>
+<TR><TD>Freud</TD>
+<TD>2020-03-25</TD>
+<TD>2020-03-27</TD>
+<TD>4</TD>
+<TD>0.5</TD>
+</TR>
+<TR><TD>Special</TD>
+<TD>2021-07-18</TD>
+<TD>2021-07-20</TD>
+<TD>4</TD>
+<TD>0.5</TD>
+</TR>
+<TR><TD>The Indian Detective</TD>
+<TD>2018-01-07</TD>
+<TD>2018-01-09</TD>
+<TD>4</TD>
+<TD>0.5</TD>
+</TR>
+<TR><TD>The Pharmacist</TD>
+<TD>2020-02-08</TD>
+<TD>2020-02-10</TD>
+<TD>4</TD>
+<TD>0.5</TD>
+</TR>
+<TR><TD>Nurse Jackie</TD>
+<TD>2016-01-05</TD>
+<TD>2016-02-21</TD>
+<TD>80</TD>
+<TD>0.6</TD>
+</TR>
+<TR><TD>Away</TD>
+<TD>2021-01-05</TD>
+<TD>2021-01-11</TD>
+<TD>10</TD>
+<TD>0.6</TD>
+</TR>
+<TR><TD>Offspring</TD>
+<TD>2021-10-10</TD>
+<TD>2021-12-02</TD>
+<TD>86</TD>
+<TD>0.6</TD>
+</TR>
+<TR><TD>Feel Good</TD>
+<TD>2021-06-22</TD>
+<TD>2021-06-30</TD>
+<TD>12</TD>
+<TD>0.7</TD>
+</TR>
+<TR><TD>It&#39;s Always Sunny in Philadelphia</TD>
+<TD>2013-11-11</TD>
+<TD>2013-11-13</TD>
+<TD>3</TD>
+<TD>0.7</TD>
+</TR>
+<TR><TD>Monarchy (U.K.)</TD>
+<TD>2013-03-11</TD>
+<TD>2013-03-13</TD>
+<TD>3</TD>
+<TD>0.7</TD>
+</TR>
+<TR><TD>The Last Czars</TD>
+<TD>2019-07-03</TD>
+<TD>2019-07-07</TD>
+<TD>6</TD>
+<TD>0.7</TD>
+</TR>
+<TR><TD>Weeds</TD>
+<TD>2009-01-12</TD>
+<TD>2009-01-27</TD>
+<TD>22</TD>
+<TD>0.7</TD>
+</TR>
+<TR><TD>Bridgerton</TD>
+<TD>2020-12-29</TD>
+<TD>2021-01-04</TD>
+<TD>8</TD>
+<TD>0.8</TD>
+</TR>
+<TR><TD>Broadchurch</TD>
+<TD>2017-01-25</TD>
+<TD>2017-02-06</TD>
+<TD>16</TD>
+<TD>0.8</TD>
+</TR>
+<TR><TD>Fleming: The Man Who Would Be Bond</TD>
+<TD>2014-11-26</TD>
+<TD>2014-11-29</TD>
+<TD>4</TD>
+<TD>0.8</TD>
+</TR>
+<TR><TD>The Queen&#39;s Gambit</TD>
+<TD>2020-12-21</TD>
+<TD>2020-12-27</TD>
+<TD>7</TD>
+<TD>0.9</TD>
+</TR>
+<TR><TD>The Slap</TD>
+<TD>2015-04-21</TD>
+<TD>2015-04-28</TD>
+<TD>8</TD>
+<TD>0.9</TD>
+</TR>
+<TR><TD>Aquarius</TD>
+<TD>2021-07-05</TD>
+<TD>2021-07-28</TD>
+<TD>26</TD>
+<TD>0.9</TD>
+</TR>
+<TR><TD>The Forsyte Saga</TD>
+<TD>2015-02-11</TD>
+<TD>2015-02-20</TD>
+<TD>10</TD>
+<TD>0.9</TD>
+</TR>
+<TR><TD>Adam Ruins Everything</TD>
+<TD>2019-04-04</TD>
+<TD>2019-04-07</TD>
+<TD>3</TD>
+<TD>1.0</TD>
+</TR>
+<TR><TD>M*A*S*H</TD>
+<TD>2015-02-16</TD>
+<TD>2015-02-19</TD>
+<TD>3</TD>
+<TD>1.0</TD>
+</TR>
+<TR><TD>Russian Doll</TD>
+<TD>2019-02-15</TD>
+<TD>2019-02-23</TD>
+<TD>8</TD>
+<TD>1.0</TD>
+</TR>
+<TR><TD>Downton Abbey</TD>
+<TD>2011-03-28</TD>
+<TD>2011-04-05</TD>
+<TD>7</TD>
+<TD>1.1</TD>
+</TR>
+<TR><TD>Churchill’s Secret Agents: The New Recruits</TD>
+<TD>2018-07-02</TD>
+<TD>2018-07-08</TD>
+<TD>5</TD>
+<TD>1.2</TD>
+</TR>
+<TR><TD>Monty Python&#39;s Almost the Truth: The Lawyer&#39;s Cut</TD>
+<TD>2021-12-29</TD>
+<TD>2022-01-04</TD>
+<TD>5</TD>
+<TD>1.2</TD>
+</TR>
+<TR><TD>The Sixties</TD>
+<TD>2016-08-03</TD>
+<TD>2016-08-08</TD>
+<TD>4</TD>
+<TD>1.3</TD>
+</TR>
+<TR><TD>This Is a Robbery: The World&#39;s Biggest Art Heist</TD>
+<TD>2021-05-12</TD>
+<TD>2021-05-17</TD>
+<TD>4</TD>
+<TD>1.3</TD>
+</TR>
+<TR><TD>Wives &amp; Daughters</TD>
+<TD>2014-10-29</TD>
+<TD>2014-11-03</TD>
+<TD>4</TD>
+<TD>1.3</TD>
+</TR>
+<TR><TD>Get Shorty</TD>
+<TD>2019-01-07</TD>
+<TD>2019-01-20</TD>
+<TD>10</TD>
+<TD>1.3</TD>
+</TR>
+<TR><TD>Peaky Blinders</TD>
+<TD>2014-11-12</TD>
+<TD>2014-11-24</TD>
+<TD>9</TD>
+<TD>1.3</TD>
+</TR>
+<TR><TD>Velvet</TD>
+<TD>2016-08-20</TD>
+<TD>2016-08-24</TD>
+<TD>3</TD>
+<TD>1.3</TD>
+</TR>
+<TR><TD>Manifest</TD>
+<TD>2021-07-31</TD>
+<TD>2021-09-21</TD>
+<TD>38</TD>
+<TD>1.4</TD>
+</TR>
+<TR><TD>The Tudors</TD>
+<TD>2011-10-10</TD>
+<TD>2011-11-29</TD>
+<TD>36</TD>
+<TD>1.4</TD>
+</TR>
+<TR><TD>Doctor Who</TD>
+<TD>2012-03-05</TD>
+<TD>2012-03-12</TD>
+<TD>5</TD>
+<TD>1.4</TD>
+</TR>
+<TR><TD>Messiah</TD>
+<TD>2020-01-08</TD>
+<TD>2020-01-22</TD>
+<TD>10</TD>
+<TD>1.4</TD>
+</TR>
+<TR><TD>Ozark</TD>
+<TD>2020-04-03</TD>
+<TD>2020-04-21</TD>
+<TD>12</TD>
+<TD>1.5</TD>
+</TR>
+<TR><TD>Jane The Virgin</TD>
+<TD>2020-07-21</TD>
+<TD>2020-12-20</TD>
+<TD>100</TD>
+<TD>1.5</TD>
+</TR>
+<TR><TD>W1A</TD>
+<TD>2018-05-31</TD>
+<TD>2018-06-23</TD>
+<TD>15</TD>
+<TD>1.5</TD>
+</TR>
+<TR><TD>Happy Valley</TD>
+<TD>2016-12-19</TD>
+<TD>2017-01-07</TD>
+<TD>12</TD>
+<TD>1.6</TD>
+</TR>
+<TR><TD>London Spy</TD>
+<TD>2017-11-27</TD>
+<TD>2017-12-05</TD>
+<TD>5</TD>
+<TD>1.6</TD>
+</TR>
+<TR><TD>Bleak House</TD>
+<TD>2014-04-30</TD>
+<TD>2014-05-13</TD>
+<TD>8</TD>
+<TD>1.6</TD>
+</TR>
+<TR><TD>An Idiot Abroad</TD>
+<TD>2014-12-16</TD>
+<TD>2014-12-21</TD>
+<TD>3</TD>
+<TD>1.7</TD>
+</TR>
+<TR><TD>The Honorable Woman</TD>
+<TD>2015-05-15</TD>
+<TD>2015-05-27</TD>
+<TD>7</TD>
+<TD>1.7</TD>
+</TR>
+<TR><TD>The Vietnam War: A Film by Ken Burns and Lynn Novick</TD>
+<TD>2018-07-09</TD>
+<TD>2018-07-16</TD>
+<TD>4</TD>
+<TD>1.8</TD>
+</TR>
+<TR><TD>Doctor Foster</TD>
+<TD>2016-11-05</TD>
+<TD>2016-11-14</TD>
+<TD>5</TD>
+<TD>1.8</TD>
+</TR>
+<TR><TD>Pretend It’s a City</TD>
+<TD>2021-01-12</TD>
+<TD>2021-01-25</TD>
+<TD>7</TD>
+<TD>1.9</TD>
+</TR>
+<TR><TD>The People vs. O.J. Simpson</TD>
+<TD>2018-03-21</TD>
+<TD>2018-04-09</TD>
+<TD>10</TD>
+<TD>1.9</TD>
+</TR>
+<TR><TD>The Time In Between</TD>
+<TD>2015-12-02</TD>
+<TD>2016-01-04</TD>
+<TD>17</TD>
+<TD>1.9</TD>
+</TR>
+<TR><TD>Salamander</TD>
+<TD>2015-05-31</TD>
+<TD>2015-06-24</TD>
+<TD>12</TD>
+<TD>2.0</TD>
+</TR>
+<TR><TD>Sex, Explained</TD>
+<TD>2020-01-02</TD>
+<TD>2020-01-08</TD>
+<TD>3</TD>
+<TD>2.0</TD>
+</TR>
+<TR><TD>The Staircase</TD>
+<TD>2019-08-14</TD>
+<TD>2019-09-07</TD>
+<TD>12</TD>
+<TD>2.0</TD>
+</TR>
+<TR><TD>When They See Us</TD>
+<TD>2019-06-09</TD>
+<TD>2019-06-17</TD>
+<TD>4</TD>
+<TD>2.0</TD>
+</TR>
+<TR><TD>Gavin &amp; Stacey</TD>
+<TD>2013-09-03</TD>
+<TD>2013-09-17</TD>
+<TD>6</TD>
+<TD>2.3</TD>
+</TR>
+<TR><TD>Life in Color with David Attenborough</TD>
+<TD>2021-04-26</TD>
+<TD>2021-05-03</TD>
+<TD>3</TD>
+<TD>2.3</TD>
+</TR>
+<TR><TD>Tribe, Animals &amp; Me</TD>
+<TD>2017-04-29</TD>
+<TD>2017-05-06</TD>
+<TD>3</TD>
+<TD>2.3</TD>
+</TR>
+<TR><TD>Hjørdis</TD>
+<TD>2016-04-11</TD>
+<TD>2016-04-22</TD>
+<TD>4</TD>
+<TD>2.8</TD>
+</TR>
+<TR><TD>Jekyll</TD>
+<TD>2012-10-12</TD>
+<TD>2012-10-23</TD>
+<TD>4</TD>
+<TD>2.8</TD>
+</TR>
+<TR><TD>The Kennedys</TD>
+<TD>2011-06-21</TD>
+<TD>2011-07-13</TD>
+<TD>8</TD>
+<TD>2.8</TD>
+</TR>
+<TR><TD>A Young Doctor&#39;s Notebook and Other Stories</TD>
+<TD>2014-08-27</TD>
+<TD>2014-09-05</TD>
+<TD>3</TD>
+<TD>3.0</TD>
+</TR>
+<TR><TD>TURN: Washington&#39;s Spies</TD>
+<TD>2016-02-28</TD>
+<TD>2016-05-04</TD>
+<TD>20</TD>
+<TD>3.3</TD>
+</TR>
+<TR><TD>Malcolm in the Middle</TD>
+<TD>2013-11-15</TD>
+<TD>2013-11-26</TD>
+<TD>3</TD>
+<TD>3.7</TD>
+</TR>
+<TR><TD>Marseille</TD>
+<TD>2018-03-01</TD>
+<TD>2018-03-12</TD>
+<TD>3</TD>
+<TD>3.7</TD>
+</TR>
+<TR><TD>Indian Matchmaking</TD>
+<TD>2020-07-30</TD>
+<TD>2020-09-03</TD>
+<TD>8</TD>
+<TD>4.4</TD>
+</TR>
+<TR><TD>House, M.D.</TD>
+<TD>2014-04-28</TD>
+<TD>2014-05-14</TD>
+<TD>3</TD>
+<TD>5.3</TD>
+</TR>
+<TR><TD>Dead to Me</TD>
+<TD>2020-01-13</TD>
+<TD>2020-05-24</TD>
+<TD>20</TD>
+<TD>6.6</TD>
+</TR>
+<TR><TD>New Girl</TD>
+<TD>2016-12-05</TD>
+<TD>2017-01-11</TD>
+<TD>5</TD>
+<TD>7.4</TD>
+</TR>
+<TR><TD>The Killing</TD>
+<TD>2013-10-21</TD>
+<TD>2014-05-26</TD>
+<TD>28</TD>
+<TD>7.8</TD>
+</TR>
+<TR><TD>Stranger Things</TD>
+<TD>2019-07-08</TD>
+<TD>2019-12-15</TD>
+<TD>19</TD>
+<TD>8.4</TD>
+</TR>
+<TR><TD>My Name Is Earl</TD>
+<TD>2011-12-20</TD>
+<TD>2014-03-17</TD>
+<TD>96</TD>
+<TD>8.5</TD>
+</TR>
+<TR><TD>The Royal House of Windsor</TD>
+<TD>2017-10-19</TD>
+<TD>2017-11-14</TD>
+<TD>3</TD>
+<TD>8.7</TD>
+</TR>
+<TR><TD>Shtisel</TD>
+<TD>2020-05-27</TD>
+<TD>2021-04-04</TD>
+<TD>33</TD>
+<TD>9.5</TD>
+</TR>
+<TR><TD>Unbreakable Kimmy Schmidt</TD>
+<TD>2015-03-29</TD>
+<TD>2015-08-09</TD>
+<TD>13</TD>
+<TD>10.2</TD>
+</TR>
+<TR><TD>The Great British Baking Show: The Beginnings</TD>
+<TD>2021-04-22</TD>
+<TD>2021-08-12</TD>
+<TD>10</TD>
+<TD>11.2</TD>
+</TR>
+<TR><TD>Narcos</TD>
+<TD>2016-09-27</TD>
+<TD>2017-09-17</TD>
+<TD>30</TD>
+<TD>11.8</TD>
+</TR>
+<TR><TD>Black Earth Rising</TD>
+<TD>2019-01-30</TD>
+<TD>2019-04-17</TD>
+<TD>6</TD>
+<TD>12.8</TD>
+</TR>
+<TR><TD>Money Heist</TD>
+<TD>2019-05-13</TD>
+<TD>2020-08-08</TD>
+<TD>33</TD>
+<TD>13.7</TD>
+</TR>
+<TR><TD>Cabins in the Wild with Dick Strawbridge</TD>
+<TD>2020-02-26</TD>
+<TD>2020-04-09</TD>
+<TD>3</TD>
+<TD>14.3</TD>
+</TR>
+<TR><TD>Lupin</TD>
+<TD>2021-01-29</TD>
+<TD>2021-06-30</TD>
+<TD>10</TD>
+<TD>15.2</TD>
+</TR>
+<TR><TD>Bloodline</TD>
+<TD>2015-08-29</TD>
+<TD>2016-06-12</TD>
+<TD>18</TD>
+<TD>16.0</TD>
+</TR>
+<TR><TD>Episodes</TD>
+<TD>2018-01-09</TD>
+<TD>2019-11-18</TD>
+<TD>41</TD>
+<TD>16.5</TD>
+</TR>
+<TR><TD>The Casketeers</TD>
+<TD>2019-01-16</TD>
+<TD>2019-10-01</TD>
+<TD>14</TD>
+<TD>18.4</TD>
+</TR>
+<TR><TD>Detectorists</TD>
+<TD>2016-02-23</TD>
+<TD>2016-10-26</TD>
+<TD>13</TD>
+<TD>18.9</TD>
+</TR>
+<TR><TD>Jeopardy!</TD>
+<TD>2018-12-13</TD>
+<TD>2021-07-26</TD>
+<TD>50</TD>
+<TD>19.1</TD>
+</TR>
+<TR><TD>The House of Cards Trilogy (BBC): House of Cards</TD>
+<TD>2012-06-01</TD>
+<TD>2012-08-21</TD>
+<TD>4</TD>
+<TD>20.3</TD>
+</TR>
+<TR><TD>30 Rock</TD>
+<TD>2008-01-03</TD>
+<TD>2014-01-19</TD>
+<TD>96</TD>
+<TD>23.0</TD>
+</TR>
+<TR><TD>Foyle&#39;s War</TD>
+<TD>2012-12-03</TD>
+<TD>2013-02-21</TD>
+<TD>3</TD>
+<TD>26.7</TD>
+</TR>
+<TR><TD>Orange Is the New Black</TD>
+<TD>2013-07-30</TD>
+<TD>2018-09-03</TD>
+<TD>66</TD>
+<TD>28.2</TD>
+</TR>
+<TR><TD>The Paradise</TD>
+<TD>2015-11-04</TD>
+<TD>2016-02-26</TD>
+<TD>4</TD>
+<TD>28.5</TD>
+</TR>
+<TR><TD>Derry Girls</TD>
+<TD>2020-03-10</TD>
+<TD>2021-02-18</TD>
+<TD>12</TD>
+<TD>28.8</TD>
+</TR>
+<TR><TD>After Life</TD>
+<TD>2019-05-07</TD>
+<TD>2020-05-02</TD>
+<TD>12</TD>
+<TD>30.1</TD>
+</TR>
+<TR><TD>Lucifer</TD>
+<TD>2019-01-07</TD>
+<TD>2019-11-12</TD>
+<TD>10</TD>
+<TD>30.9</TD>
+</TR>
+<TR><TD>House of Cards</TD>
+<TD>2013-01-04</TD>
+<TD>2018-12-17</TD>
+<TD>70</TD>
+<TD>31.0</TD>
+</TR>
+<TR><TD>A Bit of Fry and Laurie</TD>
+<TD>2013-08-04</TD>
+<TD>2014-02-09</TD>
+<TD>6</TD>
+<TD>31.5</TD>
+</TR>
+<TR><TD>Call the Midwife</TD>
+<TD>2013-12-02</TD>
+<TD>2021-05-12</TD>
+<TD>83</TD>
+<TD>32.7</TD>
+</TR>
+<TR><TD>Elizabeth R</TD>
+<TD>2009-05-27</TD>
+<TD>2009-12-17</TD>
+<TD>6</TD>
+<TD>34.0</TD>
+</TR>
+<TR><TD>Shaun the Sheep</TD>
+<TD>2021-01-04</TD>
+<TD>2021-09-01</TD>
+<TD>7</TD>
+<TD>34.3</TD>
+</TR>
+<TR><TD>Better Call Saul</TD>
+<TD>2017-04-12</TD>
+<TD>2020-03-09</TD>
+<TD>30</TD>
+<TD>35.4</TD>
+</TR>
+<TR><TD>The Crown</TD>
+<TD>2016-11-27</TD>
+<TD>2020-11-20</TD>
+<TD>40</TD>
+<TD>36.4</TD>
+</TR>
+<TR><TD>Rake</TD>
+<TD>2015-01-14</TD>
+<TD>2019-01-24</TD>
+<TD>40</TD>
+<TD>36.8</TD>
+</TR>
+<TR><TD>Breaking Bad</TD>
+<TD>2013-05-03</TD>
+<TD>2019-08-06</TD>
+<TD>62</TD>
+<TD>36.9</TD>
+</TR>
+<TR><TD>Doc Martin</TD>
+<TD>2011-02-27</TD>
+<TD>2016-02-23</TD>
+<TD>45</TD>
+<TD>40.5</TD>
+</TR>
+<TR><TD>Magic for Humans</TD>
+<TD>2018-08-31</TD>
+<TD>2020-06-04</TD>
+<TD>15</TD>
+<TD>42.9</TD>
+</TR>
+<TR><TD>The Kominsky Method</TD>
+<TD>2018-11-20</TD>
+<TD>2021-05-30</TD>
+<TD>21</TD>
+<TD>43.9</TD>
+</TR>
+<TR><TD>The Great British Baking Show</TD>
+<TD>2018-09-25</TD>
+<TD>2021-12-28</TD>
+<TD>27</TD>
+<TD>44.1</TD>
+</TR>
+<TR><TD>Marcella</TD>
+<TD>2017-05-04</TD>
+<TD>2018-06-11</TD>
+<TD>9</TD>
+<TD>44.8</TD>
+</TR>
+<TR><TD>Making a Murderer</TD>
+<TD>2017-01-16</TD>
+<TD>2018-11-13</TD>
+<TD>14</TD>
+<TD>47.6</TD>
+</TR>
+<TR><TD>Schitt&#39;s Creek</TD>
+<TD>2018-10-15</TD>
+<TD>2020-11-26</TD>
+<TD>16</TD>
+<TD>48.3</TD>
+</TR>
+<TR><TD>Rita</TD>
+<TD>2015-02-23</TD>
+<TD>2020-09-11</TD>
+<TD>40</TD>
+<TD>50.7</TD>
+</TR>
+<TR><TD>100 Humans</TD>
+<TD>2020-03-17</TD>
+<TD>2021-03-25</TD>
+<TD>7</TD>
+<TD>53.3</TD>
+</TR>
+<TR><TD>United States of Tara</TD>
+<TD>2013-03-22</TD>
+<TD>2013-09-19</TD>
+<TD>3</TD>
+<TD>60.3</TD>
+</TR>
+<TR><TD>The Twilight Zone (Original Series)</TD>
+<TD>2019-04-17</TD>
+<TD>2019-11-17</TD>
+<TD>3</TD>
+<TD>71.3</TD>
+</TR>
+<TR><TD>Portlandia</TD>
+<TD>2012-05-08</TD>
+<TD>2012-12-12</TD>
+<TD>3</TD>
+<TD>72.7</TD>
+</TR>
+<TR><TD>Cooked</TD>
+<TD>2016-03-20</TD>
+<TD>2017-01-07</TD>
+<TD>4</TD>
+<TD>73.3</TD>
+</TR>
+<TR><TD>Madam Secretary</TD>
+<TD>2015-11-16</TD>
+<TD>2020-05-18</TD>
+<TD>22</TD>
+<TD>74.8</TD>
+</TR>
+<TR><TD>The Chase</TD>
+<TD>2017-02-07</TD>
+<TD>2018-07-16</TD>
+<TD>7</TD>
+<TD>74.9</TD>
+</TR>
+<TR><TD>The West Wing</TD>
+<TD>2013-01-25</TD>
+<TD>2014-09-21</TD>
+<TD>8</TD>
+<TD>75.5</TD>
+</TR>
+<TR><TD>TED Talks</TD>
+<TD>2012-05-14</TD>
+<TD>2013-09-20</TD>
+<TD>6</TD>
+<TD>82.3</TD>
+</TR>
+<TR><TD>I Think You Should Leave with Tim Robinson</TD>
+<TD>2020-11-04</TD>
+<TD>2021-07-14</TD>
+<TD>3</TD>
+<TD>84.0</TD>
+</TR>
+<TR><TD>Reign</TD>
+<TD>2017-10-03</TD>
+<TD>2020-03-21</TD>
+<TD>10</TD>
+<TD>90.0</TD>
+</TR>
+<TR><TD>Black Mirror</TD>
+<TD>2017-05-08</TD>
+<TD>2021-09-01</TD>
+<TD>16</TD>
+<TD>98.6</TD>
+</TR>
+<TR><TD>Last Tango in Halifax</TD>
+<TD>2014-08-09</TD>
+<TD>2021-02-25</TD>
+<TD>24</TD>
+<TD>99.7</TD>
+</TR>
+<TR><TD>Lilyhammer</TD>
+<TD>2012-04-03</TD>
+<TD>2015-01-03</TD>
+<TD>10</TD>
+<TD>100.5</TD>
+</TR>
+<TR><TD>Terry Jones: Ancient Inventions</TD>
+<TD>2011-08-26</TD>
+<TD>2012-06-27</TD>
+<TD>3</TD>
+<TD>102.0</TD>
+</TR>
+<TR><TD>Alfred Hitchcock Presents</TD>
+<TD>2012-01-31</TD>
+<TD>2013-01-22</TD>
+<TD>3</TD>
+<TD>119.0</TD>
+</TR>
+<TR><TD>Longmire</TD>
+<TD>2018-03-18</TD>
+<TD>2020-07-09</TD>
+<TD>7</TD>
+<TD>120.6</TD>
+</TR>
+<TR><TD>BoJack Horseman</TD>
+<TD>2020-01-07</TD>
+<TD>2021-11-18</TD>
+<TD>5</TD>
+<TD>136.2</TD>
+</TR>
+<TR><TD>This American Life</TD>
+<TD>2008-02-26</TD>
+<TD>2009-08-24</TD>
+<TD>4</TD>
+<TD>136.3</TD>
+</TR>
+<TR><TD>Ken Burns: The Roosevelts</TD>
+<TD>2017-03-14</TD>
+<TD>2018-05-22</TD>
+<TD>3</TD>
+<TD>144.7</TD>
+</TR>
+<TR><TD>The Family</TD>
+<TD>2019-11-06</TD>
+<TD>2021-11-18</TD>
+<TD>5</TD>
+<TD>148.6</TD>
+</TR>
+<TR><TD>Grace and Frankie</TD>
+<TD>2015-05-10</TD>
+<TD>2016-09-16</TD>
+<TD>3</TD>
+<TD>165.0</TD>
+</TR>
+<TR><TD>Sherlock</TD>
+<TD>2011-08-15</TD>
+<TD>2018-11-17</TD>
+<TD>16</TD>
+<TD>165.7</TD>
+</TR>
+<TR><TD>Saturday Night Live</TD>
+<TD>2009-12-07</TD>
+<TD>2013-09-20</TD>
+<TD>8</TD>
+<TD>172.9</TD>
+</TR>
+<TR><TD>MI-5</TD>
+<TD>2012-04-11</TD>
+<TD>2014-02-09</TD>
+<TD>3</TD>
+<TD>223.0</TD>
+</TR>
+<TR><TD>The Great British Baking Show: Holidays</TD>
+<TD>2018-12-06</TD>
+<TD>2021-02-25</TD>
+<TD>3</TD>
+<TD>270.7</TD>
+</TR>
+<TR><TD></TD>
+<TD>2007-12-17</TD>
+<TD>2018-07-22</TD>
+<TD>13</TD>
+<TD>297.7</TD>
+</TR>
+
+
+      </table>
+
+<div class="footer">version 2.0;    last data update=Tuesday, 2022-01-11 13:47:01 </div>
+
+  </body>
+</html>
+
