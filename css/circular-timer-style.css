@@ -1,0 +1,159 @@
+/* Inspired by the work at https://www.cssscript.com/demo/circular-countdown-timer-javascript-css3/ */
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:100,300'); */
+
+:root {
+    --timer-color: black;
+}
+
+.normal-style {
+    color: blue;
+    font-weight: 100 !important;
+}
+
+.alert-style {
+    color: red;
+    font-weight: 300 !important;
+}
+
+button[data-setter] {
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 36px;
+    width: 25px;
+    height: 30px;
+    color: var(--timer-color);
+    cursor: pointer;
+}
+
+.data-setter {
+    font-size: 24px;
+    position: relative;
+    bottom: 300px;
+}
+
+button[data-setter]:hover {
+    opacity: 0.5;
+}
+
+.container {
+    position: relative;
+    top: 30px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.setters {
+    position: absolute;
+    left: 85px;
+    top: 75px;
+    z-index: 10;
+}
+
+.minutes-set {
+    float: left;
+    margin-right: 28px;
+}
+
+.seconds-set { float: right; }
+
+.controlls {
+    position: absolute;
+    left: 65px;
+    bottom: 80px;
+    text-align: center;
+}
+
+.display-remain-time {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 85px;
+}
+
+#pause {
+    outline: none;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    right: 66px;
+    position: relative;
+}
+
+.play {
+    border: transparent;
+}
+
+.pause {
+    border: transparent;
+}
+
+.play::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 73px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 22px solid var(--timer-color);
+}
+
+.pause::after {
+    content: "";
+    position: absolute;
+    left: 73px;
+    width: 5px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 1px;
+    border: 15px solid var(--timer-color);
+    border-top: none;
+    border-bottom: none;
+}
+
+#pause:hover { opacity: 0.8; }
+
+.pulse-element {
+    animation: pulse-element-keyframes 2s infinite !important;
+}
+
+@keyframes pulse-element-keyframes {
+    0% {
+	transform: scale(0.95);
+    }
+    
+    70% {
+	transform: scale(1.00);
+    }
+    
+    100% {
+	transform: scale(0.95);
+    }
+}
+
+.e-c-base {
+    fill: none;
+    stroke: #B6B6B6;
+    stroke-width: 4px
+}
+
+.e-c-progress {
+    fill: none;
+    stroke: var(--timer-color);
+    stroke-width: 4px;
+    transition: stroke-dashoffset 1s;
+}
+
+.e-c-pointer {
+    fill: #FFF;
+    stroke: var(--timer-color);
+    stroke-width: 2px;
+}
+
+.e-pointer {
+    transition: transform 0.7s;
+}
+
