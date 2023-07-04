@@ -52,31 +52,96 @@
       const METHODS = 2;
       const CATEGORY = 3;
       
-      // A HashMap consisting of a string key as the RecipeId and a list:
-      // [ TITLE, [List of INGREDIENTS], [List of METHODS], Category]
-      var recipes = new Map([
-	  ['CostanzoRecipes_Entrees_VegetarianLentilBurgerRecipe',
-	   [ "Vegetarian Lentil Burger Recipe",
-	     ["Ingredient 0.1", "Ingredient 0.2", "Ingredient 0.3" ],
-	     ["Method 0.1", "Method 0.2", "Method 0.3" ],
-	     "Entree"
-	   ]
+
+      var recipes = [
+	  "* Greek Salad Dressing1",
+	  [
+	      "** Ingredients",
+	      [
+		  "*** Greek Vinaigrette",
+		  [
+		      "+ ½ cup olive oil",
+		      "+ ½ cup red wine vinegar",
+		      "+ 2 tbsp lemon juice",
+		      "+ 4 cloves garlic , minced",
+		      "+ 1 tbsp dry oregano",
+		      "+ 1 tsp salt",
+		      "+ ½ tsp black pepper",
+		      "+ 1 tsp sugar",
+		      "",
+		  ],
+		  "*** Salad",
+		  [
+		      "+ 3 tomatoes",
+		      "+ 1 English cucumber",
+		      "+ 2 sweet peppers (red, yellow or orange)",
+		      "+ 1 red onion",
+		      "+ 1 cup feta cheese , crumbled",
+		      "+ 1 ½ cups black olives",
+		      "+ 1 large romaine lettuce",
+		  ],
+	      ],
+
+	      "** Method:",
+	      [
+		  "1. Make the vinaigrette by mixing the oil, vinegar, lemon juice, garlic, oregano, salt, pepper and sugar. Let the dressing marinate for at least 30 minutes.",
+		  "2. Chop up vegetables into large pieces.",
+		  "3. Stir the salad vinaigrette in a large bowl with the chopped vegetables (minus the romaine lettuce) and olives.",
+		  "4. Let the salad marinate at least 1 hour before serving.",
+		  "5. Just prior to serving, toss in the chopped romaine lettuce leaves.",
+		  "6. Sprinkle feta cheese on top.",
+	      ],
+	      "** Credits",
+	      [
+		  "- https://www.theblackpeppercorn.com/homemade-greek-salad-with-dressing/#recipe",
+		  "- [2022-12-23 Fri] Made for MaryAnn's birthday. A tasty dressing but while I used only ¾ of a what it made on the salad, it still seemed like too much.",
+	      ],
 	  ],
-	  ['CostanzoRecipes_Entrees_VegetablePotPie',
-	   [ "Vegetable Pot Pie",
-	     ["Ingredient 1.1", "Ingredient 1.2", "Ingredient 1.3" ],
-	     ["Method 1.1", "Method 1.2", "Method 1.3" ],
-	     "Entree"
-	   ]
+
+	  "* Greek Salad Dressing2",
+	  [
+	      "** Ingredients",
+	      [
+		  "*** Greek Vinaigrette",
+		  [
+		      "+ ½ cup olive oil",
+		      "+ ½ cup red wine vinegar",
+		      "+ 2 tbsp lemon juice",
+		      "+ 4 cloves garlic , minced",
+		      "+ 1 tbsp dry oregano",
+		      "+ 1 tsp salt",
+		      "+ ½ tsp black pepper",
+		      "+ 1 tsp sugar",
+		      "",
+		  ],
+		  "*** Salad",
+		  [
+		      "+ 3 tomatoes",
+		      "+ 1 English cucumber",
+		      "+ 2 sweet peppers (red, yellow or orange)",
+		      "+ 1 red onion",
+		      "+ 1 cup feta cheese , crumbled",
+		      "+ 1 ½ cups black olives",
+		      "+ 1 large romaine lettuce",
+		  ],
+	      ],
+
+	      "** Method:",
+	      [
+		  "1. Make the vinaigrette by mixing the oil, vinegar, lemon juice, garlic, oregano, salt, pepper and sugar. Let the dressing marinate for at least 30 minutes.",
+		  "2. Chop up vegetables into large pieces.",
+		  "3. Stir the salad vinaigrette in a large bowl with the chopped vegetables (minus the romaine lettuce) and olives.",
+		  "4. Let the salad marinate at least 1 hour before serving.",
+		  "5. Just prior to serving, toss in the chopped romaine lettuce leaves.",
+		  "6. Sprinkle feta cheese on top.",
+	      ],
+	      "** Credits",
+	      [
+		  "- https://www.theblackpeppercorn.com/homemade-greek-salad-with-dressing/#recipe",
+		  "- [2022-12-23 Fri] Made for MaryAnn's birthday. A tasty dressing but while I used only ¾ of a what it made on the salad, it still seemed like too much.",
+	      ],
 	  ],
-	  ['CostanzoRecipes_Appetizers_HotPepperJelly',
-	   [ "Hot Pepper Jelly",
-	     ["Ingredient 2.1", "Ingredient 2.2", "Ingredient 2.3" ],
-	     ["Method 2.1", "Method 2.2", "Method 2.3" ],
-	     "Appetizer"
-	   ]
-	  ]
-      ]);
+      ];
 
       // entries correspond to the same numbered index in recipes and
       // are [ recipeId, term1, term2, ... termN]
