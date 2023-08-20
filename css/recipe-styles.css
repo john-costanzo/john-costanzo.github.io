@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#appLayout {
+    height: 100%;
+}
+
+#topHeader {
+    height: 5px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#leftCol {
+    width: 20%;
+}
+
+
+#rightCol {
+    width: 20%;
+}
+
+.claro .demoLayout .edgePanel {
+    background-color: #d0e9fc;
+}
+
+#viewsChart {
+    width: 550px;
+    height: 550px;
+}
+
+.itemClicked {
+    color: gray;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+li {
+    cursor: pointer;
+}
+
+.selectedRecipe {
+    font-weight: bold;
+}
+
+.note {
+    color: blue;
+    font-style: italic;
+}
+
+.conditional-space:after {
+  content: " ";
+}
+
+/* Prevent line breaks after word constituents */
+.conditional-space + * {
+  white-space: nowrap;
+}
+
+h2 {
+    margin-top: 0px;
+}
