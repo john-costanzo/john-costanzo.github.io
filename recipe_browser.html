@@ -3,327 +3,198 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script src="https://kit.fontawesome.com/9ca6d20ba4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/rb-style.css" media="screen">
-    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen"> -->
-
-    <!-- Do we need these two stylesheets? -->
-    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.3/dojo/resources/dojo.css">
-    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.3/dijit/themes/claro/claro.css">
-
-    <style>
-      .fade {
-	  color: gray;
-	  font-style: italic;
-      }
-
-      .expandedPanel {
-	  height: 200px;
-      }
-
-      .collapsedPanel {
-	  height: 5px;
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
 
     <script>dojoConfig = {parseOnLoad: true}</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+    <script src="js/costanzo-recipes.js"></script>
 
     <script>
-      const APP_LAYOUT = "appLayout";
-      const TOP_PANEL = "topPanel";
-      const TOP_PANEL_EXPANDER = "topPanelExpander";
-      const LEFT_PANEL = "leftPanel";
-      const LEFT_PANEL_EXPANDER = "leftPanelExpander";
-      const RIGHT_PANEL = "rightPanel";
-      const CENTER_PANEL = "centerPanel";
-      const COLLAPSE_TOP_PANEL_BUTTON = "collapseTopPanel";
-      const RECIPE_INDEX_CONTAINER = "recipe_index_container";
-      const METHOD_CONTAINER = "method_container";
-      const INGREDIENTS_CONTAINER = "ingredients_container";
-      const CLASS_FADE_STYLE = "fade";
-      const CLASS_EXPANDED_PANEL = "expandedPanel";
-      const CLASS_COLLAPSED_PANEL = "collapsedPanel";
-      
-      // Position of various fields in a Recipe Record.
       const TITLE = 0;
       const INGREDIENTS = 1;
       const METHODS = 2;
-      const CATEGORY = 3;
-      
-
-      var recipes = [
-	  "* Greek Salad Dressing1",
-	  [
-	      "** Ingredients",
-	      [
-		  "*** Greek Vinaigrette",
-		  [
-		      "+ ½ cup olive oil",
-		      "+ ½ cup red wine vinegar",
-		      "+ 2 tbsp lemon juice",
-		      "+ 4 cloves garlic , minced",
-		      "+ 1 tbsp dry oregano",
-		      "+ 1 tsp salt",
-		      "+ ½ tsp black pepper",
-		      "+ 1 tsp sugar",
-		      "",
-		  ],
-		  "*** Salad",
-		  [
-		      "+ 3 tomatoes",
-		      "+ 1 English cucumber",
-		      "+ 2 sweet peppers (red, yellow or orange)",
-		      "+ 1 red onion",
-		      "+ 1 cup feta cheese , crumbled",
-		      "+ 1 ½ cups black olives",
-		      "+ 1 large romaine lettuce",
-		  ],
-	      ],
-
-	      "** Method:",
-	      [
-		  "1. Make the vinaigrette by mixing the oil, vinegar, lemon juice, garlic, oregano, salt, pepper and sugar. Let the dressing marinate for at least 30 minutes.",
-		  "2. Chop up vegetables into large pieces.",
-		  "3. Stir the salad vinaigrette in a large bowl with the chopped vegetables (minus the romaine lettuce) and olives.",
-		  "4. Let the salad marinate at least 1 hour before serving.",
-		  "5. Just prior to serving, toss in the chopped romaine lettuce leaves.",
-		  "6. Sprinkle feta cheese on top.",
-	      ],
-	      "** Credits",
-	      [
-		  "- https://www.theblackpeppercorn.com/homemade-greek-salad-with-dressing/#recipe",
-		  "- [2022-12-23 Fri] Made for MaryAnn's birthday. A tasty dressing but while I used only ¾ of a what it made on the salad, it still seemed like too much.",
-	      ],
-	  ],
-
-	  "* Greek Salad Dressing2",
-	  [
-	      "** Ingredients",
-	      [
-		  "*** Greek Vinaigrette",
-		  [
-		      "+ ½ cup olive oil",
-		      "+ ½ cup red wine vinegar",
-		      "+ 2 tbsp lemon juice",
-		      "+ 4 cloves garlic , minced",
-		      "+ 1 tbsp dry oregano",
-		      "+ 1 tsp salt",
-		      "+ ½ tsp black pepper",
-		      "+ 1 tsp sugar",
-		      "",
-		  ],
-		  "*** Salad",
-		  [
-		      "+ 3 tomatoes",
-		      "+ 1 English cucumber",
-		      "+ 2 sweet peppers (red, yellow or orange)",
-		      "+ 1 red onion",
-		      "+ 1 cup feta cheese , crumbled",
-		      "+ 1 ½ cups black olives",
-		      "+ 1 large romaine lettuce",
-		  ],
-	      ],
-
-	      "** Method:",
-	      [
-		  "1. Make the vinaigrette by mixing the oil, vinegar, lemon juice, garlic, oregano, salt, pepper and sugar. Let the dressing marinate for at least 30 minutes.",
-		  "2. Chop up vegetables into large pieces.",
-		  "3. Stir the salad vinaigrette in a large bowl with the chopped vegetables (minus the romaine lettuce) and olives.",
-		  "4. Let the salad marinate at least 1 hour before serving.",
-		  "5. Just prior to serving, toss in the chopped romaine lettuce leaves.",
-		  "6. Sprinkle feta cheese on top.",
-	      ],
-	      "** Credits",
-	      [
-		  "- https://www.theblackpeppercorn.com/homemade-greek-salad-with-dressing/#recipe",
-		  "- [2022-12-23 Fri] Made for MaryAnn's birthday. A tasty dressing but while I used only ¾ of a what it made on the salad, it still seemed like too much.",
-	      ],
-	  ],
-      ];
-
-      // entries correspond to the same numbered index in recipes and
-      // are [ recipeId, term1, term2, ... termN]
-      var index = [
-	  [ 'CostanzoRecipes_Entrees_VegetarianLentilBurgerRecipe', 'extra-virgin', 'vegetarian', 'lentil', 'burger', 'recipe', 'lentils', 'tablespoon', 'black', 'teaspoon', 'toasted', 'fine-grain', 'finely', 'entrees', 'cooked', 'butter)', 'oil', 'bread', 'onion,', 'cups', 'salt', 'cup', 'clarified', 'chopped', 'large', 'olive', 'sea', 'eggs', 'fine', 'crumbs' ],
-	  [ 'CostanzoRecipes_Entrees_VegetablePotPie', 'flour', 'vegetable', 'thyme', 'half-and-half', 'your', 'onion,', 'melted', 'all-purpose', 'cup', 'cups', 'salt', 'rosemary', 'broth', 'of', 'own', 'bought', 'meat', 'carrots,', 'pie', 'mock', 'diced', 'tvp', 'teaspoon', 'store', 'entrees', 'crust', 'or', 'other', 'potato,', 'pepper', 'celery,', 'peas', 'recipe)', 'butter', 'vegetable', 'pot', 'pie' ],
-	  [ 'CostanzoRecipes_Appetizers_HotPepperJelly', 'jalapeno', 'package', 'red', 'pectin', 'bell', 'appetizers', 'finely', 'green', 'ounce)', 'peppers', 'apple', 'cups', 'cup', 'white', 'sugar', 'hot', 'pepper', 'jelly', 'powdered', 'chopped', 'vinegar', 'cider' ]
-      ];
-    </script>
-
-    <script>
-      function ingredientFromId( recipeId, ingredientId ) {
-	  // For recipe identified by recipeId, return the ingredient identified by ingredientId.
-	  console.log( "ingredientFromId(%d, %d)", recipeId, ingredientId );
-	  console.log( "recipes.size=%d", recipes.size );
-	  if( recipeId === undefined || !recipes.has( recipeId ) ) {
-	      return undefined;
-	  } else {
-	      let r = recipes.get( recipeId );
-	      console.log( "r[%d].length=%d", INGREDIENTS, r[INGREDIENTS].length );
-	      if( ingredientId < 0 || ingredientId >= r[ INGREDIENTS ].length ) {
-		  return undefined;
-	      } else {
-		  console.log("ingredientFromId: returning [%s]", r[ INGREDIENTS ][ ingredientId ] );
-		  return r[ INGREDIENTS ][ ingredientId ];
-	      }
-	  }
-      }
     </script>
     
-
     <script>
-      function togglePanel( vertical, contract, panel, elt, icon1Class, icon2Class ) {
-	  // If VERTICAL, expansion/contract is done vertically; else horizontally.
-	  // If CONTRACT is true
-	  //   For PANEL, contract it.
-	  // else
-	  //   For PANEL, enlarge it.
-	  // In either case, remove ICON1CLASS, add ICON2CLASS and
-	  // set the onclick behavior of ELT to match the current state.
-	  require(["dojo/dom-class", "dijit/registry", "dojo/dom"], function( domClass, registry, dom ) {
-	      let dir = "width";
-	      if( vertical ) dir = "height";
-	      if( contract ) {
-		  registry.byId( panel ).set('style', dir + ': 15px;');
-	      } else {
-		  registry.byId( panel ).set('style', dir +': 200px;');
+      function addIngredients( recipe_id ) {
+	  // Add all ingredients for RECIPE_ID.
+	  require([
+	      "dojo/dom",
+	      "dojo/domReady!"
+	  ], function(dom) {
+	      let recipe_ingredients = dom.byId( "recipe_ingredients" );
+
+	      if( typeof ingredients_map !== "undefined" ) {
+		  let ingredients = ingredients_map.get( recipe_id );
+		  if( ingredients )
+		      recipe_ingredients.innerHTML = ingredients;
+		  else
+		      recipe_ingredients.innerHTML = "";
+	      }
+	  });
+      }
+
+      function addMethods( recipe_id ) {
+	  // Add all methods for RECIPE_ID.
+	  require([
+	      "dojo/dom",
+	      "dojo/domReady!"
+	  ], function(dom) {
+	      let recipe_method = dom.byId( "recipe_method" );
+
+	      if (typeof methods_map !== "undefined") {
+		  let method = methods_map.get( recipe_id );
+		  if( method )
+		      recipe_method.innerHTML = method;
+		  else
+		      recipe_method.innerHTML = "";
 	      }
 
-	      domClass.remove( elt, icon1Class );
-	      domClass.add( elt, icon2Class );
+	      if (typeof yields_map !== "undefined") {
+		  let yield = yields_map.get( recipe_id );
+		  if( yield )
+		      recipe_method.innerHTML =
+		      recipe_method.innerHTML +
+		      "<h2>Yield</h2>" +
+		      yield;
+	      }
 
-	      require(["dojo/on"], function( on ) {
-		  on( dom.byId( elt ), "click", function() { togglePanel( vertical, !contract, panel, elt, icon2Class, icon1Class ); } );
+	      if (typeof credits_map !== "undefined") {
+		  let credit = credits_map.get( recipe_id );
+		  if( credit )
+		      recipe_method.innerHTML =
+		      recipe_method.innerHTML +
+		      "<h2>Credit</h2>" +
+		      credit;
+	      }
+	  });
+      }
+
+      function handleItemClick() {
+	  let item = event.target;
+	  if( item.classList.contains( "itemClicked" ) ) {
+	      item.classList.remove( "itemClicked" );
+	  } else {
+	      item.classList.add( "itemClicked" );
+	  }
+      }
+
+
+      function addConditionalSpaceIfNextElementMatches( className, regex ) {
+	  // For all elements that contain CLASSNAME,
+	  // append a space to the text of the element if, and only if,
+	  // the following element begins with the regular expression REGEX.
+
+	  // Get all elements of class CLASSNAME
+	  const conditionalSpaces = document.querySelectorAll( '.' +  className );
+
+	  // Loop through each element and conditionally update its content
+	  conditionalSpaces.forEach( element => {
+	      console.log( "element = '" + element.textContent + "'" );
+	      const nextElement = element.nextElementSibling;
+
+	      // Get the first character of that next element
+	      if( nextElement ) {
+		  const text = nextElement.textContent.trim();
+		  console.log( "considering '" + text + "'" );
+		  const firstChar = text.charAt( 0 );
+
+		  // Check if the first character is a word constituent (letter, digit, or underscore)
+		  console.log( "firstChar = '" + firstChar + "'" );
+		  const isFirstCharWordConstituent = regex.test( firstChar );
+
+		  // Prepend a space to the element if the first character is a word constituent
+		  if ( isFirstCharWordConstituent ) {
+		      console.log( "\tadding space to '" + element.textContent + "'" );
+		      element.textContent += ' ';
+		      console.log( "\tadded space to '" + element.textContent + "'" );
+		  }
+	      }
+	      console.log( "\n\n" );
+	  });
+      }
+
+      function addRecipes( recipe_name_map, refNode ) {
+	  // Add recipes in RECIPE_NAME_MAP as an unordered list and place it as REFNODE
+	  require([
+	      "dojo/dom",
+	      "dojo/dom-construct",
+	      "dojo/on",
+	      "dojo/domReady!"
+	  ], function(dom, domConstruct, on) {
+
+	      // Create a list container
+	      const listContainer = domConstruct.create("ul");
+
+	      recipe_name_map.forEach( function( recipe_list, cat ) {
+		  const catHeader = domConstruct.create("li", { innerHTML: cat });
+		  domConstruct.place( catHeader, listContainer );
+
+		  const listSubContainer = domConstruct.create("ul");
+		  domConstruct.place( listSubContainer, catHeader );
+
+		  console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
+		  recipe_list.forEach( function( recipe ) {
+		      const recipeTitle = recipe[ 0 ];
+		      const recipeId = recipe[ 1 ];
+
+		      const listItem = domConstruct.create("li", { innerHTML: recipeTitle });
+		      // Add an event listener to each list item
+		      on(listItem, "click", function() {
+			  let topHeader = dom.byId( "topHeader" );
+			  topHeader.innerHTML = recipeTitle;
+			  addIngredients( recipeId );
+			  addMethods( recipeId );
+		      });
+
+		      domConstruct.place( listItem, listSubContainer );
+		  });
 	      });
-	      registry.byId( APP_LAYOUT ).layout();
+	      domConstruct.place(listContainer, refNode);
 	  });
+	  addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
       }
 
-
-    </script>
-
-    <script>
-      function prefixInList( prefix, list ) {
-	  // Return whether PREFIX appears as a prefix to at least one element of LIST.
-	  // Examples:
-	  //    prefixInList( "gam", [ "alpha", "beta", "gamma" ] ) ==> true
-	  //    prefixInList( "delt", [ "alpha", "beta", "gamma" ] ) ==> false
-	  const re = new RegExp( "^" + prefix );
-	  console.log( "prefixInList: re = " + re );
-	  console.log( "prefixInList: list = \n" + list.join("\n") + "\n\n" );
-	  return list.some( ( elt ) => re.test( elt ) );
-      }
-
-      function filterRecipes( e ) {
-	  // Filter the list of recipes based on the event E (a change to the text box containing filter terms).
-	  const filterString = e.value;
-	  const terms = filterString.split(" ");
-	  console.log( 'filterRecipes: processing terms [' + terms.join( ";" ) + ']' );
-	  dojo.empty( RECIPE_INDEX_CONTAINER );
-	  const result = index.filter( (indexRec) => terms.every( (term) => prefixInList( term, indexRec.slice(1) ) ) ) ;
-	  console.log( "filterRecipes: result = \n" + result.join( "  \n" ) );
-
-	  result.forEach( ( indexRecord ) => {
-	      console.log( "filterRecipes: indexRecord=" + indexRecord );
-	      displayRecipeTitle( recipes.get( indexRecord[ 0 ] ) );
-	  });
-      }
-
-    </script>
-
+      </script>
   </head>
-
+  
   <body class="claro">
     <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
 
-      <div id="topPanel" class="edgePanel expandedPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
-	<i id="topPanelExpander" class="fa-solid fa-angles-up"
-	   onclick="togglePanel( true, true, TOP_PANEL, TOP_PANEL_EXPANDER, 'fa-angles-up', 'fa-angles-down' );"></i>
+      <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
+	<center><h1 id="topHeader">Recipe Browser</h2></center>
+</div>
 
-	<label for="filter">Filter:</label>
-	<input id="filter" type="text" autofocus oninput="filterRecipes(this)">
-      </div>
+<div class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+  <center><h2>Method</h2></center>
+  <div id="recipe_method"></div>
+</div>
 
-      <div class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
-	<div id="method_container"></div>
-      </div>
+<div id="leftCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'left', splitter: true">
+  <center><h2>Recipes</h2></center>
+  <div id="recipe_titles"></div>
+</div>
 
-      <div id="leftPanel" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'left', splitter: true">
-	<i id="leftPanelExpander" class="fa-solid fa-angles-left" onclick="togglePanel( false, true, LEFT_PANEL, LEFT_PANEL_EXPANDER, 'fa-angles-left', 'fa-angles-right' );"></i><br>
-	<ul id="recipe_index_container"></ul>
-      </div>
+<div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: true">
+  <center><h2>Ingredients</h2></center>
+  <div id="recipe_ingredients"></div>
+</div>
 
-      <div id="rightPanel" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: true, style: { width: '300px' }">
-	<div id="ingredients_container"></div>
-      </div>
+</div>
 
-    </div>
+<script>
 
-    <script>
-      var toggleClass;
-      require(["dojo/dom-class"], function( domClass ) {
-	  toggleClass = function( elt, classTag ) {
-	      // If the element ELT already is already a member of classTag, remove it. Else add it.
-	      if( elt.classList.contains( classTag ) ) {
-		  domClass.remove( elt, classTag );
-	      } else {
-		  domClass.add( elt, classTag );
-	      }
-	  }
-      });
+  addRecipes( recipe_name_map, "recipe_titles" );
+</script>
 
-      function displayRecipe( recipeRecord ) {
-	  let title = recipeRecord[ TITLE ];
-	  let ingredients = recipeRecord[ INGREDIENTS ];
-	  let methods = recipeRecord[ METHODS ];
-
-	  dojo.empty( METHOD_CONTAINER );
-	  dojo.empty( INGREDIENTS_CONTAINER );
-	  
-	  // Display methods
-	  methods.forEach(( meth, idx, arr) => {
-	      require(["dojo/dom-construct", "dojo/dom", "dojo/on"], function( domConstruct, dom, on ) {
-
-		  let li = domConstruct.create( "li",
-						{ innerHTML: meth + "<br>" },
-						dom.byId( METHOD_CONTAINER )
-					      );
-		  on( li, "click", function() { toggleClass( li, CLASS_FADE_STYLE ); } );
-	      });
-	  });
-	  
-	  // Display ingredients
-	  ingredients.forEach(( ingr, idx, arr) => {
-	      require(["dojo/dom-construct", "dojo/dom", "dojo/on"], function( domConstruct, dom, on ) {
-		  let li = domConstruct.create( "li",
-						{ innerHTML: ingr + "<br>" },
-						dom.byId( INGREDIENTS_CONTAINER )
-					      );
-		  on( li, "click", function() { toggleClass( li, CLASS_FADE_STYLE ); } );
-	      });
-	  });
-      }
-      </script>
-
-    <script>
-      function displayRecipeTitle( recipeRecord ) {
-	  // Display the title for RECIPERECORD in the recipes panel.
-	  // Ensure that what displays is actionable.
-	  require(["dojo/dom-construct", "dojo/dom", "dojo/on"], function( domConstruct, dom, on ) {
-	      let li = domConstruct.create( "li",
-					    { title: recipeRecord[ TITLE ],
-					      innerHTML: recipeRecord[ TITLE ] + "<br>"
-					    },
-					    dom.byId( RECIPE_INDEX_CONTAINER )
-					  );
-	      on( li, "click", function() { displayRecipe( recipeRecord ); } ); // TODO: switch to index of recipe?
-	  });
-      }
-      
-      // Load all recipes
-      recipes.forEach( function( recipeRecord, key ) { displayRecipeTitle( recipeRecord ); } );
-      </script>
-  </body>
+<!-- load dojo -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script> -->
+<!-- <script> -->
+  <!--   require(["dojo/parser", "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"], function(parser){ -->
+  <!-- 	  parser.parse(); -->
+  <!--   }); -->
+  <!-- </script> -->
+</body>
 </html>
