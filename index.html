@@ -19,14 +19,13 @@
 	  text-decoration: underline;
       }
 
-      .favorite {
+      .heart {
 	  list-style-type: none; /* Remove default bullet */
 	  padding-left: 48px; /* Optional: Add some indentation */
-	  background-image: url('https://bestanimations.com/uploads/gifs/1697162351rotating-red-heart-gif-animation61.gif'); /* URL of your custom glyph image */
+	  background-image: url('https://bestanimations.com/uploads/gifs/1697162351rotating-red-heart-gif-animation61.gif');
 	  background-repeat: no-repeat;
-	  background-position: left center; /* Adjust as needed */
-	  background-size: 5%; /* Adjust the percentage as needed */
-
+	  background-position: left center;
+	  background-size: 64px;
 	  margin-left: -44px; /* Optional: Adjust padding to make room for the glyph */
       }
     </style>
@@ -41,34 +40,40 @@
       <li><a href="online-games.html">Online Games</a></li>
       <li><a href="Summary_of_Viewed_Videos.html">Netflix Usage Analysis</a></li>
       <li><a href="https://www.internet-radio.com/">Internet radio stations:</a></li>
-      <font size=+2>
-	<!--
-	    Favorite Radio Stations:
-	    
-	    <li><li><a href="" class="favorite">  </a></li></span></li>
-      -->
-      <p>
-      </font>
 
       <ul>
 	<li><a href="https://www.internet-radio.com/stations/jazz/"><i>Jazz</i></a>
 	  <ul>
-	    <li class="favorite"><a href="http://51.255.235.165:5068/stream?type=http&nocache=775074">Jazz Lounge</a></li>
+	    <li class="heart"><a href="http://51.255.235.165:5068/stream?type=http&nocache=775074">Jazz Lounge</a></li>
 	    <li><a href="https://abcrelax.com/Player">ABC Relax</a></li>
-	    <li class="favorite"><a href="http://player.internet-radio.com/?server=http://64.150.176.42:8098"> 1940s 1950s Radio Retro</a></li>
+	    <li class="heart"><a href="http://player.internet-radio.com/?server=http://64.150.176.42:8098"> 1940s 1950s Radio Retro</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://209.95.50.189:8074">The Green Room</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://199.189.111.28:8012">1940's Radio</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://64.150.176.42:8098">1940's 1950's Radio Retro</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://www.partyviberadio.com:8020/index.html?sid=1">Party Vibe Radio</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://198.105.216.204:8188">Breezy</a></li>
-	    <li><a href="http://player.internet-radio.com/?server=http://198.178.123.5:10850">Jazz & Blues Music</a></li>
+	    <li><a href="http://player.internet-radio.com/?server=http://198.178.123.5:10850">Jazz &amp; Blues Music</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://51.255.8.139:8064">Gdynia Radio</a></li>
 	  </ul>
 	</li>
 
+	<li><a href="https://www.internet-radio.com/stations/classical"><i>Classical</i></a></li>
+	<ul>
+	  <li class="heart"><a href="http://player.internet-radio.com/?server=mediaserv30.live-streams.nl:8088">Hi On Line Classic Radio</a></li>
+	</ul>
+
+	<ul>
+	  <li><a href="http://streaming.kwax.com:8000/localhost">KWAX</a></li>
+	</ul>
+
+	<li><a href="https://www.internet-radio.com/stations/country"><i>Country</i></a></li>
+	<ul>
+	  <li><a href="https://cowpokeradio.com/">Cowpoke Radio</a></li>
+	</ul>
+
 	<li><a href="https://www.internet-radio.com/stations/70s/"><i>60s 70s and 80s</i></a>
 	  <ul>
-	    <li class="favorite"><a href="https://www.tmachineradio.com/">The Time Machine</a></li>
+	    <li class="heart"><a href="https://www.tmachineradio.com/">The Time Machine</a></li>
 	    <li><a href="https://www.internet-radio.com/station/smhr1575/">Stoke Mandeville Hospital Radio</a></li>
 	    <li><a href="https://www.internet-radio.com/station/joyradio/">Joy Radio</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://199.233.234.34:25373">Gold Instrumental</a></li>
@@ -83,46 +88,29 @@
 	      <!--   <a href=""></a> -->
 	      <!-- </li> -->
 	    <li><a href="http://player.internet-radio.com/?server=http://sail.yachtrockmiami.com:8000">Yacht Rock Miami</a></li>
-	  </li>
-	</ul>
-      </li>
+	  </ul>
+	</li>
 
-      <li><a href="https://www.internet-radio.com/stations/oldies/"><i>Oldies</i></a>
+	<li><a href="https://www.internet-radio.com/stations/oldies/"><i>Oldies</i></a>
+	  <ul>
+	    <li><a href="http://player.internet-radio.com/?server=us2.internet-radio.com:8443">Megaton Cafe Radio</a></li>
+	  </ul>
+	</li>
+
+	<!-- <li><a href="https://www.internet-radio.com/stations/blues"><i>Blues</i></a></li> -->
+	<!-- <ul> -->
+	  <!-- </ul> -->
+
+      </ul>
+      <li><a href="https://chat.openai.com/chat">Chat GPT</a></li>
+      <li><a href="editorial-cartoons.html">Editorial Cartoons</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li>Duke
 	<ul>
-	  <li><a href="http://player.internet-radio.com/?server=us2.internet-radio.com:8443">Megaton Cafe Radio</a></li>
+	  <li><a href="https://outagereport.duke-energy.com/#/report-outage/home/find-account/social-security-number">Report power outage</a></li>
+	  <li><a href="https://outagemaps.duke-energy.com/#/current-outages/ncsc">See power outages</a></li>
 	</ul>
       </li>
-
-      <!-- <li><a href="https://www.internet-radio.com/stations/blues"><i>Blues</i></a></li> -->
-      <!-- <ul> -->
-	<!-- </ul> -->
-
-      <li><a href="https://www.internet-radio.com/stations/classical"><i>Classical</i></a></li>
-      <ul>
-	<li class="favorite"><a href="http://player.internet-radio.com/?server=mediaserv30.live-streams.nl:8088">Hi On Line Classic Radio</a></li>
-      </ul>
-
-      <ul>
-	<li><a href="http://streaming.kwax.com:8000/localhost">KWAX</a></li>
-      </ul>
-
-      <li><a href="https://www.internet-radio.com/stations/country"><i>Country</i></a></li>
-      <ul>
-	<li><a href="https://cowpokeradio.com/">Cowpoke Radio</a></li>
-      </ul>
-
-      
     </ul>
-    <li><a href="https://www.wunderground.com/dashboard/pws/KNCHENDE241">Weather on the Tennis Court</a></li>
-    <li><a href="https://chat.openai.com/chat">Chat GPT</a></li>
-    <li><a href="editorial-cartoons.html">Editorial Cartoons</a></li>
-    <li><a href="videos.html">Videos</a></li>
-    <li>Duke
-      <ul>
-	<li><a href="https://outagereport.duke-energy.com/#/report-outage/home/find-account/social-security-number">Report power outage</a></li>
-	<li><a href="https://outagemaps.duke-energy.com/#/current-outages/ncsc">See power outages</a></li>
-      </ul>
-    </li>
-  </ul>
-</body>
+  </body>
 </html>
