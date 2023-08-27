@@ -43,6 +43,19 @@ li {
     cursor: pointer;
 }
 
+.recipe-item {
+    list-style-type: circle;
+    cursor: pointer;
+    font-style: normal;
+    margin-left: -10px;
+}
+
+.category-heading {
+    list-style-type: none; /* Remove default bullet */
+    font-style: italic;
+    margin-left: -48px;
+}
+
 .selectedRecipe {
     font-weight: bold;
 }
@@ -68,7 +81,6 @@ h2,h3,h4,h5,h6,h7,h8 {
 
 .search-box-control {
     text-align: left;
-    margin-top: -24px;
 }
 
 .text-size-control {
@@ -87,9 +99,7 @@ h2,h3,h4,h5,h6,h7,h8 {
 
 /* Tooltip container */
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* For dots under the hoverable text, indicating a link */
+    margin-top: -24px;
 }
 
 /* Tooltip text */
@@ -101,13 +111,6 @@ h2,h3,h4,h5,h6,h7,h8 {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -100px;
 
     /* Fade in tooltip */
     opacity: 0;
@@ -121,9 +124,6 @@ h2,h3,h4,h5,h6,h7,h8 {
     top: 100%;
     left: 50%;
     margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

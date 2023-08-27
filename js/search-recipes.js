@@ -1,4 +1,4 @@
-const debug_search_recipes = true;
+const debug_search_recipes = false;
 
 // Turn off display for element with ID.
 function hideElement( id ) {
@@ -21,7 +21,7 @@ function showElement( id ) {
     if( debug_search_recipes ) console.log( "\t\t\tshow element with id=[%s]", id );
     const el = document.getElementById( id );
     if( el ) {
-	el.style.display = "block";
+	el.style.display = "list-item";
     } else {
 	console.log( "no element with id=[%s]", id );
     }
@@ -60,9 +60,9 @@ function searchElements( query, index ) {
 	const index_string = idx[1];
 	if( debug_search_recipes ) console.log( "\tid=[%s]\tindex_string=[%s]", id, index_string );
 	if( matchesAll( query, index_string ) ) {
-	    showElements( id );
+	    showElement( id );
 	} else {
-	    hideElements( id );
+	    hideElement( id );
 	}
     }
 }

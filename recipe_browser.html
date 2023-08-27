@@ -172,7 +172,7 @@
 	      const listContainer = domConstruct.create("ul");
 
 	      recipe_name_map.forEach( function( recipe_list, cat ) {
-		  const catHeader = domConstruct.create("li", { innerHTML: cat });
+		  const catHeader = domConstruct.create("li", { innerHTML: cat, class: "category-heading" });
 		  domConstruct.place( catHeader, listContainer, "first" );
 
 		  const listSubContainer = domConstruct.create("ul");
@@ -183,7 +183,7 @@
 		      const recipeTitle = recipe[ 0 ];
 		      const recipeId = recipe[ 1 ];
 
-		      const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId });
+		      const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
 		      // Add an event listener to each list item
 		      on(listItem, "click", function() {
 			  let topHeader = dom.byId( "topHeader" );
@@ -211,7 +211,7 @@
 
 	<div class="tooltip">
   	      <input id="searchBox" class="search-box-control">
-	      <span class="tooltiptext">Narrow recipes to certain titles, ingredients and tags.</span>
+	      <span class="tooltiptext">🠘 Narrow recipes to certain titles, ingredients and tags.</span>
 	</div>
 
         <div id="textSizeControl" class="text-size-control">
