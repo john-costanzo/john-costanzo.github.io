@@ -149,10 +149,10 @@
 
 	      recipe_name_map.forEach( function( recipe_list, cat ) {
 		  const catHeader = domConstruct.create("li", { innerHTML: cat });
-		  domConstruct.place( catHeader, listContainer );
+		  domConstruct.place( catHeader, listContainer, "after" );
 
 		  const listSubContainer = domConstruct.create("ul");
-		  domConstruct.place( listSubContainer, catHeader );
+		  domConstruct.place( listSubContainer, catHeader, "after" );
 
 		  console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
 		  recipe_list.forEach( function( recipe ) {
@@ -168,10 +168,10 @@
 			  addMethods( recipeId );
 		      });
 
-		      domConstruct.place( listItem, listSubContainer );
+		      domConstruct.place( listItem, listSubContainer, "after" );
 		  });
 	      });
-	      domConstruct.place(listContainer, refNode);
+	      domConstruct.place(listContainer, refNode, "after" );
 	  });
 	  addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
       }
