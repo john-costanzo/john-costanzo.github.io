@@ -9,7 +9,6 @@
     <script>dojoConfig = {parseOnLoad: true}</script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
-    <script src="js/search-recipes.js"></script>
     <script src="js/costanzo-recipes.js"></script>
 
     <script>
@@ -209,7 +208,13 @@
 
       <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
 	<center><h1 id="topHeader">Recipe Browser</h2></center>
-        <div class="textSizeControl">
+
+	<div class="tooltip">
+  	      <input id="searchBox" class="search-box-control">
+	      <span class="tooltiptext">Narrow recipes to certain titles, ingredients and tags.</span>
+	</div>
+
+        <div id="textSizeControl" class="text-size-control">
           <span onclick="changeFontSize('body', '12')" style="font-size: 12px">A</span>
           <span onclick="changeFontSize('body', '16')" style="font-size: 16px">A</span>
           <span onclick="changeFontSize('body', '24')" style="font-size: 24px">A</span>
@@ -233,8 +238,9 @@
 
 </div>
 
-<script>
+<script src="js/search-recipes.js"></script>
 
+<script>
   addRecipes( recipe_name_map, "recipe_titles" );
 </script>
 

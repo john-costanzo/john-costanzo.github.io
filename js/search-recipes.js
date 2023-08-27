@@ -14,7 +14,6 @@ function hideElement( id ) {
 // Turn off display for element with ID and its related ids.
 function hideElements( id ) {
     hideElement( id );
-    hideElement( id + '-toc' );
 }
 
 // Turn on display for element with ID. Use block display.
@@ -31,7 +30,6 @@ function showElement( id ) {
 // Turn on display for element with ID and its related ids.
 function showElements( id ) {
     showElement( id );
-    showElement( id + '-toc' );
 }
 
 // Return true if all of the terms in the array QUERY
@@ -57,7 +55,7 @@ function searchElements( query, index ) {
     if( debug_search_recipes ) console.log( "searchElements: index=[%s]\tquery=[%s]", index.join(", "), query.join(", ") );
 
     indexLoop:
-    for (const idx of index ) {
+    for( const idx of index ) {
 	const id = idx[0];
 	const index_string = idx[1];
 	if( debug_search_recipes ) console.log( "\tid=[%s]\tindex_string=[%s]", id, index_string );
@@ -77,7 +75,7 @@ function keyboardHandler(e) {
     let query = document.getElementById( "searchBox" ).value;
     query = query.replace( /[^0-9a-z ]+/g, "" )
     if( debug_search_recipes ) console.log( "query=[%s]", query );
-    searchElements( query.split( " " ), recipeIndex );
+    searchElements( query.split( " " ), recipe_index_array );
 }
 
 document.getElementById( "searchBox" ).
@@ -110,7 +108,7 @@ function searchDriver() {
     ];
     for( const q of queries ) {
 	console.log( "query=[%s]", q.join(", ") );
-	searchElements( q, recipeIndex );
+	searchElements( q, recipe_index_array );
     }
 }
 
