@@ -9,6 +9,7 @@
     <script>dojoConfig = {parseOnLoad: true}</script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+    <script src="js/search-recipes.js"></script>
     <script src="js/costanzo-recipes.js"></script>
 
     <script>
@@ -183,7 +184,7 @@
 		      const recipeTitle = recipe[ 0 ];
 		      const recipeId = recipe[ 1 ];
 
-		      const listItem = domConstruct.create("li", { innerHTML: recipeTitle });
+		      const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId });
 		      // Add an event listener to each list item
 		      on(listItem, "click", function() {
 			  let topHeader = dom.byId( "topHeader" );
