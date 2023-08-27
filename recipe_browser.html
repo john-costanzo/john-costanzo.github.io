@@ -18,6 +18,25 @@
     </script>
     
     <script>
+    function toggleSection(id) {
+	// Toggle the visibility of the section identified by ID.
+	var content = document.getElementById( "heading-content-" + id );
+	var contentEllipses = document.getElementById( "heading-ellipses-" + id );
+	if( !content || !contentEllipses ) {
+	    console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
+	} else {
+	    if( content.style.display === 'none' ) {
+		content.style.display = 'block';
+		contentEllipses.innerHTML = "";
+	    } else {
+		content.style.display = 'none';
+		contentEllipses.innerHTML = "...";
+	    }
+	}
+    }
+    </script>
+
+    <script>
       function addIngredients( recipe_id ) {
 	  // Add all ingredients for RECIPE_ID.
 	  require([
