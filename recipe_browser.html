@@ -18,6 +18,7 @@
     </script>
     
     <script>
+
       function changeFontSize(selector, newSize) {
 	  let styleElement = document.getElementById('dynamic-styles');
 
@@ -190,6 +191,7 @@
 			  topHeader.innerHTML = recipeTitle;
 			  addIngredients( recipeId );
 			  addMethods( recipeId );
+			  toggleDrawer( 'recipeDrawer' );
 		      });
 
 		      domConstruct.place( listItem, listSubContainer, "first" );
@@ -207,49 +209,63 @@
     <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
 
       <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
-	<center><h1 id="topHeader">Recipe Browser</h2></center>
+	<center><h1 id="topHeader">Recipe Browser</h1></center>
 
-	<div class="tooltip">
-  	      <input id="searchBox" class="search-box-control">
-	      <span class="tooltiptext">🠘 Narrow recipes to certain titles, ingredients and tags.</span>
+	<div id="textSizeControl" class="text-size-control">
+	  <span onclick="changeFontSize('body', '12')" style="font-size: 12px">A&nbsp;&nbsp;&nbsp;</span>
+	  <span onclick="changeFontSize('body', '16')" style="font-size: 16px">A&nbsp;&nbsp;&nbsp;</span>
+	  <span onclick="changeFontSize('body', '24')" style="font-size: 24px">A</span>
 	</div>
 
-        <div id="textSizeControl" class="text-size-control">
-          <span onclick="changeFontSize('body', '12')" style="font-size: 12px">A</span>
-          <span onclick="changeFontSize('body', '16')" style="font-size: 16px">A</span>
-          <span onclick="changeFontSize('body', '24')" style="font-size: 24px">A</span>
-       </div>
-</div>
+	<div class="toggle-button">
+	  <button data-dojo-type="dijit/form/Button" type="button">Recipes
+	    <script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+	      toggleDrawer( 'recipeDrawer' );
+	    </script>
+	  </button>
+	</div>
 
-<div class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
-  <center><h2>Method</h2></center>
-  <div id="recipe_method"></div>
-</div>
+      </div>
 
-<div id="leftCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'left', splitter: true">
-  <center><h2>Recipes</h2></center>
-  <div id="recipe_titles"></div>
-</div>
+      <div id="centerCol" class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+	<center><h2>Method</h2></center>
+	<div id="recipe_method"></div>
 
-<div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: true">
-  <center><h2>Ingredients</h2></center>
-  <div id="recipe_ingredients"></div>
-</div>
+	<div id="recipeDrawer" class="hidden">
+	  <center><h2>Recipes</h2></center>
+	  <div class="tooltip">
+	    <input id="searchBox" class="search-box-control">
+	    <div class="tooltiptext">⇧ Narrow recipes to certain titles, ingredients and tags.</div>
+	  </div>
 
-</div>
+	  <div id="recipe_titles"></div>
 
-<script src="js/search-recipes.js"></script>
 
-<script>
-  addRecipes( recipe_name_map, "recipe_titles" );
-</script>
+	</div>
 
-<!-- load dojo -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script> -->
-<!-- <script> -->
-  <!--   require(["dojo/parser", "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"], function(parser){ -->
-  <!-- 	  parser.parse(); -->
-  <!--   }); -->
-  <!-- </script> -->
-</body>
+      </div>
+
+      <div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: false">
+	<center><h2>Ingredients</h2></center>
+	<div id="recipe_ingredients"></div>
+      </div>
+
+    </div>
+
+    <script src="js/search-recipes.js"></script>
+
+    <script>
+      function toggleDrawer( drawer ) {
+
+	  require(["dojo/dom", "dojo/dom-style"], function(dom, domStyle) {
+	      const panel = dom.byId( drawer );
+	      if( panel ) {
+		  const left = domStyle.get( panel, "left" );
+		  domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
+	      }
+	  });
+      }
+      addRecipes( recipe_name_map, "recipe_titles" );
+    </script>
+  </body>
 </html>
