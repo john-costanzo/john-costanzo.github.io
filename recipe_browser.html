@@ -255,6 +255,7 @@
     <script src="js/search-recipes.js"></script>
 
     <script>
+      addRecipes( recipe_name_map, "recipe_titles" );
       function toggleDrawer( drawer ) {
 
 	  require(["dojo/dom", "dojo/dom-style"], function(dom, domStyle) {
@@ -265,7 +266,7 @@
 	      }
 	  });
       }
-      addRecipes( recipe_name_map, "recipe_titles" );
+      document.getElementById( "searchBox" ).focus();
     </script>
   </body>
 </html>
