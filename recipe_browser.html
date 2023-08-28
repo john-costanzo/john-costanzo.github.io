@@ -263,9 +263,10 @@
 	      if( panel ) {
 		  const left = domStyle.get( panel, "left" );
 		  domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
+		  document.getElementById( "searchBox" ).focus();
 	      }
 	  });
-      }
+      };
       document.getElementById( "searchBox" ).focus();
     </script>
   </body>
