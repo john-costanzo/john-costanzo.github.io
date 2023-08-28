@@ -43,21 +43,35 @@
 	  styleSheet.insertRule(newRule, styleSheet.cssRules.length);
       }
 
-      function toggleSection(id) {
-	  // Toggle the visibility of the section identified by ID.
-	  var content = document.getElementById( "heading-content-" + id );
-	  var contentEllipses = document.getElementById( "heading-ellipses-" + id );
-	  if( !content || !contentEllipses ) {
-	      console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
-	  } else {
-	      if( content.style.display === 'none' ) {
-		  content.style.display = 'block';
-		  contentEllipses.innerHTML = "";
+      function toggleSection( id ) {
+	  // Toggle the visibility of the sections identified by ID.
+	  require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx"], function(dom, domStyle, fx, coreFx) {
+	      const content = dom.byId( "heading-content-" + id );
+	      const contentEllipses = dom.byId( "heading-ellipses-" + id );
+
+	      if( !content || !contentEllipses ) {
+		  console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
 	      } else {
-		  content.style.display = 'none';
-		  contentEllipses.innerHTML = "...";
+		  const display = domStyle.get( content, "display" );
+		  let wipe;
+		  let dots = "";
+
+		  if( display === 'none' ) {
+		      wipe = coreFx.wipeIn({
+			  node: content,
+			  duration: 750
+		      });
+		  } else {
+		      dots = "...";
+		      wipe = coreFx.wipeOut({
+			  node: content,
+			  duration: 750
+		      });
+		  }
+		  coreFx.combine( [ wipe ] ).play();
+		  contentEllipses.innerHTML = dots;
 	      }
-	  }
+	  });
       }
     </script>
 
