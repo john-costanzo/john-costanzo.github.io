@@ -1,3 +1,11 @@
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -60,11 +68,6 @@ li {
     font-weight: bold;
 }
 
-/* .note { */
-/*     color: blue; */
-/*     font-style: italic; */
-/* } */
-
 .conditional-space:after {
     content: " ";
 }
@@ -92,6 +95,8 @@ h2,h3,h4,h5,h6,h7,h8 {
 
 .toggle-button {
     margin-top: -36px;
+    margin-left: -8px;
+    font-size: 10px;
 }
 
 .search-box-control {
@@ -105,12 +110,13 @@ h2,h3,h4,h5,h6,h7,h8 {
 /* Tooltip container */
 .tooltip {
     margin-left: 5px;
+    font-size: 12px;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 390px;
+    width: 90%;
     background-color: lightgrey;
     color: black;
     text-align: center;
@@ -120,15 +126,6 @@ h2,h3,h4,h5,h6,h7,h8 {
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity 0.9s;
-}
-
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 0%;
-    margin-left: -5px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -141,10 +138,6 @@ h2,h3,h4,h5,h6,h7,h8 {
     text-align:left;
     padding-left: 5px;
     padding-right: 5px;
-}
-
-.tooltiptext-para a {
-    color: lightblue;
 }
 
 #recipeDrawer {
@@ -170,14 +163,20 @@ h2,h3,h4,h5,h6,h7,h8 {
     width: 80%; /* Adjust the width as needed */
     margin-left: 5%;
     /* border-radius: 10px; /\* Rounded corners for the note effect *\/ */
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted look */
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for a lifted look */
     font-family: Arial, sans-serif; /* Font for the text */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: rotate(-1deg);
+    transform-origin: top left;
 }
 
 .note::before {
     content: "Note: ";
-    transform: rotate(45deg);
-    transform-origin: top left;
+    padding-left: 1.5em;
+    background-image: url('../images/StickyNote.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .note p {
     margin: 0; /* Remove default margin for paragraphs */
@@ -191,14 +190,20 @@ h2,h3,h4,h5,h6,h7,h8 {
     width: 80%; /* Adjust the width as needed */
     margin-left: 5%;
     /*  border-radius: 10px; /\* Rounded corners for the tip effect *\/ */
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted look */
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for a lifted look */
     font-family: Arial, sans-serif; /* Font for the text */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: rotate(-1deg);
+    transform-origin: top left;
 }
 
 .tip::before {
     content: "Tip: ";
-    transform: rotate(45deg);
-    transform-origin: top left;
+    padding-left: 1.5em;
+    background-image: url('../images/info2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .tip p {
