@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-29 Tue 14:16:14> -->
+<!-- File last changed: <2023-08-29 Tue 14:32:44> -->
 
   <html lang="en">
     <head>
@@ -278,11 +278,13 @@
 		if( panel ) {
 		    const left = domStyle.get( panel, "left" );
 		    domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
-		    document.getElementById( "searchBox" ).focus();
+		    const sb = document.getElementById( "searchBox" );
+		    if( sb ) sb.focus();
 		}
 	    });
 	};
-	document.getElementById( "searchBox" ).focus();
+	const sb = document.getElementById( "searchBox" );
+	if( sb ) sb.focus();
       </script>
     </body>
   </html>
