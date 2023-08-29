@@ -1,297 +1,296 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-28 Mon 15:11:12>
+<!-- File last changed: <2023-08-29 Tue 14:16:14> -->
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Recipe Browser</title>
-    <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Recipe Browser</title>
+      <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
 
-    <script>dojoConfig = {parseOnLoad: true}</script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
-    <script src="js/costanzo-recipes.js"></script>
+      <script>dojoConfig = {parseOnLoad: true}</script>
+      <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+      <script src="js/costanzo-recipes.js"></script>
 
-    <script>
-      const TITLE = 0;
-      const INGREDIENTS = 1;
-      const METHODS = 2;
-    </script>
-    
-    <script>
+      <script>
+	const TITLE = 0;
+	const INGREDIENTS = 1;
+	const METHODS = 2;
+      </script>
 
-      function changeFontSize(selector, newSize) {
-	  let styleElement = document.getElementById('dynamic-styles');
+      <script>
 
-	  if (!styleElement) {
-	      const style = document.createElement('style');
-	      style.id = 'dynamic-styles';
-	      styleElement = document.head.appendChild(style);
-	  }
+	function changeFontSize(selector, newSize) {
+	    let styleElement = document.getElementById('dynamic-styles');
 
-	  const styleSheet = styleElement.sheet;
+	    if (!styleElement) {
+		const style = document.createElement('style');
+		style.id = 'dynamic-styles';
+		styleElement = document.head.appendChild(style);
+	    }
 
-	  const ruleIndex = Array.from(styleSheet.cssRules).findIndex(rule => rule.selectorText === selector);
+	    const styleSheet = styleElement.sheet;
 
-	  if (ruleIndex !== -1) {
-	      styleSheet.deleteRule(ruleIndex);
-	  }
+	    const ruleIndex = Array.from(styleSheet.cssRules).findIndex(rule => rule.selectorText === selector);
 
-	  const newRule = `${selector} {
+	    if (ruleIndex !== -1) {
+		styleSheet.deleteRule(ruleIndex);
+	    }
+
+	    const newRule = `${selector} {
     font-size: ${newSize}px;
   }`;
 
-	  styleSheet.insertRule(newRule, styleSheet.cssRules.length);
-      }
+	    styleSheet.insertRule(newRule, styleSheet.cssRules.length);
+	}
 
-      function toggleSection( id ) {
-	  // Toggle the visibility of the sections identified by ID.
-	  require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx"], function(dom, domStyle, fx, coreFx) {
-	      const content = dom.byId( "heading-content-" + id );
-	      const contentEllipses = dom.byId( "heading-ellipses-" + id );
+	function toggleSection( id ) {
+	    // Toggle the visibility of the sections identified by ID.
+	    require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx"], function(dom, domStyle, fx, coreFx) {
+		const content = dom.byId( "heading-content-" + id );
+		const contentEllipses = dom.byId( "heading-ellipses-" + id );
 
-	      if( !content || !contentEllipses ) {
-		  console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
-	      } else {
-		  const display = domStyle.get( content, "display" );
-		  let wipe;
-		  let dots = "";
+		if( !content || !contentEllipses ) {
+		    console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
+		} else {
+		    const display = domStyle.get( content, "display" );
+		    let wipe;
+		    let dots = "";
 
-		  if( display === 'none' ) {
-		      wipe = coreFx.wipeIn({
-			  node: content,
-			  duration: 750
-		      });
-		  } else {
-		      dots = "...";
-		      wipe = coreFx.wipeOut({
-			  node: content,
-			  duration: 750
-		      });
-		  }
-		  coreFx.combine( [ wipe ] ).play();
-		  contentEllipses.innerHTML = dots;
-	      }
-	  });
-      }
-    </script>
-
-    <script>
-      function addIngredients( recipe_id ) {
-	  // Add all ingredients for RECIPE_ID.
-	  require([
-	      "dojo/dom",
-	      "dojo/domReady!"
-	  ], function(dom) {
-	      let recipe_ingredients = dom.byId( "recipe_ingredients" );
-
-	      if( typeof ingredients_map !== "undefined" ) {
-		  let ingredients = ingredients_map.get( recipe_id );
-		  if( ingredients )
-		      recipe_ingredients.innerHTML = ingredients;
-		  else
-		      recipe_ingredients.innerHTML = "";
-	      }
-	  });
-      }
-
-      function addMethods( recipe_id ) {
-	  // Add all methods for RECIPE_ID.
-	  require([
-	      "dojo/dom",
-	      "dojo/domReady!"
-	  ], function(dom) {
-	      let recipe_method = dom.byId( "recipe_method" );
-
-	      if (typeof methods_map !== "undefined") {
-		  let method = methods_map.get( recipe_id );
-		  if( method )
-		      recipe_method.innerHTML = method;
-		  else
-		      recipe_method.innerHTML = "";
-	      }
-
-	      if (typeof yields_map !== "undefined") {
-		  let yield = yields_map.get( recipe_id );
-		  if( yield )
-		      recipe_method.innerHTML =
-		      recipe_method.innerHTML +
-		      "<h2>Yield</h2>" +
-		      yield;
-	      }
-
-	      if (typeof credits_map !== "undefined") {
-		  let credit = credits_map.get( recipe_id );
-		  if( credit )
-		      recipe_method.innerHTML =
-		      recipe_method.innerHTML +
-		      "<h2>Credit</h2>" +
-		      credit;
-	      }
-	  });
-      }
-
-      function handleItemClick() {
-	  let item = event.target;
-	  if( item.classList.contains( "itemClicked" ) ) {
-	      item.classList.remove( "itemClicked" );
-	  } else {
-	      item.classList.add( "itemClicked" );
-	  }
-      }
-
-
-      function addConditionalSpaceIfNextElementMatches( className, regex ) {
-	  // For all elements that contain CLASSNAME,
-	  // append a space to the text of the element if, and only if,
-	  // the following element begins with the regular expression REGEX.
-
-	  // Get all elements of class CLASSNAME
-	  const conditionalSpaces = document.querySelectorAll( '.' +  className );
-
-	  // Loop through each element and conditionally update its content
-	  conditionalSpaces.forEach( element => {
-	      console.log( "element = '" + element.textContent + "'" );
-	      const nextElement = element.nextElementSibling;
-
-	      // Get the first character of that next element
-	      if( nextElement ) {
-		  const text = nextElement.textContent.trim();
-		  console.log( "considering '" + text + "'" );
-		  const firstChar = text.charAt( 0 );
-
-		  // Check if the first character is a word constituent (letter, digit, or underscore)
-		  console.log( "firstChar = '" + firstChar + "'" );
-		  const isFirstCharWordConstituent = regex.test( firstChar );
-
-		  // Prepend a space to the element if the first character is a word constituent
-		  if ( isFirstCharWordConstituent ) {
-		      console.log( "\tadding space to '" + element.textContent + "'" );
-		      element.textContent += ' ';
-		      console.log( "\tadded space to '" + element.textContent + "'" );
-		  }
-	      }
-	      console.log( "\n\n" );
-	  });
-      }
-
-      function addRecipes( recipe_name_map, refNode ) {
-	  // Add recipes in RECIPE_NAME_MAP as an unordered list and place it as REFNODE
-	  require([
-	      "dojo/dom",
-	      "dojo/dom-construct",
-	      "dojo/on",
-	      "dojo/domReady!"
-	  ], function(dom, domConstruct, on) {
-
-	      // Create a list container
-	      const listContainer = domConstruct.create("ul");
-
-	      recipe_name_map.forEach( function( recipe_list, cat ) {
-		  const catHeader = domConstruct.create("li", { innerHTML: cat, class: "category-heading" });
-		  domConstruct.place( catHeader, listContainer, "first" );
-
-		  const listSubContainer = domConstruct.create("ul");
-		  domConstruct.place( listSubContainer, catHeader );
-
-		  console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
-		  recipe_list.forEach( function( recipe ) {
-		      const recipeTitle = recipe[ 0 ];
-		      const recipeId = recipe[ 1 ];
-
-		      const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
-		      // Add an event listener to each list item
-		      on(listItem, "click", function() {
-			  let topHeader = dom.byId( "topHeader" );
-			  topHeader.innerHTML = recipeTitle;
-			  addIngredients( recipeId );
-			  addMethods( recipeId );
-			  toggleDrawer( 'recipeDrawer' );
-		      });
-
-		      domConstruct.place( listItem, listSubContainer, "first" );
-		  });
-	      });
-	      domConstruct.place(listContainer, refNode );
-	  });
-	  addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
-      }
-
+		    if( display === 'none' ) {
+			wipe = coreFx.wipeIn({
+			    node: content,
+			    duration: 750
+			});
+		    } else {
+			dots = "...";
+			wipe = coreFx.wipeOut({
+			    node: content,
+			    duration: 750
+			});
+		    }
+		    coreFx.combine( [ wipe ] ).play();
+		    contentEllipses.innerHTML = dots;
+		}
+	    });
+	}
       </script>
-  </head>
-  
-  <body class="claro">
-    <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
 
-      <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
-	<center><h1 id="topHeader">Recipe Browser</h1></center>
+      <script>
+	function addIngredients( recipe_id ) {
+	    // Add all ingredients for RECIPE_ID.
+	    require([
+		"dojo/dom",
+		"dojo/domReady!"
+	    ], function(dom) {
+		let recipe_ingredients = dom.byId( "recipe_ingredients" );
 
-	<div id="textSizeControl" class="text-size-control">
-	  <span onclick="changeFontSize('body', '12')" style="font-size: 12px">A&nbsp;&nbsp;&nbsp;</span>
-	  <span onclick="changeFontSize('body', '18')" style="font-size: 18px">A&nbsp;&nbsp;&nbsp;</span>
-	  <span onclick="changeFontSize('body', '36')" style="font-size: 36px">A</span>
-	</div>
+		if( typeof ingredients_map !== "undefined" ) {
+		    let ingredients = ingredients_map.get( recipe_id );
+		    if( ingredients )
+			recipe_ingredients.innerHTML = ingredients;
+		    else
+			recipe_ingredients.innerHTML = "";
+		}
+	    });
+	}
 
-	<div class="toggle-button">
-	  <button data-dojo-type="dijit/form/Button" type="button">Recipes
-	    <script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-	      toggleDrawer( 'recipeDrawer' );
-	    </script>
-	  </button>
-	</div>
+	function addMethods( recipe_id ) {
+	    // Add all methods for RECIPE_ID.
+	    require([
+		"dojo/dom",
+		"dojo/domReady!"
+	    ], function(dom) {
+		let recipe_method = dom.byId( "recipe_method" );
 
-      </div>
+		if (typeof methods_map !== "undefined") {
+		    let method = methods_map.get( recipe_id );
+		    if( method )
+			recipe_method.innerHTML = method;
+		    else
+			recipe_method.innerHTML = "";
+		}
 
-      <div id="centerCol" class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
-	<center><h2>Method</h2></center>
-	<div id="recipe_method"></div>
+		if (typeof yields_map !== "undefined") {
+		    let yield = yields_map.get( recipe_id );
+		    if( yield )
+			recipe_method.innerHTML =
+			recipe_method.innerHTML +
+			"<h2>Yield</h2>" +
+			yield;
+		}
 
-	<div id="recipeDrawer" class="hidden">
-	  <center><h2>Recipes</h2></center>
-	  <div class="tooltip">
-	    <input id="searchBox" class="search-box-control">
-	    <div class="tooltiptext">⇧ Narrow recipes to certain titles, ingredients and tags.</div>
+		if (typeof credits_map !== "undefined") {
+		    let credit = credits_map.get( recipe_id );
+		    if( credit )
+			recipe_method.innerHTML =
+			recipe_method.innerHTML +
+			"<h2>Credit</h2>" +
+			credit;
+		}
+	    });
+	}
+
+	function handleItemClick() {
+	    let item = event.target;
+	    if( item.classList.contains( "itemClicked" ) ) {
+		item.classList.remove( "itemClicked" );
+	    } else {
+		item.classList.add( "itemClicked" );
+	    }
+	}
+
+
+	function addConditionalSpaceIfNextElementMatches( className, regex ) {
+	    // For all elements that contain CLASSNAME,
+	    // append a space to the text of the element if, and only if,
+	    // the following element begins with the regular expression REGEX.
+
+	    // Get all elements of class CLASSNAME
+	    const conditionalSpaces = document.querySelectorAll( '.' +  className );
+
+	    // Loop through each element and conditionally update its content
+	    conditionalSpaces.forEach( element => {
+		console.log( "element = '" + element.textContent + "'" );
+		const nextElement = element.nextElementSibling;
+
+		// Get the first character of that next element
+		if( nextElement ) {
+		    const text = nextElement.textContent.trim();
+		    console.log( "considering '" + text + "'" );
+		    const firstChar = text.charAt( 0 );
+
+		    // Check if the first character is a word constituent (letter, digit, or underscore)
+		    console.log( "firstChar = '" + firstChar + "'" );
+		    const isFirstCharWordConstituent = regex.test( firstChar );
+
+		    // Prepend a space to the element if the first character is a word constituent
+		    if ( isFirstCharWordConstituent ) {
+			console.log( "\tadding space to '" + element.textContent + "'" );
+			element.textContent += ' ';
+			console.log( "\tadded space to '" + element.textContent + "'" );
+		    }
+		}
+		console.log( "\n\n" );
+	    });
+	}
+
+	function addRecipes( recipe_name_map, refNode ) {
+	    // Add recipes in RECIPE_NAME_MAP as an unordered list and place it as REFNODE
+	    require([
+		"dojo/dom",
+		"dojo/dom-construct",
+		"dojo/on",
+		"dojo/domReady!"
+	    ], function(dom, domConstruct, on) {
+
+		// Create a list container
+		const listContainer = domConstruct.create("ul");
+
+		recipe_name_map.forEach( function( recipe_list, cat ) {
+		    const catHeader = domConstruct.create("li", { innerHTML: cat, class: "category-heading" });
+		    domConstruct.place( catHeader, listContainer, "first" );
+
+		    const listSubContainer = domConstruct.create("ul");
+		    domConstruct.place( listSubContainer, catHeader );
+
+		    console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
+		    recipe_list.forEach( function( recipe ) {
+			const recipeTitle = recipe[ 0 ];
+			const recipeId = recipe[ 1 ];
+
+			const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
+			// Add an event listener to each list item
+			on(listItem, "click", function() {
+			    let topHeader = dom.byId( "topHeader" );
+			    topHeader.innerHTML = recipeTitle;
+			    addIngredients( recipeId );
+			    addMethods( recipeId );
+			    toggleDrawer( 'recipeDrawer' );
+			});
+
+			domConstruct.place( listItem, listSubContainer, "first" );
+		    });
+		});
+		domConstruct.place(listContainer, refNode );
+	    });
+	    addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
+	}
+
+	</script>
+    </head>
+
+    <body class="claro">
+      <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
+
+	<div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
+	  <center><h1 id="topHeader">Recipe Browser</h1></center>
+
+	  <div id="textSizeControl" class="text-size-control">
+	    <span onclick="changeFontSize('body', '12')" style="font-size: 12px">A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	    <span onclick="changeFontSize('body', '18')" style="font-size: 18px">A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	    <span onclick="changeFontSize('body', '36')" style="font-size: 36px">A</span>
 	  </div>
 
-	  <div id="recipe_titles"></div>
+	  <div class="toggle-button">
+	    <button data-dojo-type="dijit/form/Button" type="button">Recipes
+	      <script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+		toggleDrawer( 'recipeDrawer' );
+	      </script>
+	    </button>
+	  </div>
+
+	</div>
+
+	<div id="centerCol" class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+	  <center><h2>Method</h2></center>
+	  <div id="recipe_method"></div>
+
+	  <div id="recipeDrawer" class="hidden">
+	    <center><h2>Recipes</h2></center>
+	    <div class="tooltip">
+	      <input id="searchBox" class="search-box-control">
+	      <div class="tooltiptext">⇧ Narrow recipes to certain titles, ingredients and tags.</div>
+	    </div>
+
+	    <div id="recipe_titles"></div>
 
 
+	  </div>
+
+	</div>
+
+	<div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: false">
+	  <center><h2>Ingredients</h2></center>
+	  <div id="recipe_ingredients"></div>
 	</div>
 
       </div>
 
-      <div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: false">
-	<center><h2>Ingredients</h2></center>
-	<div id="recipe_ingredients"></div>
-      </div>
+      <script src="js/search-recipes.js"></script>
 
-    </div>
+      <script>
+	addRecipes( recipe_name_map, "recipe_titles" );
+	function toggleDrawer( drawer ) {
 
-    <script src="js/search-recipes.js"></script>
+	    require(["dojo/dom", "dojo/dom-style"], function(dom, domStyle) {
+		const panel = dom.byId( drawer );
+		if( panel ) {
+		    const left = domStyle.get( panel, "left" );
+		    domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
+		    document.getElementById( "searchBox" ).focus();
+		}
+	    });
+	};
+	document.getElementById( "searchBox" ).focus();
+      </script>
+    </body>
+  </html>
 
-    <script>
-      addRecipes( recipe_name_map, "recipe_titles" );
-      function toggleDrawer( drawer ) {
-
-	  require(["dojo/dom", "dojo/dom-style"], function(dom, domStyle) {
-	      const panel = dom.byId( drawer );
-	      if( panel ) {
-		  const left = domStyle.get( panel, "left" );
-		  domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
-		  document.getElementById( "searchBox" ).focus();
-	      }
-	  });
-      };
-      document.getElementById( "searchBox" ).focus();
-    </script>
-  </body>
-</html>
-
-<!-- Local Variables: -->
-<!-- time-stamp-line-limit: 10 -->
-<!-- time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>" -->
-<!-- time-stamp-active: t -->
-<!-- time-stamp-start: "File last changed:[ \t]+" -->
-<!-- time-stamp-end: "$" -->
-<!-- End: -->
+  <!-- Local Variables: -->
+  <!-- time-stamp-line-limit: 10 -->
+  <!-- time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>" -->
+  <!-- time-stamp-active: t -->
+  <!-- time-stamp-start: "File last changed:[ \t]+" -->
+  <!-- time-stamp-end: " -->$" -->
+  <!-- End: -->
