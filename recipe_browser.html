@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-29 Tue 14:32:44> -->
+<!-- File last changed: <2023-08-30 Wed 15:19:44> -->
 
   <html lang="en">
     <head>
@@ -7,6 +7,42 @@
       <title>Recipe Browser</title>
       <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+
+      <script>
+	const rb_debug = false;
+      </script>
+
+      <script>
+	// Process arguments
+	const args = window.location.search.substring(1).split("&");
+	let numArgs = ( args[ 0 ] === '' ) ? undefined : args.length;
+	let nextArg=0;
+
+	function nextArgNVP() {
+	    // Return an array [ name, value ] containing the "next" argument.
+	    // If all arguments have been processed, return undefined.
+	    if( !numArgs ) return( undefined );
+	    if( nextArg >= args.length ) return( undefined );
+
+	    const nvp = args[ nextArg ].split(":");
+	    nextArg++;
+	    return( nvp );
+	}
+	var firstNvp = nextArgNVP();
+
+	if( numArgs && numArgs > 1 ) {
+	    // Spawn a separate window for each argument beyond the first one.
+	    let nvp = nextArgNVP();
+	    const originPathname = window.location.origin + window.location.pathname;
+	    console.log( "originPathname=[%s]", originPathname );
+	    while( nvp ) {
+		const url = originPathname + "?" + nvp[ 0 ] + ":" + nvp[ 1 ];
+		console.log( "spawning ===> " + url );
+		window.open( url, "_blank" );
+		nvp = nextArgNVP();
+	    }
+	}
+      </script>
 
       <script>dojoConfig = {parseOnLoad: true}</script>
       <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -89,8 +125,10 @@
 		    let ingredients = ingredients_map.get( recipe_id );
 		    if( ingredients )
 			recipe_ingredients.innerHTML = ingredients;
-		    else
+		    else {
+			console.log( "addIngredients: no such recipe id [%s]", recipe_id );
 			recipe_ingredients.innerHTML = "";
+		    }
 		}
 	    });
 	}
@@ -107,8 +145,10 @@
 		    let method = methods_map.get( recipe_id );
 		    if( method )
 			recipe_method.innerHTML = method;
-		    else
+		    else {
+			console.log( "addMethods: no such recipe id [%s]", recipe_id );
 			recipe_method.innerHTML = "";
+		    }
 		}
 
 		if (typeof yields_map !== "undefined") {
@@ -175,6 +215,20 @@
 	    });
 	}
 
+	function fillInRecipe( id ) {
+	    const title = recipe_id_to_name_map.get( id );
+	    if( id ) {
+		require([
+		    "dojo/dom",
+		], function( dom ) {
+		    let topHeader = dom.byId( "topHeader" );
+		    topHeader.innerHTML = title;
+		    addIngredients( id );
+		    addMethods( id );
+		});
+	    }
+	}
+
 	function addRecipes( recipe_name_map, refNode ) {
 	    // Add recipes in RECIPE_NAME_MAP as an unordered list and place it as REFNODE
 	    require([
@@ -182,7 +236,7 @@
 		"dojo/dom-construct",
 		"dojo/on",
 		"dojo/domReady!"
-	    ], function(dom, domConstruct, on) {
+	    ], function( dom, domConstruct, on ) {
 
 		// Create a list container
 		const listContainer = domConstruct.create("ul");
@@ -194,21 +248,17 @@
 		    const listSubContainer = domConstruct.create("ul");
 		    domConstruct.place( listSubContainer, catHeader );
 
-		    console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
+		    if( rb_debug ) console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
 		    recipe_list.forEach( function( recipe ) {
 			const recipeTitle = recipe[ 0 ];
 			const recipeId = recipe[ 1 ];
 
 			const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
 			// Add an event listener to each list item
-			on(listItem, "click", function() {
-			    let topHeader = dom.byId( "topHeader" );
-			    topHeader.innerHTML = recipeTitle;
-			    addIngredients( recipeId );
-			    addMethods( recipeId );
+			on( listItem, "click", function() {
+			    fillInRecipe( recipeId );
 			    toggleDrawer( 'recipeDrawer' );
 			});
-
 			domConstruct.place( listItem, listSubContainer, "first" );
 		    });
 		});
@@ -283,8 +333,15 @@
 		}
 	    });
 	};
-	const sb = document.getElementById( "searchBox" );
-	if( sb ) sb.focus();
+
+	if( numArgs > 0 ) {
+	    const recipeId = firstNvp[ 1 ];
+	    fillInRecipe( recipeId );
+	} else {
+	    const sb = document.getElementById( "searchBox" );
+	    toggleDrawer( 'recipeDrawer' );
+	    if( sb ) sb.focus();
+	}
       </script>
     </body>
   </html>
