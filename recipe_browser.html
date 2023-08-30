@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-30 Wed 15:19:44> -->
+<!-- File last changed: <2023-08-30 Wed 16:38:31> -->
 
   <html lang="en">
     <head>
@@ -229,6 +229,64 @@
 	    }
 	}
 
+	function printRecipe( id ) {
+	    // Print a recipe.
+	    // If given a recipe ID, load it first.
+	    if( id ) {
+		console.log( "printRecipe: printing recipe with id [%s]", id );
+		const title = recipe_id_to_name_map.get( id );
+		topHeader.innerHTML = title;
+		addIngredients( id );
+		addMethods( id );
+	    }
+
+	    // Create a new print window
+	    const printWindow = window.open("", "print");
+
+	    // Set the content of the print window to the element
+	    require([
+		"dojo/dom",
+		"dojo/domReady!"
+	    ], function(dom) {
+		const recipe_ingredients = dom.byId( "recipe_ingredients" );
+		const recipe_method = dom.byId( "recipe_method" );
+		const recipe_text = "<h1>" + topHeader.innerHTML + "</h1><p>\n" +
+		      "<h2>Ingredients</h2>" + recipe_ingredients.innerHTML + "<p>\n" +
+		      "<h2>Method</h2>" + recipe_method.innerHTML + "<p>\n";
+		console.log( "adding text [%s]", recipe_text );
+		printWindow.document.body.innerHTML = recipe_text;
+
+		// Print the print window
+		printWindow.print();
+	    });
+
+	    //		printPageArea( "recipe_method" );
+	}
+
+
+
+
+
+	function printPageArea2( elementId ) {
+	    // Get the element that we want to print
+	    const element = document.getElementById(elementId);
+	    if( element ) {
+
+		// Create a new print object
+		const printer = window.print();
+
+		// Set the print options
+		// printer.options.printBackground = false;
+		// printer.options.printHeaders = false;
+		// printer.options.printFooters = false;
+
+		// Print the element
+		printer.print(element);
+	    } else {
+		console.log( "Error: no element corresponding to [%s]", elementId );
+	    }
+	}
+
 	function addRecipes( recipe_name_map, refNode ) {
 	    // Add recipes in RECIPE_NAME_MAP as an unordered list and place it as REFNODE
 	    require([
@@ -281,6 +339,8 @@
 	    <span onclick="changeFontSize('body', '18')" style="font-size: 18px">A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 	    <span onclick="changeFontSize('body', '36')" style="font-size: 36px">A</span>
 	  </div>
+
+	  <img class="printer-control" onclick="printRecipe()" src="images/printer.jpg" alt="printer icon" width="20">
 
 	  <div class="toggle-button">
 	    <button data-dojo-type="dijit/form/Button" type="button">Recipes
@@ -335,8 +395,16 @@
 	};
 
 	if( numArgs > 0 ) {
+	    const action = firstNvp[ 0 ].toLowerCase();
 	    const recipeId = firstNvp[ 1 ];
-	    fillInRecipe( recipeId );
+
+	    if( action === "view" ) {
+		fillInRecipe( recipeId );
+	    } else if( action === "print" ) {
+		printRecipe( recipeId );
+	    } else {
+		console.log( "Error: Unknown action [%s]", action );
+	    }
 	} else {
 	    const sb = document.getElementById( "searchBox" );
 	    toggleDrawer( 'recipeDrawer' );
