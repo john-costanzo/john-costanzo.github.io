@@ -87,22 +87,17 @@ h2,h3,h4,h5,h6,h7,h8 {
     width: 95%;
 }
 
-.text-size-control {
-    text-align: right;
-    cursor: pointer;
-    margin-top: -24px;
-}
-
-.printer-control {
-  position: absolute;
-  top: 0;
-  right: 0;
+.gears-control {
+    position: absolute;
+    top: 0;
+    right: 0;
     cursor: pointer;
 }
 
 .toggle-button {
-    margin-top: -36px;
-    margin-left: -8px;
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 10px;
 }
 
@@ -274,4 +269,41 @@ h2,h3,h4,h5,h6,h7,h8 {
     /* top: -10px; */
     bottom: -20px;
     color: #3498db; /* Quote color */
+}
+
+.gearsButtonIcon {
+    background-image: url('../images/gears.png');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+.printerIcon {
+    background-image: url('../images/printer.jpg');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+.emailLinkIcon {
+    background-image: url('../images/email-link.png');
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+}
+.small-A {
+    background-image: url('../images/letter-A.jpg');
+    width: 6px;
+    height: 6px;
+    background-size: cover;
+}
+.medium-A {
+    background-image: url('../images/letter-A.jpg');
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+}
+.large-A {
+    background-image: url('../images/letter-A.jpg');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
 }
