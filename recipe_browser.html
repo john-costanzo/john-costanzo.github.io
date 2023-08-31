@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-31 Thu 15:53:39> -->
+<!-- File last changed: <2023-08-31 Thu 16:00:41> -->
 
   <html lang="en">
     <head>
@@ -370,7 +370,7 @@
 		    // Create menu items
 
 		    var smallFontItem = new MenuItem({
-			label: "small font",
+			label: "Small font",
 			iconClass: "small-A",
 			onClick: function() {
 			    changeFontSize('body', '12');
@@ -378,7 +378,7 @@
 		    });
 
 		    var mediumFontItem = new MenuItem({
-			label: "medium font",
+			label: "Medium font",
 			iconClass: "medium-A",
 			onClick: function() {
 			    changeFontSize('body', '18');
@@ -386,7 +386,7 @@
 		    });
 
 		    var largeFontItem = new MenuItem({
-			label: "large font",
+			label: "Large font",
 			iconClass: "large-A",
 			onClick: function() {
 			    changeFontSize('body', '36');
@@ -427,15 +427,16 @@
 	addRecipes( recipe_name_map, "recipe_titles" );
 
 	function toggleDrawer( drawer ) {
-	    require(["dojo/dom", "dojo/dom-style"], function(dom, domStyle) {
-		const panel = dom.byId( drawer );
-		if( panel ) {
-		    const left = domStyle.get( panel, "left" );
-		    domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
-		    const sb = document.getElementById( "searchBox" );
-		    if( sb ) sb.focus();
-		}
-	    });
+	    require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
+		    function(dom, domStyle) {
+			const panel = dom.byId( drawer );
+			if( panel ) {
+			    const left = domStyle.get( panel, "left" );
+			    domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
+			    const sb = document.getElementById( "searchBox" );
+			    if( sb ) sb.focus();
+			}
+		    });
 	};
 
 	if( numArgs > 0 ) {
