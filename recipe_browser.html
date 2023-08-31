@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-31 Thu 15:28:31> -->
+<!-- File last changed: <2023-08-31 Thu 15:45:01> -->
 
   <html lang="en">
     <head>
@@ -10,6 +10,7 @@
 
       <script>
 	const rb_debug = false;
+	let currentRecipeId;
       </script>
 
       <script>
@@ -216,6 +217,7 @@
 	}
 
 	function fillInRecipe( id ) {
+	    currentRecipeId = id;
 	    const title = recipe_id_to_name_map.get( id );
 	    if( id ) {
 		require([
@@ -264,7 +266,8 @@
 
 	function emailLinkToRecipe() {
 	    // Send a link to the email client
-	    window.open( "mailto:?subject=" + topHeader.innerHTML + "&body=" + window.location.href );
+	    const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
+	    window.open( "mailto:?subject=" + topHeader.innerHTML + "+recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
 	}
 
 	function addRecipes( recipe_name_map, refNode ) {
