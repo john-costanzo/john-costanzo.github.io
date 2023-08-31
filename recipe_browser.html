@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-30 Wed 16:38:31> -->
+<!-- File last changed: <2023-08-31 Thu 15:20:08> -->
 
   <html lang="en">
     <head>
@@ -253,7 +253,6 @@
 		const recipe_text = "<h1>" + topHeader.innerHTML + "</h1><p>\n" +
 		      "<h2>Ingredients</h2>" + recipe_ingredients.innerHTML + "<p>\n" +
 		      "<h2>Method</h2>" + recipe_method.innerHTML + "<p>\n";
-		console.log( "adding text [%s]", recipe_text );
 		printWindow.document.body.innerHTML = recipe_text;
 
 		// Print the print window
@@ -263,28 +262,9 @@
 	    //		printPageArea( "recipe_method" );
 	}
 
-
-
-
-
-	function printPageArea2( elementId ) {
-	    // Get the element that we want to print
-	    const element = document.getElementById(elementId);
-	    if( element ) {
-
-		// Create a new print object
-		const printer = window.print();
-
-		// Set the print options
-		// printer.options.printBackground = false;
-		// printer.options.printHeaders = false;
-		// printer.options.printFooters = false;
-
-		// Print the element
-		printer.print(element);
-	    } else {
-		console.log( "Error: no element corresponding to [%s]", elementId );
-	    }
+	function emailLinkToRecipe() {
+	    // Send a link to the email client
+	    window.open( "mailto:?subject=" + topHeader.innerHTML + "&body=" + window.location.href );
 	}
 
 	function addRecipes( recipe_name_map, refNode ) {
@@ -324,8 +304,7 @@
 	    });
 	    addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
 	}
-
-	</script>
+      </script>
     </head>
 
     <body class="claro">
@@ -333,14 +312,7 @@
 
 	<div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
 	  <center><h1 id="topHeader">Recipe Browser</h1></center>
-
-	  <div id="textSizeControl" class="text-size-control">
-	    <span onclick="changeFontSize('body', '12')" style="font-size: 12px">A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-	    <span onclick="changeFontSize('body', '18')" style="font-size: 18px">A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-	    <span onclick="changeFontSize('body', '36')" style="font-size: 36px">A</span>
-	  </div>
-
-	  <img class="printer-control" onclick="printRecipe()" src="images/printer.jpg" alt="printer icon" width="20">
+	  <div id="dropdownContainer"> </div>
 
 	  <div class="toggle-button">
 	    <button data-dojo-type="dijit/form/Button" type="button">Recipes
@@ -376,6 +348,76 @@
 	</div>
 
       </div>
+
+      <div id="gearsMenu" class="gears-control"></div>
+      <script>
+
+	require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dojo/domReady!"],
+		function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator) {
+		    var button = new DropDownButton({
+			label: "",
+			iconClass: "gearsButtonIcon",
+			dropDown: new DropDownMenu({
+			    style: "display: none;" //,
+			    //			  onBlur: function() {
+			    //			      this.getParent().closeDropDown();
+			    //			  }
+			})
+		    }, "myButton");
+
+		    // Create menu items
+
+		    var smallFontItem = new MenuItem({
+			label: "small font",
+			iconClass: "small-A",
+			onClick: function() {
+			    changeFontSize('body', '12');
+			}
+		    });
+
+		    var mediumFontItem = new MenuItem({
+			label: "medium font",
+			iconClass: "medium-A",
+			onClick: function() {
+			    changeFontSize('body', '18');
+			}
+		    });
+
+		    var largeFontItem = new MenuItem({
+			label: "large font",
+			iconClass: "large-A",
+			onClick: function() {
+			    changeFontSize('body', '36');
+			}
+		    });
+
+		    var printMenuItem = new MenuItem({
+			label: "Print",
+			iconClass: "printerIcon",
+			onClick: function() {
+			    printRecipe( );
+			},
+		    });
+
+		    var emailLinkMenuItem = new MenuItem({
+			label: "Email Link",
+			iconClass: "emailLinkIcon",
+			onClick: function() {
+			    emailLinkToRecipe();
+			},
+		    });
+
+		    button.dropDown.addChild(smallFontItem);
+		    button.dropDown.addChild(mediumFontItem);
+		    button.dropDown.addChild(largeFontItem);
+		    button.dropDown.addChild(new MenuSeparator());
+		    button.dropDown.addChild(printMenuItem);
+		    button.dropDown.addChild(emailLinkMenuItem);
+
+		    // Attach button to DOM
+		    button.placeAt("gearsMenu");
+		});
+      </script>
 
       <script src="js/search-recipes.js"></script>
 
