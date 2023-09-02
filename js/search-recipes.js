@@ -70,10 +70,11 @@ function searchElements( query, index ) {
 // Assume the keyboard event has already been processed.
 // Use the query in the query box to filter the page according to the recipeIndex
 function keyboardHandler(e) {
-    const key = String.fromCharCode( e.which || e.keyCode ).toLowerCase(); // TODO: Why do we care which key is pressed?
-    if( debug_search_recipes ) console.log( "[%s] pressed", key );
-    let query = document.getElementById( "searchBox" ).value;
-    query = query.replace( /[^0-9a-zA-Z ]+/g, "" );
+    let query = document.
+	getElementById( "searchBox" ).
+	value.
+	toLowerCase().
+	replace( /[^0-9a-z ]+/g, "" );
     if( debug_search_recipes ) console.log( "query=[%s]", query );
     searchElements( query.split( " " ), recipe_index_array );
 }
