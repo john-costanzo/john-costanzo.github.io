@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-08-31 Thu 16:00:41> -->
+<!-- File last changed: <2023-09-02 Sat 09:13:56> -->
 
   <html lang="en">
     <head>
@@ -10,7 +10,7 @@
 
       <script>
 	const rb_debug = false;
-	let currentRecipeId;
+	let currentRecipeId = undefined;
       </script>
 
       <script>
@@ -234,6 +234,7 @@
 	function printRecipe( id ) {
 	    // Print a recipe.
 	    // If given a recipe ID, load it first.
+	    if( !currentRecipeId ) return;
 	    if( id ) {
 		console.log( "printRecipe: printing recipe with id [%s]", id );
 		const title = recipe_id_to_name_map.get( id );
@@ -266,6 +267,7 @@
 
 	function emailLinkToRecipe() {
 	    // Send a link to the email client
+	    if( !currentRecipeId ) return;
 	    const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
 	    window.open( "mailto:?subject=" + topHeader.innerHTML + "+recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
 	}
