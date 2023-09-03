@@ -42,7 +42,8 @@ class CircularTimer {
 	this.sounds = sounds;
 
 	document.write(`
-    <span class="container">
+    <img class="alarm-clock-icon" src="images/alarm-clock-icon.avif">
+    <span class="timer-container">
       <span class="setters">
 	<span class="minutes-set">
 	  <button class="data-setter" data-setter-${this.id}="minutes-plus">+</button>
