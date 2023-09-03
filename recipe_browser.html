@@ -1,16 +1,103 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-02 Sat 09:13:56> -->
+<!-- File last changed: <2023-09-02 Sat 20:14:55> -->
 
   <html lang="en">
     <head>
       <meta charset="utf-8">
       <title>Recipe Browser</title>
+      <script>dojoConfig = {parseOnLoad: true}</script>
+      <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
       <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
 
       <script>
+	require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator"],
+		function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator) {
+		    var button = new DropDownButton({
+			label: "",
+			iconClass: "gearsButtonIcon",
+			dropDown: new DropDownMenu({
+			    style: "display: none;"
+			})
+		    }, "myButton");
+
+		    // Create menu items
+
+		    var smallFontItem = new MenuItem({
+			label: "Small font",
+			iconClass: "small-A",
+			onClick: function() {
+			    changeFontSize('body', '12');
+			}
+		    });
+
+		    var mediumFontItem = new MenuItem({
+			label: "Medium font",
+			iconClass: "medium-A",
+			onClick: function() {
+			    changeFontSize('body', '18');
+			}
+		    });
+
+		    var largeFontItem = new MenuItem({
+			label: "Large font",
+			iconClass: "large-A",
+			onClick: function() {
+			    changeFontSize('body', '36');
+			}
+		    });
+
+		    printMenuItem = new MenuItem({
+			label: "Print",
+			iconClass: "printerIcon",
+			onClick: function() {
+			    printRecipe( );
+			},
+			disabled: true,
+		    });
+
+		    emailLinkMenuItem = new MenuItem({
+			label: "Email Link",
+			iconClass: "emailLinkIcon",
+			onClick: function() {
+			    emailLinkToRecipe();
+			},
+			disabled: true,
+		    });
+
+		    button.dropDown.addChild(smallFontItem);
+		    button.dropDown.addChild(mediumFontItem);
+		    button.dropDown.addChild(largeFontItem);
+		    button.dropDown.addChild(new MenuSeparator());
+		    button.dropDown.addChild(printMenuItem);
+		    button.dropDown.addChild(emailLinkMenuItem);
+
+		    // Attach button to DOM
+		    button.placeAt("gearsMenu");
+
+		    if( numArgs > 0 ) {
+			const action = firstNvp[ 0 ].toLowerCase();
+			const recipeId = firstNvp[ 1 ];
+
+			if( action === "view" ) {
+			    fillInRecipe( recipeId );
+			} else if( action === "print" ) {
+			    printRecipe( recipeId );
+			} else {
+			    console.log( "Error: Unknown action [%s]", action );
+			}
+		    } else {
+			toggleDrawer( 'recipeDrawer' );
+		    }
+		});
+      </script>
+
+      <script>
+	// Some global variables
 	const rb_debug = false;
 	let currentRecipeId = undefined;
+	var printMenuItem;
+	var emailLinkMenuItem;
       </script>
 
       <script>
@@ -45,17 +132,13 @@
 	}
       </script>
 
-      <script>dojoConfig = {parseOnLoad: true}</script>
-      <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+
       <script src="js/costanzo-recipes.js"></script>
 
       <script>
 	const TITLE = 0;
 	const INGREDIENTS = 1;
 	const METHODS = 2;
-      </script>
-
-      <script>
 
 	function changeFontSize(selector, newSize) {
 	    let styleElement = document.getElementById('dynamic-styles');
@@ -229,6 +312,8 @@
 		    addMethods( id );
 		});
 	    }
+	    printMenuItem.setDisabled(  false );
+	    emailLinkMenuItem.setDisabled( false );
 	}
 
 	function printRecipe( id ) {
@@ -247,22 +332,18 @@
 	    const printWindow = window.open("", "print");
 
 	    // Set the content of the print window to the element
-	    require([
-		"dojo/dom",
-		"dojo/domReady!"
-	    ], function(dom) {
-		const recipe_ingredients = dom.byId( "recipe_ingredients" );
-		const recipe_method = dom.byId( "recipe_method" );
-		const recipe_text = "<h1>" + topHeader.innerHTML + "</h1><p>\n" +
-		      "<h2>Ingredients</h2>" + recipe_ingredients.innerHTML + "<p>\n" +
-		      "<h2>Method</h2>" + recipe_method.innerHTML + "<p>\n";
-		printWindow.document.body.innerHTML = recipe_text;
+	    require(["dojo/dom"],
+		    function(dom) {
+			const recipe_ingredients = dom.byId( "recipe_ingredients" );
+			const recipe_method = dom.byId( "recipe_method" );
+			const recipe_text = "<h1>" + topHeader.innerHTML + "</h1><p>\n" +
+			      "<h2>Ingredients</h2>" + recipe_ingredients.innerHTML + "<p>\n" +
+			      "<h2>Method</h2>" + recipe_method.innerHTML + "<p>\n";
+			printWindow.document.body.innerHTML = recipe_text;
 
-		// Print the print window
-		printWindow.print();
-	    });
-
-	    //		printPageArea( "recipe_method" );
+			// Print the print window
+			printWindow.print();
+		    });
 	}
 
 	function emailLinkToRecipe() {
@@ -309,7 +390,27 @@
 	    });
 	    addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
 	}
+	</script>
+
+      <script src="js/search-recipes.js"></script>
+
+      <script>
+	addRecipes( recipe_name_map, "recipe_titles" );
+
+	function toggleDrawer( drawer ) {
+	    require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
+		    function(dom, domStyle) {
+			const panel = dom.byId( drawer );
+			if( panel ) {
+			    const left = domStyle.get( panel, "left" );
+			    domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
+			    const sb = document.getElementById( "searchBox" );
+			    if( sb ) sb.focus();
+			}
+		    });
+	};
       </script>
+
     </head>
 
     <body class="claro">
@@ -354,108 +455,6 @@
       </div>
 
       <div id="gearsMenu" class="gears-control"></div>
-      <script>
-
-	require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dojo/domReady!"],
-		function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator) {
-		    var button = new DropDownButton({
-			label: "",
-			iconClass: "gearsButtonIcon",
-			dropDown: new DropDownMenu({
-			    style: "display: none;" //,
-			    //			  onBlur: function() {
-			    //			      this.getParent().closeDropDown();
-			    //			  }
-			})
-		    }, "myButton");
-
-		    // Create menu items
-
-		    var smallFontItem = new MenuItem({
-			label: "Small font",
-			iconClass: "small-A",
-			onClick: function() {
-			    changeFontSize('body', '12');
-			}
-		    });
-
-		    var mediumFontItem = new MenuItem({
-			label: "Medium font",
-			iconClass: "medium-A",
-			onClick: function() {
-			    changeFontSize('body', '18');
-			}
-		    });
-
-		    var largeFontItem = new MenuItem({
-			label: "Large font",
-			iconClass: "large-A",
-			onClick: function() {
-			    changeFontSize('body', '36');
-			}
-		    });
-
-		    var printMenuItem = new MenuItem({
-			label: "Print",
-			iconClass: "printerIcon",
-			onClick: function() {
-			    printRecipe( );
-			},
-		    });
-
-		    var emailLinkMenuItem = new MenuItem({
-			label: "Email Link",
-			iconClass: "emailLinkIcon",
-			onClick: function() {
-			    emailLinkToRecipe();
-			},
-		    });
-
-		    button.dropDown.addChild(smallFontItem);
-		    button.dropDown.addChild(mediumFontItem);
-		    button.dropDown.addChild(largeFontItem);
-		    button.dropDown.addChild(new MenuSeparator());
-		    button.dropDown.addChild(printMenuItem);
-		    button.dropDown.addChild(emailLinkMenuItem);
-
-		    // Attach button to DOM
-		    button.placeAt("gearsMenu");
-		});
-      </script>
-
-      <script src="js/search-recipes.js"></script>
-
-      <script>
-	addRecipes( recipe_name_map, "recipe_titles" );
-
-	function toggleDrawer( drawer ) {
-	    require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
-		    function(dom, domStyle) {
-			const panel = dom.byId( drawer );
-			if( panel ) {
-			    const left = domStyle.get( panel, "left" );
-			    domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
-			    const sb = document.getElementById( "searchBox" );
-			    if( sb ) sb.focus();
-			}
-		    });
-	};
-
-	if( numArgs > 0 ) {
-	    const action = firstNvp[ 0 ].toLowerCase();
-	    const recipeId = firstNvp[ 1 ];
-
-	    if( action === "view" ) {
-		fillInRecipe( recipeId );
-	    } else if( action === "print" ) {
-		printRecipe( recipeId );
-	    } else {
-		console.log( "Error: Unknown action [%s]", action );
-	    }
-	} else {
-	    toggleDrawer( 'recipeDrawer' );
-	}
-      </script>
     </body>
   </html>
 
