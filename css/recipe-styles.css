@@ -310,3 +310,12 @@ h2,h3,h4,h5,h6,h7,h8 {
     height: 24px;
     background-size: cover;
 }
+.timer-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.alarm-clock-icon {
+    width: 24px;
+    height: 24px;
+}
