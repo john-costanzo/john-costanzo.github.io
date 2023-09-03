@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-02 Sat 20:26:51> -->
+<!-- File last changed: <2023-09-02 Sat 20:38:42> -->
 
   <html lang="en">
     <head>
@@ -65,12 +65,12 @@
 			disabled: true,
 		    });
 
-		    button.dropDown.addChild(smallFontItem);
-		    button.dropDown.addChild(mediumFontItem);
-		    button.dropDown.addChild(largeFontItem);
-		    button.dropDown.addChild(new MenuSeparator());
-		    button.dropDown.addChild(printMenuItem);
-		    button.dropDown.addChild(emailLinkMenuItem);
+		    button.dropDown.addChild( smallFontItem );
+		    button.dropDown.addChild( mediumFontItem );
+		    button.dropDown.addChild( largeFontItem );
+		    button.dropDown.addChild( new MenuSeparator() );
+		    button.dropDown.addChild( printMenuItem );
+		    button.dropDown.addChild( emailLinkMenuItem );
 
 		    // Attach button to DOM
 		    button.placeAt("gearsMenu");
@@ -84,7 +84,7 @@
 			} else if( action === "print" ) {
 			    printRecipe( recipeId );
 			} else {
-			    console.log( "Error: Unknown action [%s]", action );
+			    console.log( "Error: Unknown action [%s]; href=[%s]", action, window.location.href );
 			}
 		    } else {
 			toggleDrawer( 'recipeDrawer' );
@@ -198,22 +198,20 @@
       <script>
 	function addIngredients( recipe_id ) {
 	    // Add all ingredients for RECIPE_ID.
-	    require([
-		"dojo/dom",
-		"dojo/domReady!"
-	    ], function(dom) {
-		let recipe_ingredients = dom.byId( "recipe_ingredients" );
+	    require(["dojo/dom","dojo/domReady!"],
+		    function(dom) {
+			let recipe_ingredients = dom.byId( "recipe_ingredients" );
 
-		if( typeof ingredients_map !== "undefined" ) {
-		    let ingredients = ingredients_map.get( recipe_id );
-		    if( ingredients )
-			recipe_ingredients.innerHTML = ingredients;
-		    else {
-			console.log( "addIngredients: no such recipe id [%s]", recipe_id );
-			recipe_ingredients.innerHTML = "";
-		    }
-		}
-	    });
+			if( typeof ingredients_map !== "undefined" ) {
+			    let ingredients = ingredients_map.get( recipe_id );
+			    if( ingredients )
+				recipe_ingredients.innerHTML = ingredients;
+			    else {
+				console.log( "addIngredients: no such recipe id [%s]", recipe_id );
+				recipe_ingredients.innerHTML = "";
+			    }
+			}
+		    });
 	}
 
 	function addMethods( recipe_id ) {
@@ -391,8 +389,6 @@
 	</script>
 
       <script>
-	addRecipes( recipe_name_map, "recipe_titles" );
-
 	function toggleDrawer( drawer ) {
 	    require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
 		    function(dom, domStyle) {
@@ -400,11 +396,13 @@
 			if( panel ) {
 			    const left = domStyle.get( panel, "left" );
 			    domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
-			    const sb = document.getElementById( "searchBox" );
+			    const sb = dom.byId( "searchBox" );
 			    if( sb ) sb.focus();
 			}
 		    });
 	};
+	addRecipes( recipe_name_map, "recipe_titles" );
+
       </script>
     </head>
 
