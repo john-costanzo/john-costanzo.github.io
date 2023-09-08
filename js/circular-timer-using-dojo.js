@@ -1,4 +1,4 @@
-// File last changed: <2023-09-07 Thu 16:42:08>
+// File last changed: <2023-09-08 Fri 16:27:56>
 
     const zeroPad = (num, places) => String(num).padStart(places, '0');
 
@@ -86,12 +86,34 @@ function createTimer( timerContainer ) {
 
 	    startButtonHandler = on(startButton, "click", startTimer);
 
+	    function commenceTicking() {
+		if (remainingTime <= 0) {
+                    clearInterval(timerInterval);
+		    startButton.innerHTML = "Start";
+		    startButtonHandler.remove();
+		    startButtonHandler = on(startButton, "click", startTimer);
+                    return;
+		}
+		remainingTime--;
+		updateDisplay();
+            }
+
 	    function pauseTimer() {
 		console.log( "pauseTimer" );
                 clearInterval(timerInterval);
-		startButton.innerHTML = "Start";
+		startButton.innerHTML = "Resume";
 		startButtonHandler.remove();
-		startButtonHandler = on(startButton, "click", startTimer);
+		startButtonHandler = on(startButton, "click", resumeTimer);
+	    }
+
+	    function resumeTimer() {
+		console.log( "resumeTimer" );
+                clearInterval(timerInterval);
+		startButton.innerHTML = "Pause";
+		startButtonHandler.remove();
+		startButtonHandler = on(startButton, "click", pauseTimer);
+
+                timerInterval = setInterval(commenceTicking, 1000);
 	    }
 
 	    function startTimer() {
@@ -105,16 +127,7 @@ function createTimer( timerContainer ) {
                 remainingTime = totalTime;
 
                 updateDisplay();
-
-                timerInterval = setInterval(function () {
-		    if (remainingTime <= 0) {
-                        clearInterval(timerInterval);
-                        return;
-		    }
-
-		    remainingTime--;
-		    updateDisplay();
-                }, 1000);
+                timerInterval = setInterval(commenceTicking, 1000);
 	    }
 
 	    function updateDisplay() {
