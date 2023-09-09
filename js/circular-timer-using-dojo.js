@@ -1,4 +1,4 @@
-// File last changed: <2023-09-09 Sat 15:45:03>
+// File last changed: <2023-09-09 Sat 18:12:10>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -32,6 +32,7 @@ class CircularTimer {
 	var initialMinutes = Math.floor( initialTime / 60 );
 	var expirationTime;
 	var timeAtPause = 0; // capture the time pause was clicked
+	var isRunning = false;
 
 	require( [
             "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/ready",
@@ -90,6 +91,20 @@ class CircularTimer {
 		    innerHTML: "minutes"
 		}, timerControls );
 
+		minutes.recent = minutes.value;
+		on(minutes, "change", function (event) {
+		    minutes.old = minutes.recent;
+		    minutes.recent = minutes.value;
+
+                    totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+		    expirationTime += ( minutes.recent - minutes.old ) * 60000;
+		    if( isRunning ) {
+			remainingTime += ( minutes.recent - minutes.old );
+		    } else {
+			remainingTime = ( expirationTime - Date.now() ) / 1000;
+		    }
+		});
+
 		const colon = domConstruct.create( "span", {
 		    innerHTML: " : "
 		}, timerControls );
@@ -101,6 +116,20 @@ class CircularTimer {
 		    max: "59",
 		    innerHTML: "seconds"
 		}, timerControls );
+
+		seconds.recent = seconds.value;
+		on(seconds, "change", function (event) {
+		    seconds.old = seconds.recent;
+		    seconds.recent = seconds.value;
+
+                    totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+		    expirationTime += ( seconds.recent - seconds.old ) * 1000;
+		    if( isRunning ) {
+			remainingTime += ( seconds.recent - seconds.old );
+		    } else {
+			remainingTime = ( expirationTime - Date.now() ) / 1000;
+		    }
+		});
 
 		const startButton = domConstruct.create( "button", {
 		    innerHTML: "Start"
@@ -122,15 +151,14 @@ class CircularTimer {
 			startButton.innerHTML = "Start";
 			startButtonHandler.remove( );
 			startButtonHandler = on( startButton, "click", startTimer );
-			return;
 		    }
-//		    remainingTime--;
 		    updateDisplay( );
 		}
 
 		function pauseTimer( ) {
                     clearInterval( timerInterval );
 		    timeAtPause = Date.now();
+		    isRunning = false;
 		    startButton.innerHTML = "Resume";
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", resumeTimer );
@@ -140,6 +168,7 @@ class CircularTimer {
                     clearInterval( timerInterval );
 		    expirationTime += Date.now() - timeAtPause;
                     updateDisplay( );
+		    isRunning = true;
 		    startButton.innerHTML = "Pause";
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", pauseTimer );
@@ -148,14 +177,14 @@ class CircularTimer {
 		}
 
 		function startTimer( ) {
-		    expirationTime = Date.now() + ( initialTime * 1000);
+                    totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+		    expirationTime = Date.now() + ( totalTime * 1000 );
                     clearInterval( timerInterval );
+		    isRunning = true;
 		    startButton.innerHTML = "Pause";
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", pauseTimer );
 
-                    totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-//                    remainingTime = totalTime;
 
                     updateDisplay( );
                     timerInterval = setInterval( commenceTicking, 1000 );
@@ -164,11 +193,14 @@ class CircularTimer {
 		function updateDisplay( ) {
 		    remainingTime = ( expirationTime - Date.now() ) / 1000;
 
-                    var min = Math.round( remainingTime / 60 );
-                    var sec = Math.round( remainingTime % 60 );
+                    var min = Math.floor( remainingTime / 60 );
+		    var sec = Math.round( remainingTime % 60 );
 		    if( sec < 0 ) sec = 0;
 		    if( min < 0 ) min = 0;
-		    // console.log( "updateDisplay: remainingTime = " + remainingTime + "; min=" + min + "; sec=" + sec );
+		    if( sec >= 60 ) {
+		    	sec = 0;
+			min++;
+		    }
 		    text.textContent = zeroPad( min, 2 ) + ":" + zeroPad( sec, 2 );
 
                     // Update the SVG timer arc
