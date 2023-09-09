@@ -1,4 +1,4 @@
-// File last changed: <2023-09-08 Fri 17:30:53>
+// File last changed: <2023-09-09 Sat 15:35:57>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -31,6 +31,7 @@ class CircularTimer {
 	var initialSeconds = initialTime % 60;
 	var initialMinutes = Math.floor( initialTime / 60 );
 	var expirationTime;
+	var timeAtPause = 0; // capture the time pause was clicked
 
 	require( [
             "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/ready",
@@ -129,6 +130,7 @@ class CircularTimer {
 
 		function pauseTimer( ) {
                     clearInterval( timerInterval );
+		    timeAtPause = Date.now();
 		    startButton.innerHTML = "Resume";
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", resumeTimer );
@@ -136,6 +138,8 @@ class CircularTimer {
 
 		function resumeTimer( ) {
                     clearInterval( timerInterval );
+		    expirationTime += Date.now() - timeAtPause;
+                    updateDisplay( );
 		    startButton.innerHTML = "Pause";
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", pauseTimer );
