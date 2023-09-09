@@ -1,4 +1,4 @@
-// File last changed: <2023-09-08 Fri 16:55:38>
+// File last changed: <2023-09-08 Fri 17:30:53>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -30,6 +30,7 @@ class CircularTimer {
 	var circularTimer;
 	var initialSeconds = initialTime % 60;
 	var initialMinutes = Math.floor( initialTime / 60 );
+	var expirationTime;
 
 	require( [
             "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/ready",
@@ -122,7 +123,7 @@ class CircularTimer {
 			startButtonHandler = on( startButton, "click", startTimer );
 			return;
 		    }
-		    remainingTime--;
+//		    remainingTime--;
 		    updateDisplay( );
 		}
 
@@ -145,21 +146,26 @@ class CircularTimer {
 		function startTimer( ) {
                     clearInterval( timerInterval );
 		    startButton.innerHTML = "Pause";
+		    expirationTime = Date.now() + ( initialTime * 1000);
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", pauseTimer );
 
                     totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-                    remainingTime = totalTime;
+//                    remainingTime = totalTime;
 
                     updateDisplay( );
                     timerInterval = setInterval( commenceTicking, 1000 );
 		}
 
 		function updateDisplay( ) {
-                    var min = Math.floor( remainingTime / 60 );
-                    var sec = remainingTime % 60;
-		    text.textContent = zeroPad( min, 2 ) + ":" + zeroPad( sec, 2 );
+		    remainingTime = ( expirationTime - Date.now() ) / 1000;
 
+                    var min = Math.floor( remainingTime / 60 );
+                    var sec = Math.floor( remainingTime % 60 );
+		    if( sec < 0 ) sec = 0;
+		    if( min < 0 ) min = 0;
+		    console.log( "updateDisplay: remainingTime = " + remainingTime + "; min=" + min + "; sec=" + sec );
+		    text.textContent = zeroPad( min, 2 ) + ":" + zeroPad( sec, 2 );
 
                     // Update the SVG timer arc
 		    const fractionRemaining = ( ( remainingTime / totalTime ) * circumference );
