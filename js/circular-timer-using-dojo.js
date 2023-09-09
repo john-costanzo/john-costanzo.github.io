@@ -1,4 +1,4 @@
-// File last changed: <2023-09-09 Sat 15:35:57>
+// File last changed: <2023-09-09 Sat 15:45:03>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -148,9 +148,9 @@ class CircularTimer {
 		}
 
 		function startTimer( ) {
+		    expirationTime = Date.now() + ( initialTime * 1000);
                     clearInterval( timerInterval );
 		    startButton.innerHTML = "Pause";
-		    expirationTime = Date.now() + ( initialTime * 1000);
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", pauseTimer );
 
@@ -164,15 +164,16 @@ class CircularTimer {
 		function updateDisplay( ) {
 		    remainingTime = ( expirationTime - Date.now() ) / 1000;
 
-                    var min = Math.floor( remainingTime / 60 );
-                    var sec = Math.floor( remainingTime % 60 );
+                    var min = Math.round( remainingTime / 60 );
+                    var sec = Math.round( remainingTime % 60 );
 		    if( sec < 0 ) sec = 0;
 		    if( min < 0 ) min = 0;
-		    console.log( "updateDisplay: remainingTime = " + remainingTime + "; min=" + min + "; sec=" + sec );
+		    // console.log( "updateDisplay: remainingTime = " + remainingTime + "; min=" + min + "; sec=" + sec );
 		    text.textContent = zeroPad( min, 2 ) + ":" + zeroPad( sec, 2 );
 
                     // Update the SVG timer arc
-		    const fractionRemaining = ( ( remainingTime / totalTime ) * circumference );
+		    let fractionRemaining = ( ( remainingTime / totalTime ) * circumference );
+		    if( fractionRemaining < 1 ) fractionRemaining = 0;
 		    circle.style.strokeDasharray = fractionRemaining + " " + circumference;
 		}
             } );
