@@ -1,4 +1,4 @@
-// File last changed: <2023-09-09 Sat 18:12:10>
+// File last changed: <2023-09-09 Sat 18:17:37>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -111,7 +111,7 @@ class CircularTimer {
 
 		const seconds = domConstruct.create( "input", {
 		    type: "number",
-		    value: initialSeconds,
+		    value: zeroPad( initialSeconds, 2 ),
 		    min: "0",
 		    max: "59",
 		    innerHTML: "seconds"
@@ -121,6 +121,7 @@ class CircularTimer {
 		on(seconds, "change", function (event) {
 		    seconds.old = seconds.recent;
 		    seconds.recent = seconds.value;
+		    seconds.value = zeroPad( seconds.value, 2 );
 
                     totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
 		    expirationTime += ( seconds.recent - seconds.old ) * 1000;
