@@ -1,4 +1,4 @@
-// File last changed: <2023-09-09 Sat 18:17:37>
+// File last changed: <2023-09-10 Sun 15:40:58>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -45,6 +45,10 @@ class CircularTimer {
 		    return;
 		}
 
+		const timerControls = domConstruct.create( "div", {
+		}, circularTimer );
+		timerControls.classList.add( "timer-controls" );
+
 		// Create an SVG element
 		var svg = document.createElementNS( "http://www.w3.org/2000/svg", "svg" );
 		svg.setAttribute( "width", "100" );
@@ -74,22 +78,23 @@ class CircularTimer {
 		svg.appendChild( text );
 
 		// Append the SVG element to the circle container
-		circularTimer.appendChild( svg );
+		timerControls.appendChild( svg );
 
 		if( !svg || !circle ) {
 		    console.log( "createTimer: cannot create circle within an SVG element" );
 		    return;
 		}
 
-		const timerControls = domConstruct.create( "div", {
-		}, circularTimer );
+		const timeControls = domConstruct.create( "div", {
+		}, timerControls );
+		timeControls.classList.add( "time-controls" );
 
 		const minutes = domConstruct.create( "input", {
 		    type: "number",
 		    value: initialMinutes,
 		    min: "0",
 		    innerHTML: "minutes"
-		}, timerControls );
+		}, timeControls );
 
 		minutes.recent = minutes.value;
 		on(minutes, "change", function (event) {
@@ -107,7 +112,7 @@ class CircularTimer {
 
 		const colon = domConstruct.create( "span", {
 		    innerHTML: " : "
-		}, timerControls );
+		}, timeControls );
 
 		const seconds = domConstruct.create( "input", {
 		    type: "number",
@@ -115,7 +120,7 @@ class CircularTimer {
 		    min: "0",
 		    max: "59",
 		    innerHTML: "seconds"
-		}, timerControls );
+		}, timeControls );
 
 		seconds.recent = seconds.value;
 		on(seconds, "change", function (event) {
@@ -134,7 +139,7 @@ class CircularTimer {
 
 		const startButton = domConstruct.create( "button", {
 		    innerHTML: "Start"
-		}, circularTimer );
+		}, timerControls );
 		var startButtonHandler;
 
 		const radius = circle.r.baseVal.value;
