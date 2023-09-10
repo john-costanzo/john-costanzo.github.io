@@ -1,6 +1,21 @@
-// File last changed: <2023-09-10 Sun 15:40:58>
+// File last changed: <2023-09-10 Sun 16:16:42>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
+
+function toggleElement( el, displayStyle ) {
+    // Set the style.display to DISPLAYSTYLE if provided.
+    // Else toggle its state between "none" and "flex".
+    const style = document.getElementById( el ).style;
+
+    if( displayStyle ) {
+	style.display = displayStyle;
+    } else {
+	if( style.display == "none" )
+	    style.display = "flex";
+	else
+	    style.display = "none";
+    }
+}
 
 class CircularTimer {
 
@@ -47,7 +62,7 @@ class CircularTimer {
 
 		const timerControls = domConstruct.create( "div", {
 		}, circularTimer );
-		timerControls.classList.add( "timer-controls" );
+		timerControls.classList.add( "circular-timer-controls" );
 
 		// Create an SVG element
 		var svg = document.createElementNS( "http://www.w3.org/2000/svg", "svg" );
@@ -216,6 +231,7 @@ class CircularTimer {
 		}
             } );
 	} );
+	toggleElement( timerContainer, "none" );
 	return( circularTimer );
     }
 };
