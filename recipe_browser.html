@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-10 Sun 21:10:07> -->
+<!-- File last changed: <2023-09-11 Mon 14:16:52> -->
 
   <html lang="en">
     <head>
@@ -197,24 +197,6 @@
       </script>
 
       <script>
-	function addIngredients( recipe_id ) {
-	    // Add all ingredients for RECIPE_ID.
-	    require(["dojo/dom","dojo/domReady!"],
-		    function(dom) {
-			let recipe_ingredients = dom.byId( "recipe_ingredients" );
-
-			if( typeof ingredients_map !== "undefined" ) {
-			    let ingredients = ingredients_map.get( recipe_id );
-			    if( ingredients )
-				recipe_ingredients.innerHTML = ingredients;
-			    else {
-				console.log( "addIngredients: no such recipe id [%s]", recipe_id );
-				recipe_ingredients.innerHTML = "";
-			    }
-			}
-		    });
-	}
-
 	function extractTimingInformation( s ) {
 	    // Extract timing information from the string S.
 	    // Return a list containing successive pairs of elements are ( timerId timingInfo )
@@ -234,6 +216,28 @@
 	    return( result );
 	}
 
+	function addIngredients( recipe_id ) {
+	    // Add all ingredients for RECIPE_ID.
+	    require(["dojo/dom","dojo/domReady!"],
+		    function(dom) {
+			let recipe_ingredients = dom.byId( "recipe_ingredients" );
+
+			if( typeof ingredients_map !== "undefined" ) {
+			    let ingredients = ingredients_map.get( recipe_id );
+			    if( ingredients ) {
+				const result = extractTimingInformation( ingredients );
+				recipe_ingredients.innerHTML = result[ result.length-1 ]; // The ingredients, stripped of timing info
+				for( let i=0; i<result.length-1; i += 2 ) {
+				    new CircularTimer( result[ i ], result [ i+1 ] );
+				}
+			    } else {
+				console.log( "addIngredients: no such recipe id [%s]", recipe_id );
+				recipe_ingredients.innerHTML = "";
+			    }
+			}
+		    });
+	}
+
 	function addMethods( recipe_id ) {
 	    // Add all methods for RECIPE_ID.
 	    require([
@@ -245,14 +249,11 @@
 		if (typeof methods_map !== "undefined") {
 		    let method = methods_map.get( recipe_id );
 		    if( method ) {
-			// TODO: from method, pull out circular-timings and execute new CircularTimer() for each
 			const result = extractTimingInformation( method );
-			if( result.length > 1 ) method = result[ result.length-1 ];
-			recipe_method.innerHTML = method;
-			if( result.length > 1 )
-			    for( let i=0; i<result.length-1; i += 2 ) {
-				new CircularTimer( result[ i ], result [ i+1 ] );
-			    }
+			recipe_method.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
+			for( let i=0; i<result.length-1; i += 2 ) {
+			    new CircularTimer( result[ i ], result [ i+1 ] );
+			}
 		    }
 		    else {
 			console.log( "addMethods: no such recipe id [%s]", recipe_id );
@@ -262,20 +263,32 @@
 
 		if (typeof yields_map !== "undefined") {
 		    let yield = yields_map.get( recipe_id );
-		    if( yield )
+		    if( yield ) {
+			const result = extractTimingInformation( yield );
+			let yield_text = result[ result.length-1 ]; // The yield, stripped of timing info
 			recipe_method.innerHTML =
-			recipe_method.innerHTML +
-			"<h2>Yield</h2>" +
-			yield;
+			    recipe_method.innerHTML +
+			    "<h2>Yield</h2>" +
+			    yield_text;
+			for( let i=0; i<result.length-1; i += 2 ) {
+			    new CircularTimer( result[ i ], result [ i+1 ] );
+			}
+		    }
 		}
 
 		if (typeof credits_map !== "undefined") {
 		    let credit = credits_map.get( recipe_id );
-		    if( credit )
+		    if( credit ) {
+			const result = extractTimingInformation( credit );
+			let credit_text = result[ result.length-1 ]; // The credit, stripped of timing info
 			recipe_method.innerHTML =
-			recipe_method.innerHTML +
-			"<h2>Credit</h2>" +
-			credit;
+			    recipe_method.innerHTML +
+			    "<h2>Credit</h2>" +
+			    credit_text;
+			for( let i=0; i<result.length-1; i += 2 ) {
+			    new CircularTimer( result[ i ], result [ i+1 ] );
+			}
+		    }
 		}
 	    });
 	}
