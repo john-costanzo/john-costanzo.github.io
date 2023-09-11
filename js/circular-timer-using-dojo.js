@@ -1,11 +1,17 @@
-// File last changed: <2023-09-10 Sun 16:16:42>
+// File last changed: <2023-09-10 Sun 18:13:22>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
-function toggleElement( el, displayStyle ) {
+function toggleElement( elementId, displayStyle ) {
     // Set the style.display to DISPLAYSTYLE if provided.
     // Else toggle its state between "none" and "flex".
-    const style = document.getElementById( el ).style;
+    const element = document.getElementById( elementId );
+    if( !element ) {
+	console.log( "toggleElement: cannot locate " + elementId );
+	return;
+    }
+
+    const style = element.style;
 
     if( displayStyle ) {
 	style.display = displayStyle;

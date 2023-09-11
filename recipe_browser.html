@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-03 Sun 15:05:56> -->
+<!-- File last changed: <2023-09-10 Sun 21:10:07> -->
 
   <html lang="en">
     <head>
@@ -8,7 +8,7 @@
       <script>dojoConfig = {parseOnLoad: true}</script>
       <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
       <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
-      <link rel="stylesheet" href="css/circular-timer-style.css" media="screen">
+      <link rel="stylesheet" href="css/circular-timer-style-using-dojo.css" media="screen">
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
 
       <script>
@@ -215,6 +215,25 @@
 		    });
 	}
 
+	function extractTimingInformation( s ) {
+	    // Extract timing information from the string S.
+	    // Return a list containing successive pairs of elements are ( timerId timingInfo )
+	    // and the last element is the string with the timing information removed.
+	    const regex = /<script>\s*new\s+CircularTimer\("([^)]+)",\s*([^)]+)\)\s*<\/script>/;
+
+	    let match;
+	    let result = [];
+	    
+	    while( match  = regex.exec( s ) ) {
+		const id = match[ 1 ];
+		const timing = match[ 2 ];
+		s = s.replace( regex, "" );
+		result.push( id, timing );
+	    }
+	    result.push( s );
+	    return( result );
+	}
+
 	function addMethods( recipe_id ) {
 	    // Add all methods for RECIPE_ID.
 	    require([
@@ -225,8 +244,16 @@
 
 		if (typeof methods_map !== "undefined") {
 		    let method = methods_map.get( recipe_id );
-		    if( method )
+		    if( method ) {
+			// TODO: from method, pull out circular-timings and execute new CircularTimer() for each
+			const result = extractTimingInformation( method );
+			if( result.length > 1 ) method = result[ result.length-1 ];
 			recipe_method.innerHTML = method;
+			if( result.length > 1 )
+			    for( let i=0; i<result.length-1; i += 2 ) {
+				new CircularTimer( result[ i ], result [ i+1 ] );
+			    }
+		    }
 		    else {
 			console.log( "addMethods: no such recipe id [%s]", recipe_id );
 			recipe_method.innerHTML = "";
@@ -443,7 +470,7 @@
 
       <div id="gearsMenu" class="gears-control"></div>
       <script src="js/search-recipes.js"></script>
-      <script src="js/circular-timer.js"></script>
+      <script src="js/circular-timer-using-dojo.js"></script>
 
     </body>
   </html>
