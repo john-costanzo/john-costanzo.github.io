@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-11 Mon 13:52:07> */
+/* File last changed: <2023-09-12 Tue 08:53:05> */
 
 .timer-container {
     /* text-align: center; */
@@ -47,6 +47,13 @@ input[type="number"] {
     color: black;
     font-style: normal !important;
     text-decoration: none !important;
+}
+
+.alarm-clock-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: -10px;
+    margin-left: -10px;
 }
 
 /* Local Variables: */
