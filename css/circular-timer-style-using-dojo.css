@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-12 Tue 08:53:05> */
+/* File last changed: <2023-09-12 Tue 09:05:37> */
 
 .timer-container {
     /* text-align: center; */
@@ -41,6 +41,8 @@ input[type="number"] {
 .circular-timer-container {
     display: flex;
     flex-direction: row;
+    text-decoration: none !important;
+    font-style: normal !important;
 }
 
 .button {
