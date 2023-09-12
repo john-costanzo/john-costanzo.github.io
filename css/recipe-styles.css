@@ -267,8 +267,7 @@ h2,h3,h4,h5,h6,h7,h8 {
     content: close-quote;
     font-size: 64px;
     position: absolute;
-    /* left: -1px; */
-    /* top: -10px; */
+    margin-left: -35px;
     bottom: -20px;
     color: #3498db; /* Quote color */
 }
