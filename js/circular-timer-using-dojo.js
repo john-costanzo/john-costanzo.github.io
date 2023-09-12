@@ -1,4 +1,4 @@
-// File last changed: <2023-09-10 Sun 18:13:22>
+// File last changed: <2023-09-11 Mon 13:48:59>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -161,6 +161,7 @@ class CircularTimer {
 		const startButton = domConstruct.create( "button", {
 		    innerHTML: "Start"
 		}, timerControls );
+		startButton.classList.add( "button" );
 		var startButtonHandler;
 
 		const radius = circle.r.baseVal.value;

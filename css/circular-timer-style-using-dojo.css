@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-10 Sun 21:11:44> */
+/* File last changed: <2023-09-11 Mon 13:52:07> */
 
 .timer-container {
     /* text-align: center; */
@@ -43,6 +43,11 @@ input[type="number"] {
     flex-direction: row;
 }
 
+.button {
+    color: black;
+    font-style: normal !important;
+    text-decoration: none !important;
+}
 
 /* Local Variables: */
 /* time-stamp-line-limit: 10 */
