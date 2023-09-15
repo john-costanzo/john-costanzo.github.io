@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-11 Mon 14:16:52> -->
+<!-- File last changed: <2023-09-15 Fri 04:06:22> -->
 
   <html lang="en">
     <head>
@@ -166,33 +166,34 @@
 
 	function toggleSection( id ) {
 	    // Toggle the visibility of the sections identified by ID.
-	    require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx"], function(dom, domStyle, fx, coreFx) {
-		const content = dom.byId( "heading-content-" + id );
-		const contentEllipses = dom.byId( "heading-ellipses-" + id );
+	    require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx"],
+		    function( dom, domStyle, fx, coreFx ) {
+			const content = dom.byId( "heading-content-" + id );
+			const contentEllipses = dom.byId( "heading-ellipses-" + id );
 
-		if( !content || !contentEllipses ) {
-		    console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
-		} else {
-		    const display = domStyle.get( content, "display" );
-		    let wipe;
-		    let dots = "";
+			if( !content || !contentEllipses ) {
+			    console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
+			} else {
+			    const display = domStyle.get( content, "display" );
+			    let wipe;
+			    let dots = "";
 
-		    if( display === 'none' ) {
-			wipe = coreFx.wipeIn({
-			    node: content,
-			    duration: 750
-			});
-		    } else {
-			dots = "...";
-			wipe = coreFx.wipeOut({
-			    node: content,
-			    duration: 750
-			});
-		    }
-		    coreFx.combine( [ wipe ] ).play();
-		    contentEllipses.innerHTML = dots;
-		}
-	    });
+			    if( display === 'none' ) {
+				wipe = coreFx.wipeIn({
+				    node: content,
+				    duration: 750
+				});
+			    } else {
+				dots = "...";
+				wipe = coreFx.wipeOut({
+				    node: content,
+				    duration: 750
+				});
+			    }
+			    coreFx.combine( [ wipe ] ).play();
+			    contentEllipses.innerHTML = dots;
+			}
+		    });
 	}
       </script>
 
@@ -240,57 +241,55 @@
 
 	function addMethods( recipe_id ) {
 	    // Add all methods for RECIPE_ID.
-	    require([
-		"dojo/dom",
-		"dojo/domReady!"
-	    ], function(dom) {
-		let recipe_method = dom.byId( "recipe_method" );
+	    require([ "dojo/dom", "dojo/domReady!" ],
+		    function(dom) {
+			let recipe_method = dom.byId( "recipe_method" );
 
-		if (typeof methods_map !== "undefined") {
-		    let method = methods_map.get( recipe_id );
-		    if( method ) {
-			const result = extractTimingInformation( method );
-			recipe_method.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
-			for( let i=0; i<result.length-1; i += 2 ) {
-			    new CircularTimer( result[ i ], result [ i+1 ] );
+			if (typeof methods_map !== "undefined") {
+			    let method = methods_map.get( recipe_id );
+			    if( method ) {
+				const result = extractTimingInformation( method );
+				recipe_method.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
+				for( let i=0; i<result.length-1; i += 2 ) {
+				    new CircularTimer( result[ i ], result [ i+1 ] );
+				}
+			    }
+			    else {
+				console.log( "addMethods: no such recipe id [%s]", recipe_id );
+				recipe_method.innerHTML = "";
+			    }
 			}
-		    }
-		    else {
-			console.log( "addMethods: no such recipe id [%s]", recipe_id );
-			recipe_method.innerHTML = "";
-		    }
-		}
 
-		if (typeof yields_map !== "undefined") {
-		    let yield = yields_map.get( recipe_id );
-		    if( yield ) {
-			const result = extractTimingInformation( yield );
-			let yield_text = result[ result.length-1 ]; // The yield, stripped of timing info
-			recipe_method.innerHTML =
-			    recipe_method.innerHTML +
-			    "<h2>Yield</h2>" +
-			    yield_text;
-			for( let i=0; i<result.length-1; i += 2 ) {
-			    new CircularTimer( result[ i ], result [ i+1 ] );
+			if (typeof yields_map !== "undefined") {
+			    let yield = yields_map.get( recipe_id );
+			    if( yield ) {
+				const result = extractTimingInformation( yield );
+				let yield_text = result[ result.length-1 ]; // The yield, stripped of timing info
+				recipe_method.innerHTML =
+				    recipe_method.innerHTML +
+				    "<h2>Yield</h2>" +
+				    yield_text;
+				for( let i=0; i<result.length-1; i += 2 ) {
+				    new CircularTimer( result[ i ], result [ i+1 ] );
+				}
+			    }
 			}
-		    }
-		}
 
-		if (typeof credits_map !== "undefined") {
-		    let credit = credits_map.get( recipe_id );
-		    if( credit ) {
-			const result = extractTimingInformation( credit );
-			let credit_text = result[ result.length-1 ]; // The credit, stripped of timing info
-			recipe_method.innerHTML =
-			    recipe_method.innerHTML +
-			    "<h2>Credit</h2>" +
-			    credit_text;
-			for( let i=0; i<result.length-1; i += 2 ) {
-			    new CircularTimer( result[ i ], result [ i+1 ] );
+			if (typeof credits_map !== "undefined") {
+			    let credit = credits_map.get( recipe_id );
+			    if( credit ) {
+				const result = extractTimingInformation( credit );
+				let credit_text = result[ result.length-1 ]; // The credit, stripped of timing info
+				recipe_method.innerHTML =
+				    recipe_method.innerHTML +
+				    "<h2>Credit</h2>" +
+				    credit_text;
+				for( let i=0; i<result.length-1; i += 2 ) {
+				    new CircularTimer( result[ i ], result [ i+1 ] );
+				}
+			    }
 			}
-		    }
-		}
-	    });
+		    });
 	}
 
 	function handleItemClick() {
@@ -340,14 +339,13 @@
 	    currentRecipeId = id;
 	    const title = recipe_id_to_name_map.get( id );
 	    if( id ) {
-		require([
-		    "dojo/dom",
-		], function( dom ) {
-		    let topHeader = dom.byId( "topHeader" );
-		    topHeader.innerHTML = title;
-		    addIngredients( id );
-		    addMethods( id );
-		});
+		require([ "dojo/dom"],
+			function( dom ) {
+			    let topHeader = dom.byId( "topHeader" );
+			    topHeader.innerHTML = title;
+			    addIngredients( id );
+			    addMethods( id );
+			});
 	    }
 	    printMenuItem.setDisabled(  false );
 	    emailLinkMenuItem.setDisabled( false );
@@ -369,8 +367,18 @@
 	    const printWindow = window.open("", "print");
 
 	    // Set the content of the print window to the element
-	    require(["dojo/dom"],
-		    function(dom) {
+	    require([ "dojo/dom", "dojo/dom-construct" ],
+		    function( dom, domConstruct ) {
+			const stylesheets = document.querySelectorAll( 'link[ rel="stylesheet" ]' );
+			let head = "<head>";
+			for( let i=0; i < stylesheets.length; i++ ) {
+			    console.log( stylesheets[ i ].outerHTML );
+			    const sheet = "<link rel=\"stylesheet\" href=\"" + stylesheets[ i ].href + "\" media=\"print\">";
+			    head += sheet;
+			}
+			head += "</head>";
+			printWindow.document.head.innerHTML = head;
+
 			const recipe_ingredients = dom.byId( "recipe_ingredients" );
 			const recipe_method = dom.byId( "recipe_method" );
 			const recipe_text = "<h1>" + topHeader.innerHTML + "</h1><p>\n" +
@@ -392,42 +400,38 @@
 
 	function addRecipes( recipe_name_map, refNode ) {
 	    // Add recipes in RECIPE_NAME_MAP as an unordered list and place it as REFNODE
-	    require([
-		"dojo/dom",
-		"dojo/dom-construct",
-		"dojo/on",
-		"dojo/domReady!"
-	    ], function( dom, domConstruct, on ) {
+	    require([ "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/domReady!" ],
+		    function( dom, domConstruct, on ) {
 
-		// Create a list container
-		const listContainer = domConstruct.create("ul");
+			// Create a list container
+			const listContainer = domConstruct.create("ul");
 
-		recipe_name_map.forEach( function( recipe_list, cat ) {
-		    const catHeader = domConstruct.create("li", { innerHTML: cat, class: "category-heading" });
-		    domConstruct.place( catHeader, listContainer, "first" );
+			recipe_name_map.forEach( function( recipe_list, cat ) {
+			    const catHeader = domConstruct.create("li", { innerHTML: cat, class: "category-heading" });
+			    domConstruct.place( catHeader, listContainer, "first" );
 
-		    const listSubContainer = domConstruct.create("ul");
-		    domConstruct.place( listSubContainer, catHeader );
+			    const listSubContainer = domConstruct.create("ul");
+			    domConstruct.place( listSubContainer, catHeader );
 
-		    if( rb_debug ) console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
-		    recipe_list.forEach( function( recipe ) {
-			const recipeTitle = recipe[ 0 ];
-			const recipeId = recipe[ 1 ];
+			    if( rb_debug ) console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
+			    recipe_list.forEach( function( recipe ) {
+				const recipeTitle = recipe[ 0 ];
+				const recipeId = recipe[ 1 ];
 
-			const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
-			// Add an event listener to each list item
-			on( listItem, "click", function() {
-			    fillInRecipe( recipeId );
-			    toggleDrawer( 'recipeDrawer' );
+				const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
+				// Add an event listener to each list item
+				on( listItem, "click", function() {
+				    fillInRecipe( recipeId );
+				    toggleDrawer( 'recipeDrawer' );
+				});
+				domConstruct.place( listItem, listSubContainer, "first" );
+			    });
 			});
-			domConstruct.place( listItem, listSubContainer, "first" );
+			domConstruct.place(listContainer, refNode );
 		    });
-		});
-		domConstruct.place(listContainer, refNode );
-	    });
 	    addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
 	}
-	</script>
+      </script>
 
       <script>
 	function toggleDrawer( drawer ) {
