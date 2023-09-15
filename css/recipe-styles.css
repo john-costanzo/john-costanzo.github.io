@@ -39,17 +39,6 @@ html, body {
     background-color: #d0e9fc;
 }
 
-#viewsChart {
-    width: 550px;
-    height: 550px;
-}
-
-.itemClicked {
-    color: gray;
-    text-decoration: line-through;
-    font-style: italic;
-}
-
 li {
     cursor: pointer;
 }
@@ -184,7 +173,6 @@ h2,h3,h4,h5,h6,h7,h8 {
 }
 .note p {
     margin: 0; /* Remove default margin for paragraphs */
-    /*  line-height: 1.4; /* Adjust line height for readability */
 }
 
 
@@ -212,7 +200,6 @@ h2,h3,h4,h5,h6,h7,h8 {
 
 .tip p {
     margin: 0; /* Remove default margin for paragraphs */
-    /*  line-height: 1.4; /* Adjust line height for readability */
 }
 
 .pretty-table {
@@ -309,12 +296,11 @@ h2,h3,h4,h5,h6,h7,h8 {
     height: 24px;
     background-size: cover;
 }
-.timer-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 .alarm-clock-icon {
     width: 24px;
     height: 24px;
+}
+.itemClicked {
+    color: gray;
+    font-style: italic;
 }
