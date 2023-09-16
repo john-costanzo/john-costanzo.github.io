@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-15 Fri 04:06:22> -->
+<!-- File last changed: <2023-09-16 Sat 08:37:04> -->
 
   <html lang="en">
     <head>
@@ -66,12 +66,24 @@
 			disabled: true,
 		    });
 
+		    helpLinkMenuItem = new MenuItem({
+			label: "Help",
+			onClick: function() {
+			    const helpPage = "recipe_browser_help.html";
+			    const newWindow = window.open( helpPage, "RecipeBrowserHelpPage" );
+			    if( !newWindow ) console.error( "Failed to open a new window for [%s].", helpPage );
+			},
+			disabled: false,
+		    });
+
 		    button.dropDown.addChild( smallFontItem );
 		    button.dropDown.addChild( mediumFontItem );
 		    button.dropDown.addChild( largeFontItem );
 		    button.dropDown.addChild( new MenuSeparator() );
 		    button.dropDown.addChild( printMenuItem );
 		    button.dropDown.addChild( emailLinkMenuItem );
+		    button.dropDown.addChild( new MenuSeparator() );
+		    button.dropDown.addChild( helpLinkMenuItem );
 
 		    // Attach button to DOM
 		    button.placeAt("gearsMenu");
