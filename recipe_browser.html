@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-16 Sat 08:37:04> -->
+<!-- File last changed: <2023-09-16 Sat 18:38:31> -->
 
   <html lang="en">
     <head>
@@ -12,8 +12,8 @@
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
 
       <script>
-	require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator"],
-		function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator) {
+	require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button","dojo/dom","dojo/on",],
+		function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, dom, on) {
 		    var button = new DropDownButton({
 			label: "",
 			iconClass: "gearsButtonIcon",
@@ -66,12 +66,26 @@
 			disabled: true,
 		    });
 
+		    // Create a Dialog widget
+		    const popup = new Dialog({
+			content: "      <center><h1>Recipe Browser Help</h1></center>       <ul> 	<li><b>Recipes Button</b><br> 	  Clicking this will allow you to search through all recipes. Type a word fragment and it will list recipes that start with that word in the ingredients, method or description.  	<li><b>Recipes</b><br> 	  <ul> 	    <li>Click on a section header to hide or show the section.</li> 	    <li>Click on an alarm clock icon (<img src=\"images/alarm-clock-icon.png\" class=\"alarm-clock-icon\">) to hide or show a timer for that particular recipe step. You can start, pause and continue the timer. You can also change the time the timer runs for.</li> 	    <li>Click on an ingredient or a step in a method. This will <span class=\"itemClicked\">de-emphasize</span> the ingredient or step to allow you to mark what you've finished.</li> 	  </ul> 	<li><b>Gear Menu</b><br> 	  <ul> 	    <li>Choose from among small (<img src=\"images/letter-A.jpg\" class=\"small-A\">), medium (<img src=\"images/letter-A.jpg\" class=\"medium-A\">) or large (<img src=\"images/letter-A.jpg\" class=\"large-A\">) font.</li> 	    <li><img class=\"printerIcon\">Print the recipe. <i>☚ This has known defects.</i> </li> 	    <li><img class=\"emailLinkIcon\">Share a link to a recipe via email.</li> 	  </ul>       </ul> "
+		    });
+
+		    const dismissButton = new Button({
+			label: "Dismiss",
+			showLabel: true,
+			onClick: function () {
+			    popup.hide();
+			}
+		    });
+
+		    // Add the dismiss button to the pop-up
+		    popup.addChild( dismissButton );
+
 		    helpLinkMenuItem = new MenuItem({
 			label: "Help",
 			onClick: function() {
-			    const helpPage = "recipe_browser_help.html";
-			    const newWindow = window.open( helpPage, "RecipeBrowserHelpPage" );
-			    if( !newWindow ) console.error( "Failed to open a new window for [%s].", helpPage );
+			    popup.show();
 			},
 			disabled: false,
 		    });
@@ -103,7 +117,7 @@
 			toggleDrawer( 'recipeDrawer' );
 		    }
 		});
-      </script>
+		</script>
 
       <script>
 	// Some global variables
