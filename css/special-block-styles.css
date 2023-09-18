@@ -1,0 +1,111 @@
+.note {
+    background-color: lightyellow; /* Yellow background color */
+    padding: 10px; /* Add some padding for space inside the "note" */
+    width: 80%; /* Adjust the width as needed */
+    margin-left: 5%;
+    /* border-radius: 10px; /\* Rounded corners for the note effect *\/ */
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for a lifted look */
+    font-family: Arial, sans-serif; /* Font for the text */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: rotate(-1deg);
+    transform-origin: top left;
+}
+
+.note::before {
+    content: "Note: ";
+    padding-left: 1.5em;
+    background-image: url('../images/StickyNote.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    page-break-inside: avoid;
+}
+.note p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+
+.tip {
+    background-color: #1bebfa; /* blue background color */
+    padding: 10px; /* Add some padding for space inside the "tip" */
+    width: 80%; /* Adjust the width as needed */
+    margin-left: 5%;
+    /*  border-radius: 10px; /\* Rounded corners for the tip effect *\/ */
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for a lifted look */
+    font-family: Arial, sans-serif; /* Font for the text */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: rotate(-1deg);
+    transform-origin: top left;
+    page-break-inside: avoid;
+}
+
+.tip::before {
+    content: "Tip: ";
+    padding-left: 1.5em;
+    background-image: url('../images/info2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tip p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+.pretty-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.pretty-table th,
+.pretty-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.pretty-table thead th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.pretty-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pretty-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.pull-quote {
+    position: relative;
+    text-indent: 31px;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 10;
+    border-left: 5px solid #3498db; /* Left border color */
+    background-color: #f9f9f9;
+    quotes: "\201C" "\201D"; /* Use double-quote characters for quotes */
+}
+
+.pull-quote::before {
+    content: open-quote;
+    font-size: 64px;
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    color: #3498db; /* Quote color */
+}
+
+.pull-quote::after {
+    content: close-quote;
+    font-size: 64px;
+    position: absolute;
+    margin-left: -35px;
+    bottom: -20px;
+    color: #3498db; /* Quote color */
+}
+

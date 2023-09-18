@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-16 Sat 18:38:31> -->
+<!-- File last changed: <2023-09-18 Mon 19:43:57> -->
 
   <html lang="en">
     <head>
@@ -8,6 +8,7 @@
       <script>dojoConfig = {parseOnLoad: true}</script>
       <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
       <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
+      <link rel="stylesheet" href="css/special-block-styles.css" media="screen">
       <link rel="stylesheet" href="css/circular-timer-style-using-dojo.css" media="screen">
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
 
@@ -380,48 +381,65 @@
 	function printRecipe( id ) {
 	    // Print a recipe.
 	    // If given a recipe ID, load it first.
-	    if( !currentRecipeId ) return;
-	    if( id ) {
-		console.log( "printRecipe: printing recipe with id [%s]", id );
-		const title = recipe_id_to_name_map.get( id );
+	    if( id ) fillInRecipe( id );
+	    if( currentRecipeId ) {
+		const title = recipe_id_to_name_map.get( currentRecipeId );
 		topHeader.innerHTML = title;
-		addIngredients( id );
-		addMethods( id );
+		addIngredients( currentRecipeId );
+		addMethods( currentRecipeId );
+
+		// Create a new print window
+		const printWindow = window.open( "", "print" );
+
+		// Set the content of the print window to the element
+		require([ "dojo/dom", "dojo/dom-construct" ],
+			function( dom, domConstruct ) {
+			    const head = domConstruct.create( "head" );
+			    printWindow.document.body.appendChild( head );
+			    const ss1 = domConstruct.create( "link", {
+			    rel: "stylesheet",
+			    type: "text/css",
+				href: "css/recipe-styles-print.css",
+			    } );
+			    printWindow.document.head.appendChild( ss1 );
+
+			    const ss2 = domConstruct.create( "link", {
+			    rel: "stylesheet",
+			    type: "text/css",
+				href: "css/circular-timer-style-using-dojo-print.css",
+			    } );
+			    printWindow.document.head.appendChild( ss2 );
+
+			    const ss3 = domConstruct.create( "link", {
+			    rel: "stylesheet",
+			    type: "text/css",
+				href: "css/special-block-styles.css",
+			    } );
+			    printWindow.document.head.appendChild( ss3 );
+
+			    const recipe_ingredients = dom.byId( "recipe_ingredients" );
+			    const recipe_method = dom.byId( "recipe_method" );
+			    const recipe_text = "<h1>" + topHeader.innerHTML + "</h1><p>\n" +
+				  "<h2>Ingredients</h2>" + recipe_ingredients.innerHTML + "<p>\n" +
+				  "<h2>Method</h2>" + recipe_method.innerHTML + "<p>\n";
+			    printWindow.document.body.innerHTML = recipe_text;
+
+			    // Print the print window, but wait for the browser to process style sheet
+			    // Hack alert!
+			    setTimeout(function() {
+				console.log( "printRecipe: printing recipe with id [%s]", currentRecipeId );
+				printWindow.print();
+			    }, 2000);
+			});
 	    }
-
-	    // Create a new print window
-	    const printWindow = window.open("", "print");
-
-	    // Set the content of the print window to the element
-	    require([ "dojo/dom", "dojo/dom-construct" ],
-		    function( dom, domConstruct ) {
-			const stylesheets = document.querySelectorAll( 'link[ rel="stylesheet" ]' );
-			let head = "<head>";
-			for( let i=0; i < stylesheets.length; i++ ) {
-			    console.log( stylesheets[ i ].outerHTML );
-			    const sheet = "<link rel=\"stylesheet\" href=\"" + stylesheets[ i ].href + "\" media=\"print\">";
-			    head += sheet;
-			}
-			head += "</head>";
-			printWindow.document.head.innerHTML = head;
-
-			const recipe_ingredients = dom.byId( "recipe_ingredients" );
-			const recipe_method = dom.byId( "recipe_method" );
-			const recipe_text = "<h1>" + topHeader.innerHTML + "</h1><p>\n" +
-			      "<h2>Ingredients</h2>" + recipe_ingredients.innerHTML + "<p>\n" +
-			      "<h2>Method</h2>" + recipe_method.innerHTML + "<p>\n";
-			printWindow.document.body.innerHTML = recipe_text;
-
-			// Print the print window
-			printWindow.print();
-		    });
 	}
 
 	function emailLinkToRecipe() {
 	    // Send a link to the email client
 	    if( !currentRecipeId ) return;
 	    const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
-	    window.open( "mailto:?subject=" + topHeader.innerHTML + "+recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
+
+	    window.open( "mailto:?subject=" + topHeader.innerHTML + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
 	}
 
 	function addRecipes( recipe_name_map, refNode ) {
