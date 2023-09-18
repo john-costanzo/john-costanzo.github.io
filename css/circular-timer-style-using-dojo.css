@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-15 Fri 04:52:54> */
+/* File last changed: <2023-09-18 Mon 13:38:32> */
 
 .timer-container {
     /* text-align: center; */
@@ -59,11 +59,6 @@ input[type="number"] {
     margin-bottom: -6px;
 }
 
-@media print {
-    .alarm-clock-icon {
-	display: none !important;
-    }
-}
 /* Local Variables: */
 /* time-stamp-line-limit: 10 */
 /* time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>" */
