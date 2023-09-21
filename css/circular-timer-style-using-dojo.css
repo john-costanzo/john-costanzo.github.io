@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-18 Mon 13:38:32> */
+/* File last changed: <2023-09-21 Thu 17:12:40> */
 
 .timer-container {
     /* text-align: center; */
@@ -23,6 +23,11 @@
 input[type="number"] {
     width: 36px;
     text-align: center;
+}
+
+.timer-input {
+    font-style: normal !important;
+    color: black;
 }
 
 .circular-timer-controls {
@@ -58,6 +63,32 @@ input[type="number"] {
 .alarm-clock-icon {
     margin-bottom: -6px;
 }
+.pulse-element {
+    animation: pulse-element-keyframes 2s infinite !important;
+}
+@keyframes pulse-element-keyframes {
+    0% {
+	transform: scale(0.85);
+    }
+
+    70% {
+	transform: scale(1.00);
+    }
+
+    100% {
+	transform: scale(0.85);
+    }
+}
+.normal-style {
+    fill: black;
+    font-weight: 100 !important;
+}
+
+.alert-style {
+    fill: red;
+    font-weight: 300 !important;
+}
+
 
 /* Local Variables: */
 /* time-stamp-line-limit: 10 */

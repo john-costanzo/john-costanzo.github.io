@@ -1,8 +1,8 @@
-const debug_search_recipes = false;
+const debugSearchRecipes = false;
 
 // Turn off display for element with ID.
 function hideElement( id ) {
-    if( debug_search_recipes ) console.log( "\t\t\thide element with id=[%s]", id );
+    if( debugSearchRecipes ) console.log( "\t\t\thide element with id=[%s]", id );
     const el = document.getElementById( id );
     if( el ) {
 	el.style.display = "none";
@@ -18,7 +18,7 @@ function hideElements( id ) {
 
 // Turn on display for element with ID. Use block display.
 function showElement( id ) {
-    if( debug_search_recipes ) console.log( "\t\t\tshow element with id=[%s]", id );
+    if( debugSearchRecipes ) console.log( "\t\t\tshow element with id=[%s]", id );
     const el = document.getElementById( id );
     if( el ) {
 	el.style.display = "list-item";
@@ -46,20 +46,20 @@ function matchesAll( query, str ) {
     
 
 // QUERY is an array of strings.
-// INDEX is an array of arrays: [ id, index_string ].
+// INDEX is an array of arrays: [ id, indexString ].
 // Call hideElement for all elements with an id from INDEX where *all* of the strings
-// in the QUERY array may be found as regular expressions in the corresponding index_string.
+// in the QUERY array may be found as regular expressions in the corresponding indexString.
 // Else call showElement for those ids.
 function searchElements( query, index ) {
     let result = []
-    if( debug_search_recipes ) console.log( "searchElements: index=[%s]\tquery=[%s]", index.join(", "), query.join(", ") );
+    if( debugSearchRecipes ) console.log( "searchElements: index=[%s]\tquery=[%s]", index.join(", "), query.join(", ") );
 
     indexLoop:
     for( const idx of index ) {
 	const id = idx[0];
-	const index_string = idx[1];
-	if( debug_search_recipes ) console.log( "\tid=[%s]\tindex_string=[%s]", id, index_string );
-	if( matchesAll( query, index_string ) ) {
+	const indexString = idx[1];
+	if( debugSearchRecipes ) console.log( "\tid=[%s]\tindexString=[%s]", id, indexString );
+	if( matchesAll( query, indexString ) ) {
 	    showElement( id );
 	} else {
 	    hideElement( id );
@@ -75,8 +75,8 @@ function keyboardHandler(e) {
 	value.
 	toLowerCase().
 	replace( /[^0-9a-z ]+/g, "" );
-    if( debug_search_recipes ) console.log( "query=[%s]", query );
-    searchElements( query.split( " " ), recipe_index_array );
+    if( debugSearchRecipes ) console.log( "query=[%s]", query );
+    searchElements( query.split( " " ), recipeIndexArray );
 }
 
 document.getElementById( "searchBox" ).
@@ -109,7 +109,7 @@ function searchDriver() {
     ];
     for( const q of queries ) {
 	console.log( "query=[%s]", q.join(", ") );
-	searchElements( q, recipe_index_array );
+	searchElements( q, recipeIndexArray );
     }
 }
 
