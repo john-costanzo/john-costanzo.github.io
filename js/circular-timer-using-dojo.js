@@ -1,4 +1,4 @@
-// File last changed: <2023-09-11 Mon 13:48:59>
+// File last changed: <2023-09-21 Thu 16:40:58>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -28,8 +28,8 @@ class CircularTimer {
     /**
      * Construct a new CircularTimer, optionally configure to play sounds upon completion.
      *
-     * @param {number} initial_time - The number of seconds the timer is initialized with each time it is run.
-     * @param {number} alert_time   - The number of seconds remaining in the countdown that the timer should go into alert mode.
+     * @param {number} initialTime   - The number of seconds the timer is initialized with each time it is run.
+     * @param {number} alertTime     - The number of seconds remaining in the countdown that the timer should go into alert mode.
      * @param {map of arrays} sounds - A HashMap keyed on integers, which specify number of seconds remaining in the countdown, 
      *                                 and values of either a string or an  arrary of strings that specify file names to play at those times.
      *
@@ -47,7 +47,7 @@ class CircularTimer {
      *
      * @returns {CircularTimer} Returns a new CircularTimer embedded in the page at the point of call.
      */
-    constructor( timerContainer, initialTime, alertTime, sounds ) {
+    constructor( timerContainer, initialTime, alertTime=30, sounds ) {
 	var circularTimer;
 	var initialSeconds = initialTime % 60;
 	var initialMinutes = Math.floor( initialTime / 60 );
@@ -116,6 +116,7 @@ class CircularTimer {
 		    min: "0",
 		    innerHTML: "minutes"
 		}, timeControls );
+		minutes.classList.add( "timer-input" );
 
 		minutes.recent = minutes.value;
 		on(minutes, "change", function (event) {
@@ -142,6 +143,7 @@ class CircularTimer {
 		    max: "59",
 		    innerHTML: "seconds"
 		}, timeControls );
+		seconds.classList.add( "timer-input" );
 
 		seconds.recent = seconds.value;
 		on(seconds, "change", function (event) {
@@ -180,6 +182,13 @@ class CircularTimer {
 			startButtonHandler.remove( );
 			startButtonHandler = on( startButton, "click", startTimer );
 		    }
+
+	    if( remainingTime <= alertTime ) {
+		svg.classList.add( "pulse-element" );
+		text.classList.remove( "normal-style" );
+		text.classList.add( "alert-style" );
+	    }
+
 		    updateDisplay( );
 		}
 
@@ -212,7 +221,10 @@ class CircularTimer {
 		    startButton.innerHTML = "Pause";
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", pauseTimer );
+		    svg.classList.remove( "pulse-element" );
 
+		    text.classList.add( "normal-style" );
+		    text.classList.remove( "alert-style" );
 
                     updateDisplay( );
                     timerInterval = setInterval( commenceTicking, 1000 );
@@ -220,6 +232,7 @@ class CircularTimer {
 
 		function updateDisplay( ) {
 		    remainingTime = ( expirationTime - Date.now() ) / 1000;
+		    playSounds( remainingTime );
 
                     var min = Math.floor( remainingTime / 60 );
 		    var sec = Math.round( remainingTime % 60 );
@@ -235,6 +248,40 @@ class CircularTimer {
 		    let fractionRemaining = ( ( remainingTime / totalTime ) * circumference );
 		    if( fractionRemaining < 1 ) fractionRemaining = 0;
 		    circle.style.strokeDasharray = fractionRemaining + " " + circumference;
+		}
+
+		/**
+		 * Play sounds according the state of this CircularTimer and a configuration object.
+		 *
+		 * @param {number} timeLeft - The number of seconds remaining in this countdown.
+		 *
+		 * @example
+		 * // Play the sounds configured for 10 seconds remaining in the countdown.
+		 * playSounds ( 10 );
+		 *
+		 * @returns {number} Returns the number of sounds played.
+		 */
+		function playSounds( timeLeft ) {
+		    let nsounds = 0;
+		    if( sounds !== undefined ) {
+			let s = sounds[ Math.round( timeLeft)  ];
+			if( s !== undefined ) {
+			    console.log( "playSounds: s=[%s]", s )
+			    if( typeof s === 'string' ) {
+				let audio = new Audio( s );
+				audio.play();
+				nsounds++;
+			    } else if( typeof s === 'object' ) {
+				s.forEach(function(f) {
+				    console.log( "playSounds: f=[%s]", f )
+				    let audio = new Audio( f );
+				    audio.play();
+				    nsounds++;
+				});
+			    }
+			}
+		    }
+		    return( nsounds );
 		}
             } );
 	} );

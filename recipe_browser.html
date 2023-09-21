@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-19 Tue 03:38:05> -->
+<!-- File last changed: <2023-09-21 Thu 17:10:29> -->
 
   <html lang="en">
     <head>
@@ -68,7 +68,7 @@
 		    });
 
 		    // Create a Dialog widget
-		    const popup = new Dialog({
+		    const helpPopup = new Dialog({
 			content: "      <center><h1>Recipe Browser Help</h1></center>       <ul> 	<li><b>Recipes Button</b><br> 	  Clicking this will allow you to search through all recipes. Type a word fragment and it will list recipes that start with that word in the ingredients, method or description.  	<li><b>Recipes</b><br> 	  <ul> 	    <li>Click on a section header to hide or show the section.</li> 	    <li>Click on an alarm clock icon (<img src=\"images/alarm-clock-icon.png\" class=\"alarm-clock-icon\">) to hide or show a timer for that particular recipe step. You can start, pause and continue the timer. You can also change the time the timer runs for.</li> 	    <li>Click on an ingredient or a step in a method. This will <span class=\"itemClicked\">de-emphasize</span> the ingredient or step to allow you to mark what you've finished.</li> 	  </ul> 	<li><b>Gear Menu</b><br> 	  <ul> 	    <li>Choose from among small (<img src=\"images/letter-A.jpg\" class=\"small-A\">), medium (<img src=\"images/letter-A.jpg\" class=\"medium-A\">) or large (<img src=\"images/letter-A.jpg\" class=\"large-A\">) font.</li> 	    <li><img class=\"printerIcon\">Print the recipe.</li> 	    <li><img class=\"emailLinkIcon\">Share a link to a recipe via email.</li> 	  </ul>       </ul> "
 		    });
 
@@ -76,17 +76,17 @@
 			label: "Dismiss",
 			showLabel: true,
 			onClick: function () {
-			    popup.hide();
+			    helpPopup.hide();
 			}
 		    });
 
 		    // Add the dismiss button to the pop-up
-		    popup.addChild( dismissButton );
+		    helpPopup.addChild( dismissButton );
 
 		    helpLinkMenuItem = new MenuItem({
 			label: "Help",
 			onClick: function() {
-			    popup.show();
+			    helpPopup.show();
 			},
 			disabled: false,
 		    });
@@ -122,10 +122,18 @@
 
       <script>
 	// Some global variables
-	const rb_debug = false;
+	const rbDebug = false;
 	let currentRecipeId = undefined;
 	var printMenuItem;
 	var emailLinkMenuItem;
+	const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
+
+	let alertSounds = new Object();
+	alertSounds[ 81 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
+	alertSounds[ 53 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
+	alertSounds[ 25 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
+	alertSounds[ 3 ] = 'sounds/Thats All Folks.mp3';
+	alertSounds[ 0 ] = 'sounds/Clock-chimes-sounds.mp3';
       </script>
 
       <script>
@@ -244,75 +252,75 @@
 	    return( result );
 	}
 
-	function addIngredients( recipe_id ) {
-	    // Add all ingredients for RECIPE_ID.
+	function addIngredients( recipeId ) {
+	    // Add all ingredients for RECIPEID.
 	    require(["dojo/dom","dojo/domReady!"],
 		    function(dom) {
-			let recipe_ingredients = dom.byId( "recipe_ingredients" );
+			let recipeIngredients = dom.byId( "recipe_ingredients" );
 
-			if( typeof ingredients_map !== "undefined" ) {
-			    let ingredients = ingredients_map.get( recipe_id );
+			if( typeof ingredientsMap !== "undefined" ) {
+			    let ingredients = ingredientsMap.get( recipeId );
 			    if( ingredients ) {
 				const result = extractTimingInformation( ingredients );
-				recipe_ingredients.innerHTML = result[ result.length-1 ]; // The ingredients, stripped of timing info
+				recipeIngredients.innerHTML = result[ result.length-1 ]; // The ingredients, stripped of timing info
 				for( let i=0; i<result.length-1; i += 2 ) {
-				    new CircularTimer( result[ i ], result [ i+1 ] );
+				    new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds );
 				}
 			    } else {
-				console.log( "addIngredients: no such recipe id [%s]", recipe_id );
-				recipe_ingredients.innerHTML = "";
+				console.log( "addIngredients: no such recipe id [%s]", recipeId );
+				recipeIngredients.innerHTML = "";
 			    }
 			}
 		    });
 	}
 
-	function addMethods( recipe_id ) {
-	    // Add all methods for RECIPE_ID.
+	function addMethods( recipeId ) {
+	    // Add all methods for RECIPEID.
 	    require([ "dojo/dom", "dojo/domReady!" ],
 		    function(dom) {
-			let recipe_method = dom.byId( "recipe_method" );
+			let recipeMethod = dom.byId( "recipe_method" );
 
-			if (typeof methods_map !== "undefined") {
-			    let method = methods_map.get( recipe_id );
+			if (typeof methodsMap !== "undefined") {
+			    let method = methodsMap.get( recipeId );
 			    if( method ) {
 				const result = extractTimingInformation( method );
-				recipe_method.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
+				recipeMethod.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
 				for( let i=0; i<result.length-1; i += 2 ) {
-				    new CircularTimer( result[ i ], result [ i+1 ] );
+				    new CircularTimer( result[ i ], result [ i+1 ], 10, alertSounds  );
 				}
 			    }
 			    else {
-				console.log( "addMethods: no such recipe id [%s]", recipe_id );
-				recipe_method.innerHTML = "";
+				console.log( "addMethods: no such recipe id [%s]", recipeId );
+				recipeMethod.innerHTML = "";
 			    }
 			}
 
-			if (typeof yields_map !== "undefined") {
-			    let yield = yields_map.get( recipe_id );
+			if (typeof yieldsMap !== "undefined") {
+			    let yield = yieldsMap.get( recipeId );
 			    if( yield ) {
 				const result = extractTimingInformation( yield );
-				let yield_text = result[ result.length-1 ]; // The yield, stripped of timing info
-				recipe_method.innerHTML =
-				    recipe_method.innerHTML +
+				let yieldText = result[ result.length-1 ]; // The yield, stripped of timing info
+				recipeMethod.innerHTML =
+				    recipeMethod.innerHTML +
 				    "<h2>Yield</h2>" +
-				    yield_text;
+				    yieldText;
 				for( let i=0; i<result.length-1; i += 2 ) {
-				    new CircularTimer( result[ i ], result [ i+1 ] );
+				    new CircularTimer( result[ i ], result [ i+1 ], 10, alertSounds  );
 				}
 			    }
 			}
 
-			if (typeof credits_map !== "undefined") {
-			    let credit = credits_map.get( recipe_id );
+			if (typeof creditsMap !== "undefined") {
+			    let credit = creditsMap.get( recipeId );
 			    if( credit ) {
 				const result = extractTimingInformation( credit );
-				let credit_text = result[ result.length-1 ]; // The credit, stripped of timing info
-				recipe_method.innerHTML =
-				    recipe_method.innerHTML +
+				let creditText = result[ result.length-1 ]; // The credit, stripped of timing info
+				recipeMethod.innerHTML =
+				    recipeMethod.innerHTML +
 				    "<h2>Credit</h2>" +
-				    credit_text;
+				    creditText;
 				for( let i=0; i<result.length-1; i += 2 ) {
-				    new CircularTimer( result[ i ], result [ i+1 ] );
+				    new CircularTimer( result[ i ], result [ i+1 ], 10, alertSounds  );
 				}
 			    }
 			}
@@ -363,9 +371,10 @@
 	}
 
 	function fillInRecipe( id ) {
-	    currentRecipeId = id;
-	    const title = recipe_id_to_name_map.get( id );
-	    if( id ) {
+	    console.log( "fillInRecipe: filling in recipe with id = [%s]", id );
+	    const title = recipeIdToNameMap.get( id );
+	    if( title ) {
+		console.log( "fillInRecipe: filling in recipe with title = [%s]", title );
 		require([ "dojo/dom"],
 			function( dom ) {
 			    let topHeader = dom.byId( "topHeader" );
@@ -373,6 +382,7 @@
 			    addIngredients( id );
 			    addMethods( id );
 			});
+		currentRecipeId = id;
 	    }
 	    printMenuItem.setDisabled(  false );
 	    emailLinkMenuItem.setDisabled( false );
@@ -381,9 +391,11 @@
 	function printRecipe( id ) {
 	    // Print a recipe.
 	    // If given a recipe ID, load it first.
-	    if( id ) fillInRecipe( id );
+	    if( id && currentRecipeId != id ) {
+		fillInRecipe( id );
+	    }
 	    if( currentRecipeId ) {
-		const title = recipe_id_to_name_map.get( currentRecipeId );
+		const title = recipeIdToNameMap.get( currentRecipeId );
 		topHeader.innerHTML = title;
 		addIngredients( currentRecipeId );
 		addMethods( currentRecipeId );
@@ -397,32 +409,32 @@
 			    const head = domConstruct.create( "head" );
 			    printWindow.document.body.appendChild( head );
 			    const ss1 = domConstruct.create( "link", {
-			    rel: "stylesheet",
-			    type: "text/css",
+				rel: "stylesheet",
+				type: "text/css",
 				href: "css/recipe-styles-print.css",
 			    } );
 			    printWindow.document.head.appendChild( ss1 );
 
 			    const ss2 = domConstruct.create( "link", {
-			    rel: "stylesheet",
-			    type: "text/css",
+				rel: "stylesheet",
+				type: "text/css",
 				href: "css/circular-timer-style-using-dojo-print.css",
 			    } );
 			    printWindow.document.head.appendChild( ss2 );
 
 			    const ss3 = domConstruct.create( "link", {
-			    rel: "stylesheet",
-			    type: "text/css",
+				rel: "stylesheet",
+				type: "text/css",
 				href: "css/special-block-styles.css",
 			    } );
 			    printWindow.document.head.appendChild( ss3 );
 
-			    const recipe_ingredients = dom.byId( "recipe_ingredients" );
-			    const recipe_method = dom.byId( "recipe_method" );
-			    const recipe_text = "<center><h1>" + topHeader.innerHTML + "</h1></center><p>\n" +
-				  "<h2>Ingredients</h2>" + recipe_ingredients.innerHTML + "<p>\n" +
-				  "<h2>Method</h2>" + recipe_method.innerHTML + "<p>\n";
-			    printWindow.document.body.innerHTML = recipe_text;
+			    const recipeIngredients = dom.byId( "recipe_ingredients" );
+			    const recipeMethod = dom.byId( "recipe_method" );
+			    const recipeText = "<center><h1>" + topHeader.innerHTML + "</h1></center><p>\n" +
+				  "<h2>Ingredients</h2>" + recipeIngredients.innerHTML + "<p>\n" +
+				  "<h2>Method</h2>" + recipeMethod.innerHTML + "<p>\n";
+			    printWindow.document.body.innerHTML = recipeText;
 
 			    // Print the print window, but wait for the browser to process style sheet
 			    // Hack alert!
@@ -431,7 +443,34 @@
 				printWindow.print();
 			    }, 2000);
 			});
+	    } else {
+		console.log( "printRecipe: no recipe with id = [%s]", id );
+		noSuchId( id );
 	    }
+	}
+
+	function noSuchId( id ) {
+	    require(["dijit/Dialog","dijit/form/Button"],
+		    function(Dialog, Button) {
+
+
+			// Create a Dialog widget
+			const noSuchIdPopup = new Dialog({
+			    content: "ERROR: No such id: [" + id + "]<p>"
+			});
+
+			const dismissButton = new Button({
+			    label: "Dismiss",
+			    showLabel: true,
+			    onClick: function () {
+				noSuchIdPopup.hide();
+			    }
+			});
+
+			// Add the dismiss button to the pop-up
+			noSuchIdPopup.addChild( dismissButton );
+			noSuchIdPopup.show();
+		    });
 	}
 
 	function emailLinkToRecipe() {
@@ -442,23 +481,23 @@
 	    window.open( "mailto:?subject=" + topHeader.innerHTML + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
 	}
 
-	function addRecipes( recipe_name_map, refNode ) {
-	    // Add recipes in RECIPE_NAME_MAP as an unordered list and place it as REFNODE
+	function addRecipes( recipeNameMap, refNode ) {
+	    // Add recipes in RECIPENAMEMAP as an unordered list and place it as REFNODE
 	    require([ "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/domReady!" ],
 		    function( dom, domConstruct, on ) {
 
 			// Create a list container
 			const listContainer = domConstruct.create("ul");
 
-			recipe_name_map.forEach( function( recipe_list, cat ) {
+			recipeNameMap.forEach( function( recipeList, cat ) {
 			    const catHeader = domConstruct.create("li", { innerHTML: cat, class: "category-heading" });
 			    domConstruct.place( catHeader, listContainer, "first" );
 
 			    const listSubContainer = domConstruct.create("ul");
 			    domConstruct.place( listSubContainer, catHeader );
 
-			    if( rb_debug ) console.log( "recipe_list= " + recipe_list.length + " ==> " + recipe_list );
-			    recipe_list.forEach( function( recipe ) {
+			    if( rbDebug ) console.log( "recipeList= " + recipeList.length + " ==> " + recipeList );
+			    recipeList.forEach( function( recipe ) {
 				const recipeTitle = recipe[ 0 ];
 				const recipeId = recipe[ 1 ];
 
@@ -490,7 +529,7 @@
 			}
 		    });
 	};
-	addRecipes( recipe_name_map, "recipe_titles" );
+	addRecipes( recipeNameMap, "recipe_titles" );
 
       </script>
     </head>
