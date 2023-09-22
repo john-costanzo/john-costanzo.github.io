@@ -1,4 +1,4 @@
-// File last changed: <2023-09-21 Thu 16:40:58>
+// File last changed: <2023-09-22 Fri 09:48:21>
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -266,14 +266,12 @@ class CircularTimer {
 		    if( sounds !== undefined ) {
 			let s = sounds[ Math.round( timeLeft)  ];
 			if( s !== undefined ) {
-			    console.log( "playSounds: s=[%s]", s )
 			    if( typeof s === 'string' ) {
 				let audio = new Audio( s );
 				audio.play();
 				nsounds++;
 			    } else if( typeof s === 'object' ) {
 				s.forEach(function(f) {
-				    console.log( "playSounds: f=[%s]", f )
 				    let audio = new Audio( f );
 				    audio.play();
 				    nsounds++;
