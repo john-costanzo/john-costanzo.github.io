@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-22 Fri 09:46:52> -->
+<!-- File last changed: <2023-09-22 Fri 13:24:42> -->
 
   <html lang="en">
     <head>
@@ -395,11 +395,6 @@
 		fillInRecipe( id );
 	    }
 	    if( currentRecipeId ) {
-		const title = recipeIdToNameMap.get( currentRecipeId );
-		topHeader.innerHTML = title;
-		addIngredients( currentRecipeId );
-		addMethods( currentRecipeId );
-
 		// Create a new print window
 		const printWindow = window.open( "", "print" );
 
