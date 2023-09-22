@@ -365,45 +365,9 @@ large (<img src=\"images/letter-A.jpg\" class=\"large-A\">) font.
 	    }
 	}
 
-	function addConditionalSpaceIfNextElementMatches( className, regex ) {
-	    // For all elements that contain CLASSNAME,
-	    // append a space to the text of the element if, and only if,
-	    // the following element begins with the regular expression REGEX.
-
-	    // Get all elements of class CLASSNAME
-	    const conditionalSpaces = document.querySelectorAll( '.' +  className );
-
-	    // Loop through each element and conditionally update its content
-	    conditionalSpaces.forEach( element => {
-		console.log( "element = '" + element.textContent + "'" );
-		const nextElement = element.nextElementSibling;
-
-		// Get the first character of that next element
-		if( nextElement ) {
-		    const text = nextElement.textContent.trim();
-		    console.log( "considering '" + text + "'" );
-		    const firstChar = text.charAt( 0 );
-
-		    // Check if the first character is a word constituent (letter, digit, or underscore)
-		    console.log( "firstChar = '" + firstChar + "'" );
-		    const isFirstCharWordConstituent = regex.test( firstChar );
-
-		    // Prepend a space to the element if the first character is a word constituent
-		    if ( isFirstCharWordConstituent ) {
-			console.log( "\tadding space to '" + element.textContent + "'" );
-			element.textContent += ' ';
-			console.log( "\tadded space to '" + element.textContent + "'" );
-		    }
-		}
-		console.log( "\n\n" );
-	    });
-	}
-
 	function fillInRecipe( id ) {
-	    console.log( "fillInRecipe: filling in recipe with id = [%s]", id );
 	    const title = recipeIdToNameMap.get( id );
 	    if( title ) {
-		console.log( "fillInRecipe: filling in recipe with title = [%s]", title );
 		require([ "dojo/dom"],
 			function( dom ) {
 			    let topHeader = dom.byId( "topHeader" );
@@ -542,7 +506,6 @@ large (<img src=\"images/letter-A.jpg\" class=\"large-A\">) font.
 			});
 			domConstruct.place(listContainer, refNode );
 		    });
-	    addConditionalSpaceIfNextElementMatches( "conditional-space-after", /^[a-zA-Z0-9_]+$/ );
 	}
       </script>
 
