@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-22 Fri 13:24:42> -->
+<!-- File last changed: <2023-09-22 Fri 15:46:11> -->
 
   <html lang="en">
     <head>
@@ -430,6 +430,12 @@
 				  "<h2>Ingredients</h2>" + recipeIngredients.innerHTML + "<p>\n" +
 				  "<h2>Method</h2>" + recipeMethod.innerHTML + "<p>\n";
 			    printWindow.document.body.innerHTML = recipeText;
+
+			    // Hide all the circular-timer-containers
+			    const elements = printWindow.document.querySelectorAll( '.circular-timer-container' );
+			    elements.forEach( function( element ) {
+				element.style.display = "none";
+			    });
 
 			    // Print the print window, but wait for the browser to process style sheet
 			    // Hack alert!
