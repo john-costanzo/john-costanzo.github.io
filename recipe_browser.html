@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-21 Thu 17:10:29> -->
+<!-- File last changed: <2023-09-22 Fri 09:46:52> -->
 
   <html lang="en">
     <head>
@@ -286,7 +286,7 @@
 				const result = extractTimingInformation( method );
 				recipeMethod.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
 				for( let i=0; i<result.length-1; i += 2 ) {
-				    new CircularTimer( result[ i ], result [ i+1 ], 10, alertSounds  );
+				    new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
 				}
 			    }
 			    else {
@@ -305,7 +305,7 @@
 				    "<h2>Yield</h2>" +
 				    yieldText;
 				for( let i=0; i<result.length-1; i += 2 ) {
-				    new CircularTimer( result[ i ], result [ i+1 ], 10, alertSounds  );
+				    new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
 				}
 			    }
 			}
@@ -320,7 +320,7 @@
 				    "<h2>Credit</h2>" +
 				    creditText;
 				for( let i=0; i<result.length-1; i += 2 ) {
-				    new CircularTimer( result[ i ], result [ i+1 ], 10, alertSounds  );
+				    new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
 				}
 			    }
 			}
