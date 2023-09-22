@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- File last changed: <2023-09-22 Fri 15:58:43> -->
+<!-- File last changed: <2023-09-22 Fri 17:09:55> -->
 
   <html lang="en">
     <head>
@@ -564,6 +564,15 @@ large (<img src=\"images/letter-A.jpg\" class=\"large-A\">) font.
       <div id="gearsMenu" class="gears-control"></div>
       <script src="js/search-recipes.js"></script>
       <script src="js/circular-timer-using-dojo.js"></script>
+      <script>
+	require(["dojo/dom", "dojo/domReady!"],
+		function( dom ) {
+		    setTimeout(function() {
+			const sb = dom.byId( "searchBox" );
+			if( sb ) sb.focus();
+		    }, 2000);
+		});
+      </script>
     </body>
   </html>
 
