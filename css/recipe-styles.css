@@ -196,3 +196,7 @@ h2,h3,h4,h5,h6,h7,h8 {
     color: gray;
     font-style: italic;
 }
+.verticallyAligned {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center align items */
+}
