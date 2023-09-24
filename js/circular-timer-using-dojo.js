@@ -1,4 +1,4 @@
-const circularTimerVersion = "Sunday, 2023-09-24 @ 15:05:43";
+const circularTimerVersion = "Sunday, 2023-09-24 @ 15:15:30";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -276,7 +276,8 @@ class CircularTimer {
 
 		function duplicateTimer( ) {
 		    const childIndex = childsIndex( circularTimer, timerControls );
-		    new CircularTimer( timerContainer, initialTime, alertTime, sounds, childIndex );
+		    const latestInitialTime = ( ( parseInt( minutes.value ) || 0 ) *60 ) + ( parseInt( seconds.value ) || 0 );
+		    new CircularTimer( timerContainer, latestInitialTime, alertTime, sounds, childIndex );
 		    toggleElement( timerContainer, "flex" );
 		}
 
