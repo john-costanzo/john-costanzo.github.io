@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2023-09-24 @ 15:06:05";</script>
+    <script>const recipeBrowserVersion = "Sunday, 2023-09-24 @ 16:20:49";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
     <link rel="stylesheet" href="css/special-block-styles.css" media="screen">
     <link rel="stylesheet" href="css/circular-timer-style-using-dojo.css" media="screen">
@@ -445,26 +445,36 @@
 	<b>Recipes Button</b><br>
 	Clicking this will allow you to search through all recipes.
 	Type a word fragment and it will list recipes that start with that word in the ingredients, method or description.
+      </li>
       <li>
 	<b>Recipes</b><br>
 	<ul>
-	  <li>Click on a section header to hide or show the section.</li>
+	  <li>Click on a <b>Header</b> Method to hide or show that section.</li>
 	  <li>Click on an alarm clock icon (<img src=\"images/alarm-clock-icon.png\" class=\"alarm-clock-icon\">)
 	    to hide or show a timer for that particular recipe step.
-	    You can start, pause and continue the timer. You can also change the time the timer runs for.</li>
+            <ul>
+                <li>You can start, pause and continue the timer.</li>
+                <li>You can also change the time the timer runs for.</li>
+                <li>Use the timer's "gears" menu to stop and reset the timer to its original time or duplicate this timer.</li>
+            </ul>
+          </li>
 	  <li>Click on an ingredient or a step in a method. This will <span class=\"itemClicked\">de-emphasize</span>
 	    the ingredient or step to allow you to mark what you've finished.</li>
 	</ul>
+      </li>
       <li>
 	<b>Gear Menu</b><br>
 	<ul>
-	  <li>Choose from among small (<img src=\"images/letter-A.jpg\" class=\"small-A\">),
+	  <li>Font sizes: Choose from among small (<img src=\"images/letter-A.jpg\" class=\"small-A\">),
 	    medium (<img src=\"images/letter-A.jpg\" class=\"medium-A\">) or
 	    large (<img src=\"images/letter-A.jpg\" class=\"large-A\">) font.
 	  </li>
-	  <li><img class=\"printerIcon\">Print the recipe.</li>
-	  <li><img class=\"emailLinkIcon\">Share a link to a recipe via email.</li>
+	  <li><img class=\"printerIcon\"> Print: format the recipe for printing.</li>
+	  <li><img class=\"emailLinkIcon\"> Email Link: Share a link to a recipe via email.</li>
+	  <li><i class=\"fa-solid fa-circle-info\"></i> About: Describes the versions of the software and data for the Recipe Browser.
+	  </li>
 	</ul>
+      </li>
     </ul>
     `;
 
@@ -538,11 +548,12 @@
 		  // Add the dismiss button to the pop-up
 		  aboutPopup.addChild( aboutDismissButton );
 
-		  aboutLinkMenuItem = new MenuItem({
+		  aboutMenuItem = new MenuItem({
 		      label: "About",
 		      onClick: function() {
 			  aboutPopup.show();
 		      },
+		      iconClass: "fa-solid fa-circle-info",
 		      disabled: false,
 		  });
 
@@ -562,11 +573,12 @@
 		  // Add the dismiss button to the pop-up
 		  helpPopup.addChild( helpDismissButton );
 
-		  helpLinkMenuItem = new MenuItem({
+		  helpMenuItem = new MenuItem({
 		      label: "Help",
 		      onClick: function() {
 			  helpPopup.show();
 		      },
+		      iconClass: "fa-solid fa-life-ring",
 		      disabled: false,
 		  });
 
@@ -577,8 +589,8 @@
 		  button.dropDown.addChild( printMenuItem );
 		  button.dropDown.addChild( emailLinkMenuItem );
 		  button.dropDown.addChild( new MenuSeparator() );
-		  button.dropDown.addChild( aboutLinkMenuItem );
-		  button.dropDown.addChild( helpLinkMenuItem );
+		  button.dropDown.addChild( aboutMenuItem );
+		  button.dropDown.addChild( helpMenuItem );
 
 		  // Attach button to DOM
 		  button.placeAt( "gearsMenu" );
