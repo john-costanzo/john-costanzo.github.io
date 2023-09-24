@@ -1,3 +1,5 @@
+const searchRecipesVersion = "Sunday, 2023-09-24 @ 12:13:59";
+
 var debugSearchRecipes = false;
 
 // Turn off display for element with ID.
@@ -131,3 +133,10 @@ function searchDriver() {
     }
 }
 
+// Local Variables:
+// time-stamp-line-limit: 10
+// time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S"
+// time-stamp-active: t
+// time-stamp-start: "const searchRecipesVersion = \""
+// time-stamp-end: "\";"
+// End:

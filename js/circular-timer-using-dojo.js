@@ -1,4 +1,4 @@
-// File last changed: <2023-09-22 Fri 09:48:21>
+const circularTimerVersion = "Sunday, 2023-09-24 @ 12:15:16";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -288,11 +288,10 @@ class CircularTimer {
     }
 };
 
-
 // Local Variables:
 // time-stamp-line-limit: 10
-// time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>"
+// time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S"
 // time-stamp-active: t
-// time-stamp-start: "File last changed:[ \t]+"
-// time-stamp-end: "$"
+// time-stamp-start: "const circularTimerVersion = \""
+// time-stamp-end: "\";"
 // End:
