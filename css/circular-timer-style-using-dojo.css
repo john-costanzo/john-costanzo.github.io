@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-21 Thu 17:12:40> */
+/* File last changed: <2023-09-24 Sun 14:21:42> */
 
 .timer-container {
     /* text-align: center; */
@@ -89,6 +89,17 @@ input[type="number"] {
     font-weight: 300 !important;
 }
 
+.gearsButtonSmallIcon {
+    background-image: url('../images/gears.png');
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+}
+
+.circular-timer-button-container {
+    display: flex;
+    justify-content: center;
+}
 
 /* Local Variables: */
 /* time-stamp-line-limit: 10 */
