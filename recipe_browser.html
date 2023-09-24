@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2023-09-24 @ 12:28:26";</script>
+    <script>const recipeBrowserVersion = "Sunday, 2023-09-24 @ 15:06:05";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
     <link rel="stylesheet" href="css/special-block-styles.css" media="screen">
     <link rel="stylesheet" href="css/circular-timer-style-using-dojo.css" media="screen">
@@ -580,7 +581,7 @@
 		  button.dropDown.addChild( helpLinkMenuItem );
 
 		  // Attach button to DOM
-		  button.placeAt("gearsMenu");
+		  button.placeAt( "gearsMenu" );
 
 		  if( numArgs > 0 ) {
 		      const action = firstNvp[ 0 ].toLowerCase();

@@ -1,4 +1,4 @@
-const circularTimerVersion = "Sunday, 2023-09-24 @ 12:15:16";
+const circularTimerVersion = "Sunday, 2023-09-24 @ 15:05:43";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -28,14 +28,15 @@ class CircularTimer {
     /**
      * Construct a new CircularTimer, optionally configure to play sounds upon completion.
      *
-     * @param {number} initialTime   - The number of seconds the timer is initialized with each time it is run.
-     * @param {number} alertTime     - The number of seconds remaining in the countdown that the timer should go into alert mode.
-     * @param {map of arrays} sounds - A HashMap keyed on integers, which specify number of seconds remaining in the countdown, 
-     *                                 and values of either a string or an  arrary of strings that specify file names to play at those times.
+     * @param {string} timerContainer - The id of an element to anchor this CircularTimer to.
+     * @param {number} initialTime    - The number of seconds the timer is initialized with each time it is run.
+     * @param {number} alertTime      - The number of seconds remaining in the countdown that the timer should go into alert mode.
+     * @param {map of arrays} sounds  - A HashMap keyed on integers, which specify number of seconds remaining in the countdown, 
+     *                                  and values of either a string or an  arrary of strings that specify file names to play at those times.
      *
      * @example
      * // Constructs a new ( silent ) CircularTimer initialized to 10 seconds.
-     * let ct1 = new CircularTimer( 10 )
+     * let ct1 = new CircularTimer( 'timerContainer-001', 10 )
      *
      * @example
      * // Constructs a new CircularTimer initialized to 30 seconds that
@@ -43,11 +44,11 @@ class CircularTimer {
      * let s = new Object( );
      * s[ 10 ] = [ 'fileA', 'fileB' ];
      * s[ 0 ] = 'fileC';
-     * let ct2 = new CircularTimer( 30, s )
+     * let ct2 = new CircularTimer( 'timerContainer-002', 30, s )
      *
      * @returns {CircularTimer} Returns a new CircularTimer embedded in the page at the point of call.
      */
-    constructor( timerContainer, initialTime, alertTime=30, sounds ) {
+    constructor( timerContainer, initialTime, alertTime=30, sounds, position=-1 ) {
 	var circularTimer;
 	var initialSeconds = initialTime % 60;
 	var initialMinutes = Math.floor( initialTime / 60 );
@@ -56,8 +57,8 @@ class CircularTimer {
 	var isRunning = false;
 
 	require( [
-            "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/ready",
-	], function ( dom, domConstruct, on, ready ) {
+            "dojo/dom", "dojo/dom-construct", "dojo/on", "dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button", "dojo/ready",
+	], function ( dom, domConstruct, on, DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, ready ) {
             ready( function ( ) {
 
 		const circularTimer = dom.byId( timerContainer );
@@ -66,8 +67,8 @@ class CircularTimer {
 		    return;
 		}
 
-		const timerControls = domConstruct.create( "div", {
-		}, circularTimer );
+		const timerControls = domConstruct.create( "div" );
+		domConstruct.place( timerControls, circularTimer, ( position == "-1" ) ? "last" : parseInt( position ) );
 		timerControls.classList.add( "circular-timer-controls" );
 
 		// Create an SVG element
@@ -160,10 +161,45 @@ class CircularTimer {
 		    }
 		});
 
+
+		const circularTimerButtonContainer = domConstruct.create( "div", {}, timerControls );
+		circularTimerButtonContainer.classList.add( "circular-timer-button-container" );
+
+		var gearMenu = new DropDownButton({
+		    label: "",
+		    iconClass: "gearsButtonSmallIcon",
+		    dropDown: new DropDownMenu({
+			style: "display: none;"
+		    })
+		}, "circularTimerGearsMenu");
+
+		const resetTimerMenuItem = new MenuItem({
+		    label: "Reset Timer",
+		    iconClass: "fas fa-undo",
+		    onClick: function() {
+			resetTimer();
+		    },
+		    disabled: false,
+		});
+
+		const duplicateTimerMenuItem = new MenuItem({
+		    label: "duplicate Timer",
+		    iconClass: "fas fa-clone",
+		    onClick: function() {
+			duplicateTimer();
+		    },
+		    disabled: false,
+		});
+
+		gearMenu.dropDown.addChild( resetTimerMenuItem );
+		gearMenu.dropDown.addChild( duplicateTimerMenuItem );
+
 		const startButton = domConstruct.create( "button", {
 		    innerHTML: "Start"
-		}, timerControls );
+		}, circularTimerButtonContainer );
 		startButton.classList.add( "button" );
+		gearMenu.placeAt( circularTimerButtonContainer, "last" );
+
 		var startButtonHandler;
 
 		const radius = circle.r.baseVal.value;
@@ -183,11 +219,11 @@ class CircularTimer {
 			startButtonHandler = on( startButton, "click", startTimer );
 		    }
 
-	    if( remainingTime <= alertTime ) {
-		svg.classList.add( "pulse-element" );
-		text.classList.remove( "normal-style" );
-		text.classList.add( "alert-style" );
-	    }
+		    if( remainingTime <= alertTime ) {
+			svg.classList.add( "pulse-element" );
+			text.classList.remove( "normal-style" );
+			text.classList.add( "alert-style" );
+		    }
 
 		    updateDisplay( );
 		}
@@ -230,9 +266,38 @@ class CircularTimer {
                     timerInterval = setInterval( commenceTicking, 1000 );
 		}
 
-		function updateDisplay( ) {
+		function childsIndex( parent, child ) {
+		    // return the index of PARENT's CHILD.
+		    for( const i in parent.children ) {
+			if( parent.children[ i ] == timerControls ) return( i );
+		    }
+		    return( -1 );
+		}
+
+		function duplicateTimer( ) {
+		    const childIndex = childsIndex( circularTimer, timerControls );
+		    new CircularTimer( timerContainer, initialTime, alertTime, sounds, childIndex );
+		    toggleElement( timerContainer, "flex" );
+		}
+
+		function resetTimer( ) {
+                    clearInterval( timerInterval );
+		    timeAtPause = Date.now();
+		    isRunning = false;
+		    startButton.innerHTML = "Start";
+		    startButtonHandler.remove( );
+		    startButtonHandler = on( startButton, "click", startTimer );
+		    expirationTime = Date.now();
+		    svg.classList.remove( "pulse-element" );
+		    text.classList.remove( "alert-style" );
+		    updateDisplay( true );
+		    text.textContent = "";
+		    // TODO: cancel any pending audio plays
+		}
+
+		function updateDisplay( siliently = false ) {
 		    remainingTime = ( expirationTime - Date.now() ) / 1000;
-		    playSounds( remainingTime );
+		    if( !siliently ) playSounds( remainingTime );
 
                     var min = Math.floor( remainingTime / 60 );
 		    var sec = Math.round( remainingTime % 60 );
@@ -283,6 +348,7 @@ class CircularTimer {
 		}
             } );
 	} );
+
 	toggleElement( timerContainer, "none" );
 	return( circularTimer );
     }
