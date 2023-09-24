@@ -1,4 +1,4 @@
-var debugSearchRecipes = true;
+var debugSearchRecipes = false;
 
 // Turn off display for element with ID.
 function hideElement( id ) {
