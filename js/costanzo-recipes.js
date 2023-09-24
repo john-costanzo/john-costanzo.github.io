@@ -1,4 +1,4 @@
-// Created at 2023-09-23 20:50:16
+const recipeDataVersion = "Sunday, 2023-09-24 @ 15:42:39";
 const ingredientsArray = [];
 const methodsArray = [];
 const creditsArray = [];
