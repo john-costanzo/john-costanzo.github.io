@@ -1,4 +1,4 @@
-const circularTimerVersion = "Monday, 2023-09-25 @ 19:09:21";
+const circularTimerVersion = "Monday, 2023-09-25 @ 19:44:50";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -51,6 +51,7 @@ class CircularTimer {
 	const self = this; // Capture the value of 'this'
 	self.timerInterval = undefined;
 	self.audios = []; // an array of Audio media that have been played
+	self.timerControls = undefined;
 
 	var circularTimer;
 	var initialSeconds = initialTime % 60;
@@ -71,9 +72,9 @@ class CircularTimer {
 		    return;
 		}
 
-		const timerControls = domConstruct.create( "div" );
-		domConstruct.place( timerControls, circularTimer, ( position == "-1" ) ? "last" : parseInt( position ) );
-		timerControls.classList.add( "circular-timer-controls" );
+		self.timerControls = domConstruct.create( "div" );
+		domConstruct.place( self.timerControls, circularTimer, ( position == "-1" ) ? "last" : parseInt( position ) );
+		self.timerControls.classList.add( "circular-timer-controls" );
 
 		// Create an SVG element
 		var svg = document.createElementNS( "http://www.w3.org/2000/svg", "svg" );
@@ -104,7 +105,7 @@ class CircularTimer {
 		svg.appendChild( text );
 
 		// Append the SVG element to the circle container
-		timerControls.appendChild( svg );
+		self.timerControls.appendChild( svg );
 
 		if( !svg || !circle ) {
 		    console.log( "createTimer: cannot create circle within an SVG element" );
@@ -112,7 +113,7 @@ class CircularTimer {
 		}
 
 		const timeControls = domConstruct.create( "div", {
-		}, timerControls );
+		}, self.timerControls );
 		timeControls.classList.add( "time-controls" );
 
 		const minutes = domConstruct.create( "input", {
@@ -166,7 +167,7 @@ class CircularTimer {
 		});
 
 
-		const circularTimerButtonContainer = domConstruct.create( "div", {}, timerControls );
+		const circularTimerButtonContainer = domConstruct.create( "div", {}, self.timerControls );
 		circularTimerButtonContainer.classList.add( "circular-timer-button-container" );
 
 		var timerMenu = new DropDownButton({
@@ -194,8 +195,18 @@ class CircularTimer {
 		    disabled: false,
 		});
 
+		const destroyTimerMenuItem = new MenuItem({
+		    label: "Destroy Timer",
+		    iconClass: "fa-solid fa-circle-xmark",
+		    onClick: function() {
+			self.destroy();
+		    },
+		    disabled: false,
+		});
+
 		timerMenu.dropDown.addChild( resetTimerMenuItem );
 		timerMenu.dropDown.addChild( duplicateTimerMenuItem );
+		timerMenu.dropDown.addChild( destroyTimerMenuItem );
 
 		const startButton = domConstruct.create( "button", {
 		    innerHTML: "Start"
@@ -271,13 +282,13 @@ class CircularTimer {
 		function childsIndex( parent, child ) {
 		    // return the index of PARENT's CHILD.
 		    for( const i in parent.children ) {
-			if( parent.children[ i ] == timerControls ) return( i );
+			if( parent.children[ i ] == self.timerControls ) return( i );
 		    }
 		    return( -1 );
 		}
 
 		function duplicateTimer( ) {
-		    const childIndex = childsIndex( circularTimer, timerControls );
+		    const childIndex = childsIndex( circularTimer, self.timerControls );
 		    const latestInitialTime = ( ( parseInt( minutes.value ) || 0 ) *60 ) + ( parseInt( seconds.value ) || 0 );
 		    new CircularTimer( timerContainer, latestInitialTime, alertTime, sounds, childIndex );
 		    toggleElement( timerContainer, "flex" );
@@ -365,6 +376,16 @@ class CircularTimer {
 	});
     }
 
+    destroy( ) {
+	// Remove this CircularTimer
+	this.cleanUp();
+	const thisCircularTimer = this;
+	require( [
+            "dojo/dom-construct"
+	], function ( domConstruct ) {
+            domConstruct.destroy( thisCircularTimer.timerControls ); // Remove the element from the DOM
+	});
+    }
 };
 
 // Local Variables:
