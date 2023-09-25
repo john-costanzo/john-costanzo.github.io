@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-24 Sun 14:21:42> */
+/* File last changed: <2023-09-25 Mon 03:49:14> */
 
 .timer-container {
     /* text-align: center; */
@@ -87,13 +87,6 @@ input[type="number"] {
 .alert-style {
     fill: red;
     font-weight: 300 !important;
-}
-
-.gearsButtonSmallIcon {
-    background-image: url('../images/gears.png');
-    width: 12px;
-    height: 12px;
-    background-size: cover;
 }
 
 .circular-timer-button-container {

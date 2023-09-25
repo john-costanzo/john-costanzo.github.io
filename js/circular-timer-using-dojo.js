@@ -1,4 +1,4 @@
-const circularTimerVersion = "Sunday, 2023-09-24 @ 15:15:30";
+const circularTimerVersion = "Monday, 2023-09-25 @ 03:49:50";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -165,9 +165,8 @@ class CircularTimer {
 		const circularTimerButtonContainer = domConstruct.create( "div", {}, timerControls );
 		circularTimerButtonContainer.classList.add( "circular-timer-button-container" );
 
-		var gearMenu = new DropDownButton({
+		var timerMenu = new DropDownButton({
 		    label: "",
-		    iconClass: "gearsButtonSmallIcon",
 		    dropDown: new DropDownMenu({
 			style: "display: none;"
 		    })
@@ -183,7 +182,7 @@ class CircularTimer {
 		});
 
 		const duplicateTimerMenuItem = new MenuItem({
-		    label: "duplicate Timer",
+		    label: "Duplicate Timer",
 		    iconClass: "fas fa-clone",
 		    onClick: function() {
 			duplicateTimer();
@@ -191,14 +190,14 @@ class CircularTimer {
 		    disabled: false,
 		});
 
-		gearMenu.dropDown.addChild( resetTimerMenuItem );
-		gearMenu.dropDown.addChild( duplicateTimerMenuItem );
+		timerMenu.dropDown.addChild( resetTimerMenuItem );
+		timerMenu.dropDown.addChild( duplicateTimerMenuItem );
 
 		const startButton = domConstruct.create( "button", {
 		    innerHTML: "Start"
 		}, circularTimerButtonContainer );
 		startButton.classList.add( "button" );
-		gearMenu.placeAt( circularTimerButtonContainer, "last" );
+		timerMenu.placeAt( circularTimerButtonContainer, "last" );
 
 		var startButtonHandler;
 
