@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2023-09-25 @ 05:41:15";</script>
+    <script>const recipeBrowserVersion = "Monday, 2023-09-25 @ 16:56:34";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -28,6 +28,8 @@
       alertSounds[ 25 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
       alertSounds[ 3 ] = 'sounds/Thats All Folks.mp3';
       alertSounds[ 0 ] = 'sounds/Clock-chimes-sounds.mp3';
+
+      const circularTimers = []; // An array of all CircularTimers
     </script>
 
     <script>
@@ -156,7 +158,8 @@
 			      const result = extractTimingInformation( ingredients );
 			      recipeIngredients.innerHTML = result[ result.length-1 ]; // The ingredients, stripped of timing info
 			      for( let i=0; i<result.length-1; i += 2 ) {
-				  new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds );
+				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds );
+				  circularTimers.push( ct );
 			      }
 			  } else {
 			      console.log( "addIngredients: no such recipe id [%s]", recipeId );
@@ -178,7 +181,8 @@
 			      const result = extractTimingInformation( method );
 			      recipeMethod.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
 			      for( let i=0; i<result.length-1; i += 2 ) {
-				  new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
+				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
+				  circularTimers.push( ct );
 			      }
 			  }
 			  else {
@@ -197,7 +201,8 @@
 				  "<h2>Yield</h2>" +
 				  yieldText;
 			      for( let i=0; i<result.length-1; i += 2 ) {
-				  new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
+				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
+				  circularTimers.push( ct );
 			      }
 			  }
 		      }
@@ -212,7 +217,8 @@
 				  "<h2>Credit</h2>" +
 				  creditText;
 			      for( let i=0; i<result.length-1; i += 2 ) {
-				  new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
+				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
+				  circularTimers.push( ct );
 			      }
 			  }
 		      }
@@ -231,6 +237,9 @@
       function fillInRecipe( id ) {
 	  const title = recipeIdToNameMap.get( id );
 	  if( title ) {
+	      circularTimers.forEach( (timer) => {
+		  timer.cleanUp();
+	      });
 	      require([ "dojo/dom"],
 		      function( dom ) {
 			  let topHeader = dom.byId( "topHeader" );
@@ -457,7 +466,7 @@
       <li>
 	<b>Recipes</b><br>
 	<ul>
-	  <li>Click on a <b>Header</b> Method to hide or show that section.</li>
+	  <li>Click on a Method <b>Header</b> to hide or show that section.</li>
 	  <li>Click on an alarm clock icon (<img src=\"images/alarm-clock-icon.png\" class=\"alarm-clock-icon\">)
 	    to hide or show a timer for that particular recipe step.
             <ul>
