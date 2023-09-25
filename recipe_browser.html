@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2023-09-25 @ 03:49:04";</script>
+    <script>const recipeBrowserVersion = "Monday, 2023-09-25 @ 05:41:15";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -429,6 +429,10 @@
     <script src="js/search-recipes.js"></script>
     <script src="js/circular-timer-using-dojo.js"></script>
     <script>
+      const recipeStats =
+	    recipeNameArray.map( function(cat) { return [ cat[0], cat[1].length ] } )
+	    .sort()
+	    .map( function(entry) { return( "<li>" + entry[0] + ": " + entry[1] + "</li>" ) } ).join("");
       const aboutText = `<center><h1>Recipe Browser Component Versions</h1></center>
     <table class="pretty-table">
       <tr><td>Dojo software</td> <td>${dojo.version}</td></tr>
@@ -437,8 +441,12 @@
       <tr><td>Circular Timer software</td> <td>${circularTimerVersion}</td></tr>
       <tr><td>Recipe Browser data</td> <td>${recipeDataVersion}</td></tr>
     </table>
+    <h2>Recipe Statistics</h2>
+    <ul>
+      ${recipeStats}
+    </ul>
+    <p>
     `;
-
       const helpText = `<center><h1>Recipe Browser Help</h1></center>
     <ul>
       <li>
