@@ -1,4 +1,4 @@
-const circularTimerVersion = "Monday, 2023-09-25 @ 03:49:50";
+const circularTimerVersion = "Monday, 2023-09-25 @ 19:09:21";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -24,7 +24,6 @@ function toggleElement( elementId, displayStyle ) {
 }
 
 class CircularTimer {
-
     /**
      * Construct a new CircularTimer, optionally configure to play sounds upon completion.
      *
@@ -49,12 +48,17 @@ class CircularTimer {
      * @returns {CircularTimer} Returns a new CircularTimer embedded in the page at the point of call.
      */
     constructor( timerContainer, initialTime, alertTime=30, sounds, position=-1 ) {
+	const self = this; // Capture the value of 'this'
+	self.timerInterval = undefined;
+	self.audios = []; // an array of Audio media that have been played
+
 	var circularTimer;
 	var initialSeconds = initialTime % 60;
 	var initialMinutes = Math.floor( initialTime / 60 );
 	var expirationTime;
 	var timeAtPause = 0; // capture the time pause was clicked
 	var isRunning = false;
+
 
 	require( [
             "dojo/dom", "dojo/dom-construct", "dojo/on", "dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button", "dojo/ready",
@@ -206,13 +210,12 @@ class CircularTimer {
 
 		var totalTime = 0; // in seconds
 		var remainingTime = 0; // in seconds
-		var timerInterval;
 
 		startButtonHandler = on( startButton, "click", startTimer );
 
 		function commenceTicking( ) {
 		    if ( remainingTime <= 0 ) {
-			clearInterval( timerInterval );
+			clearInterval( self.timerInterval );
 			startButton.innerHTML = "Start";
 			startButtonHandler.remove( );
 			startButtonHandler = on( startButton, "click", startTimer );
@@ -228,7 +231,7 @@ class CircularTimer {
 		}
 
 		function pauseTimer( ) {
-                    clearInterval( timerInterval );
+                    clearInterval( self.timerInterval );
 		    timeAtPause = Date.now();
 		    isRunning = false;
 		    startButton.innerHTML = "Resume";
@@ -237,7 +240,7 @@ class CircularTimer {
 		}
 
 		function resumeTimer( ) {
-                    clearInterval( timerInterval );
+                    clearInterval( self.timerInterval );
 		    expirationTime += Date.now() - timeAtPause;
                     updateDisplay( );
 		    isRunning = true;
@@ -245,13 +248,13 @@ class CircularTimer {
 		    startButtonHandler.remove( );
 		    startButtonHandler = on( startButton, "click", pauseTimer );
 
-                    timerInterval = setInterval( commenceTicking, 1000 );
+                    self.timerInterval = setInterval( commenceTicking, 1000 );
 		}
 
 		function startTimer( ) {
                     totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
 		    expirationTime = Date.now() + ( totalTime * 1000 );
-                    clearInterval( timerInterval );
+                    clearInterval( self.timerInterval );
 		    isRunning = true;
 		    startButton.innerHTML = "Pause";
 		    startButtonHandler.remove( );
@@ -262,7 +265,7 @@ class CircularTimer {
 		    text.classList.remove( "alert-style" );
 
                     updateDisplay( );
-                    timerInterval = setInterval( commenceTicking, 1000 );
+                    self.timerInterval = setInterval( commenceTicking, 1000 );
 		}
 
 		function childsIndex( parent, child ) {
@@ -281,7 +284,7 @@ class CircularTimer {
 		}
 
 		function resetTimer( ) {
-                    clearInterval( timerInterval );
+                    clearInterval( self.timerInterval );
 		    timeAtPause = Date.now();
 		    isRunning = false;
 		    startButton.innerHTML = "Start";
@@ -292,7 +295,7 @@ class CircularTimer {
 		    text.classList.remove( "alert-style" );
 		    updateDisplay( true );
 		    text.textContent = "";
-		    // TODO: cancel any pending audio plays
+		    self.cleanUp();
 		}
 
 		function updateDisplay( siliently = false ) {
@@ -334,11 +337,13 @@ class CircularTimer {
 			    if( typeof s === 'string' ) {
 				let audio = new Audio( s );
 				audio.play();
+				self.audios.push( audio );
 				nsounds++;
 			    } else if( typeof s === 'object' ) {
 				s.forEach(function(f) {
 				    let audio = new Audio( f );
 				    audio.play();
+				    self.audios.push( audio );
 				    nsounds++;
 				});
 			    }
@@ -348,10 +353,18 @@ class CircularTimer {
 		}
             } );
 	} );
-
 	toggleElement( timerContainer, "none" );
 	return( circularTimer );
     }
+
+    cleanUp( ) {
+	// Clean up any pending intervals and audio
+	clearInterval( this.timerInterval );
+	this.audios.forEach( (audio) => {
+	    audio.pause();
+	});
+    }
+
 };
 
 // Local Variables:
