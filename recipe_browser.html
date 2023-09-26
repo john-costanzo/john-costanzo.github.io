@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2023-09-25 @ 22:31:04";</script>
+    <script>const recipeBrowserVersion = "Tuesday, 2023-09-26 @ 14:21:16";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -208,6 +208,21 @@
 			  }
 		      }
 
+		      if (typeof tagsMap !== "undefined") {
+			  let tag = tagsMap.get( recipeId );
+			  if( tag ) {
+			      const result = extractTimingInformation( tag );
+			      let tagText = result[ result.length-1 ]; // The tag, stripped of timing info
+			      recipeMethod.innerHTML =
+				  recipeMethod.innerHTML +
+				  "<h2>Tags</h2>" +
+				  tagText;
+			      for( let i=0; i<result.length-1; i += 2 ) {
+				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
+				  circularTimers.push( ct );
+			      }
+			  }
+		      }
 		      if (typeof creditsMap !== "undefined") {
 			  let credit = creditsMap.get( recipeId );
 			  if( credit ) {
