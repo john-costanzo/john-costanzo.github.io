@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2023-09-25 @ 16:56:34";</script>
+    <script>const recipeBrowserVersion = "Monday, 2023-09-25 @ 22:31:04";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -20,6 +20,7 @@
       let currentRecipeId = undefined;
       var printMenuItem;
       var emailLinkMenuItem;
+      var commentMenuItem;
       const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
 
       let alertSounds = new Object();
@@ -251,6 +252,7 @@
 	  }
 	  printMenuItem.setDisabled(  false );
 	  emailLinkMenuItem.setDisabled( false );
+	  commentMenuItem.setDisabled( false );
       }
 
       function printRecipe( id ) {
@@ -345,6 +347,14 @@
 	  const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
 
 	  window.open( "mailto:?subject=" + topHeader.innerHTML + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
+      }
+
+      function commentOnRecipe() {
+	  console.log( "commentOnRecipe: called" );
+	  if( !currentRecipeId ) return;
+	  const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
+
+	  window.open( "mailto:jncostanzo+recipebrowser@gmail.com?subject=Comments on the \"" + topHeader.innerHTML + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
       }
 
       function addRecipes( recipeNameMap, refNode ) {
@@ -488,6 +498,7 @@
 	  </li>
 	  <li class=\"verticallyAligned\"><img class=\"printerIcon\">&nbsp;Print: format the recipe for printing.</li>
 	  <li class=\"verticallyAligned\"><img class=\"emailLinkIcon\">&nbsp;Email Link: Share a link to a recipe via email.</li>
+	  <li class=\"verticallyAligned\"><i class=\"fa-regular fa-comment\"></i>&nbsp;Comment on Recipe: Submit comments via email.</li>
 	  <li class=\"verticallyAligned\"><i class=\"fa-solid fa-circle-info\"></i>&nbsp;About: Describes the versions of the software and data for the Recipe Browser.
 	  </li>
 	</ul>
@@ -549,6 +560,15 @@
 		      disabled: true,
 		  });
 
+		  commentMenuItem = new MenuItem({
+		      label: "Comment on Recipe",
+		      iconClass: "fa-regular fa-comment",
+		      onClick: function() {
+			  commentOnRecipe();
+		      },
+		      disabled: true,
+		  });
+
 		  // Create a Dialog widget
 		  const aboutPopup = new Dialog({
 		      content: aboutText,
@@ -605,6 +625,7 @@
 		  button.dropDown.addChild( new MenuSeparator() );
 		  button.dropDown.addChild( printMenuItem );
 		  button.dropDown.addChild( emailLinkMenuItem );
+		  button.dropDown.addChild( commentMenuItem );
 		  button.dropDown.addChild( new MenuSeparator() );
 		  button.dropDown.addChild( aboutMenuItem );
 		  button.dropDown.addChild( helpMenuItem );
