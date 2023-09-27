@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Tuesday, 2023-09-26 @ 14:21:16";</script>
+    <script>const recipeBrowserVersion = "Wednesday, 2023-09-27 @ 15:50:44";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -360,16 +360,17 @@
 	  // Send a link to the email client
 	  if( !currentRecipeId ) return;
 	  const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
+	  const title = topHeader.innerHTML;
 
-	  window.open( "mailto:?subject=" + topHeader.innerHTML + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
+	  window.open( "mailto:?subject=" + title + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
       }
 
       function commentOnRecipe() {
-	  console.log( "commentOnRecipe: called" );
 	  if( !currentRecipeId ) return;
 	  const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
+	  const title = topHeader.innerHTML;
 
-	  window.open( "mailto:jncostanzo+recipebrowser@gmail.com?subject=Comments on the \"" + topHeader.innerHTML + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
+	  window.open( "mailto:?subject=Comments on the \"" + title + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
       }
 
       function addRecipes( recipeNameMap, refNode ) {
