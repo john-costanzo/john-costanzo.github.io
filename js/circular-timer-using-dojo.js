@@ -1,4 +1,4 @@
-const circularTimerVersion = "Monday, 2023-09-25 @ 19:44:50";
+const circularTimerVersion = "Wednesday, 2023-09-27 @ 09:30:02";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -55,7 +55,8 @@ class CircularTimer {
 
 	var circularTimer;
 	var initialSeconds = initialTime % 60;
-	var initialMinutes = Math.floor( initialTime / 60 );
+	var initialMinutes = Math.floor( ( initialTime % 3600 ) / 60 );
+	var initialHours = Math.floor( initialTime / 3600 );
 	var expirationTime;
 	var timeAtPause = 0; // capture the time pause was clicked
 	var isRunning = false;
@@ -65,6 +66,8 @@ class CircularTimer {
             "dojo/dom", "dojo/dom-construct", "dojo/on", "dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button", "dojo/ready",
 	], function ( dom, domConstruct, on, DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, ready ) {
             ready( function ( ) {
+
+		var hours = {};
 
 		const circularTimer = dom.byId( timerContainer );
 		if( !circularTimer ) {
@@ -78,21 +81,21 @@ class CircularTimer {
 
 		// Create an SVG element
 		var svg = document.createElementNS( "http://www.w3.org/2000/svg", "svg" );
-		svg.setAttribute( "width", "100" );
-		svg.setAttribute( "height", "100" );
+		svg.setAttribute( "width", "140" );
+		svg.setAttribute( "height", "140" );
 
 		// Create a circle
 		var circle = document.createElementNS( "http://www.w3.org/2000/svg", "circle" );
-		circle.setAttribute( "cx", "50" );
-		circle.setAttribute( "cy", "50" );
-		circle.setAttribute( "r", "45" );
+		circle.setAttribute( "cx", "65" );
+		circle.setAttribute( "cy", "70" );
+		circle.setAttribute( "r", "60" );
 		circle.setAttribute( "fill", "lightblue" );
 		circle.classList.add( "timer-arc" );
 
 		// Create text
 		var text = document.createElementNS( "http://www.w3.org/2000/svg", "text" );
 		text.setAttribute( "font-size", "32" );
-		const textX = parseInt( circle.getAttribute( "cx" ) );
+		const textX = parseInt( circle.getAttribute( "cx" ) ) + 5;
 		const textY = parseInt( circle.getAttribute( "cy" ) ) + ( text.getAttribute( "font-size" )/2 );
 
 		text.setAttribute( "x", textX );
@@ -116,10 +119,41 @@ class CircularTimer {
 		}, self.timerControls );
 		timeControls.classList.add( "time-controls" );
 
+		if( initialHours > 0 ) { // only build the hours element if needed
+		    hours = domConstruct.create( "input", {
+			type: "number",
+			value: initialHours,
+			min: "0",
+			innerHTML: "hours"
+		    }, timeControls );
+		    hours.classList.add( "timer-input" );
+
+		    hours.recent = hours.value;
+		    on(hours, "change", function (event) {
+			hours.old = hours.recent;
+			hours.recent = hours.value;
+
+			totalTime = ( parseInt( hours.value ) || 0 ) * 3660 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+			expirationTime += ( hours.recent - hours.old ) * 3600000;
+			if( isRunning ) {
+			    remainingTime += ( hours.recent - hours.old );
+			} else {
+			    remainingTime = ( expirationTime - Date.now() ) / 1000;
+			}
+		    });
+		    domConstruct.create( "span", {
+			innerHTML: " : "
+		    }, timeControls );
+		} else {
+		    hours.value = 0;
+		}
+		
+		const formattedInitialMintues = ( hours.value > 0 ) ? zeroPad( initialMinutes, 2 ) : initialMinutes;
 		const minutes = domConstruct.create( "input", {
 		    type: "number",
-		    value: initialMinutes,
+		    value: formattedInitialMintues,
 		    min: "0",
+		    max: "59",
 		    innerHTML: "minutes"
 		}, timeControls );
 		minutes.classList.add( "timer-input" );
@@ -128,6 +162,7 @@ class CircularTimer {
 		on(minutes, "change", function (event) {
 		    minutes.old = minutes.recent;
 		    minutes.recent = minutes.value;
+		    minutes.value = zeroPad( minutes.value, 2 );
 
                     totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
 		    expirationTime += ( minutes.recent - minutes.old ) * 60000;
@@ -138,7 +173,7 @@ class CircularTimer {
 		    }
 		});
 
-		const colon = domConstruct.create( "span", {
+		domConstruct.create( "span", {
 		    innerHTML: " : "
 		}, timeControls );
 
@@ -157,7 +192,7 @@ class CircularTimer {
 		    seconds.recent = seconds.value;
 		    seconds.value = zeroPad( seconds.value, 2 );
 
-                    totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                    totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
 		    expirationTime += ( seconds.recent - seconds.old ) * 1000;
 		    if( isRunning ) {
 			remainingTime += ( seconds.recent - seconds.old );
@@ -263,7 +298,7 @@ class CircularTimer {
 		}
 
 		function startTimer( ) {
-                    totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                    totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
 		    expirationTime = Date.now() + ( totalTime * 1000 );
                     clearInterval( self.timerInterval );
 		    isRunning = true;
@@ -289,7 +324,7 @@ class CircularTimer {
 
 		function duplicateTimer( ) {
 		    const childIndex = childsIndex( circularTimer, self.timerControls );
-		    const latestInitialTime = ( ( parseInt( minutes.value ) || 0 ) *60 ) + ( parseInt( seconds.value ) || 0 );
+		    const latestInitialTime = ( ( parseInt( hours.value ) || 0 ) *3600 ) + ( ( parseInt( minutes.value ) || 0 ) *60 ) + ( parseInt( seconds.value ) || 0 );
 		    new CircularTimer( timerContainer, latestInitialTime, alertTime, sounds, childIndex );
 		    toggleElement( timerContainer, "flex" );
 		}
@@ -313,15 +348,28 @@ class CircularTimer {
 		    remainingTime = ( expirationTime - Date.now() ) / 1000;
 		    if( !siliently ) playSounds( remainingTime );
 
-                    var min = Math.floor( remainingTime / 60 );
+                    var hr = Math.floor( remainingTime / 3600 );
+                    var min = Math.floor( ( remainingTime % 3600 ) / 60 );
 		    var sec = Math.round( remainingTime % 60 );
 		    if( sec < 0 ) sec = 0;
 		    if( min < 0 ) min = 0;
+		    if( hr < 0 ) hr = 0;
+
 		    if( sec >= 60 ) {
 		    	sec = 0;
 			min++;
 		    }
-		    text.textContent = zeroPad( min, 2 ) + ":" + zeroPad( sec, 2 );
+
+		    if( min >= 60 ) {
+		    	min = 0;
+			hr++;
+		    }
+
+		    if( hr > 0 ) {
+			text.textContent = hr + ":" + zeroPad( min, 2 ) + ":" + zeroPad( sec, 2 );
+		    } else {
+			text.textContent = min + ":" + zeroPad( sec, 2 );
+		    }
 
                     // Update the SVG timer arc
 		    let fractionRemaining = ( ( remainingTime / totalTime ) * circumference );
