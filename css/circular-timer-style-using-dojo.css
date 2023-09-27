@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-25 Mon 03:49:14> */
+/* File last changed: <2023-09-26 Tue 18:15:52> */
 
 .timer-container {
     /* text-align: center; */
@@ -35,6 +35,8 @@ input[type="number"] {
     flex-direction: column;
     justify-content: center; /* Center elements vertically */
     align-items: center; /* Center elements horizontally */
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .time-controls {
