@@ -1,4 +1,4 @@
-const circularTimerVersion = "Wednesday, 2023-09-27 @ 09:30:02";
+const circularTimerVersion = "Wednesday, 2023-09-27 @ 22:11:33";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -124,7 +124,8 @@ class CircularTimer {
 			type: "number",
 			value: initialHours,
 			min: "0",
-			innerHTML: "hours"
+			innerHTML: "hours",
+			name: "hours",
 		    }, timeControls );
 		    hours.classList.add( "timer-input" );
 
@@ -154,7 +155,8 @@ class CircularTimer {
 		    value: formattedInitialMintues,
 		    min: "0",
 		    max: "59",
-		    innerHTML: "minutes"
+		    innerHTML: "minutes",
+		    name: "minutes",
 		}, timeControls );
 		minutes.classList.add( "timer-input" );
 
@@ -182,7 +184,8 @@ class CircularTimer {
 		    value: zeroPad( initialSeconds, 2 ),
 		    min: "0",
 		    max: "59",
-		    innerHTML: "seconds"
+		    innerHTML: "seconds",
+		    name: "seconds",
 		}, timeControls );
 		seconds.classList.add( "timer-input" );
 
