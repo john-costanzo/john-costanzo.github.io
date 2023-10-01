@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-26 Tue 18:15:52> */
+/* File last changed: <2023-09-30 Sat 08:37:40> */
 
 .timer-container {
     /* text-align: center; */
@@ -60,6 +60,11 @@ input[type="number"] {
 .button {
     color: black;
     font-style: normal !important;
+    height: 36px;
+}
+
+.dijitDownArrowButton {
+    height: 26px;
 }
 
 .alarm-clock-icon {
