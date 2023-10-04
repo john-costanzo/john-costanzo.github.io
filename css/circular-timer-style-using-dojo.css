@@ -1,4 +1,4 @@
-/* File last changed: <2023-09-30 Sat 08:37:40> */
+/* File last changed: <2023-10-04 Wed 11:40:09> */
 
 .timer-container {
     /* text-align: center; */
@@ -11,9 +11,9 @@
 }
 
 .timer-arc {
-    fill: lightgrey;
+    fill: #dedddc;
     stroke: #0074d9;
-    stroke-width: 5;
+    stroke-width: 10;
     stroke-dasharray: 0, 100;
     transition: stroke-dasharray 1s ease-in-out;
     transform-origin: center center;
@@ -63,6 +63,10 @@ input[type="number"] {
     height: 36px;
 }
 
+.dijitButtonContents {
+    display: flex !important;
+}
+
 .dijitDownArrowButton {
     height: 26px;
 }
@@ -97,8 +101,7 @@ input[type="number"] {
 }
 
 .circular-timer-button-container {
-    display: flex;
-    justify-content: center;
+    display: flow;
 }
 
 /* Local Variables: */
