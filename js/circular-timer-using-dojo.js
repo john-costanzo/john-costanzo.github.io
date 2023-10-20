@@ -1,4 +1,4 @@
-const circularTimerVersion = "Wednesday, 2023-09-27 @ 22:11:33";
+const circularTimerVersion = "Friday, 2023-10-20 @ 15:52:08";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -400,12 +400,14 @@ class CircularTimer {
 				let audio = new Audio( s );
 				audio.play();
 				self.audios.push( audio );
+				document.title = "!" + document.title;
 				nsounds++;
 			    } else if( typeof s === 'object' ) {
 				s.forEach(function(f) {
 				    let audio = new Audio( f );
 				    audio.play();
 				    self.audios.push( audio );
+				    document.title = "!" + document.title;
 				    nsounds++;
 				});
 			    }
@@ -425,6 +427,7 @@ class CircularTimer {
 	this.audios.forEach( (audio) => {
 	    audio.pause();
 	});
+	document.title = document.title.replace( /^!*/, "" );
     }
 
     destroy( ) {

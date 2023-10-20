@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Wednesday, 2023-10-04 @ 11:14:13";</script>
+    <script>const recipeBrowserVersion = "Friday, 2023-10-20 @ 15:45:36";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -264,6 +264,7 @@
 			  addMethods( id );
 		      });
 	      currentRecipeId = id;
+	      document.title = title;
 	  }
 	  printMenuItem.setDisabled(  false );
 	  emailLinkMenuItem.setDisabled( false );
