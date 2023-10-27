@@ -1,0 +1,11 @@
+<style>
+  .header-inner {
+      display: none;
+  }
+  .title {
+      display: none;
+  }
+  textarea {
+    max-height: 3em;
+  }
+</style>
