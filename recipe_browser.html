@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Friday, 2023-10-20 @ 15:45:36";</script>
+    <script>const recipeBrowserVersion = "Monday, 2023-11-27 @ 13:35:05";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -415,7 +415,7 @@
 		      const panel = dom.byId( drawer );
 		      if( panel ) {
 			  const left = domStyle.get( panel, "left" );
-			  domStyle.set( panel, "left", (left==-400 ? "0px" : "-400px" ) );
+			  domStyle.set( panel, "left", (left < -390 ? "0px" : "-400px" ) );
 			  const sb = dom.byId( "searchBox" );
 			  if( sb ) sb.focus();
 		      }
