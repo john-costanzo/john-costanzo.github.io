@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2023-11-27 @ 13:35:05";</script>
+    <script>const recipeBrowserVersion = "Saturday, 2023-12-23 @ 15:16:38";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -409,19 +409,32 @@
       </script>
 
     <script>
-      function toggleDrawer( drawer ) {
+    function toggleDrawer( drawer, forceOpen = false ) {
 	  require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
 		  function(dom, domStyle) {
 		      const panel = dom.byId( drawer );
 		      if( panel ) {
 			  const left = domStyle.get( panel, "left" );
-			  domStyle.set( panel, "left", (left < -390 ? "0px" : "-400px" ) );
+			  if( forceOpen ) {
+			      domStyle.set( panel, "left", "0px" );
+			  } else {
+			      domStyle.set( panel, "left", (left < -390 ? "0px" : "-400px" ) );
+			  }
 			  const sb = dom.byId( "searchBox" );
 			  if( sb ) sb.focus();
 		      }
 		  });
       };
-      addRecipes( recipeNameMap, "recipe_titles" );
+
+    require(["dojo/on", "dojo/dom", "dojo/keys"], function( on, dom, keys ) {
+	on( document, "keydown", function(event) {
+	    if( event.altKey && event.key === "s" ) {
+		toggleDrawer( 'recipeDrawer', true );
+	    }
+	});
+    });
+
+     addRecipes( recipeNameMap, "recipe_titles" );
 
     </script>
   </head>
