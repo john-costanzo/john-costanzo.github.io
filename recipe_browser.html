@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2023-12-25 @ 15:20:42";</script>
+    <script>const recipeBrowserVersion = "Monday, 2023-12-25 @ 19:08:59";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -437,10 +437,29 @@
 		  });
       };
 
-    require(["dojo/on", "dojo/dom", "dojo/keys"], function( on, dom, keys ) {
+      function selectGearMenu() {
+	  console.log( "In selectGearMenu");
+	  require(["dojo/dom", "dojo/domReady!"],
+		  function(dom) {
+		      const gearsMenu = document.getElementById( "gearsMenu" );
+		      console.log( "gearMenu = " + gearsMenu );
+		      if( gearsMenu ) {
+			  // FIXME: This doesn't do anything!
+			  gearsMenu.dispatchEvent(new Event("click"));
+		      } else {
+			  console.error("can't find element with id = gearsMenu!");
+		      }
+		  });
+      }
+
+      require(["dojo/on","dojo/dom"], function( on,dom ) {
 	on( document, "keydown", function(event) {
 	    if( event.altKey && event.key === "s" ) {
 		toggleDrawer( 'recipeDrawer', true );
+	    }
+	    if( event.altKey && event.key === "g" ) {
+		console.log("Alt G!");
+		selectGearMenu();
 	    }
 	});
     });
@@ -583,18 +602,17 @@
 		      }
 		  });
 
-var colorPalette = new ColorPalette({
-        onChange: function(color) {
-            console.log("Selected color: " + color);
-	    changeColor( color );
-        }
-    });
-
+		  var colorPalette = new ColorPalette({
+		      onChange: function(color) {
+			  console.log("Selected color: " + color);
+			  changeColor( color );
+		      }
+		  });
 
 		  var changeColorItem = new PopupMenuItem({
-        label: "Select Color",
-        iconClass: "dijitEditorIcon dijitEditorIconColorPicker",
-        popup: colorPalette
+		      label: "Select Color",
+		      iconClass: "color-picker-icon",
+		      popup: colorPalette
 		  });
 
 		  printMenuItem = new MenuItem({
