@@ -188,6 +188,12 @@ h2,h3,h4,h5,h6,h7,h8 {
     height: 24px;
     background-size: cover;
 }
+.color-picker-icon {
+    background-image: url('../images/color-picker-icon.png');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
 .alarm-clock-icon {
     width: 24px;
     height: 24px;
