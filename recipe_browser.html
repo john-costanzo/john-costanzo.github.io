@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Wednesday, 2023-12-27 @ 12:26:04";</script>
+    <script>const recipeBrowserVersion = "Friday, 2023-12-29 @ 11:51:28";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -416,6 +416,25 @@
       </script>
 
     <script>
+
+    function focusOn( element ) {
+	console.log( "focusOn: starting...");
+	require(["dojo/dom", "dojo/ready"],
+          function( dom, ready ) {
+		ready( 10000, function () { // Priority 10,000: force execution very late in the game!
+		    const el = dom.byId( element );
+		    console.log( "focusOn: el=" + el);
+		    if( el ) {
+			console.log( "focusOn: found el!" );
+			el.focus();
+		    } else {
+			console.error( "Cannot focus on '" + element + "'!!!");
+		    }
+		});
+		console.log( "focusOn: finished.");
+          });
+    }
+
     function toggleDrawer( drawer, forceOpen = false ) {
 	  require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
 		  function(dom, domStyle) {
@@ -427,12 +446,7 @@
 			  } else {
 			      domStyle.set( panel, "left", (left < -390 ? "0px" : "-400px" ) );
 			  }
-			  const sb = dom.byId( "searchBox" );
-			  if( sb ) {
-			      sb.focus();
-			  } else {
-			      console.log( "Cannot focus on searchBox!!!");
-			  }
+                          focusOn( "searchBox" );
 		      }
 		  });
       };
@@ -741,18 +755,11 @@
 		      } else {
 			  console.log( "Error: Unknown action [%s]; href=[%s]", action, window.location.href );
 		      }
-		  }
-	      });
-
-      require(["dojo/dom", "dojo/domReady!"],
-	      function( dom ) {
-		  setTimeout(function() {
+		  } else {
 		      toggleDrawer( 'recipeDrawer', true );
-		  }, 2000);
+                  }
 	      });
-	      </script>
-
-
+    </script>
   </body>
 </html>
 
