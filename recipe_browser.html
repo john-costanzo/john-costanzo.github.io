@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Friday, 2023-12-29 @ 11:51:28";</script>
+    <script>const recipeBrowserVersion = "Friday, 2023-12-29 @ 15:07:51";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -418,20 +418,16 @@
     <script>
 
     function focusOn( element ) {
-	console.log( "focusOn: starting...");
 	require(["dojo/dom", "dojo/ready"],
           function( dom, ready ) {
 		ready( 10000, function () { // Priority 10,000: force execution very late in the game!
 		    const el = dom.byId( element );
-		    console.log( "focusOn: el=" + el);
 		    if( el ) {
-			console.log( "focusOn: found el!" );
 			el.focus();
 		    } else {
 			console.error( "Cannot focus on '" + element + "'!!!");
 		    }
 		});
-		console.log( "focusOn: finished.");
           });
     }
 
