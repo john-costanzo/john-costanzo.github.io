@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Friday, 2023-12-29 @ 15:10:40";</script>
+    <script>const recipeBrowserVersion = "Monday, 2024-01-01 @ 15:27:41";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -55,10 +55,8 @@
 	  // Spawn a separate window for each argument beyond the first one.
 	  let nvp = nextArgNVP();
 	  const originPathname = window.location.origin + window.location.pathname;
-	  console.log( "originPathname=[%s]", originPathname );
 	  while( nvp ) {
 	      const url = originPathname + "?" + nvp[ 0 ] + ":" + nvp[ 1 ];
-	      console.log( "spawning ===> " + url );
 	      window.open( url, "_blank" );
 	      nvp = nextArgNVP();
 	  }
@@ -88,8 +86,8 @@
 	  }
 
 	  const newRule = `${selector} {
-    font-size: ${newSize}px;
-  }`;
+                                        font-size: ${newSize}px;
+                           }`;
 
 	  styleSheet.insertRule(newRule, styleSheet.cssRules.length);
       }
@@ -109,7 +107,7 @@
 		      const contentEllipses = dom.byId( "heading-ellipses-" + id );
 
 		      if( !content || !contentEllipses ) {
-			  console.log( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
+			  console.error( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
 		      } else {
 			  const display = domStyle.get( content, "display" );
 			  let wipe;
@@ -170,7 +168,7 @@
 				  circularTimers.push( ct );
 			      }
 			  } else {
-			      console.log( "addIngredients: no such recipe id [%s]", recipeId );
+			      console.error( "addIngredients: no such recipe id [%s]", recipeId );
 			      recipeIngredients.innerHTML = "";
 			  }
 		      }
@@ -194,7 +192,7 @@
 			      }
 			  }
 			  else {
-			      console.log( "addMethods: no such recipe id [%s]", recipeId );
+			      console.error( "addMethods: no such recipe id [%s]", recipeId );
 			      recipeMethod.innerHTML = "";
 			  }
 		      }
@@ -335,7 +333,7 @@
 			  }, 2000);
 		      });
 	  } else {
-	      console.log( "printRecipe: no recipe with id = [%s]", id );
+	      console.error( "printRecipe: no recipe with id = [%s]", id );
 	      noSuchId( id );
 	  }
       }
@@ -447,19 +445,22 @@
 		  });
       };
 
-      function selectGearMenu() {
-	  console.log( "In selectGearMenu");
-	  require(["dojo/dom", "dojo/domReady!"],
-		  function(dom) {
-		      const gearsMenu = document.getElementById( "gearsMenu" );
-		      console.log( "gearMenu = " + gearsMenu );
-		      if( gearsMenu ) {
-			  // FIXME: This doesn't do anything!
-			  gearsMenu.dispatchEvent(new Event("click"));
+      function selectGearMenu( menu ) {
+	  if( menu ) {
+	  require(["dijit/registry", "dojo/domReady!"],
+		  function( registry ) {
+		      const gearsButtonName = "gearsButton";
+		      const gearsButton = registry.byId( gearsButtonName );
+		      if( gearsButton ) {
+			  gearsButton.openDropDown();
+			  menu.focusFirstChild();
 		      } else {
-			  console.error("can't find element with id = gearsMenu!");
+			  console.error( "selectGearMenu: can't locate element with id = '" + gearsButtonName + "'!" );
 		      }
 		  });
+          } else {
+	      console.error( "selectGearMenu: expected menu argument" );
+          }
       }
 
       require(["dojo/on","dojo/dom"], function( on,dom ) {
@@ -468,8 +469,8 @@
 		toggleDrawer( 'recipeDrawer', true );
 	    }
 	    if( event.altKey && event.key === "g" ) {
-		console.log("Alt G!");
-		selectGearMenu();
+		selectGearMenu( gearsDropDownMenu );
+                event.preventDefault(); // Prevent the browser default behavior
 	    }
 	});
     });
@@ -484,7 +485,6 @@
 
       <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
 	<center><h1 id="topHeader">Recipe Browser</h1></center>
-	<script type="text/javascript" src="http://w.24timezones.com/l.js" async></script>
 
 	<div class="toggle-button">
 	  <button data-dojo-type="dijit/form/Button" type="button">Search
@@ -599,15 +599,23 @@
     </ul>
     `;
 
+
+
+      var gearsDropDownMenu;
+
       require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button","dojo/dom","dojo/on","dijit/PopupMenuItem","dijit/ColorPalette","dojo/domReady!"],
 	      function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, dom, on, PopupMenuItem, ColorPalette, domReady) {
+
+      gearsDropDownMenu = new DropDownMenu({
+			  style: "display: none;"
+      });
+
 		  var button = new DropDownButton({
 		      label: "",
+		      id: "gearsButton",
 		      iconClass: "gearsButtonIcon",
-		      dropDown: new DropDownMenu({
-			  style: "display: none;"
-		      })
-		  }, "myButton");
+		      dropDown: gearsDropDownMenu
+		  }, "gearsButton");
 
 		  // Create menu items
 
@@ -634,10 +642,10 @@
 			  changeFontSize('body', '36');
 		      }
 		  });
+		  largeFontItem.set("accelKey", "Ctrl+Alt+L" );
 
 		  var colorPalette = new ColorPalette({
 		      onChange: function(color) {
-			  console.log("Selected color: " + color);
 			  changeColor( color );
 		      }
 		  });
@@ -749,7 +757,7 @@
 		      } else if( action === "print" ) {
 			  printRecipe( recipeId );
 		      } else {
-			  console.log( "Error: Unknown action [%s]; href=[%s]", action, window.location.href );
+			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'print' }", action, window.location.href );
 		      }
 		  } else {
 		      toggleDrawer( 'recipeDrawer', true );
