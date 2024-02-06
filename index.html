@@ -9,8 +9,12 @@
     <style type="text/css">
       li {
 	  font-size: 24px;
-	  font-weight: bold;
+	  font-weight: normal;
 	  margin: 10px 0;
+      }
+      .genre {
+	  font-size: 28px;
+	  font-weight: bold;
       }
       a:link {
 	  text-decoration: none;
@@ -48,19 +52,19 @@
   <body>
     <center><h1>John's Favorite Areas</h1></center>
     <ul>
-      <li><a href="recipe_browser.html">Recipe Browser - v2</a></li>
+      <li><a href="recipe_browser.html">Recipe Browser</a></li>
       <li><a href="https://www.wunderground.com/dashboard/pws/KNCHENDE241">Carriage Park Weather Station (tennis court)</a></li>
 
-      <li><a href="https://www.internet-radio.com/">Internet radio stations:</a></li>
+      <li><a href="https://www.internet-radio.com/" class="genre">Internet radio stations</a></li>
       <ul>
-	<li><a href="https://www.internet-radio.com/stations/jazz/"><i>Jazz</i></a>
+	<li><a href="https://www.internet-radio.com/stations/jazz/" class="genre">Jazz</a>
 	  <ul>
 	    <li class="heart"><a href="http://51.255.235.165:5068/stream?type=http&nocache=775074">Jazz Lounge</a></li>
 	    <li><a href="https://abcrelax.com/Player">ABC Relax</a></li>
 	    <li><a href="https://player.internet-radio.com/?server=https://cast1.torontocast.com:2060/index.html?sid=1">Jazz Club Bandstand - 1930s 1940s Big Band and Swing</a></li>
 	    <li class="heart"><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/swingtime">Swingtime</a></li>
 	    <li><a href="https://www.radioveronica.us/breezy.htm">Breezy</a></li>	    <li><a href="http://player.internet-radio.com/?server=http://198.178.123.5:10850">Jazz &amp; Blues Music</a></li>
-	    <li><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/1000jazzhits">1000 Jazz Hits: The Great Jazz Songbook <span style="font-size: smaller;">(with commercials)</span></a></li>
+	    <li><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/1000jazzhits">The Great Jazz Songbook <span style="font-size: smaller;">(with commercials)</span></a></li>
 	    <li class="clickable">
 	      <i style="font-size: smaller;">via YouTube</i>
 	      <ul class="clickable-content">
@@ -74,26 +78,26 @@
 	  </ul>
 	</li>
 
-	<li><a href="https://www.npr.org"><i>Public Radio</i></a></li>
+	<li><a href="https://www.npr.org" class="genre">Public Radio</a></li>
 	<ul>
-	  <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd2mp3128-ibc4"><i>News</i></a></li>
-	  <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd1mp3128-ibc4"><i>Classic</i></a></li>
+	  <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd2mp3128-ibc4">News</a></li>
+	  <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd1mp3128-ibc4">Classic</a></li>
 	</ul>
 
-	<li><a href="https://www.internet-radio.com/stations/classical/"><i>Classical</i></a></li>
+	<li><a href="https://www.internet-radio.com/stations/classical/" class="genre">Classical</a></li>
 	<ul>
 	  <li><a href="http://streaming.kwax.com:8000/localhost">KWAX</a></li>
 	  <li><a href="https://player.internet-radio.com/?server=http://116.202.241.212:8010">VCR | Venice Classic Radio Auditorium</a></li>
 	  <li><a href="https://player.internet-radio.com/?server=mediaserv30.live-streams.nl:8088">Hi On Line Classic Radio</a></li>
 	</ul>
 
-	<li><a href="https://www.internet-radio.com/stations/country/"><i>Country</i></a></li>
+	<li><a href="https://www.internet-radio.com/stations/country/" class="genre">Country</a></li>
 	<ul>
 	  <li><a href="http://pavo.prostreaming.net:8034/stream">Cowpoke Radio</a></li>
 	  <li><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/1000countryhits">1000 Countryhits</a></li>
 	</ul>
 
-	<li><a href="https://www.internet-radio.com/stations/70s/"><i>60s 70s and 80s</i></a>
+	<li><a href="https://www.internet-radio.com/stations/70s/" class="genre">60s 70s and 80s</a>
 	  <ul>
 	    <li class="heart"><a href="https://www.internet-radio.com/station/dynamic2023/">Dynamic Resonance Radio</a></li>
 	    <li class="heart"><a href="https://player.internet-radio.com/?server=s2.stationplaylist.com:9440">Radio Ferrymead 1413AM</a></li>
@@ -103,21 +107,21 @@
 	  </ul>
 	</li>
 
-	<li><a href="https://www.internet-radio.com/stations/classic%20rock/"><i>Classic Rock</i></a>
+	<li><a href="https://www.internet-radio.com/stations/classic%20rock/" class="genre">Classic Rock</a>
 	  <ul>
 	    <li><a href="http://player.internet-radio.com/?server=http://144.217.158.59:5000/index.html?sid=1">Classic Rock Florida</a></li>
 	    <li><a href="http://player.internet-radio.com/?server=http://sail.yachtrockmiami.com:8000">Yacht Rock Miami</a></li>
 	  </ul>
 	</li>
 
-	<li><a href="https://www.internet-radio.com/stations/oldies/"><i>Oldies</i></a>
+	<li><a href="https://www.internet-radio.com/stations/oldies/" class="genre">Oldies</a>
 	  <ul>
 	    <li><a href="http://us2.internet-radio.com:8443">Megaton Cafe Radio</a></li>
 	  </ul>
 	</li>
 
 	<li class="clickable">
-	  <i>Christmas</i>
+	  <div class="genre">Christmas</div>
 	  <ul class="clickable-content">
 	    <li><a href="https://www.internet-radio.com/stations/christmas/"><i>All Christmas stations</i></a></li>
 	    <li><a href="https://www.youtube.com/watch?v=KUsfjs5UN5I">YuleTube</a></li>
@@ -129,7 +133,7 @@
 	  </ul>
 	</li>
 
-	<li><i>Mixed</i>
+	<li><div class="genre">Mixed</div>
 	  <ul>
 	    <li><a href="https://player.internet-radio.com/?server=http://hts07.kshost.com.br:11104/index.html?sid=1">Nova98 Web</a></li>
 	  </ul>
