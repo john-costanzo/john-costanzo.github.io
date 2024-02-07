@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2024-01-21 @ 09:38:18";</script>
+    <script>const recipeBrowserVersion = "Tuesday, 2024-02-06 @ 21:45:14";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -585,9 +585,10 @@
       <li>
 	<b>Gear Menu</b><br>
 	<ul>
-	  <li>Font sizes: Choose from among small (<img src=\"images/letter-A.jpg\" class=\"small-A\">),
+	  <li>Font sizes: Choose from among
+	    large (<img src=\"images/letter-A.jpg\" class=\"large-A\">),
 	    medium (<img src=\"images/letter-A.jpg\" class=\"medium-A\">) or
-	    large (<img src=\"images/letter-A.jpg\" class=\"large-A\">) font.
+            small (<img src=\"images/letter-A.jpg\" class=\"small-A\">)  font.
 	  </li>
 	  <li class=\"verticallyAligned\"><img class=\"printerIcon\">&nbsp;Print: format the recipe for printing.</li>
 	  <li class=\"verticallyAligned\"><img class=\"emailLinkIcon\">&nbsp;Email Link: Share a link to a recipe via email.</li>
@@ -619,13 +620,14 @@
 
 		  // Create menu items
 
-		  var smallFontItem = new MenuItem({
-		      label: "Small font",
-		      iconClass: "small-A",
+		  var largeFontItem = new MenuItem({
+		      label: "Large font",
+		      iconClass: "large-A",
 		      onClick: function() {
-			  changeFontSize('body', '12');
+			  changeFontSize('body', '36');
 		      }
 		  });
+		  <!-- largeFontItem.set("accelKey", "Ctrl+Alt+L" ); -->
 
 		  var mediumFontItem = new MenuItem({
 		      label: "Medium font",
@@ -635,14 +637,13 @@
 		      }
 		  });
 
-		  var largeFontItem = new MenuItem({
-		      label: "Large font",
-		      iconClass: "large-A",
+		  var smallFontItem = new MenuItem({
+		      label: "Small font",
+		      iconClass: "small-A",
 		      onClick: function() {
-			  changeFontSize('body', '36');
+			  changeFontSize('body', '12');
 		      }
 		  });
-		  <!-- largeFontItem.set("accelKey", "Ctrl+Alt+L" ); -->
 
 		  var colorPalette = new ColorPalette({
 		      onChange: function(color) {
