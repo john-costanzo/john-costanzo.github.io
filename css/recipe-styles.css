@@ -4,6 +4,10 @@ h1 {
 
 h2 {
     font-size: 18px;
+    height: 4px;
+    font-style: italic;
+    font-weight: normal;
+    color: grey;
 }
 
 @media screen {
@@ -39,6 +43,7 @@ h2 {
 
 .claro .demoLayout .edgePanel {
     background-color: #d0e9fc;
+    font-size: 16px;
 }
 
 li {
@@ -82,8 +87,8 @@ h2,h3,h4,h5,h6,h7,h8 {
 
 .gears-control {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2px;
+    right: 2px;
     cursor: pointer;
 }
 
