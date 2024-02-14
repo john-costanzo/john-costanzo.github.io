@@ -43,7 +43,10 @@ h2 {
 
 .claro .demoLayout .edgePanel {
     background-color: #d0e9fc;
-    font-size: 16px;
+}
+
+.dijitButtonText {
+    font-size: 16px !important;
 }
 
 li {
