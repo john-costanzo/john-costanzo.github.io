@@ -78,7 +78,13 @@ li {
     white-space: nowrap;
 }
 
-h2,h3,h4,h5,h6,h7,h8 {
+h2 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+
+h3,h4,h5,h6,h7,h8 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
