@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+	"target" : "ES5",
+	"strict" : true,
+	"pretty" : false,
+	"lib": [ "dom", "es2016" ],
+	"module": "NodeNext",
+    },
+    "files": [
+        "./revealer.ts",
+    ],
+}
