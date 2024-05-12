@@ -16,32 +16,40 @@
 
       .person-class  {
           font-size: 128px;
-          animation: zoom-in 2s ease-in-out;
+          animation: rotate-and-zoom 3s ease-in-out;
           font-weight: bold;
           color: red;
+          text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
       }
 
-      @keyframes zoom-in {
-      0% {
-      transform: scale(1);
-      }
-      50% {
-      transform: scale(1.5);
-      }
-      100% {
-      transform: scale(1);
-      }
+
+      @keyframes rotate-and-zoom {
+	  0% {
+	      transform: rotateY(0deg) scale(.5);
+	  }
+	  50% {
+	      transform: rotateY(360deg) scale(1.5);
+	  }
+	  100% {
+	      transform: rotateY(360deg) scale(1);
+	  }
       }
     </style>    
   </head>
   <body>
     <center>
-      
       <h3><img src="https://www.cphassn.org/grfx/logo.jpg"/>Interesting Facts... <i>Revealed!</i></h3>
+
       <span id="person_number_label" class="person-number-label"></span><span id="person_number" class="person-number-label"></span><br>
+
       <span id="fact"></span>
-      <div id="person" class="person-class"></div>
+
+      <div class="text-container">
+	<div id="person" class="person-class"></div>
+      </div>
+
     </center>
+
     <script type="text/javascript" src="https://john-costanzo.github.io/revealer.js"></script>
   </body>
 </html>
