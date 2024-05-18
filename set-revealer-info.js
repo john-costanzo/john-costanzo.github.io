@@ -1,0 +1,16 @@
+setRevealInfo( [
+    ['Janet Messner', 'JANET MESSNER Janet Messner JANET MESSNER' ],
+    ['Renea Gaffey', 'RENEA GAFFEY Renea Gaffey RENEA GAFFEY' ],
+    ['Harvey Smith', 'HARVEY SMITH Harvey Smith HARVEY SMITH' ],
+    ['Becci Bartolomeo', 'BECCI BARTOLOMEO Becci Bartolomeo BECCI BARTOLOMEO' ],
+    ['Ed Bartolomeo', 'ED BARTOLOMEO Ed Bartolomeo ED BARTOLOMEO' ],
+    ['Gayle Hanley', 'GAYLE HANLEY Gayle Hanley GAYLE HANLEY' ],
+    ['Kem Moore', 'KEM MOORE Kem Moore KEM MOORE' ],
+    ['CJ Parris', 'CJ PARRIS CJ Parris CJ PARRIS' ],
+    ['Barry and Rena Woodland', 'BARRY AND RENA WOODLAND Barry and Rena Woodland BARRY AND RENA WOODLAND' ],
+    ['Kris Mahoney', 'KRIS MAHONEY Kris Mahoney KRIS MAHONEY' ],
+    ['Kathleen Darnell', 'KATHLEEN DARNELL Kathleen Darnell KATHLEEN DARNELL' ],
+    ['Dick Darnell', 'DICK DARNELL Dick Darnell DICK DARNELL' ],
+    ['Daniel Mahoney', 'DANIEL MAHONEY Daniel Mahoney DANIEL MAHONEY' ],
+    ['John Loud', 'JOHN LOUD John Loud JOHN LOUD' ],
+] );
