@@ -1,10 +1,4 @@
-let info = [
-    ['Fred Flintstone', 'Waterbuffalo member' ],
-    ['Barney Rubble', 'Geek' ],
-    ['Wilma Flintstone', 'long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering,  wife' ],
-    ['Betty Rubble', 'also a long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering wife' ],
-];
-
+let revealer_info: [string,string][] = [];
 
 let entry: number = 0;
 
@@ -12,6 +6,10 @@ let person_number = document.getElementById( "person_number" );
 let fact = document.getElementById( "fact" );
 let person = document.getElementById( "person" );
 let person_number_label = document.getElementById( "person_number_label" );
+
+function setRevealInfo( revealerInfo: [string,string][]) {
+    revealer_info = revealerInfo;
+}
 
 // Function to remove an element from the DOM
 function removeElement( elementToRemove: HTMLElement ): void {
@@ -51,7 +49,7 @@ function reveal() {
 };
 
 function updateFact( entry: number ) {
-    const newFact = info[ Math.trunc( entry / 2 ) ][ 1 ];
+    const newFact = revealer_info[ Math.trunc( entry / 2 ) ][ 1 ];
     if( person ) {
 	person.innerHTML = "";
     }
@@ -62,7 +60,7 @@ function updateFact( entry: number ) {
 }
 
 function updatePerson( entry: number ) {
-    const newPerson= info[ Math.trunc( entry / 2 ) ][ 0 ];
+    const newPerson= revealer_info[ Math.trunc( entry / 2 ) ][ 0 ];
     if( person_number_label ) {
 	person_number_label.innerHTML = "person #";
     }
@@ -97,7 +95,7 @@ document.addEventListener( 'keydown', (event) => {
 	    entry++;
 	}
 	direction = Directions.right;
-	if( entry < (2*info.length) ) {
+	if( entry < (2*revealer_info.length) ) {
 	    updateFact( entry );
 	    updatePerson( entry );
 	    entry++;
