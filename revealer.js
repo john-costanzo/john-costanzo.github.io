@@ -1,6 +1,17 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
-var revealer_info = [];
+var revealer_info = [
+    ['Error', 'setRevealInfo() was not called'],
+    ['Error!', 'You must call setRevealInfo() to display information here.'],
+    ['Error', 'setRevealInfo() was not called'],
+    ['Error!', 'You must call setRevealInfo() to display information here.'],
+    ['Error', 'setRevealInfo() was not called'],
+    ['Error!', 'You must call setRevealInfo() to display information here.'],
+    ['Error', 'setRevealInfo() was not called'],
+    ['Error!', 'You must call setRevealInfo() to display information here.'],
+    ['Error', 'setRevealInfo() was not called'],
+    ['Error!', 'You must call setRevealInfo() to display information here.'],
+];
 var entry = 0;
 var person_number = document.getElementById("person_number");
 var fact = document.getElementById("fact");

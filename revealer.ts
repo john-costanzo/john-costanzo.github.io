@@ -1,4 +1,15 @@
-let revealer_info: [string,string][] = [];
+let revealer_info: [string,string][] = [
+    [ 'Error', 'setRevealInfo() was not called' ],
+    [ 'Error!', 'You must call setRevealInfo() to display information here.' ],
+    [ 'Error', 'setRevealInfo() was not called' ],
+    [ 'Error!', 'You must call setRevealInfo() to display information here.' ],
+    [ 'Error', 'setRevealInfo() was not called' ],
+    [ 'Error!', 'You must call setRevealInfo() to display information here.' ],
+    [ 'Error', 'setRevealInfo() was not called' ],
+    [ 'Error!', 'You must call setRevealInfo() to display information here.' ],
+    [ 'Error', 'setRevealInfo() was not called' ],
+    [ 'Error!', 'You must call setRevealInfo() to display information here.' ],
+];
 
 let entry: number = 0;
 
