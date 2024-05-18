@@ -1,16 +1,14 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
-var info = [
-    ['Fred Flintstone', 'Waterbuffalo member'],
-    ['Barney Rubble', 'Geek'],
-    ['Wilma Flintstone', 'long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering,  wife'],
-    ['Betty Rubble', 'also a long-suffering, long-suffering, long-suffering, long-suffering, long-suffering, long-suffering wife'],
-];
+var revealer_info = [];
 var entry = 0;
 var person_number = document.getElementById("person_number");
 var fact = document.getElementById("fact");
 var person = document.getElementById("person");
 var person_number_label = document.getElementById("person_number_label");
+function setRevealInfo(revealerInfo) {
+    revealer_info = revealerInfo;
+}
 // Function to remove an element from the DOM
 function removeElement(elementToRemove) {
     if (elementToRemove && elementToRemove.parentNode) {
@@ -44,7 +42,7 @@ function reveal() {
 }
 ;
 function updateFact(entry) {
-    var newFact = info[Math.trunc(entry / 2)][1];
+    var newFact = revealer_info[Math.trunc(entry / 2)][1];
     if (person) {
         person.innerHTML = "";
     }
@@ -54,7 +52,7 @@ function updateFact(entry) {
     }
 }
 function updatePerson(entry) {
-    var newPerson = info[Math.trunc(entry / 2)][0];
+    var newPerson = revealer_info[Math.trunc(entry / 2)][0];
     if (person_number_label) {
         person_number_label.innerHTML = "person #";
     }
@@ -88,7 +86,7 @@ document.addEventListener('keydown', function (event) {
                 entry++;
             }
             direction = Directions.right;
-            if (entry < (2 * info.length)) {
+            if (entry < (2 * revealer_info.length)) {
                 updateFact(entry);
                 updatePerson(entry);
                 entry++;
