@@ -2,15 +2,15 @@
 // Object.defineProperty(exports, "__esModule", { value: true });
 var revealer_info = [
     ['Error', 'setRevealInfo() was not called'],
+    ['Example', 'setRevealInfo([ ["Answer One", "Clue One"], ["Answer Two", "Clue Two"], ["Answer Three", "Clue Three"] ]);'],
     ['Error!', 'You must call setRevealInfo() to display information here.'],
+    ['Sample', 'setRevealInfo([ [\'Answer 1\', \'Clue 1\'], [\'Answer 2\', \'Clue 2\'], [\'Answer 3\', \'Clue 3\'] ]);'],
     ['Error', 'setRevealInfo() was not called'],
-    ['Error!', 'You must call setRevealInfo() to display information here.'],
     ['Error', 'setRevealInfo() was not called'],
+    ['Example', 'setRevealInfo([ [\'Answer One\', \'Clue One\'], [\'Answer Two\', \'Clue Two\'], [\'Answer Three\', \'Clue Three\'] ]);'],
     ['Error!', 'You must call setRevealInfo() to display information here.'],
+    ['Sample', 'setRevealInfo([ [\'Answer 1\', \'Clue 1\'], [\'Answer 2\', \'Clue 2\'], [\'Answer 3\', \'Clue 3\'] ]);'],
     ['Error', 'setRevealInfo() was not called'],
-    ['Error!', 'You must call setRevealInfo() to display information here.'],
-    ['Error', 'setRevealInfo() was not called'],
-    ['Error!', 'You must call setRevealInfo() to display information here.'],
 ];
 var entry = 0;
 var person_number = document.getElementById("person_number");

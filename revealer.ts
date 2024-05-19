@@ -1,6 +1,6 @@
 let revealer_info: [string,string][] = [
     [ 'Error', 'setRevealInfo() was not called' ],
-    [ 'Example', 'setRevealInfo([ [\'Answer One\', \'Clue One\'], [\'Answer Two\', \'Clue Two\'], [\'Answer Three\', \'Clue Three\'] ]);' ],
+    [ 'Example', 'setRevealInfo([ ["Answer One", "Clue One"], ["Answer Two", "Clue Two"], ["Answer Three", "Clue Three"] ]);' ],
     [ 'Error!', 'You must call setRevealInfo() to display information here.' ],
     [ 'Sample', 'setRevealInfo([ [\'Answer 1\', \'Clue 1\'], [\'Answer 2\', \'Clue 2\'], [\'Answer 3\', \'Clue 3\'] ]);' ],
     [ 'Error', 'setRevealInfo() was not called' ],
