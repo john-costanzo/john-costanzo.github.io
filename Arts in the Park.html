@@ -17,50 +17,76 @@
       }
 
       th {
-      background-color: #ffffff;
-      text-align: center;
-      padding: 8px;
-      font-size: 160%;
+	  background-color: #ffffff;
+	  text-align: center;
+	  padding: 8px;
+	  font-size: 160%;
       }
 
       td {
-      text-align: left;
-      padding: 8px;
-      width: 10%;
-      font-size: 140%;
+	  text-align: left;
+	  padding: 8px;
+	  width: 10%;
+	  font-size: 140%;
       }
 
       tr:nth-child(even) {
-      background-color: #ffffe6;
+	  background-color: #ffffe6;
       }
       tr {
-      background-color: #e6f2ff;
+	  background-color: #e6f2ff;
       }
 
       .left-image {
-	  float: left;
+	  position: relative;
+	  bottom: 0;
+	  left: 0;
 	  max-width: 50%;
 	  height: auto;
+	  z-index: 1000;
       }
 
       .right-image {
-	  float: right;
+	  position: relative;
+	  bottom: 0;
+	  right: 0;
 	  max-width: 50%;
 	  height: auto;
+	  z-index: 1000;
       }
 
       body {
 	  background-color: #efeff5;
+	  /* Add padding to the body to prevent content from being hidden behind the fixed header */
+          padding-top: 135px; /* Adjust this value based on your header height */
       }
 
+      #pageHeader {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  background-color: #f1f1f1;
+	  padding: 10px;
+	  z-index: 1000;
+      }
+
+      h2 {
+         margin-top: -1.5rem; /* Pull h2 up closer to h1 */
+      }
     </style>
+
   </head>
 
   <body>
     <center>
       <title>Arts in the Park</title>
-      <h1><font size="200%">Arts in the Park</font></h1>
-      <h2><i>Saturday, September 14, 2-5 p.m.</i></h2>
+
+      <header id="pageHeader">
+	<h1><font size="200%">Arts in the Park</font></h1>
+	<h2><i>Saturday, September 14, 2-5 p.m.</i></h2>
+      </header>
+
       <table id="aitp-table">
 	<thead>
 	  <tr> <th>Artist</th>  <th>Work</th> </tr>
