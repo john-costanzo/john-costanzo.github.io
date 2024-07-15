@@ -4,6 +4,9 @@
       table {
 	  border-collapse: collapse;
 	  width: 100%;
+	  box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+	  border-radius: 10px;
+	  overflow: hidden;
       }
       table#aitp-table {
 	  width:70%;
@@ -14,29 +17,50 @@
       }
 
       th {
-	  background-color: #ffffff;
-	  text-align: center;
-	  padding: 8px;
-	  font-size: 120%;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 8px;
+      font-size: 160%;
       }
 
       td {
-	  text-align: left;
-	  padding: 8px;
-	  width: 10%;
+      text-align: left;
+      padding: 8px;
+      width: 10%;
+      font-size: 140%;
       }
 
       tr:nth-child(even) {
-	  background-color: #ffffe6;
+      background-color: #ffffe6;
       }
       tr {
-	  background-color: #e6f2ff;
+      background-color: #e6f2ff;
       }
+
+      .left-image {
+	  float: left;
+	  max-width: 50%;
+	  height: auto;
+      }
+
+      .right-image {
+	  float: right;
+	  max-width: 50%;
+	  height: auto;
+      }
+
+      body {
+	  background-color: #efeff5;
+      }
+
     </style>
   </head>
+
   <body>
-    <title>Arts in the Park</title>
     <center>
+      <title>Arts in the Park</title>
+      <h1><font size="200%">Arts in the Park</font></h1>
+      <h2><i>Saturday, September 14, 2-5 p.m.</i></h2>
       <table id="aitp-table">
 	<thead>
 	  <tr> <th>Artist</th>  <th>Work</th> </tr>
@@ -66,7 +90,7 @@
 	<tr> <td>Cheryl Scott</td>  <td style='width:30%'>mini paintings of Carriage Park views in oil or acrylic on easels</td></tr>
 
 	<!--
-        <tr> <td>Debbie Barnes</td>  <td style='width:30%'>watercolor, charcoal, pastel</td></tr>
+            <tr> <td>Debbie Barnes</td>  <td style='width:30%'>watercolor, charcoal, pastel</td></tr>
 	<tr> <td>Linda Gallus</td>  <td style='width:30%'>handmade blank greeting cards</td></tr>
 	<tr> <td>Don Myhan</td>  <td style='width:30%'>fused glass</td></tr>
 	<tr> <td>Harry Owen</td>  <td style='width:30%'>bird houses, butterfly houses and even a squirrel house</td></tr>
@@ -74,6 +98,9 @@
 	-->
 
       </table>
+      <img class="left-image" src="https://pngimg.com/uploads/palette/palette_PNG68313.png" width="5%">
+      <img class="right-image" src="https://www.pinclipart.com/picdir/big/48-484829_painting-easel-black-and-white-drawing-art-drawing.png" width="100px">
+
     </center>
   </body>
 </html>
