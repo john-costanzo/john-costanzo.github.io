@@ -1,6 +1,23 @@
 <html>
   <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
+      body {
+	  font-size: 16px;
+      }
+
+      .responsive-text {
+	  font-size: clamp(1.25rem, 3vw + 1rem, 2rem);
+      }
+
+      @media screen and (max-width: 600px) {
+	  .responsive-text {
+              font-size: 1.25rem;
+	  }
+      }
+
       table {
 	  border-collapse: collapse;
 	  width: 100%;
@@ -20,19 +37,20 @@
 	  background-color: #ffffff;
 	  text-align: center;
 	  padding: 8px;
-	  font-size: 160%;
+	  font-size: 125%;
       }
 
       td {
 	  text-align: left;
 	  padding: 8px;
 	  width: 10%;
-	  font-size: 140%;
+	  /* font-size: 140%; */
       }
 
       tr:nth-child(even) {
 	  background-color: #ffffe6;
       }
+
       tr {
 	  background-color: #e6f2ff;
       }
@@ -58,7 +76,7 @@
       body {
 	  background-color: #efeff5;
 	  /* Add padding to the body to prevent content from being hidden behind the fixed header */
-          padding-top: 105px; /* Adjust this value based on your header height */
+          padding-top: 105px;
       }
 
       #pageHeader {
@@ -72,10 +90,11 @@
       }
 
       h1 {
-         margin-top: -0.5rem; /* Pull h1 up a bit */
+          margin-top: -0.5rem; /* Pull h1 up a bit */
       }
+
       h2 {
-         margin-top: -1.5rem; /* Pull h2 up closer to h1 */
+          margin-top: -1.5rem; /* Pull h2 up closer to h1 */
       }
     </style>
   </head>
@@ -126,6 +145,7 @@
 	-->
 
       </table>
+
       <img class="left-image" src="https://pngimg.com/uploads/palette/palette_PNG68313.png" width="5%">
       <img class="right-image" src="https://www.pinclipart.com/picdir/big/48-484829_painting-easel-black-and-white-drawing-art-drawing.png" width="100px">
 
