@@ -90,6 +90,8 @@ h3,h4,h5,h6,h7,h8 {
 
 .search-box-control {
     text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
     width: 95%;
 }
 
