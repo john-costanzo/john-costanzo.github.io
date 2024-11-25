@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2024-03-25 @ 19:52:25";</script>
+    <script>const recipeBrowserVersion = "Sunday, 2024-11-24 @ 22:55:45";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -40,6 +40,10 @@
       let numArgs = ( args[ 0 ] === '' ) ? undefined : args.length;
       let nextArg=0;
 
+      function formURL( originPath, searchString, arg ) {
+	  return( originPath + searchString + ( searchString === "" ? "?" : "&" ) + arg );
+      }
+
       function nextArgNVP() {
 	  // Return an array [ name, value ] containing the "next" argument.
 	  // If all arguments have been processed, return undefined.
@@ -49,18 +53,6 @@
 	  const nvp = args[ nextArg ].split(":");
 	  nextArg++;
 	  return( nvp );
-      }
-      var firstNvp = nextArgNVP();
-
-      if( numArgs && numArgs > 1 ) {
-	  // Spawn a separate window for each argument beyond the first one.
-	  let nvp = nextArgNVP();
-	  const originPathname = window.location.origin + window.location.pathname;
-	  while( nvp ) {
-	      const url = originPathname + "?" + nvp[ 0 ] + ":" + nvp[ 1 ];
-	      window.open( url, "_blank" );
-	      nvp = nextArgNVP();
-	  }
       }
     </script>
 
@@ -115,11 +107,14 @@
 			  let dots = "";
 
 			  if( display === 'none' ) {
+			      // TODO: remove italic; make color black
+
 			      wipe = coreFx.wipeIn({
 				  node: content,
 				  duration: 750
 			      });
 			  } else {
+			      // TODO: make italic; make color grey
 			      dots = "...";
 			      wipe = coreFx.wipeOut({
 				  node: content,
@@ -142,7 +137,7 @@
 
 	  let match;
 	  let result = [];
-	  
+
 	  while( match  = regex.exec( s ) ) {
 	      const id = match[ 1 ];
 	      const timing = match[ 2 ];
@@ -271,6 +266,9 @@
 		      });
 	      currentRecipeId = id;
 	      document.title = title;
+	  } else {
+              toggleDrawer( 'recipeDrawer', true );
+	      noSuchId( id );
 	  }
 	  printMenuItem.setDisabled(  false );
 	  emailLinkMenuItem.setDisabled( false );
@@ -343,7 +341,6 @@
 	  require(["dijit/Dialog","dijit/form/Button"],
 		  function(Dialog, Button) {
 
-
 		      // Create a Dialog widget
 		      const noSuchIdPopup = new Dialog({
 			  content: "ERROR: No such id: [" + id + "]<p>"
@@ -403,8 +400,11 @@
 			      const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
 			      // Add an event listener to each list item
 			      on( listItem, "click", function() {
-				  fillInRecipe( recipeId );
-				  toggleDrawer( 'recipeDrawer' );
+				  const originPathname = window.location.origin + window.location.pathname;
+
+				  // TODO: if a setfontsize appears in the searchString, propagate instead of "" below
+				  const url = formURL( originPathname, "", "view:" + recipeId );
+				  window.open( url, "_self" );
 			      });
 			      domConstruct.place( listItem, listSubContainer, "first" );
 			  });
@@ -416,21 +416,21 @@
 
     <script>
 
-    function focusOn( element ) {
-	require(["dojo/dom", "dojo/ready"],
-          function( dom, ready ) {
-		ready( 10000, function () { // Priority 10,000: force execution very late in the game!
-		    const el = dom.byId( element );
-		    if( el ) {
-			el.focus();
-		    } else {
-			console.error( "Cannot focus on '" + element + "'!!!");
-		    }
-		});
-          });
-    }
+      function focusOn( element ) {
+	  require(["dojo/dom", "dojo/ready"],
+		  function( dom, ready ) {
+		      ready( 10000, function () { // Priority 10,000: force execution very late in the game!
+			  const el = dom.byId( element );
+			  if( el ) {
+			      el.focus();
+			  } else {
+			      console.error( "Cannot focus on '" + element + "'!!!");
+			  }
+		      });
+		  });
+      }
 
-    function toggleDrawer( drawer, forceOpen = false ) {
+      function toggleDrawer( drawer, forceOpen = false ) {
 	  require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
 		  function(dom, domStyle) {
 		      const panel = dom.byId( drawer );
@@ -448,35 +448,35 @@
 
       function selectGearMenu( menu ) {
 	  if( menu ) {
-	  require(["dijit/registry", "dojo/domReady!"],
-		  function( registry ) {
-		      const gearsButtonName = "gearsButton";
-		      const gearsButton = registry.byId( gearsButtonName );
-		      if( gearsButton ) {
-			  gearsButton.openDropDown();
-			  menu.focusFirstChild();
-		      } else {
-			  console.error( "selectGearMenu: can't locate element with id = '" + gearsButtonName + "'!" );
-		      }
-		  });
+	      require(["dijit/registry", "dojo/domReady!"],
+		      function( registry ) {
+			  const gearsButtonName = "gearsButton";
+			  const gearsButton = registry.byId( gearsButtonName );
+			  if( gearsButton ) {
+			      gearsButton.openDropDown();
+			      menu.focusFirstChild();
+			  } else {
+			      console.error( "selectGearMenu: can't locate element with id = '" + gearsButtonName + "'!" );
+			  }
+		      });
           } else {
 	      console.error( "selectGearMenu: expected menu argument" );
           }
       }
 
       require(["dojo/on","dojo/dom"], function( on,dom ) {
-	on( document, "keydown", function(event) {
-	    if( event.altKey && event.key === "s" ) {
-		toggleDrawer( 'recipeDrawer', true );
-	    }
-	    if( event.altKey && event.key === "g" ) {
-		selectGearMenu( gearsDropDownMenu );
-                event.preventDefault(); // Prevent the browser default behavior
-	    }
-	});
-    });
+	  on( document, "keydown", function(event) {
+	      if( event.altKey && event.key === "s" ) {
+		  toggleDrawer( 'recipeDrawer', true );
+	      }
+	      if( event.altKey && event.key === "g" ) {
+		  selectGearMenu( gearsDropDownMenu );
+                  event.preventDefault(); // Prevent the browser default behavior
+	      }
+	  });
+      });
 
-     addRecipes( recipeNameMap, "recipe_titles" );
+      addRecipes( recipeNameMap, "recipe_titles" );
 
     </script>
   </head>
@@ -535,13 +535,34 @@
       setInterval(function() {
 	  updateClock(clockElement);
       }, 1000);
-    </script>
+      </script>
 
     <div id="gearsMenu" class="gears-control"></div>
 
     <script src="js/search-recipes.js"></script>
     <script src="js/circular-timer-using-dojo.js"></script>
     <script>
+      let largeFontSize = '36';
+      let mediumFontSize = '18';
+      let smallFontSize = '12';
+
+      function fontSizeDescriptionToValue( fontSizeDescription ) {
+	  switch( fontSizeDescription ) {
+	  case "small":
+	      return( smallFontSize );
+	      break;
+	  case "medium":
+	      return( mediumFontSize );
+	      break;
+	  case "large":
+	      return( largeFontSize );
+	      break;
+	  default:
+	      console.error( "Error: Unknown font size [%s]; href=[%s] (expected one of { 'small', 'medium', 'large' })",
+			     fontSizeDescription, window.location.href );
+	  }
+      }
+
       const recipeStats =
 	    recipeNameArray.map( function(cat) { return [ cat[0], cat[1].length ] } )
 	    .sort()
@@ -577,7 +598,7 @@
                 <li>You can start, pause and continue the timer.</li>
                 <li>You can also change the amount of time the timer runs (...even while the timer is running!)</li>
                 <li>Use the timer's menu to stop and reset the timer to its original time or duplicate this timer.</li>
-            </ul>
+		</ul>
           </li>
 	  <li>Click on an ingredient or a step in a method. This will <span class=\"itemClicked\">de-emphasize</span>
 	    the ingredient or step to allow you to mark what you've finished.</li>
@@ -590,27 +611,25 @@
 	    large (<img src=\"images/letter-A.jpg\" class=\"large-A\">),
 	    medium (<img src=\"images/letter-A.jpg\" class=\"medium-A\">) or
             small (<img src=\"images/letter-A.jpg\" class=\"small-A\">)  font.
-	  </li>
-	  <li class=\"verticallyAligned\"><img class=\"printerIcon\">&nbsp;Print: format the recipe for printing.</li>
-	  <li class=\"verticallyAligned\"><img class=\"emailLinkIcon\">&nbsp;Email Link: Share a link to a recipe via email.</li>
-	  <li class=\"verticallyAligned\"><i class=\"fa-regular fa-comment\"></i>&nbsp;Comment on Recipe: Submit comments via email.</li>
-	  <li class=\"verticallyAligned\"><i class=\"fa-solid fa-circle-info\"></i>&nbsp;About: Describes the versions of the software and data for the Recipe Browser.
-	  </li>
-	</ul>
-      </li>
-    </ul>
-    `;
-
-
+	    </li>
+<li class=\"verticallyAligned\"><img class=\"printerIcon\">&nbsp;Print: format the recipe for printing.</li>
+<li class=\"verticallyAligned\"><img class=\"emailLinkIcon\">&nbsp;Email Link: Share a link to a recipe via email.</li>
+<li class=\"verticallyAligned\"><i class=\"fa-regular fa-comment\"></i>&nbsp;Comment on Recipe: Submit comments via email.</li>
+<li class=\"verticallyAligned\"><i class=\"fa-solid fa-circle-info\"></i>&nbsp;About: Describes the versions of the software and data for the Recipe Browser.
+</li>
+</ul>
+</li>
+</ul>
+`;
 
       var gearsDropDownMenu;
 
       require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button","dojo/dom","dojo/on","dijit/PopupMenuItem","dijit/ColorPalette","dojo/domReady!"],
 	      function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, dom, on, PopupMenuItem, ColorPalette, domReady) {
 
-      gearsDropDownMenu = new DropDownMenu({
-			  style: "display: none;"
-      });
+		  gearsDropDownMenu = new DropDownMenu({
+		      style: "display: none;"
+		  });
 
 		  var button = new DropDownButton({
 		      label: "",
@@ -625,16 +644,22 @@
 		      label: "Large font",
 		      iconClass: "large-A",
 		      onClick: function() {
-			  changeFontSize('body', '36');
+			  const originPathname = window.location.origin + window.location.pathname;
+
+			  const url = formURL( originPathname, window.location.search, "setfontsize:" + "large" );
+			  window.open( url, "_self" );
 		      }
 		  });
-		  <!-- largeFontItem.set("accelKey", "Ctrl+Alt+L" ); -->
+		      <!-- largeFontItem.set("accelKey", "Ctrl+Alt+L" ); -->
 
 		  var mediumFontItem = new MenuItem({
 		      label: "Medium font",
 		      iconClass: "medium-A",
 		      onClick: function() {
-			  changeFontSize('body', '18');
+			  const originPathname = window.location.origin + window.location.pathname;
+
+			  const url = formURL( originPathname, window.location.search, "setfontsize:" + "medium" );
+			  window.open( url, "_self" );
 		      }
 		  });
 
@@ -642,7 +667,10 @@
 		      label: "Small font",
 		      iconClass: "small-A",
 		      onClick: function() {
-			  changeFontSize('body', '12');
+			  const originPathname = window.location.origin + window.location.pathname;
+
+			  const url = formURL( originPathname, window.location.search, "setfontsize:" + "small" );
+			  window.open( url, "_self" );
 		      }
 		  });
 
@@ -750,20 +778,56 @@
 		  // Attach button to DOM
 		  button.placeAt( "gearsMenu" );
 
-		  if( numArgs > 0 ) {
-		      const action = firstNvp[ 0 ].toLowerCase();
-		      const recipeId = firstNvp[ 1 ];
+		  const recipesToBeViewed = [];
+		  const recipesToBePrinted = [];
+		  let targetFontSize = "medium";
+		  let nextNvp;
 
-		      if( action === "view" ) {
-			  fillInRecipe( recipeId );
-		      } else if( action === "print" ) {
-			  printRecipe( recipeId );
-		      } else {
-			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'print' }", action, window.location.href );
+		  while( nextNvp = nextArgNVP() ) {
+		      const action = nextNvp[ 0 ].toLowerCase();
+
+		      switch( action ) {
+		      case "view":
+			  recipesToBeViewed.push( nextNvp[ 1 ] );
+			  break;
+		      case "setfontsize":
+			  targetFontSize = nextNvp[ 1 ];
+			  break;
+		      case "print":
+			  recipesToBePrinted.push( nextNvp[ 1 ] );
+			  break;
+		      default:
+			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'setfontsize', 'print' }", action, window.location.href );
+		      }
+		  }
+
+		  changeFontSize( 'body', fontSizeDescriptionToValue( targetFontSize ) );
+		  if( recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0 ) {
+		      toggleDrawer( 'recipeDrawer', true );
+		  } else if( recipesToBeViewed.length + recipesToBePrinted.length == 1 ) {
+		      if( recipesToBeViewed.length == 1 ) {
+			  fillInRecipe( recipesToBeViewed[ 0 ] );
+		      } else if( recipesToBePrinted.length == 1 ) {
+			  printRecipe( recipesToBePrinted[ 0] );
 		      }
 		  } else {
-		      toggleDrawer( 'recipeDrawer', true );
-                  }
+		      const originPathname = window.location.origin + window.location.pathname;
+
+		      let where = "_self";
+
+		      recipesToBeViewed.forEach((id) => {
+			  // Spawn a separate window for each recipe to be viewed
+			  const url = originPathname + "?view:" + id + "&setfontsize:" + targetFontSize;
+			  window.open( url, where );
+			  where = "_blank";
+		      });
+		      recipesToBePrinted.forEach((id) => {
+			  // Spawn a separate window for each recipe to be printed
+			  const url = originPathname + "?print:" + id + "&setfontsize:" + targetFontSize;
+			  window.open( url, where );
+			  where = "_blank";
+		      });
+		  }
 	      });
     </script>
   </body>
