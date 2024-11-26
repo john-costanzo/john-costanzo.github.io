@@ -55,6 +55,7 @@
     width: 100%;
     font-family: Arial, sans-serif;
     text-align: left;
+    font-size: 14px !important;
 }
 
 .pretty-table th,
@@ -106,4 +107,3 @@
     bottom: -20px;
     color: #3498db; /* Quote color */
 }
-
