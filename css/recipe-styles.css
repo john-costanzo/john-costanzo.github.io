@@ -230,3 +230,10 @@ h3,h4,h5,h6,h7,h8 {
     align-items: center; /* Vertically center align items */
     height: 24px;
 }
+
+.dijitMenuItem {
+    font-size: 18px !important;
+}
+.recipe-statistic {
+    font-size: 18px !important;
+}
