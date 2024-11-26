@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2024-11-24 @ 22:55:45";</script>
+    <script>const recipeBrowserVersion = "Monday, 2024-11-25 @ 19:27:21";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -40,8 +40,14 @@
       let numArgs = ( args[ 0 ] === '' ) ? undefined : args.length;
       let nextArg=0;
 
+      function removeFontSize( string ) {
+	  const stringWithoutFontsize = string.split("&").filter( element => !element.startsWith("fontsize") ).join("&");
+	  return stringWithoutFontsize === "" ? "" : stringWithoutFontsize;
+	}
+
       function formURL( originPath, searchString, arg ) {
-	  return( originPath + searchString + ( searchString === "" ? "?" : "&" ) + arg );
+	  const modifiedSearchString = removeFontSize( searchString );
+	  return( originPath + modifiedSearchString + ( modifiedSearchString === "" ? "?" : "&" ) + arg );
       }
 
       function nextArgNVP() {
@@ -50,7 +56,7 @@
 	  if( !numArgs ) return( undefined );
 	  if( nextArg >= args.length ) return( undefined );
 
-	  const nvp = args[ nextArg ].split(":");
+	  const nvp = args[ nextArg ].split( "=" );
 	  nextArg++;
 	  return( nvp );
       }
@@ -60,30 +66,6 @@
       const TITLE = 0;
       const INGREDIENTS = 1;
       const METHODS = 2;
-
-      function changeFontSize(selector, newSize) {
-	  let styleElement = document.getElementById('dynamic-styles');
-
-	  if (!styleElement) {
-	      const style = document.createElement('style');
-	      style.id = 'dynamic-styles';
-	      styleElement = document.head.appendChild(style);
-	  }
-
-	  const styleSheet = styleElement.sheet;
-
-	  const ruleIndex = Array.from(styleSheet.cssRules).findIndex(rule => rule.selectorText === selector);
-
-	  if (ruleIndex !== -1) {
-	      styleSheet.deleteRule(ruleIndex);
-	  }
-
-	  const newRule = `${selector} {
-                                        font-size: ${newSize}px;
-                           }`;
-
-	  styleSheet.insertRule(newRule, styleSheet.cssRules.length);
-      }
 
       function changeColor( color ) {
 	  const topHeaderContainer = document.getElementById( "dijit_layout_ContentPane_0" );
@@ -363,7 +345,7 @@
       function emailLinkToRecipe() {
 	  // Send a link to the email client
 	  if( !currentRecipeId ) return;
-	  const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
+	  const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
 	  const title = topHeader.innerHTML;
 
 	  window.open( "mailto:?subject=" + title + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
@@ -371,7 +353,7 @@
 
       function commentOnRecipe() {
 	  if( !currentRecipeId ) return;
-	  const url = window.location.origin + window.location.pathname + "?view:" + currentRecipeId;
+	  const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
 	  const title = topHeader.innerHTML;
 
 	  window.open( "mailto:?subject=Comments on the \"" + title + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
@@ -401,9 +383,7 @@
 			      // Add an event listener to each list item
 			      on( listItem, "click", function() {
 				  const originPathname = window.location.origin + window.location.pathname;
-
-				  // TODO: if a setfontsize appears in the searchString, propagate instead of "" below
-				  const url = formURL( originPathname, "", "view:" + recipeId );
+				  const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
 				  window.open( url, "_self" );
 			      });
 			      domConstruct.place( listItem, listSubContainer, "first" );
@@ -546,6 +526,35 @@
       let mediumFontSize = '18';
       let smallFontSize = '12';
 
+      var currentFontSize = mediumFontSize;
+
+      function changeFontSize(selector, newFontSize) {
+	  if( currentFontSize != newFontSize ) {
+	      let styleElement = document.getElementById('dynamic-styles');
+
+	      if (!styleElement) {
+		  const style = document.createElement('style');
+		  style.id = 'dynamic-styles';
+		  styleElement = document.head.appendChild(style);
+	      }
+
+	      const styleSheet = styleElement.sheet;
+
+	      const ruleIndex = Array.from(styleSheet.cssRules).findIndex(rule => rule.selectorText === selector);
+
+	      if (ruleIndex !== -1) {
+		  styleSheet.deleteRule(ruleIndex);
+	      }
+
+	      const newRule = `${selector} {
+                                        font-size: ${newFontSize}px;
+                           }`;
+
+	      styleSheet.insertRule(newRule, styleSheet.cssRules.length);
+	      currentFontSize = newFontSize;
+	  }
+      }
+
       function fontSizeDescriptionToValue( fontSizeDescription ) {
 	  switch( fontSizeDescription ) {
 	  case "small":
@@ -563,10 +572,27 @@
 	  }
       }
 
+      function fontSizeValueToDescription( fontSizeValue ) {
+	  switch( fontSizeValue ) {
+	  case smallFontSize:
+	      return( "small" );
+	      break;
+	  case mediumFontSize:
+	      return( "medium" );
+	      break;
+	  case largeFontSize:
+	      return( "large" );
+	      break;
+	  default:
+	      console.error( "Error: Unknown font size [%d]; href=[%s] (expected one of { %d, %d or %d })",
+			     fontSizeValue, window.location.href, smallFontSize, mediumFontSize, largeFontSize );
+	  }
+      }
+
       const recipeStats =
 	    recipeNameArray.map( function(cat) { return [ cat[0], cat[1].length ] } )
 	    .sort()
-	    .map( function(entry) { return( "<li>" + entry[0] + ": " + entry[1] + "</li>" ) } ).join("");
+	    .map( function(entry) { return( "<li class='recipe-statistic'>" + entry[0] + ": " + entry[1] + "</li>" ) } ).join("");
       const aboutText = `<center><h1>Recipe Browser Component Versions</h1></center>
     <table class="pretty-table">
       <tr><td>Dojo software</td> <td>${dojo.version}</td></tr>
@@ -646,7 +672,7 @@
 		      onClick: function() {
 			  const originPathname = window.location.origin + window.location.pathname;
 
-			  const url = formURL( originPathname, window.location.search, "setfontsize:" + "large" );
+			  const url = formURL( originPathname, window.location.search, "fontsize=" + "large" );
 			  window.open( url, "_self" );
 		      }
 		  });
@@ -658,7 +684,7 @@
 		      onClick: function() {
 			  const originPathname = window.location.origin + window.location.pathname;
 
-			  const url = formURL( originPathname, window.location.search, "setfontsize:" + "medium" );
+			  const url = formURL( originPathname, window.location.search, "fontsize=" + "medium" );
 			  window.open( url, "_self" );
 		      }
 		  });
@@ -669,7 +695,7 @@
 		      onClick: function() {
 			  const originPathname = window.location.origin + window.location.pathname;
 
-			  const url = formURL( originPathname, window.location.search, "setfontsize:" + "small" );
+			  const url = formURL( originPathname, window.location.search, "fontsize=" + "small" );
 			  window.open( url, "_self" );
 		      }
 		  });
@@ -790,18 +816,19 @@
 		      case "view":
 			  recipesToBeViewed.push( nextNvp[ 1 ] );
 			  break;
-		      case "setfontsize":
+		      case "fontsize":
 			  targetFontSize = nextNvp[ 1 ];
 			  break;
 		      case "print":
 			  recipesToBePrinted.push( nextNvp[ 1 ] );
 			  break;
 		      default:
-			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'setfontsize', 'print' }", action, window.location.href );
+			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'print' }", action, window.location.href );
 		      }
 		  }
 
 		  changeFontSize( 'body', fontSizeDescriptionToValue( targetFontSize ) );
+
 		  if( recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0 ) {
 		      toggleDrawer( 'recipeDrawer', true );
 		  } else if( recipesToBeViewed.length + recipesToBePrinted.length == 1 ) {
@@ -817,13 +844,13 @@
 
 		      recipesToBeViewed.forEach((id) => {
 			  // Spawn a separate window for each recipe to be viewed
-			  const url = originPathname + "?view:" + id + "&setfontsize:" + targetFontSize;
+			  const url = originPathname + "?view=" + id + "&fontsize=" + targetFontSize;
 			  window.open( url, where );
 			  where = "_blank";
 		      });
 		      recipesToBePrinted.forEach((id) => {
 			  // Spawn a separate window for each recipe to be printed
-			  const url = originPathname + "?print:" + id + "&setfontsize:" + targetFontSize;
+			  const url = originPathname + "?print=" + id + "&fontsize=" + targetFontSize;
 			  window.open( url, where );
 			  where = "_blank";
 		      });
