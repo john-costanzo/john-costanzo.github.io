@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Monday, 2024-11-25 @ 19:27:21";</script>
+    <script>const recipeBrowserVersion = "Friday, 2024-12-20 @ 12:54:00";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -521,6 +521,7 @@
 
     <script src="js/search-recipes.js"></script>
     <script src="js/circular-timer-using-dojo.js"></script>
+    <script src="js/recipe-scaling.js"></script>
     <script>
       let largeFontSize = '36';
       let mediumFontSize = '18';
@@ -599,6 +600,7 @@
       <tr><td>Recipe Browser software</td> <td>${recipeBrowserVersion}</td></tr>
       <tr><td>Search Recipes software</td> <td>${searchRecipesVersion}</td></tr>
       <tr><td>Circular Timer software</td> <td>${circularTimerVersion}</td></tr>
+      <tr><td>Recipe scaling</td> <td>${recipeScalingVersion}</td></tr>
       <tr><td>Recipe Browser data</td> <td>${recipeDataVersion}</td></tr>
     </table>
     <h2>Recipe Statistics</h2>
@@ -640,6 +642,7 @@
 	    </li>
 <li class=\"verticallyAligned\"><img class=\"printerIcon\">&nbsp;Print: format the recipe for printing.</li>
 <li class=\"verticallyAligned\"><img class=\"emailLinkIcon\">&nbsp;Email Link: Share a link to a recipe via email.</li>
+<li class=\"verticallyAligned\"><img class=\"scaleRecipeIcon\">&nbsp;Scale the recipe.</li>
 <li class=\"verticallyAligned\"><i class=\"fa-regular fa-comment\"></i>&nbsp;Comment on Recipe: Submit comments via email.</li>
 <li class=\"verticallyAligned\"><i class=\"fa-solid fa-circle-info\"></i>&nbsp;About: Describes the versions of the software and data for the Recipe Browser.
 </li>
@@ -710,6 +713,14 @@
 		      label: "Select Color",
 		      iconClass: "color-picker-icon",
 		      popup: colorPalette
+		  });
+
+		  scaleRecipeMenuItem = new MenuItem({
+		      label: "Scale recipe",
+		      iconClass: "scaleRecipeIcon",
+		      onClick: function() {
+			  getPercentageAndUpdate( );
+		      },
 		  });
 
 		  printMenuItem = new MenuItem({
@@ -793,6 +804,7 @@
 		  button.dropDown.addChild( mediumFontItem );
 		  button.dropDown.addChild( smallFontItem );
 		  button.dropDown.addChild( changeColorItem );
+		  button.dropDown.addChild( scaleRecipeMenuItem );
 		  button.dropDown.addChild( new MenuSeparator() );
 		  button.dropDown.addChild( printMenuItem );
 		  button.dropDown.addChild( emailLinkMenuItem );
