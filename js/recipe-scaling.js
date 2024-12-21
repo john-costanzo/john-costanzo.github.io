@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Friday, 2024-12-20 @ 16:17:26";
+const recipeScalingVersion = "Saturday, 2024-12-21 @ 11:20:30";
 
 /*
  *    In response to this prompt:
@@ -22,20 +22,27 @@ function getPercentageAndUpdate(  ) {
     // Prompt the user for a percentage
     let percentage = prompt( "Please enter a percentage:" );
 
-    // Convert the input to a number
-    percentage = parseFloat( percentage );
+    if( percentage !== null ) {
+	if( ! /^[\d.]+$/.test( percentage ) ) {
+            alert( "Invalid input! Please enter (only) a number." );
+            return;
+	}
 
-    // Validate the input
-    if ( isNaN( percentage ) || percentage < 0 ) {
-        alert( "Invalid input! Please enter a number greater than 0." );
-        return;
+	// Convert the input to a number
+	percentage = parseFloat( percentage );
+
+	// Validate the input
+	if ( isNaN( percentage ) || percentage < 0 ) {
+            alert( "Invalid input! Please enter a number greater than 0." );
+            return;
+	}
+
+	// Convert percentage to scaling factor
+	const scaling_factor = percentage / 100.0;
+
+	// Call the updateAmounts function with the scaling factor
+	updateAmounts( scaling_factor );
     }
-
-    // Convert percentage to scaling factor
-    const scaling_factor = percentage / 100.0;
-
-    // Call the updateAmounts function with the scaling factor
-    updateAmounts( scaling_factor );
 }
 
 
@@ -55,12 +62,15 @@ function updateAmounts( scaling_factor ) {
         // Set the element's value to the new amount concatenated with units
         element.textContent = numberToFraction( newAmount ) + " " + units;
 
+	const sf = document.getElementById("scaling_factor");
         // Handle the title attribute based on scaling_factor
         if ( scaling_factor === 1 ) {
             element.removeAttribute( "title" );
+	    sf.innerHTML = "";
         } else {
             const originalAmount = element.getAttribute( "original_amount" );
-            element.setAttribute( "title", "orginally: " + originalAmount );
+            element.setAttribute( "title", "originally: " + originalAmount );
+	    sf.innerHTML = "scaled to " +( scaling_factor * 100) + "%";
         }
     }
 }
@@ -72,7 +82,7 @@ function numberToFraction( number ) {
     }
 
     // Handle decimal numbers
-    const precision = 1e-9; // Adjust this for desired precision
+    const precision = 1e-7; // Adjust this for desired precision
     let numerator = 1;
     let denominator = 1;
 
@@ -94,7 +104,6 @@ function numberToFraction( number ) {
 	wholePart = Math.floor( numerator / denominator );
 	numerator = numerator - ( wholePart * denominator );
     }
-
     return ( wholePart === 0 ? "" : wholePart + " " ) + numerator + "/" + denominator;
 }
 
