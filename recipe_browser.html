@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Saturday, 2024-12-21 @ 20:26:06";</script>
+    <script>const recipeBrowserVersion = "Sunday, 2024-12-22 @ 15:40:55";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -303,8 +303,9 @@
 
 			  const recipeIngredients = dom.byId( "recipe_ingredients" );
 			  const recipeMethod = dom.byId( "recipe_method" );
+			  const scalingMessage = ( currentScalingPercentage == 100 ? "" : " (scaled to " + currentScalingPercentage + "%)");
 			  const recipeText = "<center><h1>" + topHeader.innerHTML + "</h1></center><p>\n" +
-				"<h2>Ingredients</h2>" + recipeIngredients.innerHTML + "<p>\n" +
+				"<h2>Ingredients" + scalingMessage + "</h2>" + recipeIngredients.innerHTML + "<p>\n" +
 				"<h2>Method</h2>" + recipeMethod.innerHTML + "<p>\n";
 			  printWindow.document.body.innerHTML = recipeText;
 
