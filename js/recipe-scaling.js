@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Saturday, 2024-12-21 @ 11:20:30";
+const recipeScalingVersion = "Saturday, 2024-12-21 @ 18:20:40";
 
 /*
  *    In response to this prompt:
@@ -18,31 +18,38 @@ const recipeScalingVersion = "Saturday, 2024-12-21 @ 11:20:30";
  * See https://www.perplexity.ai/search/write-a-javascript-function-th-UKrqUr78RYSdet.LM11xvQ
  */
 
-function getPercentageAndUpdate(  ) {
-    // Prompt the user for a percentage
-    let percentage = prompt( "Please enter a percentage:" );
+function scaleRecipe(newScalingPercentage) {
+    console.debug( "scaleRecipe: newScalingPercentage=" + newScalingPercentage + "; currentScalingPercentage=" + currentScalingPercentage );
+    if( newScalingPercentage === undefined ) {
+	// Prompt the user for a scalingPercentage
+	const scalingPercentageText = prompt( "Please enter a percentage:" );
 
-    if( percentage !== null ) {
-	if( ! /^[\d.]+$/.test( percentage ) ) {
-            alert( "Invalid input! Please enter (only) a number." );
-            return;
+	if( scalingPercentageText !== null ) {
+	    if( ! /^[\d.]+$/.test( scalingPercentageText ) ) {
+		alert( "Invalid input! Please enter (only) a number." );
+		return;
+	    }
+
+	    // Convert the input to a number
+	    const targetScalingPercentage = parseFloat( scalingPercentageText );
+
+	    // Validate the input
+	    if ( isNaN( targetScalingPercentage ) || targetScalingPercentage < 0 ) {
+		alert( "Invalid input! Please enter a number greater than 0." );
+		return;
+	    }
+	    currentScalingPercentage = targetScalingPercentage;
 	}
-
-	// Convert the input to a number
-	percentage = parseFloat( percentage );
-
-	// Validate the input
-	if ( isNaN( percentage ) || percentage < 0 ) {
-            alert( "Invalid input! Please enter a number greater than 0." );
-            return;
-	}
-
-	// Convert percentage to scaling factor
-	const scaling_factor = percentage / 100.0;
-
-	// Call the updateAmounts function with the scaling factor
-	updateAmounts( scaling_factor );
     }
+    else {
+	currentScalingPercentage = newScalingPercentage;
+    }
+
+    // Convert scalingPercentage to scaling factor
+    const scaling_factor = currentScalingPercentage / 100.0;
+
+    // Call the updateAmounts function with the scaling factor
+    updateAmounts( scaling_factor );
 }
 
 
