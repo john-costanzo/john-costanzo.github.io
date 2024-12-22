@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Saturday, 2024-12-21 @ 18:20:40";
+const recipeScalingVersion = "Sunday, 2024-12-22 @ 12:29:40";
 
 /*
  *    In response to this prompt:
@@ -82,6 +82,28 @@ function updateAmounts( scaling_factor ) {
     }
 }
 
+
+const fractionalTextToGlyphMap = {
+    "1/2": "½",
+    "1/3": "⅓",
+    "2/3": "⅔",
+    "1/4": "¼",
+    "3/4": "¾",
+    "1/5": "⅕",
+    "2/5": "⅖",
+    "3/5": "⅗",
+    "4/5": "⅘",
+    "1/6": "⅙",
+    "5/6": "⅚",
+    "1/7": "⅐",
+    "1/8": "⅛",
+    "3/8": "⅜",
+    "5/8": "⅝",
+    "7/8": "⅞",
+    "1/9": "⅑",
+    "1/10": "⅒",
+};
+
 function numberToFraction( number ) {
     // Handle whole numbers
     if ( Number.isInteger( number ) ) {
@@ -111,7 +133,13 @@ function numberToFraction( number ) {
 	wholePart = Math.floor( numerator / denominator );
 	numerator = numerator - ( wholePart * denominator );
     }
-    return ( wholePart === 0 ? "" : wholePart + " " ) + numerator + "/" + denominator;
+
+    let fraction = numerator + "/" + denominator;
+    if( fraction in fractionalTextToGlyphMap ) {
+	fraction = fractionalTextToGlyphMap[ fraction ];
+    }
+
+    return ( wholePart === 0 ? "" : wholePart + " " ) + fraction;
 }
 
 // Helper function to find the Greatest Common Divisor
