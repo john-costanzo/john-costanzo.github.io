@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2024-12-22 @ 15:40:55";</script>
+    <script>const recipeBrowserVersion = "Sunday, 2024-12-22 @ 15:48:50";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -905,13 +905,13 @@
 
 		      recipesToBeViewed.forEach((id) => {
 			  // Spawn a separate window for each recipe to be viewed
-			  const url = originPathname + "?view=" + id + "&fontsize=" + targetFontSize;
+			  const url = originPathname + "?view=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
 			  window.open( url, where );
 			  where = "_blank";
 		      });
 		      recipesToBePrinted.forEach((id) => {
 			  // Spawn a separate window for each recipe to be printed
-			  const url = originPathname + "?print=" + id + "&fontsize=" + targetFontSize;
+			  const url = originPathname + "?print=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
 			  window.open( url, where );
 			  where = "_blank";
 		      });
