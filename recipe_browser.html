@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Saturday, 2024-12-21 @ 11:53:42";</script>
+    <script>const recipeBrowserVersion = "Saturday, 2024-12-21 @ 20:26:06";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -23,6 +23,7 @@
       var emailLinkMenuItem;
       var commentMenuItem;
       const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
+      var currentScalingPercentage = 100;
 
       let alertSounds = new Object();
       alertSounds[ 60 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
@@ -48,6 +49,10 @@
       function formURL( originPath, searchString, arg ) {
 	  const modifiedSearchString = removeFontSize( searchString );
 	  return( originPath + modifiedSearchString + ( modifiedSearchString === "" ? "?" : "&" ) + arg );
+      }
+
+      function formatURL( originPath, recipeId, fontSize, currentScalingPercentage, searchTerm ) {
+          return( originPath + "?view=" + recipeId + "&fontsize=" + fontSize + "&scalingpercentage=" + currentScalingPercentage + "&searchterm=" + searchTerm );
       }
 
       function nextArgNVP() {
@@ -234,6 +239,7 @@
       }
 
       function fillInRecipe( id ) {
+	  console.debug("fillInRecipe: id=" + id );
 	  const title = recipeIdToNameMap.get( id );
 	  if( title ) {
 	      circularTimers.forEach( (timer) => {
@@ -256,6 +262,7 @@
 	  printMenuItem.setDisabled( false );
 	  emailLinkMenuItem.setDisabled( false );
 	  commentMenuItem.setDisabled( false );
+	  scaleRecipe( currentScalingPercentage );
       }
 
       function printRecipe( id ) {
@@ -384,7 +391,16 @@
 			      // Add an event listener to each list item
 			      on( listItem, "click", function() {
 				  const originPathname = window.location.origin + window.location.pathname;
-				  const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
+				  // const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
+                        	  const searchBox = document.getElementById( "searchBox" );
+				  if( searchBox ) {
+				      searchTerm = document.getElementById( "searchBox" ).value;
+				  } else {
+				      console.error( "Cannot locate search box!" );
+				  }
+				  // Make sure to revert to 100% scale on this newly chosen recipe.
+				  const url = formatURL( originPathname, recipeId, fontSizeValueToDescription( currentFontSize ), 100, searchTerm );
+				  console.log( "url = " + url );
 				  window.open( url, "_self" );
 			      });
 			      domConstruct.place( listItem, listSubContainer, "first" );
@@ -529,6 +545,24 @@
       let smallFontSize = '12';
 
       var currentFontSize = mediumFontSize;
+
+      function changeSearchTerm(newSearchTerm) {
+	  const searchBox = document.getElementById( "searchBox" );
+	  if( searchBox ) {
+	      searchBox.value = newSearchTerm;
+	  } else {
+	      console.error( "Cannot locate search box!" );
+	  }
+      }
+
+      function getSearchTerm(newSearchTerm) {
+	  const searchBox = document.getElementById( "searchBox" );
+	  if( searchBox ) {
+	      return( searchBox.value );
+	  } else {
+	      console.error( "Cannot locate search box!" );
+	  }
+      }
 
       function changeFontSize(selector, newFontSize) {
 	  if( currentFontSize != newFontSize ) {
@@ -675,8 +709,8 @@
 		      iconClass: "large-A",
 		      onClick: function() {
 			  const originPathname = window.location.origin + window.location.pathname;
-
-			  const url = formURL( originPathname, window.location.search, "fontsize=" + "large" );
+			  currentFontSize = largeFontSize;
+			  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
 			  window.open( url, "_self" );
 		      }
 		  });
@@ -687,8 +721,9 @@
 		      iconClass: "medium-A",
 		      onClick: function() {
 			  const originPathname = window.location.origin + window.location.pathname;
+			  currentFontSize = mediumFontSize;
 
-			  const url = formURL( originPathname, window.location.search, "fontsize=" + "medium" );
+			  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
 			  window.open( url, "_self" );
 		      }
 		  });
@@ -698,8 +733,9 @@
 		      iconClass: "small-A",
 		      onClick: function() {
 			  const originPathname = window.location.origin + window.location.pathname;
+			  currentFontSize = smallFontSize;
 
-			  const url = formURL( originPathname, window.location.search, "fontsize=" + "small" );
+			  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
 			  window.open( url, "_self" );
 		      }
 		  });
@@ -720,7 +756,7 @@
 		      label: "Scale recipe",
 		      iconClass: "scaleRecipeIcon",
 		      onClick: function() {
-			  getPercentageAndUpdate( );
+			  scaleRecipe( );
 		      },
 		      disabled: true,
 		  });
@@ -821,6 +857,8 @@
 		  const recipesToBeViewed = [];
 		  const recipesToBePrinted = [];
 		  let targetFontSize = "medium";
+		  let targetScalingPercentage = "100";
+		  let targetSearchTerm = "";
 		  let nextNvp;
 
 		  while( nextNvp = nextArgNVP() ) {
@@ -833,15 +871,23 @@
 		      case "fontsize":
 			  targetFontSize = nextNvp[ 1 ];
 			  break;
+		      case "scalingpercentage":
+			  targetScalingPercentage = nextNvp[ 1 ];
+			  break;
+		      case "searchterm":
+			  targetSearchTerm = decodeURIComponent( nextNvp[ 1 ] );
+			  break;
 		      case "print":
 			  recipesToBePrinted.push( nextNvp[ 1 ] );
 			  break;
 		      default:
-			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'print' }", action, window.location.href );
+			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'scalingpercentage', 'searchterm', 'print' }", action, window.location.href );
 		      }
 		  }
 
 		  changeFontSize( 'body', fontSizeDescriptionToValue( targetFontSize ) );
+		  currentScalingPercentage = targetScalingPercentage;
+		  changeSearchTerm( targetSearchTerm );
 
 		  if( recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0 ) {
 		      toggleDrawer( 'recipeDrawer', true );
