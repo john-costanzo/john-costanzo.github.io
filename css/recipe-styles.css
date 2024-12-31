@@ -239,6 +239,9 @@ h3,h4,h5,h6,h7,h8 {
 amount {
     color: slateblue;
 }
+li.itemClicked > amount {
+    color: gray;
+}
 .dijitMenuItem {
     font-size: 18px !important;
 }
