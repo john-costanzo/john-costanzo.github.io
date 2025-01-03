@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2024-12-22 @ 15:48:50";</script>
+    <script>const recipeBrowserVersion = "Friday, 2025-01-03 @ 18:22:57";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -648,12 +648,12 @@
       const helpText = `<center><h1>Recipe Browser Help</h1></center>
     <ul>
       <li>
-	<b>Recipes Button</b><br>
+	<b>Search Button</b><br>
 	Clicking this will allow you to search through all recipes.
-	Type a word fragment and it will list recipes that start with that word in the ingredients, method or description.
+	Type a word fragment and it will list recipes that start with that word in the category, ingredients, method or description.
       </li>
       <li>
-	<b>Recipes</b><br>
+	<b>Recipe Display</b><br>
 	<ul>
 	  <li>Click on a Method <b>Header</b> to hide or show that section.</li>
 	  <li>Click on an alarm clock icon (<img src=\"images/alarm-clock-icon.png\" class=\"alarm-clock-icon\">)
@@ -678,9 +678,11 @@
 	    </li>
 <li class=\"verticallyAligned\"><img class=\"printerIcon\">&nbsp;Print: format the recipe for printing.</li>
 <li class=\"verticallyAligned\"><img class=\"emailLinkIcon\">&nbsp;Email Link: Share a link to a recipe via email.</li>
-<li class=\"verticallyAligned\"><img class=\"scaleRecipeIcon\">&nbsp;Scale the recipe.</li>
+<li class=\"verticallyAligned\"><img class=\"scaleRecipeIcon\">&nbsp;Scale the recipe. Note that only recognized amounts will be scaled; they are shown using this font:&nbsp;<amount original_amount=\"½  pounds\" fraction=\"0.500000000000\" units=\"pounds\">½  pounds</amount></li>
 <li class=\"verticallyAligned\"><i class=\"fa-regular fa-comment\"></i>&nbsp;Comment on Recipe: Submit comments via email.</li>
 <li class=\"verticallyAligned\"><i class=\"fa-solid fa-circle-info\"></i>&nbsp;About: Describes the versions of the software and data for the Recipe Browser.
+<li class=\"verticallyAligned\"><i class=\"fa-solid fa-life-ring\"></i>&nbsp;Help: This help text.
+
 </li>
 </ul>
 </li>
