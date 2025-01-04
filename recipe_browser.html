@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Friday, 2025-01-03 @ 18:22:57";</script>
+    <script>const recipeBrowserVersion = "Friday, 2025-01-03 @ 19:24:08";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -896,9 +896,9 @@
 		      toggleDrawer( 'recipeDrawer', true );
 		  } else if( recipesToBeViewed.length + recipesToBePrinted.length == 1 ) {
 		      if( recipesToBeViewed.length == 1 ) {
-			  fillInRecipe( recipesToBeViewed[ 0 ] );
+			  fillInRecipe( decodeURIComponent( recipesToBeViewed[ 0 ] ) );
 		      } else if( recipesToBePrinted.length == 1 ) {
-			  printRecipe( recipesToBePrinted[ 0] );
+			  printRecipe( decodeURIComponent( recipesToBePrinted[ 0 ] ) );
 		      }
 		  } else {
 		      const originPathname = window.location.origin + window.location.pathname;
