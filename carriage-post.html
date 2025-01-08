@@ -2,10 +2,36 @@
 <html>
   <head>
     <title>Redirect to latest Carriage Post edition</title>
+
+    <script>
+      function getAllUrlParams(url) {
+	  const queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+	  const obj = {};
+
+	  if (queryString) {
+	      queryString.split('&').forEach(param => {
+		  const [key, value] = param.split('=');
+		  obj[key] = decodeURIComponent(value);
+	      });
+	  }
+
+	  return obj;
+      }
+
+      // Usage
+      const params = getAllUrlParams();
+      console.log(params);
+    </script>
+
+    getAllUrlParams();
+
   </head>
   <body>
     <script>
-      window.location.href = "https://www.cphassn.org/editor_upload/File/Carriage%20Post/2023/2023-4_CarriagePost_Winter-2023.pdf";
-    </script>
+
+
+
+      // window.location.href = "https://www.cphassn.org/editor_upload/File/Carriage%20Post/2023/2023-4_CarriagePost_Winter-2023.pdf";
+    </Script>
   </body>
 </html>
