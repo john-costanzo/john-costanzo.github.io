@@ -29,9 +29,11 @@
     <script>
       getAllUrlParams();
 
-      base_url = "https://www.cphassn.org/editor_upload/File/Carriage%20Post";
-      window.location.href = base_url + obj[ 'edition' ];
-
+      var base_url = "https://www.cphassn.org/editor_upload/File/Carriage%20Post/";
+      var edition = obj[ 'edition' ];
+      console.log( "base_url=" + base_url );
+      console.log( "edition=" + edition );
+      window.location.href = base_url + edition;
     </Script>
   </body>
 </html>
