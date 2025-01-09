@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Redirecting to a specified Carriage Post edition</title>
+    <title>Redirecting to a specified Carriage Post edition...</title>
 
     <script>
       const PARAMS = {};
@@ -25,16 +25,15 @@
     </script>
 
   </head>
+
   <body>
-    <h1>Passed Parameters</h1>
     <script>
       getAllUrlParams();
 
       var base_url = "https://www.cphassn.org/editor_upload/File/Carriage%20Post/";
       var edition = PARAMS[ 'e' ];
-      console.log( "base_url=" + base_url );
-      console.log( "edition=" + edition );
       window.location.href = base_url + edition;
     </Script>
   </body>
+
 </html>
