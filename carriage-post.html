@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Redirect to latest Carriage Post edition</title>
+    <title>Redirecting to a specified Carriage Post edition</title>
 
     <script>
+      const PARAMS = {};
+
       function getAllUrlParams(url) {
 	  const queryString = url ? url.split('?')[1] : window.location.search.slice(1);
-	  const obj = {};
 
 	  if (queryString) {
 	      queryString.split('&').forEach(param => {
 		  const [key, value] = param.split('=');
-		  obj[key] = decodeURIComponent(value);
+		  PARAMS[key] = decodeURIComponent(value);
 	      });
 	  }
 
-	  return obj;
+	  return PARAMS;
       }
 
       // Usage
@@ -30,7 +31,7 @@
       getAllUrlParams();
 
       var base_url = "https://www.cphassn.org/editor_upload/File/Carriage%20Post/";
-      var edition = obj[ 'edition' ];
+      var edition = PARAMS[ 'edition' ];
       console.log( "base_url=" + base_url );
       console.log( "edition=" + edition );
       window.location.href = base_url + edition;
