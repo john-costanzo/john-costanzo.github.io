@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2025-01-26 @ 09:30:50";</script>
+    <script>const recipeBrowserVersion = "Sunday, 2025-01-26 @ 13:01:27";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -444,6 +444,7 @@
 			      domStyle.set( panel, "left", (left < -390 ? "0px" : "-400px" ) );
 			  }
                           focusOn( "searchBox" );
+			  searchKeyboardHandler(null);
 		      }
 		  });
       };

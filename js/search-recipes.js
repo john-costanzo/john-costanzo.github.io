@@ -1,4 +1,4 @@
-const searchRecipesVersion = "Sunday, 2023-09-24 @ 12:13:59";
+const searchRecipesVersion = "Sunday, 2025-01-26 @ 13:01:29";
 
 var debugSearchRecipes = false;
 
@@ -84,8 +84,8 @@ function removeDiacritics( string ) {
 
 // Assume the keyboard event has already been processed.
 // Use the query in the query box to filter the page according to the recipeIndex
-function keyboardHandler(e) {
-    let query = removeDiacritics( 
+function searchKeyboardHandler(e) {
+    let query = removeDiacritics(
 	document.
 	    getElementById( "searchBox" )
 	    .value
@@ -97,7 +97,7 @@ function keyboardHandler(e) {
 }
 
 document.getElementById( "searchBox" ).
-    addEventListener('keyup', keyboardHandler);
+    addEventListener('keyup', searchKeyboardHandler);
 
 //==================================================================
 // Test Functions
