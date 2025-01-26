@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2025-01-26 @ 09:09:24";</script>
+    <script>const recipeBrowserVersion = "Sunday, 2025-01-26 @ 09:30:50";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -81,9 +81,11 @@
 
       function toggleSection( id ) {
 	  // Toggle the visibility of the sections identified by ID.
-	  require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx"],
-		  function( dom, domStyle, fx, coreFx ) {
-		      const content = dom.byId( "heading-content-" + id );
+	  require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx", "dojo/dom-class"],
+		  function( dom, domStyle, fx, coreFx, domClass ) {
+		      const sectionHeaderId = "header-section-" + id;
+		      const sectionContentId = "heading-content-" + id;
+		      const content = dom.byId( sectionContentId );
 		      const contentEllipses = dom.byId( "heading-ellipses-" + id );
 
 		      if( !content || !contentEllipses ) {
@@ -95,6 +97,7 @@
 
 			  if( display === 'none' ) {
 			      // TODO: remove italic; make color black
+			      domClass.remove( sectionHeaderId, "itemClicked" );
 
 			      wipe = coreFx.wipeIn({
 				  node: content,
@@ -102,6 +105,7 @@
 			      });
 			  } else {
 			      // TODO: make italic; make color grey
+			      domClass.add( sectionHeaderId, "itemClicked" );
 			      dots = "...";
 			      wipe = coreFx.wipeOut({
 				  node: content,
