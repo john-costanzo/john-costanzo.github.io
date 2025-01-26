@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Sunday, 2024-12-22 @ 12:29:40";
+const recipeScalingVersion = "Sunday, 2025-01-26 @ 09:05:00";
 
 /*
  *    In response to this prompt:
@@ -50,6 +50,15 @@ function scaleRecipe(newScalingPercentage) {
 
     // Call the updateAmounts function with the scaling factor
     updateAmounts( scaling_factor );
+
+    const sf = document.getElementById("scaling_factor");
+    if( sf ) {
+        if ( scaling_factor === 1 ) {
+	    sf.innerHTML = "";
+	} else {
+	    sf.innerHTML = "scaled to " +( scaling_factor * 100) + "%";
+	}
+    }
 }
 
 
@@ -69,15 +78,12 @@ function updateAmounts( scaling_factor ) {
         // Set the element's value to the new amount concatenated with units
         element.textContent = numberToFraction( newAmount ) + " " + units;
 
-	const sf = document.getElementById("scaling_factor");
         // Handle the title attribute based on scaling_factor
         if ( scaling_factor === 1 ) {
             element.removeAttribute( "title" );
-	    sf.innerHTML = "";
         } else {
             const originalAmount = element.getAttribute( "original_amount" );
             element.setAttribute( "title", "originally: " + originalAmount );
-	    sf.innerHTML = "scaled to " +( scaling_factor * 100) + "%";
         }
     }
 }
