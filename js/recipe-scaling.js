@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Sunday, 2025-01-26 @ 09:05:00";
+const recipeScalingVersion = "Tuesday, 2025-01-28 @ 13:29:36";
 
 /*
  *    In response to this prompt:
@@ -18,45 +18,53 @@ const recipeScalingVersion = "Sunday, 2025-01-26 @ 09:05:00";
  * See https://www.perplexity.ai/search/write-a-javascript-function-th-UKrqUr78RYSdet.LM11xvQ
  */
 
-function scaleRecipe(newScalingPercentage) {
-    console.debug( "scaleRecipe: newScalingPercentage=" + newScalingPercentage + "; currentScalingPercentage=" + currentScalingPercentage );
-    if( newScalingPercentage === undefined ) {
-	// Prompt the user for a scalingPercentage
-	const scalingPercentageText = prompt( "Please enter a percentage:" );
+function promptForScalingPercentage() {
+    // Prompt the user for a scalingPercentage
+    const scalingPercentageText = prompt( "Please enter a percentage with which to scale the recipe:" );
 
-	if( scalingPercentageText !== null ) {
-	    if( ! /^[\d.]+$/.test( scalingPercentageText ) ) {
-		alert( "Invalid input! Please enter (only) a number." );
-		return;
-	    }
-
-	    // Convert the input to a number
-	    const targetScalingPercentage = parseFloat( scalingPercentageText );
-
-	    // Validate the input
-	    if ( isNaN( targetScalingPercentage ) || targetScalingPercentage < 0 ) {
-		alert( "Invalid input! Please enter a number greater than 0." );
-		return;
-	    }
-	    currentScalingPercentage = targetScalingPercentage;
+    if( scalingPercentageText !== null ) {
+	if( ! /^[\d.]+$/.test( scalingPercentageText ) ) {
+	    alert( "Invalid input! Please enter (only) a number." );
+	    return;
 	}
+
+	// Convert the input to a number
+	const targetScalingPercentage = parseFloat( scalingPercentageText );
+
+	// Validate the input
+	if ( isNaN( targetScalingPercentage ) || targetScalingPercentage < 0 ) {
+	    alert( "Invalid input! Please enter a number greater than 0." );
+	    return;
+	}
+	return( currentScalingPercentage = targetScalingPercentage );
+    } else {
+	return( null );
     }
-    else {
+}
+
+function scaleRecipe(newScalingPercentage) {
+    console.log( "scaleRecipe: newScalingPercentage=" + newScalingPercentage + "; currentScalingPercentage=" + currentScalingPercentage );
+    if( newScalingPercentage === undefined ) {
+	if( !promptForScalingPercentage() )
+	    return( null );
+    } else {
 	currentScalingPercentage = newScalingPercentage;
     }
 
-    // Convert scalingPercentage to scaling factor
-    const scaling_factor = currentScalingPercentage / 100.0;
+    if( currentScalingPercentage !== undefined ) {
+	// Convert scalingPercentage to scaling factor
+	const scaling_factor = currentScalingPercentage / 100.0;
 
-    // Call the updateAmounts function with the scaling factor
-    updateAmounts( scaling_factor );
+	// Call the updateAmounts function with the scaling factor
+	updateAmounts( scaling_factor );
 
-    const sf = document.getElementById("scaling_factor");
-    if( sf ) {
-        if ( scaling_factor === 1 ) {
-	    sf.innerHTML = "";
-	} else {
-	    sf.innerHTML = "scaled to " +( scaling_factor * 100) + "%";
+	const sf = document.getElementById("scaling_factor");
+	if( sf ) {
+            if ( scaling_factor === 1 ) {
+		sf.innerHTML = "";
+	    } else {
+		sf.innerHTML = "scaled to " +( scaling_factor * 100) + "%";
+	    }
 	}
     }
 }
