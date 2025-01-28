@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Sunday, 2025-01-26 @ 13:01:27";</script>
+    <script>const recipeBrowserVersion = "Tuesday, 2025-01-28 @ 13:27:30";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -405,7 +405,7 @@
 				  }
 				  // Make sure to revert to 100% scale on this newly chosen recipe.
 				  const url = formatURL( originPathname, recipeId, fontSizeValueToDescription( currentFontSize ), 100, searchTerm );
-				  console.log( "url = " + url );
+				  if( rbDebug ) console.log( "url = " + url );
 				  window.open( url, "_self" );
 			      });
 			      domConstruct.place( listItem, listSubContainer, "first" );
@@ -696,6 +696,14 @@
 
       var gearsDropDownMenu;
 
+      function redirectHere() {
+	  // Redirect the page to the current URL using now-current values.
+	  const originPathname = window.location.origin + window.location.pathname;
+	  console.log("redirectHere: currentScalingPercentage=" + currentScalingPercentage );
+	  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
+	  window.open( url, "_self" );
+      }
+
       require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button","dojo/dom","dojo/on","dijit/PopupMenuItem","dijit/ColorPalette","dojo/domReady!"],
 	      function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, dom, on, PopupMenuItem, ColorPalette, domReady) {
 
@@ -716,10 +724,8 @@
 		      label: "Large font",
 		      iconClass: "large-A",
 		      onClick: function() {
-			  const originPathname = window.location.origin + window.location.pathname;
 			  currentFontSize = largeFontSize;
-			  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
-			  window.open( url, "_self" );
+			  redirectHere();
 		      }
 		  });
 		      <!-- largeFontItem.set("accelKey", "Ctrl+Alt+L" ); -->
@@ -728,11 +734,8 @@
 		      label: "Medium font",
 		      iconClass: "medium-A",
 		      onClick: function() {
-			  const originPathname = window.location.origin + window.location.pathname;
 			  currentFontSize = mediumFontSize;
-
-			  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
-			  window.open( url, "_self" );
+			  redirectHere();
 		      }
 		  });
 
@@ -740,11 +743,8 @@
 		      label: "Small font",
 		      iconClass: "small-A",
 		      onClick: function() {
-			  const originPathname = window.location.origin + window.location.pathname;
 			  currentFontSize = smallFontSize;
-
-			  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
-			  window.open( url, "_self" );
+			  redirectHere();
 		      }
 		  });
 
@@ -764,7 +764,8 @@
 		      label: "Scale recipe",
 		      iconClass: "scaleRecipeIcon",
 		      onClick: function() {
-			  scaleRecipe( );
+			  if( promptForScalingPercentage() )
+			      redirectHere()
 		      },
 		      disabled: true,
 		  });
