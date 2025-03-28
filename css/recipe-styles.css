@@ -228,8 +228,8 @@ h3,h4,h5,h6,h7,h8 {
     height: 24px;
 }
 .itemClicked {
-    color: gray;
-    font-style: italic;
+    color: gray !important;
+    font-style: italic !important;
 }
 .verticallyAligned {
     display: flex; /* Use flexbox for alignment */
@@ -238,9 +238,6 @@ h3,h4,h5,h6,h7,h8 {
 }
 amount {
     color: slateblue;
-}
-li.itemClicked > amount {
-    color: gray;
 }
 .dijitMenuItem {
     font-size: 18px !important;
