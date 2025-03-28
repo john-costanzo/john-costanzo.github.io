@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Tuesday, 2025-01-28 @ 13:27:30";</script>
+    <script>const recipeBrowserVersion = "Friday, 2025-03-28 @ 13:39:25";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -233,12 +233,13 @@
 		  });
       }
 
-      function handleItemClick() {
-	  let item = event.target;
-	  if( item.classList.contains( "itemClicked" ) ) {
-	      item.classList.remove( "itemClicked" );
-	  } else {
-	      item.classList.add( "itemClicked" );
+      function handleItemClick(element) {
+          element.classList.toggle( 'itemClicked' );
+
+	  // Now apply styles to all child elements
+	  const children = element.getElementsByTagName( '*' );
+	  for( let child of children ) {
+	    child.classList.toggle( 'itemClicked' )
 	  }
       }
 
