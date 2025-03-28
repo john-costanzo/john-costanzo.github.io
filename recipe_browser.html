@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Friday, 2025-03-28 @ 13:39:25";</script>
+    <script>const recipeBrowserVersion = "Friday, 2025-03-28 @ 14:44:21";</script>
 
     <script>dojoConfig = {parseOnLoad: true}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
@@ -436,6 +436,7 @@
       function toggleDrawer( drawer, forceOpen = false ) {
 	  require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
 		  function(dom, domStyle) {
+      console.log( "toggleDrawer: starting..." );
 		      const panel = dom.byId( drawer );
 		      if( panel ) {
 			  const left = domStyle.get( panel, "left" );
@@ -443,10 +444,13 @@
 			      domStyle.set( panel, "left", "0px" );
 			  } else {
 			      domStyle.set( panel, "left", (left < -390 ? "0px" : "-400px" ) );
+			      console.log( "toggleDrawer: Setting left to " + (left < -390 ? "0px" : "-400px" ) );
 			  }
                           focusOn( "searchBox" );
-			  searchKeyboardHandler(null);
+			  searchKeyboardHandler( null );
 		      }
+      console.log( "toggleDrawer: finished." );
+
 		  });
       };
 
@@ -471,7 +475,7 @@
       require(["dojo/on","dojo/dom"], function( on,dom ) {
 	  on( document, "keydown", function(event) {
 	      if( event.altKey && event.key === "s" ) {
-		  toggleDrawer( 'recipeDrawer', true );
+		  toggleDrawer( 'recipeDrawer' );
 	      }
 	      if( event.altKey && event.key === "g" ) {
 		  selectGearMenu( gearsDropDownMenu );
