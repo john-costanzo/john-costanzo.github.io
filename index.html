@@ -1,48 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>John's Favorite Areas</title>
     <style type="text/css">
       li {
-	  font-size: 24px;
-	  font-weight: normal;
-	  margin: 10px 0;
+      font-size: 24px;
+      font-weight: normal;
+      margin: 10px 0;
       }
+
       .genre {
-	  font-size: 28px;
-	  font-weight: bold;
+      font-size: 28px;
+      font-weight: bold;
       }
+
       a:link {
-	  text-decoration: none;
+      text-decoration: none;
       }
+
       a:hover {
-	  text-decoration: underline;
+      text-decoration: underline;
       }
 
       .heart {
-	  list-style-type: none; /* Remove default bullet */
-	  padding-left: 48px; /* Optional: Add some indentation */
-	  background-image: url('images/rotating-red-heart.gif');
-	  background-repeat: no-repeat;
-	  background-position: left center;
-	  background-size: 64px;
-	  margin-left: -44px; /* Optional: Adjust padding to make room for the glyph */
+      list-style-type: none;
+      /* Remove default bullet */
+      padding-left: 48px;
+      /* Optional: Add some indentation */
+      background-image: url('images/rotating-red-heart.gif');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 64px;
+      margin-left: -44px;
+      /* Optional: Adjust padding to make room for the glyph */
       }
 
       .clickable-collapsed::after {
-          content: "... \021A9" ;
+      content: "... \021A9";
       }
 
       .clickable-content {
-	  display: none; /* Initially hidden */
+      display: none;
+      /* Initially hidden */
       }
 
       .show.clickable-content {
-	  display: block; /* Revealed when the parent has the "show" class */
+      display: block;
+      /* Revealed when the parent has the "show" class */
       }
     </style>
   </head>
@@ -50,106 +58,122 @@
   <!-- <li><a href=""></a></li> -->
 
   <body>
-    <center><h1>John's Favorite Areas</h1></center>
+    <center>
+      <h1>John's Favorite Areas</h1>
+    </center>
     <ul>
       <li><a href="recipe_browser.html">Recipe Browser</a></li>
       <li><a href="https://www.wunderground.com/dashboard/pws/KNCHENDE241">Carriage Park Weather Station</a></li>
 
       <li><a href="https://www.internet-radio.com/" class="genre">Internet radio stations</a></li>
       <ul>
+        <li><a href="https://www.internet-radio.com/stations/jazz/" class="genre">Jazz</a>
+          <ul>
+            <li class="heart"><a href="http://51.255.235.165:5068/stream?type=http&nocache=775074">Jazz Lounge</a></li>
+            <li class="heart"><a href="https://www.internet-radio.com/search/?radio=swingtime">Swingtime</a></li>
+            <li><a href="https://www.radioveronica.us/breezy.htm">Breezy</a></li>
+            <li><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/1000jazzhits">The Great Jazz Songbook <span style="font-size: smaller;">(with commercials)</span></a></li>
+            <li><a href="http://player.internet-radio.com/?server=us4.internet-radio.com:8193">Radio Estilo Leblon</a></li>
+            <li class="clickable">
+              <i style="font-size: smaller;">via YouTube</i>
+              <ul class="clickable-content">
+                <li><a href="https://www.youtube.com/watch?v=dIpTjQg4Zd8">75 Best Instrumental Jazz Hits</a></li>
+                <li class="heart"><a href="https://www.youtube.com/watch?v=Mjc4P2SmtT8">1930s 1940s Vintage Music Playlist - Fascinated Dusty Grooves</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ryA6eHZNnXY&list=PLV8JEVXS4su7_R87iyEjNZ-_qHtjbbUvB">25 Greatest Jazz Songs</a></li>
+                <li><a href="https://www.youtube.com/watch?v=eeO0xp5-HlA">Ladies Vocal Jazz Hits</a></li>
+                <li><a href="https://www.youtube.com/watch?v=j-tYR6tvtb0">December Jazz: Sweet Jazz & Elegant Bossa Nova to relax, study and work effectively</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
 
-	<li><a href="https://www.internet-radio.com/stations/jazz/" class="genre">Jazz</a>
-	  <ul>
-	    <li class="heart"><a href="http://51.255.235.165:5068/stream?type=http&nocache=775074">Jazz Lounge</a></li>
-	    <li class="heart"><a href="https://www.internet-radio.com/search/?radio=swingtime">Swingtime</a></li>
-	    <li><a href="https://www.radioveronica.us/breezy.htm">Breezy</a></li>
-	    <li><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/1000jazzhits">The Great Jazz Songbook <span style="font-size: smaller;">(with commercials)</span></a></li>
-	    <li><a href="http://player.internet-radio.com/?server=us4.internet-radio.com:8193">Radio Estilo Leblon</a></li>
-	    <li class="clickable">
-	      <i style="font-size: smaller;">via YouTube</i>
-	      <ul class="clickable-content">
-		<li><a href="https://www.youtube.com/watch?v=dIpTjQg4Zd8">75 Best Instrumental Jazz Hits</a></li>
-		<li class="heart"><a href="https://www.youtube.com/watch?v=Mjc4P2SmtT8">1930s 1940s Vintage Music Playlist - Fascinated Dusty Grooves</a></li>
-		<li><a href="https://www.youtube.com/watch?v=ryA6eHZNnXY&list=PLV8JEVXS4su7_R87iyEjNZ-_qHtjbbUvB">25 Greatest Jazz Songs</a></li>
-		<li><a href="https://www.youtube.com/watch?v=eeO0xp5-HlA">Ladies Vocal Jazz Hits</a></li>
-		<li><a href="https://www.youtube.com/watch?v=j-tYR6tvtb0">December Jazz: Sweet Jazz & Elegant Bossa Nova to relax, study and work effectively</a></li>
-	      </ul>
-	    </li>
-	  </ul>
-	</li>
+        <li><a href="https://www.internet-radio.com/stations/classical/" class="genre">Classical</a></li>
+        <ul>
+          <li><a href="http://streaming.kwax.com:8000/localhost">KWAX</a></li>
+          <li><a href="http://player.internet-radio.com/?server=http://116.202.241.212:8020">VCR | Venice Classic Radio</a></li>
+          <li><a href="http://mediaserv30.live-streams.nl:8088">Hi On Line Classic Radio</a></li>
+        </ul>
 
-	<li><a href="https://www.internet-radio.com/stations/classical/" class="genre">Classical</a></li>
-	<ul>
-	  <li><a href="http://streaming.kwax.com:8000/localhost">KWAX</a></li>
-	  <li><a href="http://player.internet-radio.com/?server=http://116.202.241.212:8020">VCR | Venice Classic Radio</a></li>
-	  <li><a href="http://mediaserv30.live-streams.nl:8088">Hi On Line Classic Radio</a></li>
-	</ul>
+        <li><a href="https://www.npr.org" class="genre">Public Radio</a></li>
+        <ul>
+          <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd2mp3128-ibc4">News</a></li>
+          <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd1mp3128-ibc4">Classic</a></li>
+        </ul>
 
-	<li><a href="https://www.npr.org" class="genre">Public Radio</a></li>
-	<ul>
-	  <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd2mp3128-ibc4">News</a></li>
-	  <li><a href="https://prod-18-205-103-115.amperwave.net/wncpr-wcqshd1mp3128-ibc4">Classic</a></li>
-	</ul>
+        <li><a href="https://www.internet-radio.com/stations/country/" class="genre">Country</a></li>
+        <ul>
+          <li><a href="http://pavo.prostreaming.net:8034/stream">Cowpoke Radio</a></li>
+          <li><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/1000countryhits">1000 Country Hits</a></li>
+        </ul>
 
-	<li><a href="https://www.internet-radio.com/stations/country/" class="genre">Country</a></li>
-	<ul>
-	  <li><a href="http://pavo.prostreaming.net:8034/stream">Cowpoke Radio</a></li>
-	  <li><a href="https://player.internet-radio.com/?server=https://api.laut.fm/station/1000countryhits">1000 Country Hits</a></li>
-	</ul>
+        <li><a href="https://www.internet-radio.com/stations/70s/" class="genre">60s 70s and 80s</a>
+          <ul>
+            <li class="heart"><a href="https://stream1.rcast.net/65790">70s (and some 60s) Greatest Hits</a></li>
+            <li><a href="https://onlineradiobox.com/us/whrohd3/?cs=us.whrohd3&played=1">Time Machine Radio</a></li>
+            <li><a href="https://www.internet-radio.com/station/smhr1575/">Stoke Mandeville Hospital Radio</a></li>
+            <li class="heart"><a href="https://player.internet-radio.com/?server=s2.stationplaylist.com:9440">Radio Ferrymead 1413AM</a></li>
+          </ul>
+        </li>
 
-	<li><a href="https://www.internet-radio.com/stations/70s/" class="genre">60s 70s and 80s</a>
-	  <ul>
-	    <li class="heart"><a href="https://stream1.rcast.net/65790">70s (and some 60s) Greatest Hits</a></li>
-	    <li><a href="https://onlineradiobox.com/us/whrohd3/?cs=us.whrohd3&played=1">Time Machine Radio</a></li>
-	    <li><a href="https://www.internet-radio.com/station/smhr1575/">Stoke Mandeville Hospital Radio</a></li>
-	    <li class="heart"><a href="https://player.internet-radio.com/?server=s2.stationplaylist.com:9440">Radio Ferrymead 1413AM</a></li>
-	  </ul>
-	</li>
+        <li><a href="https://www.internet-radio.com/stations/classic%20rock/" class="genre">Classic Rock</a>
+          <ul>
+            <li><a href="http://144.217.158.59:5000/index.html?sid=1">Classic Rock Florida</a></li>
+            <li><a href="http://player.internet-radio.com/?server=http://65.109.87.119:7070">Yacht Rock Miami</a></li>
+          </ul>
+        </li>
 
-	<li><a href="https://www.internet-radio.com/stations/classic%20rock/" class="genre">Classic Rock</a>
-	  <ul>
-	    <li><a href="http://144.217.158.59:5000/index.html?sid=1">Classic Rock Florida</a></li>
-	    <li><a href="http://player.internet-radio.com/?server=http://65.109.87.119:7070">Yacht Rock Miami</a></li>
-	  </ul>
-	</li>
+        <li><a href="https://www.internet-radio.com/stations/oldies/" class="genre">Oldies</a>
+          <ul>
+            <li><a href="http://us2.internet-radio.com:8443">Megaton Cafe Radio</a></li>
+          </ul>
+        </li>
 
-	<li><a href="https://www.internet-radio.com/stations/oldies/" class="genre">Oldies</a>
-	  <ul>
-	    <li><a href="http://us2.internet-radio.com:8443">Megaton Cafe Radio</a></li>
-	  </ul>
-	</li>
+        <li class="clickable">
+          <div class="genre">Christmas</div>
+          <ul class="clickable-content">
+            <li><a href="https://www.internet-radio.com/stations/christmas/"><i>All Christmas stations</i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=KUsfjs5UN5I">YuleTube</a></li>
+            <li><a href="http://player.internet-radio.com/?server=http://192.111.140.11:8544">Holiday Music</a></li>
+          </ul>
+        </li>
 
-	<li class="clickable">
-	  <div class="genre">Christmas</div>
-	  <ul class="clickable-content">
-	    <li><a href="https://www.internet-radio.com/stations/christmas/"><i>All Christmas stations</i></a></li>
-	    <li><a href="https://www.youtube.com/watch?v=KUsfjs5UN5I">YuleTube</a></li>
-	    <li><a href="http://player.internet-radio.com/?server=http://192.111.140.11:8544">Holiday Music</a></li>
-	  </ul>
-	</li>
+        <li>
+          <div class="genre">Mixed</div>
+          <ul>
+          </ul>
+        </li>
 
-	<li><div class="genre">Mixed</div>
-	  <ul>
-	  </ul>
-	</li>
-
-	<li><a href="https://www.internet-radio.com/stations/blues/"><i>Blues</i></a></li>
-	<ul>
-	  <li><a href="https://www.youtube.com/watch?v=TwasrheSgz0">Smoky Blues Lounge</a></li>
-	  </ul>
-	</li>
-
+        <li><a href="https://www.internet-radio.com/stations/blues/"><i>Blues</i></a></li>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=TwasrheSgz0">Smoky Blues Lounge</a></li>
+        </ul>
+      </li>
     </ul>
 
-    <li><a href="https://chat.openai.com/chat">Chat GPT</a></li>
-    <li><a href="editorial-cartoons.html">Editorial Cartoons</a></li>
+    <!-- <li><a href="editorial-cartoons.html">Editorial Cartoons</a></li> -->
     <li><a href="videos.html">Videos</a></li>
     <li><a href="online-games.html">Online Games</a></li>
     <li><a href="Summary_of_Viewed_Videos.html">Netflix Usage Analysis</a></li>
+    <li>Events:
+      <ul>
+        <li><a href="https://trailsidebrews.com/calendar">Trailside</a></li>
+        <li><a href="https://oklawahabrewing.com/events">Oklawaha</a></li>
+        <li><a href="https://sierranevada.com/events?location=mills-river">Sierra Nevada</a></li>
+        <li><a href="https://www.saintpaulfarms.com/vineyard-events">Saint Paul</a></li>
+        <li><a href="https://www.saintpaulfarms.com/cidery-events">Appalachian Ridge</a></li>
+        <li><a href="https://burntshirtvineyards.com/all-events/">Burnt Shirt</a></li>
+        <li><a href="https://www.stoneashevineyards.com/events">Stone Ashe</a></li>
+        <li><a href="https://www.millsriverbrewingco.com/events">Mills River</a></li>
+        <li><a href="https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events">Guidon</a></li>
+        <li><a href="https://pointlookoutvineyards.com/whats-happening">Point Lookout</a></li>
+        <li><a href="https://boldrock.com/">Bold Rock</a></li>
+      </ul>
+    </li>
+
     <li class="clickable">Duke
       <ul class="clickable-content">
-	<li><a href="https://outagereport.duke-energy.com/#/report-outage/home/find-account/social-security-number">Report power outage</a></li>
-	<li><a href="https://outagemaps.duke-energy.com/#/current-outages/ncsc">See power outages</a></li>
+        <li><a href="https://outagereport.duke-energy.com/#/report-outage/home/find-account/social-security-number">Report power outage</a></li>
+        <li><a href="https://outagemaps.duke-energy.com/#/current-outages/ncsc">See power outages</a></li>
       </ul>
     </li>
     <li><a href="https://www.cphassn.org/directory/">Carriage Park Directory</a></li>
@@ -158,18 +182,18 @@
       // Get all the div elements that you want to be clickable
       const clickableElements = document.querySelectorAll( ".clickable" );
 
-      // Add a click event listener to each clickable div
-      clickableElements.forEach( el => {
-          el.classList.toggle( "clickable-collapsed" );
-	  el.addEventListener( "click", function() {
-              const clickableChildren = el.querySelectorAll( ".clickable-content" );
-              clickableChildren.forEach( child => {
-    	          // Toggle the "show" class on the div to reveal/hide content of its children
-	          child.classList.toggle( "show" );
-              el.classList.toggle( "clickable-collapsed" );
-    	      });
-	  });
-      });
+    // Add a click event listener to each clickable div
+    clickableElements.forEach( el => {
+	el.classList.toggle( "clickable-collapsed" );
+	el.addEventListener( "click", function( ) {
+	    const clickableChildren = el.querySelectorAll( ".clickable-content" );
+	    clickableChildren.forEach( child => {
+		// Toggle the "show" class on the div to reveal/hide content of its children
+		child.classList.toggle( "show" );
+		el.classList.toggle( "clickable-collapsed" );
+	    } );
+	} );
+    } );
     </script>
   </body>
 </html>
