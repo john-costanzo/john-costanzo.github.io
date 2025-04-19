@@ -1,12 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
-    <script>const recipeBrowserVersion = "Friday, 2025-03-28 @ 14:53:50";</script>
+    <script>
+        const recipeBrowserVersion = "Friday, 2025-04-18 @ 22:45:57";
+    </script>
 
-    <script>dojoConfig = {parseOnLoad: true}</script>
+    <script>
+        dojoConfig = {
+            parseOnLoad: true
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
@@ -16,534 +23,562 @@
     <script src="js/costanzo-recipes.js"></script>
 
     <script>
-      // Some global variables
-      const rbDebug = false;
-      let currentRecipeId = undefined;
-      var printMenuItem;
-      var emailLinkMenuItem;
-      var commentMenuItem;
-      const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
-      var currentScalingPercentage = 100;
+        // Some global variables
+        const rbDebug = false;
+        let currentRecipeId = undefined;
+        var printMenuItem;
+        var emailLinkMenuItem;
+        var commentMenuItem;
+        const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
+        var currentScalingPercentage = 100;
 
-      let alertSounds = new Object();
-      alertSounds[ 60 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
-      alertSounds[ 32 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
-      alertSounds[ 4 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
-      // alertSounds[ 3 ] = 'sounds/Thats All Folks.mp3';
-      alertSounds[ 0 ] = 'sounds/Clock-chimes-sounds.mp3';
+        let alertSounds = new Object( );
+        alertSounds[ 60 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
+        alertSounds[ 32 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
+        alertSounds[ 4 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
+        // alertSounds[ 3 ] = 'sounds/Thats All Folks.mp3';
+        alertSounds[ 0 ] = 'sounds/Clock-chimes-sounds.mp3';
 
-      const circularTimers = []; // An array of all CircularTimers
+        const circularTimers = [ ]; // An array of all CircularTimers
     </script>
 
     <script>
-      // Process arguments
-      const args = window.location.search.substring(1).split("&");
-      let numArgs = ( args[ 0 ] === '' ) ? undefined : args.length;
-      let nextArg=0;
+        // Process arguments
+        const args = window.location.search.substring( 1 ).split( "&" );
+        let numArgs = ( args[ 0 ] === '' ) ? undefined : args.length;
+        let nextArg = 0;
 
-      function removeFontSize( string ) {
-	  const stringWithoutFontsize = string.split("&").filter( element => !element.startsWith("fontsize") ).join("&");
-	  return stringWithoutFontsize === "" ? "" : stringWithoutFontsize;
-	}
+        function removeFontSize( string ) {
+            const stringWithoutFontsize = string.split( "&" ).filter( element => !element.startsWith( "fontsize" ) ).join( "&" );
+            return stringWithoutFontsize === "" ? "" : stringWithoutFontsize;
+        }
 
-      function formURL( originPath, searchString, arg ) {
-	  const modifiedSearchString = removeFontSize( searchString );
-	  return( originPath + modifiedSearchString + ( modifiedSearchString === "" ? "?" : "&" ) + arg );
-      }
+        function formURL( originPath, searchString, arg ) {
+            const modifiedSearchString = removeFontSize( searchString );
+            return ( originPath + modifiedSearchString + ( modifiedSearchString === "" ? "?" : "&" ) + arg );
+        }
 
-      function formatURL( originPath, recipeId, fontSize, currentScalingPercentage, searchTerm ) {
-          return( originPath + "?view=" + recipeId + "&fontsize=" + fontSize + "&scalingpercentage=" + currentScalingPercentage + "&searchterm=" + searchTerm );
-      }
+        function formatURL( originPath, recipeId, fontSize, currentScalingPercentage, searchTerm ) {
+            return ( originPath + "?view=" + recipeId + "&fontsize=" + fontSize + "&scalingpercentage=" + currentScalingPercentage + "&searchterm=" + searchTerm );
+        }
 
-      function nextArgNVP() {
-	  // Return an array [ name, value ] containing the "next" argument.
-	  // If all arguments have been processed, return undefined.
-	  if( !numArgs ) return( undefined );
-	  if( nextArg >= args.length ) return( undefined );
+        function nextArgNVP( ) {
+            // Return an array [ name, value ] containing the "next" argument.
+            // If all arguments have been processed, return undefined.
+            if ( !numArgs ) return ( undefined );
+            if ( nextArg >= args.length ) return ( undefined );
 
-	  const nvp = args[ nextArg ].split( "=" );
-	  nextArg++;
-	  return( nvp );
-      }
+            const nvp = args[ nextArg ].split( "=" );
+            nextArg++;
+            return ( nvp );
+        }
     </script>
 
     <script>
-      const TITLE = 0;
-      const INGREDIENTS = 1;
-      const METHODS = 2;
+        const TITLE = 0;
+        const INGREDIENTS = 1;
+        const METHODS = 2;
 
-      function changeColor( color ) {
-	  const topHeaderContainer = document.getElementById( "dijit_layout_ContentPane_0" );
-	  if( topHeaderContainer ) topHeaderContainer.style.backgroundColor = color;
-	  const ingredientContainer = document.getElementById( "rightCol" );
-	  if( ingredientContainer ) ingredientContainer.style.backgroundColor = color;
-      }
+        function changeColor( color ) {
+            const topHeaderContainer = document.getElementById( "dijit_layout_ContentPane_0" );
+            if ( topHeaderContainer ) topHeaderContainer.style.backgroundColor = color;
+            const ingredientContainer = document.getElementById( "rightCol" );
+            if ( ingredientContainer ) ingredientContainer.style.backgroundColor = color;
+        }
 
-      function toggleSection( id ) {
-	  // Toggle the visibility of the sections identified by ID.
-	  require(["dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx", "dojo/dom-class"],
-		  function( dom, domStyle, fx, coreFx, domClass ) {
-		      const sectionHeaderId = "header-section-" + id;
-		      const sectionContentId = "heading-content-" + id;
-		      const content = dom.byId( sectionContentId );
-		      const contentEllipses = dom.byId( "heading-ellipses-" + id );
+        function toggleSection( id ) {
+            // Toggle the visibility of the sections identified by ID.
+            require( [ "dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx", "dojo/dom-class" ],
+                function( dom, domStyle, fx, coreFx, domClass ) {
+                    const sectionHeaderId = "header-section-" + id;
+                    const sectionContentId = "heading-content-" + id;
+                    const content = dom.byId( sectionContentId );
+                    const contentEllipses = dom.byId( "heading-ellipses-" + id );
 
-		      if( !content || !contentEllipses ) {
-			  console.error( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
-		      } else {
-			  const display = domStyle.get( content, "display" );
-			  let wipe;
-			  let dots = "";
+                    if ( !content || !contentEllipses ) {
+                        console.error( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
+                    } else {
+                        const display = domStyle.get( content, "display" );
+                        let wipe;
+                        let dots = "";
 
-			  if( display === 'none' ) {
-			      // TODO: remove italic; make color black
-			      domClass.remove( sectionHeaderId, "itemClicked" );
+                        if ( display === 'none' ) {
+                            // TODO: remove italic; make color black
+                            domClass.remove( sectionHeaderId, "itemClicked" );
 
-			      wipe = coreFx.wipeIn({
-				  node: content,
-				  duration: 750
-			      });
-			  } else {
-			      // TODO: make italic; make color grey
-			      domClass.add( sectionHeaderId, "itemClicked" );
-			      dots = "...";
-			      wipe = coreFx.wipeOut({
-				  node: content,
-				  duration: 750
-			      });
-			  }
-			  coreFx.combine( [ wipe ] ).play();
-			  contentEllipses.innerHTML = dots;
-		      }
-		  });
-      }
+                            wipe = coreFx.wipeIn( {
+                                node: content,
+                                duration: 750
+                            } );
+                        } else {
+                            // TODO: make italic; make color grey
+                            domClass.add( sectionHeaderId, "itemClicked" );
+                            dots = "...";
+                            wipe = coreFx.wipeOut( {
+                                node: content,
+                                duration: 750
+                            } );
+                        }
+                        coreFx.combine( [ wipe ] ).play( );
+                        contentEllipses.innerHTML = dots;
+                    }
+                } );
+        }
     </script>
 
     <script>
-      function extractTimingInformation( s ) {
-	  // Extract timing information from the string S.
-	  // Return a list containing successive pairs of elements are ( timerId timingInfo )
-	  // and the last element is the string with the timing information removed.
-	  const regex = /<script>\s*new\s+CircularTimer\("([^)]+)",\s*([^)]+)\)\s*<\/script>/;
+        function extractTimingInformation( s ) {
+            // Extract timing information from the string S.
+            // Return a list containing successive pairs of elements are ( timerId timingInfo )
+            // and the last element is the string with the timing information removed.
+            const regex = /<script>\s*new\s+CircularTimer\("([^)]+)",\s*([^)]+)\)\s*<\/script>/;
 
-	  let match;
-	  let result = [];
+            let match;
+            let result = [ ];
 
-	  while( match = regex.exec( s ) ) {
-	      const id = match[ 1 ];
-	      const timing = match[ 2 ];
-	      s = s.replace( regex, "" );
-	      result.push( id, timing );
-	  }
-	  result.push( s );
-	  return( result );
-      }
+            while ( match = regex.exec( s ) ) {
+                const id = match[ 1 ];
+                const timing = match[ 2 ];
+                s = s.replace( regex, "" );
+                result.push( id, timing );
+            }
+            result.push( s );
+            return ( result );
+        }
 
-      function addIngredients( recipeId ) {
-	  // Add all ingredients for RECIPEID.
-	  require(["dojo/dom","dojo/domReady!"],
-		  function(dom) {
-		      let recipeIngredients = dom.byId( "recipe_ingredients" );
+        function addIngredients( recipeId ) {
+            // Add all ingredients for RECIPEID.
+            require( [ "dojo/dom", "dojo/domReady!" ],
+                function( dom ) {
+                    let recipeIngredients = dom.byId( "recipe_ingredients" );
 
-		      if( typeof ingredientsMap !== "undefined" ) {
-			  let ingredients = ingredientsMap.get( recipeId );
-			  if( ingredients ) {
-			      const result = extractTimingInformation( ingredients );
-			      recipeIngredients.innerHTML = result[ result.length-1 ]; // The ingredients, stripped of timing info
-			      for( let i=0; i<result.length-1; i += 2 ) {
-				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds );
-				  circularTimers.push( ct );
-			      }
-			  } else {
-			      console.error( "addIngredients: no such recipe id [%s]", recipeId );
-			      recipeIngredients.innerHTML = "";
-			  }
-		      }
-		  });
-      }
+                    if ( typeof ingredientsMap !== "undefined" ) {
+                        let ingredients = ingredientsMap.get( recipeId );
+                        if ( ingredients ) {
+                            const result = extractTimingInformation( ingredients );
+                            recipeIngredients.innerHTML = result[ result.length - 1 ]; // The ingredients, stripped of timing info
+                            for ( let i = 0; i < result.length - 1; i += 2 ) {
+                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
+                                circularTimers.push( ct );
+                            }
+                        } else {
+                            console.error( "addIngredients: no such recipe id [%s]", recipeId );
+                            recipeIngredients.innerHTML = "";
+                        }
+                    }
+                } );
+        }
 
-      function addMethods( recipeId ) {
-	  // Add all methods for RECIPEID.
-	  require([ "dojo/dom", "dojo/domReady!" ],
-		  function(dom) {
-		      let recipeMethod = dom.byId( "recipe_method" );
+        function addMethods( recipeId ) {
+            // Add all methods for RECIPEID.
+            require( [ "dojo/dom", "dojo/domReady!" ],
+                function( dom ) {
+                    let recipeMethod = dom.byId( "recipe_method" );
 
-		      if (typeof methodsMap !== "undefined") {
-			  let method = methodsMap.get( recipeId );
-			  if( method ) {
-			      const result = extractTimingInformation( method );
-			      recipeMethod.innerHTML = result[ result.length-1 ]; // The method, stripped of timing info
-			      for( let i=0; i<result.length-1; i += 2 ) {
-				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
-				  circularTimers.push( ct );
-			      }
-			  }
-			  else {
-			      console.error( "addMethods: no such recipe id [%s]", recipeId );
-			      recipeMethod.innerHTML = "";
-			  }
-		      }
+                    if ( typeof methodsMap !== "undefined" ) {
+                        let method = methodsMap.get( recipeId );
+                        if ( method ) {
+                            const result = extractTimingInformation( method );
+                            recipeMethod.innerHTML = result[ result.length - 1 ]; // The method, stripped of timing info
+                            for ( let i = 0; i < result.length - 1; i += 2 ) {
+                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
+                                circularTimers.push( ct );
+                            }
+                        } else {
+                            console.error( "addMethods: no such recipe id [%s]", recipeId );
+                            recipeMethod.innerHTML = "";
+                        }
+                    }
 
-		      if (typeof yieldsMap !== "undefined") {
-			  let yield = yieldsMap.get( recipeId );
-			  if( yield ) {
-			      const result = extractTimingInformation( yield );
-			      let yieldText = result[ result.length-1 ]; // The yield, stripped of timing info
-			      recipeMethod.innerHTML =
-				  recipeMethod.innerHTML +
-				  "<h2>Yield</h2>" +
-				  yieldText;
-			      for( let i=0; i<result.length-1; i += 2 ) {
-				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
-				  circularTimers.push( ct );
-			      }
-			  }
-		      }
+                    if ( typeof yieldsMap !== "undefined" ) {
+                        let yield = yieldsMap.get( recipeId );
+                        if ( yield ) {
+                            const result = extractTimingInformation( yield );
+                            let yieldText = result[ result.length - 1 ]; // The yield, stripped of timing info
+                            recipeMethod.innerHTML =
+                                recipeMethod.innerHTML +
+                                "<h2>Yield</h2>" +
+                                yieldText;
+                            for ( let i = 0; i < result.length - 1; i += 2 ) {
+                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
+                                circularTimers.push( ct );
+                            }
+                        }
+                    }
 
-		      if (typeof tagsMap !== "undefined") {
-			  let tag = tagsMap.get( recipeId );
-			  if( tag ) {
-			      const result = extractTimingInformation( tag );
-			      let tagText = result[ result.length-1 ]; // The tag, stripped of timing info
-			      recipeMethod.innerHTML =
-				  recipeMethod.innerHTML +
-				  "<h2>Tags</h2>" +
-				  tagText;
-			      for( let i=0; i<result.length-1; i += 2 ) {
-				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
-				  circularTimers.push( ct );
-			      }
-			  }
-		      }
-		      if (typeof creditsMap !== "undefined") {
-			  let credit = creditsMap.get( recipeId );
-			  if( credit ) {
-			      const result = extractTimingInformation( credit );
-			      let creditText = result[ result.length-1 ]; // The credit, stripped of timing info
-			      recipeMethod.innerHTML =
-				  recipeMethod.innerHTML +
-				  "<h2>Credit</h2>" +
-				  creditText;
-			      for( let i=0; i<result.length-1; i += 2 ) {
-				  const ct = new CircularTimer( result[ i ], result [ i+1 ], defaultAlertTime, alertSounds  );
-				  circularTimers.push( ct );
-			      }
-			  }
-		      }
-		  });
-      }
+                    if ( typeof tagsMap !== "undefined" ) {
+                        let tag = tagsMap.get( recipeId );
+                        if ( tag ) {
+                            const result = extractTimingInformation( tag );
+                            let tagText = result[ result.length - 1 ]; // The tag, stripped of timing info
+                            recipeMethod.innerHTML =
+                                recipeMethod.innerHTML +
+                                "<h2>Tags</h2>" +
+                                tagText;
+                            for ( let i = 0; i < result.length - 1; i += 2 ) {
+                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
+                                circularTimers.push( ct );
+                            }
+                        }
+                    }
+                    if ( typeof creditsMap !== "undefined" ) {
+                        let credit = creditsMap.get( recipeId );
+                        if ( credit ) {
+                            const result = extractTimingInformation( credit );
+                            let creditText = result[ result.length - 1 ]; // The credit, stripped of timing info
+                            recipeMethod.innerHTML =
+                                recipeMethod.innerHTML +
+                                "<h2>Credit</h2>" +
+                                creditText;
+                            for ( let i = 0; i < result.length - 1; i += 2 ) {
+                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
+                                circularTimers.push( ct );
+                            }
+                        }
+                    }
+                } );
+        }
 
-      function handleItemClick(element) {
-          element.classList.toggle( 'itemClicked' );
+        function handleItemClick( element ) {
+            element.classList.toggle( 'itemClicked' );
 
-	  // Now apply styles to all child elements
-	  const children = element.getElementsByTagName( '*' );
-	  for( let child of children ) {
-	    child.classList.toggle( 'itemClicked' )
-	  }
-      }
+            // Now apply styles to all child elements
+            const children = element.getElementsByTagName( '*' );
+            for ( let child of children ) {
+                child.classList.toggle( 'itemClicked' )
+            }
+        }
 
-      function fillInRecipe( id ) {
-	  console.debug("fillInRecipe: id=" + id );
-	  const title = recipeIdToNameMap.get( id );
-	  if( title ) {
-	      circularTimers.forEach( (timer) => {
-		  timer.cleanUp();
-	      });
-	      require([ "dojo/dom"],
-		      function( dom ) {
-			  let topHeader = dom.byId( "topHeader" );
-			  topHeader.innerHTML = title;
-			  addIngredients( id );
-			  addMethods( id );
-		      });
-	      currentRecipeId = id;
-	      document.title = title;
-	  } else {
-              toggleDrawer( 'recipeDrawer', true );
-	      noSuchId( id );
-	  }
-	  scaleRecipeMenuItem.setDisabled( false );
-	  printMenuItem.setDisabled( false );
-	  emailLinkMenuItem.setDisabled( false );
-	  commentMenuItem.setDisabled( false );
-	  scaleRecipe( currentScalingPercentage );
-      }
+        function fillInRecipe( id ) {
+            console.debug( "fillInRecipe: id=" + id );
+            const title = recipeIdToNameMap.get( id );
+            if ( title ) {
+                circularTimers.forEach( ( timer ) => {
+                    timer.cleanUp( );
+                } );
+                require( [ "dojo/dom" ],
+                    function( dom ) {
+                        let topHeader = dom.byId( "topHeader" );
+                        topHeader.innerHTML = title;
+                        addIngredients( id );
+                        addMethods( id );
+                    } );
+                currentRecipeId = id;
+                document.title = title;
+            } else {
+                toggleDrawer( 'recipeDrawer', true );
+                noSuchId( id );
+            }
+            scaleRecipeMenuItem.setDisabled( false );
+            printMenuItem.setDisabled( false );
+            emailLinkMenuItem.setDisabled( false );
+            commentMenuItem.setDisabled( false );
+            scaleRecipe( currentScalingPercentage );
+        }
 
-      function printRecipe( id ) {
-	  // Print a recipe.
-	  // If given a recipe ID, load it first.
-	  if( id && currentRecipeId != id ) {
-	      fillInRecipe( id );
-	  }
-	  if( currentRecipeId ) {
-	      // Create a new print window
-	      const printWindow = window.open( "", "print" );
+        function printRecipe( id ) {
+            // Print a recipe.
+            // If given a recipe ID, load it first.
+            if ( id && currentRecipeId != id ) {
+                fillInRecipe( id );
+            }
+            if ( currentRecipeId ) {
+                // Create a new print window
+                const printWindow = window.open( "", "print" );
 
-	      // Set the content of the print window to the element
-	      require([ "dojo/dom", "dojo/dom-construct" ],
-		      function( dom, domConstruct ) {
-			  const head = domConstruct.create( "head" );
-			  printWindow.document.body.appendChild( head );
-			  const ss1 = domConstruct.create( "link", {
-			      rel: "stylesheet",
-			      type: "text/css",
-			      href: "css/recipe-styles-print.css",
-			  } );
-			  printWindow.document.head.appendChild( ss1 );
+                // Set the content of the print window to the element
+                require( [ "dojo/dom", "dojo/dom-construct" ],
+                    function( dom, domConstruct ) {
+                        const head = domConstruct.create( "head" );
+                        printWindow.document.body.appendChild( head );
+                        const ss1 = domConstruct.create( "link", {
+                            rel: "stylesheet",
+                            type: "text/css",
+                            href: "css/recipe-styles-print.css",
+                        } );
+                        printWindow.document.head.appendChild( ss1 );
 
-			  const ss2 = domConstruct.create( "link", {
-			      rel: "stylesheet",
-			      type: "text/css",
-			      href: "css/circular-timer-style-using-dojo-print.css",
-			  } );
-			  printWindow.document.head.appendChild( ss2 );
+                        const ss2 = domConstruct.create( "link", {
+                            rel: "stylesheet",
+                            type: "text/css",
+                            href: "css/circular-timer-style-using-dojo-print.css",
+                        } );
+                        printWindow.document.head.appendChild( ss2 );
 
-			  const ss3 = domConstruct.create( "link", {
-			      rel: "stylesheet",
-			      type: "text/css",
-			      href: "css/special-block-styles.css",
-			  } );
-			  printWindow.document.head.appendChild( ss3 );
+                        const ss3 = domConstruct.create( "link", {
+                            rel: "stylesheet",
+                            type: "text/css",
+                            href: "css/special-block-styles.css",
+                        } );
+                        printWindow.document.head.appendChild( ss3 );
 
-			  const recipeIngredients = dom.byId( "recipe_ingredients" );
-			  const recipeMethod = dom.byId( "recipe_method" );
-			  const scalingMessage = ( currentScalingPercentage == 100 ? "" : " (scaled to " + currentScalingPercentage + "%)");
-			  const recipeText = "<center><h1>" + topHeader.innerHTML + "</h1></center><p>\n" +
-				"<h2>Ingredients" + scalingMessage + "</h2>" + recipeIngredients.innerHTML + "<p>\n" +
-				"<h2>Method</h2>" + recipeMethod.innerHTML + "<p>\n";
-			  printWindow.document.body.innerHTML = recipeText;
+                        const recipeIngredients = dom.byId( "recipe_ingredients" );
+                        const recipeMethod = dom.byId( "recipe_method" );
+                        const scalingMessage = ( currentScalingPercentage == 100 ? "" : " (scaled to " + currentScalingPercentage + "%)" );
+                        const recipeText = "<center><h1>" + topHeader.innerHTML + "</h1></center><p>\n" +
+                            "<h2>Ingredients" + scalingMessage + "</h2>" + recipeIngredients.innerHTML + "<p>\n" +
+                            "<h2>Method</h2>" + recipeMethod.innerHTML + "<p>\n";
+                        printWindow.document.body.innerHTML = recipeText;
 
-			  // Hide all the circular-timer-containers
-			  const elements = printWindow.document.querySelectorAll( '.circular-timer-container' );
-			  elements.forEach( function( element ) {
-			      element.style.display = "none";
-			  });
+                        // Hide all the circular-timer-containers
+                        const elements = printWindow.document.querySelectorAll( '.circular-timer-container' );
+                        elements.forEach( function( element ) {
+                            element.style.display = "none";
+                        } );
 
-			  // Print the print window, but wait for the browser to process style sheet
-			  // Hack alert!
-			  setTimeout(function() {
-			      console.log( "printRecipe: printing recipe with id [%s]", currentRecipeId );
-			      printWindow.print();
-			  }, 2000);
-		      });
-	  } else {
-	      console.error( "printRecipe: no recipe with id = [%s]", id );
-	      noSuchId( id );
-	  }
-      }
+                        // Print the print window, but wait for the browser to process style sheet
+                        // Hack alert!
+                        setTimeout( function( ) {
+                            console.log( "printRecipe: printing recipe with id [%s]", currentRecipeId );
+                            printWindow.print( );
+                        }, 2000 );
+                    } );
+            } else {
+                console.error( "printRecipe: no recipe with id = [%s]", id );
+                noSuchId( id );
+            }
+        }
 
-      function noSuchId( id ) {
-	  require(["dijit/Dialog","dijit/form/Button"],
-		  function(Dialog, Button) {
+        function noSuchId( id ) {
+            require( [ "dijit/Dialog", "dijit/form/Button" ],
+                function( Dialog, Button ) {
 
-		      // Create a Dialog widget
-		      const noSuchIdPopup = new Dialog({
-			  content: "ERROR: No such id: [" + id + "]<p>"
-		      });
+                    // Create a Dialog widget
+                    const noSuchIdPopup = new Dialog( {
+                        content: "ERROR: No such id: [" + id + "]<p>"
+                    } );
 
-		      const dismissButton = new Button({
-			  label: "Dismiss",
-			  showLabel: true,
-			  onClick: function () {
-			      noSuchIdPopup.hide();
-			  }
-		      });
+                    const dismissButton = new Button( {
+                        label: "Dismiss",
+                        showLabel: true,
+                        onClick: function( ) {
+                            noSuchIdPopup.hide( );
+                        }
+                    } );
 
-		      // Add the dismiss button to the pop-up
-		      noSuchIdPopup.addChild( dismissButton );
-		      noSuchIdPopup.show();
-		  });
-      }
+                    // Add the dismiss button to the pop-up
+                    noSuchIdPopup.addChild( dismissButton );
+                    noSuchIdPopup.show( );
+                } );
+        }
 
-      function emailLinkToRecipe() {
-	  // Send a link to the email client
-	  if( !currentRecipeId ) return;
-	  const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
-	  const title = topHeader.innerHTML;
+        function emailLinkToRecipe( ) {
+            // Send a link to the email client
+            if ( !currentRecipeId ) return;
+            const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
+            const title = topHeader.innerHTML;
 
-	  window.open( "mailto:?subject=" + title + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
-      }
+            window.open( "mailto:?subject=" + title + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
+        }
 
-      function commentOnRecipe() {
-	  if( !currentRecipeId ) return;
-	  const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
-	  const title = topHeader.innerHTML;
+        function commentOnRecipe( ) {
+            if ( !currentRecipeId ) return;
+            const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
+            const title = topHeader.innerHTML;
 
-	  window.open( "mailto:?subject=Comments on the \"" + title + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
-      }
+            window.open( "mailto:?subject=Comments on the \"" + title + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
+        }
 
-      function addRecipes( recipeNameMap, refNode ) {
-	  // Add recipes in RECIPENAMEMAP as an unordered list and place it as REFNODE
-	  require([ "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/domReady!" ],
-		  function( dom, domConstruct, on ) {
+        function addRecipes( recipeNameMap, refNode ) {
+            // Add recipes in RECIPENAMEMAP as an unordered list and place it as REFNODE
+            require( [ "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/domReady!" ],
+                function( dom, domConstruct, on ) {
 
-		      // Create a list container
-		      const listContainer = domConstruct.create("ul");
+                    // Create a list container
+                    const listContainer = domConstruct.create( "ul" );
 
-		      recipeNameMap.forEach( function( recipeList, cat ) {
-			  const catHeader = domConstruct.create("li", { innerHTML: cat, class: "category-heading" });
-			  domConstruct.place( catHeader, listContainer, "first" );
+                    recipeNameMap.forEach( function( recipeList, cat ) {
+                        const catHeader = domConstruct.create( "li", {
+                            innerHTML: cat,
+                            class: "category-heading"
+                        } );
+                        domConstruct.place( catHeader, listContainer, "first" );
 
-			  const listSubContainer = domConstruct.create("ul");
-			  domConstruct.place( listSubContainer, catHeader );
+                        const listSubContainer = domConstruct.create( "ul" );
+                        domConstruct.place( listSubContainer, catHeader );
 
-			  if( rbDebug ) console.log( "recipeList= " + recipeList.length + " ==> " + recipeList );
-			  recipeList.forEach( function( recipe ) {
-			      const recipeTitle = recipe[ 0 ];
-			      const recipeId = recipe[ 1 ];
+                        if ( rbDebug ) console.log( "recipeList= " + recipeList.length + " ==> " + recipeList );
+                        recipeList.forEach( function( recipe ) {
+                            const recipeTitle = recipe[ 0 ];
+                            const recipeId = recipe[ 1 ];
 
-			      const listItem = domConstruct.create("li", { innerHTML: recipeTitle, id: recipeId, class: "recipe-item" });
-			      // Add an event listener to each list item
-			      on( listItem, "click", function() {
-				  const originPathname = window.location.origin + window.location.pathname;
-				  // const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
-                        	  const searchBox = document.getElementById( "searchBox" );
-				  if( searchBox ) {
-				      searchTerm = document.getElementById( "searchBox" ).value;
-				  } else {
-				      console.error( "Cannot locate search box!" );
-				  }
-				  // Make sure to revert to 100% scale on this newly chosen recipe.
-				  const url = formatURL( originPathname, recipeId, fontSizeValueToDescription( currentFontSize ), 100, searchTerm );
-				  if( rbDebug ) console.log( "url = " + url );
-				  window.open( url, "_self" );
-			      });
-			      domConstruct.place( listItem, listSubContainer, "first" );
-			  });
-		      });
-		      domConstruct.place(listContainer, refNode );
-		  });
-      }
-      </script>
+                            const listItem = domConstruct.create( "li", {
+                                innerHTML: recipeTitle,
+                                id: recipeId,
+                                class: "recipe-item"
+                            } );
+                            // Add an event listener to each list item
+                            on( listItem, "click", function( ) {
+                                const originPathname = window.location.origin + window.location.pathname;
+                                // const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
+                                const searchBox = document.getElementById( "searchBox" );
+                                if ( searchBox ) {
+                                    searchTerm = document.getElementById( "searchBox" ).value;
+                                } else {
+                                    console.error( "Cannot locate search box!" );
+                                }
+                                // Make sure to revert to 100% scale on this newly chosen recipe.
+                                const url = formatURL( originPathname, recipeId, fontSizeValueToDescription( currentFontSize ), 100, searchTerm );
+                                if ( rbDebug ) console.log( "url = " + url );
+                                window.open( url, "_self" );
+                            } );
+                            domConstruct.place( listItem, listSubContainer, "first" );
+                        } );
+                    } );
+                    domConstruct.place( listContainer, refNode );
+                } );
+        }
+    </script>
 
     <script>
+        function focusOn( element ) {
+            require( [ "dojo/dom", "dojo/ready" ],
+                function( dom, ready ) {
+                    ready( 10000, function( ) { // Priority 10,000: force execution very late in the game!
+                        const el = dom.byId( element );
+                        if ( el ) {
+                            el.focus( );
+                        } else {
+                            console.error( "Cannot focus on '" + element + "'!!!" );
+                        }
+                    } );
+                } );
+        }
 
-      function focusOn( element ) {
-	  require(["dojo/dom", "dojo/ready"],
-		  function( dom, ready ) {
-		      ready( 10000, function () { // Priority 10,000: force execution very late in the game!
-			  const el = dom.byId( element );
-			  if( el ) {
-			      el.focus();
-			  } else {
-			      console.error( "Cannot focus on '" + element + "'!!!");
-			  }
-		      });
-		  });
-      }
+        function toggleDrawer( drawer, forceOpen = false ) {
+            require( [ "dojo/dom", "dojo/dom-style", "dojo/domReady!" ],
+                function( dom, domStyle ) {
+                    console.log( "toggleDrawer: starting..." );
+                    const panel = dom.byId( drawer );
+                    if ( panel ) {
+                        const left = domStyle.get( panel, "left" );
+                        if ( forceOpen ) {
+                            domStyle.set( panel, "left", "0px" );
+                        } else {
+                            domStyle.set( panel, "left", ( left < -390 ? "0px" : "-400px" ) );
+                            console.log( "toggleDrawer: Setting left to " + ( left < -390 ? "0px" : "-400px" ) );
+                        }
+                        focusOn( "searchBox" );
+                        searchKeyboardHandler( null );
+                    }
+                    console.log( "toggleDrawer: finished." );
 
-      function toggleDrawer( drawer, forceOpen = false ) {
-	  require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"],
-		  function(dom, domStyle) {
-      console.log( "toggleDrawer: starting..." );
-		      const panel = dom.byId( drawer );
-		      if( panel ) {
-			  const left = domStyle.get( panel, "left" );
-			  if( forceOpen ) {
-			      domStyle.set( panel, "left", "0px" );
-			  } else {
-			      domStyle.set( panel, "left", (left < -390 ? "0px" : "-400px" ) );
-			      console.log( "toggleDrawer: Setting left to " + (left < -390 ? "0px" : "-400px" ) );
-			  }
-                          focusOn( "searchBox" );
-			  searchKeyboardHandler( null );
-		      }
-      console.log( "toggleDrawer: finished." );
+                } );
+        };
 
-		  });
-      };
+        function selectGearMenu( menu ) {
+            if ( menu ) {
+                require( [ "dijit/registry", "dojo/domReady!" ],
+                    function( registry ) {
+                        const gearsButtonName = "gearsButton";
+                        const gearsButton = registry.byId( gearsButtonName );
+                        if ( gearsButton ) {
+                            gearsButton.openDropDown( );
+                            menu.focusFirstChild( );
+                        } else {
+                            console.error( "selectGearMenu: can't locate element with id = '" + gearsButtonName + "'!" );
+                        }
+                    } );
+            } else {
+                console.error( "selectGearMenu: expected menu argument" );
+            }
+        }
 
-      function selectGearMenu( menu ) {
-	  if( menu ) {
-	      require(["dijit/registry", "dojo/domReady!"],
-		      function( registry ) {
-			  const gearsButtonName = "gearsButton";
-			  const gearsButton = registry.byId( gearsButtonName );
-			  if( gearsButton ) {
-			      gearsButton.openDropDown();
-			      menu.focusFirstChild();
-			  } else {
-			      console.error( "selectGearMenu: can't locate element with id = '" + gearsButtonName + "'!" );
-			  }
-		      });
-          } else {
-	      console.error( "selectGearMenu: expected menu argument" );
-          }
-      }
+        require( [ "dojo/on", "dojo/dom" ], function( on, dom ) {
+            on( document, "keydown", function( event ) {
+                if ( event.altKey && event.key === "s" ) {
+                    toggleDrawer( 'recipeDrawer' );
+                }
+                if ( event.altKey && event.key === "g" ) {
+                    selectGearMenu( gearsDropDownMenu );
+                    event.preventDefault( ); // Prevent the browser default behavior
+                }
+                if ( event.ctrlKey && event.keyCode === 80 ) {
+                    console.log( "caught Ctrl-P!" );
+                    event.preventDefault( );
+                    printRecipe( );
+                }
+            } );
+        } );
 
-      require(["dojo/on","dojo/dom"], function( on,dom ) {
-	  on( document, "keydown", function(event) {
-	      if( event.altKey && event.key === "s" ) {
-		  toggleDrawer( 'recipeDrawer' );
-	      }
-	      if( event.altKey && event.key === "g" ) {
-		  selectGearMenu( gearsDropDownMenu );
-                  event.preventDefault(); // Prevent the browser default behavior
-	      }
-	  });
-      });
-
-      addRecipes( recipeNameMap, "recipe_titles" );
-
+        addRecipes( recipeNameMap, "recipe_titles" );
     </script>
-  </head>
+</head>
 
-  <body class="claro">
+<body class="claro">
     <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
 
-      <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
-	<center><h1 id="topHeader">Recipe Browser</h1></center>
+        <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
+            <center>
+                <h1 id="topHeader">Recipe Browser</h1>
+            </center>
 
-	<div class="toggle-button">
-	  <button data-dojo-type="dijit/form/Button" type="button">Search
-	    <script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-	      toggleDrawer( 'recipeDrawer' );
+            <div class="toggle-button">
+                <button data-dojo-type="dijit/form/Button" type="button">Search
+                    <script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+                        toggleDrawer( 'recipeDrawer' );
 	    </script>
-	  </button>
-	</div>
-      </div>
+                </button>
+            </div>
+        </div>
 
-      <div id="centerCol" class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
-	<center><h2>Method</h2></center>
-	<div id="recipe_method"></div>
+        <div id="centerCol" class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+            <center>
+                <h2>Method</h2>
+            </center>
+            <div id="recipe_method"></div>
 
-	<div id="recipeDrawer" class="hidden">
-	  <center><h2>Recipes</h2></center>
-	  <div class="tooltip">
-	    <input id="searchBox" class="search-box-control">
-	    <div class="tooltiptext">⇧ Narrow recipes to certain titles, ingredients and tags.</div>
-	  </div>
-	  <div id="recipe_titles"></div>
-	</div>
-      </div>
+            <div id="recipeDrawer" class="hidden">
+                <center>
+                    <h2>Recipes</h2>
+                </center>
+                <div class="tooltip">
+                    <input id="searchBox" class="search-box-control">
+                    <div class="tooltiptext">⇧ Narrow recipes to certain titles, ingredients and tags.</div>
+                </div>
+                <div id="recipe_titles"></div>
+            </div>
+        </div>
 
-      <div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: false">
-	<center><h2>Ingredients <span id="scaling_factor"></span></center></h2>
-	<div id="recipe_ingredients"></div>
-      </div>
+        <div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: false">
+            <center>
+                <h2>Ingredients <span id="scaling_factor"></span>
+            </center>
+            </h2>
+            <div id="recipe_ingredients"></div>
+        </div>
     </div>
 
     <span id="recipeClock" class="recipe-clock"></span>
 
     <script>
-      var clockElement = document.getElementById("recipeClock");
+        var clockElement = document.getElementById( "recipeClock" );
 
-      function updateClock(clock) {
-          const date = new Date();
-	  const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'};
-	  const formattedDate = date.toLocaleDateString('en-US', dateOptions );
+        function updateClock( clock ) {
+            const date = new Date( );
+            const dateOptions = {
+                weekday: 'short',
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+            };
+            const formattedDate = date.toLocaleDateString( 'en-US', dateOptions );
 
-	  const timeOptions = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
-	  const formattedTime = date.toLocaleTimeString('en-US', timeOptions );
+            const timeOptions = {
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                hour12: true
+            };
+            const formattedTime = date.toLocaleTimeString( 'en-US', timeOptions );
 
-	  clock.innerHTML = "<center>" + formattedDate + "<br>" + formattedTime + "</center>";
-      }
+            clock.innerHTML = "<center>" + formattedDate + "<br>" + formattedTime + "</center>";
+        }
 
-      setInterval(function() {
-	  updateClock(clockElement);
-      }, 1000);
-      </script>
+        setInterval( function( ) {
+            updateClock( clockElement );
+        }, 1000 );
+    </script>
 
     <div id="gearsMenu" class="gears-control"></div>
 
@@ -551,96 +586,100 @@
     <script src="js/circular-timer-using-dojo.js"></script>
     <script src="js/recipe-scaling.js"></script>
     <script>
-      let largeFontSize = '42';
-      let mediumFontSize = '34';
-      let smallFontSize = '14';
+        let largeFontSize = '42';
+        let mediumFontSize = '34';
+        let smallFontSize = '14';
 
-      var currentFontSize = mediumFontSize;
+        var currentFontSize = mediumFontSize;
 
-      function changeSearchTerm(newSearchTerm) {
-	  const searchBox = document.getElementById( "searchBox" );
-	  if( searchBox ) {
-	      searchBox.value = newSearchTerm;
-	  } else {
-	      console.error( "Cannot locate search box!" );
-	  }
-      }
+        function changeSearchTerm( newSearchTerm ) {
+            const searchBox = document.getElementById( "searchBox" );
+            if ( searchBox ) {
+                searchBox.value = newSearchTerm;
+            } else {
+                console.error( "Cannot locate search box!" );
+            }
+        }
 
-      function getSearchTerm(newSearchTerm) {
-	  const searchBox = document.getElementById( "searchBox" );
-	  if( searchBox ) {
-	      return( searchBox.value );
-	  } else {
-	      console.error( "Cannot locate search box!" );
-	  }
-      }
+        function getSearchTerm( newSearchTerm ) {
+            const searchBox = document.getElementById( "searchBox" );
+            if ( searchBox ) {
+                return ( searchBox.value );
+            } else {
+                console.error( "Cannot locate search box!" );
+            }
+        }
 
-      function changeFontSize(selector, newFontSize) {
-	  if( currentFontSize != newFontSize ) {
-	      let styleElement = document.getElementById('dynamic-styles');
+        function changeFontSize( selector, newFontSize ) {
+            if ( currentFontSize != newFontSize ) {
+                let styleElement = document.getElementById( 'dynamic-styles' );
 
-	      if (!styleElement) {
-		  const style = document.createElement('style');
-		  style.id = 'dynamic-styles';
-		  styleElement = document.head.appendChild(style);
-	      }
+                if ( !styleElement ) {
+                    const style = document.createElement( 'style' );
+                    style.id = 'dynamic-styles';
+                    styleElement = document.head.appendChild( style );
+                }
 
-	      const styleSheet = styleElement.sheet;
+                const styleSheet = styleElement.sheet;
 
-	      const ruleIndex = Array.from(styleSheet.cssRules).findIndex(rule => rule.selectorText === selector);
+                const ruleIndex = Array.from( styleSheet.cssRules ).findIndex( rule => rule.selectorText === selector );
 
-	      if (ruleIndex !== -1) {
-		  styleSheet.deleteRule(ruleIndex);
-	      }
+                if ( ruleIndex !== -1 ) {
+                    styleSheet.deleteRule( ruleIndex );
+                }
 
-	      const newRule = `${selector} {
+                const newRule = `${selector} {
                                         font-size: ${newFontSize}px;
                            }`;
 
-	      styleSheet.insertRule(newRule, styleSheet.cssRules.length);
-	      currentFontSize = newFontSize;
-	  }
-      }
+                styleSheet.insertRule( newRule, styleSheet.cssRules.length );
+                currentFontSize = newFontSize;
+            }
+        }
 
-      function fontSizeDescriptionToValue( fontSizeDescription ) {
-	  switch( fontSizeDescription ) {
-	  case "small":
-	      return( smallFontSize );
-	      break;
-	  case "medium":
-	      return( mediumFontSize );
-	      break;
-	  case "large":
-	      return( largeFontSize );
-	      break;
-	  default:
-	      console.error( "Error: Unknown font size [%s]; href=[%s] (expected one of { 'small', 'medium', 'large' })",
-			     fontSizeDescription, window.location.href );
-	  }
-      }
+        function fontSizeDescriptionToValue( fontSizeDescription ) {
+            switch ( fontSizeDescription ) {
+                case "small":
+                    return ( smallFontSize );
+                    break;
+                case "medium":
+                    return ( mediumFontSize );
+                    break;
+                case "large":
+                    return ( largeFontSize );
+                    break;
+                default:
+                    console.error( "Error: Unknown font size [%s]; href=[%s] (expected one of { 'small', 'medium', 'large' })",
+                        fontSizeDescription, window.location.href );
+            }
+        }
 
-      function fontSizeValueToDescription( fontSizeValue ) {
-	  switch( fontSizeValue ) {
-	  case smallFontSize:
-	      return( "small" );
-	      break;
-	  case mediumFontSize:
-	      return( "medium" );
-	      break;
-	  case largeFontSize:
-	      return( "large" );
-	      break;
-	  default:
-	      console.error( "Error: Unknown font size [%d]; href=[%s] (expected one of { %d, %d or %d })",
-			     fontSizeValue, window.location.href, smallFontSize, mediumFontSize, largeFontSize );
-	  }
-      }
+        function fontSizeValueToDescription( fontSizeValue ) {
+            switch ( fontSizeValue ) {
+                case smallFontSize:
+                    return ( "small" );
+                    break;
+                case mediumFontSize:
+                    return ( "medium" );
+                    break;
+                case largeFontSize:
+                    return ( "large" );
+                    break;
+                default:
+                    console.error( "Error: Unknown font size [%d]; href=[%s] (expected one of { %d, %d or %d })",
+                        fontSizeValue, window.location.href, smallFontSize, mediumFontSize, largeFontSize );
+            }
+        }
 
-      const recipeStats =
-	    recipeNameArray.map( function(cat) { return [ cat[0], cat[1].length ] } )
-	    .sort()
-	    .map( function(entry) { return( "<li class='recipe-statistic'>" + entry[0] + ": " + entry[1] + "</li>" ) } ).join("");
-      const aboutText = `<center><h1>Recipe Browser Component Versions</h1></center>
+        const recipeStats =
+            recipeNameArray.map( function( cat ) {
+                return [ cat[ 0 ], cat[ 1 ].length ]
+            } )
+            .sort( )
+            .map( function( entry ) {
+                return ( "<li class='recipe-statistic'>" + entry[ 0 ] + ": " + entry[ 1 ] + "</li>" )
+            } ).join( "" );
+        const aboutText = `<center><h1>Recipe Browser Component Versions</h1></center>
     <table class="pretty-table">
       <tr><td>Dojo software</td> <td>${dojo.version}</td></tr>
       <tr><td>Recipe Browser software</td> <td>${recipeBrowserVersion}</td></tr>
@@ -655,7 +694,7 @@
     </ul>
     <p>
     `;
-      const helpText = `<center><h1>Recipe Browser Help</h1></center>
+        const helpText = `<center><h1>Recipe Browser Help</h1></center>
     <ul>
       <li>
 	<b>Search Button</b><br>
@@ -699,239 +738,240 @@
 </ul>
 `;
 
-      var gearsDropDownMenu;
+        var gearsDropDownMenu;
 
-      function redirectHere() {
-	  // Redirect the page to the current URL using now-current values.
-	  const originPathname = window.location.origin + window.location.pathname;
-	  console.log("redirectHere: currentScalingPercentage=" + currentScalingPercentage );
-	  const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm() );
-	  window.open( url, "_self" );
-      }
+        function redirectHere( ) {
+            // Redirect the page to the current URL using now-current values.
+            const originPathname = window.location.origin + window.location.pathname;
+            console.log( "redirectHere: currentScalingPercentage=" + currentScalingPercentage );
+            const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm( ) );
+            window.open( url, "_self" );
+        }
 
-      require(["dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog","dijit/form/Button","dojo/dom","dojo/on","dijit/PopupMenuItem","dijit/ColorPalette","dojo/domReady!"],
-	      function(DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, dom, on, PopupMenuItem, ColorPalette, domReady) {
+        require( [ "dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog", "dijit/form/Button", "dojo/dom", "dojo/on", "dijit/PopupMenuItem", "dijit/ColorPalette", "dojo/domReady!" ],
+            function( DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, dom, on, PopupMenuItem, ColorPalette, domReady ) {
 
-		  gearsDropDownMenu = new DropDownMenu({
-		      style: "display: none;"
-		  });
+                gearsDropDownMenu = new DropDownMenu( {
+                    style: "display: none;"
+                } );
 
-		  var button = new DropDownButton({
-		      label: "",
-		      id: "gearsButton",
-		      iconClass: "gearsButtonIcon",
-		      dropDown: gearsDropDownMenu
-		  }, "gearsButton");
+                var button = new DropDownButton( {
+                    label: "",
+                    id: "gearsButton",
+                    iconClass: "gearsButtonIcon",
+                    dropDown: gearsDropDownMenu
+                }, "gearsButton" );
 
-		  // Create menu items
+                // Create menu items
 
-		  var largeFontItem = new MenuItem({
-		      label: "Large font",
-		      iconClass: "large-A",
-		      onClick: function() {
-			  currentFontSize = largeFontSize;
-			  redirectHere();
-		      }
-		  });
-		      <!-- largeFontItem.set("accelKey", "Ctrl+Alt+L" ); -->
+                var largeFontItem = new MenuItem( {
+                    label: "Large font",
+                    iconClass: "large-A",
+                    onClick: function( ) {
+                        currentFontSize = largeFontSize;
+                        redirectHere( );
+                    }
+                } );
+                // largeFontItem.set( "accelKey", "Ctrl+Alt+L" );
 
-		  var mediumFontItem = new MenuItem({
-		      label: "Medium font",
-		      iconClass: "medium-A",
-		      onClick: function() {
-			  currentFontSize = mediumFontSize;
-			  redirectHere();
-		      }
-		  });
+                var mediumFontItem = new MenuItem( {
+                    label: "Medium font",
+                    iconClass: "medium-A",
+                    onClick: function( ) {
+                        currentFontSize = mediumFontSize;
+                        redirectHere( );
+                    }
+                } );
 
-		  var smallFontItem = new MenuItem({
-		      label: "Small font",
-		      iconClass: "small-A",
-		      onClick: function() {
-			  currentFontSize = smallFontSize;
-			  redirectHere();
-		      }
-		  });
+                var smallFontItem = new MenuItem( {
+                    label: "Small font",
+                    iconClass: "small-A",
+                    onClick: function( ) {
+                        currentFontSize = smallFontSize;
+                        redirectHere( );
+                    }
+                } );
 
-		  var colorPalette = new ColorPalette({
-		      onChange: function(color) {
-			  changeColor( color );
-		      }
-		  });
+                var colorPalette = new ColorPalette( {
+                    onChange: function( color ) {
+                        changeColor( color );
+                    }
+                } );
 
-		  var changeColorItem = new PopupMenuItem({
-		      label: "Select Color",
-		      iconClass: "color-picker-icon",
-		      popup: colorPalette
-		  });
+                var changeColorItem = new PopupMenuItem( {
+                    label: "Select Color",
+                    iconClass: "color-picker-icon",
+                    popup: colorPalette
+                } );
 
-		  scaleRecipeMenuItem = new MenuItem({
-		      label: "Scale recipe",
-		      iconClass: "scaleRecipeIcon",
-		      onClick: function() {
-			  if( promptForScalingPercentage() )
-			      redirectHere()
-		      },
-		      disabled: true,
-		  });
+                scaleRecipeMenuItem = new MenuItem( {
+                    label: "Scale recipe",
+                    iconClass: "scaleRecipeIcon",
+                    onClick: function( ) {
+                        if ( promptForScalingPercentage( ) )
+                            redirectHere( )
+                    },
+                    disabled: true,
+                } );
 
-		  printMenuItem = new MenuItem({
-		      label: "Print",
-		      iconClass: "printerIcon",
-		      onClick: function() {
-			  printRecipe( );
-		      },
-		      disabled: true,
-		  });
+                printMenuItem = new MenuItem( {
+                    label: "Print",
+                    iconClass: "printerIcon",
+                    onClick: function( ) {
+                        printRecipe( );
+                    },
+                    disabled: true,
+                } );
 
-		  emailLinkMenuItem = new MenuItem({
-		      label: "Email Link",
-		      iconClass: "emailLinkIcon",
-		      onClick: function() {
-			  emailLinkToRecipe();
-		      },
-		      disabled: true,
-		  });
+                emailLinkMenuItem = new MenuItem( {
+                    label: "Email Link",
+                    iconClass: "emailLinkIcon",
+                    onClick: function( ) {
+                        emailLinkToRecipe( );
+                    },
+                    disabled: true,
+                } );
 
-		  commentMenuItem = new MenuItem({
-		      label: "Comment on Recipe",
-		      iconClass: "fa-regular fa-comment",
-		      onClick: function() {
-			  commentOnRecipe();
-		      },
-		      disabled: true,
-		  });
+                commentMenuItem = new MenuItem( {
+                    label: "Comment on Recipe",
+                    iconClass: "fa-regular fa-comment",
+                    onClick: function( ) {
+                        commentOnRecipe( );
+                    },
+                    disabled: true,
+                } );
 
-		  // Create a Dialog widget
-		  const aboutPopup = new Dialog({
-		      content: aboutText,
-		  });
+                // Create a Dialog widget
+                const aboutPopup = new Dialog( {
+                    content: aboutText,
+                } );
 
-		  const aboutDismissButton = new Button({
-		      label: "Dismiss",
-		      showLabel: true,
-		      onClick: function () {
-			  aboutPopup.hide();
-		      }
-		  });
+                const aboutDismissButton = new Button( {
+                    label: "Dismiss",
+                    showLabel: true,
+                    onClick: function( ) {
+                        aboutPopup.hide( );
+                    }
+                } );
 
-		  // Add the dismiss button to the pop-up
-		  aboutPopup.addChild( aboutDismissButton );
+                // Add the dismiss button to the pop-up
+                aboutPopup.addChild( aboutDismissButton );
 
-		  aboutMenuItem = new MenuItem({
-		      label: "About",
-		      onClick: function() {
-			  aboutPopup.show();
-		      },
-		      iconClass: "fa-solid fa-circle-info",
-		      disabled: false,
-		  });
+                aboutMenuItem = new MenuItem( {
+                    label: "About",
+                    onClick: function( ) {
+                        aboutPopup.show( );
+                    },
+                    iconClass: "fa-solid fa-circle-info",
+                    disabled: false,
+                } );
 
-		  // Create a Dialog widget
-		  const helpPopup = new Dialog({
-		      content: helpText,
-		  });
+                // Create a Dialog widget
+                const helpPopup = new Dialog( {
+                    content: helpText,
+                } );
 
-		  const helpDismissButton = new Button({
-		      label: "Dismiss",
-		      showLabel: true,
-		      onClick: function () {
-			  helpPopup.hide();
-		      }
-		  });
+                const helpDismissButton = new Button( {
+                    label: "Dismiss",
+                    showLabel: true,
+                    onClick: function( ) {
+                        helpPopup.hide( );
+                    }
+                } );
 
-		  // Add the dismiss button to the pop-up
-		  helpPopup.addChild( helpDismissButton );
+                // Add the dismiss button to the pop-up
+                helpPopup.addChild( helpDismissButton );
 
-		  helpMenuItem = new MenuItem({
-		      label: "Help",
-		      onClick: function() {
-			  helpPopup.show();
-		      },
-		      iconClass: "fa-solid fa-life-ring",
-		      disabled: false,
-		  });
+                helpMenuItem = new MenuItem( {
+                    label: "Help",
+                    onClick: function( ) {
+                        helpPopup.show( );
+                    },
+                    iconClass: "fa-solid fa-life-ring",
+                    disabled: false,
+                } );
 
-		  button.dropDown.addChild( largeFontItem );
-		  button.dropDown.addChild( mediumFontItem );
-		  button.dropDown.addChild( smallFontItem );
-		  button.dropDown.addChild( changeColorItem );
-		  button.dropDown.addChild( scaleRecipeMenuItem );
-		  button.dropDown.addChild( new MenuSeparator() );
-		  button.dropDown.addChild( printMenuItem );
-		  button.dropDown.addChild( emailLinkMenuItem );
-		  button.dropDown.addChild( commentMenuItem );
-		  button.dropDown.addChild( new MenuSeparator() );
-		  button.dropDown.addChild( aboutMenuItem );
-		  button.dropDown.addChild( helpMenuItem );
+                button.dropDown.addChild( largeFontItem );
+                button.dropDown.addChild( mediumFontItem );
+                button.dropDown.addChild( smallFontItem );
+                button.dropDown.addChild( changeColorItem );
+                button.dropDown.addChild( scaleRecipeMenuItem );
+                button.dropDown.addChild( new MenuSeparator( ) );
+                button.dropDown.addChild( printMenuItem );
+                button.dropDown.addChild( emailLinkMenuItem );
+                button.dropDown.addChild( commentMenuItem );
+                button.dropDown.addChild( new MenuSeparator( ) );
+                button.dropDown.addChild( aboutMenuItem );
+                button.dropDown.addChild( helpMenuItem );
 
-		  // Attach button to DOM
-		  button.placeAt( "gearsMenu" );
+                // Attach button to DOM
+                button.placeAt( "gearsMenu" );
 
-		  const recipesToBeViewed = [];
-		  const recipesToBePrinted = [];
-		  let targetFontSize = "medium";
-		  let targetScalingPercentage = "100";
-		  let targetSearchTerm = "";
-		  let nextNvp;
+                const recipesToBeViewed = [ ];
+                const recipesToBePrinted = [ ];
+                let targetFontSize = "medium";
+                let targetScalingPercentage = "100";
+                let targetSearchTerm = "";
+                let nextNvp;
 
-		  while( nextNvp = nextArgNVP() ) {
-		      const action = nextNvp[ 0 ].toLowerCase();
+                while ( nextNvp = nextArgNVP( ) ) {
+                    const action = nextNvp[ 0 ].toLowerCase( );
 
-		      switch( action ) {
-		      case "view":
-			  recipesToBeViewed.push( nextNvp[ 1 ] );
-			  break;
-		      case "fontsize":
-			  targetFontSize = nextNvp[ 1 ];
-			  break;
-		      case "scalingpercentage":
-			  targetScalingPercentage = nextNvp[ 1 ];
-			  break;
-		      case "searchterm":
-			  targetSearchTerm = decodeURIComponent( nextNvp[ 1 ] );
-			  break;
-		      case "print":
-			  recipesToBePrinted.push( nextNvp[ 1 ] );
-			  break;
-		      default:
-			  console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'scalingpercentage', 'searchterm', 'print' }", action, window.location.href );
-		      }
-		  }
+                    switch ( action ) {
+                        case "view":
+                            recipesToBeViewed.push( nextNvp[ 1 ] );
+                            break;
+                        case "fontsize":
+                            targetFontSize = nextNvp[ 1 ];
+                            break;
+                        case "scalingpercentage":
+                            targetScalingPercentage = nextNvp[ 1 ];
+                            break;
+                        case "searchterm":
+                            targetSearchTerm = decodeURIComponent( nextNvp[ 1 ] );
+                            break;
+                        case "print":
+                            recipesToBePrinted.push( nextNvp[ 1 ] );
+                            break;
+                        default:
+                            console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'scalingpercentage', 'searchterm', 'print' }", action, window.location.href );
+                    }
+                }
 
-		  changeFontSize( 'body', fontSizeDescriptionToValue( targetFontSize ) );
-		  currentScalingPercentage = targetScalingPercentage;
-		  changeSearchTerm( targetSearchTerm );
+                changeFontSize( 'body', fontSizeDescriptionToValue( targetFontSize ) );
+                currentScalingPercentage = targetScalingPercentage;
+                changeSearchTerm( targetSearchTerm );
 
-		  if( recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0 ) {
-		      toggleDrawer( 'recipeDrawer', true );
-		  } else if( recipesToBeViewed.length + recipesToBePrinted.length == 1 ) {
-		      if( recipesToBeViewed.length == 1 ) {
-			  fillInRecipe( decodeURIComponent( recipesToBeViewed[ 0 ] ) );
-		      } else if( recipesToBePrinted.length == 1 ) {
-			  printRecipe( decodeURIComponent( recipesToBePrinted[ 0 ] ) );
-		      }
-		  } else {
-		      const originPathname = window.location.origin + window.location.pathname;
+                if ( recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0 ) {
+                    toggleDrawer( 'recipeDrawer', true );
+                } else if ( recipesToBeViewed.length + recipesToBePrinted.length == 1 ) {
+                    if ( recipesToBeViewed.length == 1 ) {
+                        fillInRecipe( decodeURIComponent( recipesToBeViewed[ 0 ] ) );
+                    } else if ( recipesToBePrinted.length == 1 ) {
+                        printRecipe( decodeURIComponent( recipesToBePrinted[ 0 ] ) );
+                    }
+                } else {
+                    const originPathname = window.location.origin + window.location.pathname;
 
-		      let where = "_self";
+                    let where = "_self";
 
-		      recipesToBeViewed.forEach((id) => {
-			  // Spawn a separate window for each recipe to be viewed
-			  const url = originPathname + "?view=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
-			  window.open( url, where );
-			  where = "_blank";
-		      });
-		      recipesToBePrinted.forEach((id) => {
-			  // Spawn a separate window for each recipe to be printed
-			  const url = originPathname + "?print=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
-			  window.open( url, where );
-			  where = "_blank";
-		      });
-		  }
-	      });
+                    recipesToBeViewed.forEach( ( id ) => {
+                        // Spawn a separate window for each recipe to be viewed
+                        const url = originPathname + "?view=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
+                        window.open( url, where );
+                        where = "_blank";
+                    } );
+                    recipesToBePrinted.forEach( ( id ) => {
+                        // Spawn a separate window for each recipe to be printed
+                        const url = originPathname + "?print=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
+                        window.open( url, where );
+                        where = "_blank";
+                    } );
+                }
+            } );
     </script>
-  </body>
+</body>
+
 </html>
 
 <!-- Local Variables: -->
