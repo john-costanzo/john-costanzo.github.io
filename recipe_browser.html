@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
     <script>
-        const recipeBrowserVersion = "Friday, 2025-04-18 @ 22:45:57";
+        const recipeBrowserVersion = "Saturday, 2025-04-19 @ 08:53:57";
     </script>
 
     <script>
@@ -486,17 +486,49 @@
 
         require( [ "dojo/on", "dojo/dom" ], function( on, dom ) {
             on( document, "keydown", function( event ) {
-                if ( event.altKey && event.key === "s" ) {
-                    toggleDrawer( 'recipeDrawer' );
+                if ( event.altKey ) {
+                    switch ( event.key ) {
+                        case 's':
+                            toggleDrawer( 'recipeDrawer' );
+                            break;
+                        case 'g':
+                            event.preventDefault( );
+                            selectGearMenu( gearsDropDownMenu );
+                            break;
+                    }
                 }
-                if ( event.altKey && event.key === "g" ) {
-                    selectGearMenu( gearsDropDownMenu );
-                    event.preventDefault( ); // Prevent the browser default behavior
-                }
-                if ( event.ctrlKey && event.keyCode === 80 ) {
-                    console.log( "caught Ctrl-P!" );
-                    event.preventDefault( );
-                    printRecipe( );
+
+                if ( event.ctrlKey ) {
+                    switch ( event.key ) {
+                        case 'p':
+                            event.preventDefault( );
+                            printRecipe( );
+                            break;
+                        case 's':
+                            event.preventDefault( );
+                            if ( promptForScalingPercentage( ) )
+                                redirectHere( )
+                            break;
+                        case 'e':
+                            event.preventDefault( );
+                            emailLinkToRecipe( );
+                            break;
+                        case '1':
+                            event.preventDefault( );
+                            currentFontSize = smallFontSize;
+                            redirectHere( );
+                            break;
+                        case '2':
+                            event.preventDefault( );
+                            currentFontSize = mediumFontSize;
+                            redirectHere( );
+                            break;
+                        case '3':
+                            event.preventDefault( );
+                            currentFontSize = largeFontSize;
+                            redirectHere( );
+                            break;
+                    }
                 }
             } );
         } );
@@ -765,7 +797,7 @@
                 // Create menu items
 
                 var largeFontItem = new MenuItem( {
-                    label: "Large font",
+                    label: "Large font (ctrl-3)",
                     iconClass: "large-A",
                     onClick: function( ) {
                         currentFontSize = largeFontSize;
@@ -775,7 +807,7 @@
                 // largeFontItem.set( "accelKey", "Ctrl+Alt+L" );
 
                 var mediumFontItem = new MenuItem( {
-                    label: "Medium font",
+                    label: "Medium font (ctrl-2)",
                     iconClass: "medium-A",
                     onClick: function( ) {
                         currentFontSize = mediumFontSize;
@@ -784,7 +816,7 @@
                 } );
 
                 var smallFontItem = new MenuItem( {
-                    label: "Small font",
+                    label: "Small font (ctrl-1)",
                     iconClass: "small-A",
                     onClick: function( ) {
                         currentFontSize = smallFontSize;
@@ -805,7 +837,7 @@
                 } );
 
                 scaleRecipeMenuItem = new MenuItem( {
-                    label: "Scale recipe",
+                    label: "Scale recipe (ctrl-s)",
                     iconClass: "scaleRecipeIcon",
                     onClick: function( ) {
                         if ( promptForScalingPercentage( ) )
@@ -815,7 +847,7 @@
                 } );
 
                 printMenuItem = new MenuItem( {
-                    label: "Print",
+                    label: "Print (ctrl-p)",
                     iconClass: "printerIcon",
                     onClick: function( ) {
                         printRecipe( );
@@ -824,7 +856,7 @@
                 } );
 
                 emailLinkMenuItem = new MenuItem( {
-                    label: "Email Link",
+                    label: "Email Link (ctrl-e)",
                     iconClass: "emailLinkIcon",
                     onClick: function( ) {
                         emailLinkToRecipe( );
