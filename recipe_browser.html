@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
     <script>
-        const recipeBrowserVersion = "Saturday, 2025-04-19 @ 08:53:57";
+        const recipeBrowserVersion = "Sunday, 2025-04-20 @ 19:08:06";
     </script>
 
     <script>
@@ -797,17 +797,16 @@
                 // Create menu items
 
                 var largeFontItem = new MenuItem( {
-                    label: "Large font (ctrl-3)",
+                    label: '<span class="text-align-left">Large font</span><span class="text-align-right">Ctrl+3</span>',
                     iconClass: "large-A",
                     onClick: function( ) {
                         currentFontSize = largeFontSize;
                         redirectHere( );
                     }
                 } );
-                // largeFontItem.set( "accelKey", "Ctrl+Alt+L" );
 
                 var mediumFontItem = new MenuItem( {
-                    label: "Medium font (ctrl-2)",
+                    label: '<span class="text-align-left">Medium font</span><span class="text-align-right">Ctrl+2</span>',
                     iconClass: "medium-A",
                     onClick: function( ) {
                         currentFontSize = mediumFontSize;
@@ -816,7 +815,7 @@
                 } );
 
                 var smallFontItem = new MenuItem( {
-                    label: "Small font (ctrl-1)",
+                    label: '<span class="text-align-left">Small font</span><span class="text-align-right">Ctrl+1</span>',
                     iconClass: "small-A",
                     onClick: function( ) {
                         currentFontSize = smallFontSize;
@@ -837,7 +836,7 @@
                 } );
 
                 scaleRecipeMenuItem = new MenuItem( {
-                    label: "Scale recipe (ctrl-s)",
+                    label: '<span class="text-align-left">Scale recipe</span><span class="text-align-right">Ctrl+s</span>',
                     iconClass: "scaleRecipeIcon",
                     onClick: function( ) {
                         if ( promptForScalingPercentage( ) )
@@ -847,7 +846,7 @@
                 } );
 
                 printMenuItem = new MenuItem( {
-                    label: "Print (ctrl-p)",
+                    label: '<span class="text-align-left">Print recipe</span><span class="text-align-right">Ctrl+p</span>',
                     iconClass: "printerIcon",
                     onClick: function( ) {
                         printRecipe( );
@@ -856,7 +855,7 @@
                 } );
 
                 emailLinkMenuItem = new MenuItem( {
-                    label: "Email Link (ctrl-e)",
+                    label: '<span class="text-align-left">Email link</span><span class="text-align-right">Ctrl+e</span>',
                     iconClass: "emailLinkIcon",
                     onClick: function( ) {
                         emailLinkToRecipe( );
