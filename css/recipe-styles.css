@@ -245,3 +245,14 @@ amount {
 .recipe-statistic {
     font-size: 18px !important;
 }
+.dijitMenuItemLabel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
