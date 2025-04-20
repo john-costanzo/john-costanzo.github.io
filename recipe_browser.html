@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
     <script>
-        const recipeBrowserVersion = "Sunday, 2025-04-20 @ 19:08:06";
+        const recipeBrowserVersion = "Sunday, 2025-04-20 @ 19:22:48";
     </script>
 
     <script>
@@ -715,12 +715,13 @@
     <table class="pretty-table">
       <tr><td>Dojo software</td> <td>${dojo.version}</td></tr>
       <tr><td>Recipe Browser software</td> <td>${recipeBrowserVersion}</td></tr>
-      <tr><td>Search Recipes software</td> <td>${searchRecipesVersion}</td></tr>
-      <tr><td>Circular Timer software</td> <td>${circularTimerVersion}</td></tr>
-      <tr><td>Recipe scaling</td> <td>${recipeScalingVersion}</td></tr>
+      <tr><td>Search recipes software</td> <td>${searchRecipesVersion}</td></tr>
+      <tr><td>Circular timer software</td> <td>${circularTimerVersion}</td></tr>
+      <tr><td>Recipe scaling software</td> <td>${recipeScalingVersion}</td></tr>
       <tr><td>Recipe Browser data</td> <td>${recipeDataVersion}</td></tr>
     </table>
-    <h2>Recipe Statistics</h2>
+
+    <h2>Recipe Statistics:</h2>
     <ul>
       ${recipeStats}
     </ul>
@@ -756,18 +757,16 @@
 	    large (<img src=\"images/letter-A.jpg\" class=\"large-A\">),
 	    medium (<img src=\"images/letter-A.jpg\" class=\"medium-A\">) or
             small (<img src=\"images/letter-A.jpg\" class=\"small-A\">)  font.
-	    </li>
-<li class=\"verticallyAligned\"><img class=\"printerIcon\">&nbsp;Print: format the recipe for printing.</li>
-<li class=\"verticallyAligned\"><img class=\"emailLinkIcon\">&nbsp;Email Link: Share a link to a recipe via email.</li>
-<li class=\"verticallyAligned\"><img class=\"scaleRecipeIcon\">&nbsp;Scale the recipe. Note that only recognized amounts will be scaled; they are shown using a distinguished font, e.g.&nbsp;<amount original_amount=\"½  pounds\" fraction=\"0.500000000000\" units=\"pounds\">½  pounds</amount></li>
-<li class=\"verticallyAligned\"><i class=\"fa-regular fa-comment\"></i>&nbsp;Comment on Recipe: Submit comments via email.</li>
-<li class=\"verticallyAligned\"><i class=\"fa-solid fa-circle-info\"></i>&nbsp;About: Describes the versions of the software and data for the Recipe Browser.
-<li class=\"verticallyAligned\"><i class=\"fa-solid fa-life-ring\"></i>&nbsp;Help: This help text.
-
-</li>
-</ul>
-</li>
-</ul>
+         </li>
+	 <li><img class=\"printerIcon\">&nbsp;Print recipe: format the recipe for printing.</li>
+	 <li><img class=\"emailLinkIcon\">&nbsp;Email link: Share a link to a recipe via email.</li>
+	 <li><img class=\"scaleRecipeIcon\">&nbsp;Scale recipe: Note that only recognized amounts will be scaled; they are shown using a distinguished font, e.g.&nbsp;<amount original_amount=\"½  pounds\" fraction=\"0.500000000000\" units=\"pounds\">½  pounds</amount></li>
+	 <li><i class=\"fa-regular fa-comment\"></i>&nbsp;Comment on recipe: Submit comments via email.</li>
+	 <li><i class=\"fa-solid fa-circle-info\"></i>&nbsp;About: Describes the versions of the software and data for the Recipe Browser.</li>
+	 <li><i class=\"fa-solid fa-life-ring\"></i>&nbsp;Help: This help text.</li>
+	</ul>
+      </li>
+    </ul>
 `;
 
         var gearsDropDownMenu;
@@ -864,7 +863,7 @@
                 } );
 
                 commentMenuItem = new MenuItem( {
-                    label: "Comment on Recipe",
+                    label: "Comment on recipe",
                     iconClass: "fa-regular fa-comment",
                     onClick: function( ) {
                         commentOnRecipe( );
