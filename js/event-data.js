@@ -97,6 +97,54 @@ const events = [
     },
     {
         venue: "Boldrock",
+        date: "2025-06-06",
+        time: "6:00 PM - 8:00 PM",
+        name: "Todd Cecil & The Dirt Yard Choir"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-06-07",
+        time: "6:00 PM - 8:00 PM",
+        name: "Tracy Davis & The TMI Band"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-06-13",
+        time: "6:00 PM - 8:00 PM",
+        name: "The Right Fit"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-06-14",
+        time: "5:00 PM - 9:00 PM",
+        name: "Rock For Responders"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-06-19",
+        time: "5:00 PM - 7:00 PM",
+        name: "Macarons & Flight Pairing"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-06-21",
+        time: "11:00 AM - 9:00 PM",
+        name: "BOLD Birthday Bash"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-06-27",
+        time: "6:00 PM - 8:00 PM",
+        name: "Fine Line Band"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-06-28",
+        time: "6:00 PM - 8:00 PM",
+        name: "Awake In The Dream"
+    },
+    {
+        venue: "Boldrock",
         date: "2025-05-11",
         time: "11:00 AM - 7:00 PM",
         name: "Mother's Day Plant & Sip"
@@ -538,5 +586,11 @@ const events = [
         date: "Error retrieving data",
         time: "Error retrieving data",
         name: "Failed to fetch events: 403 Client Error: Forbidden for url: https://trailsidebrews.com/calendar"
+    },
+    {
+        venue: "Mills River Brewing",
+        date: "Error retrieving data",
+        time: "Error retrieving data",
+        name: "Failed to fetch events: 403 Client Error: Forbidden for url: https://www.millsriverbrewingco.com/events"
     },
 ];
