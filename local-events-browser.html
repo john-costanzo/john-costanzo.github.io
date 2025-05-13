@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Entertainment Guide - Next Two Weeks</title>
+    <script>
+        const localEventBrowserVersion = "Monday, 2025-05-12 @ 20:08:35";
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3a6ea5;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #3a6ea5;
+            margin-bottom: 10px;
+        }
+
+        .date-container {
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3a6ea5;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .event {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #6c9ece;
+            background-color: #f5f8fa;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .event:hover {
+            background-color: #e9f0f7;
+        }
+
+        .venue {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .time {
+            color: #666;
+            font-style: italic;
+        }
+
+        .event-name {
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .info {
+            background-color: #e9f7ef;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid #27ae60;
+        }
+
+        #loading {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+        }
+
+        .error {
+            background-color: #fdedec;
+            color: #c0392b;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .filter-controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-controls label {
+            margin-right: 15px;
+        }
+
+        select,
+        input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background-color: #3a6ea5;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2c5282;
+        }
+
+        .venue-chip {
+            display: inline-block;
+            padding: 3px 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            background-color: #e9f0f7;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+
+        .venue-chip.active {
+            background-color: #3a6ea5;
+            color: white;
+        }
+
+        .no-events {
+            text-align: center;
+            padding: 30px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+    <script src="js/event-data.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Local Entertainment Guide</h1>
+        <p>Events for the next two weeks: <span id="date-range"></span></p>
+    </header>
+
+    <div class="filter-controls">
+        <h3>Filter Events</h3>
+        <div>
+            <label>
+                <input type="text" id="search-input" placeholder="Search events...">
+            </label>
+            <button id="search-button">Search</button>
+            <button id="clear-button">Clear</button>
+        </div>
+        <div id="venue-filters" style="margin-top: 15px;">
+            <h4 style="margin-bottom: 8px;">Venues:</h4>
+            <!-- Venue chips will be generated here -->
+        </div>
+    </div>
+
+    <!-- <div class="info"> -->
+    <!--     <p>This guide shows entertainment events at various local establishments for the next two weeks. Events are organized by date.</p> -->
+    <!-- </div> -->
+
+    <div id="loading">Loading events, please wait...</div>
+
+    <div id="events-container"></div>
+
+    <script>
+        // Current date and date formatting utility
+        const today = new Date( );
+
+        function formatDate( date ) {
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            };
+            return date.toLocaleDateString( 'en-US', options );
+        }
+
+        function formatTime( timeStr ) {
+            // Handle different time formats or return original if can't parse
+            if ( !timeStr ) return '';
+
+            try {
+                // Try to standardize time format
+                if ( timeStr.match( /^\d{1,2}(:\d{2})?\s*(am|pm|AM|PM)$/i ) ) {
+                    // Handle "7pm" or "7:30pm" format
+                    const timeParts = timeStr.match( /^(\d{1,2})(?::(\d{2}))?\s*(am|pm|AM|PM)$/i );
+                    let hours = parseInt( timeParts[ 1 ] );
+                    const minutes = timeParts[ 2 ] ? timeParts[ 2 ] : '00';
+                    const ampm = timeParts[ 3 ].toLowerCase( );
+
+                    if ( ampm === 'pm' && hours < 12 ) hours += 12;
+                    if ( ampm === 'am' && hours === 12 ) hours = 0;
+
+                    return `${hours.toString().padStart(2, '0')}:${minutes} ${ampm.toUpperCase()}`;
+                }
+                return timeStr;
+            } catch ( e ) {
+                return timeStr;
+            }
+        }
+
+        // Calculate date range for display
+        const twoWeeksLater = new Date( today );
+        twoWeeksLater.setDate( today.getDate( ) + 14 );
+
+        document.getElementById( 'date-range' ).textContent =
+            `${formatDate(today)} - ${formatDate(twoWeeksLater)}`;
+
+        // Function to organize events by date
+        function organizeEventsByDate( events, startDate, endDate ) {
+            const startDateObj = new Date( startDate );
+            const endDateObj = new Date( endDate );
+
+            // Filter events within date range
+            const filteredEvents = events.filter( event => {
+                const eventDate = new Date( event.date );
+                return eventDate >= startDateObj && eventDate <= endDateObj;
+            } );
+
+            // Group by date
+            const groupedEvents = {};
+
+            filteredEvents.forEach( event => {
+                if ( !groupedEvents[ event.date ] ) {
+                    groupedEvents[ event.date ] = [ ];
+                }
+                groupedEvents[ event.date ].push( event );
+            } );
+
+            // Sort dates
+            return Object.keys( groupedEvents )
+                .sort( )
+                .map( date => ( {
+                    date,
+                    events: groupedEvents[ date ]
+                } ) );
+        }
+
+        // Function to render events
+        function renderEvents( eventsByDate ) {
+            const container = document.getElementById( 'events-container' );
+            container.innerHTML = '';
+
+            if ( eventsByDate.length === 0 ) {
+                container.innerHTML = '<div class="no-events">No events found matching your criteria.</div>';
+                return;
+            }
+
+            eventsByDate.forEach( day => {
+                const dateObj = new Date( day.date );
+                const dateContainer = document.createElement( 'div' );
+                dateContainer.className = 'date-container';
+
+                const dateHeading = document.createElement( 'h2' );
+                dateHeading.textContent = formatDate( dateObj );
+                dateContainer.appendChild( dateHeading );
+
+                day.events.forEach( event => {
+                    const eventElement = document.createElement( 'div' );
+                    eventElement.className = 'event';
+
+                    const venueElement = document.createElement( 'div' );
+                    venueElement.className = 'venue';
+                    venueElement.textContent = event.venue;
+
+                    const timeElement = document.createElement( 'div' );
+                    timeElement.className = 'time';
+                    timeElement.textContent = formatTime( event.time );
+
+                    const nameElement = document.createElement( 'div' );
+                    nameElement.className = 'event-name';
+                    nameElement.textContent = event.name;
+
+                    eventElement.appendChild( venueElement );
+                    eventElement.appendChild( timeElement );
+                    eventElement.appendChild( nameElement );
+
+                    dateContainer.appendChild( eventElement );
+                } );
+
+                container.appendChild( dateContainer );
+            } );
+        }
+
+        // Filter functions
+        function applyFilters( ) {
+            const searchTerm = document.getElementById( 'search-input' ).value.toLowerCase( );
+            const activeVenues = Array.from( document.querySelectorAll( '.venue-chip.active' ) )
+                .map( chip => chip.textContent );
+
+            let filteredEvents = [ ...events ];
+
+            // Apply search term filter
+            if ( searchTerm ) {
+                filteredEvents = filteredEvents.filter( event =>
+                    event.name.toLowerCase( ).includes( searchTerm ) ||
+                    event.venue.toLowerCase( ).includes( searchTerm )
+                );
+            }
+
+            // Apply venue filter
+            if ( activeVenues.length > 0 ) {
+                filteredEvents = filteredEvents.filter( event =>
+                    activeVenues.includes( event.venue )
+                );
+            }
+
+            // Get date range (today to two weeks from now)
+            const endDate = new Date( today );
+            endDate.setDate( today.getDate( ) + 14 );
+
+            const organizedEvents = organizeEventsByDate(
+                filteredEvents,
+                today.toISOString( ).split( 'T' )[ 0 ],
+                endDate.toISOString( ).split( 'T' )[ 0 ]
+            );
+
+            renderEvents( organizedEvents );
+        }
+
+        // Create venue filter chips
+        function createVenueFilters( ) {
+            const venueFiltersContainer = document.getElementById( 'venue-filters' );
+
+            // Get unique venues
+            const venues = [ ...new Set( events.map( event => event.venue ) ) ];
+
+            venues.forEach( venue => {
+                const chip = document.createElement( 'span' );
+                chip.className = 'venue-chip';
+                chip.textContent = venue;
+                chip.addEventListener( 'click', ( ) => {
+                    chip.classList.toggle( 'active' );
+                    applyFilters( );
+                } );
+                venueFiltersContainer.appendChild( chip );
+            } );
+        }
+
+        // Initialize the page
+        window.addEventListener( 'DOMContentLoaded', ( ) => {
+            // In a real application, we would fetch data from the provided URLs here
+
+            // Setup search functionality
+            document.getElementById( 'search-button' ).addEventListener( 'click', applyFilters );
+            document.getElementById( 'search-input' ).addEventListener( 'keypress', ( e ) => {
+                if ( e.key === 'Enter' ) applyFilters( );
+            } );
+            document.getElementById( 'clear-button' ).addEventListener( 'click', ( ) => {
+                document.getElementById( 'search-input' ).value = '';
+                document.querySelectorAll( '.venue-chip.active' ).forEach( chip => {
+                    chip.classList.remove( 'active' );
+                } );
+                applyFilters( );
+            } );
+
+            // Create venue filters
+            createVenueFilters( );
+
+            // Hide loading message
+            document.getElementById( 'loading' ).style.display = 'none';
+
+            // Show initial events
+            const endDate = new Date( today );
+            endDate.setDate( today.getDate( ) + 14 );
+
+            const organizedEvents = organizeEventsByDate(
+                events,
+                today.toISOString( ).split( 'T' )[ 0 ],
+                endDate.toISOString( ).split( 'T' )[ 0 ]
+            );
+
+            renderEvents( organizedEvents );
+        } );
+
+        // In a real application, this is where we would implement the fetch functions
+        // to get data from the provided URLs.
+        // Example (commented out as it wouldn't work in this demo):
+        /*
+        async function fetchEvents() {
+            try {
+                // This would need to be implemented with proper CORS handling or backend support
+                const urls = [
+                    'https://www.saintpaulfarms.com/cidery-events',
+                    'https://boldrock.com/taproomevents',
+                    // ... other URLs ...
+                ];
+
+                const allEvents = [];
+
+                for (const url of urls) {
+                    // This is oversimplified and wouldn't work directly in browser
+                    // due to CORS restrictions
+                    const response = await fetch(url);
+                    const html = await response.text();
+
+                    // Here we would parse the HTML to extract event information
+                    // This would require custom parsers for each website's structure
+                    const parsedEvents = parseEventsFromHTML(html, url);
+                    allEvents.push(...parsedEvents);
+                }
+
+                return allEvents;
+            } catch (error) {
+                console.error('Error fetching events:', error);
+                return [];
+            }
+        }
+
+        function parseEventsFromHTML(html, sourceUrl) {
+            // This would contain custom parsing logic for each website
+            // Using tools like DOMParser or regex to extract event information
+            // ...
+        }
+        */
+    </script>
+</body>
+
+</html>
+
+<!-- Local Variables: -->
+<!-- time-stamp-line-limit: 10 -->
+<!-- time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S" -->
+<!-- time-stamp-active: t -->
+<!-- time-stamp-start: "const localEventBrowserVersion = \"" -->
+<!-- time-stamp-end: "\";" -->
+<!-- End: -->
