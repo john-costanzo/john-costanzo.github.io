@@ -402,18 +402,6 @@ const events = [
         name: "Live music by Cellophane Flowers"
     },
     {
-        venue: "Mills River Brewing",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: 403 Client Error: Forbidden for url: https://www.millsriverbrewingco.com/events"
-    },
-    {
-        venue: "Point Lookout",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: 403 Client Error: Forbidden for url: https://pointlookoutvineyards.com/whats-happening"
-    },
-    {
         venue: "Southern App",
         date: "2025-05-1",
         time: "6pm - 8pm",
@@ -580,17 +568,5 @@ const events = [
         date: "2025-05-31",
         time: "12pm - 1pm",
         name: "Saturday Yoga Class"
-    },
-    {
-        venue: "Trailside",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: 403 Client Error: Forbidden for url: https://trailsidebrews.com/calendar"
-    },
-    {
-        venue: "Mills River Brewing",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: 403 Client Error: Forbidden for url: https://www.millsriverbrewingco.com/events"
     },
 ];
