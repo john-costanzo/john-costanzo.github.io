@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Entertainment Guide - Next Two Weeks</title>
+    <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Tuesday, 2025-05-13 @ 13:45:01";
+        const localEventBrowserVersion = "Tuesday, 2025-05-13 @ 16:50:08";
     </script>
     <style>
         body {
@@ -21,21 +21,21 @@
 
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 0px;
             border-bottom: 2px solid #3a6ea5;
-            padding-bottom: 20px;
+            padding-bottom: 0px;
         }
 
         h1 {
             color: #3a6ea5;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
 
         .date-container {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             background-color: white;
             border-radius: 8px;
-            padding: 20px;
+            padding: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
@@ -43,6 +43,13 @@
             color: #3a6ea5;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
+            margin-top: -10px;
+            margin-bottom: -10px;
+        }
+
+        h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
 
         .event {
@@ -154,8 +161,8 @@
 
 <body>
     <header>
-        <h1>Local Entertainment Guide</h1>
-        <p>Events for the next two weeks: <span id="date-range"></span></p>
+        <h1>Hendo Happenings</h1>
+        <p style="display:none">Events for the next two weeks: <span id="date-range"></span></p>
     </header>
 
     <div class="filter-controls">
@@ -285,11 +292,11 @@
                     venueElement.className = 'venue';
                     venueElement.textContent = event.venue;
 
-                    const timeElement = document.createElement( 'div' );
+                    const timeElement = document.createElement( 'span' );
                     timeElement.className = 'time';
-                    timeElement.textContent = formatTime( event.time );
+                    timeElement.textContent = formatTime( event.time ) + ':    ';
 
-                    const nameElement = document.createElement( 'div' );
+                    const nameElement = document.createElement( 'span' );
                     nameElement.className = 'event-name';
                     nameElement.textContent = event.name;
 
