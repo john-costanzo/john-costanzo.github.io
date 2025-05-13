@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Entertainment Guide - Next Two Weeks</title>
     <script>
-        const localEventBrowserVersion = "Monday, 2025-05-12 @ 20:08:35";
+        const localEventBrowserVersion = "Tuesday, 2025-05-13 @ 13:45:01";
     </script>
     <style>
         body {
@@ -190,7 +190,8 @@
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',
-                day: 'numeric'
+                day: 'numeric',
+		timeZone: "UTC" // interpret everything as UTC
             };
             return date.toLocaleDateString( 'en-US', options );
         }
@@ -228,6 +229,7 @@
 
         // Function to organize events by date
         function organizeEventsByDate( events, startDate, endDate ) {
+
             const startDateObj = new Date( startDate );
             const endDateObj = new Date( endDate );
 
@@ -392,47 +394,6 @@
 
             renderEvents( organizedEvents );
         } );
-
-        // In a real application, this is where we would implement the fetch functions
-        // to get data from the provided URLs.
-        // Example (commented out as it wouldn't work in this demo):
-        /*
-        async function fetchEvents() {
-            try {
-                // This would need to be implemented with proper CORS handling or backend support
-                const urls = [
-                    'https://www.saintpaulfarms.com/cidery-events',
-                    'https://boldrock.com/taproomevents',
-                    // ... other URLs ...
-                ];
-
-                const allEvents = [];
-
-                for (const url of urls) {
-                    // This is oversimplified and wouldn't work directly in browser
-                    // due to CORS restrictions
-                    const response = await fetch(url);
-                    const html = await response.text();
-
-                    // Here we would parse the HTML to extract event information
-                    // This would require custom parsers for each website's structure
-                    const parsedEvents = parseEventsFromHTML(html, url);
-                    allEvents.push(...parsedEvents);
-                }
-
-                return allEvents;
-            } catch (error) {
-                console.error('Error fetching events:', error);
-                return [];
-            }
-        }
-
-        function parseEventsFromHTML(html, sourceUrl) {
-            // This would contain custom parsing logic for each website
-            // Using tools like DOMParser or regex to extract event information
-            // ...
-        }
-        */
     </script>
 </body>
 
