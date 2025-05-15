@@ -127,6 +127,12 @@ const events = [
     },
     {
         venue: "Boldrock",
+        date: "2025-06-20",
+        time: "6:00 PM - 8:00 PM",
+        name: "Finkelstein 3"
+    },
+    {
+        venue: "Boldrock",
         date: "2025-06-21",
         time: "11:00 AM - 9:00 PM",
         name: "BOLD Birthday Bash"
@@ -355,18 +361,6 @@ const events = [
     },
     {
         venue: "Guidon",
-        date: "Tuesday May 13th",
-        time: "06:00 PM - 08:30 PM",
-        name: "Run Club"
-    },
-    {
-        venue: "Guidon",
-        date: "Wednesday May 14th",
-        time: "07:00 PM - 09:00 PM",
-        name: "Team Trivia"
-    },
-    {
-        venue: "Guidon",
         date: "Friday May 16th",
         time: "06:00 PM - 10:00 PM",
         name: "Karaoke"
@@ -376,6 +370,18 @@ const events = [
         date: "Saturday May 17th",
         time: "02:00 PM - 05:00 PM",
         name: "Cornhole Tournament"
+    },
+    {
+        venue: "Guidon",
+        date: "Tuesday May 20th",
+        time: "06:00 PM - 08:30 PM",
+        name: "Run Club"
+    },
+    {
+        venue: "Guidon",
+        date: "Wednesday May 21st",
+        time: "07:00 PM - 09:00 PM",
+        name: "Team Trivia"
     },
     {
         venue: "Guidon",
@@ -568,5 +574,47 @@ const events = [
         date: "2025-05-31",
         time: "12pm - 1pm",
         name: "Saturday Yoga Class"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-1",
+        time: "4pm - 6pm",
+        name: "The Dan Keller Trio"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-4",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-7",
+        time: "12pm - 1pm",
+        name: "Saturday Yoga Class"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-11",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-17",
+        time: "5pm - 7pm",
+        name: "Hatch Pitch Party"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-18",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-25",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night"
     },
 ];
