@@ -1,18 +1,6 @@
 const events = [
     {
         venue: "Oklawaha",
-        date: "2025-05-15",
-        time: "7:00 pm - 9:00 pm",
-        name: "Kid Billy"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-05-16",
-        time: "8:00 pm - 11:00 pm",
-        name: "Ross Osteen"
-    },
-    {
-        venue: "Oklawaha",
         date: "2025-05-17",
         time: "8:00 pm - 11:00 pm",
         name: "Ska City"
@@ -54,10 +42,16 @@ const events = [
         name: "Trancend"
     },
     {
-        venue: "Boldrock",
-        date: "2025-05-15",
-        time: "5:00 PM - 7:00 PM",
-        name: "Crumbl Cookies & Flight Pairing"
+        venue: "Oklawaha",
+        date: "2025-05-29",
+        time: "7:00 pm - 9:00 pm",
+        name: "Julianna Jade"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-05-30",
+        time: "8:00 pm - 11:00 pm",
+        name: "Heavy Lifters"
     },
     {
         venue: "Boldrock",
@@ -115,15 +109,9 @@ const events = [
     },
     {
         venue: "Boldrock",
-        date: "2025-06-14",
-        time: "5:00 PM - 9:00 PM",
-        name: "Rock For Responders"
-    },
-    {
-        venue: "Boldrock",
-        date: "2025-06-19",
-        time: "5:00 PM - 7:00 PM",
-        name: "Macarons & Flight Pairing"
+        date: "2025-06-15",
+        time: "11:00 AM - 7:00 PM",
+        name: "Father's Day BBQ"
     },
     {
         venue: "Boldrock",
@@ -139,6 +127,12 @@ const events = [
     },
     {
         venue: "Boldrock",
+        date: "2025-06-26",
+        time: "5:00 PM - 7:00 PM",
+        name: "Macarons & Flight Pairing"
+    },
+    {
+        venue: "Boldrock",
         date: "2025-06-27",
         time: "6:00 PM - 8:00 PM",
         name: "Fine Line Band"
@@ -148,6 +142,12 @@ const events = [
         date: "2025-06-28",
         time: "6:00 PM - 8:00 PM",
         name: "Awake In The Dream"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-05-15",
+        time: "5:00 PM - 7:00 PM",
+        name: "Crumbl Cookies & Flight Pairing"
     },
     {
         venue: "Boldrock",
@@ -324,10 +324,22 @@ const events = [
         name: "Iggy Radio"
     },
     {
-        venue: "Boldrock",
-        date: "2025-01-29",
-        time: "6:00 PM - 8:00 PM",
-        name: "Trivia Night"
+        venue: "Burnt Shirt",
+        date: "2025-05-09",
+        time: "5:00 pm - 8:00 pm",
+        name: "BOB ZULLO"
+    },
+    {
+        venue: "Burnt Shirt",
+        date: "2025-05-10",
+        time: "2:00 pm - 5:00 pm",
+        name: "THE JACKTOWN RAMBLERS"
+    },
+    {
+        venue: "Burnt Shirt",
+        date: "2025-05-11",
+        time: "2:00 pm - 5:00 pm",
+        name: "RON LEE"
     },
     {
         venue: "Burnt Shirt",
@@ -340,24 +352,6 @@ const events = [
         date: "2025-05-18",
         time: "2:00 pm - 5:00 pm",
         name: "J STEPHENS"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-23",
-        time: "5:00 pm - 8:00 pm",
-        name: "ERIC CONGDON"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-24",
-        time: "2:00 pm - 5:00 pm",
-        name: "THE PAPER CROWNS"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-25",
-        time: "3:00 pm - 6:00 pm",
-        name: "THE JACKTOWN RAMBLERS"
     },
     {
         venue: "Guidon",
@@ -382,6 +376,12 @@ const events = [
         date: "Wednesday May 21st",
         time: "07:00 PM - 09:00 PM",
         name: "Team Trivia"
+    },
+    {
+        venue: "Guidon",
+        date: "Friday May 23rd",
+        time: "06:00 PM - 10:00 PM",
+        name: "Karaoke"
     },
     {
         venue: "Guidon",
