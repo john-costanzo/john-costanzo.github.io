@@ -1,24 +1,6 @@
 const events = [
     {
         venue: "Oklawaha",
-        date: "2025-05-17",
-        time: "8:00 pm - 11:00 pm",
-        name: "Ska City"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-05-18",
-        time: "3:00 pm - 5:00 pm",
-        name: "Dunks, Holloway, Bradley"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-05-18",
-        time: "7:00 pm - 9:00 pm",
-        name: "Comedy Night with Next Step Comedy"
-    },
-    {
-        venue: "Oklawaha",
         date: "2025-05-22",
         time: "7:00 pm - 9:00 pm",
         name: "Felonious Monks"
@@ -54,16 +36,22 @@ const events = [
         name: "Heavy Lifters"
     },
     {
-        venue: "Boldrock",
-        date: "2025-05-16",
-        time: "6:00 PM - 8:00 PM",
-        name: "Fine Line Band"
+        venue: "Oklawaha",
+        date: "2025-05-31",
+        time: "8:00 pm - 11:00 pm",
+        name: "Duck"
     },
     {
-        venue: "Boldrock",
-        date: "2025-05-17",
-        time: "6:00 PM - 8:00 PM",
-        name: "Finkelstein 3"
+        venue: "Oklawaha",
+        date: "2025-06-01",
+        time: "3:00 pm - 5:00 pm",
+        name: "Duck"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-06-05",
+        time: "12:00 pm - 11:00 pm",
+        name: "Cummings Cove Cares Fundraiser for Hurricane Helene Recovery and Rebuild"
     },
     {
         venue: "Boldrock",
@@ -142,6 +130,18 @@ const events = [
         date: "2025-06-28",
         time: "6:00 PM - 8:00 PM",
         name: "Awake In The Dream"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-05-17",
+        time: "6:00 PM - 8:00 PM",
+        name: "Finkelstein 3"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-05-16",
+        time: "6:00 PM - 8:00 PM",
+        name: "Fine Line Band"
     },
     {
         venue: "Boldrock",
@@ -312,66 +312,6 @@ const events = [
         name: "Chocolate & Flight Pairing"
     },
     {
-        venue: "Boldrock",
-        date: "2025-02-08",
-        time: "5:00 PM - 7:00 PM",
-        name: "Finklestein 3"
-    },
-    {
-        venue: "Boldrock",
-        date: "2025-02-01",
-        time: "5:00 PM - 7:00 PM",
-        name: "Iggy Radio"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-09",
-        time: "5:00 pm - 8:00 pm",
-        name: "BOB ZULLO"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-10",
-        time: "2:00 pm - 5:00 pm",
-        name: "THE JACKTOWN RAMBLERS"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-11",
-        time: "2:00 pm - 5:00 pm",
-        name: "RON LEE"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-17",
-        time: "2:00 pm - 5:00 pm",
-        name: "MYRON HYMAN"
-    },
-    {
-        venue: "Burnt Shirt",
-        date: "2025-05-18",
-        time: "2:00 pm - 5:00 pm",
-        name: "J STEPHENS"
-    },
-    {
-        venue: "Guidon",
-        date: "Friday May 16th",
-        time: "06:00 PM - 10:00 PM",
-        name: "Karaoke"
-    },
-    {
-        venue: "Guidon",
-        date: "Saturday May 17th",
-        time: "02:00 PM - 05:00 PM",
-        name: "Cornhole Tournament"
-    },
-    {
-        venue: "Guidon",
-        date: "Tuesday May 20th",
-        time: "06:00 PM - 08:30 PM",
-        name: "Run Club"
-    },
-    {
         venue: "Guidon",
         date: "Wednesday May 21st",
         time: "07:00 PM - 09:00 PM",
@@ -382,6 +322,12 @@ const events = [
         date: "Friday May 23rd",
         time: "06:00 PM - 10:00 PM",
         name: "Karaoke"
+    },
+    {
+        venue: "Guidon",
+        date: "Tuesday May 27th",
+        time: "06:00 PM - 08:30 PM",
+        name: "Run Club"
     },
     {
         venue: "Guidon",
