@@ -313,12 +313,6 @@ const events = [
     },
     {
         venue: "Guidon",
-        date: "Wednesday May 21st",
-        time: "07:00 PM - 09:00 PM",
-        name: "Team Trivia"
-    },
-    {
-        venue: "Guidon",
         date: "Friday May 23rd",
         time: "06:00 PM - 10:00 PM",
         name: "Karaoke"
@@ -328,6 +322,12 @@ const events = [
         date: "Tuesday May 27th",
         time: "06:00 PM - 08:30 PM",
         name: "Run Club"
+    },
+    {
+        venue: "Guidon",
+        date: "Wednesday May 28th",
+        time: "07:00 PM - 09:00 PM",
+        name: "Team Trivia"
     },
     {
         venue: "Guidon",
