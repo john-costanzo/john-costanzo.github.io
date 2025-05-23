@@ -1,12 +1,6 @@
 const events = [
     {
         venue: "Oklawaha",
-        date: "2025-05-22",
-        time: "7:00 pm - 9:00 pm",
-        name: "Felonious Monks"
-    },
-    {
-        venue: "Oklawaha",
         date: "2025-05-23",
         time: "8:00 pm - 11:00 pm",
         name: "Blake Ellege"
@@ -52,6 +46,12 @@ const events = [
         date: "2025-06-05",
         time: "12:00 pm - 11:00 pm",
         name: "Cummings Cove Cares Fundraiser for Hurricane Helene Recovery and Rebuild"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-06-05",
+        time: "6:00 pm - 9:00 pm",
+        name: "The Lads"
     },
     {
         venue: "Boldrock",
