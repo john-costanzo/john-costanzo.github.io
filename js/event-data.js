@@ -563,4 +563,340 @@ const events = [
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night"
     },
+    {
+        venue: "Sierra Nevada",
+        date: "May 24",
+        time: "2:00 PM - 5:00 PM",
+        name: "Unspoken Tradition"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "May 25",
+        time: "2:00 PM - 5:00 PM",
+        name: "Chillbilly"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "May 26",
+        time: "2:00 PM - 5:00 PM",
+        name: "Congdon Griffin Band"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "May 31",
+        time: "2:00 PM - 5:00 PM",
+        name: "Ashley Heath & Her Heathens"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 4",
+        time: "6:00 PM - 9:30 PM",
+        name: "Fantastic Negrito w/ The Saviors of New York"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 7",
+        time: "2:00 PM - 5:00 PM",
+        name: "Pleasure Chest"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 8",
+        time: "2:00 PM - 5:00 PM",
+        name: "My Magnificent Nemesis w/ Alien Music Club"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 13",
+        time: "7:30 PM - 10:00 PM",
+        name: "Hustle Souls"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 14",
+        time: "2:00 PM - 5:00 PM",
+        name: "Daniel Shearin"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 15",
+        time: "2:00 PM - 5:00 PM",
+        name: "Julio & the Saltines"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 21",
+        time: "2:00 PM - 5:00 PM",
+        name: "The Heavy Lifters"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 22",
+        time: "2:00 PM - 5:00 PM",
+        name: "The Deep Shallow Band"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 26",
+        time: "6:00 PM - 9:00 PM",
+        name: "Who’s Bad: The Ultimate Michael Jackson Experience"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 28",
+        time: "2:00 PM - 5:00 PM",
+        name: "The Headtones"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "June 29",
+        time: "2:00 PM - 5:00 PM",
+        name: "Moonshine State"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 5",
+        time: "2:00 PM - 5:00 PM",
+        name: "Lyric"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 10",
+        time: "6:00 PM - 10:00 PM",
+        name: "Lettuce"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 11",
+        time: "7:30 PM - 10:00 PM",
+        name: "Fireside Collective"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 12",
+        time: "2:00 PM - 5:00 PM",
+        name: "Jesse Velvet"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 13",
+        time: "2:00 PM - 5:00 PM",
+        name: "CarolinAloha"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 18",
+        time: "7:00 PM - 9:30 PM",
+        name: "Lazrluvr"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 19",
+        time: "2:00 PM - 5:00 PM",
+        name: "Andrew Scotchie"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 20",
+        time: "2:00 PM - 5:00 PM",
+        name: "Boogitherapi"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 25",
+        time: "6:00 PM - 9:30 PM",
+        name: "Ozomatli w/ Debajito"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 26",
+        time: "2:00 PM - 5:00 PM",
+        name: "Peggy Ratusz and the Daddy Long Legs"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 27",
+        time: "2:00 PM - 5:00 PM",
+        name: "The Outriders"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "July 31",
+        time: "5:30 PM - 8:30 PM",
+        name: "Amplify Appalachia"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 1",
+        time: "7:30 PM - 10:00 PM",
+        name: "Dangermuffin"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 2",
+        time: "2:00 PM - 5:00 PM",
+        name: "Watkins"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 3",
+        time: "2:00 PM - 5:00 PM",
+        name: "Roots and Dore"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 8",
+        time: "6:00 PM - 9:30 PM",
+        name: "STRFKR w/ Mamalarky"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 9",
+        time: "2:00 PM - 5:00 PM",
+        name: "Ska City"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 10",
+        time: "2:00 PM - 5:00 PM",
+        name: "Purple"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 14",
+        time: "6:00 PM - 9:30 PM",
+        name: "Femi Kuti & The Positive Force"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 16",
+        time: "2:00 PM - 5:00 PM",
+        name: "Ben Bjorlie Band"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 17",
+        time: "2:00 PM - 5:00 PM",
+        name: "TrancEnd Band"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 22",
+        time: "6:00 PM - 9:00 PM",
+        name: "Fitz and The Tantrums"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 24",
+        time: "2:00 PM - 5:00 PM",
+        name: "Julianna Jade and the Wild"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "August 27",
+        time: "6:00 PM - 9:30 PM",
+        name: "Jesse Daniel w/ Jake Kohn"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "September 6",
+        time: "2:00 PM - 5:00 PM",
+        name: "Andrew Wakefield & Friends"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "September 7",
+        time: "2:00 PM - 5:00 PM",
+        name: "Sugar Bomb"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "September 13",
+        time: "2:00 PM - 5:00 PM",
+        name: "DISPLACE"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "September 14",
+        time: "2:00 PM - 5:00 PM",
+        name: "Tasty Vibrations"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "September 21",
+        time: "6:00 PM - 9:00 PM",
+        name: "Trombone Shorty & Orleans Avenue"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "September 28",
+        time: "2:00 PM - 5:00 PM",
+        name: "Mana Meter"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 4",
+        time: "2:00 PM - 5:00 PM",
+        name: "The Late Shifters"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 5",
+        time: "2:00 PM - 5:00 PM",
+        name: "Billingsly"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 11",
+        time: "2:00 PM - 5:00 PM",
+        name: "Tanasi"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 18",
+        time: "2:00 PM - 5:00 PM",
+        name: "Fresh Buzz"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 19",
+        time: "2:00 PM - 5:00 PM",
+        name: "Saddletramp"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 25",
+        time: "2:00 PM - 5:00 PM",
+        name: "Nikki and the Barn Boys"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 26",
+        time: "2:00 PM - 5:00 PM",
+        name: "The Big Hungry"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "October 29",
+        time: "6:00 PM - 9:30 PM",
+        name: "Here Come the Mummies"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "November 1",
+        time: "2:00 PM - 5:00 PM",
+        name: ""
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "November 9",
+        time: "2:00 PM - 5:00 PM",
+        name: "The Patrick Lopez Experience"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "November 16",
+        time: "2:00 PM - 5:00 PM",
+        name: "Dustin Furlow"
+    },
 ];
