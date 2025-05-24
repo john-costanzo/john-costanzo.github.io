@@ -38,7 +38,7 @@ const events = [
     {
         venue: "Point Lookout",
         date: "2025-08-23",
-        time: "start time not specified - end time not specified",
+        time: "¿ - ?",
         name: "Reunion Weekend"
     },
     {
@@ -50,13 +50,13 @@ const events = [
     {
         venue: "Trailside",
         date: "2025-05-24",
-        time: "start time not specified - end time not specified",
+        time: "¿ - ?",
         name: "Food Truck: Milk & Honey"
     },
     {
         venue: "Trailside",
         date: "2025-05-24",
-        time: "start time not specified - end time not specified",
+        time: "¿ - ?",
         name: "Panorama Mediterranean Grill"
     },
     {
@@ -68,13 +68,13 @@ const events = [
     {
         venue: "Trailside",
         date: "2025-05-25",
-        time: "start time not specified - end time not specified",
+        time: "¿ - ?",
         name: "Food Truck: Milk & Honey"
     },
     {
         venue: "Trailside",
         date: "2025-05-26",
-        time: "start time not specified - end time not specified",
+        time: "¿ - ?",
         name: "Food Truck: Sabora"
     },
     {
@@ -488,7 +488,7 @@ const events = [
     {
         venue: "Boldrock",
         date: "2025-03-15",
-        time: "start time not specified - end time not specified",
+        time: "¿ - ?",
         name: "St. Patrick's Day Weekend Celebration"
     },
     {
