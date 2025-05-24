@@ -1,12 +1,6 @@
 const events = [
     {
         venue: "Oklawaha",
-        date: "2025-05-23",
-        time: "8:00 pm - 11:00 pm",
-        name: "Blake Ellege"
-    },
-    {
-        venue: "Oklawaha",
         date: "2025-05-24",
         time: "8:00 pm - 11:00 pm",
         name: "Abbey Elmore Band"
@@ -54,9 +48,15 @@ const events = [
         name: "The Lads"
     },
     {
+        venue: "Oklawaha",
+        date: "2025-06-06",
+        time: "8:00 pm - 11:00 pm",
+        name: "Alma Russ"
+    },
+    {
         venue: "Boldrock",
         date: "2025-05-23",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Sound Invasion"
     },
     {
@@ -68,31 +68,31 @@ const events = [
     {
         venue: "Boldrock",
         date: "2025-05-30",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Todd Cecil & The Dirt Yard Choir"
     },
     {
         venue: "Boldrock",
         date: "2025-05-31",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Tracy Davis & The TMI Band"
     },
     {
         venue: "Boldrock",
         date: "2025-06-06",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Todd Cecil & The Dirt Yard Choir"
     },
     {
         venue: "Boldrock",
         date: "2025-06-07",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Tracy Davis & The TMI Band"
     },
     {
         venue: "Boldrock",
         date: "2025-06-13",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "The Right Fit"
     },
     {
@@ -104,7 +104,7 @@ const events = [
     {
         venue: "Boldrock",
         date: "2025-06-20",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Finkelstein 3"
     },
     {
@@ -122,13 +122,13 @@ const events = [
     {
         venue: "Boldrock",
         date: "2025-06-27",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Fine Line Band"
     },
     {
         venue: "Boldrock",
         date: "2025-06-28",
-        time: "6:00 PM - 8:00 PM",
+        time: "6:00 PM - 9:00 PM",
         name: "Awake In The Dream"
     },
     {
@@ -328,6 +328,12 @@ const events = [
         date: "Wednesday May 28th",
         time: "07:00 PM - 09:00 PM",
         name: "Team Trivia"
+    },
+    {
+        venue: "Guidon",
+        date: "Friday May 30th",
+        time: "06:00 PM - 10:00 PM",
+        name: "Karaoke"
     },
     {
         venue: "Guidon",
