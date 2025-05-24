@@ -1,5 +1,185 @@
 const events = [
     {
+        venue: "Trailside",
+        date: "2025-05-24",
+        time: "start time not specified - end time not specified",
+        name: "Food Truck: Milk & Honey"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-24",
+        time: "start time not specified - end time not specified",
+        name: "Panorama Mediterranean Grill"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-23",
+        time: "2:00 pm - 10:00 pm",
+        name: "Trailside Brewing's 2nd Anniversary Bash"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-25",
+        time: "start time not specified - end time not specified",
+        name: "Food Truck: Milk & Honey"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-26",
+        time: "start time not specified - end time not specified",
+        name: "Food Truck: Sabora"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-26",
+        time: "4:00 pm - 6:00 pm",
+        name: "Traditional Irish Music Session"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-27",
+        time: "6:00 pm - 9:00 pm",
+        name: "Round Robin Open Mic Hosted by Letters To Abigail"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-28",
+        time: "6:00 pm - 8:00 pm",
+        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-29",
+        time: "6:30 pm - 8:30 pm",
+        name: "Trailside Trivia"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-01",
+        time: "3:00 pm - 5:00 pm",
+        name: "The Art of Journaling on the fly class!"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-02",
+        time: "4:00 pm - 6:00 pm",
+        name: "Traditional Irish Music Session"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-03",
+        time: "6:00 pm - 9:00 pm",
+        name: "Round Robin Open Mic Hosted by Letters To Abigail"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-04",
+        time: "6:00 pm - 8:00 pm",
+        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-05",
+        time: "6:30 pm - 8:30 pm",
+        name: "Adventure Film Series: One Ocean Film Tour"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-05",
+        time: "6:30 pm - 8:30 pm",
+        name: "Trailside Trivia"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-09",
+        time: "4:00 pm - 6:00 pm",
+        name: "Traditional Irish Music Session"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-10",
+        time: "6:00 pm - 9:00 pm",
+        name: "Round Robin Open Mic Hosted by Letters To Abigail"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-11",
+        time: "6:00 pm - 8:00 pm",
+        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-12",
+        time: "5:30 pm - 7:00 pm",
+        name: "Green Drinks with Conserving Carolina & Mtn True"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-12",
+        time: "6:30 pm - 8:30 pm",
+        name: "Trailside Trivia"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-14",
+        time: "11:00 am - 5:00 pm",
+        name: "Friends of Dupont, Sara 828-713-2368"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-16",
+        time: "4:00 pm - 6:00 pm",
+        name: "Traditional Irish Music Session"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-16",
+        time: "6:30 pm - 8:30 pm",
+        name: "Paint Your Own Pottery Class"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-17",
+        time: "6:00 pm - 8:00 pm",
+        name: "BINGO with Hendersonville Rotary Club"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-17",
+        time: "6:00 pm - 9:00 pm",
+        name: "Round Robin Open Mic Hosted by Letters To Abigail"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-18",
+        time: "6:00 pm - 8:00 pm",
+        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-19",
+        time: "6:30 pm - 8:30 pm",
+        name: "Trailside Trivia"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-21",
+        time: "1:00 pm - 6:00 pm",
+        name: "Blue Ridge Artisan Market"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-22",
+        time: "1:00 pm - 4:00 pm",
+        name: "Mobile Book Bus at Trailside!"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-23",
+        time: "4:00 pm - 6:00 pm",
+        name: "Traditional Irish Music Session"
+    },
+    {
         venue: "Oklawaha",
         date: "2025-05-24",
         time: "8:00 pm - 11:00 pm",
@@ -313,12 +493,6 @@ const events = [
     },
     {
         venue: "Guidon",
-        date: "Friday May 23rd",
-        time: "06:00 PM - 10:00 PM",
-        name: "Karaoke"
-    },
-    {
-        venue: "Guidon",
         date: "Tuesday May 27th",
         time: "06:00 PM - 08:30 PM",
         name: "Run Club"
@@ -361,49 +535,49 @@ const events = [
     },
     {
         venue: "Southern App",
-        date: "2025-05-1",
+        date: "2025-05-01",
         time: "6pm - 8pm",
         name: "Nitrograss"
     },
     {
         venue: "Southern App",
-        date: "2025-05-2",
+        date: "2025-05-02",
         time: "7pm - 9pm",
         name: "Pleasure Chest"
     },
     {
         venue: "Southern App",
-        date: "2025-05-3",
+        date: "2025-05-03",
         time: "7pm - 9pm",
         name: "TrancEnd"
     },
     {
         venue: "Southern App",
-        date: "2025-05-3",
+        date: "2025-05-03",
         time: "12pm - 1pm",
         name: "Saturday Yoga Class"
     },
     {
         venue: "Southern App",
-        date: "2025-05-4",
+        date: "2025-05-04",
         time: "4pm - 6pm",
         name: "The Dan Keller Trio"
     },
     {
         venue: "Southern App",
-        date: "2025-05-7",
+        date: "2025-05-07",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night"
     },
     {
         venue: "Southern App",
-        date: "2025-05-8",
+        date: "2025-05-08",
         time: "6pm - 8pm",
         name: "Beer, Music by Possum Royale, Repeat"
     },
     {
         venue: "Southern App",
-        date: "2025-05-9",
+        date: "2025-05-09",
         time: "7pm - 9pm",
         name: "Brian Ashley Jones"
     },
@@ -529,19 +703,19 @@ const events = [
     },
     {
         venue: "Southern App",
-        date: "2025-06-1",
+        date: "2025-06-01",
         time: "4pm - 6pm",
         name: "The Dan Keller Trio"
     },
     {
         venue: "Southern App",
-        date: "2025-06-4",
+        date: "2025-06-04",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night"
     },
     {
         venue: "Southern App",
-        date: "2025-06-7",
+        date: "2025-06-07",
         time: "12pm - 1pm",
         name: "Saturday Yoga Class"
     },
@@ -571,337 +745,337 @@ const events = [
     },
     {
         venue: "Sierra Nevada",
-        date: "May 24",
+        date: "2025-05-24",
         time: "2:00 PM - 5:00 PM",
         name: "Unspoken Tradition"
     },
     {
         venue: "Sierra Nevada",
-        date: "May 25",
+        date: "2025-05-25",
         time: "2:00 PM - 5:00 PM",
         name: "Chillbilly"
     },
     {
         venue: "Sierra Nevada",
-        date: "May 26",
+        date: "2025-05-26",
         time: "2:00 PM - 5:00 PM",
         name: "Congdon Griffin Band"
     },
     {
         venue: "Sierra Nevada",
-        date: "May 31",
+        date: "2025-05-31",
         time: "2:00 PM - 5:00 PM",
         name: "Ashley Heath & Her Heathens"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 4",
+        date: "2025-06-04",
         time: "6:00 PM - 9:30 PM",
         name: "Fantastic Negrito w/ The Saviors of New York"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 7",
+        date: "2025-06-07",
         time: "2:00 PM - 5:00 PM",
         name: "Pleasure Chest"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 8",
+        date: "2025-06-08",
         time: "2:00 PM - 5:00 PM",
         name: "My Magnificent Nemesis w/ Alien Music Club"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 13",
+        date: "2025-06-13",
         time: "7:30 PM - 10:00 PM",
         name: "Hustle Souls"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 14",
+        date: "2025-06-14",
         time: "2:00 PM - 5:00 PM",
         name: "Daniel Shearin"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 15",
+        date: "2025-06-15",
         time: "2:00 PM - 5:00 PM",
         name: "Julio & the Saltines"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 21",
+        date: "2025-06-21",
         time: "2:00 PM - 5:00 PM",
         name: "The Heavy Lifters"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 22",
+        date: "2025-06-22",
         time: "2:00 PM - 5:00 PM",
         name: "The Deep Shallow Band"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 26",
+        date: "2025-06-26",
         time: "6:00 PM - 9:00 PM",
         name: "Who’s Bad: The Ultimate Michael Jackson Experience"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 28",
+        date: "2025-06-28",
         time: "2:00 PM - 5:00 PM",
         name: "The Headtones"
     },
     {
         venue: "Sierra Nevada",
-        date: "June 29",
+        date: "2025-06-29",
         time: "2:00 PM - 5:00 PM",
         name: "Moonshine State"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 5",
+        date: "2025-07-05",
         time: "2:00 PM - 5:00 PM",
         name: "Lyric"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 10",
+        date: "2025-07-10",
         time: "6:00 PM - 10:00 PM",
         name: "Lettuce"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 11",
+        date: "2025-07-11",
         time: "7:30 PM - 10:00 PM",
         name: "Fireside Collective"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 12",
+        date: "2025-07-12",
         time: "2:00 PM - 5:00 PM",
         name: "Jesse Velvet"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 13",
+        date: "2025-07-13",
         time: "2:00 PM - 5:00 PM",
         name: "CarolinAloha"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 18",
+        date: "2025-07-18",
         time: "7:00 PM - 9:30 PM",
         name: "Lazrluvr"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 19",
+        date: "2025-07-19",
         time: "2:00 PM - 5:00 PM",
         name: "Andrew Scotchie"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 20",
+        date: "2025-07-20",
         time: "2:00 PM - 5:00 PM",
         name: "Boogitherapi"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 25",
+        date: "2025-07-25",
         time: "6:00 PM - 9:30 PM",
         name: "Ozomatli w/ Debajito"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 26",
+        date: "2025-07-26",
         time: "2:00 PM - 5:00 PM",
         name: "Peggy Ratusz and the Daddy Long Legs"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 27",
+        date: "2025-07-27",
         time: "2:00 PM - 5:00 PM",
         name: "The Outriders"
     },
     {
         venue: "Sierra Nevada",
-        date: "July 31",
+        date: "2025-07-31",
         time: "5:30 PM - 8:30 PM",
         name: "Amplify Appalachia"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 1",
+        date: "2025-08-01",
         time: "7:30 PM - 10:00 PM",
         name: "Dangermuffin"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 2",
+        date: "2025-08-02",
         time: "2:00 PM - 5:00 PM",
         name: "Watkins"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 3",
+        date: "2025-08-03",
         time: "2:00 PM - 5:00 PM",
         name: "Roots and Dore"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 8",
+        date: "2025-08-08",
         time: "6:00 PM - 9:30 PM",
         name: "STRFKR w/ Mamalarky"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 9",
+        date: "2025-08-09",
         time: "2:00 PM - 5:00 PM",
         name: "Ska City"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 10",
+        date: "2025-08-10",
         time: "2:00 PM - 5:00 PM",
         name: "Purple"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 14",
+        date: "2025-08-14",
         time: "6:00 PM - 9:30 PM",
         name: "Femi Kuti & The Positive Force"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 16",
+        date: "2025-08-16",
         time: "2:00 PM - 5:00 PM",
         name: "Ben Bjorlie Band"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 17",
+        date: "2025-08-17",
         time: "2:00 PM - 5:00 PM",
         name: "TrancEnd Band"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 22",
+        date: "2025-08-22",
         time: "6:00 PM - 9:00 PM",
         name: "Fitz and The Tantrums"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 24",
+        date: "2025-08-24",
         time: "2:00 PM - 5:00 PM",
         name: "Julianna Jade and the Wild"
     },
     {
         venue: "Sierra Nevada",
-        date: "August 27",
+        date: "2025-08-27",
         time: "6:00 PM - 9:30 PM",
         name: "Jesse Daniel w/ Jake Kohn"
     },
     {
         venue: "Sierra Nevada",
-        date: "September 6",
+        date: "2025-09-06",
         time: "2:00 PM - 5:00 PM",
         name: "Andrew Wakefield & Friends"
     },
     {
         venue: "Sierra Nevada",
-        date: "September 7",
+        date: "2025-09-07",
         time: "2:00 PM - 5:00 PM",
         name: "Sugar Bomb"
     },
     {
         venue: "Sierra Nevada",
-        date: "September 13",
+        date: "2025-09-13",
         time: "2:00 PM - 5:00 PM",
         name: "DISPLACE"
     },
     {
         venue: "Sierra Nevada",
-        date: "September 14",
+        date: "2025-09-14",
         time: "2:00 PM - 5:00 PM",
         name: "Tasty Vibrations"
     },
     {
         venue: "Sierra Nevada",
-        date: "September 21",
+        date: "2025-09-21",
         time: "6:00 PM - 9:00 PM",
         name: "Trombone Shorty & Orleans Avenue"
     },
     {
         venue: "Sierra Nevada",
-        date: "September 28",
+        date: "2025-09-28",
         time: "2:00 PM - 5:00 PM",
         name: "Mana Meter"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 4",
+        date: "2025-10-04",
         time: "2:00 PM - 5:00 PM",
         name: "The Late Shifters"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 5",
+        date: "2025-10-05",
         time: "2:00 PM - 5:00 PM",
         name: "Billingsly"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 11",
+        date: "2025-10-11",
         time: "2:00 PM - 5:00 PM",
         name: "Tanasi"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 18",
+        date: "2025-10-18",
         time: "2:00 PM - 5:00 PM",
         name: "Fresh Buzz"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 19",
+        date: "2025-10-19",
         time: "2:00 PM - 5:00 PM",
         name: "Saddletramp"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 25",
+        date: "2025-10-25",
         time: "2:00 PM - 5:00 PM",
         name: "Nikki and the Barn Boys"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 26",
+        date: "2025-10-26",
         time: "2:00 PM - 5:00 PM",
         name: "The Big Hungry"
     },
     {
         venue: "Sierra Nevada",
-        date: "October 29",
+        date: "2025-10-29",
         time: "6:00 PM - 9:30 PM",
         name: "Here Come the Mummies"
     },
     {
         venue: "Sierra Nevada",
-        date: "November 1",
+        date: "2025-11-01",
         time: "2:00 PM - 5:00 PM",
         name: ""
     },
     {
         venue: "Sierra Nevada",
-        date: "November 9",
+        date: "2025-11-09",
         time: "2:00 PM - 5:00 PM",
         name: "The Patrick Lopez Experience"
     },
     {
         venue: "Sierra Nevada",
-        date: "November 16",
+        date: "2025-11-16",
         time: "2:00 PM - 5:00 PM",
         name: "Dustin Furlow"
     },
