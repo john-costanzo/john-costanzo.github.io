@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Saturday, 2025-05-24 @ 15:55:46";
+        const localEventBrowserVersion = "Saturday, 2025-05-24 @ 16:03:49";
     </script>
     <style>
         body {
@@ -356,7 +356,7 @@
             const venueFiltersContainer = document.getElementById( 'venue-filters' );
 
             // Get unique venues
-            const venues = [ ...new Set( events.map( event => event.venue ) ) ];
+            const venues = [ ...new Set( events.map( event => event.venue ) ) ].sort();
 
             venues.forEach( venue => {
                 const chip = document.createElement( 'span' );
