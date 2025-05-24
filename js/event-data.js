@@ -1,5 +1,53 @@
 const events = [
     {
+        venue: "Point Lookout",
+        date: "2025-05-01",
+        time: "5:00 pm - 8:00 pm",
+        name: "Sunset Kisses – May 2025"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-06-07",
+        time: "7:00 pm - 10:00 pm",
+        name: "Chairmen of The Board"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-06-20",
+        time: "7:00 pm - 10:00 pm",
+        name: "ChillBilly & Blake Ellege"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-07-19",
+        time: "7:00 pm - 10:00 pm",
+        name: "Boomer Jukebox"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-08-09",
+        time: "8:00 am - 5:00 pm",
+        name: "Chicago Rewired"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-08-15",
+        time: "7:00 pm - 10:00 pm",
+        name: "Too Much Sylvia 2025"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-08-23",
+        time: "start time not specified - end time not specified",
+        name: "Reunion Weekend"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-09-12",
+        time: "7:00 pm - 10:00 pm",
+        name: "The Tams 2025"
+    },
+    {
         venue: "Trailside",
         date: "2025-05-24",
         time: "start time not specified - end time not specified",
