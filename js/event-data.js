@@ -49,24 +49,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-05-24",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-05-24",
-        time: "¿ - ?",
-        name: "Panorama Mediterranean Grill"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-05-23",
-        time: "2:00 pm - 10:00 pm",
-        name: "Trailside Brewing's 2nd Anniversary Bash"
-    },
-    {
-        venue: "Trailside",
         date: "2025-05-25",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey"
@@ -136,6 +118,12 @@ const events = [
         date: "2025-06-05",
         time: "6:30 pm - 8:30 pm",
         name: "Trailside Trivia"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-06",
+        time: "¿ - ?",
+        name: "Food Truck: Silly Willies Hot Dogs"
     },
     {
         venue: "Trailside",
@@ -228,16 +216,10 @@ const events = [
         name: "Traditional Irish Music Session"
     },
     {
-        venue: "Oklawaha",
-        date: "2025-05-24",
-        time: "8:00 pm - 11:00 pm",
-        name: "Abbey Elmore Band"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-05-25",
+        venue: "Trailside",
+        date: "2025-06-24",
         time: "6:00 pm - 9:00 pm",
-        name: "Trancend"
+        name: "Round Robin Open Mic Hosted by Letters To Abigail"
     },
     {
         venue: "Oklawaha",
@@ -282,10 +264,16 @@ const events = [
         name: "Alma Russ"
     },
     {
-        venue: "Boldrock",
-        date: "2025-05-23",
-        time: "6:00 PM - 9:00 PM",
-        name: "Sound Invasion"
+        venue: "Oklawaha",
+        date: "2025-06-07",
+        time: "8:00 pm - 11:00 pm",
+        name: "Billingsley"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-06-08",
+        time: "3:00 pm - 5:00 pm",
+        name: "Petah Iah and the Mind Renewers"
     },
     {
         venue: "Boldrock",
@@ -358,6 +346,12 @@ const events = [
         date: "2025-06-28",
         time: "6:00 PM - 9:00 PM",
         name: "Awake In The Dream"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-05-23",
+        time: "6:00 PM - 9:00 PM",
+        name: "Sound Invasion"
     },
     {
         venue: "Boldrock",
@@ -532,12 +526,6 @@ const events = [
         date: "2025-02-14",
         time: "5:00 PM - 7:00 PM",
         name: "Patty M"
-    },
-    {
-        venue: "Boldrock",
-        date: "2025-02-13",
-        time: "5:00 PM - 9:00 PM",
-        name: "Chocolate & Flight Pairing"
     },
     {
         venue: "Guidon",
@@ -790,18 +778,6 @@ const events = [
         date: "2025-06-25",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-05-24",
-        time: "2:00 PM - 5:00 PM",
-        name: "Unspoken Tradition"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-05-25",
-        time: "2:00 PM - 5:00 PM",
-        name: "Chillbilly"
     },
     {
         venue: "Sierra Nevada",
