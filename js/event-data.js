@@ -49,12 +49,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-05-25",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey"
-    },
-    {
-        venue: "Trailside",
         date: "2025-05-26",
         time: "¿ - ?",
         name: "Food Truck: Sabora"
@@ -220,6 +214,12 @@ const events = [
         date: "2025-06-24",
         time: "6:00 pm - 9:00 pm",
         name: "Round Robin Open Mic Hosted by Letters To Abigail"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-25",
+        time: "6:00 pm - 8:00 pm",
+        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell"
     },
     {
         venue: "Oklawaha",
@@ -1102,5 +1102,59 @@ const events = [
         date: "2025-11-16",
         time: "2:00 PM - 5:00 PM",
         name: "Dustin Furlow"
+    },
+    {
+        venue: "Rhythm & Brews",
+        date: "2025-06-19",
+        time: "5:30 pm - 10 pm",
+        name: "Big Daddy Love (Appalachian Rock) with Letters to Abigail (Americana)"
+    },
+    {
+        venue: "Rhythm & Brews",
+        date: "2025-07-17",
+        time: "5:30 pm - 10 pm",
+        name: "Florencia & the Feeling (Pop/Funk/Fusion) with Lewendahl  (Blues/Rock/Motown)"
+    },
+    {
+        venue: "Rhythm & Brews",
+        date: "2025-08-21",
+        time: "5:30 pm - 10 pm",
+        name: "Maggie Baugh (Country) with Blake Ellege & Saddletramp (Country/Southern Rock)"
+    },
+    {
+        venue: "Rhythm & Brews",
+        date: "2025-09-18",
+        time: "5:30 pm - 10 pm",
+        name: "Caitlin Krisko & The Broadcast (Soul Rock) with Hustle Souls (Soul/Funk/Americana)"
+    },
+    {
+        venue: "Rhythm & Brews",
+        date: "2025-10-16",
+        time: "5:30 pm - 10 pm",
+        name: "BonaFide Soul (Jazz/Funk/Soul) with Congdon Griffin Band (Folk/Americana/Rock)"
+    },
+    {
+        venue: "Music on Main",
+        date: "2025-06-20",
+        time: "7:00 pm - 9:00 pm",
+        name: "5 O’Clock Somewhere"
+    },
+    {
+        venue: "Music on Main",
+        date: "2025-07-04",
+        time: "7:00 pm - 9:00 pm",
+        name: "Night Move Band"
+    },
+    {
+        venue: "Music on Main",
+        date: "2025-07-18",
+        time: "7:00 pm - 9:00 pm",
+        name: "The Big Throwback"
+    },
+    {
+        venue: "Music on Main",
+        date: "2025-08-01",
+        time: "7:00 pm - 9:00 pm",
+        name: "Gotcha Groove"
     },
 ];
