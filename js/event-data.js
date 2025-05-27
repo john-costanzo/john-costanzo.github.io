@@ -65,22 +65,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-05-26",
-        time: "¿ - ?",
-        name: "Food Truck: Sabora",
-        sorttime: "2025-05-26 Can't convert ¿ - ?",
-        detail: "details"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-05-26",
-        time: "4:00 pm - 6:00 pm",
-        name: "Traditional Irish Music Session",
-        sorttime: "2025-05-26 16:00",
-        detail: "details"
-    },
-    {
-        venue: "Trailside",
         date: "2025-05-27",
         time: "6:00 pm - 9:00 pm",
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
@@ -301,6 +285,22 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-25 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-26",
+        time: "6:30 pm - 8:30 pm",
+        name: "Run Nation Adventure Film",
+        sorttime: "2025-06-26 18:30",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-26",
+        time: "6:30 pm - 8:30 pm",
+        name: "Trailside Trivia",
+        sorttime: "2025-06-26 18:30",
         detail: "details"
     },
     {
@@ -761,19 +761,283 @@ const events = [
     },
     {
         venue: "Southern App",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: time data '6pm' does not match format '%I:%M %p'",
-        sorttime: "Error retrieving data",
-        detail: "Error retrieving data"
+        date: "2025-05-01",
+        time: "6pm - 8pm",
+        name: "Nitrograss",
+        sorttime: "2025-05-01 18:00",
+        detail: "details"
     },
     {
         venue: "Southern App",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: time data '4pm' does not match format '%I:%M %p'",
-        sorttime: "Error retrieving data",
-        detail: "Error retrieving data"
+        date: "2025-05-02",
+        time: "7pm - 9pm",
+        name: "Pleasure Chest",
+        sorttime: "2025-05-02 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-03",
+        time: "7pm - 9pm",
+        name: "TrancEnd",
+        sorttime: "2025-05-03 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-03",
+        time: "12pm - 1pm",
+        name: "Saturday Yoga Class",
+        sorttime: "2025-05-03 12:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-04",
+        time: "4pm - 6pm",
+        name: "The Dan Keller Trio",
+        sorttime: "2025-05-04 16:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-07",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-05-07 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-08",
+        time: "6pm - 8pm",
+        name: "Beer, Music by Possum Royale, Repeat",
+        sorttime: "2025-05-08 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-09",
+        time: "7pm - 9pm",
+        name: "Brian Ashley Jones",
+        sorttime: "2025-05-09 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-10",
+        time: "7pm - 9pm",
+        name: "Sketoe’s Ghost",
+        sorttime: "2025-05-10 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-10",
+        time: "12pm - 1pm",
+        name: "Saturday Yoga Class",
+        sorttime: "2025-05-10 12:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-11",
+        time: "1pm - 4pm",
+        name: "Hendo Acoustic Jam Brunch – Mother’s Day Edition",
+        sorttime: "2025-05-11 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-14",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-05-14 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-15",
+        time: "6pm - 8pm",
+        name: "#Throwback Thursday Trivia Night",
+        sorttime: "2025-05-15 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-16",
+        time: "7pm - 9pm",
+        name: "Carver, Carmody & McIntire REUNION",
+        sorttime: "2025-05-16 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-17",
+        time: "7pm - 9pm",
+        name: "The Paper Crowns",
+        sorttime: "2025-05-17 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-17",
+        time: "12pm - 1pm",
+        name: "Saturday Yoga Class",
+        sorttime: "2025-05-17 12:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-18",
+        time: "12pm - 5pm",
+        name: "Happy May Pop-Up Market",
+        sorttime: "2025-05-18 12:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-18",
+        time: "1pm - 4pm",
+        name: "Jack Miller & George Reeves",
+        sorttime: "2025-05-18 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-21",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-05-21 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-22",
+        time: "6pm - 8pm",
+        name: "Music Bingo",
+        sorttime: "2025-05-22 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-23",
+        time: "7pm - 9pm",
+        name: "Hammock Theory",
+        sorttime: "2025-05-23 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-24",
+        time: "7pm - 9pm",
+        name: "The Mattocks-Johnson Band",
+        sorttime: "2025-05-24 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-25",
+        time: "4pm - 6pm",
+        name: "Sunday Funday w/Peggy Ratusz, Adam Rose & Bob Songster",
+        sorttime: "2025-05-25 16:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-28",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-05-28 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-29",
+        time: "6pm - 8pm",
+        name: "Denis Coleman",
+        sorttime: "2025-05-29 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-30",
+        time: "7pm - 9pm",
+        name: "BBC",
+        sorttime: "2025-05-30 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-31",
+        time: "7pm - 9pm",
+        name: "Lewendahl",
+        sorttime: "2025-05-31 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-05-31",
+        time: "12pm - 1pm",
+        name: "Saturday Yoga Class",
+        sorttime: "2025-05-31 12:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-01",
+        time: "4pm - 6pm",
+        name: "The Dan Keller Trio",
+        sorttime: "2025-06-01 16:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-04",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-06-04 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-07",
+        time: "12pm - 1pm",
+        name: "Saturday Yoga Class",
+        sorttime: "2025-06-07 12:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-11",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-06-11 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-17",
+        time: "5pm - 7pm",
+        name: "Hatch Pitch Party",
+        sorttime: "2025-06-17 17:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-18",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-06-18 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-25",
+        time: "6pm - 8pm",
+        name: "Jason DeCristofaro’s Weekly Jazz Night",
+        sorttime: "2025-06-25 18:00",
+        detail: "details"
     },
     {
         venue: "Sierra Nevada",
@@ -1283,7 +1547,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-04-29",
         time: "1:00 pm - 4:00 pm",
-        name: "Guided Trail Walk",
+        name: "Spring Flora ID (April 29)",
         sorttime: "2025-04-29 13:00",
         detail: "details"
     },
@@ -1299,7 +1563,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-03",
         time: "10:00 am - 1:00 pm",
-        name: "Guided Trail Walk",
+        name: "Forest Bathing Retreat: Flower Power!",
         sorttime: "2025-05-03 10:00",
         detail: "details"
     },
@@ -1307,7 +1571,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-03",
         time: "12:00 pm - 6:00 pm",
-        name: "Guided Trail Walk",
+        name: "Heritage Craft Day",
         sorttime: "2025-05-03 12:00",
         detail: "details"
     },
@@ -1331,7 +1595,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-06",
         time: "9:00 am - 10:30 am",
-        name: "Meditative Morning",
+        name: "Birding for Beginners",
         sorttime: "2025-05-06 09:00",
         detail: "details"
     },
@@ -1339,7 +1603,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-06",
         time: "1:00 pm - 3:00 pm",
-        name: "Meditative Morning",
+        name: "Guided Trail Walk",
         sorttime: "2025-05-06 13:00",
         detail: "details"
     },
@@ -1355,7 +1619,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-10",
         time: "10:00 am - 12:00 pm",
-        name: "National Public Gardens Day",
+        name: "Guided Trail Walk",
         sorttime: "2025-05-10 10:00",
         detail: "details"
     },
@@ -1363,7 +1627,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-10",
         time: "10:00 am - 1:00 pm",
-        name: "National Public Gardens Day",
+        name: "World Bonsai Day",
         sorttime: "2025-05-10 10:00",
         detail: "details"
     },
@@ -1371,7 +1635,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-10",
         time: "1:00 pm - 3:00 pm",
-        name: "National Public Gardens Day",
+        name: "Guided Trail Walk",
         sorttime: "2025-05-10 13:00",
         detail: "details"
     },
@@ -1387,7 +1651,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-11",
         time: "1:00 pm - 3:30 pm",
-        name: "World Bonsai Day",
+        name: "Landscape Design Fundamentals (full)",
         sorttime: "2025-05-11 13:00",
         detail: "details"
     },
@@ -1395,7 +1659,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-11",
         time: "1:00 pm - 4:00 pm",
-        name: "World Bonsai Day",
+        name: "A Rose by Another Name: Paper Flower Workshop (full)",
         sorttime: "2025-05-11 13:00",
         detail: "details"
     },
@@ -1411,7 +1675,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-13",
         time: "5:30 pm - 7:30 pm",
-        name: "Guided Trail Walk",
+        name: "Bonsai Curator’s Talk & Tour in Spring (full)",
         sorttime: "2025-05-13 17:30",
         detail: "details"
     },
@@ -1443,7 +1707,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-16",
         time: "1:00 pm - 3:30 pm",
-        name: "Walking Meditation & Qigong",
+        name: "Residential Rain Gardens",
         sorttime: "2025-05-16 13:00",
         detail: "details"
     },
@@ -1459,7 +1723,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-17",
         time: "10:00 am - 12:00 pm",
-        name: "Beginning Bonsai Workshop (full)",
+        name: "Guided Trail Walk",
         sorttime: "2025-05-17 10:00",
         detail: "details"
     },
@@ -1467,7 +1731,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-17",
         time: "10:00 am - 3:00 pm",
-        name: "Beginning Bonsai Workshop (full)",
+        name: "Nature Play Day",
         sorttime: "2025-05-17 10:00",
         detail: "details"
     },
@@ -1491,7 +1755,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-20",
         time: "1:00 pm - 3:00 pm",
-        name: "Mammals of the Southern Appalachians",
+        name: "Guided Trail Walk",
         sorttime: "2025-05-20 13:00",
         detail: "details"
     },
@@ -1515,7 +1779,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-24",
         time: "9:00 am - 5:00 pm",
-        name: "Tiny Worlds of the Appalachian Mountains: The Watercolor Paintings of Rosalie Haizlett",
+        name: "Asheville Blue Ridge Rose Society Rose Exhibition",
         sorttime: "2025-05-24 09:00",
         detail: "details"
     },
@@ -1523,7 +1787,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-24",
         time: "10:00 am - 12:00 pm",
-        name: "Tiny Worlds of the Appalachian Mountains: The Watercolor Paintings of Rosalie Haizlett",
+        name: "Guided Trail Walk",
         sorttime: "2025-05-24 10:00",
         detail: "details"
     },
@@ -1531,7 +1795,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-24",
         time: "10:00 am - 12:00 pm",
-        name: "Tiny Worlds of the Appalachian Mountains: The Watercolor Paintings of Rosalie Haizlett",
+        name: "Botanical Watercolor for Beginners (full)",
         sorttime: "2025-05-24 10:00",
         detail: "details"
     },
@@ -1555,7 +1819,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-27",
         time: "1:30 pm - 3:30 pm",
-        name: "Guided Trail Walk",
+        name: "Ecological Aftermath of Helene",
         sorttime: "2025-05-27 13:30",
         detail: "details"
     },
@@ -1571,7 +1835,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-29",
         time: "4:00 pm - 7:00 pm",
-        name: "Wildwoods Walk",
+        name: "Spring Plant Sale: Upper-level Member Preview",
         sorttime: "2025-05-29 16:00",
         detail: "details"
     },
@@ -1595,7 +1859,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-31",
         time: "10:00 am - 3:00 pm",
-        name: "Guided Trail Walk",
+        name: "Spring Plant Sale and Market",
         sorttime: "2025-05-31 10:00",
         detail: "details"
     },
@@ -1619,7 +1883,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-03",
         time: "9:00 am - 10:30 am",
-        name: "Meditative Morning",
+        name: "Birding for Beginners",
         sorttime: "2025-06-03 09:00",
         detail: "details"
     },
@@ -1627,7 +1891,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-03",
         time: "1:00 pm - 3:00 pm",
-        name: "Meditative Morning",
+        name: "Guided Trail Walk",
         sorttime: "2025-06-03 13:00",
         detail: "details"
     },
@@ -1643,7 +1907,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-07",
         time: "10:00 am - 12:00 pm",
-        name: "Blue Ridge Bonsai Society Show",
+        name: "Guided Trail Walk",
         sorttime: "2025-06-07 10:00",
         detail: "details"
     },
@@ -1651,7 +1915,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-07",
         time: "1:00 pm - 3:00 pm",
-        name: "Blue Ridge Bonsai Society Show",
+        name: "Guided Trail Walk",
         sorttime: "2025-06-07 13:00",
         detail: "details"
     },
@@ -1667,7 +1931,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-10",
         time: "1:00 pm - 3:00 pm",
-        name: "Pine Primer",
+        name: "Guided Trail Walk",
         sorttime: "2025-06-10 13:00",
         detail: "details"
     },
@@ -1675,7 +1939,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-10",
         time: "2:00 pm - 4:00 pm",
-        name: "Pine Primer",
+        name: "Macroinvertebrates of Bent Creek",
         sorttime: "2025-06-10 14:00",
         detail: "details"
     },
@@ -1699,7 +1963,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-12",
         time: "5:30 pm - 8:30 pm",
-        name: "Teacher Workshop: Connecting NC Standards and Environmental Education",
+        name: "Arbor Evenings",
         sorttime: "2025-06-12 17:30",
         detail: "details"
     },
@@ -1715,7 +1979,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-13",
         time: "1:00 pm - 3:30 pm",
-        name: "Painting and Meditation from the Heart",
+        name: "Landscape Design Fundamentals (2 sessions)",
         sorttime: "2025-06-13 13:00",
         detail: "details"
     },
@@ -1731,7 +1995,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-14",
         time: "10:00 am - 12:00 pm",
-        name: "Beginning Bonsai Workshop",
+        name: "Guided Trail Walk",
         sorttime: "2025-06-14 10:00",
         detail: "details"
     },
@@ -1739,7 +2003,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-14",
         time: "10:00 am - 1:00 pm",
-        name: "Beginning Bonsai Workshop",
+        name: "Forest Bathing Retreat: Flower Power!",
         sorttime: "2025-06-14 10:00",
         detail: "details"
     },
@@ -1755,7 +2019,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-17",
         time: "1:00 pm - 3:00 pm",
-        name: "Summer Tree ID",
+        name: "Guided Trail Walk",
         sorttime: "2025-06-17 13:00",
         detail: "details"
     },
@@ -1771,7 +2035,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-18",
         time: "5:30 pm - 8:30 pm",
-        name: "Invasion Ecology",
+        name: "Arbor Evenings",
         sorttime: "2025-06-18 17:30",
         detail: "details"
     },
@@ -1787,7 +2051,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-19",
         time: "5:30 pm - 8:30 pm",
-        name: "Spare-time Gardening",
+        name: "Arbor Evenings",
         sorttime: "2025-06-19 17:30",
         detail: "details"
     },
@@ -1803,7 +2067,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-20",
         time: "1:00 pm - 3:30 pm",
-        name: "Walking Meditation & Qigong",
+        name: "Landscape Design Fundamentals (2 sessions)",
         sorttime: "2025-06-20 13:00",
         detail: "details"
     },
@@ -1827,7 +2091,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-21",
         time: "1:00 pm - 4:00 pm",
-        name: "Guided Trail Walk",
+        name: "Pressed Flower Art",
         sorttime: "2025-06-21 13:00",
         detail: "details"
     },
@@ -1851,7 +2115,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-24",
         time: "1:00 pm - 3:00 pm",
-        name: "Arboretum Excursions: Grandfather Mountain Stewardship Foundation",
+        name: "Guided Trail Walk",
         sorttime: "2025-06-24 13:00",
         detail: "details"
     },
@@ -1875,7 +2139,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-26",
         time: "5:30 pm - 8:30 pm",
-        name: "Advanced Botany I",
+        name: "Arbor Evenings",
         sorttime: "2025-06-26 17:30",
         detail: "details"
     },
@@ -1899,7 +2163,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-06-28",
         time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
+        name: "Wildwoods Walk",
         sorttime: "2025-06-28 10:00",
         detail: "details"
     },
@@ -1923,7 +2187,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-07-01",
         time: "1:00 pm - 3:00 pm",
-        name: "Meditative Morning",
+        name: "Guided Trail Walk",
         sorttime: "2025-07-01 13:00",
         detail: "details"
     },
