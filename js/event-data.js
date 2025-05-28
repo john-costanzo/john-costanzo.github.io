@@ -65,10 +65,10 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-05-27",
-        time: "6:00 pm - 9:00 pm",
-        name: "Round Robin Open Mic Hosted by Letters To Abigail",
-        sorttime: "2025-05-27 18:00",
+        date: "2025-05-28",
+        time: "¿ - ?",
+        name: "Food Truck: Milk & Honey",
+        sorttime: "2025-05-28 Can't convert ¿ - ?",
         detail: "details"
     },
     {
@@ -82,9 +82,57 @@ const events = [
     {
         venue: "Trailside",
         date: "2025-05-29",
+        time: "¿ - ?",
+        name: "Food Truck: Milk & Honey",
+        sorttime: "2025-05-29 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-29",
         time: "6:30 pm - 8:30 pm",
         name: "Trailside Trivia",
         sorttime: "2025-05-29 18:30",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-30",
+        time: "¿ - ?",
+        name: "Food Truck: Milk & Honey",
+        sorttime: "2025-05-30 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-30",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: The Water Kickers",
+        sorttime: "2025-05-30 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-31",
+        time: "¿ - ?",
+        name: "Food Truck: Milk & Honey",
+        sorttime: "2025-05-31 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-05-31",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: Bridget Gossett Duo",
+        sorttime: "2025-05-31 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-01",
+        time: "2:00 pm - 4:00 pm",
+        name: "Live Music: Andy Ferrell",
+        sorttime: "2025-06-01 14:00",
         detail: "details"
     },
     {
@@ -129,18 +177,34 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-06-05",
-        time: "6:30 pm - 8:30 pm",
-        name: "Trailside Trivia",
-        sorttime: "2025-06-05 18:30",
-        detail: "details"
-    },
-    {
-        venue: "Trailside",
         date: "2025-06-06",
         time: "¿ - ?",
         name: "Food Truck: Silly Willies Hot Dogs",
         sorttime: "2025-06-06 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-07",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: The Workin’ Men",
+        sorttime: "2025-06-07 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-08",
+        time: "¿ - ?",
+        name: "Food Truck: Indian Aroma",
+        sorttime: "2025-06-08 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-08",
+        time: "2:00 pm - 5:00 pm",
+        name: "Live Music: Kristen Toole",
+        sorttime: "2025-06-08 14:00",
         detail: "details"
     },
     {
@@ -179,8 +243,24 @@ const events = [
         venue: "Trailside",
         date: "2025-06-12",
         time: "6:30 pm - 8:30 pm",
-        name: "Trailside Trivia",
+        name: "Trailside Summer Blockbuster Trivia",
         sorttime: "2025-06-12 18:30",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-13",
+        time: "¿ - ?",
+        name: "Food Truck: Indian Aroma",
+        sorttime: "2025-06-13 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-13",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: Max Eve",
+        sorttime: "2025-06-13 18:00",
         detail: "details"
     },
     {
@@ -189,6 +269,30 @@ const events = [
         time: "1:00 pm - 5:00 pm",
         name: "Dupont Forest Bike Wash!",
         sorttime: "2025-06-14 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-14",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: Parker's Back",
+        sorttime: "2025-06-14 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-15",
+        time: "¿ - ?",
+        name: "Food Truck: Indian Aroma",
+        sorttime: "2025-06-15 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-15",
+        time: "2:00 pm - 5:00 pm",
+        name: "Live Music: Will Hartz",
+        sorttime: "2025-06-15 14:00",
         detail: "details"
     },
     {
@@ -226,6 +330,14 @@ const events = [
     {
         venue: "Trailside",
         date: "2025-06-18",
+        time: "¿ - ?",
+        name: "Food Truck: Heidi Ho on the Go",
+        sorttime: "2025-06-18 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-18",
         time: "6:00 pm - 8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-18 18:00",
@@ -249,6 +361,14 @@ const events = [
     },
     {
         venue: "Trailside",
+        date: "2025-06-20",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: Riyen Roots",
+        sorttime: "2025-06-20 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
         date: "2025-06-21",
         time: "1:00 pm - 6:00 pm",
         name: "Blue Ridge Artisan Market",
@@ -257,10 +377,34 @@ const events = [
     },
     {
         venue: "Trailside",
+        date: "2025-06-21",
+        time: "2:00 pm - 5:00 pm",
+        name: "Live Music: Adi the Monk",
+        sorttime: "2025-06-21 14:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-21",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: The Lunatic Fringe",
+        sorttime: "2025-06-21 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
         date: "2025-06-22",
         time: "1:00 pm - 4:00 pm",
         name: "Mobile Book Bus at Trailside!",
         sorttime: "2025-06-22 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-22",
+        time: "2:00 pm - 5:00 pm",
+        name: "Live Music: Ken Morgan",
+        sorttime: "2025-06-22 14:00",
         detail: "details"
     },
     {
@@ -282,6 +426,14 @@ const events = [
     {
         venue: "Trailside",
         date: "2025-06-25",
+        time: "¿ - ?",
+        name: "Food Truck: Heidi Ho on the Go",
+        sorttime: "2025-06-25 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-25",
         time: "6:00 pm - 8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-25 18:00",
@@ -297,10 +449,26 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-06-26",
-        time: "6:30 pm - 8:30 pm",
-        name: "Trailside Trivia",
-        sorttime: "2025-06-26 18:30",
+        date: "2025-06-27",
+        time: "¿ - ?",
+        name: "Food Truck: Indian Aroma",
+        sorttime: "2025-06-27 Can't convert ¿ - ?",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-27",
+        time: "5:00 pm - 7:00 pm",
+        name: "Packet Pickup",
+        sorttime: "2025-06-27 17:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-27",
+        time: "6:00 pm - 9:00 pm",
+        name: "Live Music: J Dunks",
+        sorttime: "2025-06-27 18:00",
         detail: "details"
     },
     {
@@ -705,14 +873,6 @@ const events = [
     },
     {
         venue: "Guidon",
-        date: "Tuesday May 27th",
-        time: "06:00 PM - 08:30 PM",
-        name: "Run Club",
-        sorttime: "Tuesday May 27th 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Guidon",
         date: "Wednesday May 28th",
         time: "07:00 PM - 09:00 PM",
         name: "Team Trivia",
@@ -725,6 +885,14 @@ const events = [
         time: "06:00 PM - 10:00 PM",
         name: "Karaoke",
         sorttime: "Friday May 30th 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Guidon",
+        date: "Tuesday June 3rd",
+        time: "06:00 PM - 08:30 PM",
+        name: "Run Club",
+        sorttime: "Tuesday June 3rd 18:00",
         detail: "details"
     },
     {
@@ -1009,10 +1177,34 @@ const events = [
     },
     {
         venue: "Southern App",
+        date: "2025-06-07",
+        time: "7pm - 9pm",
+        name: "The Grass Owls",
+        sorttime: "2025-06-07 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-08",
+        time: "3pm - 5pm",
+        name: "Music Bingo!",
+        sorttime: "2025-06-08 15:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
         date: "2025-06-11",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-11 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Southern App",
+        date: "2025-06-12",
+        time: "6pm - 8pm",
+        name: "Tools on Stools",
+        sorttime: "2025-06-12 18:00",
         detail: "details"
     },
     {
@@ -1074,9 +1266,9 @@ const events = [
     {
         venue: "Sierra Nevada",
         date: "2025-06-13",
-        time: "7:30 PM - 10:00 PM",
+        time: "7:00 PM - 9:30 PM",
         name: "Hustle Souls",
-        sorttime: "2025-06-13 19:30",
+        sorttime: "2025-06-13 19:00",
         detail: "details"
     },
     {
@@ -1093,6 +1285,14 @@ const events = [
         time: "2:00 PM - 5:00 PM",
         name: "Julio & the Saltines",
         sorttime: "2025-06-15 14:00",
+        detail: "details"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "2025-06-20",
+        time: "7:00 PM - 9:30 PM",
+        name: "Empire Strikes Brass",
+        sorttime: "2025-06-20 19:00",
         detail: "details"
     },
     {
@@ -1149,6 +1349,14 @@ const events = [
         time: "6:00 PM - 10:00 PM",
         name: "Lettuce",
         sorttime: "2025-07-10 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "2025-07-11",
+        time: "6:00 PM - 9:30 PM",
+        name: "Swamp Zen & The Funnels",
+        sorttime: "2025-07-11 18:00",
         detail: "details"
     },
     {
@@ -1234,9 +1442,9 @@ const events = [
     {
         venue: "Sierra Nevada",
         date: "2025-08-01",
-        time: "7:30 PM - 10:00 PM",
+        time: "7:00 PM - 9:30 PM",
         name: "Dangermuffin",
-        sorttime: "2025-08-01 19:30",
+        sorttime: "2025-08-01 19:00",
         detail: "details"
     },
     {
@@ -1329,6 +1537,14 @@ const events = [
     },
     {
         venue: "Sierra Nevada",
+        date: "2025-09-05",
+        time: "6:00 PM - 9:30 PM",
+        name: "The Record Company",
+        sorttime: "2025-09-05 18:00",
+        detail: "details"
+    },
+    {
+        venue: "Sierra Nevada",
         date: "2025-09-06",
         time: "2:00 PM - 5:00 PM",
         name: "Andrew Wakefield & Friends",
@@ -1397,6 +1613,14 @@ const events = [
         time: "2:00 PM - 5:00 PM",
         name: "Tanasi",
         sorttime: "2025-10-11 14:00",
+        detail: "details"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "2025-10-16",
+        time: "6:00 PM - 9:30 PM",
+        name: "The California Honeydrops: Redwood Highway Tour",
+        sorttime: "2025-10-16 18:00",
         detail: "details"
     },
     {
@@ -1787,7 +2011,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-24",
         time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
+        name: "Botanical Watercolor for Beginners (full)",
         sorttime: "2025-05-24 10:00",
         detail: "details"
     },
@@ -1795,7 +2019,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-05-24",
         time: "10:00 am - 12:00 pm",
-        name: "Botanical Watercolor for Beginners (full)",
+        name: "Guided Trail Walk",
         sorttime: "2025-05-24 10:00",
         detail: "details"
     },
@@ -1849,6 +2073,14 @@ const events = [
     },
     {
         venue: "Arboretum",
+        date: "2025-05-30",
+        time: "10:30 am - 11:30 am",
+        name: "Free Adult Ed Class: Intro to Native Pollinators",
+        sorttime: "2025-05-30 10:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
         date: "2025-05-31",
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
@@ -1866,9 +2098,9 @@ const events = [
     {
         venue: "Arboretum",
         date: "2025-05-31",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-31 13:00",
+        time: "10:30 am - 11:30 am",
+        name: "Free Adult Ed Class: Intro to Native Pollinators",
+        sorttime: "2025-05-31 10:30",
         detail: "details"
     },
     {
