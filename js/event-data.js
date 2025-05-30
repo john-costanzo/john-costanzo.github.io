@@ -65,22 +65,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-05-29",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-05-29 Can't convert ¿ - ?",
-        detail: "details"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-05-29",
-        time: "6:30 pm - 8:30 pm",
-        name: "Trailside Trivia",
-        sorttime: "2025-05-29 18:30",
-        detail: "details"
-    },
-    {
-        venue: "Trailside",
         date: "2025-05-30",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
@@ -533,6 +517,14 @@ const events = [
         time: "7:00 am - 12:00 pm",
         name: "Summer Session TEAM MARATHON RELAY & 5K",
         sorttime: "2025-06-28 07:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-29",
+        time: "2:00 pm - 5:00 pm",
+        name: "Live Music: Kate Leigh Bryant",
+        sorttime: "2025-06-29 14:00",
         detail: "details"
     },
     {
