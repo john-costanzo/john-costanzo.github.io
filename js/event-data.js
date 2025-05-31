@@ -1,14 +1,6 @@
 const events = [
     {
         venue: "Point Lookout",
-        date: "2025-05-01",
-        time: "5:00 pm - 8:00 pm",
-        name: "Sunset Kisses – May 2025",
-        sorttime: "2025-05-01 17:00",
-        detail: "details"
-    },
-    {
-        venue: "Point Lookout",
         date: "2025-06-07",
         time: "7:00 pm - 10:00 pm",
         name: "Chairmen of The Board",
@@ -61,22 +53,6 @@ const events = [
         time: "7:00 pm - 10:00 pm",
         name: "The Tams 2025",
         sorttime: "2025-09-12 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-05-30",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-05-30 Can't convert ¿ - ?",
-        detail: "details"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-05-30",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: The Water Kickers",
-        sorttime: "2025-05-30 18:00",
         detail: "details"
     },
     {
@@ -528,11 +504,19 @@ const events = [
         detail: "details"
     },
     {
-        venue: "Oklawaha",
-        date: "2025-05-30",
-        time: "8:00 pm - 11:00 pm",
-        name: "Heavy Lifters",
-        sorttime: "2025-05-30 20:00",
+        venue: "Trailside",
+        date: "2025-06-30",
+        time: "4:00 pm - 6:00 pm",
+        name: "Traditional Irish Music Session",
+        sorttime: "2025-06-30 16:00",
+        detail: "details"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-30",
+        time: "6:00 pm - 8:00 pm",
+        name: "Paint & Sip with Monet and Chardonnay",
+        sorttime: "2025-06-30 18:00",
         detail: "details"
     },
     {
@@ -597,6 +581,14 @@ const events = [
         time: "8:00 pm - 11:00 pm",
         name: "Kayla McKinney",
         sorttime: "2025-06-13 20:00",
+        detail: "details"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-06-14",
+        time: "8:00 pm - 11:00 pm",
+        name: "Fancy and Friends in Low Places",
+        sorttime: "2025-06-14 20:00",
         detail: "details"
     },
     {
@@ -949,6 +941,14 @@ const events = [
         time: "07:00 pm - 09:00 pm",
         name: "Team Trivia",
         sorttime: "Wednesday June 4th 19:00",
+        detail: "details"
+    },
+    {
+        venue: "Guidon",
+        date: "Friday June 6th",
+        time: "06:00 pm - 10:00 pm",
+        name: "Karaoke",
+        sorttime: "Friday June 6th 18:00",
         detail: "details"
     },
     {
