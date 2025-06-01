@@ -1,452 +1,503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hendo Happenings</title>
-    <script>
-      const localEventBrowserVersion = "Tuesday, 2025-05-27 @ 07:44:36";
-    </script>
-    <style>
-      body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          line-height: 1.6;
-          color: #333;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 20px;
-          background-color: #f9f9f9;
-      }
-
-      header {
-          text-align: center;
-          margin-bottom: 0px;
-          border-bottom: 2px solid #3a6ea5;
-          padding-bottom: 0px;
-      }
-
-      h1 {
-          color: #3a6ea5;
-          margin-bottom: 0px;
-      }
-
-      .date-container {
-          margin-bottom: 20px;
-          background-color: white;
-          border-radius: 8px;
-          padding: 10px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      h2 {
-          color: #3a6ea5;
-          border-bottom: 1px solid #ddd;
-          padding-bottom: 10px;
-          margin-top: -10px;
-          margin-bottom: -10px;
-	  font-size: 1.1em;
-      }
-
-      h3 {
-          margin-top: 0px;
-          margin-bottom: 0px;
-      }
-
-      .event {
-	  padding-bottom: 5px;
-	  padding-top: 5px;
-	  padding-left: 15px;
-	  padding-right: 15px;
-          margin-bottom: 15px;
-          border-left: 4px solid #6c9ece;
-          background-color: #f5f8fa;
-          border-radius: 0 4px 4px 0;
-      }
-
-      .event:hover {
-          background-color: #e9f0f7;
-      }
-
-      .venue {
-          font-weight: bold;
-          color: #d35400;
-      }
-
-      .time {
-          color: #666;
-          font-style: italic;
-      }
-
-      .event-name {
-          font-weight: 500;
-          margin-top: 5px;
-      }
-
-      .info {
-          background-color: #e9f7ef;
-          padding: 15px;
-          margin: 20px 0;
-          border-radius: 4px;
-          border-left: 4px solid #27ae60;
-      }
-
-      #loading {
-          text-align: center;
-          padding: 30px;
-          font-size: 18px;
-      }
-
-      .error {
-          background-color: #fdedec;
-          color: #c0392b;
-          padding: 10px;
-          margin: 10px 0;
-          border-radius: 4px;
-      }
-
-      .filter-controls {
-          margin-bottom: 20px;
-          padding: 15px;
-          background-color: white;
-          border-radius: 8px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      .filter-controls label {
-          margin-right: 15px;
-      }
-
-      select,
-      input {
-          padding: 8px;
-          border-radius: 4px;
-          border: 1px solid #ddd;
-      }
-
-      button {
-          background-color: #3a6ea5;
-          color: white;
-          border: none;
-          padding: 8px 15px;
-          border-radius: 4px;
-          cursor: pointer;
-      }
-
-      button:hover {
-          background-color: #2c5282;
-      }
-
-      .venue-chip {
-          display: inline-block;
-          padding: 3px 8px;
-          margin-right: 5px;
-          margin-bottom: 5px;
-          background-color: #e9f0f7;
-          border-radius: 15px;
-          font-size: 0.8rem;
-          cursor: pointer;
-      }
-
-      .venue-chip.active {
-          background-color: #3a6ea5;
-          color: white;
-      }
-
-      .no-events {
-          text-align: center;
-          padding: 30px;
-          font-style: italic;
-          color: #666;
-      }
-    </style>
-    <script src="js/event-data.js"></script>
-  </head>
-
-  <body>
-    <header>
-      <h1>Hendo Happenings</h1>
-      <p style="display:none">Events for the next two weeks: <span id="date-range"></span></p>
-    </header>
-
-    <div class="filter-controls">
-      <h3>Filter Events</h3>
-      <div>
-        <label>
-          <input type="text" id="search-input" placeholder="Search events...">
-        </label>
-        <button id="search-button">Search</button>
-        <button id="clear-button">Clear</button>
-      </div>
-      <div id="venue-filters" style="margin-top: 15px;">
-        <h4 style="margin-bottom: 8px;">Venues:</h4>
-        <!-- Venue chips will be generated here -->
-      </div>
-    </div>
-
-    <!-- <div class="info"> -->
-      <!--     <p>This guide shows entertainment events at various local establishments for the next two weeks. Events are organized by date.</p> -->
-      <!-- </div> -->
-
-    <div id="loading">Loading events, please wait...</div>
-
-    <div id="events-container"></div>
-
-    <script>
-      // Current date and date formatting utility
-      const today = new Date( );
-
-      function formatDate( date ) {
-          const options = {
-              weekday: 'long',
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-	      timeZone: "UTC" // interpret everything as UTC
-          };
-          return date.toLocaleDateString( 'en-US', options );
-      }
-
-      function formatTime( timeStr ) {
-          // Handle different time formats or return original if can't parse
-          if ( !timeStr ) return '';
-
-          try {
-              // Try to standardize time format
-              if ( timeStr.match( /^\d{1,2}(:\d{2})?\s*(am|pm|AM|PM)$/i ) ) {
-                  // Handle "7pm" or "7:30pm" format
-                  const timeParts = timeStr.match( /^(\d{1,2})(?::(\d{2}))?\s*(am|pm|AM|PM)$/i );
-                  let hours = parseInt( timeParts[ 1 ] );
-                  const minutes = timeParts[ 2 ] ? timeParts[ 2 ] : '00';
-                  const ampm = timeParts[ 3 ].toLowerCase( );
-
-                  if ( ampm === 'pm' && hours < 12 ) hours += 12;
-                  if ( ampm === 'am' && hours === 12 ) hours = 0;
-
-                  return `${hours.toString().padStart(2, '0')}:${minutes} ${ampm.toUpperCase()}`;
-              }
-              return timeStr;
-          } catch ( e ) {
-              return timeStr;
-          }
-      }
-
-
-      /**
-       * Groups and sorts subdictionaries by date.
-       * @param {Object} dictOfDicts - The input dictionary of dictionaries.
-       * @returns {Object} - Dictionary of lists, grouped by date and sorted by sorttime.
-       */
-      function groupAndSortByDate(dictOfDicts) {
-	  const result = {};
-
-	  // Iterate over each subdictionary in the input
-	  for (const key in dictOfDicts) {
-              if (dictOfDicts.hasOwnProperty(key)) {
-		  const entry = dictOfDicts[key];
-		  const date = entry.date;
-
-		  if (!result[date]) {
-                      result[date] = [];
-		  }
-		  result[date].push(entry);
-              }
-	  }
-
-	  // Sort each list by sorttime
-	  for (const date in result) {
-              result[date].sort((a, b) => a.sorttime - b.sorttime);
-	  }
-
-	  return result;
-      }
-
-      // Calculate date range for display
-      const twoWeeksLater = new Date( today );
-      twoWeeksLater.setDate( today.getDate( ) + 14 );
-
-      document.getElementById( 'date-range' ).textContent =
-    `${formatDate(today)} - ${formatDate(twoWeeksLater)}`;
-
-      // Function to organize events by date
-      function organizeEventsByDate( events, startDate, endDate ) {
-
-          const startDateObj = new Date( startDate );
-          const endDateObj = new Date( endDate );
-
-          // Filter events within date range
-          const filteredEvents = events.filter( event => {
-              const eventDate = new Date( event.date );
-              return eventDate >= startDateObj && eventDate <= endDateObj;
-          } );
-
-          // Group by date
-          const groupedEvents = {};
-
-          filteredEvents.forEach( event => {
-              if ( !groupedEvents[ event.date ] ) {
-                  groupedEvents[ event.date ] = [ ];
-              }
-              groupedEvents[ event.date ].push( event );
-          } );
-
-          // Sort dates
-	  var temp_result =
-              Object.keys( groupedEvents )
-              .sort( )
-              .map( date => ( {
-                  date,
-                  events: groupedEvents[ date ]
-              } ) );
-
-	  temp_result.forEach( result => {
-	      result.events.sort((a, b) => {
-		  // Assumes sorttime is comparable (number or string that sorts correctly)
-		  return a.sorttime > b.sorttime ? 1 : (a.sorttime < b.sorttime ? -1 : 0);
-	      });
-	  });
-	  return temp_result;
-      }
-
-      // Function to render events
-      function renderEvents( eventsByDate ) {
-          const container = document.getElementById( 'events-container' );
-          container.innerHTML = '';
-
-          if ( eventsByDate.length === 0 ) {
-              container.innerHTML = '<div class="no-events">No events found matching your criteria.</div>';
-              return;
-          }
-
-          eventsByDate.forEach( day => {
-              const dateObj = new Date( day.date );
-              const dateContainer = document.createElement( 'div' );
-              dateContainer.className = 'date-container';
-
-              const dateHeading = document.createElement( 'h2' );
-              dateHeading.textContent = formatDate( dateObj );
-              dateContainer.appendChild( dateHeading );
-
-              day.events.forEach( event => {
-                  const eventElement = document.createElement( 'div' );
-                  eventElement.className = 'event';
-
-                  const venueElement = document.createElement( 'div' );
-                  venueElement.className = 'venue';
-                  venueElement.textContent = event.venue;
-
-                  const timeElement = document.createElement( 'span' );
-                  timeElement.className = 'time';
-                  timeElement.textContent = formatTime( event.time ) + ':    ';
-
-                  const nameElement = document.createElement( 'span' );
-                  nameElement.className = 'event-name';
-                  nameElement.textContent = event.name;
-
-                  eventElement.appendChild( venueElement );
-                  eventElement.appendChild( timeElement );
-                  eventElement.appendChild( nameElement );
-
-                  dateContainer.appendChild( eventElement );
-              } );
-
-              container.appendChild( dateContainer );
-          } );
-      }
-
-      // Filter functions
-      function applyFilters( ) {
-          const searchTerm = document.getElementById( 'search-input' ).value.toLowerCase( );
-          const activeVenues = Array.from( document.querySelectorAll( '.venue-chip.active' ) )
-                .map( chip => chip.textContent );
-
-          let filteredEvents = [ ...events ];
-
-          // Apply search term filter
-          if ( searchTerm ) {
-              filteredEvents = filteredEvents.filter( event =>
-                  event.name.toLowerCase( ).includes( searchTerm ) ||
-                      event.venue.toLowerCase( ).includes( searchTerm )
-              );
-          }
-
-          // Apply venue filter
-          if ( activeVenues.length > 0 ) {
-              filteredEvents = filteredEvents.filter( event =>
-                  activeVenues.includes( event.venue )
-              );
-          }
-
-          // Get date range (today to two weeks from now)
-          const endDate = new Date( today );
-          endDate.setDate( today.getDate( ) + 14 );
-
-          const organizedEvents = organizeEventsByDate(
-              filteredEvents,
-              today.toISOString( ).split( 'T' )[ 0 ],
-              endDate.toISOString( ).split( 'T' )[ 0 ]
-          );
-
-          renderEvents( organizedEvents );
-      }
-
-      // Create venue filter chips
-      function createVenueFilters( ) {
-          const venueFiltersContainer = document.getElementById( 'venue-filters' );
-
-          // Get unique venues
-          const venues = [ ...new Set( events.map( event => event.venue ) ) ].sort();
-
-          venues.forEach( venue => {
-              const chip = document.createElement( 'span' );
-              chip.className = 'venue-chip';
-              chip.textContent = venue;
-              chip.addEventListener( 'click', ( ) => {
-                  chip.classList.toggle( 'active' );
-                  applyFilters( );
-              } );
-              venueFiltersContainer.appendChild( chip );
-          } );
-      }
-
-      // Initialize the page
-      window.addEventListener( 'DOMContentLoaded', ( ) => {
-          // In a real application, we would fetch data from the provided URLs here
-
-          // Setup search functionality
-          document.getElementById( 'search-button' ).addEventListener( 'click', applyFilters );
-          document.getElementById( 'search-input' ).addEventListener( 'keypress', ( e ) => {
-              if ( e.key === 'Enter' ) applyFilters( );
-          } );
-          document.getElementById( 'clear-button' ).addEventListener( 'click', ( ) => {
-              document.getElementById( 'search-input' ).value = '';
-              document.querySelectorAll( '.venue-chip.active' ).forEach( chip => {
-                  chip.classList.remove( 'active' );
-              } );
-              applyFilters( );
-          } );
-
-          // Create venue filters
-          createVenueFilters( );
-
-          // Hide loading message
-          document.getElementById( 'loading' ).style.display = 'none';
-
-          // Show initial events
-          const endDate = new Date( today );
-          endDate.setDate( today.getDate( ) + 14 );
-
-          const organizedEvents = organizeEventsByDate(
-              events,
-              today.toISOString( ).split( 'T' )[ 0 ],
-              endDate.toISOString( ).split( 'T' )[ 0 ]
-          );
-
-          renderEvents( organizedEvents );
-      } );
-    </script>
-  </body>
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hendo Happenings</title>
+		<script>
+			const localEventBrowserVersion = "Sunday, 2025-06-01 @ 19:25:05";
+		</script>
+		<style>
+			body {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				line-height: 1.6;
+				color: #333;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #f9f9f9;
+			}
+
+			header {
+				text-align: center;
+				margin-bottom: 0px;
+				border-bottom: 2px solid #3a6ea5;
+				padding-bottom: 0px;
+			}
+
+			h1 {
+				color: #3a6ea5;
+				margin-bottom: 0px;
+			}
+
+			.date-container {
+				margin-bottom: 20px;
+				background-color: white;
+				border-radius: 8px;
+				padding: 10px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			h2 {
+				color: #3a6ea5;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 10px;
+				margin-top: -10px;
+				margin-bottom: -10px;
+				font-size: 1.1em;
+			}
+
+			h3 {
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+
+			.event {
+				padding-bottom: 5px;
+				padding-top: 5px;
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-bottom: 15px;
+				border-left: 4px solid #6c9ece;
+				background-color: #f5f8fa;
+				border-radius: 0 4px 4px 0;
+			}
+
+			.event:hover {
+				background-color: #e9f0f7;
+			}
+
+			.venue {
+				font-weight: bold;
+				color: #d35400;
+			}
+
+			.time {
+				color: #666;
+				font-style: italic;
+			}
+
+			.event-name {
+				font-weight: 500;
+				margin-top: 5px;
+			}
+
+			.event-description {
+				font-weight: 500;
+				margin-top: 5px;
+			}
+
+			.toggle-control {
+				font-weight: 500;
+				margin-left: 15px;
+				margin-top: 5px;
+				margin-right: 15px;
+			}
+
+			.hidden {
+				display: none;
+			}
+
+			.info {
+				background-color: #e9f7ef;
+				padding: 15px;
+				margin: 20px 0;
+				border-radius: 4px;
+				border-left: 4px solid #27ae60;
+			}
+
+			#loading {
+				text-align: center;
+				padding: 30px;
+				font-size: 18px;
+			}
+
+			.error {
+				background-color: #fdedec;
+				color: #c0392b;
+				padding: 10px;
+				margin: 10px 0;
+				border-radius: 4px;
+			}
+
+			.filter-controls {
+				margin-bottom: 20px;
+				padding: 15px;
+				background-color: white;
+				border-radius: 8px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			.filter-controls label {
+				margin-right: 15px;
+			}
+
+			select,
+			input {
+				padding: 8px;
+				border-radius: 4px;
+				border: 1px solid #ddd;
+			}
+
+			button {
+				background-color: #3a6ea5;
+				color: white;
+				border: none;
+				padding: 8px 15px;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #2c5282;
+			}
+
+			.venue-chip {
+				display: inline-block;
+				padding: 3px 8px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				background-color: #e9f0f7;
+				border-radius: 15px;
+				font-size: 0.8rem;
+				cursor: pointer;
+			}
+
+			.venue-chip.active {
+				background-color: #3a6ea5;
+				color: white;
+			}
+
+			.no-events {
+				text-align: center;
+				padding: 30px;
+				font-style: italic;
+				color: #666;
+			}
+		</style>
+		<script src="js/event-data.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Hendo Happenings</h1>
+			<p style="display: none">
+				Events for the next two weeks: <span id="date-range"></span>
+			</p>
+		</header>
+
+		<div class="filter-controls">
+			<h3>Filter Events</h3>
+			<div>
+				<label>
+					<input type="text" id="search-input" placeholder="Search events..." />
+				</label>
+				<button id="search-button">Search</button>
+				<button id="clear-button">Clear</button>
+			</div>
+			<div id="venue-filters" style="margin-top: 15px">
+				<h4 style="margin-bottom: 8px">Venues:</h4>
+				<!-- Venue chips will be generated here -->
+			</div>
+		</div>
+
+		<!-- <div class="info"> -->
+		<!--     <p>This guide shows entertainment events at various local establishments for the next two weeks. Events are organized by date.</p> -->
+		<!-- </div> -->
+
+		<div id="loading">Loading events, please wait...</div>
+
+		<div id="events-container"></div>
+
+		<script>
+			// Current date and date formatting utility
+			const today = new Date();
+
+			function formatDate(date) {
+				const options = {
+					weekday: "long",
+					year: "numeric",
+					month: "long",
+					day: "numeric",
+					timeZone: "UTC", // interpret everything as UTC
+				};
+				return date.toLocaleDateString("en-US", options);
+			}
+
+			function formatTime(timeStr) {
+				// Handle different time formats or return original if can't parse
+				if (!timeStr) return "";
+
+				try {
+					// Try to standardize time format
+					if (timeStr.match(/^\d{1,2}(:\d{2})?\s*(am|pm|AM|PM)$/i)) {
+						// Handle "7pm" or "7:30pm" format
+						const timeParts = timeStr.match(
+							/^(\d{1,2})(?::(\d{2}))?\s*(am|pm|AM|PM)$/i,
+						);
+						let hours = parseInt(timeParts[1]);
+						const minutes = timeParts[2] ? timeParts[2] : "00";
+						const ampm = timeParts[3].toLowerCase();
+
+						if (ampm === "pm" && hours < 12) hours += 12;
+						if (ampm === "am" && hours === 12) hours = 0;
+
+						return `${hours.toString().padStart(2, "0")}:${minutes} ${ampm.toUpperCase()}`;
+					}
+					return timeStr;
+				} catch (e) {
+					return timeStr;
+				}
+			}
+
+			/**
+			 * Groups and sorts subdictionaries by date.
+			 * @param {Object} dictOfDicts - The input dictionary of dictionaries.
+			 * @returns {Object} - Dictionary of lists, grouped by date and sorted by sorttime.
+			 */
+			function groupAndSortByDate(dictOfDicts) {
+				const result = {};
+
+				// Iterate over each subdictionary in the input
+				for (const key in dictOfDicts) {
+					if (dictOfDicts.hasOwnProperty(key)) {
+						const entry = dictOfDicts[key];
+						const date = entry.date;
+
+						if (!result[date]) {
+							result[date] = [];
+						}
+						result[date].push(entry);
+					}
+				}
+
+				// Sort each list by sorttime
+				for (const date in result) {
+					result[date].sort((a, b) => a.sorttime - b.sorttime);
+				}
+
+				return result;
+			}
+
+			// Calculate date range for display
+			const twoWeeksLater = new Date(today);
+			twoWeeksLater.setDate(today.getDate() + 14);
+
+			document.getElementById("date-range").textContent =
+				`${formatDate(today)} - ${formatDate(twoWeeksLater)}`;
+
+			// Function to organize events by date
+			function organizeEventsByDate(events, startDate, endDate) {
+				const startDateObj = new Date(startDate);
+				const endDateObj = new Date(endDate);
+
+				// Filter events within date range
+				const filteredEvents = events.filter((event) => {
+					const eventDate = new Date(event.date);
+					return eventDate >= startDateObj && eventDate <= endDateObj;
+				});
+
+				// Group by date
+				const groupedEvents = {};
+
+				filteredEvents.forEach((event) => {
+					if (!groupedEvents[event.date]) {
+						groupedEvents[event.date] = [];
+					}
+					groupedEvents[event.date].push(event);
+				});
+
+				// Sort dates
+				var temp_result = Object.keys(groupedEvents)
+					.sort()
+					.map((date) => ({
+						date,
+						events: groupedEvents[date],
+					}));
+
+				temp_result.forEach((result) => {
+					result.events.sort((a, b) => {
+						// Assumes sorttime is comparable (number or string that sorts correctly)
+						return a.sorttime > b.sorttime
+							? 1
+							: a.sorttime < b.sorttime
+								? -1
+								: 0;
+					});
+				});
+				return temp_result;
+			}
+
+			// Function to render events
+			function renderEvents(eventsByDate) {
+				const container = document.getElementById("events-container");
+				container.innerHTML = "";
+
+				if (eventsByDate.length === 0) {
+					container.innerHTML =
+						'<div class="no-events">No events found matching your criteria.</div>';
+					return;
+				}
+
+				eventsByDate.forEach((day) => {
+					const dateObj = new Date(day.date);
+					const dateContainer = document.createElement("div");
+					dateContainer.className = "date-container";
+
+					const dateHeading = document.createElement("h2");
+					dateHeading.textContent = formatDate(dateObj);
+					dateContainer.appendChild(dateHeading);
+
+					day.events.forEach((event) => {
+						const eventElement = document.createElement("div");
+						eventElement.className = "event";
+
+						const venueElement = document.createElement("div");
+						venueElement.className = "venue";
+						venueElement.textContent = event.venue;
+
+						const timeElement = document.createElement("span");
+						timeElement.className = "time";
+						timeElement.textContent = formatTime(event.time) + ":    ";
+
+						const nameElement = document.createElement("span");
+						nameElement.className = "event-name";
+						nameElement.textContent = event.name;
+
+						var descriptionElement = null;
+						var toggleElement = null;
+						if (event.detail !== "None") {
+							descriptionElement = document.createElement("span");
+							descriptionElement.textContent = event.detail;
+							descriptionElement.className = "hidden";
+
+							toggleElement = document.createElement("span");
+							toggleElement.textContent = "+";
+							toggleElement.className = "toggle-control";
+							toggleElement.addEventListener("click", function () {
+								descriptionElement.classList.toggle("hidden");
+								if (toggleElement.textContent === "+")
+									toggleElement.textContent = "-";
+								else toggleElement.textContent = "+";
+							});
+						}
+						eventElement.appendChild(venueElement);
+						eventElement.appendChild(timeElement);
+						eventElement.appendChild(nameElement);
+						if (descriptionElement) {
+							eventElement.appendChild(toggleElement);
+							eventElement.appendChild(descriptionElement);
+						}
+
+						dateContainer.appendChild(eventElement);
+					});
+
+					container.appendChild(dateContainer);
+				});
+			}
+
+			// Filter functions
+			function applyFilters() {
+				const searchTerm = document
+					.getElementById("search-input")
+					.value.toLowerCase();
+				const activeVenues = Array.from(
+					document.querySelectorAll(".venue-chip.active"),
+				).map((chip) => chip.textContent);
+
+				let filteredEvents = [...events];
+
+				// Apply search term filter
+				if (searchTerm) {
+					filteredEvents = filteredEvents.filter(
+						(event) =>
+							event.name.toLowerCase().includes(searchTerm) ||
+							event.venue.toLowerCase().includes(searchTerm),
+					);
+				}
+
+				// Apply venue filter
+				if (activeVenues.length > 0) {
+					filteredEvents = filteredEvents.filter((event) =>
+						activeVenues.includes(event.venue),
+					);
+				}
+
+				// Get date range (today to two weeks from now)
+				const endDate = new Date(today);
+				endDate.setDate(today.getDate() + 14);
+
+				const organizedEvents = organizeEventsByDate(
+					filteredEvents,
+					today.toISOString().split("T")[0],
+					endDate.toISOString().split("T")[0],
+				);
+
+				renderEvents(organizedEvents);
+			}
+
+			// Create venue filter chips
+			function createVenueFilters() {
+				const venueFiltersContainer = document.getElementById("venue-filters");
+
+				// Get unique venues
+				const venues = [...new Set(events.map((event) => event.venue))].sort();
+
+				venues.forEach((venue) => {
+					const chip = document.createElement("span");
+					chip.className = "venue-chip";
+					chip.textContent = venue;
+					chip.addEventListener("click", () => {
+						chip.classList.toggle("active");
+						applyFilters();
+					});
+					venueFiltersContainer.appendChild(chip);
+				});
+			}
+
+			// Initialize the page
+			window.addEventListener("DOMContentLoaded", () => {
+				// In a real application, we would fetch data from the provided URLs here
+
+				// Setup search functionality
+				document
+					.getElementById("search-button")
+					.addEventListener("click", applyFilters);
+				document
+					.getElementById("search-input")
+					.addEventListener("keypress", (e) => {
+						if (e.key === "Enter") applyFilters();
+					});
+				document
+					.getElementById("clear-button")
+					.addEventListener("click", () => {
+						document.getElementById("search-input").value = "";
+						document.querySelectorAll(".venue-chip.active").forEach((chip) => {
+							chip.classList.remove("active");
+						});
+						applyFilters();
+					});
+
+				// Create venue filters
+				createVenueFilters();
+
+				// Hide loading message
+				document.getElementById("loading").style.display = "none";
+
+				// Show initial events
+				const endDate = new Date(today);
+				endDate.setDate(today.getDate() + 14);
+
+				const organizedEvents = organizeEventsByDate(
+					events,
+					today.toISOString().split("T")[0],
+					endDate.toISOString().split("T")[0],
+				);
+
+				renderEvents(organizedEvents);
+			});
+		</script>
+	</body>
 </html>
 
 <!-- Local Variables: -->
