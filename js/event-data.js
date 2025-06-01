@@ -5,7 +5,7 @@ const events = [
         time: "7:00 pm - 10:00 pm",
         name: "Chairmen of The Board",
         sorttime: "2025-06-07 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Point Lookout",
@@ -13,7 +13,7 @@ const events = [
         time: "7:00 pm - 10:00 pm",
         name: "ChillBilly & Blake Ellege",
         sorttime: "2025-06-20 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Point Lookout",
@@ -21,7 +21,7 @@ const events = [
         time: "7:00 pm - 10:00 pm",
         name: "Boomer Jukebox",
         sorttime: "2025-07-19 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Point Lookout",
@@ -29,7 +29,7 @@ const events = [
         time: "8:00 am - 5:00 pm",
         name: "Chicago Rewired",
         sorttime: "2025-08-09 08:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Point Lookout",
@@ -37,7 +37,7 @@ const events = [
         time: "7:00 pm - 10:00 pm",
         name: "Too Much Sylvia 2025",
         sorttime: "2025-08-15 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Point Lookout",
@@ -45,7 +45,7 @@ const events = [
         time: "¿ - ?",
         name: "Reunion Weekend",
         sorttime: "2025-08-23 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Point Lookout",
@@ -53,7 +53,7 @@ const events = [
         time: "7:00 pm - 10:00 pm",
         name: "The Tams 2025",
         sorttime: "2025-09-12 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Souther Williams",
@@ -157,7 +157,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-01 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -165,7 +165,7 @@ const events = [
         time: "2:00 pm - 4:00 pm",
         name: "Live Music: Andy Ferrell",
         sorttime: "2025-06-01 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -173,7 +173,7 @@ const events = [
         time: "3:00 pm - 5:00 pm",
         name: "The Art of Journaling on the fly class!",
         sorttime: "2025-06-01 15:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -181,7 +181,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-02 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -189,7 +189,7 @@ const events = [
         time: "4:00 pm - 6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-02 16:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -197,7 +197,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-03 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -205,7 +205,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-06-03 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -213,7 +213,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-04 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -221,7 +221,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-04 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -229,7 +229,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-05 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -237,7 +237,7 @@ const events = [
         time: "6:30 pm - 8:30 pm",
         name: "Adventure Film Series: One Ocean Film Tour",
         sorttime: "2025-06-05 18:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -245,7 +245,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-06 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -253,7 +253,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Silly Willies Hot Dogs",
         sorttime: "2025-06-06 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -261,7 +261,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-07 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -269,7 +269,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Live Music: The Workin’ Men",
         sorttime: "2025-06-07 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -277,7 +277,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
         sorttime: "2025-06-08 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -285,7 +285,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Live Music: Kristen Toole",
         sorttime: "2025-06-08 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -293,7 +293,7 @@ const events = [
         time: "4:00 pm - 6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-09 16:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -301,7 +301,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-06-10 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -309,7 +309,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-11 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -317,7 +317,7 @@ const events = [
         time: "5:30 pm - 7:00 pm",
         name: "Green Drinks with Conserving Carolina & Mtn True",
         sorttime: "2025-06-12 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -325,7 +325,7 @@ const events = [
         time: "6:30 pm - 8:30 pm",
         name: "Trailside Summer Blockbuster Trivia",
         sorttime: "2025-06-12 18:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -333,7 +333,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
         sorttime: "2025-06-13 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -341,7 +341,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Live Music: Max Eve",
         sorttime: "2025-06-13 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -349,7 +349,7 @@ const events = [
         time: "1:00 pm - 5:00 pm",
         name: "Dupont Forest Bike Wash!",
         sorttime: "2025-06-14 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -357,7 +357,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Live Music: Parker's Back",
         sorttime: "2025-06-14 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -365,7 +365,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
         sorttime: "2025-06-15 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -373,7 +373,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Live Music: Will Hartz",
         sorttime: "2025-06-15 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -381,7 +381,7 @@ const events = [
         time: "4:00 pm - 6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-16 16:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -389,7 +389,7 @@ const events = [
         time: "6:30 pm - 8:30 pm",
         name: "Paint Your Own Pottery Class",
         sorttime: "2025-06-16 18:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -397,7 +397,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "BINGO with Hendersonville Rotary Club",
         sorttime: "2025-06-17 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -405,7 +405,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-06-17 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -413,7 +413,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Heidi Ho on the Go",
         sorttime: "2025-06-18 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -421,7 +421,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-18 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -429,7 +429,7 @@ const events = [
         time: "6:30 pm - 8:30 pm",
         name: "Trailside Trivia",
         sorttime: "2025-06-19 18:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -437,7 +437,7 @@ const events = [
         time: "7:30 pm - 9:30 pm",
         name: "Fish, Laugh, Love: Fly Fishing themed comedy fundraiser",
         sorttime: "2025-06-19 19:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -445,7 +445,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Live Music: Riyen Roots",
         sorttime: "2025-06-20 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -453,7 +453,7 @@ const events = [
         time: "1:00 pm - 6:00 pm",
         name: "Blue Ridge Artisan Market",
         sorttime: "2025-06-21 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -461,7 +461,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Live Music: Adi the Monk",
         sorttime: "2025-06-21 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -469,7 +469,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Live Music: The Lunatic Fringe",
         sorttime: "2025-06-21 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -477,7 +477,7 @@ const events = [
         time: "1:00 pm - 4:00 pm",
         name: "Mobile Book Bus at Trailside!",
         sorttime: "2025-06-22 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -485,7 +485,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Live Music: Ken Morgan",
         sorttime: "2025-06-22 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -493,7 +493,7 @@ const events = [
         time: "4:00 pm - 6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-23 16:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -501,7 +501,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-06-24 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -509,7 +509,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Heidi Ho on the Go",
         sorttime: "2025-06-25 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -517,7 +517,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-25 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -525,7 +525,7 @@ const events = [
         time: "6:30 pm - 8:30 pm",
         name: "Run Nation Adventure Film",
         sorttime: "2025-06-26 18:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -533,7 +533,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
         sorttime: "2025-06-27 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -541,7 +541,7 @@ const events = [
         time: "5:00 pm - 7:00 pm",
         name: "Packet Pickup",
         sorttime: "2025-06-27 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -549,7 +549,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Live Music: J Dunks",
         sorttime: "2025-06-27 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -557,7 +557,7 @@ const events = [
         time: "¿ - ?",
         name: "Adair’s Cajun Cooking and Milk and Honey",
         sorttime: "2025-06-28 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -565,7 +565,7 @@ const events = [
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
         sorttime: "2025-06-28 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -573,7 +573,7 @@ const events = [
         time: "7:00 am - 12:00 pm",
         name: "Summer Session TEAM MARATHON RELAY & 5K",
         sorttime: "2025-06-28 07:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -581,7 +581,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Live Music: Kate Leigh Bryant",
         sorttime: "2025-06-29 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -589,7 +589,7 @@ const events = [
         time: "4:00 pm - 6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-30 16:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Trailside",
@@ -597,7 +597,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Paint & Sip with Monet and Chardonnay",
         sorttime: "2025-06-30 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -605,7 +605,7 @@ const events = [
         time: "12:00 pm - 11:00 pm",
         name: "Cummings Cove Cares Fundraiser for Hurricane Helene Recovery and Rebuild",
         sorttime: "2025-06-05 12:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -613,7 +613,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "The BRUE @ Oklawaha!",
         sorttime: "2025-06-05 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -621,7 +621,7 @@ const events = [
         time: "8:00 pm - 11:00 pm",
         name: "Alma Russ",
         sorttime: "2025-06-06 20:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -629,7 +629,7 @@ const events = [
         time: "8:00 pm - 11:00 pm",
         name: "Billingsley",
         sorttime: "2025-06-07 20:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -637,7 +637,7 @@ const events = [
         time: "3:00 pm - 5:00 pm",
         name: "Petah Iah and the Mind Renewers",
         sorttime: "2025-06-08 15:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -645,7 +645,7 @@ const events = [
         time: "7:00 pm - 9:00 pm",
         name: "Izzy Hughes",
         sorttime: "2025-06-12 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -653,7 +653,7 @@ const events = [
         time: "8:00 pm - 11:00 pm",
         name: "Kayla McKinney",
         sorttime: "2025-06-13 20:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -661,7 +661,7 @@ const events = [
         time: "8:00 pm - 11:00 pm",
         name: "Fancy and Friends in Low Places",
         sorttime: "2025-06-14 20:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -669,7 +669,7 @@ const events = [
         time: "3:00 pm - 5:00 pm",
         name: "Pleasure Chest",
         sorttime: "2025-06-15 15:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -677,7 +677,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-05-30 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -685,7 +685,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Tracy Davis & The TMI Band",
         sorttime: "2025-05-31 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -693,7 +693,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-06-06 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -701,7 +701,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Tracy Davis & The TMI Band",
         sorttime: "2025-06-07 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -709,7 +709,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "The Right Fit",
         sorttime: "2025-06-13 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -717,7 +717,7 @@ const events = [
         time: "11:00 am - 7:00 pm",
         name: "Father's Day BBQ",
         sorttime: "2025-06-15 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -725,7 +725,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-06-20 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -733,7 +733,7 @@ const events = [
         time: "11:00 am - 9:00 pm",
         name: "BOLD Birthday Bash",
         sorttime: "2025-06-21 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -741,7 +741,7 @@ const events = [
         time: "5:00 pm - 7:00 pm",
         name: "Macarons & Flight Pairing",
         sorttime: "2025-06-26 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -749,7 +749,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Fine Line Band",
         sorttime: "2025-06-27 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -757,7 +757,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Awake In The Dream",
         sorttime: "2025-06-28 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -765,7 +765,7 @@ const events = [
         time: "11:00 am - 9:00 pm",
         name: "Kickoff to Summer",
         sorttime: "2025-05-24 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -773,7 +773,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Sound Invasion",
         sorttime: "2025-05-23 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -781,7 +781,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-05-17 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -789,7 +789,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Fine Line Band",
         sorttime: "2025-05-16 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -797,7 +797,7 @@ const events = [
         time: "5:00 pm - 7:00 pm",
         name: "Crumbl Cookies & Flight Pairing",
         sorttime: "2025-05-15 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -805,7 +805,7 @@ const events = [
         time: "11:00 am - 7:00 pm",
         name: "Mother's Day Plant & Sip",
         sorttime: "2025-05-11 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -813,7 +813,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Jay Dee",
         sorttime: "2025-05-10 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -821,7 +821,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "The Sliding Rockers",
         sorttime: "2025-05-09 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -829,7 +829,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Hard Knox Wrestling at Bold Rock",
         sorttime: "2025-05-03 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -837,7 +837,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Myron Hyman",
         sorttime: "2025-05-02 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -845,7 +845,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Awake In The Dream",
         sorttime: "2025-04-26 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -853,7 +853,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-04-25 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -861,7 +861,7 @@ const events = [
         time: "11:00 am - 9:00 pm",
         name: "Easter Egg Give-a-Way",
         sorttime: "2025-04-19 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -869,7 +869,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Kid Billy",
         sorttime: "2025-04-18 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -877,7 +877,7 @@ const events = [
         time: "5:00 pm - 7:00 pm",
         name: "Cupcake & Flight Pairing",
         sorttime: "2025-04-17 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -885,7 +885,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "John Cox Band",
         sorttime: "2025-04-12 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -893,7 +893,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "The Right Fit",
         sorttime: "2025-04-11 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -901,7 +901,7 @@ const events = [
         time: "12:00 pm - 4:00 pm",
         name: "Grounded & Grateful Event",
         sorttime: "2025-04-05 12:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -909,7 +909,7 @@ const events = [
         time: "6:00 pm - 10:00 pm",
         name: "Arborfest Expo: AFTER PARTY (Private Event)",
         sorttime: "2025-04-04 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -917,7 +917,7 @@ const events = [
         time: "5:00 pm - 8:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-03-28 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -925,7 +925,7 @@ const events = [
         time: "5:00 pm - 7:00 pm",
         name: "Cheesecake & Flight Pairing",
         sorttime: "2025-03-27 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -933,7 +933,7 @@ const events = [
         time: "5:00 pm - 8:00 pm",
         name: "Myron Hyman",
         sorttime: "2025-03-21 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -941,7 +941,7 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         name: "St. Patrick's Day Party!",
         sorttime: "2025-03-17 12:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -949,7 +949,7 @@ const events = [
         time: "¿ - ?",
         name: "St. Patrick's Day Weekend Celebration",
         sorttime: "2025-03-15 Can't convert ¿ - ?",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -957,7 +957,7 @@ const events = [
         time: "11:00 am - 10:00 pm",
         name: "St. Patrick's: Steal the Pint",
         sorttime: "2025-03-14 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -965,7 +965,7 @@ const events = [
         time: "6:00 pm - 8:00 pm",
         name: "Cast Iron",
         sorttime: "2025-03-08 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -973,7 +973,7 @@ const events = [
         time: "5:00 pm - 8:00 pm",
         name: "Iggy Radio",
         sorttime: "2025-03-01 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -981,7 +981,7 @@ const events = [
         time: "5:00 pm - 8:00 pm",
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-02-28 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -989,7 +989,7 @@ const events = [
         time: "5:00 pm - 8:00 pm",
         name: "Myron Hyman",
         sorttime: "2025-02-21 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Boldrock",
@@ -997,7 +997,7 @@ const events = [
         time: "5:00 pm - 7:00 pm",
         name: "Craig St. John",
         sorttime: "2025-02-15 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Guidon",
@@ -1005,7 +1005,7 @@ const events = [
         time: "06:00 pm - 08:30 pm",
         name: "Run Club",
         sorttime: "Tuesday June 3rd 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Guidon",
@@ -1013,7 +1013,7 @@ const events = [
         time: "07:00 pm - 09:00 pm",
         name: "Team Trivia",
         sorttime: "Wednesday June 4th 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Guidon",
@@ -1021,7 +1021,7 @@ const events = [
         time: "06:00 pm - 10:00 pm",
         name: "Karaoke",
         sorttime: "Friday June 6th 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Guidon",
@@ -1029,7 +1029,7 @@ const events = [
         time: "07:00 pm - 09:00 pm",
         name: "Trout Unlimited Monthly Meeting",
         sorttime: "Thursday June 12th 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Guidon",
@@ -1037,7 +1037,7 @@ const events = [
         time: "11:00 am - 10:00 pm",
         name: "National Bourbon Day",
         sorttime: "Saturday June 14th 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Guidon",
@@ -1045,7 +1045,7 @@ const events = [
         time: "11:00 am - 09:00 pm",
         name: "National Chicken Wing Day",
         sorttime: "Tuesday July 29th 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Guidon",
@@ -1053,7 +1053,7 @@ const events = [
         time: "06:30 pm - 09:30 pm",
         name: "Live music by Cellophane Flowers",
         sorttime: "Saturday September 6th 18:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "St. Paul",
@@ -1149,7 +1149,7 @@ const events = [
         time: "4pm - 6pm",
         name: "The Dan Keller Trio",
         sorttime: "2025-06-01 16:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1157,7 +1157,7 @@ const events = [
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-04 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1165,7 +1165,7 @@ const events = [
         time: "6pm - 8pm",
         name: "Mr Jimmy Power Trio",
         sorttime: "2025-06-05 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1173,7 +1173,7 @@ const events = [
         time: "12pm - 1pm",
         name: "Saturday Yoga Class",
         sorttime: "2025-06-07 12:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1181,7 +1181,7 @@ const events = [
         time: "7pm - 9pm",
         name: "The Grass Owls",
         sorttime: "2025-06-07 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1189,7 +1189,7 @@ const events = [
         time: "3pm - 5pm",
         name: "Music Bingo!",
         sorttime: "2025-06-08 15:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1197,7 +1197,7 @@ const events = [
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-11 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1205,7 +1205,7 @@ const events = [
         time: "6pm - 8pm",
         name: "Tools on Stools",
         sorttime: "2025-06-12 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1213,7 +1213,7 @@ const events = [
         time: "7pm - 9pm",
         name: "Lefty Carmean & The Workin’ Men",
         sorttime: "2025-06-13 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1221,7 +1221,7 @@ const events = [
         time: "5pm - 7pm",
         name: "Hatch Pitch Party",
         sorttime: "2025-06-17 17:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1229,7 +1229,7 @@ const events = [
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-18 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Southern App",
@@ -1237,7 +1237,7 @@ const events = [
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-25 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1245,7 +1245,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "Fantastic Negrito w/ The Saviors of New York",
         sorttime: "2025-06-04 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1253,7 +1253,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Pleasure Chest",
         sorttime: "2025-06-07 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1261,7 +1261,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "My Magnificent Nemesis w/ Alien Music Club",
         sorttime: "2025-06-08 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1269,7 +1269,7 @@ const events = [
         time: "7:00 pm - 9:30 pm",
         name: "Hustle Souls",
         sorttime: "2025-06-13 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1277,7 +1277,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Daniel Shearin",
         sorttime: "2025-06-14 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1285,7 +1285,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Julio & the Saltines",
         sorttime: "2025-06-15 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1293,7 +1293,7 @@ const events = [
         time: "7:00 pm - 9:30 pm",
         name: "Empire Strikes Brass",
         sorttime: "2025-06-20 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1301,7 +1301,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "The Heavy Lifters",
         sorttime: "2025-06-21 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1309,7 +1309,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "The Deep Shallow Band",
         sorttime: "2025-06-22 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1317,7 +1317,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Who’s Bad: The Ultimate Michael Jackson Experience",
         sorttime: "2025-06-26 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1325,7 +1325,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "The Headtones",
         sorttime: "2025-06-28 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1333,7 +1333,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Moonshine State",
         sorttime: "2025-06-29 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1341,7 +1341,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Lyric",
         sorttime: "2025-07-05 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1349,7 +1349,7 @@ const events = [
         time: "6:00 pm - 10:00 pm",
         name: "Lettuce",
         sorttime: "2025-07-10 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1357,7 +1357,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "Swamp Zen & The Funnels",
         sorttime: "2025-07-11 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1365,7 +1365,7 @@ const events = [
         time: "7:30 pm - 10:00 pm",
         name: "Fireside Collective",
         sorttime: "2025-07-11 19:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1373,7 +1373,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Jesse Velvet",
         sorttime: "2025-07-12 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1381,7 +1381,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "CarolinAloha",
         sorttime: "2025-07-13 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1389,7 +1389,7 @@ const events = [
         time: "7:00 pm - 9:30 pm",
         name: "Lazrluvr",
         sorttime: "2025-07-18 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1397,7 +1397,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Andrew Scotchie",
         sorttime: "2025-07-19 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1405,7 +1405,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Boogitherapi",
         sorttime: "2025-07-20 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1413,7 +1413,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "Ozomatli w/ Debajito",
         sorttime: "2025-07-25 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1421,7 +1421,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Peggy Ratusz and the Daddy Long Legs",
         sorttime: "2025-07-26 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1429,7 +1429,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "The Outriders",
         sorttime: "2025-07-27 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1437,7 +1437,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Amplify Appalachia",
         sorttime: "2025-07-31 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1445,7 +1445,7 @@ const events = [
         time: "7:00 pm - 9:30 pm",
         name: "Dangermuffin",
         sorttime: "2025-08-01 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1453,7 +1453,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Watkins",
         sorttime: "2025-08-02 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1461,7 +1461,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Roots and Dore",
         sorttime: "2025-08-03 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1469,7 +1469,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "STRFKR w/ Mamalarky",
         sorttime: "2025-08-08 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1477,7 +1477,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Ska City",
         sorttime: "2025-08-09 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1485,7 +1485,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Purple",
         sorttime: "2025-08-10 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1493,7 +1493,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "Femi Kuti & The Positive Force",
         sorttime: "2025-08-14 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1501,7 +1501,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Ben Bjorlie Band",
         sorttime: "2025-08-16 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1509,7 +1509,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "TrancEnd Band",
         sorttime: "2025-08-17 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1517,7 +1517,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Fitz and The Tantrums",
         sorttime: "2025-08-22 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1525,7 +1525,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Julianna Jade and the Wild",
         sorttime: "2025-08-24 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1533,7 +1533,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "Jesse Daniel w/ Jake Kohn",
         sorttime: "2025-08-27 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1541,7 +1541,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "The Record Company",
         sorttime: "2025-09-05 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1549,7 +1549,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Andrew Wakefield & Friends",
         sorttime: "2025-09-06 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1557,7 +1557,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Sugar Bomb",
         sorttime: "2025-09-07 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1565,7 +1565,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "DISPLACE",
         sorttime: "2025-09-13 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1573,7 +1573,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Tasty Vibrations",
         sorttime: "2025-09-14 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1581,7 +1581,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Trombone Shorty & Orleans Avenue",
         sorttime: "2025-09-21 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1589,7 +1589,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Mana Meter",
         sorttime: "2025-09-28 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1597,7 +1597,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "The Late Shifters",
         sorttime: "2025-10-04 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1605,7 +1605,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Billingsly",
         sorttime: "2025-10-05 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1613,7 +1613,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Tanasi",
         sorttime: "2025-10-11 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1621,7 +1621,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "The California Honeydrops: Redwood Highway Tour",
         sorttime: "2025-10-16 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1629,7 +1629,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Fresh Buzz",
         sorttime: "2025-10-18 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1637,7 +1637,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Saddletramp",
         sorttime: "2025-10-19 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1645,7 +1645,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Nikki and the Barn Boys",
         sorttime: "2025-10-25 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1653,7 +1653,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "The Big Hungry",
         sorttime: "2025-10-26 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1661,7 +1661,7 @@ const events = [
         time: "6:00 pm - 9:30 pm",
         name: "Here Come the Mummies",
         sorttime: "2025-10-29 18:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1669,7 +1669,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "",
         sorttime: "2025-11-01 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1677,7 +1677,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "The Patrick Lopez Experience",
         sorttime: "2025-11-09 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Sierra Nevada",
@@ -1685,7 +1685,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         name: "Dustin Furlow",
         sorttime: "2025-11-16 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Rhythm & Brews",
@@ -1693,7 +1693,7 @@ const events = [
         time: "5:30 pm - 10 pm",
         name: "Big Daddy Love (Appalachian Rock) with Letters to Abigail (Americana)",
         sorttime: "2025-06-19 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Rhythm & Brews",
@@ -1701,7 +1701,7 @@ const events = [
         time: "5:30 pm - 10 pm",
         name: "Florencia & the Feeling (Pop/Funk/Fusion) with Lewendahl  (Blues/Rock/Motown)",
         sorttime: "2025-07-17 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Rhythm & Brews",
@@ -1709,7 +1709,7 @@ const events = [
         time: "5:30 pm - 10 pm",
         name: "Maggie Baugh (Country) with Blake Ellege & Saddletramp (Country/Southern Rock)",
         sorttime: "2025-08-21 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Rhythm & Brews",
@@ -1717,7 +1717,7 @@ const events = [
         time: "5:30 pm - 10 pm",
         name: "Caitlin Krisko & The Broadcast (Soul Rock) with Hustle Souls (Soul/Funk/Americana)",
         sorttime: "2025-09-18 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Rhythm & Brews",
@@ -1725,7 +1725,7 @@ const events = [
         time: "5:30 pm - 10 pm",
         name: "BonaFide Soul (Jazz/Funk/Soul) with Congdon Griffin Band (Folk/Americana/Rock)",
         sorttime: "2025-10-16 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Music on Main",
@@ -1733,7 +1733,7 @@ const events = [
         time: "7:00 pm - 9:00 pm",
         name: "5 O’Clock Somewhere",
         sorttime: "2025-06-20 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Music on Main",
@@ -1741,7 +1741,7 @@ const events = [
         time: "7:00 pm - 9:00 pm",
         name: "Night Move Band",
         sorttime: "2025-07-04 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Music on Main",
@@ -1749,7 +1749,7 @@ const events = [
         time: "7:00 pm - 9:00 pm",
         name: "The Big Throwback",
         sorttime: "2025-07-18 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Music on Main",
@@ -1757,7 +1757,7 @@ const events = [
         time: "7:00 pm - 9:00 pm",
         name: "Gotcha Groove",
         sorttime: "2025-08-01 19:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1765,7 +1765,7 @@ const events = [
         time: "8:00 am - 10:00 am",
         name: "Meditative Morning",
         sorttime: "2025-06-03 08:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1773,7 +1773,7 @@ const events = [
         time: "9:00 am - 10:30 am",
         name: "Birding for Beginners",
         sorttime: "2025-06-03 09:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1781,7 +1781,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-03 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1789,7 +1789,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Streambank Stabilization Solutions",
         sorttime: "2025-06-04 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1797,7 +1797,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-07 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1805,7 +1805,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-07 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1813,7 +1813,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-10 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1821,7 +1821,7 @@ const events = [
         time: "2:00 pm - 4:00 pm",
         name: "Macroinvertebrates of Bent Creek",
         sorttime: "2025-06-10 14:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1829,7 +1829,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-06-11 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1837,7 +1837,7 @@ const events = [
         time: "10:00 am - 2:00 pm",
         name: "Teacher Workshop: Connecting NC Standards and Environmental Education",
         sorttime: "2025-06-12 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1845,7 +1845,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-06-12 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1853,7 +1853,7 @@ const events = [
         time: "9:30 am - 12:30 pm",
         name: "Painting and Meditation from the Heart",
         sorttime: "2025-06-13 09:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1861,7 +1861,7 @@ const events = [
         time: "1:00 pm - 3:30 pm",
         name: "Landscape Design Fundamentals (2 sessions)",
         sorttime: "2025-06-13 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1869,7 +1869,7 @@ const events = [
         time: "9:30 am - 4:30 pm",
         name: "Beginning Bonsai Workshop",
         sorttime: "2025-06-14 09:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1877,7 +1877,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-14 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1885,7 +1885,7 @@ const events = [
         time: "10:00 am - 1:00 pm",
         name: "Forest Bathing Retreat: Flower Power!",
         sorttime: "2025-06-14 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1893,7 +1893,7 @@ const events = [
         time: "10:00 am - 1:00 pm",
         name: "Summer Tree ID",
         sorttime: "2025-06-17 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1901,7 +1901,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-17 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1909,7 +1909,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Invasion Ecology",
         sorttime: "2025-06-18 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1917,7 +1917,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-06-18 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1925,7 +1925,7 @@ const events = [
         time: "1:00 pm - 4:00 pm",
         name: "Spare-time Gardening",
         sorttime: "2025-06-19 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1933,7 +1933,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-06-19 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1941,7 +1941,7 @@ const events = [
         time: "9:00 am - 10:00 am",
         name: "Walking Meditation & Qigong",
         sorttime: "2025-06-20 09:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1949,7 +1949,7 @@ const events = [
         time: "1:00 pm - 3:30 pm",
         name: "Landscape Design Fundamentals (2 sessions)",
         sorttime: "2025-06-20 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1957,7 +1957,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-21 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1965,7 +1965,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-21 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1973,7 +1973,7 @@ const events = [
         time: "1:00 pm - 4:00 pm",
         name: "Pressed Flower Art",
         sorttime: "2025-06-21 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1981,7 +1981,7 @@ const events = [
         time: "11:00 am - 3:00 pm",
         name: "Bonsai Book Sculpture Workshop",
         sorttime: "2025-06-22 11:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1989,7 +1989,7 @@ const events = [
         time: "12:00 pm - 4:00 pm",
         name: "Arboretum Excursions: Grandfather Mountain Stewardship Foundation",
         sorttime: "2025-06-24 12:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -1997,7 +1997,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-24 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2005,7 +2005,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-06-25 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2013,7 +2013,7 @@ const events = [
         time: "12:00 pm - 4:00 pm",
         name: "Advanced Botany I",
         sorttime: "2025-06-26 12:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2021,7 +2021,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-06-26 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2029,7 +2029,7 @@ const events = [
         time: "12:00 pm - 4:00 pm",
         name: "Geology of the Blue Ridge Field Class",
         sorttime: "2025-06-27 12:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2037,7 +2037,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Wildwoods Walk",
         sorttime: "2025-06-28 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2045,7 +2045,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-28 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2053,7 +2053,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-06-28 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2061,7 +2061,7 @@ const events = [
         time: "8:00 am - 10:00 am",
         name: "Meditative Morning",
         sorttime: "2025-07-01 08:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2069,7 +2069,7 @@ const events = [
         time: "9:00 am - 10:30 am",
         name: "Birding for Beginners",
         sorttime: "2025-07-01 09:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2077,7 +2077,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-01 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2085,7 +2085,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-02 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2093,7 +2093,7 @@ const events = [
         time: "1:00 pm - 4:00 pm",
         name: "Summer Tree ID",
         sorttime: "2025-07-03 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2101,7 +2101,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-03 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2109,7 +2109,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2117,7 +2117,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2125,7 +2125,7 @@ const events = [
         time: "8:00 am - 10:00 am",
         name: "Meditative Morning",
         sorttime: "2025-07-01 08:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2133,7 +2133,7 @@ const events = [
         time: "9:00 am - 10:30 am",
         name: "Birding for Beginners",
         sorttime: "2025-07-01 09:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2141,7 +2141,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-01 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2149,7 +2149,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-02 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2157,7 +2157,7 @@ const events = [
         time: "1:00 pm - 4:00 pm",
         name: "Summer Tree ID",
         sorttime: "2025-07-03 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2165,7 +2165,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-03 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2173,7 +2173,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2181,7 +2181,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2189,7 +2189,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-08 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2197,7 +2197,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-09 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2205,7 +2205,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-10 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2213,7 +2213,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-12 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2221,7 +2221,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-12 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2229,7 +2229,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-15 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2237,7 +2237,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-16 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2245,7 +2245,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-17 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2253,7 +2253,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-19 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2261,7 +2261,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-19 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2269,7 +2269,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-22 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2277,7 +2277,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-23 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2285,7 +2285,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-24 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2293,7 +2293,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-26 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2301,7 +2301,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-26 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2309,7 +2309,7 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-29 13:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2317,7 +2317,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-30 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2325,7 +2325,7 @@ const events = [
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-31 17:30",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2333,7 +2333,7 @@ const events = [
         time: "10:00 am - 12:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-08-02 10:00",
-        detail: "details"
+        detail: "None"
     },
     {
         venue: "Arboretum",
@@ -2341,6 +2341,6 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-08-02 13:00",
-        detail: "details"
+        detail: "None"
     },
 ];
