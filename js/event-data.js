@@ -56,20 +56,100 @@ const events = [
         detail: "details"
     },
     {
-        venue: "Trailside",
-        date: "2025-05-31",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-05-31 Can't convert ¿ - ?",
-        detail: "details"
+        venue: "Souther Williams",
+        date: "2025-06-01",
+        time: "12:00 pm - 6:00 pm",
+        name: "Mëhfil Indian Cuisine – Food Truck",
+        sorttime: "2025-06-01 12:00",
+        detail: "Authentic Indian Food with a range of flavorful Indian dishes."
     },
     {
-        venue: "Trailside",
-        date: "2025-05-31",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: Bridget Gossett Duo",
-        sorttime: "2025-05-31 18:00",
-        detail: "details"
+        venue: "Souther Williams",
+        date: "2025-06-01",
+        time: "2:00 pm - 5:00 pm",
+        name: "3 Shades of Gray – Live Music",
+        sorttime: "2025-06-01 14:00",
+        detail: "Bandmates since 2018, Bob Zullo, Dex Stutzman & James Leyva"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-07",
+        time: "2:00 pm - 5:00 pm",
+        name: "Tim Nave – Live Music",
+        sorttime: "2025-06-07 14:00",
+        detail: "Tim Nave is a musician from North East Tennessee. While he"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-08",
+        time: "1:00 pm - 4:00 pm",
+        name: "Hope Griffin – Live Music",
+        sorttime: "2025-06-08 13:00",
+        detail: "Folk/Americana/Singer-Songwriter - Hope continues to wow audiences and stretch the"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-14",
+        time: "12:00 pm - 5:00 pm",
+        name: "El Bodegon – Food Truck",
+        sorttime: "2025-06-14 12:00",
+        detail: "Serving comfort food from Argentina with Italian and Spanish influences"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-14",
+        time: "2:00 pm - 5:00 pm",
+        name: "Will Hartz – Live Music",
+        sorttime: "2025-06-14 14:00",
+        detail: "A born entertainer and a multi instrumentalist, Will Hartz has been"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-15",
+        time: "12:00 pm - 6:00 pm",
+        name: "Mëhfil Indian Cuisine – Food Truck",
+        sorttime: "2025-06-15 12:00",
+        detail: "Authentic Indian Food with a range of flavorful Indian dishes."
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-15",
+        time: "2:00 pm - 5:00 pm",
+        name: "Maddy Winer & Masterpiece – Live Music",
+        sorttime: "2025-06-15 14:00",
+        detail: "Maddy Winer & Masterpiece have entertained guests for many years"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-21",
+        time: "2:00 pm - 5:00 pm",
+        name: "Eric Congdon and Raphael Graves – Live Music",
+        sorttime: "2025-06-21 14:00",
+        detail: "The dynamic duo of Eric Congdon and Raphael Graves come"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-22",
+        time: "12:00 pm - 5:00 pm",
+        name: "El Bodegon – Food Truck",
+        sorttime: "2025-06-22 12:00",
+        detail: "Serving comfort food from Argentina with Italian and Spanish influences"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-22",
+        time: "2:00 pm - 5:00 pm",
+        name: "Aaron LaFalce – Live Music",
+        sorttime: "2025-06-22 14:00",
+        detail: "With roots in the Blue Ridge Mountains and rhythms that"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-28",
+        time: "12:00 pm - 5:00 pm",
+        name: "El Bodegon – Food Truck",
+        sorttime: "2025-06-28 12:00",
+        detail: "Serving comfort food from Argentina with Italian and Spanish influences"
     },
     {
         venue: "Trailside",
@@ -521,14 +601,6 @@ const events = [
     },
     {
         venue: "Oklawaha",
-        date: "2025-05-31",
-        time: "8:00 pm - 11:00 pm",
-        name: "Duck",
-        sorttime: "2025-05-31 20:00",
-        detail: "details"
-    },
-    {
-        venue: "Oklawaha",
         date: "2025-06-05",
         time: "12:00 pm - 11:00 pm",
         name: "Cummings Cove Cares Fundraiser for Hurricane Helene Recovery and Rebuild",
@@ -589,6 +661,14 @@ const events = [
         time: "8:00 pm - 11:00 pm",
         name: "Fancy and Friends in Low Places",
         sorttime: "2025-06-14 20:00",
+        detail: "details"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-06-15",
+        time: "3:00 pm - 5:00 pm",
+        name: "Pleasure Chest",
+        sorttime: "2025-06-15 15:00",
         detail: "details"
     },
     {
@@ -921,14 +1001,6 @@ const events = [
     },
     {
         venue: "Guidon",
-        date: "Friday May 30th",
-        time: "06:00 pm - 10:00 pm",
-        name: "Karaoke",
-        sorttime: "Friday May 30th 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Guidon",
         date: "Tuesday June 3rd",
         time: "06:00 pm - 08:30 pm",
         name: "Run Club",
@@ -1073,230 +1145,6 @@ const events = [
     },
     {
         venue: "Southern App",
-        date: "2025-05-01",
-        time: "6pm - 8pm",
-        name: "Nitrograss",
-        sorttime: "2025-05-01 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-02",
-        time: "7pm - 9pm",
-        name: "Pleasure Chest",
-        sorttime: "2025-05-02 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-03",
-        time: "7pm - 9pm",
-        name: "TrancEnd",
-        sorttime: "2025-05-03 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-03",
-        time: "12pm - 1pm",
-        name: "Saturday Yoga Class",
-        sorttime: "2025-05-03 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-04",
-        time: "4pm - 6pm",
-        name: "The Dan Keller Trio",
-        sorttime: "2025-05-04 16:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-07",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-05-07 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-08",
-        time: "6pm - 8pm",
-        name: "Beer, Music by Possum Royale, Repeat",
-        sorttime: "2025-05-08 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-09",
-        time: "7pm - 9pm",
-        name: "Brian Ashley Jones",
-        sorttime: "2025-05-09 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-10",
-        time: "7pm - 9pm",
-        name: "Sketoe’s Ghost",
-        sorttime: "2025-05-10 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-10",
-        time: "12pm - 1pm",
-        name: "Saturday Yoga Class",
-        sorttime: "2025-05-10 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-11",
-        time: "1pm - 4pm",
-        name: "Hendo Acoustic Jam Brunch – Mother’s Day Edition",
-        sorttime: "2025-05-11 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-14",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-05-14 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-15",
-        time: "6pm - 8pm",
-        name: "#Throwback Thursday Trivia Night",
-        sorttime: "2025-05-15 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-16",
-        time: "7pm - 9pm",
-        name: "Carver, Carmody & McIntire REUNION",
-        sorttime: "2025-05-16 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-17",
-        time: "7pm - 9pm",
-        name: "The Paper Crowns",
-        sorttime: "2025-05-17 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-17",
-        time: "12pm - 1pm",
-        name: "Saturday Yoga Class",
-        sorttime: "2025-05-17 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-18",
-        time: "12pm - 5pm",
-        name: "Happy May Pop-Up Market",
-        sorttime: "2025-05-18 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-18",
-        time: "1pm - 4pm",
-        name: "Jack Miller & George Reeves",
-        sorttime: "2025-05-18 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-21",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-05-21 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-22",
-        time: "6pm - 8pm",
-        name: "Music Bingo",
-        sorttime: "2025-05-22 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-23",
-        time: "7pm - 9pm",
-        name: "Hammock Theory",
-        sorttime: "2025-05-23 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-24",
-        time: "7pm - 9pm",
-        name: "The Mattocks-Johnson Band",
-        sorttime: "2025-05-24 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-25",
-        time: "4pm - 6pm",
-        name: "Sunday Funday w/Peggy Ratusz, Adam Rose & Bob Songster",
-        sorttime: "2025-05-25 16:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-28",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-05-28 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-29",
-        time: "6pm - 8pm",
-        name: "Denis Coleman",
-        sorttime: "2025-05-29 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-30",
-        time: "7pm - 9pm",
-        name: "BBC",
-        sorttime: "2025-05-30 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-31",
-        time: "7pm - 9pm",
-        name: "Lewendahl",
-        sorttime: "2025-05-31 19:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-05-31",
-        time: "12pm - 1pm",
-        name: "Saturday Yoga Class",
-        sorttime: "2025-05-31 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Southern App",
         date: "2025-06-01",
         time: "4pm - 6pm",
         name: "The Dan Keller Trio",
@@ -1389,14 +1237,6 @@ const events = [
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-25 18:00",
-        detail: "details"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-05-31",
-        time: "2:00 pm - 5:00 pm",
-        name: "Ashley Heath & Her Heathens",
-        sorttime: "2025-05-31 14:00",
         detail: "details"
     },
     {
@@ -1921,350 +1761,6 @@ const events = [
     },
     {
         venue: "Arboretum",
-        date: "2025-04-29",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-04-29 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-04-29",
-        time: "1:00 pm - 4:00 pm",
-        name: "Spring Flora ID (April 29)",
-        sorttime: "2025-04-29 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-03",
-        time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-03 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-03",
-        time: "10:00 am - 1:00 pm",
-        name: "Forest Bathing Retreat: Flower Power!",
-        sorttime: "2025-05-03 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-03",
-        time: "12:00 pm - 6:00 pm",
-        name: "Heritage Craft Day",
-        sorttime: "2025-05-03 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-04",
-        time: "1:00 pm - 3:30 pm",
-        name: "Landscape Design Fundamentals (full)",
-        sorttime: "2025-05-04 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-06",
-        time: "8:00 am - 10:00 am",
-        name: "Meditative Morning",
-        sorttime: "2025-05-06 08:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-06",
-        time: "9:00 am - 10:30 am",
-        name: "Birding for Beginners",
-        sorttime: "2025-05-06 09:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-06",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-06 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-09",
-        time: "1:00 pm - 3:00 pm",
-        name: "Insect Pollinators of the Blue Ridge",
-        sorttime: "2025-05-09 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-10",
-        time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-10 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-10",
-        time: "10:00 am - 1:00 pm",
-        name: "World Bonsai Day",
-        sorttime: "2025-05-10 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-10",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-10 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-11",
-        time: "10:00 am - 4:00 pm",
-        name: "World Bonsai Day",
-        sorttime: "2025-05-11 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-11",
-        time: "1:00 pm - 3:30 pm",
-        name: "Landscape Design Fundamentals (full)",
-        sorttime: "2025-05-11 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-11",
-        time: "1:00 pm - 4:00 pm",
-        name: "A Rose by Another Name: Paper Flower Workshop (full)",
-        sorttime: "2025-05-11 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-13",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-13 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-13",
-        time: "5:30 pm - 7:30 pm",
-        name: "Bonsai Curator’s Talk & Tour in Spring (full)",
-        sorttime: "2025-05-13 17:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-14",
-        time: "1:00 pm - 3:00 pm",
-        name: "Slides, Flows, and Floods: Hurricane Helene’s Geologic Impact (full)",
-        sorttime: "2025-05-14 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-15",
-        time: "9:30 am - 12:30 pm",
-        name: "Spring Tree ID",
-        sorttime: "2025-05-15 09:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-16",
-        time: "9:00 am - 10:00 am",
-        name: "Walking Meditation & Qigong",
-        sorttime: "2025-05-16 09:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-16",
-        time: "1:00 pm - 3:30 pm",
-        name: "Residential Rain Gardens",
-        sorttime: "2025-05-16 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-17",
-        time: "9:30 am - 4:30 pm",
-        name: "Beginning Bonsai Workshop (full)",
-        sorttime: "2025-05-17 09:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-17",
-        time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-17 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-17",
-        time: "10:00 am - 3:00 pm",
-        name: "Nature Play Day",
-        sorttime: "2025-05-17 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-18",
-        time: "1:30 pm - 3:00 pm",
-        name: "Spring Ecology Walk",
-        sorttime: "2025-05-18 13:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-20",
-        time: "12:00 pm - 4:00 pm",
-        name: "Mammals of the Southern Appalachians",
-        sorttime: "2025-05-20 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-20",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-20 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-21",
-        time: "8:30 am - 11:00 am",
-        name: "Spring Birding Hike at the Arboretum",
-        sorttime: "2025-05-21 08:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-23",
-        time: "12:00 pm - 4:00 pm",
-        name: "Southern Appalachian Entomology",
-        sorttime: "2025-05-23 12:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-24",
-        time: "9:00 am - 5:00 pm",
-        name: "Asheville Blue Ridge Rose Society Rose Exhibition",
-        sorttime: "2025-05-24 09:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-24",
-        time: "10:00 am - 12:00 pm",
-        name: "Botanical Watercolor for Beginners (full)",
-        sorttime: "2025-05-24 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-24",
-        time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-24 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-25",
-        time: "9:00 am - 5:00 pm",
-        name: "Asheville Blue Ridge Rose Society Rose Exhibition",
-        sorttime: "2025-05-25 09:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-27",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-27 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-27",
-        time: "1:30 pm - 3:30 pm",
-        name: "Ecological Aftermath of Helene",
-        sorttime: "2025-05-27 13:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-29",
-        time: "1:00 pm - 3:00 pm",
-        name: "Wildwoods Walk",
-        sorttime: "2025-05-29 13:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-29",
-        time: "4:00 pm - 7:00 pm",
-        name: "Spring Plant Sale: Upper-level Member Preview",
-        sorttime: "2025-05-29 16:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-30",
-        time: "10:00 am - 3:00 pm",
-        name: "Spring Plant Sale and Market",
-        sorttime: "2025-05-30 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-30",
-        time: "10:30 am - 11:30 am",
-        name: "Free Adult Ed Class: Intro to Native Pollinators",
-        sorttime: "2025-05-30 10:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-31",
-        time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-05-31 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-31",
-        time: "10:00 am - 3:00 pm",
-        name: "Spring Plant Sale and Market",
-        sorttime: "2025-05-31 10:00",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
-        date: "2025-05-31",
-        time: "10:30 am - 11:30 am",
-        name: "Free Adult Ed Class: Intro to Native Pollinators",
-        sorttime: "2025-05-31 10:30",
-        detail: "details"
-    },
-    {
-        venue: "Arboretum",
         date: "2025-06-03",
         time: "8:00 am - 10:00 am",
         name: "Meditative Morning",
@@ -2621,6 +2117,230 @@ const events = [
         time: "1:00 pm - 3:00 pm",
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-01",
+        time: "8:00 am - 10:00 am",
+        name: "Meditative Morning",
+        sorttime: "2025-07-01 08:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-01",
+        time: "9:00 am - 10:30 am",
+        name: "Birding for Beginners",
+        sorttime: "2025-07-01 09:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-01",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-01 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-02",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-02 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-03",
+        time: "1:00 pm - 4:00 pm",
+        name: "Summer Tree ID",
+        sorttime: "2025-07-03 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-03",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-03 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-05",
+        time: "10:00 am - 12:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-05 10:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-05",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-05 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-08",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-08 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-09",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-09 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-10",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-10 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-12",
+        time: "10:00 am - 12:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-12 10:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-12",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-12 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-15",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-15 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-16",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-16 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-17",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-17 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-19",
+        time: "10:00 am - 12:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-19 10:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-19",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-19 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-22",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-22 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-23",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-23 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-24",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-24 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-26",
+        time: "10:00 am - 12:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-26 10:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-26",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-26 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-29",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-29 13:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-30",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-30 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-31",
+        time: "5:30 pm - 8:30 pm",
+        name: "Arbor Evenings",
+        sorttime: "2025-07-31 17:30",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-08-02",
+        time: "10:00 am - 12:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-08-02 10:00",
+        detail: "details"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-08-02",
+        time: "1:00 pm - 3:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-08-02 13:00",
         detail: "details"
     },
 ];
