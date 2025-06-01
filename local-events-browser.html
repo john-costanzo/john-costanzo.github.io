@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-01 @ 19:25:05";
+			const localEventBrowserVersion = "Sunday, 2025-06-01 @ 19:45:51";
 		</script>
 		<style>
 			body {
@@ -89,9 +89,9 @@
 
 			.toggle-control {
 				font-weight: 500;
-				margin-left: 15px;
+				margin-left: 10px;
 				margin-top: 5px;
-				margin-right: 15px;
+				margin-right: 3px;
 			}
 
 			.hidden {
@@ -173,6 +173,14 @@
 				padding: 30px;
 				font-style: italic;
 				color: #666;
+			}
+			.green {
+				color: green;
+				border-color: green;
+			}
+			.red {
+				color: red;
+				border-color: red;
 			}
 		</style>
 		<script src="js/event-data.js"></script>
@@ -372,13 +380,17 @@
 							descriptionElement.className = "hidden";
 
 							toggleElement = document.createElement("span");
-							toggleElement.textContent = "+";
-							toggleElement.className = "toggle-control";
+							toggleElement.textContent = "⊕";
+							toggleElement.className = "toggle-control green";
 							toggleElement.addEventListener("click", function () {
 								descriptionElement.classList.toggle("hidden");
-								if (toggleElement.textContent === "+")
-									toggleElement.textContent = "-";
-								else toggleElement.textContent = "+";
+								if (toggleElement.textContent === "⊕") {
+									toggleElement.textContent = "Θ";
+									toggleElement.className = "toggle-control red";
+								} else {
+									toggleElement.textContent = "⊕";
+									toggleElement.className = "toggle-control green";
+								}
 							});
 						}
 						eventElement.appendChild(venueElement);
