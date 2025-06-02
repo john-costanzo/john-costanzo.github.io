@@ -1161,99 +1161,99 @@ const events = [
     },
     {
         venue: "Southern App",
-        date: "2025-06-01",
+        date: "date not specified",
         time: "4pm - 6pm",
         name: "The Dan Keller Trio",
-        sorttime: "2025-06-01 16:00",
-        detail: "None"
+        sorttime: "date not specified 16:00",
+        detail: "Dan Keller’s band puts their own spin on timeless standards and melodies, without losing the grit and authenticity of jazz.\nMany eras from early swing, latin jazz, bebop, and soul-jazz are…"
     },
     {
         venue: "Southern App",
-        date: "2025-06-04",
+        date: "date not specified",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-04 18:00",
-        detail: "None"
+        sorttime: "date not specified 18:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254"
     },
     {
         venue: "Southern App",
-        date: "2025-06-05",
+        date: "date not specified",
         time: "6pm - 8pm",
         name: "Mr Jimmy Power Trio",
-        sorttime: "2025-06-05 18:00",
-        detail: "None"
+        sorttime: "date not specified 18:00",
+        detail: "The Mr Jimmy Trio plays straight-up, real-deal Chicago Style Blues!\nFeaturing Charlie Wilkinson on bass and Peter Chackles on drums.\nwww.mrjimmymusic.com"
     },
     {
         venue: "Southern App",
-        date: "2025-06-07",
+        date: "date not specified",
         time: "12pm - 1pm",
         name: "Saturday Yoga Class",
-        sorttime: "2025-06-07 12:00",
-        detail: "None"
+        sorttime: "date not specified 12:00",
+        detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…"
     },
     {
         venue: "Southern App",
-        date: "2025-06-07",
+        date: "date not specified",
         time: "7pm - 9pm",
         name: "The Grass Owls",
-        sorttime: "2025-06-07 19:00",
-        detail: "None"
+        sorttime: "date not specified 19:00",
+        detail: "The Grass Owls are:\nAndrew Brophy\nPaul Kunath\nScott Anders\nJoel Batty\nOriginal Americana\ntheGrassOwls"
     },
     {
         venue: "Southern App",
-        date: "2025-06-08",
+        date: "date not specified",
         time: "3pm - 5pm",
         name: "Music Bingo!",
-        sorttime: "2025-06-08 15:00",
-        detail: "None"
+        sorttime: "date not specified 15:00",
+        detail: "The day after Pride- Recovery Sunday!\nCome join us for a fun and relaxing afternoon of Music Bingo. If you haven’t played before you are in for a treat!\n\nIndian Aroma Food…"
     },
     {
         venue: "Southern App",
-        date: "2025-06-11",
+        date: "date not specified",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-11 18:00",
-        detail: "None"
+        sorttime: "date not specified 18:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254"
     },
     {
         venue: "Southern App",
-        date: "2025-06-12",
+        date: "date not specified",
         time: "6pm - 8pm",
         name: "Tools on Stools",
-        sorttime: "2025-06-12 18:00",
-        detail: "None"
+        sorttime: "date not specified 18:00",
+        detail: "Tools on Stools. Mark McDaniel on guitar, Howie Johnson on guitar, playing blues, jazz, favorite rock tunes, and jams.\nHope to see you there!"
     },
     {
         venue: "Southern App",
-        date: "2025-06-13",
+        date: "date not specified",
         time: "7pm - 9pm",
         name: "Lefty Carmean & The Workin’ Men",
-        sorttime: "2025-06-13 19:00",
-        detail: "None"
+        sorttime: "date not specified 19:00",
+        detail: "Lefty Carmean\nNorth Carolina’s own Lefty Carmean has been establishing roots the local music scene for the past three years with his powerhouse vocals, charisma, and high-energy performances. Blending Country and…"
     },
     {
         venue: "Southern App",
-        date: "2025-06-17",
+        date: "date not specified",
         time: "5pm - 7pm",
         name: "Hatch Pitch Party",
-        sorttime: "2025-06-17 17:00",
-        detail: "None"
+        sorttime: "date not specified 17:00",
+        detail: "The Henderson County Chamber of Commerce, Hatch Innovation Hub, BRCC Small Business Center, Southern Appalachian Brewery, Big Frog Custom T-Shirts and Carrie Ann Chandler Realtor® with EXP Realty LLC have…"
     },
     {
         venue: "Southern App",
-        date: "2025-06-18",
+        date: "date not specified",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-18 18:00",
-        detail: "None"
+        sorttime: "date not specified 18:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254"
     },
     {
         venue: "Southern App",
-        date: "2025-06-25",
+        date: "date not specified",
         time: "6pm - 8pm",
         name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-25 18:00",
-        detail: "None"
+        sorttime: "date not specified 18:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254"
     },
     {
         venue: "Sierra Nevada",
