@@ -1,682 +1,11 @@
-const events = [ {
-        venue: "Point Lookout",
-        date: "2025-06-07",
-        time: "7:00 pm - 10:00 pm",
-        name: "Chairmen of The Board",
-        sorttime: "2025-06-07 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-06-20",
-        time: "7:00 pm - 10:00 pm",
-        name: "ChillBilly & Blake Ellege",
-        sorttime: "2025-06-20 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-07-19",
-        time: "7:00 pm - 10:00 pm",
-        name: "Boomer Jukebox",
-        sorttime: "2025-07-19 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-08-09",
-        time: "8:00 am - 5:00 pm",
-        name: "Chicago Rewired",
-        sorttime: "2025-08-09 08:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-08-15",
-        time: "7:00 pm - 10:00 pm",
-        name: "Too Much Sylvia 2025",
-        sorttime: "2025-08-15 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-08-23",
-        time: "¿ - ?",
-        name: "Reunion Weekend",
-        sorttime: "2025-08-23 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-09-12",
-        time: "7:00 pm - 10:00 pm",
-        name: "The Tams 2025",
-        sorttime: "2025-09-12 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-01",
-        time: "12:00 pm - 6:00 pm",
-        name: "Mëhfil Indian Cuisine – Food Truck",
-        sorttime: "2025-06-01 12:00",
-        detail: "Authentic Indian Food with a range of flavorful Indian dishes."
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-01",
-        time: "2:00 pm - 5:00 pm",
-        name: "3 Shades of Gray – Live Music",
-        sorttime: "2025-06-01 14:00",
-        detail: "Bandmates since 2018, Bob Zullo, Dex Stutzman & James Leyva"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-07",
-        time: "2:00 pm - 5:00 pm",
-        name: "Tim Nave – Live Music",
-        sorttime: "2025-06-07 14:00",
-        detail: "Tim Nave is a musician from North East Tennessee. While he"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-08",
-        time: "1:00 pm - 4:00 pm",
-        name: "Hope Griffin – Live Music",
-        sorttime: "2025-06-08 13:00",
-        detail: "Folk/Americana/Singer-Songwriter - Hope continues to wow audiences and stretch the"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-14",
-        time: "12:00 pm - 5:00 pm",
-        name: "El Bodegon – Food Truck",
-        sorttime: "2025-06-14 12:00",
-        detail: "Serving comfort food from Argentina with Italian and Spanish influences"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-14",
-        time: "2:00 pm - 5:00 pm",
-        name: "Will Hartz – Live Music",
-        sorttime: "2025-06-14 14:00",
-        detail: "A born entertainer and a multi instrumentalist, Will Hartz has been"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-15",
-        time: "12:00 pm - 6:00 pm",
-        name: "Mëhfil Indian Cuisine – Food Truck",
-        sorttime: "2025-06-15 12:00",
-        detail: "Authentic Indian Food with a range of flavorful Indian dishes."
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-15",
-        time: "2:00 pm - 5:00 pm",
-        name: "Maddy Winer & Masterpiece – Live Music",
-        sorttime: "2025-06-15 14:00",
-        detail: "Maddy Winer & Masterpiece have entertained guests for many years"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-21",
-        time: "2:00 pm - 5:00 pm",
-        name: "Eric Congdon and Raphael Graves – Live Music",
-        sorttime: "2025-06-21 14:00",
-        detail: "The dynamic duo of Eric Congdon and Raphael Graves come"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-22",
-        time: "12:00 pm - 5:00 pm",
-        name: "El Bodegon – Food Truck",
-        sorttime: "2025-06-22 12:00",
-        detail: "Serving comfort food from Argentina with Italian and Spanish influences"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-22",
-        time: "2:00 pm - 5:00 pm",
-        name: "Aaron LaFalce – Live Music",
-        sorttime: "2025-06-22 14:00",
-        detail: "With roots in the Blue Ridge Mountains and rhythms that"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-28",
-        time: "12:00 pm - 5:00 pm",
-        name: "El Bodegon – Food Truck",
-        sorttime: "2025-06-28 12:00",
-        detail: "Serving comfort food from Argentina with Italian and Spanish influences"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-01",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-01 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-01",
-        time: "2:00 pm - 4:00 pm",
-        name: "Live Music: Andy Ferrell",
-        sorttime: "2025-06-01 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-01",
-        time: "3:00 pm - 5:00 pm",
-        name: "The Art of Journaling on the fly class!",
-        sorttime: "2025-06-01 15:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-02",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-02 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-02",
-        time: "4:00 pm - 6:00 pm",
-        name: "Traditional Irish Music Session",
-        sorttime: "2025-06-02 16:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-03",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-03 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-03",
-        time: "6:00 pm - 9:00 pm",
-        name: "Round Robin Open Mic Hosted by Letters To Abigail",
-        sorttime: "2025-06-03 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-04",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-04 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-04",
-        time: "6:00 pm - 8:00 pm",
-        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
-        sorttime: "2025-06-04 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-05",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-05 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-05",
-        time: "6:30 pm - 8:30 pm",
-        name: "Adventure Film Series: One Ocean Film Tour",
-        sorttime: "2025-06-05 18:30",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-06",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-06 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-06",
-        time: "¿ - ?",
-        name: "Food Truck: Silly Willies Hot Dogs",
-        sorttime: "2025-06-06 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-07",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-07 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-07",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: The Workin’ Men",
-        sorttime: "2025-06-07 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-08",
-        time: "¿ - ?",
-        name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-08 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-08",
-        time: "2:00 pm - 5:00 pm",
-        name: "Live Music: Kristen Toole",
-        sorttime: "2025-06-08 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-09",
-        time: "4:00 pm - 6:00 pm",
-        name: "Traditional Irish Music Session",
-        sorttime: "2025-06-09 16:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-10",
-        time: "6:00 pm - 9:00 pm",
-        name: "Round Robin Open Mic Hosted by Letters To Abigail",
-        sorttime: "2025-06-10 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-11",
-        time: "6:00 pm - 8:00 pm",
-        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
-        sorttime: "2025-06-11 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-12",
-        time: "5:30 pm - 7:00 pm",
-        name: "Green Drinks with Conserving Carolina & Mtn True",
-        sorttime: "2025-06-12 17:30",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-12",
-        time: "6:30 pm - 8:30 pm",
-        name: "Trailside Summer Blockbuster Trivia",
-        sorttime: "2025-06-12 18:30",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-13",
-        time: "¿ - ?",
-        name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-13 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-13",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: Max Eve",
-        sorttime: "2025-06-13 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-14",
-        time: "1:00 pm - 5:00 pm",
-        name: "Dupont Forest Bike Wash!",
-        sorttime: "2025-06-14 13:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-14",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: Parker's Back",
-        sorttime: "2025-06-14 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-15",
-        time: "¿ - ?",
-        name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-15 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-15",
-        time: "2:00 pm - 5:00 pm",
-        name: "Live Music: Will Hartz",
-        sorttime: "2025-06-15 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-16",
-        time: "4:00 pm - 6:00 pm",
-        name: "Traditional Irish Music Session",
-        sorttime: "2025-06-16 16:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-16",
-        time: "6:30 pm - 8:30 pm",
-        name: "Paint Your Own Pottery Class",
-        sorttime: "2025-06-16 18:30",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-17",
-        time: "6:00 pm - 8:00 pm",
-        name: "BINGO with Hendersonville Rotary Club",
-        sorttime: "2025-06-17 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-17",
-        time: "6:00 pm - 9:00 pm",
-        name: "Round Robin Open Mic Hosted by Letters To Abigail",
-        sorttime: "2025-06-17 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-18",
-        time: "¿ - ?",
-        name: "Food Truck: Heidi Ho on the Go",
-        sorttime: "2025-06-18 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-18",
-        time: "6:00 pm - 8:00 pm",
-        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
-        sorttime: "2025-06-18 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-19",
-        time: "6:30 pm - 8:30 pm",
-        name: "Trailside Trivia",
-        sorttime: "2025-06-19 18:30",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-19",
-        time: "7:30 pm - 9:30 pm",
-        name: "Fish, Laugh, Love: Fly Fishing themed comedy fundraiser",
-        sorttime: "2025-06-19 19:30",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-20",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: Riyen Roots",
-        sorttime: "2025-06-20 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-21",
-        time: "1:00 pm - 6:00 pm",
-        name: "Blue Ridge Artisan Market",
-        sorttime: "2025-06-21 13:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-21",
-        time: "2:00 pm - 5:00 pm",
-        name: "Live Music: Adi the Monk",
-        sorttime: "2025-06-21 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-21",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: The Lunatic Fringe",
-        sorttime: "2025-06-21 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-22",
-        time: "1:00 pm - 4:00 pm",
-        name: "Mobile Book Bus at Trailside!",
-        sorttime: "2025-06-22 13:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-22",
-        time: "2:00 pm - 5:00 pm",
-        name: "Live Music: Ken Morgan",
-        sorttime: "2025-06-22 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-23",
-        time: "4:00 pm - 6:00 pm",
-        name: "Traditional Irish Music Session",
-        sorttime: "2025-06-23 16:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-24",
-        time: "6:00 pm - 9:00 pm",
-        name: "Round Robin Open Mic Hosted by Letters To Abigail",
-        sorttime: "2025-06-24 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-25",
-        time: "¿ - ?",
-        name: "Food Truck: Heidi Ho on the Go",
-        sorttime: "2025-06-25 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-25",
-        time: "6:00 pm - 8:00 pm",
-        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
-        sorttime: "2025-06-25 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-26",
-        time: "6:30 pm - 8:30 pm",
-        name: "Run Nation Adventure Film",
-        sorttime: "2025-06-26 18:30",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-27",
-        time: "¿ - ?",
-        name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-27 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-27",
-        time: "5:00 pm - 7:00 pm",
-        name: "Packet Pickup",
-        sorttime: "2025-06-27 17:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-27",
-        time: "6:00 pm - 9:00 pm",
-        name: "Live Music: J Dunks",
-        sorttime: "2025-06-27 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-28",
-        time: "¿ - ?",
-        name: "Adair’s Cajun Cooking and Milk and Honey",
-        sorttime: "2025-06-28 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-28",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-28 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-28",
-        time: "7:00 am - 12:00 pm",
-        name: "Summer Session TEAM MARATHON RELAY & 5K",
-        sorttime: "2025-06-28 07:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-29",
-        time: "2:00 pm - 5:00 pm",
-        name: "Live Music: Kate Leigh Bryant",
-        sorttime: "2025-06-29 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-30",
-        time: "4:00 pm - 6:00 pm",
-        name: "Traditional Irish Music Session",
-        sorttime: "2025-06-30 16:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-30",
-        time: "6:00 pm - 8:00 pm",
-        name: "Paint & Sip with Monet and Chardonnay",
-        sorttime: "2025-06-30 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-05",
-        time: "12:00 pm - 11:00 pm",
-        name: "Cummings Cove Cares Fundraiser for Hurricane Helene Recovery and Rebuild",
-        sorttime: "2025-06-05 12:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-05",
-        time: "6:00 pm - 9:00 pm",
-        name: "The BRUE @ Oklawaha!",
-        sorttime: "2025-06-05 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-06",
-        time: "8:00 pm - 11:00 pm",
-        name: "Alma Russ",
-        sorttime: "2025-06-06 20:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-07",
-        time: "8:00 pm - 11:00 pm",
-        name: "Billingsley",
-        sorttime: "2025-06-07 20:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-08",
-        time: "3:00 pm - 5:00 pm",
-        name: "Petah Iah and the Mind Renewers",
-        sorttime: "2025-06-08 15:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-12",
-        time: "7:00 pm - 9:00 pm",
-        name: "Izzy Hughes",
-        sorttime: "2025-06-12 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-13",
-        time: "8:00 pm - 11:00 pm",
-        name: "Kayla McKinney",
-        sorttime: "2025-06-13 20:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-14",
-        time: "8:00 pm - 11:00 pm",
-        name: "Fancy and Friends in Low Places",
-        sorttime: "2025-06-14 20:00",
-        detail: "None"
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-15",
-        time: "3:00 pm - 5:00 pm",
-        name: "Pleasure Chest",
-        sorttime: "2025-06-15 15:00",
-        detail: "None"
-    },
+const events = [
     {
         venue: "Boldrock",
         date: "2025-05-30",
         time: "6:00 pm - 9:00 pm",
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-05-30 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Todd Cecil and The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -684,7 +13,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "Tracy Davis & The TMI Band",
         sorttime: "2025-05-31 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Tracy Davis & The TMI Band! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -692,7 +21,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-06-06 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Todd Cecil & The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -700,7 +29,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "Tracy Davis & The TMI Band",
         sorttime: "2025-06-07 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Tracy Davis & The TMI Band! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -708,7 +37,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "The Right Fit",
         sorttime: "2025-06-13 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from The Right Fit! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -716,7 +45,7 @@ const events = [ {
         time: "11:00 am - 7:00 pm",
         name: "Father's Day BBQ",
         sorttime: "2025-06-15 11:00",
-        detail: "None"
+        detail: "Grill, Chill & Celebrate Dad!"
     },
     {
         venue: "Boldrock",
@@ -724,7 +53,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-06-20 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Finkelstein 3! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -732,7 +61,7 @@ const events = [ {
         time: "11:00 am - 9:00 pm",
         name: "BOLD Birthday Bash",
         sorttime: "2025-06-21 11:00",
-        detail: "None"
+        detail: "We’re turning 13 and it’s time to get bold with the birthday fun! Join us at Bold Rock Mills River as we celebrate 13 years of cider and cheer with a day full of festivities for the whole family!"
     },
     {
         venue: "Boldrock",
@@ -740,7 +69,7 @@ const events = [ {
         time: "5:00 pm - 7:00 pm",
         name: "Macarons & Flight Pairing",
         sorttime: "2025-06-26 17:00",
-        detail: "None"
+        detail: "Sweet dreams are made of cider and macarons! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with delicate, flavorful macarons—all for just $18!"
     },
     {
         venue: "Boldrock",
@@ -748,7 +77,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "Fine Line Band",
         sorttime: "2025-06-27 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from the Fine Line Band! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -756,7 +85,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "Awake In The Dream",
         sorttime: "2025-06-28 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Awake In The Dream! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -764,7 +93,7 @@ const events = [ {
         time: "11:00 am - 9:00 pm",
         name: "Kickoff to Summer",
         sorttime: "2025-05-24 11:00",
-        detail: "None"
+        detail: "Let’s sip into summer the right way! Join us at Bold Rock Mills River for an all-day celebration of sunshine, cider, and good vibes. We’re bringing the heat on Saturday with yard games, kid-friendly activities, and a rockin’ performance from The Showboat Band from 6–9PM!"
     },
     {
         venue: "Boldrock",
@@ -772,7 +101,7 @@ const events = [ {
         time: "6:00 pm - 9:00 pm",
         name: "Sound Invasion",
         sorttime: "2025-05-23 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Sound Invasion! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -780,7 +109,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-05-17 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Finkelstein 3! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -788,7 +117,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Fine Line Band",
         sorttime: "2025-05-16 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from the Fine Line Band! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -796,7 +125,7 @@ const events = [ {
         time: "5:00 pm - 7:00 pm",
         name: "Crumbl Cookies & Flight Pairing",
         sorttime: "2025-05-15 17:00",
-        detail: "None"
+        detail: "Sweet dreams are made of cider and cookies! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with famous Crumbl Cookies—all for just $18!"
     },
     {
         venue: "Boldrock",
@@ -804,7 +133,7 @@ const events = [ {
         time: "11:00 am - 7:00 pm",
         name: "Mother's Day Plant & Sip",
         sorttime: "2025-05-11 11:00",
-        detail: "None"
+        detail: "Celebrate Mom the Bold Rock way—with crisp cider and a little something green! Join us on Mother’s Day for our Plant & Sip, where all moms will receive a complimentary plant (while supplies last) from our friends at the Mills River Fire Department ."
     },
     {
         venue: "Boldrock",
@@ -812,7 +141,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Jay Dee",
         sorttime: "2025-05-10 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Jay Dee! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -820,7 +149,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "The Sliding Rockers",
         sorttime: "2025-05-09 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from The Sliding Rockers! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -828,7 +157,7 @@ const events = [ {
         time: "5:30 pm - 8:30 pm",
         name: "Hard Knox Wrestling at Bold Rock",
         sorttime: "2025-05-03 17:30",
-        detail: "None"
+        detail: "Get ready for an awesome day of fun and fierce action at Bold Rock Mills River! We’re kicking things off with GOLDEN PALOOZA from 11AM–3PM—a tail-waggin’ meetup for golden doodles and their humans!"
     },
     {
         venue: "Boldrock",
@@ -836,7 +165,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Myron Hyman",
         sorttime: "2025-05-02 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Myron Hyman! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -844,7 +173,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Awake In The Dream",
         sorttime: "2025-04-26 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Awake In The Dream! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -852,7 +181,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-04-25 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Finkelstein 3! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -860,7 +189,7 @@ const events = [ {
         time: "11:00 am - 9:00 pm",
         name: "Easter Egg Give-a-Way",
         sorttime: "2025-04-19 11:00",
-        detail: "None"
+        detail: "Hop on over for an egg-stra fun day for kids of all ages—yes, adults too! We’re giving away Easter eggs filled with candy and prizes all day long. But wait, there’s a twist…"
     },
     {
         venue: "Boldrock",
@@ -868,7 +197,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Kid Billy",
         sorttime: "2025-04-18 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from Kid Billy! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -876,7 +205,7 @@ const events = [ {
         time: "5:00 pm - 7:00 pm",
         name: "Cupcake & Flight Pairing",
         sorttime: "2025-04-17 17:00",
-        detail: "None"
+        detail: "Sweet dreams are made of cider and cupcakes! Join us for a perfectly paired evening featuring house-made mini cupcakes alongside four refreshing ciders for just $18!"
     },
     {
         venue: "Boldrock",
@@ -884,7 +213,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "John Cox Band",
         sorttime: "2025-04-12 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from the John Cox Band! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -892,7 +221,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "The Right Fit",
         sorttime: "2025-04-11 18:00",
-        detail: "None"
+        detail: "Join us in the taproom as we host live music from The Right Fit! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -900,7 +229,7 @@ const events = [ {
         time: "12:00 pm - 4:00 pm",
         name: "Grounded & Grateful Event",
         sorttime: "2025-04-05 12:00",
-        detail: "None"
+        detail: "Join us for Grounded & Grateful, a special event benefiting Grounded Boots Relief! Enjoy a chainsaw safety demo, participate in our silent auction & raffle featuring incredible prizes like golf packages, cigars, a $500 Continuum tattoo gift card, and a 50/50 raffle—all in support of this amazing 501(c) charity."
     },
     {
         venue: "Boldrock",
@@ -908,7 +237,7 @@ const events = [ {
         time: "6:00 pm - 10:00 pm",
         name: "Arborfest Expo: AFTER PARTY (Private Event)",
         sorttime: "2025-04-04 18:00",
-        detail: "None"
+        detail: "*PRIVATE EVENT* THE TAPROOM WILL CLOSE TO THE PUBLIC AT 4:30PM!"
     },
     {
         venue: "Boldrock",
@@ -916,7 +245,7 @@ const events = [ {
         time: "5:00 pm - 8:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-03-28 17:00",
-        detail: "None"
+        detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
         venue: "Boldrock",
@@ -924,7 +253,7 @@ const events = [ {
         time: "5:00 pm - 7:00 pm",
         name: "Cheesecake & Flight Pairing",
         sorttime: "2025-03-27 17:00",
-        detail: "None"
+        detail: "Sweeten your day with the perfect pairing! Join us at the taproom for our Cheesecake & Flight Pairing—an exciting combo of creamy cheesecakes and crisp ciders. For just $18, it’s the ultimate treat to share with family and friends. Don’t miss out on this delicious experience!"
     },
     {
         venue: "Boldrock",
@@ -932,7 +261,7 @@ const events = [ {
         time: "5:00 pm - 8:00 pm",
         name: "Myron Hyman",
         sorttime: "2025-03-21 17:00",
-        detail: "None"
+        detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
         venue: "Boldrock",
@@ -940,7 +269,7 @@ const events = [ {
         time: "12:00 pm - 8:00 pm",
         name: "St. Patrick's Day Party!",
         sorttime: "2025-03-17 12:00",
-        detail: "None"
+        detail: "St. Patrick’s Day is here and the luck of the Irish is waiting for you! Enjoy $5 select drafts and sip on our festive green cider! Bring your friends, family, and your Irish spirit for a fun-filled day at the taproom! See you there!"
     },
     {
         venue: "Boldrock",
@@ -948,7 +277,7 @@ const events = [ {
         time: "¿ - ?",
         name: "St. Patrick's Day Weekend Celebration",
         sorttime: "2025-03-15 Can't convert ¿ - ?",
-        detail: "None"
+        detail: "Get ready to sham-rock your weekend! Join us at the taproom for a St. Patrick’s Day Weekend Celebration with green cider, beads, live music on Saturday from Saint & Sinners (5PM - 8PM), and more! Bring your friends, family, and everyone you know to embrace the luck of the Irish ALL WEEKEND LONG! See you in the taproom for our Saint Patrick's Day Weekend Celebration!"
     },
     {
         venue: "Boldrock",
@@ -956,7 +285,7 @@ const events = [ {
         time: "11:00 am - 10:00 pm",
         name: "St. Patrick's: Steal the Pint",
         sorttime: "2025-03-14 11:00",
-        detail: "None"
+        detail: "St. Patrick’s Day is almost here, and we’re kicking it off with a Steal the Pint giveaway! Join us Friday, March 14, for your chance to grab a limited-edition St. Patrick’s Day beer mug! While supplies last, so get yours before they’re gone! Don’t miss out on the luck of the Irish! "
     },
     {
         venue: "Boldrock",
@@ -964,7 +293,7 @@ const events = [ {
         time: "6:00 pm - 8:00 pm",
         name: "Cast Iron",
         sorttime: "2025-03-08 18:00",
-        detail: "None"
+        detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
         venue: "Boldrock",
@@ -972,7 +301,7 @@ const events = [ {
         time: "5:00 pm - 8:00 pm",
         name: "Iggy Radio",
         sorttime: "2025-03-01 17:00",
-        detail: "None"
+        detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
         venue: "Boldrock",
@@ -980,7 +309,7 @@ const events = [ {
         time: "5:00 pm - 8:00 pm",
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-02-28 17:00",
-        detail: "None"
+        detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
         venue: "Boldrock",
@@ -988,7 +317,7 @@ const events = [ {
         time: "5:00 pm - 8:00 pm",
         name: "Myron Hyman",
         sorttime: "2025-02-21 17:00",
-        detail: "None"
+        detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
         venue: "Boldrock",
@@ -996,767 +325,7 @@ const events = [ {
         time: "5:00 pm - 7:00 pm",
         name: "Craig St. John",
         sorttime: "2025-02-15 17:00",
-        detail: "None"
-    },
-    {
-        venue: "Guidon",
-        date: "Tuesday June 3rd",
-        time: "06:00 pm - 08:30 pm",
-        name: "Run Club",
-        sorttime: "Tuesday June 3rd 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Guidon",
-        date: "Wednesday June 4th",
-        time: "07:00 pm - 09:00 pm",
-        name: "Team Trivia",
-        sorttime: "Wednesday June 4th 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Guidon",
-        date: "Friday June 6th",
-        time: "06:00 pm - 10:00 pm",
-        name: "Karaoke",
-        sorttime: "Friday June 6th 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Guidon",
-        date: "Thursday June 12th",
-        time: "07:00 pm - 09:00 pm",
-        name: "Trout Unlimited Monthly Meeting",
-        sorttime: "Thursday June 12th 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Guidon",
-        date: "Saturday June 14th",
-        time: "11:00 am - 10:00 pm",
-        name: "National Bourbon Day",
-        sorttime: "Saturday June 14th 11:00",
-        detail: "None"
-    },
-    {
-        venue: "Guidon",
-        date: "Tuesday July 29th",
-        time: "11:00 am - 09:00 pm",
-        name: "National Chicken Wing Day",
-        sorttime: "Tuesday July 29th 11:00",
-        detail: "None"
-    },
-    {
-        venue: "Guidon",
-        date: "Saturday September 6th",
-        time: "06:30 pm - 09:30 pm",
-        name: "Live music by Cellophane Flowers",
-        sorttime: "Saturday September 6th 18:30",
-        detail: "None"
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-30",
-        time: " 4:00 pm - 11:00 pm",
-        name: "1st Annual Rootstock 3 day music Festival",
-        sorttime: "2025-05-30 16:00",
-        detail: "3 Days of amazing local Music, Wine, Cider, Beer & Great Friends.  Food trucks on site all weekend, Tickets are $35.00  for all 3 days come and go as you please.  Details and ticket information https://www.saintpaulfarms.com/rootstock-festival"
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-25",
-        time: " 6:30 pm -  9:30 pm",
-        name: "Wiregrass at the Vineyard ",
-        sorttime: "2025-05-25 18:30",
-        detail: "Memorial Weekend at the Vineyard! Wiregrass at Saint Paul Mountain Vineyards! It's going to be a great day at the Vineyard! Travelin Dough food truck to pair with your wine. See you at Saint Paul! Red White and Blue Mimosas are the special for the weekend."
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-24",
-        time: " 7:00 pm - 10:00 pm",
-        name: "3 Shades of Gray perform to kick off Memorial Day Weekend",
-        sorttime: "2025-05-24 19:00",
-        detail: "Enjoy great music  and great wine  Saturday afternoon with 3 Shades of Gray at the Vineyard.  Sipping wine, Enjoying friends and listening to great music on the patio overlooking the vines.  Travelin Dough Food truck on site. Red White and Blue Mimosa's are the featured drink for the weekend.  "
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-24",
-        time: " 4:00 pm - 10:00 pm",
-        name: "Memorial Day Weekend Raise a Glass Mimosas!",
-        sorttime: "2025-05-24 16:00",
-        detail: "All Weekend 5/24 and 5/25 we will honor and remember all our heroes who have served.  Raise your glass with a Red, White & Blue Mimosa treat! Music Saturday is 3 Shades of Gray, Music Sunday is Wiregrass....... Celebrate with us!"
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-18",
-        time: " 6:30 pm -  9:30 pm",
-        name: "Live Muisic wth Brian Ashley Jones and Melanie Jean    ",
-        sorttime: "2025-05-18 18:30",
-        detail: "Brian Ashley and Melanie Jean back from Nashville!  Sunday  at the Vineyard enjoy Great Music and Great Wine, Cider and Beer along with all your friends.   Travelin Dough Food truck on site,Bring your own picnic or Charcuterie available....Join us at the Saint Paul Vineyard"
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-17",
-        time: " 7:00 pm - 10:00 pm",
-        name: "Live music with Izzi at the Vineyard   ",
-        sorttime: "2025-05-17 19:00",
-        detail: "Izzi , live at the vineyard!  A great afternoon of music, wine, and great friends.  Travelin Dough Food truck on site or Charcuterie available or bring your own picnic.  Spend your afternoon at Saint Paul Mountain Vineyards"
-    },
-    {
-        venue: "Appalachian Ridge",
-        date: "2025-05-30",
-        time: " 4:00 pm - 11:00 pm",
-        name: "1st Annual Rootstock 3 day music Festival",
-        sorttime: "2025-05-30 16:00",
-        detail: "3 Days of amazing local Music, Wine, Cider, Beer & Great Friends.  Food trucks on site all weekend, Tickets are $35.00  for all 3 days come and go as you please.  Details and ticket information https://www.saintpaulfarms.com/rootstock-festival"
-    },
-    {
-        venue: "Appalachian Ridge",
-        date: "2025-05-25",
-        time: " 6:30 pm -  9:30 pm",
-        name: "Sunday afternoon live music with Denis Coleman at the Ridge ",
-        sorttime: "2025-05-25 18:30",
-        detail: "Denis Colman playing a little Eagles, Beatles, The Band, Tom Petty, Stones, and more! A great Sunday at the Ridge!"
-    },
-    {
-        venue: "Appalachian Ridge",
-        date: "2025-05-24",
-        time: " 7:00 pm - 10:00 pm",
-        name: "Saturday with Saints and Sinners at Appalachian Ridge....Memorial Weekend",
-        sorttime: "2025-05-24 19:00",
-        detail: "Perfect way to start the Memorial Day weekend with Saints and Sinners on the deck at Appalachian Ridge...... Great Cider, Wine, Beer, Music all to enjoy with GREAT FRIENDS!"
-    },
-    {
-        venue: "Appalachian Ridge",
-        date: "2025-05-18",
-        time: " 6:30 pm -  9:30 pm",
-        name: "Daniel Sage at Appalachian Ridge",
-        sorttime: "2025-05-18 18:30",
-        detail: "Enjoy live tunes with Daniel Sage while enjoying a delicious glass of wine, cider or beer! Please feel free to bring your own food or snacks!"
-    },
-    {
-        venue: "Appalachian Ridge",
-        date: "2025-05-17",
-        time: " 7:00 pm - 10:00 pm",
-        name: "Live Music with Marleys Chain at Appalachian Ridge ",
-        sorttime: "2025-05-17 19:00",
-        detail: "A great Saturday at the Ridge with Marley' Chain  a male/female duo made up of Angela Christie & David Hintz. They play a mix of original music and covers in  country, Rock, blues & Rockabilly. Chill  while enjoying great music, great Cider, Wine and Beer with all your friends.  See you at the Ridge"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-01",
-        time: "4pm - 6pm",
-        name: "The Dan Keller Trio",
-        sorttime: "2025-06-01 16:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-04",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-04 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-05",
-        time: "6pm - 8pm",
-        name: "Mr Jimmy Power Trio",
-        sorttime: "2025-06-05 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-07",
-        time: "12pm - 1pm",
-        name: "Saturday Yoga Class",
-        sorttime: "2025-06-07 12:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-07",
-        time: "7pm - 9pm",
-        name: "The Grass Owls",
-        sorttime: "2025-06-07 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-08",
-        time: "3pm - 5pm",
-        name: "Music Bingo!",
-        sorttime: "2025-06-08 15:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-11",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-11 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-12",
-        time: "6pm - 8pm",
-        name: "Tools on Stools",
-        sorttime: "2025-06-12 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-13",
-        time: "7pm - 9pm",
-        name: "Lefty Carmean & The Workin’ Men",
-        sorttime: "2025-06-13 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-17",
-        time: "5pm - 7pm",
-        name: "Hatch Pitch Party",
-        sorttime: "2025-06-17 17:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-18",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-18 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Southern App",
-        date: "2025-06-25",
-        time: "6pm - 8pm",
-        name: "Jason DeCristofaro’s Weekly Jazz Night",
-        sorttime: "2025-06-25 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-04",
-        time: "6:00 pm - 9:30 pm",
-        name: "Fantastic Negrito w/ The Saviors of New York",
-        sorttime: "2025-06-04 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-07",
-        time: "2:00 pm - 5:00 pm",
-        name: "Pleasure Chest",
-        sorttime: "2025-06-07 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-08",
-        time: "2:00 pm - 5:00 pm",
-        name: "My Magnificent Nemesis w/ Alien Music Club",
-        sorttime: "2025-06-08 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-13",
-        time: "7:00 pm - 9:30 pm",
-        name: "Hustle Souls",
-        sorttime: "2025-06-13 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-14",
-        time: "2:00 pm - 5:00 pm",
-        name: "Daniel Shearin",
-        sorttime: "2025-06-14 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-15",
-        time: "2:00 pm - 5:00 pm",
-        name: "Julio & the Saltines",
-        sorttime: "2025-06-15 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-20",
-        time: "7:00 pm - 9:30 pm",
-        name: "Empire Strikes Brass",
-        sorttime: "2025-06-20 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-21",
-        time: "2:00 pm - 5:00 pm",
-        name: "The Heavy Lifters",
-        sorttime: "2025-06-21 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-22",
-        time: "2:00 pm - 5:00 pm",
-        name: "The Deep Shallow Band",
-        sorttime: "2025-06-22 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-26",
-        time: "6:00 pm - 9:00 pm",
-        name: "Who’s Bad: The Ultimate Michael Jackson Experience",
-        sorttime: "2025-06-26 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-28",
-        time: "2:00 pm - 5:00 pm",
-        name: "The Headtones",
-        sorttime: "2025-06-28 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-29",
-        time: "2:00 pm - 5:00 pm",
-        name: "Moonshine State",
-        sorttime: "2025-06-29 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-05",
-        time: "2:00 pm - 5:00 pm",
-        name: "Lyric",
-        sorttime: "2025-07-05 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-10",
-        time: "6:00 pm - 10:00 pm",
-        name: "Lettuce",
-        sorttime: "2025-07-10 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-11",
-        time: "6:00 pm - 9:30 pm",
-        name: "Swamp Zen & The Funnels",
-        sorttime: "2025-07-11 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-11",
-        time: "7:30 pm - 10:00 pm",
-        name: "Fireside Collective",
-        sorttime: "2025-07-11 19:30",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-12",
-        time: "2:00 pm - 5:00 pm",
-        name: "Jesse Velvet",
-        sorttime: "2025-07-12 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-13",
-        time: "2:00 pm - 5:00 pm",
-        name: "CarolinAloha",
-        sorttime: "2025-07-13 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-18",
-        time: "7:00 pm - 9:30 pm",
-        name: "Lazrluvr",
-        sorttime: "2025-07-18 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-19",
-        time: "2:00 pm - 5:00 pm",
-        name: "Andrew Scotchie",
-        sorttime: "2025-07-19 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-20",
-        time: "2:00 pm - 5:00 pm",
-        name: "Boogitherapi",
-        sorttime: "2025-07-20 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-25",
-        time: "6:00 pm - 9:30 pm",
-        name: "Ozomatli w/ Debajito",
-        sorttime: "2025-07-25 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-26",
-        time: "2:00 pm - 5:00 pm",
-        name: "Peggy Ratusz and the Daddy Long Legs",
-        sorttime: "2025-07-26 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-27",
-        time: "2:00 pm - 5:00 pm",
-        name: "The Outriders",
-        sorttime: "2025-07-27 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-07-31",
-        time: "5:30 pm - 8:30 pm",
-        name: "Amplify Appalachia",
-        sorttime: "2025-07-31 17:30",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-01",
-        time: "7:00 pm - 9:30 pm",
-        name: "Dangermuffin",
-        sorttime: "2025-08-01 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-02",
-        time: "2:00 pm - 5:00 pm",
-        name: "Watkins",
-        sorttime: "2025-08-02 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-03",
-        time: "2:00 pm - 5:00 pm",
-        name: "Roots and Dore",
-        sorttime: "2025-08-03 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-08",
-        time: "6:00 pm - 9:30 pm",
-        name: "STRFKR w/ Mamalarky",
-        sorttime: "2025-08-08 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-09",
-        time: "2:00 pm - 5:00 pm",
-        name: "Ska City",
-        sorttime: "2025-08-09 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-10",
-        time: "2:00 pm - 5:00 pm",
-        name: "Purple",
-        sorttime: "2025-08-10 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-14",
-        time: "6:00 pm - 9:30 pm",
-        name: "Femi Kuti & The Positive Force",
-        sorttime: "2025-08-14 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-16",
-        time: "2:00 pm - 5:00 pm",
-        name: "Ben Bjorlie Band",
-        sorttime: "2025-08-16 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-17",
-        time: "2:00 pm - 5:00 pm",
-        name: "TrancEnd Band",
-        sorttime: "2025-08-17 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-22",
-        time: "6:00 pm - 9:00 pm",
-        name: "Fitz and The Tantrums",
-        sorttime: "2025-08-22 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-24",
-        time: "2:00 pm - 5:00 pm",
-        name: "Julianna Jade and the Wild",
-        sorttime: "2025-08-24 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-08-27",
-        time: "6:00 pm - 9:30 pm",
-        name: "Jesse Daniel w/ Jake Kohn",
-        sorttime: "2025-08-27 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-09-05",
-        time: "6:00 pm - 9:30 pm",
-        name: "The Record Company",
-        sorttime: "2025-09-05 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-09-06",
-        time: "2:00 pm - 5:00 pm",
-        name: "Andrew Wakefield & Friends",
-        sorttime: "2025-09-06 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-09-07",
-        time: "2:00 pm - 5:00 pm",
-        name: "Sugar Bomb",
-        sorttime: "2025-09-07 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-09-13",
-        time: "2:00 pm - 5:00 pm",
-        name: "DISPLACE",
-        sorttime: "2025-09-13 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-09-14",
-        time: "2:00 pm - 5:00 pm",
-        name: "Tasty Vibrations",
-        sorttime: "2025-09-14 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-09-21",
-        time: "6:00 pm - 9:00 pm",
-        name: "Trombone Shorty & Orleans Avenue",
-        sorttime: "2025-09-21 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-09-28",
-        time: "2:00 pm - 5:00 pm",
-        name: "Mana Meter",
-        sorttime: "2025-09-28 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-04",
-        time: "2:00 pm - 5:00 pm",
-        name: "The Late Shifters",
-        sorttime: "2025-10-04 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-05",
-        time: "2:00 pm - 5:00 pm",
-        name: "Billingsly",
-        sorttime: "2025-10-05 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-11",
-        time: "2:00 pm - 5:00 pm",
-        name: "Tanasi",
-        sorttime: "2025-10-11 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-16",
-        time: "6:00 pm - 9:30 pm",
-        name: "The California Honeydrops: Redwood Highway Tour",
-        sorttime: "2025-10-16 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-18",
-        time: "2:00 pm - 5:00 pm",
-        name: "Fresh Buzz",
-        sorttime: "2025-10-18 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-19",
-        time: "2:00 pm - 5:00 pm",
-        name: "Saddletramp",
-        sorttime: "2025-10-19 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-25",
-        time: "2:00 pm - 5:00 pm",
-        name: "Nikki and the Barn Boys",
-        sorttime: "2025-10-25 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-26",
-        time: "2:00 pm - 5:00 pm",
-        name: "The Big Hungry",
-        sorttime: "2025-10-26 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-10-29",
-        time: "6:00 pm - 9:30 pm",
-        name: "Here Come the Mummies",
-        sorttime: "2025-10-29 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-11-01",
-        time: "2:00 pm - 5:00 pm",
-        name: "",
-        sorttime: "2025-11-01 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-11-09",
-        time: "2:00 pm - 5:00 pm",
-        name: "The Patrick Lopez Experience",
-        sorttime: "2025-11-09 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-11-16",
-        time: "2:00 pm - 5:00 pm",
-        name: "Dustin Furlow",
-        sorttime: "2025-11-16 14:00",
-        detail: "None"
-    },
-    {
-        venue: "Rhythm & Brews",
-        date: "2025-06-19",
-        time: "5:30 pm - 10 pm",
-        name: "Big Daddy Love (Appalachian Rock) with Letters to Abigail (Americana)",
-        sorttime: "2025-06-19 17:30",
-        detail: "None"
-    },
-    {
-        venue: "Rhythm & Brews",
-        date: "2025-07-17",
-        time: "5:30 pm - 10 pm",
-        name: "Florencia & the Feeling (Pop/Funk/Fusion) with Lewendahl  (Blues/Rock/Motown)",
-        sorttime: "2025-07-17 17:30",
-        detail: "None"
-    },
-    {
-        venue: "Rhythm & Brews",
-        date: "2025-08-21",
-        time: "5:30 pm - 10 pm",
-        name: "Maggie Baugh (Country) with Blake Ellege & Saddletramp (Country/Southern Rock)",
-        sorttime: "2025-08-21 17:30",
-        detail: "None"
-    },
-    {
-        venue: "Rhythm & Brews",
-        date: "2025-09-18",
-        time: "5:30 pm - 10 pm",
-        name: "Caitlin Krisko & The Broadcast (Soul Rock) with Hustle Souls (Soul/Funk/Americana)",
-        sorttime: "2025-09-18 17:30",
-        detail: "None"
-    },
-    {
-        venue: "Rhythm & Brews",
-        date: "2025-10-16",
-        time: "5:30 pm - 10 pm",
-        name: "BonaFide Soul (Jazz/Funk/Soul) with Congdon Griffin Band (Folk/Americana/Rock)",
-        sorttime: "2025-10-16 17:30",
-        detail: "None"
-    },
-    {
-        venue: "Music on Main",
-        date: "2025-06-20",
-        time: "7:00 pm - 9:00 pm",
-        name: "5 O’Clock Somewhere",
-        sorttime: "2025-06-20 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Music on Main",
-        date: "2025-07-04",
-        time: "7:00 pm - 9:00 pm",
-        name: "Night Move Band",
-        sorttime: "2025-07-04 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Music on Main",
-        date: "2025-07-18",
-        time: "7:00 pm - 9:00 pm",
-        name: "The Big Throwback",
-        sorttime: "2025-07-18 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Music on Main",
-        date: "2025-08-01",
-        time: "7:00 pm - 9:00 pm",
-        name: "Gotcha Groove",
-        sorttime: "2025-08-01 19:00",
-        detail: "None"
+        detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
         venue: "Arboretum",
