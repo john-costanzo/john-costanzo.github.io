@@ -1,5 +1,4 @@
-const events = [
-    {
+const events = [ {
         venue: "Point Lookout",
         date: "2025-06-07",
         time: "7:00 pm - 10:00 pm",
