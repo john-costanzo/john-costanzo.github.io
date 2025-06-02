@@ -1083,7 +1083,7 @@ const events = [
         venue: "St. Paul",
         date: "2025-05-25",
         time: " 6:30 pm -  9:30 pm",
-        name: "Wiregrass at the Vineyard ",
+        name: "Wiregrass at the Vineyard",
         sorttime: "2025-05-25 18:30",
         detail: "Memorial Weekend at the Vineyard! Wiregrass at Saint Paul Mountain Vineyards! It's going to be a great day at the Vineyard! Travelin Dough food truck to pair with your wine. See you at Saint Paul! Red White and Blue Mimosas are the special for the weekend."
     },
@@ -1093,7 +1093,7 @@ const events = [
         time: " 7:00 pm - 10:00 pm",
         name: "3 Shades of Gray perform to kick off Memorial Day Weekend",
         sorttime: "2025-05-24 19:00",
-        detail: "Enjoy great music  and great wine  Saturday afternoon with 3 Shades of Gray at the Vineyard.  Sipping wine, Enjoying friends and listening to great music on the patio overlooking the vines.  Travelin Dough Food truck on site. Red White and Blue Mimosa's are the featured drink for the weekend.  "
+        detail: "Enjoy great music  and great wine  Saturday afternoon with 3 Shades of Gray at the Vineyard.  Sipping wine, Enjoying friends and listening to great music on the patio overlooking the vines.  Travelin Dough Food truck on site. Red White and Blue Mimosa's are the featured drink for the weekend."
     },
     {
         venue: "St. Paul",
@@ -1107,7 +1107,7 @@ const events = [
         venue: "St. Paul",
         date: "2025-05-18",
         time: " 6:30 pm -  9:30 pm",
-        name: "Live Muisic wth Brian Ashley Jones and Melanie Jean    ",
+        name: "Live Muisic wth Brian Ashley Jones and Melanie Jean",
         sorttime: "2025-05-18 18:30",
         detail: "Brian Ashley and Melanie Jean back from Nashville!  Sunday  at the Vineyard enjoy Great Music and Great Wine, Cider and Beer along with all your friends.   Travelin Dough Food truck on site,Bring your own picnic or Charcuterie available....Join us at the Saint Paul Vineyard"
     },
@@ -1115,7 +1115,7 @@ const events = [
         venue: "St. Paul",
         date: "2025-05-17",
         time: " 7:00 pm - 10:00 pm",
-        name: "Live music with Izzi at the Vineyard   ",
+        name: "Live music with Izzi at the Vineyard",
         sorttime: "2025-05-17 19:00",
         detail: "Izzi , live at the vineyard!  A great afternoon of music, wine, and great friends.  Travelin Dough Food truck on site or Charcuterie available or bring your own picnic.  Spend your afternoon at Saint Paul Mountain Vineyards"
     },
@@ -1131,7 +1131,7 @@ const events = [
         venue: "Appalachian Ridge",
         date: "2025-05-25",
         time: " 6:30 pm -  9:30 pm",
-        name: "Sunday afternoon live music with Denis Coleman at the Ridge ",
+        name: "Sunday afternoon live music with Denis Coleman at the Ridge",
         sorttime: "2025-05-25 18:30",
         detail: "Denis Colman playing a little Eagles, Beatles, The Band, Tom Petty, Stones, and more! A great Sunday at the Ridge!"
     },
@@ -1155,7 +1155,7 @@ const events = [
         venue: "Appalachian Ridge",
         date: "2025-05-17",
         time: " 7:00 pm - 10:00 pm",
-        name: "Live Music with Marleys Chain at Appalachian Ridge ",
+        name: "Live Music with Marleys Chain at Appalachian Ridge",
         sorttime: "2025-05-17 19:00",
         detail: "A great Saturday at the Ridge with Marley' Chain  a male/female duo made up of Angela Christie & David Hintz. They play a mix of original music and covers in  country, Rock, blues & Rockabilly. Chill  while enjoying great music, great Cider, Wine and Beer with all your friends.  See you at the Ridge"
     },
