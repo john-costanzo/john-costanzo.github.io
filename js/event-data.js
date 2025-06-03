@@ -153,22 +153,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-06-02",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-02 Can't convert ¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-02",
-        time: "4:00 pm - 6:00 pm",
-        name: "Traditional Irish Music Session",
-        sorttime: "2025-06-02 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!"
-    },
-    {
-        venue: "Trailside",
         date: "2025-06-03",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
@@ -621,6 +605,14 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-07-01 18:00",
+        detail: "None"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-07-02",
+        time: "6:00 pm - 8:00 pm",
+        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
+        sorttime: "2025-07-02 18:00",
         detail: "None"
     },
     {
