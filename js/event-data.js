@@ -44,7 +44,7 @@ const events = [
         date: "2025-08-23",
         time: "¿ - ?",
         name: "Reunion Weekend",
-        sorttime: "2025-08-23 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -156,7 +156,7 @@ const events = [
         date: "2025-06-04",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-04 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -172,7 +172,7 @@ const events = [
         date: "2025-06-05",
         time: "¿ - ?",
         name: "Food Truck: Panorama Mediterrean Grill and Milk & Honey",
-        sorttime: "2025-06-05 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -188,7 +188,7 @@ const events = [
         date: "2025-06-06",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-06 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -196,7 +196,7 @@ const events = [
         date: "2025-06-06",
         time: "¿ - ?",
         name: "Food Truck: Silly Willies Hot Dogs",
-        sorttime: "2025-06-06 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -212,7 +212,7 @@ const events = [
         date: "2025-06-07",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-07 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -228,7 +228,7 @@ const events = [
         date: "2025-06-08",
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-08 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -284,7 +284,7 @@ const events = [
         date: "2025-06-13",
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-13 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -300,7 +300,7 @@ const events = [
         date: "2025-06-14",
         time: "¿ - ?",
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
-        sorttime: "2025-06-14 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -324,7 +324,7 @@ const events = [
         date: "2025-06-15",
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-15 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -372,7 +372,7 @@ const events = [
         date: "2025-06-18",
         time: "¿ - ?",
         name: "Food Truck: Heidi Ho on the Go",
-        sorttime: "2025-06-18 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -388,7 +388,7 @@ const events = [
         date: "2025-06-19",
         time: "¿ - ?",
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
-        sorttime: "2025-06-19 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -412,7 +412,7 @@ const events = [
         date: "2025-06-20",
         time: "¿ - ?",
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
-        sorttime: "2025-06-20 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -484,7 +484,7 @@ const events = [
         date: "2025-06-25",
         time: "¿ - ?",
         name: "Food Truck: Heidi Ho on the Go",
-        sorttime: "2025-06-25 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -500,7 +500,7 @@ const events = [
         date: "2025-06-26",
         time: "¿ - ?",
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
-        sorttime: "2025-06-26 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -516,7 +516,7 @@ const events = [
         date: "2025-06-27",
         time: "¿ - ?",
         name: "Food Truck: Indian Aroma",
-        sorttime: "2025-06-27 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -540,7 +540,7 @@ const events = [
         date: "2025-06-28",
         time: "¿ - ?",
         name: "Adair’s Cajun Cooking and Milk and Honey",
-        sorttime: "2025-06-28 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -548,7 +548,7 @@ const events = [
         date: "2025-06-28",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
-        sorttime: "2025-06-28 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "None"
     },
     {
@@ -725,7 +725,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         name: "Finkelstein 3",
         sorttime: "2025-06-20 18:00",
-        detail: "Join us in the taproom as we host live music from Finkelstein 3! Stop by for a beer & a good time starting at 6PM!"
+        detail: "Join us in the taproom as we host live music from the Finkelstein 3! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -758,6 +758,54 @@ const events = [
         name: "Awake In The Dream",
         sorttime: "2025-06-28 18:00",
         detail: "Join us in the taproom as we host live music from Awake In The Dream! Stop by for a beer & a good time starting at 6PM!"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-07-05",
+        time: "6:00 pm - 9:00 pm",
+        name: "Iggy Radio",
+        sorttime: "2025-07-05 18:00",
+        detail: "Join us in the taproom as we host live music from Iggy Radio! Stop by for a beer & a good time starting at 6PM!"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-07-11",
+        time: "6:00 pm - 9:00 pm",
+        name: "Myron Hyman",
+        sorttime: "2025-07-11 18:00",
+        detail: "Join us in the taproom as we host live music from Myron Hyman! Stop by for a beer & a good time starting at 6PM!"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-07-12",
+        time: "6:00 pm - 9:00 pm",
+        name: "Jon Cox Band",
+        sorttime: "2025-07-12 18:00",
+        detail: "Join us in the taproom as we host live music from the Jon Cox Band! Stop by for a beer & a good time starting at 6PM!"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-07-18",
+        time: "6:00 pm - 9:00 pm",
+        name: "Fine Line Band",
+        sorttime: "2025-07-18 18:00",
+        detail: "Join us in the taproom as we host live music from the Fine Line Band! Stop by for a beer & a good time starting at 6PM!"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-07-19",
+        time: "6:00 pm - 9:00 pm",
+        name: "Finkelstein 3",
+        sorttime: "2025-07-19 18:00",
+        detail: "Join us in the taproom as we host live music from the Finkelstein 3! Stop by for a beer & a good time starting at 6PM!"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-07-25",
+        time: "6:00 pm - 9:00 pm",
+        name: "Todd Cecil & The Dirt Yard Choir",
+        sorttime: "2025-07-25 18:00",
+        detail: "Join us in the taproom as we host live music from Todd Cecil & The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!"
     },
     {
         venue: "Boldrock",
@@ -964,7 +1012,7 @@ const events = [
         date: "2025-03-15",
         time: "¿ - ?",
         name: "St. Patrick's Day Weekend Celebration",
-        sorttime: "2025-03-15 Can't convert ¿ - ?",
+        sorttime: "¿ - ?",
         detail: "Get ready to sham-rock your weekend! Join us at the taproom for a St. Patrick’s Day Weekend Celebration with green cider, beads, live music on Saturday from Saint & Sinners (5PM - 8PM), and more! Bring your friends, family, and everyone you know to embrace the luck of the Irish ALL WEEKEND LONG! See you in the taproom for our Saint Patrick's Day Weekend Celebration!"
     },
     {
@@ -1171,9 +1219,9 @@ const events = [
         venue: "Southern App",
         date: "2025-06-06",
         time: "7pm - 9pm",
-        name: "Blake Ellege!",
+        name: "The Big Throwback",
         sorttime: "2025-06-06 19:00",
-        detail: "Blake Anthony Ellege is an International Award Winning Performer, Entertainer and Recording Artist. Married to the amazing Homestead Holly and Owner of Mountaintop Spirits! 🔥 www.blakeellegemusic.com 🔥"
+        detail: "Don’t miss Blake Ellege and The Big Throwback!\nPlaying all your favorite dance & party hits from the 50’s, 60’s, 70’s, 80’s and today!\n🔥 www.blakeellegemusic.com 🔥"
     },
     {
         venue: "Southern App",
@@ -2091,7 +2139,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-07-01",
         time: "11:00 am - 1:00 pm",
-        name: "Botanical Drawing and Painting for Beginners",
+        name: "Botanical Drawing for Beginners",
         sorttime: "2025-07-01 11:00",
         detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media."
     },
@@ -2155,7 +2203,7 @@ const events = [
         venue: "Arboretum",
         date: "2025-07-01",
         time: "11:00 am - 1:00 pm",
-        name: "Botanical Drawing and Painting for Beginners",
+        name: "Botanical Drawing for Beginners",
         sorttime: "2025-07-01 11:00",
         detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media."
     },
@@ -2410,6 +2458,14 @@ const events = [
     {
         venue: "Arboretum",
         date: "2025-07-31",
+        time: "12:00 pm - 4:00 pm",
+        name: "Advanced Botany II",
+        sorttime: "2025-07-31 12:00",
+        detail: "This last in the series of Botany classes we offer delves deeper into topics discussed in Advanced Botany I and Beginning Botany."
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-31",
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-31 17:30",
@@ -2430,5 +2486,13 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-08-02 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+    },
+    {
+        venue: "Arboretum",
+        date: "Error retrieving data",
+        time: "Error retrieving data",
+        name: "Failed to fetch events: time data 'Apr 25 2025' does not match format '%B %d %Y'",
+        sorttime: "Error retrieving data",
+        detail: "Error retrieving data"
     },
 ];
