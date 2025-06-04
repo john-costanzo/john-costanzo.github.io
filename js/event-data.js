@@ -2307,17 +2307,17 @@ const events = [
         venue: "Arboretum",
         date: "2025-07-19",
         time: "10:00 am - 12:00 pm",
-        name: "Bird Feeding Myths, Methods, and Magic!",
+        name: "Guided Trail Walk",
         sorttime: "2025-07-19 10:00",
-        detail: "Learn tips and tricks for successful Bird Feeding methods in the Asheville region as well as some of the myths surrounding the practice."
+        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
     },
     {
         venue: "Arboretum",
         date: "2025-07-19",
         time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
+        name: "Bird Feeding Myths, Methods, and Magic!",
         sorttime: "2025-07-19 10:00",
-        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+        detail: "Learn tips and tricks for successful Bird Feeding methods in the Asheville region as well as some of the myths surrounding the practice."
     },
     {
         venue: "Arboretum",
@@ -2374,6 +2374,14 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-26 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-27",
+        time: "1:00 pm - 2:30 pm",
+        name: "Birds of Prey Presentation",
+        sorttime: "2025-07-27 13:00",
+        detail: "Join Allison Woods Outdoor Learning Center\'s educators for a presentation featuring live hawks and other raptors."
     },
     {
         venue: "Arboretum",
