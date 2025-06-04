@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Redirecting to a podcast of a specified Carriage Post edition...
+		</title>
+
+		<script>
+			const PARAMS = {};
+
+			function getAllUrlParams(url) {
+				const queryString = url
+					? url.split("?")[1]
+					: window.location.search.slice(1);
+
+				if (queryString) {
+					queryString.split("&").forEach((param) => {
+						const [key, value] = param.split("=");
+						PARAMS[key] = decodeURIComponent(value);
+					});
+				}
+
+				return PARAMS;
+			}
+
+			// Usage
+			const params = getAllUrlParams();
+			console.log(params);
+		</script>
+	</head>
+
+	<body>
+		<script>
+			getAllUrlParams();
+			var base_url =
+				"https://soundcloud.com/john-costanzo-456368900/carriage-post-spring-2025";
+			var edition = PARAMS["e"];
+			window.location.href = base_url + edition;
+		</script>
+	</body>
+</html>
