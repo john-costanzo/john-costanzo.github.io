@@ -2251,17 +2251,17 @@ const events = [
         venue: "Arboretum",
         date: "2025-07-12",
         time: "10:00 am - 1:00 pm",
-        name: "Learning about Eastern Box Turtles with Turtle Dogs",
+        name: "Forest Bathing Retreat: Summer in the Blue Ridge",
         sorttime: "2025-07-12 10:00",
-        detail: "Join Allison Woods Outdoor Learning Center’s renowned Turtle Dogs and their handlers to learn about Eastern Box Turtles."
+        detail: "Celebrate the lush beauty of summer during this immersive morning nature retreat where we cultivate sensory awareness in the verdant forest."
     },
     {
         venue: "Arboretum",
         date: "2025-07-12",
         time: "10:00 am - 1:00 pm",
-        name: "Forest Bathing Retreat: Summer in the Blue Ridge",
+        name: "Learning about Eastern Box Turtles with Turtle Dogs",
         sorttime: "2025-07-12 10:00",
-        detail: "Celebrate the lush beauty of summer during this immersive morning nature retreat where we cultivate sensory awareness in the verdant forest."
+        detail: "Join Allison Woods Outdoor Learning Center’s renowned Turtle Dogs and their handlers to learn about Eastern Box Turtles."
     },
     {
         venue: "Arboretum",
@@ -2305,11 +2305,11 @@ const events = [
     },
     {
         venue: "Arboretum",
-        date: "2025-07-19",
-        time: "10:00 am - 12:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-07-19 10:00",
-        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+        date: "2025-07-18",
+        time: "12:00 pm - 4:00 pm",
+        name: "River Systems Field Experience",
+        sorttime: "2025-07-18 12:00",
+        detail: "This completely field based class will explore different River processes and indicators along the Davidson River."
     },
     {
         venue: "Arboretum",
@@ -2318,6 +2318,14 @@ const events = [
         name: "Bird Feeding Myths, Methods, and Magic!",
         sorttime: "2025-07-19 10:00",
         detail: "Learn tips and tricks for successful Bird Feeding methods in the Asheville region as well as some of the myths surrounding the practice."
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-19",
+        time: "10:00 am - 12:00 pm",
+        name: "Guided Trail Walk",
+        sorttime: "2025-07-19 10:00",
+        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
     },
     {
         venue: "Arboretum",
