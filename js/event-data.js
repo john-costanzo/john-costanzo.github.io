@@ -66,10 +66,26 @@ const events = [
     {
         venue: "Souther Williams",
         date: "2025-06-08",
+        time: "12:00 pm - 3:30 pm",
+        name: "El Bodegon Food Truck",
+        sorttime: "2025-06-08 12:00",
+        detail: "Argentinian Flare"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-08",
         time: "1:00 pm - 4:00 pm",
         name: "Hope Griffin – Live Music",
         sorttime: "2025-06-08 13:00",
         detail: "Folk/Americana/Singer-Songwriter - Hope continues to wow audiences and stretch the"
+    },
+    {
+        venue: "Souther Williams",
+        date: "2025-06-08",
+        time: "7:30 pm - 9:00 pm",
+        name: "Blue Ridge Orchestra",
+        sorttime: "2025-06-08 19:30",
+        detail: "Something magical is happening in the vineyard! Our Summer Soirée"
     },
     {
         venue: "Souther Williams",
@@ -134,22 +150,6 @@ const events = [
         name: "El Bodegon – Food Truck",
         sorttime: "2025-06-28 12:00",
         detail: "Serving comfort food from Argentina with Italian and Spanish influences"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-28",
-        time: "2:00 pm - 5:00 pm",
-        name: "Frances Eliza – Live Music",
-        sorttime: "2025-06-28 14:00",
-        detail: "Asheville-based singer-songwriter and guitarist Frances Eliza blends her love of songwriting with"
-    },
-    {
-        venue: "Souther Williams",
-        date: "2025-06-29",
-        time: "2:00 pm - 5:00 pm",
-        name: "Denis Coleman – Live Music",
-        sorttime: "2025-06-29 14:00",
-        detail: "Local Hendersonville musician playing Classic Rock, mellow music, a little"
     },
     {
         venue: "Trailside",
@@ -443,9 +443,9 @@ const events = [
         venue: "Trailside",
         date: "2025-06-21",
         time: "1:00 pm - 6:00 pm",
-        name: "Blue Ridge Artisan Market",
+        name: "Blue Ridge Artisan Summer Solstice Market",
         sorttime: "2025-06-21 13:00",
-        detail: "Come on out to our Blue Ridge Artisan Market from 1-6pm! There will be local makers with handmade gifts, live music and tons of tasty food."
+        detail: "Come on out to our Blue Ridge Artisan Market from 1-6pm! Are you ready for longer days and summer nights? Join us for our Summer Solstice Market at Trailside with 20 local makers, live music, and good vibes! ."
     },
     {
         venue: "Trailside",
@@ -1177,6 +1177,14 @@ const events = [
     },
     {
         venue: "Southern App",
+        date: "2025-06-06",
+        time: "7pm - 9pm",
+        name: "Blake Ellege!",
+        sorttime: "2025-06-06 19:00",
+        detail: "Blake Anthony Ellege is an International Award Winning Performer, Entertainer and Recording Artist. Married to the amazing Homestead Holly and Owner of Mountaintop Spirits! 🔥 www.blakeellegemusic.com 🔥"
+    },
+    {
+        venue: "Southern App",
         date: "2025-06-07",
         time: "12pm - 1pm",
         name: "Saturday Yoga Class",
@@ -1197,7 +1205,7 @@ const events = [
         time: "3pm - 5pm",
         name: "Music Bingo!",
         sorttime: "2025-06-08 15:00",
-        detail: "The day after Pride- Recovery Sunday!\nCome join us for a fun and relaxing afternoon of Music Bingo. If you haven’t played before you are in for a treat!\n\nIndian Aroma Food…"
+        detail: "The day after Pride- Recovery Sunday!\nCome join us for a fun and relaxing afternoon of Music Bingo. If you haven’t played before you are in for a treat!\n\nTaqueria Lupita Food…"
     },
     {
         venue: "Southern App",
@@ -1254,6 +1262,14 @@ const events = [
         name: "Fantastic Negrito w/ The Saviors of New York",
         sorttime: "2025-06-04 18:00",
         detail: "GA Advance $32.64 | GA Day of Show $37.93| GA + Early Access $48.48"
+    },
+    {
+        venue: "Sierra Nevada",
+        date: "2025-06-07",
+        time: "1:00 pm - 6:00 pm",
+        name: "Lower Park Grand Reopening",
+        sorttime: "2025-06-07 13:00",
+        detail: "Tucked into the woods behind our Amphitheater and accessible by trail, Lower Park is a peaceful forest clearing made for slowing down and enjoying the..."
     },
     {
         venue: "Sierra Nevada",
@@ -2082,10 +2098,10 @@ const events = [
     {
         venue: "Arboretum",
         date: "2025-07-01",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-07-01 13:00",
-        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+        time: "11:00 am - 1:00 pm",
+        name: "Botanical Drawing and Painting for Beginners",
+        sorttime: "2025-07-01 11:00",
+        detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media."
     },
     {
         venue: "Arboretum",
@@ -2146,10 +2162,10 @@ const events = [
     {
         venue: "Arboretum",
         date: "2025-07-01",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-07-01 13:00",
-        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+        time: "11:00 am - 1:00 pm",
+        name: "Botanical Drawing and Painting for Beginners",
+        sorttime: "2025-07-01 11:00",
+        detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media."
     },
     {
         venue: "Arboretum",
@@ -2242,10 +2258,18 @@ const events = [
     {
         venue: "Arboretum",
         date: "2025-07-12",
-        time: "1:00 pm - 3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-07-12 13:00",
-        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+        time: "10:00 am - 1:00 pm",
+        name: "Learning about Eastern Box Turtles with Turtle Dogs",
+        sorttime: "2025-07-12 10:00",
+        detail: "Join Allison Woods Outdoor Learning Center’s renowned Turtle Dogs and their handlers to learn about Eastern Box Turtles."
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-12",
+        time: "10:00 am - 1:00 pm",
+        name: "Forest Bathing Retreat: Summer in the Blue Ridge",
+        sorttime: "2025-07-12 10:00",
+        detail: "Celebrate the lush beauty of summer during this immersive morning nature retreat where we cultivate sensory awareness in the verdant forest."
     },
     {
         venue: "Arboretum",
@@ -2266,10 +2290,34 @@ const events = [
     {
         venue: "Arboretum",
         date: "2025-07-17",
+        time: "1:00 pm - 3:00 pm",
+        name: "Firewise Landscaping",
+        sorttime: "2025-07-17 13:00",
+        detail: "Learn about methods to reduce fire risk for your house by utilizing landscaping and maintenance."
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-17",
         time: "5:30 pm - 8:30 pm",
         name: "Arbor Evenings",
         sorttime: "2025-07-17 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m."
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-18",
+        time: "10:00 am - 1:00 pm",
+        name: "Walking Meditation & Qigong",
+        sorttime: "2025-07-18 10:00",
+        detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m."
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-19",
+        time: "10:00 am - 12:00 pm",
+        name: "Bird Feeding Myths, Methods, and Magic!",
+        sorttime: "2025-07-19 10:00",
+        detail: "Learn tips and tricks for successful Bird Feeding methods in the Asheville region as well as some of the myths surrounding the practice."
     },
     {
         venue: "Arboretum",
@@ -2294,6 +2342,14 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-22 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
+    },
+    {
+        venue: "Arboretum",
+        date: "2025-07-23",
+        time: "1:00 pm - 4:00 pm",
+        name: "Pressed Flower Art",
+        sorttime: "2025-07-23 13:00",
+        detail: "During this hands-on workshop, learn a technique of pressing and sealing flower petals to create a work of art."
     },
     {
         venue: "Arboretum",
