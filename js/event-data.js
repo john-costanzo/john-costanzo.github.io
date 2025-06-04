@@ -2488,11 +2488,51 @@ const events = [
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …"
     },
     {
-        venue: "Arboretum",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: time data 'Apr 25 2025' does not match format '%B %d %Y'",
-        sorttime: "Error retrieving data",
-        detail: "Error retrieving data"
+        venue: "Feed and Seed",
+        date: "2025-04-25",
+        time: "7 - 9pm",
+        name: "Lazybirds!",
+        sorttime: "2025-04-25 21:00",
+        detail: "None"
+    },
+    {
+        venue: "Feed and Seed",
+        date: "2025-05-02",
+        time: "7 - 9PM",
+        name: "Slim Pickins Bluegrass",
+        sorttime: "2025-05-02 21:00",
+        detail: "None"
+    },
+    {
+        venue: "Feed and Seed",
+        date: "2025-05-09",
+        time: "7 - 9pm",
+        name: "Apple Country Jam/Dance Band",
+        sorttime: "2025-05-09 21:00",
+        detail: "None"
+    },
+    {
+        venue: "Feed and Seed",
+        date: "2025-05-16",
+        time: "7 - 9PM",
+        name: "Harlin Country Grass",
+        sorttime: "2025-05-16 21:00",
+        detail: "None"
+    },
+    {
+        venue: "Feed and Seed",
+        date: "2025-05-23",
+        time: "7 - 9PM",
+        name: "Mulley Holler Bluegrass",
+        sorttime: "2025-05-23 21:00",
+        detail: "None"
+    },
+    {
+        venue: "Feed and Seed",
+        date: "2025-05-30",
+        time: "7 - 9PM",
+        name: "New Carolina Connection",
+        sorttime: "2025-05-30 21:00",
+        detail: "None"
     },
 ];
