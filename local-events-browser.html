@@ -5,15 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<script>
-			 setTimeout(
-			 const eighthours = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
-				function () {
-					console.log(`About to reload the page after ${eighthours} milliseconds...` );
-					location.reload();
-					console.log(`Finished reloading the page after ${eighthours} milliseconds.` );
-				},
-				eighthours,
-			);
+			setTimeout(function () {
+				const eighthours = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
+				console.log(
+					`About to reload the page after ${eighthours} milliseconds...`,
+				);
+				location.reload();
+				console.log(
+					`Finished reloading the page after ${eighthours} milliseconds.`,
+				);
+			}, eighthours);
 		</script>
 
 		<title>Hendo Happenings</title>
