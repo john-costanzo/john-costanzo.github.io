@@ -1,59 +1,11 @@
 const events = [
     {
         venue: "Point Lookout",
-        date: "2025-06-07",
-        time: "7:00 pm - 10:00 pm",
-        name: "Chairmen of The Board",
-        sorttime: "2025-06-07 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-06-20",
-        time: "7:00 pm - 10:00 pm",
-        name: "ChillBilly & Blake Ellege",
-        sorttime: "2025-06-20 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-07-19",
-        time: "7:00 pm - 10:00 pm",
-        name: "Boomer Jukebox",
-        sorttime: "2025-07-19 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-08-09",
-        time: "8:00 am - 5:00 pm",
-        name: "Chicago Rewired",
-        sorttime: "2025-08-09 08:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-08-15",
-        time: "7:00 pm - 10:00 pm",
-        name: "Too Much Sylvia 2025",
-        sorttime: "2025-08-15 19:00",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-08-23",
-        time: "¿ - ?",
-        name: "Reunion Weekend",
-        sorttime: "¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Point Lookout",
-        date: "2025-09-12",
-        time: "7:00 pm - 10:00 pm",
-        name: "The Tams 2025",
-        sorttime: "2025-09-12 19:00",
-        detail: "None"
+        date: "Error retrieving data",
+        time: "Error retrieving data",
+        name: "Failed to fetch events: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+        sorttime: "Error retrieving data",
+        detail: "Error retrieving data"
     },
     {
         venue: "Souther Williams",
@@ -1177,43 +1129,51 @@ const events = [
     },
     {
         venue: "Appalachian Ridge",
-        date: "2025-05-30",
-        time: " 4:00 pm - 11:00 pm",
-        name: "1st Annual Rootstock 3 day music Festival",
-        sorttime: "2025-05-30 16:00",
-        detail: "3 Days of amazing local Music, Wine, Cider, Beer & Great Friends.  Food trucks on site all weekend, Tickets are $35.00  for all 3 days come and go as you please.  Details and ticket information https://www.saintpaulfarms.com/rootstock-festival"
-    },
-    {
-        venue: "Appalachian Ridge",
-        date: "2025-05-25",
-        time: " 6:30 pm -  9:30 pm",
-        name: "Sunday afternoon live music with Denis Coleman at the Ridge",
-        sorttime: "2025-05-25 18:30",
-        detail: "Denis Colman playing a little Eagles, Beatles, The Band, Tom Petty, Stones, and more! A great Sunday at the Ridge!"
-    },
-    {
-        venue: "Appalachian Ridge",
-        date: "2025-05-24",
+        date: "2025-06-07",
         time: " 7:00 pm - 10:00 pm",
-        name: "Saturday with Saints and Sinners at Appalachian Ridge....Memorial Weekend",
-        sorttime: "2025-05-24 19:00",
-        detail: "Perfect way to start the Memorial Day weekend with Saints and Sinners on the deck at Appalachian Ridge...... Great Cider, Wine, Beer, Music all to enjoy with GREAT FRIENDS!"
+        name: "Possum Royal at the Ridge",
+        sorttime: "2025-06-07 19:00",
+        detail: "Satuday at the Ridge! Enjoy the sounds of Possum Royal. A great Saturday afternoon with Music, Cider, Beer and Friends!"
     },
     {
         venue: "Appalachian Ridge",
-        date: "2025-05-18",
+        date: "2025-06-08",
         time: " 6:30 pm -  9:30 pm",
         name: "Daniel Sage at Appalachian Ridge",
-        sorttime: "2025-05-18 18:30",
+        sorttime: "2025-06-08 18:30",
         detail: "Enjoy live tunes with Daniel Sage while enjoying a delicious glass of wine, cider or beer! Please feel free to bring your own food or snacks!"
     },
     {
         venue: "Appalachian Ridge",
-        date: "2025-05-17",
+        date: "2025-06-14",
         time: " 7:00 pm - 10:00 pm",
-        name: "Live Music with Marleys Chain at Appalachian Ridge",
-        sorttime: "2025-05-17 19:00",
-        detail: "A great Saturday at the Ridge with Marley' Chain  a male/female duo made up of Angela Christie & David Hintz. They play a mix of original music and covers in  country, Rock, blues & Rockabilly. Chill  while enjoying great music, great Cider, Wine and Beer with all your friends.  See you at the Ridge"
+        name: "Live Music with Christine Chandler at the Ridge",
+        sorttime: "2025-06-14 19:00",
+        detail: "Come enjoy Christina Chandler! MEMPHIS-MADE AND MOUNTAIN-BOUND. Enjoy a cold glass of beer or cider while enjoying the tunes of Christina Chandler!"
+    },
+    {
+        venue: "Appalachian Ridge",
+        date: "2025-06-15",
+        time: " 6:30 pm -  9:30 pm",
+        name: "Live Music With Jarred Forrester at Appalachian Ridge  for Father's Day",
+        sorttime: "2025-06-15 18:30",
+        detail: "Sunday afternoon at the Ridge, Live Music with Jared Forrester.  Enjoy great music with our Great cider, wine or beer. Bring your father for a great afternoon of Music."
+    },
+    {
+        venue: "Appalachian Ridge",
+        date: "2025-06-21",
+        time: " 7:00 pm - 10:00 pm",
+        name: "Highway 52 at Appalachian Ridge, New group familure faces!",
+        sorttime: "2025-06-21 19:00",
+        detail: "Highway 52 is where Doc Watson meets Tom Waits meets Muddy Waters meets John Prine. With this band genre takes a back seat to just finding a good quality song and making it their own. So come out and enjoy a big ole pot of musical gumbo with a fine hard cider to boot!"
+    },
+    {
+        venue: "Appalachian Ridge",
+        date: "2025-06-22",
+        time: " 6:30 pm -  9:30 pm",
+        name: "Bill and Tad Amazing Duo at the Ridge!",
+        sorttime: "2025-06-22 18:30",
+        detail: "An afternoon with Bill and Tad! Doesn't get any better than that, great music, great cider and great friends! See you at the Ridge"
     },
     {
         venue: "Southern App",
@@ -2569,6 +2529,14 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-02",
+        time: "4:00 pm - 8:00 pm",
+        name: "North Meats South",
+        sorttime: "2025-06-02 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-03",
         time: "3:00 pm - 8:00 pm",
         name: "Taco Bus",
@@ -2585,10 +2553,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-04",
+        time: "6:00 pm - 8:00 pm",
+        name: "Opinionary",
+        sorttime: "2025-06-04 18:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-05",
         time: "4:00 pm - 8:00 pm",
         name: "Taco Bus",
         sorttime: "2025-06-05 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-05",
+        time: "6:00 pm - 9:00 pm",
+        name: "Open Mic Night",
+        sorttime: "2025-06-05 18:00",
         detail: "None"
     },
     {
@@ -2601,10 +2585,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-06",
+        time: "12:00 pm - 8:00 pm",
+        name: "El Bodegon",
+        sorttime: "2025-06-06 12:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-07",
         time: "7:00 pm - 10:00 pm",
         name: "J. Stephens",
         sorttime: "2025-06-07 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-07",
+        time: "12:00 pm - 8:00 pm",
+        name: "La Jarochita Romero",
+        sorttime: "2025-06-07 12:00",
         detail: "None"
     },
     {
@@ -2625,6 +2625,14 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-09",
+        time: "4:00 pm - 8:00 pm",
+        name: "Mehfil Indian Cuisine",
+        sorttime: "2025-06-09 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-10",
         time: "3:00 pm - 8:00 pm",
         name: "Taco Bus",
@@ -2641,10 +2649,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-11",
+        time: "6:00 pm - 8:00 pm",
+        name: "Opinionary",
+        sorttime: "2025-06-11 18:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-12",
         time: "4:00 pm - 8:00 pm",
         name: "Toasted Cuban",
         sorttime: "2025-06-12 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-12",
+        time: "6:00 pm - 9:00 pm",
+        name: "Open Mic Night",
+        sorttime: "2025-06-12 18:00",
         detail: "None"
     },
     {
@@ -2657,10 +2681,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-13",
+        time: "7:00 pm - 10:00 pm",
+        name: "3rd Wife Jenny",
+        sorttime: "2025-06-13 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-14",
         time: "7:00 pm - 10:00 pm",
         name: "Drowning Leo",
         sorttime: "2025-06-14 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-14",
+        time: "12:00 pm - 8:00 pm",
+        name: "Mehfil Indian Cuisine",
+        sorttime: "2025-06-14 12:00",
         detail: "None"
     },
     {
@@ -2681,6 +2721,14 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-16",
+        time: "4:00 pm - 8:00 pm",
+        name: "North Meats South",
+        sorttime: "2025-06-16 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-17",
         time: "3:00 pm - 8:00 pm",
         name: "Taco Bus",
@@ -2697,10 +2745,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-18",
+        time: "6:00 pm - 8:00 pm",
+        name: "Opinionary",
+        sorttime: "2025-06-18 18:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-19",
         time: "5:00 pm - 9:30 pm",
         name: "Cousins Maine Lobster",
         sorttime: "2025-06-19 17:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-19",
+        time: "6:00 pm - 9:00 pm",
+        name: "Open Mic Night",
+        sorttime: "2025-06-19 18:00",
         detail: "None"
     },
     {
@@ -2713,10 +2777,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-20",
+        time: "12:00 pm - 8:00 pm",
+        name: "El Bodegon",
+        sorttime: "2025-06-20 12:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-21",
         time: "7:00 pm - 10:00 pm",
         name: "The Loudes",
         sorttime: "2025-06-21 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-21",
+        time: "12:00 pm - 8:00 pm",
+        name: "Carolina Hibachi Grill",
+        sorttime: "2025-06-21 12:00",
         detail: "None"
     },
     {
@@ -2737,6 +2817,14 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-23",
+        time: "4:00 pm - 8:00 pm",
+        name: "Mehfil Indian Cuisine",
+        sorttime: "2025-06-23 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-24",
         time: "3:00 pm - 8:00 pm",
         name: "Taco Bus",
@@ -2753,10 +2841,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-25",
+        time: "6:00 pm - 8:00 pm",
+        name: "Opinionary",
+        sorttime: "2025-06-25 18:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-26",
         time: "4:00 pm - 8:00 pm",
         name: "Toasted Cuban",
         sorttime: "2025-06-26 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-26",
+        time: "6:00 pm - 9:00 pm",
+        name: "Open Mic Night",
+        sorttime: "2025-06-26 18:00",
         detail: "None"
     },
     {
@@ -2769,10 +2873,26 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-27",
+        time: "7:00 pm - 10:00 pm",
+        name: "AppleAtcha",
+        sorttime: "2025-06-27 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-06-28",
         time: "12:00 pm - 8:00 pm",
         name: "Toasted Cuban",
         sorttime: "2025-06-28 12:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-06-28",
+        time: "7:00 pm - 10:00 pm",
+        name: "Tracy Davis",
+        sorttime: "2025-06-28 19:00",
         detail: "None"
     },
     {
@@ -2793,6 +2913,14 @@ const events = [
     },
     {
         venue: "Dry Falls",
+        date: "2025-06-30",
+        time: "4:00 pm - 8:00 pm",
+        name: "North Meats South",
+        sorttime: "2025-06-30 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
         date: "2025-07-01",
         time: "3:00 pm - 8:00 pm",
         name: "Taco Bus",
@@ -2805,6 +2933,14 @@ const events = [
         time: "4:00 pm - 8:00 pm",
         name: "Appalachian Chick",
         sorttime: "2025-07-03 16:00",
+        detail: "None"
+    },
+    {
+        venue: "Dry Falls",
+        date: "2025-07-03",
+        time: "6:00 pm - 9:00 pm",
+        name: "Open Mic Night",
+        sorttime: "2025-07-03 18:00",
         detail: "None"
     },
     {
