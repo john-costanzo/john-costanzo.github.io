@@ -153,22 +153,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-06-04",
-        time: "¿ - ?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-04",
-        time: "6:00 pm - 8:00 pm",
-        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
-        sorttime: "2025-06-04 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
         date: "2025-06-05",
         time: "¿ - ?",
         name: "Food Truck: Panorama Mediterrean Grill and Milk & Honey",
@@ -606,6 +590,22 @@ const events = [
         name: "Adventure Film Series: A Life of Endless Summer",
         sorttime: "2025-07-03 18:30",
         detail: "Join us at Trailside Brewing Co. for our FREE Adventure Film Series with seven films (listed below) this April-July, sponsored by Mast General Store!\nA Life of Endless Summer Film screens Thursday, July 3 at 6:30 PM and is an intimate and inspiring look at the life of legendary filmmaker Bruce Brown.Best known for The Endless Summer, the groundbreaking surf documentary that shaped an entire genre of action sports films. In this heartfelt tribute, his son, Dana Brown, takes us on a personal journey through his father’s life—capturing the spirit of a man who lived for adventure, storytelling, and the pursuit of the perfect wave.\nWhether you’re a fan of surfing, adventure films, or simply love a great story about a life well lived, this film is a must-see. Grab a drink, settle in, and celebrate the legacy of a true pioneer!\n✨ What to Expect:🎥 A heartfelt and inspiring documentary celebrating the life and legacy of legendary filmmaker Bruce Brown.🍻 Drinks from Trailside Brewing & food available for purchase🎟️ FREE & open to all ages!\nMark your calendar, invite your friends, and come celebrate adventure with us! Let us know you’re coming—we can’t wait to see you on July 3!\nAdventure Film Series at Trailside BrewingThursday Evenings at 6:30pmFree Community EventApril 17: Women’s Adventure FilmMay 1: Climbing Film TourMay 22: Fly Fishing TourJune 5: One Ocean Film TourJune 26: Run Nation Film FestivalJuly 3: A Life of Endless Summer FilmJuly 24:5 Summer Stories Film"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-07-04",
+        time: "2:00 pm - 4:00 pm",
+        name: "Live Music: Collin Cheek",
+        sorttime: "2025-07-04 14:00",
+        detail: "None"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-07-04",
+        time: "5:00 pm - 8:00 pm",
+        name: "Live Music: Bill Altman",
+        sorttime: "2025-07-04 17:00",
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -1064,22 +1064,6 @@ const events = [
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
     },
     {
-        venue: "Burnt Shirt",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-        sorttime: "Error retrieving data",
-        detail: "Error retrieving data"
-    },
-    {
-        venue: "Guidon",
-        date: "2025-06-04",
-        time: "07:00 pm - 09:00 pm",
-        name: "Team Trivia",
-        sorttime: "2025-06-04 19:00",
-        detail: "Grab your smartest friends and join us for two fun rounds of trivia."
-    },
-    {
         venue: "Guidon",
         date: "2025-06-06",
         time: "06:00 pm - 10:00 pm",
@@ -1094,6 +1078,14 @@ const events = [
         name: "Run Club",
         sorttime: "2025-06-10 18:00",
         detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer.  We have all ability groups, and walkers are also welcome. Check out the run clubs FB page."
+    },
+    {
+        venue: "Guidon",
+        date: "2025-06-11",
+        time: "07:00 pm - 09:00 pm",
+        name: "Team Trivia",
+        sorttime: "2025-06-11 19:00",
+        detail: "Grab your smartest friends and join us for two fun rounds of trivia."
     },
     {
         venue: "Guidon",
