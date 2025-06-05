@@ -1121,51 +1121,59 @@ const events = [
     },
     {
         venue: "St. Paul",
-        date: "2025-05-30",
-        time: " 4:00 pm - 11:00 pm",
-        name: "1st Annual Rootstock 3 day music Festival",
-        sorttime: "2025-05-30 16:00",
-        detail: "3 Days of amazing local Music, Wine, Cider, Beer & Great Friends.  Food trucks on site all weekend, Tickets are $35.00  for all 3 days come and go as you please.  Details and ticket information https://www.saintpaulfarms.com/rootstock-festival"
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-25",
-        time: " 6:30 pm -  9:30 pm",
-        name: "Wiregrass at the Vineyard",
-        sorttime: "2025-05-25 18:30",
-        detail: "Memorial Weekend at the Vineyard! Wiregrass at Saint Paul Mountain Vineyards! It's going to be a great day at the Vineyard! Travelin Dough food truck to pair with your wine. See you at Saint Paul! Red White and Blue Mimosas are the special for the weekend."
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-24",
+        date: "2025-06-07",
         time: " 7:00 pm - 10:00 pm",
-        name: "3 Shades of Gray perform to kick off Memorial Day Weekend",
-        sorttime: "2025-05-24 19:00",
-        detail: "Enjoy great music  and great wine  Saturday afternoon with 3 Shades of Gray at the Vineyard.  Sipping wine, Enjoying friends and listening to great music on the patio overlooking the vines.  Travelin Dough Food truck on site. Red White and Blue Mimosa's are the featured drink for the weekend."
+        name: "Bob Zullo performs at Saint Paul, first Saturday of every Month!   (1)",
+        sorttime: "2025-06-07 19:00",
+        detail: "Enjoy great music  and great wine  Saturday afternoon with Bob Zullo at the Vineyard.  Sipping wine, Enjoying friends and listening to Bob on the patio sitting in the vineyard where the grapes are grown!  Travelin Dough Food Truck on Site"
     },
     {
         venue: "St. Paul",
-        date: "2025-05-24",
-        time: " 4:00 pm - 10:00 pm",
-        name: "Memorial Day Weekend Raise a Glass Mimosas!",
-        sorttime: "2025-05-24 16:00",
-        detail: "All Weekend 5/24 and 5/25 we will honor and remember all our heroes who have served.  Raise your glass with a Red, White & Blue Mimosa treat! Music Saturday is 3 Shades of Gray, Music Sunday is Wiregrass....... Celebrate with us!"
-    },
-    {
-        venue: "St. Paul",
-        date: "2025-05-18",
+        date: "2025-06-08",
         time: " 6:30 pm -  9:30 pm",
-        name: "Live Muisic wth Brian Ashley Jones and Melanie Jean",
-        sorttime: "2025-05-18 18:30",
-        detail: "Brian Ashley and Melanie Jean back from Nashville!  Sunday  at the Vineyard enjoy Great Music and Great Wine, Cider and Beer along with all your friends.   Travelin Dough Food truck on site,Bring your own picnic or Charcuterie available....Join us at the Saint Paul Vineyard"
+        name: "Paul McIntire & Bob Zullo  at the Vineyard",
+        sorttime: "2025-06-08 18:30",
+        detail: "Bob Zullo on Guitar and  Paul on the electric violin, produce amazing music.  It's going to be a great day at the vineyard!  Travelin Dough Food Truck on site, Charcuterie available or bring your own picnic!  See you at the Vineyard"
     },
     {
         venue: "St. Paul",
-        date: "2025-05-17",
+        date: "2025-06-15",
+        time: " 6:30 pm -  9:30 pm",
+        name: "Craig St John live at Saint Paul Mountain Vineyards",
+        sorttime: "2025-06-15 18:30",
+        detail: "Father's Day at Saint Paul Mountain Vineyards welcomes Craig St John to the vineyard! Craig St John is a former lead vocalist for ‘the Super 60s’ and is sure to impress, with his wide range of vocal abilities. Music genres of all types!  Travelin Dough Food Truck on site!"
+    },
+    {
+        venue: "St. Paul",
+        date: "2025-06-21",
         time: " 7:00 pm - 10:00 pm",
-        name: "Live music with Izzi at the Vineyard",
-        sorttime: "2025-05-17 19:00",
-        detail: "Izzi , live at the vineyard!  A great afternoon of music, wine, and great friends.  Travelin Dough Food truck on site or Charcuterie available or bring your own picnic.  Spend your afternoon at Saint Paul Mountain Vineyards"
+        name: "Jennifer Allsbrook live at Saint Paul Mountain Vineyards",
+        sorttime: "2025-06-21 19:00",
+        detail: "Come out and enjoy Jennifer share a blend of rock, folk, and originals. A great Saturday on the patio with Great music, great wine and great friends.  Travelin Dough Food Truck on site."
+    },
+    {
+        venue: "St. Paul",
+        date: "2025-06-22",
+        time: " 6:30 pm -  9:30 pm",
+        name: "Jack Miller and Rick Callahan at Saint Paul Mountain Vineyards",
+        sorttime: "2025-06-22 18:30",
+        detail: "Jack Miller and Rick Callahan on the patio at Saint Paul Mountain Vineyards, come out and enjoy an afternoon of live music and GREAT WINE!  Travelin Dough Pizza Truck on site."
+    },
+    {
+        venue: "St. Paul",
+        date: "2025-06-28",
+        time: " 7:00 pm - 10:00 pm",
+        name: "Elizabeth McCorvey & Katie Leigh together at Saint Paul Mountain Vineyards",
+        sorttime: "2025-06-28 19:00",
+        detail: "An amazing duo Elizabeth and Katie together on the patio at Saint Paul Mountain Vineyards!  What a amazing way to spend your Saturday.  Great music and Great wine...bring all your friends.  Travelin Dough Food Truck on Site"
+    },
+    {
+        venue: "St. Paul",
+        date: "2025-06-29",
+        time: " 6:30 pm -  9:30 pm",
+        name: "Hunnilicious at the Vineyard",
+        sorttime: "2025-06-29 18:30",
+        detail: "Live music with our favorite Mother, Daughter Duo! Elaine and Amber entertain with their mix of covers and amazing originals.  Travlin Dough food truck on site, Charcuterie options available or bring your own picnic to go with your amazing music and wine!"
     },
     {
         venue: "Appalachian Ridge",
