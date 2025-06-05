@@ -1,11 +1,59 @@
 const events = [
     {
         venue: "Point Lookout",
-        date: "Error retrieving data",
-        time: "Error retrieving data",
-        name: "Failed to fetch events: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-        sorttime: "Error retrieving data",
-        detail: "Error retrieving data"
+        date: "2025-06-07",
+        time: "7:00 pm - 10:00 pm",
+        name: "Chairmen of The Board",
+        sorttime: "2025-06-07 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-06-20",
+        time: "7:00 pm - 10:00 pm",
+        name: "ChillBilly & Blake Ellege",
+        sorttime: "2025-06-20 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-07-19",
+        time: "7:00 pm - 10:00 pm",
+        name: "Boomer Jukebox",
+        sorttime: "2025-07-19 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-08-09",
+        time: "8:00 am - 5:00 pm",
+        name: "Chicago Rewired",
+        sorttime: "2025-08-09 08:00",
+        detail: "None"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-08-15",
+        time: "7:00 pm - 10:00 pm",
+        name: "Too Much Sylvia 2025",
+        sorttime: "2025-08-15 19:00",
+        detail: "None"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-08-23",
+        time: "¿ - ?",
+        name: "Reunion Weekend",
+        sorttime: "¿ - ?",
+        detail: "None"
+    },
+    {
+        venue: "Point Lookout",
+        date: "2025-09-12",
+        time: "7:00 pm - 10:00 pm",
+        name: "The Tams 2025",
+        sorttime: "2025-09-12 19:00",
+        detail: "None"
     },
     {
         venue: "Souther Williams",
