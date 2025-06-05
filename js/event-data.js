@@ -801,11 +801,27 @@ const events = [
     },
     {
         venue: "Boldrock",
+        date: "2025-07-24",
+        time: "5:00 pm - 7:00 pm",
+        name: "Sorbet & Flight Pairing",
+        sorttime: "2025-07-24 17:00",
+        detail: "Sweet dreams are made of cider and SORBET! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with delicate, flavorful sorbet —all for just $18!"
+    },
+    {
+        venue: "Boldrock",
         date: "2025-07-25",
         time: "6:00 pm - 9:00 pm",
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-07-25 18:00",
         detail: "Join us in the taproom as we host live music from Todd Cecil & The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!"
+    },
+    {
+        venue: "Boldrock",
+        date: "2025-07-26",
+        time: "11:00 am - 9:00 pm",
+        name: "4th Annual Bold Rock Fishing Fest",
+        sorttime: "2025-07-26 11:00",
+        detail: "🎣 Reel in the Fun at our 4th Annual Fishing Fest! 🎶🐟Join us at Bold Rock Mills River on Saturday, July 26 for a day full of fishing, fun, and fundraising! We're casting out good vibes to support Casting for Recovery Carolinas with raffles, vendors, fishing education, and local fishing groups onsite."
     },
     {
         venue: "Boldrock",
@@ -1046,6 +1062,14 @@ const events = [
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-02-28 17:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
+    },
+    {
+        venue: "Burnt Shirt",
+        date: "Error retrieving data",
+        time: "Error retrieving data",
+        name: "Failed to fetch events: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+        sorttime: "Error retrieving data",
+        detail: "Error retrieving data"
     },
     {
         venue: "Guidon",
@@ -1294,14 +1318,6 @@ const events = [
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-25 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254"
-    },
-    {
-        venue: "Sierra Nevada",
-        date: "2025-06-04",
-        time: "6:00 pm - 9:30 pm",
-        name: "Fantastic Negrito w/ The Saviors of New York",
-        sorttime: "2025-06-04 18:00",
-        detail: "GA Advance $32.64 | GA Day of Show $37.93| GA + Early Access $48.48"
     },
     {
         venue: "Sierra Nevada",
