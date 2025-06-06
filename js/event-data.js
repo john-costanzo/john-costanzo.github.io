@@ -153,22 +153,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-06-05",
-        time: "¿ - ?",
-        name: "Food Truck: Panorama Mediterrean Grill and Milk & Honey",
-        sorttime: "¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-05",
-        time: "6:30 pm - 8:30 pm",
-        name: "Adventure Film Series: One Ocean Film Tour",
-        sorttime: "2025-06-05 18:30",
-        detail: "Join us at Trailside Brewing Co. for our FREE Adventure Film Series with seven films (listed below) this April-July, sponsored by Mast General Store! \nThe One Ocean Film Tour screens Thursday, June 5 at 6:30 PM. Doors open at 5:45 PM! Seating is first come first serve.\nThe Ocean Film Tour is a series of ocean-loving films focused on adventure, the aquatic environment and inspirational stories. \nThe film will take you from surfing in Bali to joining a marine biology team on the Gulf Listen Project in Mexico, fighting for the protection of salmon to understanding the impact of noise pollution on whale habits. One Ocean Film Tour is a spectacular visual journey. Join us and immerse yourself in the mighty power of our One Ocean!\nWe’re excited to have Mountains to Sea as our co-host and emcee! They’re your locally owned liquid outfitter based in Pisgah Forest, NC—offering PADI dive instruction, guided snorkeling, private boat charters, international travel, and more!\n✨ What to Expect:🎥 A curated collection of adventure-filled, ocean-loving films featuring the sea, exploration, and inspiring stories.🍻 Drinks from Trailside Brewing & food available for purchase🎟️ FREE & open to all ages!\nMark your calendar, invite your friends, and come celebrate adventure with us! Let us know you’re coming—we can’t wait to see you on June 5!\nAdventure Film Series at Trailside Brewing Thursday Evenings at 6:30pmFree Community EventApril 17: Women’s Adventure FilmMay 1: Climbing Film TourMay 22: Fly Fishing Tour June 5: One Ocean Film TourJune 26: Run Nation Film FestivalJuly 3: A Life of Endless Summer FilmJuly 24:5 Summer Stories FilmJuly 3: A Life of Endless Summer FilmJuly 24:5 Summer Stories Film"
-    },
-    {
-        venue: "Trailside",
         date: "2025-06-06",
         time: "¿ - ?",
         name: "Food Truck: Milk & Honey",
@@ -608,20 +592,12 @@ const events = [
         detail: "None"
     },
     {
-        venue: "Oklawaha",
-        date: "2025-06-05",
-        time: "12:00 pm - 11:00 pm",
-        name: "Cummings Cove Cares Fundraiser for Hurricane Helene Recovery and Rebuild",
-        sorttime: "2025-06-05 12:00",
-        detail: "A portion of sales will go to the rebuild of WNC after Hurricane Helene all day."
-    },
-    {
-        venue: "Oklawaha",
-        date: "2025-06-05",
+        venue: "Trailside",
+        date: "2025-07-05",
         time: "6:00 pm - 9:00 pm",
-        name: "The BRUE @ Oklawaha!",
-        sorttime: "2025-06-05 18:00",
-        detail: "Music starts @ 6pm!"
+        name: "Live Music: Beer and Loathing",
+        sorttime: "2025-07-05 18:00",
+        detail: "None"
     },
     {
         venue: "Oklawaha",
@@ -678,6 +654,22 @@ const events = [
         name: "Pleasure Chest",
         sorttime: "2025-06-15 15:00",
         detail: "Music starts @3pm!"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-06-19",
+        time: "8:00 pm - 10:00 pm",
+        name: "Kid Billy",
+        sorttime: "2025-06-19 20:00",
+        detail: "Join us for the unofficial afterparty to the kick off of Rhythm and Brews with Kid Billy! Music starts @8pm!"
+    },
+    {
+        venue: "Oklawaha",
+        date: "2025-06-20",
+        time: "8:00 pm - 11:00 pm",
+        name: "Raphael Graves Band",
+        sorttime: "2025-06-20 20:00",
+        detail: "Music starts @8pm! $7 cover!"
     },
     {
         venue: "Boldrock",
@@ -2513,50 +2505,50 @@ const events = [
     },
     {
         venue: "Feed and Seed",
-        date: "2025-04-25",
+        date: "2025-06-06",
         time: "7 - 9pm",
-        name: "Lazybirds!",
-        sorttime: "2025-04-25 21:00",
+        name: "Liberty Road Bluegrass",
+        sorttime: "2025-06-06 21:00",
         detail: "None"
     },
     {
         venue: "Feed and Seed",
-        date: "2025-05-02",
+        date: "2025-06-07",
         time: "7 - 9PM",
-        name: "Slim Pickins Bluegrass",
-        sorttime: "2025-05-02 21:00",
+        name: "Blue Range Bluegrass",
+        sorttime: "2025-06-07 21:00",
         detail: "None"
     },
     {
         venue: "Feed and Seed",
-        date: "2025-05-09",
+        date: "2025-06-13",
         time: "7 - 9pm",
-        name: "Apple Country Jam/Dance Band",
-        sorttime: "2025-05-09 21:00",
+        name: "Hit or Miss Band",
+        sorttime: "2025-06-13 21:00",
         detail: "None"
     },
     {
         venue: "Feed and Seed",
-        date: "2025-05-16",
+        date: "2025-06-20",
         time: "7 - 9PM",
-        name: "Harlin Country Grass",
-        sorttime: "2025-05-16 21:00",
+        name: "Jack Town Ramblers",
+        sorttime: "2025-06-20 21:00",
         detail: "None"
     },
     {
         venue: "Feed and Seed",
-        date: "2025-05-23",
+        date: "2025-06-27",
         time: "7 - 9PM",
-        name: "Mulley Holler Bluegrass",
-        sorttime: "2025-05-23 21:00",
+        name: "Lazybirds",
+        sorttime: "2025-06-27 21:00",
         detail: "None"
     },
     {
         venue: "Feed and Seed",
-        date: "2025-05-30",
+        date: "2025-06-28",
         time: "7 - 9PM",
-        name: "New Carolina Connection",
-        sorttime: "2025-05-30 21:00",
+        name: "The Robertson Boys",
+        sorttime: "2025-06-28 21:00",
         detail: "None"
     },
     {
