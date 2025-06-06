@@ -210,6 +210,14 @@ const events = [
     {
         venue: "Trailside",
         date: "2025-06-09",
+        time: "¿ - ?",
+        name: "Food Truck: Heidi Ho on the Go",
+        sorttime: "¿ - ?",
+        detail: "None"
+    },
+    {
+        venue: "Trailside",
+        date: "2025-06-09",
         time: "4:00 pm - 6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-09 16:00",
@@ -2989,6 +2997,22 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         name: "El Bodegon",
         sorttime: "2025-07-04 12:00",
+        detail: "None"
+    },
+    {
+        venue: "Claywood",
+        date: "2025-06-06",
+        time: "6pm-8pm",
+        name: "Hope Griffin",
+        sorttime: "2025-06-06 18:00",
+        detail: "None"
+    },
+    {
+        venue: "Claywood",
+        date: "2025-06-13",
+        time: "6pm-8pm",
+        name: "Victor Varner",
+        sorttime: "2025-06-13 18:00",
         detail: "None"
     },
 ];
