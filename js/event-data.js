@@ -8,7 +8,7 @@ const events = [
         name: "Chairmen of The Board",
         sorttime: "2025-06-07 19:00",
         detail: "None",
-        location: "408 Appleola Rd, Hendersonville, NC 28792",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Point Lookout",
@@ -19,7 +19,7 @@ const events = [
         name: "ChillBilly & Blake Ellege",
         sorttime: "2025-06-20 19:00",
         detail: "None",
-        location: "408 Appleola Rd, Hendersonville, NC 28792",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Point Lookout",
@@ -30,7 +30,7 @@ const events = [
         name: "Boomer Jukebox",
         sorttime: "2025-07-19 19:00",
         detail: "None",
-        location: "408 Appleola Rd, Hendersonville, NC 28792",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Point Lookout",
@@ -41,7 +41,7 @@ const events = [
         name: "Chicago Rewired",
         sorttime: "2025-08-09 08:00",
         detail: "None",
-        location: "408 Appleola Rd, Hendersonville, NC 28792",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Point Lookout",
@@ -52,7 +52,7 @@ const events = [
         name: "Too Much Sylvia 2025",
         sorttime: "2025-08-15 19:00",
         detail: "None",
-        location: "408 Appleola Rd, Hendersonville, NC 28792",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Point Lookout",
@@ -63,7 +63,7 @@ const events = [
         name: "Reunion Weekend",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "408 Appleola Rd, Hendersonville, NC 28792",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Point Lookout",
@@ -74,7 +74,7 @@ const events = [
         name: "The Tams 2025",
         sorttime: "2025-09-12 19:00",
         detail: "None",
-        location: "408 Appleola Rd, Hendersonville, NC 28792",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Souther Williams",
@@ -85,7 +85,7 @@ const events = [
         name: "Tim Nave – Live Music",
         sorttime: "2025-06-07 14:00",
         detail: "Tim Nave is a musician from North East Tennessee. While he",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -96,7 +96,7 @@ const events = [
         name: "El Bodegon Food Truck",
         sorttime: "2025-06-08 12:00",
         detail: "Argentinian Flare",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -107,7 +107,7 @@ const events = [
         name: "Hope Griffin – Live Music",
         sorttime: "2025-06-08 13:00",
         detail: "Folk/Americana/Singer-Songwriter - Hope continues to wow audiences and stretch the",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -118,7 +118,7 @@ const events = [
         name: "Blue Ridge Orchestra",
         sorttime: "2025-06-08 19:30",
         detail: "Something magical is happening in the vineyard! Our Summer Soirée",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -129,7 +129,7 @@ const events = [
         name: "El Bodegon – Food Truck",
         sorttime: "2025-06-14 12:00",
         detail: "Serving comfort food from Argentina with Italian and Spanish influences",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -140,7 +140,7 @@ const events = [
         name: "Will Hartz – Live Music",
         sorttime: "2025-06-14 14:00",
         detail: "A born entertainer and a multi instrumentalist, Will Hartz has been",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -151,7 +151,7 @@ const events = [
         name: "Mëhfil Indian Cuisine – Food Truck",
         sorttime: "2025-06-15 12:00",
         detail: "Authentic Indian Food with a range of flavorful Indian dishes.",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -162,7 +162,7 @@ const events = [
         name: "Maddy Winer & Masterpiece – Live Music",
         sorttime: "2025-06-15 14:00",
         detail: "Maddy Winer & Masterpiece have entertained guests for many years",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -173,7 +173,7 @@ const events = [
         name: "Eric Congdon and Raphael Graves – Live Music",
         sorttime: "2025-06-21 14:00",
         detail: "The dynamic duo of Eric Congdon and Raphael Graves come",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -184,7 +184,7 @@ const events = [
         name: "El Bodegon – Food Truck",
         sorttime: "2025-06-22 12:00",
         detail: "Serving comfort food from Argentina with Italian and Spanish influences",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -195,7 +195,7 @@ const events = [
         name: "Aaron LaFalce – Live Music",
         sorttime: "2025-06-22 14:00",
         detail: "With roots in the Blue Ridge Mountains and rhythms that",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Souther Williams",
@@ -206,7 +206,7 @@ const events = [
         name: "El Bodegon – Food Truck",
         sorttime: "2025-06-28 12:00",
         detail: "Serving comfort food from Argentina with Italian and Spanish influences",
-        location: "655 Hoopers Creek Rd. Fletcher, NC 28732",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         venue: "Trailside",
@@ -217,7 +217,7 @@ const events = [
         name: "Food Truck: Milk & Honey",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -228,7 +228,7 @@ const events = [
         name: "Live Music: The Workin’ Men",
         sorttime: "2025-06-07 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -239,7 +239,7 @@ const events = [
         name: "Food Truck: Indian Aroma",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -250,7 +250,7 @@ const events = [
         name: "Live Music: Kristen Toole",
         sorttime: "2025-06-08 14:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -261,7 +261,7 @@ const events = [
         name: "Food Truck: Heidi Ho on the Go",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -272,7 +272,7 @@ const events = [
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-09 16:00",
         detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -283,7 +283,7 @@ const events = [
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-06-10 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -294,7 +294,7 @@ const events = [
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-11 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -305,7 +305,7 @@ const events = [
         name: "Green Drinks with Conserving Carolina & Mtn True",
         sorttime: "2025-06-12 17:30",
         detail: "Come to Green Drinks to learn more about current environmental issues, have revenant discussions, and meet like-minded people! \nMeetings are held the second Thursday of each month from 5:30-7PM",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -316,7 +316,7 @@ const events = [
         name: "Trailside Summer Blockbuster Trivia",
         sorttime: "2025-06-12 18:30",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -327,7 +327,7 @@ const events = [
         name: "Food Truck: El Bodegon",
         sorttime: "¿ - ?",
         detail: "Instagram",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -338,7 +338,7 @@ const events = [
         name: "Food Truck: Indian Aroma",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -349,7 +349,7 @@ const events = [
         name: "Live Music: Max Eve",
         sorttime: "2025-06-13 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -360,7 +360,7 @@ const events = [
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -371,7 +371,7 @@ const events = [
         name: "Dupont Forest Bike Wash!",
         sorttime: "2025-06-14 13:00",
         detail: "Come and show your support for DuPont State Forest while showing your bike some love! If you’re not a cyclist but still love DuPont, come support the Forest while enjoying live music and so much more during the Bike Wash on Saturday, June 14, at Trailside Brewing.\nThis family-friendly event is a membership drive for Friends of DuPont Forest. Every membership directly supports the Forest and is crucial to its maintenance.With the purchase of an individual membership at the event, you will receive 1 complimentary bicycle wash and lube. \nThese services will be provided courtesy of some of the area\'s most talented bike mechanics.In addition to the membership drive and bike services, we will also have live music performed by Blue Ridge Betty and The Late Shifters",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -382,7 +382,7 @@ const events = [
         name: "Live Music: Parker's Back",
         sorttime: "2025-06-14 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -393,7 +393,7 @@ const events = [
         name: "Food Truck: Indian Aroma",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -404,7 +404,7 @@ const events = [
         name: "Live Music: Will Hartz",
         sorttime: "2025-06-15 14:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -415,7 +415,7 @@ const events = [
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-16 16:00",
         detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -426,7 +426,7 @@ const events = [
         name: "Paint Your Own Pottery Class",
         sorttime: "2025-06-16 18:30",
         detail: "Join us for a Paint your own Pottery class with Half Light Honey! Click here for more information!",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -437,7 +437,7 @@ const events = [
         name: "BINGO with Hendersonville Rotary Club",
         sorttime: "2025-06-17 18:00",
         detail: "Come join us for BINGO from 6-8PM for 15 games of bingo. $15 for 15 games! Cash prizes from $10-$100. Come on out to have some fun!!",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -448,7 +448,7 @@ const events = [
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-06-17 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -459,7 +459,7 @@ const events = [
         name: "Food Truck: Heidi Ho on the Go",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -470,7 +470,7 @@ const events = [
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-18 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -481,7 +481,7 @@ const events = [
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -492,7 +492,7 @@ const events = [
         name: "Trailside Trivia",
         sorttime: "2025-06-19 18:30",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -503,7 +503,7 @@ const events = [
         name: "Fish, Laugh, Love: Fly Fishing themed comedy fundraiser",
         sorttime: "2025-06-19 19:30",
         detail: "Modelface Comedy brings you the best comedians from all over the country. For this special fundraiser show we have Eeland Stribling from Denver. \nFISH, LAUGH, LOVEA fly fishing themed comedy fundraiser to help rehab our rivers after Hurricane Helene featuring Eeland Stribling.\nEeland will be sharing a mix of videos and stories from his fly fishing/ conservation career along with his stand up comedy.\nStribling started his comedy career during his time at Colorado State University where he studied conservation and wildlife biology. Since then, he has made a living between his two passions working as an environmentalist by day and a comic by night.\nages 16+Doors at 7pmShow at 7:30pm\nTickets$15 general admission$25 premium seating\nhttps://www.eventbrite.com/e/fish-laugh-love-fly-fishing-themed-comedy-fundraiser-tickets-1380907695089?aff=oddtdtcreator",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -514,7 +514,7 @@ const events = [
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -525,7 +525,7 @@ const events = [
         name: "Live Music: Riyen Roots",
         sorttime: "2025-06-20 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -536,7 +536,7 @@ const events = [
         name: "Blue Ridge Artisan Summer Solstice Market",
         sorttime: "2025-06-21 13:00",
         detail: "Come on out to our Blue Ridge Artisan Market from 1-6pm! Are you ready for longer days and summer nights? Join us for our Summer Solstice Market at Trailside with 20 local makers, live music, and good vibes! .",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -547,7 +547,7 @@ const events = [
         name: "Live Music: Adi the Monk",
         sorttime: "2025-06-21 14:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -558,7 +558,7 @@ const events = [
         name: "Live Music: The Lunatic Fringe",
         sorttime: "2025-06-21 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -569,7 +569,7 @@ const events = [
         name: "Mobile Book Bus at Trailside!",
         sorttime: "2025-06-22 13:00",
         detail: "The Chapters Bookstop bus (mobile bookstore) will be at Trailside Brewing from 1-4p! Find new and used books for your summer reading",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -580,7 +580,7 @@ const events = [
         name: "Live Music: Ken Morgan",
         sorttime: "2025-06-22 14:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -591,7 +591,7 @@ const events = [
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-23 16:00",
         detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -602,7 +602,7 @@ const events = [
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-06-24 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -613,7 +613,7 @@ const events = [
         name: "Food Truck: Heidi Ho on the Go",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -624,7 +624,7 @@ const events = [
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-06-25 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -635,7 +635,7 @@ const events = [
         name: "Food Truck: Panorama Mediterranean Grill and Milk and Honey",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -646,7 +646,7 @@ const events = [
         name: "Run Nation Adventure Film",
         sorttime: "2025-06-26 18:30",
         detail: "Join us at Trailside Brewing Co. for our FREE Adventure Film Series with seven films (listed below) this April-July, sponsored by Mast General Store! \nThe Run Nation Film Festival screens Thursday, June 26 at 6:30 PM, and is a touring short film festival that features films including all forms of running including trail running, road running, park running, track, marathons, ultra distance and more. \nRunNation Film Festival was created to bring human interest stories to the wider community, using running as the medium of storytelling. RunNation aims to celebrate the power of running and inspire people through the creative expression of film. We’re excited to have Fleet Feet, a locally owned and operated retail shop for runners as our co-host and emcee, and Hendersonville Run Club.\n✨ What to Expect:🎥 A curated selection of films about all forms of running🍻 Drinks from Trailside Brewing & food available for purchase🎟️ FREE & open to all ages!Mark your calendar, invite your friends, and come celebrate running and adventure with us! Let us know you’re coming—we can’t wait to see you on June 26!\nAdventure Film Series at Trailside Brewing Thursday Evenings at 6:30pmFree Community EventApril 17: Women’s Adventure FilmMay 1: Climbing Film TourMay 22: Fly Fishing Tour June 5: One Ocean Film TourJune 26: Run Nation Film FestivalJuly 3: A Life of Endless Summer FilmJuly 24:5 Summer Stories Film",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -657,7 +657,7 @@ const events = [
         name: "Food Truck: Indian Aroma",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -668,7 +668,7 @@ const events = [
         name: "Packet Pickup",
         sorttime: "2025-06-27 17:00",
         detail: "Early Packet Pick Up 6/27/25\n 5-7PM Trailside Brewing at 873 Lenox Park Drive, Hendersonville",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -679,7 +679,7 @@ const events = [
         name: "Live Music: J Dunks",
         sorttime: "2025-06-27 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -690,7 +690,7 @@ const events = [
         name: "Adair’s Cajun Cooking and Milk and Honey",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -701,7 +701,7 @@ const events = [
         name: "Food Truck: Milk & Honey",
         sorttime: "¿ - ?",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -712,7 +712,7 @@ const events = [
         name: "Summer Session TEAM MARATHON RELAY & 5K",
         sorttime: "2025-06-28 07:00",
         detail: "6:00AM-7:20AM Packet Pick Up\n7AM Marathon Relay\n7:30AM 5k Race Start\n8AM Trailside Bar Open\n8:30AM 5k Tentative Awards\n12PM Marathon Relay Tentative Awards\n\nIncluded in Race Registration (one per Relay Teammate)\nCommemorative Race Shirt\nFinisher Medal\nTrailside Beer (21+)\nDonation to Mills River Partnership",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -723,7 +723,7 @@ const events = [
         name: "Live Music: Kate Leigh Bryant",
         sorttime: "2025-06-29 14:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -734,7 +734,7 @@ const events = [
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-30 16:00",
         detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -745,7 +745,7 @@ const events = [
         name: "Paint & Sip with Monet and Chardonnay",
         sorttime: "2025-06-30 18:00",
         detail: "Unleash your creativity with us at Trailside Brewing Company on Monday, June 30 at 6:00 pm! No experience is needed. Our skilled instructors will help guide you through each step so that you can create a beautiful painting! Registration link coming soon!\nEveryone will receive a 16x20\" canvas with a pre-sketched drawing and all necessary painting supplies. We kindly ask that each guest buys at least one drink or menu item to support this awesome venue. For the best experience, we recommend arriving early to get cozy and order some tasty bites/beverages before we begin!",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -756,7 +756,7 @@ const events = [
         name: "Round Robin Open Mic Hosted by Letters To Abigail",
         sorttime: "2025-07-01 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -767,7 +767,7 @@ const events = [
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-07-02 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -778,7 +778,7 @@ const events = [
         name: "Adventure Film Series: A Life of Endless Summer",
         sorttime: "2025-07-03 18:30",
         detail: "Join us at Trailside Brewing Co. for our FREE Adventure Film Series with seven films (listed below) this April-July, sponsored by Mast General Store!\nA Life of Endless Summer Film screens Thursday, July 3 at 6:30 PM and is an intimate and inspiring look at the life of legendary filmmaker Bruce Brown.Best known for The Endless Summer, the groundbreaking surf documentary that shaped an entire genre of action sports films. In this heartfelt tribute, his son, Dana Brown, takes us on a personal journey through his father’s life—capturing the spirit of a man who lived for adventure, storytelling, and the pursuit of the perfect wave.\nWhether you’re a fan of surfing, adventure films, or simply love a great story about a life well lived, this film is a must-see. Grab a drink, settle in, and celebrate the legacy of a true pioneer!\n✨ What to Expect:🎥 A heartfelt and inspiring documentary celebrating the life and legacy of legendary filmmaker Bruce Brown.🍻 Drinks from Trailside Brewing & food available for purchase🎟️ FREE & open to all ages!\nMark your calendar, invite your friends, and come celebrate adventure with us! Let us know you’re coming—we can’t wait to see you on July 3!\nAdventure Film Series at Trailside BrewingThursday Evenings at 6:30pmFree Community EventApril 17: Women’s Adventure FilmMay 1: Climbing Film TourMay 22: Fly Fishing TourJune 5: One Ocean Film TourJune 26: Run Nation Film FestivalJuly 3: A Life of Endless Summer FilmJuly 24:5 Summer Stories Film",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -789,7 +789,7 @@ const events = [
         name: "Live Music: Collin Cheek",
         sorttime: "2025-07-04 14:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -800,7 +800,7 @@ const events = [
         name: "Live Music: Bill Altman",
         sorttime: "2025-07-04 17:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Trailside",
@@ -811,7 +811,7 @@ const events = [
         name: "Live Music: Beer and Loathing",
         sorttime: "2025-07-05 18:00",
         detail: "None",
-        location: "873 Lennox Park Drive Hendersonville NC 28739",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         venue: "Oklawaha",
@@ -822,7 +822,7 @@ const events = [
         name: "Billingsley",
         sorttime: "2025-06-07 20:00",
         detail: "Music starts @8pm! $7 cover!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -833,7 +833,7 @@ const events = [
         name: "Petah Iah and the Mind Renewers",
         sorttime: "2025-06-08 15:00",
         detail: "Music starts @3pm!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -844,7 +844,7 @@ const events = [
         name: "Izzy Hughes",
         sorttime: "2025-06-12 19:00",
         detail: "Music starts @7pm!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -855,7 +855,7 @@ const events = [
         name: "Kayla McKinney",
         sorttime: "2025-06-13 20:00",
         detail: "Music starts @8pm! $5 cover",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -866,7 +866,7 @@ const events = [
         name: "Fancy and Friends in Low Places",
         sorttime: "2025-06-14 20:00",
         detail: "Music starts @8pm! $6 cover!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -877,7 +877,7 @@ const events = [
         name: "Pleasure Chest",
         sorttime: "2025-06-15 15:00",
         detail: "Music starts @3pm!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -888,7 +888,7 @@ const events = [
         name: "Kid Billy",
         sorttime: "2025-06-19 20:00",
         detail: "Join us for the unofficial afterparty to the kick off of Rhythm and Brews with Kid Billy! Music starts @8pm!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -899,7 +899,7 @@ const events = [
         name: "Raphael Graves Band",
         sorttime: "2025-06-20 20:00",
         detail: "Music starts @8pm! $7 cover!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Oklawaha",
@@ -910,7 +910,7 @@ const events = [
         name: "Doss Church and The Unholy Noise",
         sorttime: "2025-06-21 20:00",
         detail: "Music starts @8pm!",
-        location: "147 1st Ave E Hendersonville, NC 28792",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         venue: "Boldrock",
@@ -921,7 +921,7 @@ const events = [
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-06-06 18:00",
         detail: "Join us in the taproom as we host live music from Todd Cecil & The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -932,7 +932,7 @@ const events = [
         name: "Iggy Radio",
         sorttime: "2025-06-07 18:00",
         detail: "Join us in the taproom as we host live music from Iggy Radio! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -943,7 +943,7 @@ const events = [
         name: "The Right Fit",
         sorttime: "2025-06-13 18:00",
         detail: "Join us in the taproom as we host live music from The Right Fit! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -954,7 +954,7 @@ const events = [
         name: "Father's Day BBQ",
         sorttime: "2025-06-15 11:00",
         detail: "Grill, Chill & Celebrate Dad!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -965,7 +965,7 @@ const events = [
         name: "13th Birthday Bash: Steal The Pint",
         sorttime: "2025-06-20 11:00",
         detail: "🎉 We’re celebrating in style with a 13th Birthday Bash Steal the Pint giveaway! 🎉",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -976,7 +976,7 @@ const events = [
         name: "Finkelstein 3",
         sorttime: "2025-06-20 18:00",
         detail: "Join us in the taproom as we host live music from the Finkelstein 3! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -987,7 +987,7 @@ const events = [
         name: "BOLD Birthday Bash",
         sorttime: "2025-06-21 11:00",
         detail: "We’re turning 13 and it’s time to get bold with the birthday fun! Join us at Bold Rock Mills River as we celebrate 13 years of cider and cheer with a day full of festivities for the whole family!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -998,7 +998,7 @@ const events = [
         name: "Macarons & Flight Pairing",
         sorttime: "2025-06-26 17:00",
         detail: "Sweet dreams are made of cider and macarons! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with delicate, flavorful macarons—all for just $18!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1009,7 +1009,7 @@ const events = [
         name: "Fine Line Band",
         sorttime: "2025-06-27 18:00",
         detail: "Join us in the taproom as we host live music from the Fine Line Band! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1020,7 +1020,7 @@ const events = [
         name: "Awake In The Dream",
         sorttime: "2025-06-28 18:00",
         detail: "Join us in the taproom as we host live music from Awake In The Dream! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1031,7 +1031,7 @@ const events = [
         name: "Iggy Radio",
         sorttime: "2025-07-05 18:00",
         detail: "Join us in the taproom as we host live music from Iggy Radio! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1042,7 +1042,7 @@ const events = [
         name: "Myron Hyman",
         sorttime: "2025-07-11 18:00",
         detail: "Join us in the taproom as we host live music from Myron Hyman! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1053,7 +1053,7 @@ const events = [
         name: "Jon Cox Band",
         sorttime: "2025-07-12 18:00",
         detail: "Join us in the taproom as we host live music from the Jon Cox Band! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1064,7 +1064,7 @@ const events = [
         name: "Fine Line Band",
         sorttime: "2025-07-18 18:00",
         detail: "Join us in the taproom as we host live music from the Fine Line Band! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1075,7 +1075,7 @@ const events = [
         name: "Finkelstein 3",
         sorttime: "2025-07-19 18:00",
         detail: "Join us in the taproom as we host live music from the Finkelstein 3! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1086,7 +1086,7 @@ const events = [
         name: "Sorbet & Flight Pairing",
         sorttime: "2025-07-24 17:00",
         detail: "Sweet dreams are made of cider and SORBET! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with delicate, flavorful sorbet —all for just $18!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1097,7 +1097,7 @@ const events = [
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-07-25 18:00",
         detail: "Join us in the taproom as we host live music from Todd Cecil & The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1108,7 +1108,7 @@ const events = [
         name: "4th Annual Bold Rock Fishing Fest",
         sorttime: "2025-07-26 11:00",
         detail: "🎣 Reel in the Fun at our 4th Annual Fishing Fest! 🎶🐟Join us at Bold Rock Mills River on Saturday, July 26 for a day full of fishing, fun, and fundraising! We're casting out good vibes to support Casting for Recovery Carolinas with raffles, vendors, fishing education, and local fishing groups onsite.",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1119,7 +1119,7 @@ const events = [
         name: "Tracy Davis & The TMI Band",
         sorttime: "2025-05-31 18:00",
         detail: "Join us in the taproom as we host live music from Tracy Davis & The TMI Band! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1130,7 +1130,7 @@ const events = [
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-05-30 18:00",
         detail: "Join us in the taproom as we host live music from Todd Cecil and The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1141,7 +1141,7 @@ const events = [
         name: "Kickoff to Summer",
         sorttime: "2025-05-24 11:00",
         detail: "Let’s sip into summer the right way! Join us at Bold Rock Mills River for an all-day celebration of sunshine, cider, and good vibes. We’re bringing the heat on Saturday with yard games, kid-friendly activities, and a rockin’ performance from The Showboat Band from 6–9PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1152,7 +1152,7 @@ const events = [
         name: "Sound Invasion",
         sorttime: "2025-05-23 18:00",
         detail: "Join us in the taproom as we host live music from Sound Invasion! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1163,7 +1163,7 @@ const events = [
         name: "Finkelstein 3",
         sorttime: "2025-05-17 18:00",
         detail: "Join us in the taproom as we host live music from Finkelstein 3! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1174,7 +1174,7 @@ const events = [
         name: "Fine Line Band",
         sorttime: "2025-05-16 18:00",
         detail: "Join us in the taproom as we host live music from the Fine Line Band! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1185,7 +1185,7 @@ const events = [
         name: "Crumbl Cookies & Flight Pairing",
         sorttime: "2025-05-15 17:00",
         detail: "Sweet dreams are made of cider and cookies! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with famous Crumbl Cookies—all for just $18!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1196,7 +1196,7 @@ const events = [
         name: "Mother's Day Plant & Sip",
         sorttime: "2025-05-11 11:00",
         detail: "Celebrate Mom the Bold Rock way—with crisp cider and a little something green! Join us on Mother’s Day for our Plant & Sip, where all moms will receive a complimentary plant (while supplies last) from our friends at the Mills River Fire Department .",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1207,7 +1207,7 @@ const events = [
         name: "Jay Dee",
         sorttime: "2025-05-10 18:00",
         detail: "Join us in the taproom as we host live music from Jay Dee! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1218,7 +1218,7 @@ const events = [
         name: "The Sliding Rockers",
         sorttime: "2025-05-09 18:00",
         detail: "Join us in the taproom as we host live music from The Sliding Rockers! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1229,7 +1229,7 @@ const events = [
         name: "Hard Knox Wrestling at Bold Rock",
         sorttime: "2025-05-03 17:30",
         detail: "Get ready for an awesome day of fun and fierce action at Bold Rock Mills River! We’re kicking things off with GOLDEN PALOOZA from 11AM–3PM—a tail-waggin’ meetup for golden doodles and their humans!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1240,7 +1240,7 @@ const events = [
         name: "Myron Hyman",
         sorttime: "2025-05-02 18:00",
         detail: "Join us in the taproom as we host live music from Myron Hyman! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1251,7 +1251,7 @@ const events = [
         name: "Awake In The Dream",
         sorttime: "2025-04-26 18:00",
         detail: "Join us in the taproom as we host live music from Awake In The Dream! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1262,7 +1262,7 @@ const events = [
         name: "Finkelstein 3",
         sorttime: "2025-04-25 18:00",
         detail: "Join us in the taproom as we host live music from Finkelstein 3! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1273,7 +1273,7 @@ const events = [
         name: "Easter Egg Give-a-Way",
         sorttime: "2025-04-19 11:00",
         detail: "Hop on over for an egg-stra fun day for kids of all ages—yes, adults too! We’re giving away Easter eggs filled with candy and prizes all day long. But wait, there’s a twist…",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1284,7 +1284,7 @@ const events = [
         name: "Kid Billy",
         sorttime: "2025-04-18 18:00",
         detail: "Join us in the taproom as we host live music from Kid Billy! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1295,7 +1295,7 @@ const events = [
         name: "Cupcake & Flight Pairing",
         sorttime: "2025-04-17 17:00",
         detail: "Sweet dreams are made of cider and cupcakes! Join us for a perfectly paired evening featuring house-made mini cupcakes alongside four refreshing ciders for just $18!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1306,7 +1306,7 @@ const events = [
         name: "John Cox Band",
         sorttime: "2025-04-12 18:00",
         detail: "Join us in the taproom as we host live music from the John Cox Band! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1317,7 +1317,7 @@ const events = [
         name: "The Right Fit",
         sorttime: "2025-04-11 18:00",
         detail: "Join us in the taproom as we host live music from The Right Fit! Stop by for a beer & a good time starting at 6PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1328,7 +1328,7 @@ const events = [
         name: "Grounded & Grateful Event",
         sorttime: "2025-04-05 12:00",
         detail: "Join us for Grounded & Grateful, a special event benefiting Grounded Boots Relief! Enjoy a chainsaw safety demo, participate in our silent auction & raffle featuring incredible prizes like golf packages, cigars, a $500 Continuum tattoo gift card, and a 50/50 raffle—all in support of this amazing 501(c) charity.",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1339,7 +1339,7 @@ const events = [
         name: "Arborfest Expo: AFTER PARTY (Private Event)",
         sorttime: "2025-04-04 18:00",
         detail: "*PRIVATE EVENT* THE TAPROOM WILL CLOSE TO THE PUBLIC AT 4:30PM!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1350,7 +1350,7 @@ const events = [
         name: "Finkelstein 3",
         sorttime: "2025-03-28 17:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat.",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1361,7 +1361,7 @@ const events = [
         name: "Cheesecake & Flight Pairing",
         sorttime: "2025-03-27 17:00",
         detail: "Sweeten your day with the perfect pairing! Join us at the taproom for our Cheesecake & Flight Pairing—an exciting combo of creamy cheesecakes and crisp ciders. For just $18, it’s the ultimate treat to share with family and friends. Don’t miss out on this delicious experience!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1372,7 +1372,7 @@ const events = [
         name: "Myron Hyman",
         sorttime: "2025-03-21 17:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat.",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1383,7 +1383,7 @@ const events = [
         name: "St. Patrick's Day Party!",
         sorttime: "2025-03-17 12:00",
         detail: "St. Patrick’s Day is here and the luck of the Irish is waiting for you! Enjoy $5 select drafts and sip on our festive green cider! Bring your friends, family, and your Irish spirit for a fun-filled day at the taproom! See you there!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1394,7 +1394,7 @@ const events = [
         name: "St. Patrick's Day Weekend Celebration",
         sorttime: "¿ - ?",
         detail: "Get ready to sham-rock your weekend! Join us at the taproom for a St. Patrick’s Day Weekend Celebration with green cider, beads, live music on Saturday from Saint & Sinners (5PM - 8PM), and more! Bring your friends, family, and everyone you know to embrace the luck of the Irish ALL WEEKEND LONG! See you in the taproom for our Saint Patrick's Day Weekend Celebration!",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1405,7 +1405,7 @@ const events = [
         name: "St. Patrick's: Steal the Pint",
         sorttime: "2025-03-14 11:00",
         detail: "St. Patrick’s Day is almost here, and we’re kicking it off with a Steal the Pint giveaway! Join us Friday, March 14, for your chance to grab a limited-edition St. Patrick’s Day beer mug! While supplies last, so get yours before they’re gone! Don’t miss out on the luck of the Irish! ",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1416,7 +1416,7 @@ const events = [
         name: "Cast Iron",
         sorttime: "2025-03-08 18:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat.",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1427,7 +1427,7 @@ const events = [
         name: "Iggy Radio",
         sorttime: "2025-03-01 17:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat.",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Boldrock",
@@ -1438,7 +1438,7 @@ const events = [
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-02-28 17:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat.",
-        location: "72 School House Road, Mills River, NC 28759",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         venue: "Guidon",
@@ -1449,7 +1449,7 @@ const events = [
         name: "Run Club",
         sorttime: "2025-06-10 18:00",
         detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer.  We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
-        location: "415 8th Avenue E., Hendersonville, NC 28792",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         venue: "Guidon",
@@ -1460,7 +1460,7 @@ const events = [
         name: "Team Trivia",
         sorttime: "2025-06-11 19:00",
         detail: "Grab your smartest friends and join us for two fun rounds of trivia.",
-        location: "415 8th Avenue E., Hendersonville, NC 28792",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         venue: "Guidon",
@@ -1471,7 +1471,7 @@ const events = [
         name: "Trout Unlimited Monthly Meeting",
         sorttime: "2025-06-12 19:00",
         detail: "Pisgah Trout Unlimited meets at 7:00 PM on the second Thursday of every month at Guidon Brewing Co. Our July, August, and December meetings are social gatherings without regular chapter business. Trout Unlimited membership is not required to join Pisgah TU meetings and everyone is welcome.",
-        location: "415 8th Avenue E., Hendersonville, NC 28792",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         venue: "Guidon",
@@ -1482,7 +1482,7 @@ const events = [
         name: "Karaoke",
         sorttime: "2025-06-13 18:00",
         detail: "Karaoke with Thunderstruck Entertainment. Every 1st, 2nd, and 3rd Friday of the month from 6-10pm",
-        location: "415 8th Avenue E., Hendersonville, NC 28792",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         venue: "Guidon",
@@ -1493,7 +1493,7 @@ const events = [
         name: "National Bourbon Day",
         sorttime: "2025-06-14 11:00",
         detail: "11:00 AM - 10:00 PM",
-        location: "415 8th Avenue E., Hendersonville, NC 28792",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         venue: "Guidon",
@@ -1504,7 +1504,7 @@ const events = [
         name: "National Chicken Wing Day",
         sorttime: "2025-07-29 11:00",
         detail: "11:00 AM - 09:00 PM",
-        location: "415 8th Avenue E., Hendersonville, NC 28792",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         venue: "Guidon",
@@ -1515,7 +1515,7 @@ const events = [
         name: "Live music by Cellophane Flowers",
         sorttime: "2025-09-06 18:30",
         detail: "None",
-        location: "415 8th Avenue E., Hendersonville, NC 28792",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         venue: "St. Paul",
@@ -1526,7 +1526,7 @@ const events = [
         name: "Bob Zullo performs at Saint Paul, first Saturday of every Month!   (1)",
         sorttime: "2025-06-07 19:00",
         detail: "Enjoy great music  and great wine  Saturday afternoon with Bob Zullo at the Vineyard.  Sipping wine, Enjoying friends and listening to Bob on the patio sitting in the vineyard where the grapes are grown!  Travelin Dough Food Truck on Site",
-        location: "588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         venue: "St. Paul",
@@ -1537,7 +1537,7 @@ const events = [
         name: "Paul McIntire & Bob Zullo  at the Vineyard",
         sorttime: "2025-06-08 18:30",
         detail: "Bob Zullo on Guitar and  Paul on the electric violin, produce amazing music.  It's going to be a great day at the vineyard!  Travelin Dough Food Truck on site, Charcuterie available or bring your own picnic!  See you at the Vineyard",
-        location: "588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         venue: "St. Paul",
@@ -1548,7 +1548,7 @@ const events = [
         name: "Craig St John live at Saint Paul Mountain Vineyards",
         sorttime: "2025-06-15 18:30",
         detail: "Father's Day at Saint Paul Mountain Vineyards welcomes Craig St John to the vineyard! Craig St John is a former lead vocalist for ‘the Super 60s’ and is sure to impress, with his wide range of vocal abilities. Music genres of all types!  Travelin Dough Food Truck on site!",
-        location: "588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         venue: "St. Paul",
@@ -1559,7 +1559,7 @@ const events = [
         name: "Jennifer Allsbrook live at Saint Paul Mountain Vineyards",
         sorttime: "2025-06-21 19:00",
         detail: "Come out and enjoy Jennifer share a blend of rock, folk, and originals. A great Saturday on the patio with Great music, great wine and great friends.  Travelin Dough Food Truck on site.",
-        location: "588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         venue: "St. Paul",
@@ -1570,7 +1570,7 @@ const events = [
         name: "Jack Miller and Rick Callahan at Saint Paul Mountain Vineyards",
         sorttime: "2025-06-22 18:30",
         detail: "Jack Miller and Rick Callahan on the patio at Saint Paul Mountain Vineyards, come out and enjoy an afternoon of live music and GREAT WINE!  Travelin Dough Pizza Truck on site.",
-        location: "588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         venue: "St. Paul",
@@ -1581,7 +1581,7 @@ const events = [
         name: "Elizabeth McCorvey & Katie Leigh together at Saint Paul Mountain Vineyards",
         sorttime: "2025-06-28 19:00",
         detail: "An amazing duo Elizabeth and Katie together on the patio at Saint Paul Mountain Vineyards!  What a amazing way to spend your Saturday.  Great music and Great wine...bring all your friends.  Travelin Dough Food Truck on Site",
-        location: "588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         venue: "St. Paul",
@@ -1592,7 +1592,7 @@ const events = [
         name: "Hunnilicious at the Vineyard",
         sorttime: "2025-06-29 18:30",
         detail: "Live music with our favorite Mother, Daughter Duo! Elaine and Amber entertain with their mix of covers and amazing originals.  Travlin Dough food truck on site, Charcuterie options available or bring your own picnic to go with your amazing music and wine!",
-        location: "588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         venue: "Appalachian Ridge",
@@ -1603,7 +1603,7 @@ const events = [
         name: "Possum Royal at the Ridge",
         sorttime: "2025-06-07 19:00",
         detail: "Satuday at the Ridge! Enjoy the sounds of Possum Royal. A great Saturday afternoon with Music, Cider, Beer and Friends!",
-        location: "749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Appalachian Ridge",
@@ -1614,7 +1614,7 @@ const events = [
         name: "Daniel Sage at Appalachian Ridge",
         sorttime: "2025-06-08 18:30",
         detail: "Enjoy live tunes with Daniel Sage while enjoying a delicious glass of wine, cider or beer! Please feel free to bring your own food or snacks!",
-        location: "749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Appalachian Ridge",
@@ -1625,7 +1625,7 @@ const events = [
         name: "Live Music with Christine Chandler at the Ridge",
         sorttime: "2025-06-14 19:00",
         detail: "Come enjoy Christina Chandler! MEMPHIS-MADE AND MOUNTAIN-BOUND. Enjoy a cold glass of beer or cider while enjoying the tunes of Christina Chandler!",
-        location: "749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Appalachian Ridge",
@@ -1636,7 +1636,7 @@ const events = [
         name: "Live Music With Jarred Forrester at Appalachian Ridge  for Father's Day",
         sorttime: "2025-06-15 18:30",
         detail: "Sunday afternoon at the Ridge, Live Music with Jared Forrester.  Enjoy great music with our Great cider, wine or beer. Bring your father for a great afternoon of Music.",
-        location: "749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Appalachian Ridge",
@@ -1647,7 +1647,7 @@ const events = [
         name: "Highway 52 at Appalachian Ridge, New group familure faces!",
         sorttime: "2025-06-21 19:00",
         detail: "Highway 52 is where Doc Watson meets Tom Waits meets Muddy Waters meets John Prine. With this band genre takes a back seat to just finding a good quality song and making it their own. So come out and enjoy a big ole pot of musical gumbo with a fine hard cider to boot!",
-        location: "749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Appalachian Ridge",
@@ -1658,7 +1658,7 @@ const events = [
         name: "Bill and Tad Amazing Duo at the Ridge!",
         sorttime: "2025-06-22 18:30",
         detail: "An afternoon with Bill and Tad! Doesn't get any better than that, great music, great cider and great friends! See you at the Ridge",
-        location: "749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1669,7 +1669,7 @@ const events = [
         name: "The Dan Keller Trio",
         sorttime: "2025-06-01 16:00",
         detail: "Dan Keller’s band puts their own spin on timeless standards and melodies, without losing the grit and authenticity of jazz.\nMany eras from early swing, latin jazz, bebop, and soul-jazz are…",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1680,7 +1680,7 @@ const events = [
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-04 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1691,7 +1691,7 @@ const events = [
         name: "Mr Jimmy Power Trio",
         sorttime: "2025-06-05 18:00",
         detail: "The Mr Jimmy Trio plays straight-up, real-deal Chicago Style Blues!\nFeaturing Charlie Wilkinson on bass and Peter Chackles on drums.\nwww.mrjimmymusic.com",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1702,7 +1702,7 @@ const events = [
         name: "The Big Throwback",
         sorttime: "2025-06-06 19:00",
         detail: "Don’t miss Blake Ellege and The Big Throwback!\nPlaying all your favorite dance & party hits from the 50’s, 60’s, 70’s, 80’s and today!\n🔥 www.blakeellegemusic.com 🔥",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1713,7 +1713,7 @@ const events = [
         name: "Saturday Yoga Class",
         sorttime: "2025-06-07 12:00",
         detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1724,7 +1724,7 @@ const events = [
         name: "The Grass Owls",
         sorttime: "2025-06-07 19:00",
         detail: "The Grass Owls are:\nAndrew Brophy\nPaul Kunath\nScott Anders\nJoel Batty\nOriginal Americana\ntheGrassOwls",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1735,7 +1735,7 @@ const events = [
         name: "Music Bingo!",
         sorttime: "2025-06-08 15:00",
         detail: "The day after Pride- Recovery Sunday!\nCome join us for a fun and relaxing afternoon of Music Bingo. If you haven’t played before you are in for a treat!\n\nTaqueria Lupita Food…",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1746,7 +1746,7 @@ const events = [
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-11 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1757,7 +1757,7 @@ const events = [
         name: "Tools on Stools",
         sorttime: "2025-06-12 18:00",
         detail: "Tools on Stools. Mark McDaniel on guitar, Howie Johnson on guitar, playing blues, jazz, favorite rock tunes, and jams.\nHope to see you there!",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1768,7 +1768,7 @@ const events = [
         name: "Lefty Carmean & The Workin’ Men",
         sorttime: "2025-06-13 19:00",
         detail: "Lefty Carmean\nNorth Carolina’s own Lefty Carmean has been establishing roots the local music scene for the past three years with his powerhouse vocals, charisma, and high-energy performances. Blending Country and…",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1779,7 +1779,7 @@ const events = [
         name: "The Red Hot Sugar Babies",
         sorttime: "2025-06-14 19:00",
         detail: "The Red Hot Sugar Babies perform vocal and instrumental jazz of the roaring 20’s-30’s!\nRedHotSugarBabies",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1790,7 +1790,7 @@ const events = [
         name: "Hatch Pitch Party",
         sorttime: "2025-06-17 17:00",
         detail: "The Henderson County Chamber of Commerce, Hatch Innovation Hub, BRCC Small Business Center, Southern Appalachian Brewery, Big Frog Custom T-Shirts and Carrie Ann Chandler Realtor® with EXP Realty LLC have…",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1801,7 +1801,7 @@ const events = [
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-18 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Southern App",
@@ -1812,7 +1812,7 @@ const events = [
         name: "Jason DeCristofaro’s Weekly Jazz Night",
         sorttime: "2025-06-25 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
-        location: "822 Locust St, Hendersonville, NC 28792",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         venue: "Sierra Nevada",
@@ -1823,7 +1823,7 @@ const events = [
         name: "Lower Park Grand Reopening",
         sorttime: "2025-06-07 13:00",
         detail: "Tucked into the woods behind our Amphitheater and accessible by trail, Lower Park is a peaceful forest clearing made for slowing down and enjoying the...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1834,7 +1834,7 @@ const events = [
         name: "Pleasure Chest",
         sorttime: "2025-06-07 14:00",
         detail: "Blues, Soul and Rock ‘n’ Roll from Asheville, NC",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1845,7 +1845,7 @@ const events = [
         name: "My Magnificent Nemesis w/ Alien Music Club",
         sorttime: "2025-06-08 14:00",
         detail: "My Magnificent Nemesis: If you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1856,7 +1856,7 @@ const events = [
         name: "Hustle Souls",
         sorttime: "2025-06-13 19:00",
         detail: "Hustle Souls, based in Asheville, NC, masterfully blend Retro-Soul, Brass Band Funk, and Singer-Songwriter Americana into a unique and captivating sou...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1867,7 +1867,7 @@ const events = [
         name: "Daniel Shearin",
         sorttime: "2025-06-14 14:00",
         detail: "Daniel Shearin is a singer, songwriter and producer living in Asheville, NC and a member of River Whyless. Growing up on a small town near the coast o...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1878,7 +1878,7 @@ const events = [
         name: "Julio & the Saltines",
         sorttime: "2025-06-15 14:00",
         detail: "South Carolina’s ultimate party band, Julio & the Saltines provides ultra-high quality live entertainment to every crowd they encounter. Th...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1889,7 +1889,7 @@ const events = [
         name: "Empire Strikes Brass",
         sorttime: "2025-06-20 19:00",
         detail: "Empire Strikes Brass is a dynamic BrassFunkRock band hailing from Asheville, North Carolina. Their music resonates with a powerful message delivered t...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1900,7 +1900,7 @@ const events = [
         name: "The Heavy Lifters",
         sorttime: "2025-06-21 14:00",
         detail: "Heavy Lifters are an 8-piece ska / reggae / soul band based in Brevard, NC. Lifting spirits on the dance floor since 2023! With a repertoire of both o...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1911,7 +1911,7 @@ const events = [
         name: "The Deep Shallow Band",
         sorttime: "2025-06-22 14:00",
         detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their ...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1922,7 +1922,7 @@ const events = [
         name: "Who’s Bad: The Ultimate Michael Jackson Experience",
         sorttime: "2025-06-26 18:00",
         detail: "$34.76 – ADV | $40.38 – Day of show | $51.62 – Early Access",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1933,7 +1933,7 @@ const events = [
         name: "The Headtones",
         sorttime: "2025-06-28 14:00",
         detail: "Funk-Hip Hop-Experimental from St. Pete, Fl.",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1944,7 +1944,7 @@ const events = [
         name: "Moonshine State",
         sorttime: "2025-06-29 14:00",
         detail: "Moonshine State is a country band with a rock twist, or a rock band with a country twist, depending on the day. WNC based singer-songwriters Elizabeth...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1955,7 +1955,7 @@ const events = [
         name: "Lyric",
         sorttime: "2025-07-05 14:00",
         detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in Decem...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1966,7 +1966,7 @@ const events = [
         name: "Lettuce",
         sorttime: "2025-07-10 18:00",
         detail: "ADV – $45.89 | Early/Balcony Access – $68.31 | DOS – $51.50",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1977,7 +1977,7 @@ const events = [
         name: "Swamp Zen & The Funnels",
         sorttime: "2025-07-11 18:00",
         detail: "GA Advance $22.09 | GA Day of Show $27.37 | GA + Early Access $37.93",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1988,7 +1988,7 @@ const events = [
         name: "The Little Things Beer Dinner",
         sorttime: "2025-07-11 18:00",
         detail: "We’re turning up the flavor July 11th in the High Gravity Room! 4 flavor-packed courses from chef Keith Davis, 4 unique, hazy beers from the Lit...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -1999,7 +1999,7 @@ const events = [
         name: "Fireside Collective",
         sorttime: "2025-07-11 19:30",
         detail: "Inspired by the burgeoning art scene, close knit community, and natural beauty of Asheville, North Carolina, newgrass turned eclectic jam band Firesid...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2010,7 +2010,7 @@ const events = [
         name: "Jesse Velvet",
         sorttime: "2025-07-12 14:00",
         detail: "Jesse Velvet crafts a dynamic fusion of funk, rock, and psychedelic exploration, powered by blazing guitar solos, slick keyboard work, deep-pocket bas...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2021,7 +2021,7 @@ const events = [
         name: "CarolinAloha",
         sorttime: "2025-07-13 14:00",
         detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds i...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2032,7 +2032,7 @@ const events = [
         name: "Lazrluvr",
         sorttime: "2025-07-18 19:00",
         detail: "",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2043,7 +2043,7 @@ const events = [
         name: "Andrew Scotchie",
         sorttime: "2025-07-19 14:00",
         detail: "Through consistent heartfelt releases, year-round touring and active charity work, Asheville N.C. native Andrew Scotchie is a celebrated creative forc...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2054,7 +2054,7 @@ const events = [
         name: "Boogitherapi",
         sorttime: "2025-07-20 14:00",
         detail: "BoogiTherapi is an all-star Funky dance band based in Asheville, headed by frontman Ryan Barber.",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2065,7 +2065,7 @@ const events = [
         name: "Ozomatli w/ Debajito",
         sorttime: "2025-07-25 18:00",
         detail: "GA Advance $37.93 | GA Day of Show $43.20 | GA + Early Access $53.75",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2076,7 +2076,7 @@ const events = [
         name: "Peggy Ratusz and the Daddy Long Legs",
         sorttime: "2025-07-26 14:00",
         detail: "Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives ...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2087,7 +2087,7 @@ const events = [
         name: "The Outriders",
         sorttime: "2025-07-27 14:00",
         detail: "The Outriders deliver some of the most magical and memorable moments of the New Riders of the Purple Sage and the Grateful Dead. United by their love ...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2098,7 +2098,7 @@ const events = [
         name: "Amplify Appalachia",
         sorttime: "2025-07-31 17:30",
         detail: "$85.32 – GA Advance | $90.94 – Day of Show | *THIS IS A STANDING ROOM SHOW * | $30 Discount Code for Locals: AMPlify",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2109,7 +2109,7 @@ const events = [
         name: "Dangermuffin",
         sorttime: "2025-08-01 19:00",
         detail: "Dangermuffin are storytellers. Casting images that are timeless yet novel, the band blends mindful lyrics with contemplative sounds, creating songs ai...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2120,7 +2120,7 @@ const events = [
         name: "Watkins",
         sorttime: "2025-08-02 14:00",
         detail: "Watkins is an indie-folk and alt-rock band known for soulful vocals and intricate guitar work. With a grassroots following built through years of tour...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2131,7 +2131,7 @@ const events = [
         name: "Roots and Dore",
         sorttime: "2025-08-03 14:00",
         detail: "Roots and Dore have been playing together in and around the Asheville for 15 years. They have toured in Europe, played festivals throughout the Caroli...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2142,7 +2142,7 @@ const events = [
         name: "STRFKR w/ Mamalarky",
         sorttime: "2025-08-08 18:00",
         detail: "GA Advance $32.64 | GA Day of Show $37.93 | GA + Early Access $48.48",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2153,7 +2153,7 @@ const events = [
         name: "Ska City",
         sorttime: "2025-08-09 14:00",
         detail: "Ska City is a British-American nine-piece ska collective, with 4 horns and sweet harmony vocals, based in Asheville, North Carolina. Featuring origina...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2164,7 +2164,7 @@ const events = [
         name: "Purple",
         sorttime: "2025-08-10 14:00",
         detail: "Purple is an instrumental trio (quintet for this show) playing tunes from the pop, jazz, soul, and funk idioms.",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2175,7 +2175,7 @@ const events = [
         name: "Femi Kuti & The Positive Force",
         sorttime: "2025-08-14 18:00",
         detail: "GA Advance $37.93 | GA Day of Show $43.20 | GA + Early Access $53.75",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2186,7 +2186,7 @@ const events = [
         name: "Ben Bjorlie Band",
         sorttime: "2025-08-16 14:00",
         detail: "The Ben Bjorlie Band is an Asheville based bass player and drummer. He and his band blend elements of funk, jazz and soul with a focus on instrumental...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2197,7 +2197,7 @@ const events = [
         name: "TrancEnd Band",
         sorttime: "2025-08-17 14:00",
         detail: "High-Energy Vibes, Unforgettable Performances. TrancEnd expertly blends original songs with fresh, high-energy renditions of 90s and 2000s hits.",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2208,7 +2208,7 @@ const events = [
         name: "Fitz and The Tantrums",
         sorttime: "2025-08-22 18:00",
         detail: "GA ADV – $45.89 | GA Early Admission – $68.31 | GA DOS – $51.50",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2219,7 +2219,7 @@ const events = [
         name: "Julianna Jade and the Wild",
         sorttime: "2025-08-24 14:00",
         detail: "Julianna Jade and the Wild is an alternative-pop powerhouse fronted by singer-songwriter Julianna Jade, whose sultry, emotionally charged vocals capti...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2230,7 +2230,7 @@ const events = [
         name: "Jesse Daniel w/ Jake Kohn",
         sorttime: "2025-08-27 18:00",
         detail: "GA Advance $27.37 | GA Day of Show $32.64 | GA + Early Access $43.20",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2241,7 +2241,7 @@ const events = [
         name: "The Record Company",
         sorttime: "2025-09-05 18:00",
         detail: "GA Advance $30.53 | GA Day of Show $35.82 | GA + Early Access $46.37",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2252,7 +2252,7 @@ const events = [
         name: "Andrew Wakefield & Friends",
         sorttime: "2025-09-06 14:00",
         detail: "Andrew Wakefield is a progressive bluegrass guitarist, songwriter, and singer based in Chimney Rock, North Carolina. Career highlights include opening...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2263,7 +2263,7 @@ const events = [
         name: "Sugar Bomb",
         sorttime: "2025-09-07 14:00",
         detail: "Sugar Bomb is a trio from Asheville, North Carolina that’s as sweet as it is explosive – with extreme dynamic range & a knack for improvisa...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2274,7 +2274,7 @@ const events = [
         name: "DISPLACE",
         sorttime: "2025-09-13 14:00",
         detail: "Displace is a saxophone and electric violin-driven funk fusion ensemble based in Tampa, Florida known for their energetic performances, improvisationa...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2285,7 +2285,7 @@ const events = [
         name: "Tasty Vibrations",
         sorttime: "2025-09-14 14:00",
         detail: "Birthed from the shores of Pompano Beach Florida, Tasty Vibrations have been shredding the gnar since 2018. Their eclectic “Jam Band” sound has made t...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2296,7 +2296,7 @@ const events = [
         name: "Trombone Shorty & Orleans Avenue",
         sorttime: "2025-09-21 18:00",
         detail: "GA ADV – $51.50 | GA Early Entry – $ 73.91 | GA DOS – $57.10",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2307,7 +2307,7 @@ const events = [
         name: "Mana Meter",
         sorttime: "2025-09-28 14:00",
         detail: "Mana Meter is a dynamic three-piece band fueled by a shared passion for the iconic soundtracks of classic video games. With a focus on beloved JRPGs l...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2318,7 +2318,7 @@ const events = [
         name: "The Late Shifters",
         sorttime: "2025-10-04 14:00",
         detail: "“There’re no cars on the interstate tonight. And your face is glowing in the dashboard lights. Baby let’s keep driving, driving past...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2329,7 +2329,7 @@ const events = [
         name: "Billingsly",
         sorttime: "2025-10-05 14:00",
         detail: "Billingsley is a Rock and Roll power trio from Asheville, North Carolina. The band is made up of brothers Wilson, Grant, and Bennett and features elem...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2340,7 +2340,7 @@ const events = [
         name: "Tanasi",
         sorttime: "2025-10-11 14:00",
         detail: "Tanasi crafts a rich, world-inspired mountain sound, blending the soulful echoes of roots artists from across the globe into music that feels both tim...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2351,7 +2351,7 @@ const events = [
         name: "The California Honeydrops: Redwood Highway Tour",
         sorttime: "2025-10-16 18:00",
         detail: "Brewery presale starts May 29th! Use the promo code HAZYLITTLETHING",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2362,7 +2362,7 @@ const events = [
         name: "Fresh Buzz",
         sorttime: "2025-10-18 14:00",
         detail: "Straight from the hive, Fresh Buzz, a dynamic four-piece band hailing from Asheville, brings a unique blend of rock, funk, and indie vibes to the musi...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2373,7 +2373,7 @@ const events = [
         name: "Saddletramp",
         sorttime: "2025-10-19 14:00",
         detail: "Saddletramp is a premier Asheville-based classic and outlaw country show band, covering the best ’70s, ’80s, and ’90s country hits.",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2384,7 +2384,7 @@ const events = [
         name: "Nikki and the Barn Boys",
         sorttime: "2025-10-25 14:00",
         detail: "This story begins in Barnstable, Massachusetts when two sets of brothers and longtime friends combined to form the Barn Boys; A Blues, Rock, Funk, and...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2395,7 +2395,7 @@ const events = [
         name: "The Big Hungry",
         sorttime: "2025-10-26 14:00",
         detail: "The Big Hungry consists of a group of local working professionals living in Hendersonville and Brevard, North Carolina, who began playing music for fu...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2406,7 +2406,7 @@ const events = [
         name: "Here Come the Mummies",
         sorttime: "2025-10-29 18:00",
         detail: "6 PM DOORS | $40. 29 – GA ADV | $45.89 – Day of Show | $62.70 – Early/Balcony Access",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2417,7 +2417,7 @@ const events = [
         name: "",
         sorttime: "2025-11-01 14:00",
         detail: "Strange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) w rotating guests. Pop/Funk/Soul/Improvisation.",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2428,7 +2428,7 @@ const events = [
         name: "The Patrick Lopez Experience",
         sorttime: "2025-11-09 14:00",
         detail: "Tremendous musicality, versatility and the ability to entertain everyone from the casual listener to the most discriminating music aficionados. These ...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Sierra Nevada",
@@ -2439,7 +2439,7 @@ const events = [
         name: "Dustin Furlow",
         sorttime: "2025-11-16 14:00",
         detail: "Dustin Furlow is an internationally-recognized singer/songwriter/instrumental-guitarist whose body of work occupies its own niche in the contemporary ...",
-        location: "100 Sierra Nevada Way Mills River, NC 28732",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         venue: "Music on Main",
@@ -2450,7 +2450,7 @@ const events = [
         name: "5 O’Clock Somewhere",
         sorttime: "2025-06-20 19:00",
         detail: "None",
-        location: "Main St. Hendersonville",
+        location: "Music on Main Main St. Hendersonville",
     },
     {
         venue: "Music on Main",
@@ -2461,7 +2461,7 @@ const events = [
         name: "Night Move Band",
         sorttime: "2025-07-04 19:00",
         detail: "None",
-        location: "Main St. Hendersonville",
+        location: "Music on Main Main St. Hendersonville",
     },
     {
         venue: "Music on Main",
@@ -2472,7 +2472,7 @@ const events = [
         name: "The Big Throwback",
         sorttime: "2025-07-18 19:00",
         detail: "None",
-        location: "Main St. Hendersonville",
+        location: "Music on Main Main St. Hendersonville",
     },
     {
         venue: "Music on Main",
@@ -2483,7 +2483,7 @@ const events = [
         name: "Gotcha Groove",
         sorttime: "2025-08-01 19:00",
         detail: "None",
-        location: "Main St. Hendersonville",
+        location: "Music on Main Main St. Hendersonville",
     },
     {
         venue: "Arboretum",
@@ -2494,7 +2494,7 @@ const events = [
         name: "Meditative Morning",
         sorttime: "2025-06-03 08:00",
         detail: "We’ve heard your valuable feedback, and now you don’t have to hear us! Beginning May 4, 2021, the period between 8 and 10 a.m. on the first Tuesday morning of …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2505,7 +2505,7 @@ const events = [
         name: "Birding for Beginners",
         sorttime: "2025-06-03 09:00",
         detail: "Join us on this birding walk around the NC Arboretum gardens and trails in search of our most colorful residents.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2516,7 +2516,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-03 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2527,7 +2527,7 @@ const events = [
         name: "Streambank Stabilization Solutions",
         sorttime: "2025-06-04 10:00",
         detail: "Join Mountain Valleys RC&D to learn where to purchase erosion control materials and how to use native plants to stabilize streambanks.\n",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2538,7 +2538,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-07 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2549,7 +2549,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-07 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2560,7 +2560,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-10 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2571,7 +2571,7 @@ const events = [
         name: "Macroinvertebrates of Bent Creek",
         sorttime: "2025-06-10 14:00",
         detail: "Learn all about these essential tiny insects that live in the creek and are indicators of stream health.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2582,7 +2582,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-06-11 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2593,7 +2593,7 @@ const events = [
         name: "Teacher Workshop: Connecting NC Standards and Environmental Education",
         sorttime: "2025-06-12 10:00",
         detail: "A collaborative learning opportunity for any K-12 educator who is interested in connecting standards and outdoor/environmental education in their teaching.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2604,7 +2604,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-06-12 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2615,7 +2615,7 @@ const events = [
         name: "Painting and Meditation from the Heart",
         sorttime: "2025-06-13 09:30",
         detail: "We’ll explore watercolor techniques, with trees as our theme, and invite divine guidance into the process.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2626,7 +2626,7 @@ const events = [
         name: "Landscape Design Fundamentals (2 sessions)",
         sorttime: "2025-06-13 13:00",
         detail: "June 13 + 20, 1 - 3:30 pm  Gain a better understanding of what comes into play in creating and managing sustainable and aesthetically appealing landscapes.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2637,7 +2637,7 @@ const events = [
         name: "Beginning Bonsai Workshop",
         sorttime: "2025-06-14 09:30",
         detail: "This class will provide the basic concepts and skills for novices to begin growing and shaping their own miniature trees.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2648,7 +2648,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-14 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2659,7 +2659,7 @@ const events = [
         name: "Forest Bathing Retreat: Flower Power!",
         sorttime: "2025-06-14 10:00",
         detail: "Celebrate the ephemeral beauty of flowers during this immersive morning nature retreat.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2670,7 +2670,7 @@ const events = [
         name: "Summer Tree ID",
         sorttime: "2025-06-17 10:00",
         detail: "During this walk, we will learn to identify trees found around the Arboretum\'s property using multiple characteristics including leaves.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2681,7 +2681,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-17 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2692,7 +2692,7 @@ const events = [
         name: "Invasion Ecology",
         sorttime: "2025-06-18 13:00",
         detail: "Learn about invasive species and how they move in to take over disturbed areas all around the Blue Ridge Mountains.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2703,7 +2703,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-06-18 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2714,7 +2714,7 @@ const events = [
         name: "Spare-time Gardening",
         sorttime: "2025-06-19 13:00",
         detail: "Gain some practical advice on how to prioritize gardening efforts and learn some new tricks for making your garden work less strenuous and more impactful.\n",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2725,7 +2725,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-06-19 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2736,7 +2736,7 @@ const events = [
         name: "Walking Meditation & Qigong",
         sorttime: "2025-06-20 09:00",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2747,7 +2747,7 @@ const events = [
         name: "Landscape Design Fundamentals (2 sessions)",
         sorttime: "2025-06-20 13:00",
         detail: "June 13 + 20, 1 - 3:30 pm  Gain a better understanding of what comes into play in creating and managing sustainable and aesthetically appealing landscapes.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2758,7 +2758,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-21 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2769,7 +2769,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-21 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2780,7 +2780,7 @@ const events = [
         name: "Pressed Flower Art",
         sorttime: "2025-06-21 13:00",
         detail: "During this hands-on workshop, learn a technique of pressing and sealing flower petals to create a work of art.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2791,7 +2791,7 @@ const events = [
         name: "Bonsai Book Sculpture Workshop",
         sorttime: "2025-06-22 11:00",
         detail: "We will take a ceramic bowl, wires, and other supplies to transform them into a 3D bonsai tree sculpture made from the pages of the book!",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2802,7 +2802,7 @@ const events = [
         name: "Arboretum Excursions: Grandfather Mountain Stewardship Foundation",
         sorttime: "2025-06-24 12:00",
         detail: "Join other like-minded learners on an excursion to check out the amazing wildlife and ecosystems on top of Grandfather Mountain.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2813,7 +2813,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-24 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2824,7 +2824,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-06-25 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2835,7 +2835,7 @@ const events = [
         name: "Advanced Botany I",
         sorttime: "2025-06-26 12:00",
         detail: "After taking Beginning Botany, dive deeper into plant studies with this advanced botany class including hands-on time to dissect flowers.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2846,7 +2846,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-06-26 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2857,7 +2857,7 @@ const events = [
         name: "Geology of the Blue Ridge Field Class",
         sorttime: "2025-06-27 12:00",
         detail: " Join Anton in this off-site field experience to see topics from the Geology classes in person.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2868,7 +2868,7 @@ const events = [
         name: "Wildwoods Walk",
         sorttime: "2025-06-28 10:00",
         detail: "Learn about what’s blooming now and how these plants are adapted to summer conditions as well as wildflower and tree ecology.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2879,7 +2879,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-28 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2890,7 +2890,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-06-28 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2901,7 +2901,7 @@ const events = [
         name: "Meditative Morning",
         sorttime: "2025-07-01 08:00",
         detail: "We’ve heard your valuable feedback, and now you don’t have to hear us! Beginning May 4, 2021, the period between 8 and 10 a.m. on the first Tuesday morning of …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2912,7 +2912,7 @@ const events = [
         name: "Birding for Beginners",
         sorttime: "2025-07-01 09:00",
         detail: "Join us on this birding walk around the NC Arboretum gardens and trails in search of our most colorful residents.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2923,7 +2923,7 @@ const events = [
         name: "Botanical Drawing for Beginners",
         sorttime: "2025-07-01 11:00",
         detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2934,7 +2934,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-02 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2945,7 +2945,7 @@ const events = [
         name: "Summer Tree ID",
         sorttime: "2025-07-03 13:00",
         detail: "During this walk, we will learn to identify trees found around the Arboretum\'s property using multiple characteristics including leaves.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2956,7 +2956,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-03 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2967,7 +2967,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2978,7 +2978,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -2989,7 +2989,7 @@ const events = [
         name: "Meditative Morning",
         sorttime: "2025-07-01 08:00",
         detail: "We’ve heard your valuable feedback, and now you don’t have to hear us! Beginning May 4, 2021, the period between 8 and 10 a.m. on the first Tuesday morning of …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3000,7 +3000,7 @@ const events = [
         name: "Birding for Beginners",
         sorttime: "2025-07-01 09:00",
         detail: "Join us on this birding walk around the NC Arboretum gardens and trails in search of our most colorful residents.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3011,7 +3011,7 @@ const events = [
         name: "Botanical Drawing for Beginners",
         sorttime: "2025-07-01 11:00",
         detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3022,7 +3022,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-02 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3033,7 +3033,7 @@ const events = [
         name: "Summer Tree ID",
         sorttime: "2025-07-03 13:00",
         detail: "Learn how to use many different characteristics of our common trees to identify them and learn some other helpful information along the way.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3044,7 +3044,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-03 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3055,7 +3055,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3066,7 +3066,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-05 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3077,7 +3077,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-08 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3088,7 +3088,7 @@ const events = [
         name: "Cascades, Cataracts and Waterfalls",
         sorttime: "2025-07-08 17:00",
         detail: "Join naturalist, educator storyteller, Eric on a wondrous journey to discover the amazing waterfalls here in Western North Carolina.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3099,7 +3099,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-09 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3110,7 +3110,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-10 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3121,7 +3121,7 @@ const events = [
         name: "Reptiles of Western North Carolina",
         sorttime: "2025-07-11 12:00",
         detail: "Learn all about reptiles of Western North Carolina from skinks to snakes including their natural history and life cycles.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3132,7 +3132,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-12 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3143,7 +3143,7 @@ const events = [
         name: "Forest Bathing Retreat: Summer in the Blue Ridge",
         sorttime: "2025-07-12 10:00",
         detail: "Celebrate the lush beauty of summer during this immersive morning nature retreat where we cultivate sensory awareness in the verdant forest.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3154,7 +3154,7 @@ const events = [
         name: "Learning about Eastern Box Turtles with Turtle Dogs",
         sorttime: "2025-07-12 10:00",
         detail: "Join Allison Woods Outdoor Learning Center’s renowned Turtle Dogs and their handlers to learn about Eastern Box Turtles.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3165,7 +3165,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-15 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3176,7 +3176,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-16 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3187,7 +3187,7 @@ const events = [
         name: "Firewise Landscaping",
         sorttime: "2025-07-17 13:00",
         detail: "Learn about methods to reduce fire risk for your house by utilizing landscaping and maintenance.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3198,7 +3198,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-17 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3209,7 +3209,7 @@ const events = [
         name: "Walking Meditation & Qigong",
         sorttime: "2025-07-18 10:00",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3220,7 +3220,7 @@ const events = [
         name: "River Systems Field Experience",
         sorttime: "2025-07-18 12:00",
         detail: "This completely field based class will explore different River processes and indicators along the Davidson River.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3231,7 +3231,7 @@ const events = [
         name: "Bird Feeding Myths, Methods, and Magic!",
         sorttime: "2025-07-19 10:00",
         detail: "Learn tips and tricks for successful Bird Feeding methods in the Asheville region as well as some of the myths surrounding the practice.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3242,7 +3242,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-19 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3253,7 +3253,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-19 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3264,7 +3264,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-22 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3275,7 +3275,7 @@ const events = [
         name: "Pressed Flower Art",
         sorttime: "2025-07-23 13:00",
         detail: "During this hands-on workshop, learn a technique of pressing and sealing flower petals to create a work of art.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3286,7 +3286,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-23 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3297,7 +3297,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-24 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3308,7 +3308,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-26 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3319,7 +3319,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-26 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3330,7 +3330,7 @@ const events = [
         name: "Birds of Prey Presentation",
         sorttime: "2025-07-27 13:00",
         detail: "Join Allison Woods Outdoor Learning Center\'s educators for a presentation featuring live hawks and other raptors.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3341,7 +3341,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-07-29 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3352,7 +3352,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-30 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3363,7 +3363,7 @@ const events = [
         name: "Advanced Botany II",
         sorttime: "2025-07-31 12:00",
         detail: "This last in the series of Botany classes we offer delves deeper into topics discussed in Advanced Botany I and Beginning Botany.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3374,7 +3374,7 @@ const events = [
         name: "Arbor Evenings",
         sorttime: "2025-07-31 17:30",
         detail: "Sip and stroll through the Arboretum’s gardens in the glow of the golden hour, all while listening to live music from a variety of local and regional artists! ArborEvenings runs Wednesdays and Thursdays through September 18, 2025 from 5:30 to 8:30 p.m.",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3385,7 +3385,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-08-02 10:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Arboretum",
@@ -3396,7 +3396,7 @@ const events = [
         name: "Guided Trail Walk",
         sorttime: "2025-08-02 13:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
-        location: "100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
         venue: "Feed and Seed",
@@ -3407,7 +3407,7 @@ const events = [
         name: "Liberty Road Bluegrass",
         sorttime: "2025-06-06 21:00",
         detail: "None",
-        location: "3715 Hendersonville Road Fletcher, NC 28732",
+        location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
         venue: "Feed and Seed",
@@ -3418,7 +3418,7 @@ const events = [
         name: "Blue Range Bluegrass",
         sorttime: "2025-06-07 21:00",
         detail: "None",
-        location: "3715 Hendersonville Road Fletcher, NC 28732",
+        location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
         venue: "Feed and Seed",
@@ -3429,7 +3429,7 @@ const events = [
         name: "Hit or Miss Band",
         sorttime: "2025-06-13 21:00",
         detail: "None",
-        location: "3715 Hendersonville Road Fletcher, NC 28732",
+        location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
         venue: "Feed and Seed",
@@ -3440,7 +3440,7 @@ const events = [
         name: "Jack Town Ramblers",
         sorttime: "2025-06-20 21:00",
         detail: "None",
-        location: "3715 Hendersonville Road Fletcher, NC 28732",
+        location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
         venue: "Feed and Seed",
@@ -3451,7 +3451,7 @@ const events = [
         name: "Lazybirds",
         sorttime: "2025-06-27 21:00",
         detail: "None",
-        location: "3715 Hendersonville Road Fletcher, NC 28732",
+        location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
         venue: "Feed and Seed",
@@ -3462,7 +3462,7 @@ const events = [
         name: "The Robertson Boys",
         sorttime: "2025-06-28 21:00",
         detail: "None",
-        location: "3715 Hendersonville Road Fletcher, NC 28732",
+        location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
         venue: "Dry Falls",
@@ -3473,7 +3473,7 @@ const events = [
         name: "Papa’s Express",
         sorttime: "2025-06-01 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3484,7 +3484,7 @@ const events = [
         name: "Family Face Off",
         sorttime: "2025-06-02 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3495,7 +3495,7 @@ const events = [
         name: "North Meats South",
         sorttime: "2025-06-02 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3506,7 +3506,7 @@ const events = [
         name: "Taco Bus",
         sorttime: "2025-06-03 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3517,7 +3517,7 @@ const events = [
         name: "Carolina Ace BBQ",
         sorttime: "2025-06-04 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3528,7 +3528,7 @@ const events = [
         name: "Opinionary",
         sorttime: "2025-06-04 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3539,7 +3539,7 @@ const events = [
         name: "Taco Bus",
         sorttime: "2025-06-05 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3550,7 +3550,7 @@ const events = [
         name: "Open Mic Night",
         sorttime: "2025-06-05 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3561,7 +3561,7 @@ const events = [
         name: "Brown Mountain Lightning Bugs",
         sorttime: "2025-06-06 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3572,7 +3572,7 @@ const events = [
         name: "El Bodegon",
         sorttime: "2025-06-06 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3583,7 +3583,7 @@ const events = [
         name: "J. Stephens",
         sorttime: "2025-06-07 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3594,7 +3594,7 @@ const events = [
         name: "La Jarochita Romero",
         sorttime: "2025-06-07 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3605,7 +3605,7 @@ const events = [
         name: "Papa’s Express",
         sorttime: "2025-06-08 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3616,7 +3616,7 @@ const events = [
         name: "Family Face Off",
         sorttime: "2025-06-09 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3627,7 +3627,7 @@ const events = [
         name: "Mehfil Indian Cuisine",
         sorttime: "2025-06-09 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3638,7 +3638,7 @@ const events = [
         name: "Taco Bus",
         sorttime: "2025-06-10 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3649,7 +3649,7 @@ const events = [
         name: "Carolina Ace BBQ",
         sorttime: "2025-06-11 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3660,7 +3660,7 @@ const events = [
         name: "Opinionary",
         sorttime: "2025-06-11 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3671,7 +3671,7 @@ const events = [
         name: "Toasted Cuban",
         sorttime: "2025-06-12 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3682,7 +3682,7 @@ const events = [
         name: "Open Mic Night",
         sorttime: "2025-06-12 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3693,7 +3693,7 @@ const events = [
         name: "La Jarochita Romero",
         sorttime: "2025-06-13 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3704,7 +3704,7 @@ const events = [
         name: "3rd Wife Jenny",
         sorttime: "2025-06-13 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3715,7 +3715,7 @@ const events = [
         name: "Drowning Leo",
         sorttime: "2025-06-14 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3726,7 +3726,7 @@ const events = [
         name: "Mehfil Indian Cuisine",
         sorttime: "2025-06-14 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3737,7 +3737,7 @@ const events = [
         name: "Papa’s Express",
         sorttime: "2025-06-15 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3748,7 +3748,7 @@ const events = [
         name: "Family Face Off",
         sorttime: "2025-06-16 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3759,7 +3759,7 @@ const events = [
         name: "North Meats South",
         sorttime: "2025-06-16 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3770,7 +3770,7 @@ const events = [
         name: "Taco Bus",
         sorttime: "2025-06-17 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3781,7 +3781,7 @@ const events = [
         name: "Carolina Ace BBQ",
         sorttime: "2025-06-18 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3792,7 +3792,7 @@ const events = [
         name: "Opinionary",
         sorttime: "2025-06-18 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3803,7 +3803,7 @@ const events = [
         name: "Cousins Maine Lobster",
         sorttime: "2025-06-19 17:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3814,7 +3814,7 @@ const events = [
         name: "Open Mic Night",
         sorttime: "2025-06-19 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3825,7 +3825,7 @@ const events = [
         name: "Haphazard",
         sorttime: "2025-06-20 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3836,7 +3836,7 @@ const events = [
         name: "El Bodegon",
         sorttime: "2025-06-20 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3847,7 +3847,7 @@ const events = [
         name: "The Loudes",
         sorttime: "2025-06-21 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3858,7 +3858,7 @@ const events = [
         name: "Carolina Hibachi Grill",
         sorttime: "2025-06-21 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3869,7 +3869,7 @@ const events = [
         name: "Papa’s Express",
         sorttime: "2025-06-22 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3880,7 +3880,7 @@ const events = [
         name: "Family Face Off",
         sorttime: "2025-06-23 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3891,7 +3891,7 @@ const events = [
         name: "Mehfil Indian Cuisine",
         sorttime: "2025-06-23 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3902,7 +3902,7 @@ const events = [
         name: "Taco Bus",
         sorttime: "2025-06-24 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3913,7 +3913,7 @@ const events = [
         name: "Carolina Ace BBQ",
         sorttime: "2025-06-25 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3924,7 +3924,7 @@ const events = [
         name: "Opinionary",
         sorttime: "2025-06-25 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3935,7 +3935,7 @@ const events = [
         name: "Toasted Cuban",
         sorttime: "2025-06-26 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3946,7 +3946,7 @@ const events = [
         name: "Open Mic Night",
         sorttime: "2025-06-26 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3957,7 +3957,7 @@ const events = [
         name: "La Jarochita Romero",
         sorttime: "2025-06-27 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3968,7 +3968,7 @@ const events = [
         name: "AppleAtcha",
         sorttime: "2025-06-27 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3979,7 +3979,7 @@ const events = [
         name: "Toasted Cuban",
         sorttime: "2025-06-28 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -3990,7 +3990,7 @@ const events = [
         name: "Tracy Davis",
         sorttime: "2025-06-28 19:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -4001,7 +4001,7 @@ const events = [
         name: "Papa’s Express",
         sorttime: "2025-06-29 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -4012,7 +4012,7 @@ const events = [
         name: "Family Face Off",
         sorttime: "2025-06-30 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -4023,7 +4023,7 @@ const events = [
         name: "North Meats South",
         sorttime: "2025-06-30 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -4034,7 +4034,7 @@ const events = [
         name: "Taco Bus",
         sorttime: "2025-07-01 15:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -4045,7 +4045,7 @@ const events = [
         name: "Appalachian Chick",
         sorttime: "2025-07-03 16:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -4056,7 +4056,7 @@ const events = [
         name: "Open Mic Night",
         sorttime: "2025-07-03 18:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Dry Falls",
@@ -4067,7 +4067,7 @@ const events = [
         name: "El Bodegon",
         sorttime: "2025-07-04 12:00",
         detail: "None",
-        location: "425 Kanuga Rd, Hendersonville, NC 28739",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         venue: "Claywood",
@@ -4078,7 +4078,7 @@ const events = [
         name: "Hope Griffin",
         sorttime: "2025-06-06 18:00",
         detail: "None",
-        location: "317 7th Avenue E Hendersonville NC 28792",
+        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
         venue: "Claywood",
@@ -4089,7 +4089,7 @@ const events = [
         name: "Victor Varner",
         sorttime: "2025-06-13 18:00",
         detail: "None",
-        location: "317 7th Avenue E Hendersonville NC 28792",
+        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
         venue: "Claywood",
@@ -4100,7 +4100,7 @@ const events = [
         name: "Victor Varner",
         sorttime: "2025-06-20 18:00",
         detail: "None",
-        location: "317 7th Avenue E Hendersonville NC 28792",
+        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
         venue: "Claywood",
@@ -4111,7 +4111,7 @@ const events = [
         name: "Hope Griffin",
         sorttime: "2025-06-27 18:00",
         detail: "None",
-        location: "317 7th Avenue E Hendersonville NC 28792",
+        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4122,7 +4122,7 @@ const events = [
         name: "Open Mic night",
         sorttime: "2025-05-28 21:00",
         detail: "Bring your Talent",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4133,7 +4133,7 @@ const events = [
         name: "The Accentrix",
         sorttime: "2025-05-29 21:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4144,7 +4144,7 @@ const events = [
         name: "Myron Hyman",
         sorttime: "2025-05-30 21:00",
         detail: "Grateful Dead tribute",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4155,7 +4155,7 @@ const events = [
         name: "The Otter Dogs",
         sorttime: "2025-06-01 17:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4166,7 +4166,7 @@ const events = [
         name: "Seth & Sara",
         sorttime: "2025-06-06 21:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4177,7 +4177,7 @@ const events = [
         name: "Ol'dan",
         sorttime: "2025-06-07 20:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4188,7 +4188,7 @@ const events = [
         name: "Elizabeth Mccorvey",
         sorttime: "2025-06-08 17:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4199,7 +4199,7 @@ const events = [
         name: "Open Mic night",
         sorttime: "2025-06-11 21:00",
         detail: "Bring your Talent",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4210,7 +4210,7 @@ const events = [
         name: "Izzi Hughes",
         sorttime: "2025-06-13 21:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4221,7 +4221,7 @@ const events = [
         name: "Max Eve",
         sorttime: "2025-06-14 17:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4232,7 +4232,7 @@ const events = [
         name: "Hope Griffin",
         sorttime: "2025-06-14 20:00",
         detail: "None",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
         venue: "J&M Farms",
@@ -4243,6 +4243,6 @@ const events = [
         name: "The Right Fit",
         sorttime: "2025-06-15 17:00",
         detail: "The Right Fit - Jennifer Allsbrook and Rick Reles",
-        location: "3016 Chimney Rock Road, Hendersonville, NC 28792",
+        location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
 ];
