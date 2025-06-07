@@ -41,6 +41,11 @@ function createGoogleCalendarUrl( title, description, location, startDate, endDa
         location: location,
         dates: `${formatGoogleDate(startDate)}/${formatGoogleDate(endDate)}`
     } );
+    // Use mobile-friendly URL for mobile devices
+    const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
+    if ( isMobile ) {
+        return `https://calendar.google.com/calendar/u/0/r/eventedit?${params.toString()}`;
+    }
 
     return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
@@ -103,6 +108,9 @@ function createICSFile( title, description, location, startDate, endDate ) {
 }
 
 function showCalendarOptions( urls ) {
+    const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
+    const isIOS = /iPad|iPhone|iPod/.test( navigator.userAgent );
+    const isAndroid = /Android/.test( navigator.userAgent );
     // Create a modal-like overlay
     const overlay = document.createElement( 'div' );
     overlay.style.cssText = `
@@ -126,17 +134,41 @@ function showCalendarOptions( urls ) {
 	box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 	max-width: 400px;
 	width: 90%;
+                max-height: 80vh;
+                overflow-y: auto;
     `;
+    let buttonsHTML = '';
+
+    if ( isMobile ) {
+        // Mobile-specific options
+        if ( isIOS ) {
+            buttonsHTML += `<button onclick="openCalendarApp('${urls.ics}', 'ios')" style="padding: 12px; border: none; background: #007AFF; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Add to iOS Calendar</button>`;
+        }
+        if ( isAndroid ) {
+            buttonsHTML += `<button onclick="openCalendarApp('${urls.google}', 'android')" style="padding: 12px; border: none; background: #34A853; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Add to Android Calendar</button>`;
+        }
+
+        // Mobile web calendar options
+        buttonsHTML += `
+                    <button onclick="openMobileCalendar('${urls.google}', 'google')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar (Mobile)</button>
+                    <button onclick="downloadICS('${urls.ics}')" style="padding: 12px; border: none; background: #28a745; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">💾 Download Calendar File</button>
+                `;
+    } else {
+        // Desktop options
+        buttonsHTML += `
+                    <button onclick="window.open('${urls.google}', '_blank')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar</button>
+                    <button onclick="window.open('${urls.outlook}', '_blank')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Outlook Calendar</button>
+                    <button onclick="window.open('${urls.yahoo}', '_blank')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Yahoo Calendar</button>
+                    <button onclick="downloadICS('${urls.ics}')" style="padding: 12px; border: none; background: #28a745; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">💾 Download .ics file</button>
+                `;
+    }
 
     modal.innerHTML = `
-	<h3 style="margin-top: 0; color: #333; text-align: center;">Choose Calendar Provider</h3>
-	<div style="display: flex; flex-direction: column; gap: 10px;">
-	    <button onclick="window.open('${urls.google}', '_blank')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px;">📅 Google Calendar</button>
-	    <button onclick="window.open('${urls.outlook}', '_blank')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px;">📅 Outlook Calendar</button>
-	    <button onclick="window.open('${urls.yahoo}', '_blank')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px;">📅 Yahoo Calendar</button>
-	    <button onclick="downloadICS('${urls.ics}')" style="padding: 12px; border: none; background: #28a745; color: white; border-radius: 8px; cursor: pointer; font-size: 16px;">💾 Download .ics file</button>
-	    <button onclick="this.parentElement.parentElement.parentElement.remove()" style="padding: 12px; border: 1px solid #ccc; background: white; color: #666; border-radius: 8px; cursor: pointer; font-size: 16px; margin-top: 10px;">Cancel</button>
-	</div>
+                <h3 style="margin-top: 0; color: #333; text-align: center;">Choose Calendar</h3>
+                <div style="display: flex; flex-direction: column;">
+                    ${buttonsHTML}
+                    <button onclick="this.parentElement.parentElement.parentElement.remove()" style="padding: 12px; border: 1px solid #ccc; background: white; color: #666; border-radius: 8px; cursor: pointer; font-size: 16px; margin-top: 10px; width: 100%;">Cancel</button>
+                </div>
     `;
 
     overlay.appendChild( modal );
@@ -154,15 +186,55 @@ function downloadICS( url ) {
     const a = document.createElement( 'a' );
     a.href = url;
     a.download = 'event.ics';
-    document.body.appendChild( a );
-    a.click( );
-    document.body.removeChild( a );
-    URL.revokeObjectURL( url );
+    // For mobile devices, try different approaches
+    const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
+
+    if ( isMobile ) {
+        // Try to trigger download with user interaction
+        a.style.display = 'none';
+        document.body.appendChild( a );
+
+        // Force click with timeout to ensure it works on mobile
+        setTimeout( ( ) => {
+            a.click( );
+            setTimeout( ( ) => {
+                document.body.removeChild( a );
+                URL.revokeObjectURL( url );
+            }, 100 );
+        }, 100 );
+    } else {
+        document.body.appendChild( a );
+        a.click( );
+        document.body.removeChild( a );
+        URL.revokeObjectURL( url );
+    }
 
     // Close the modal
-    document.querySelector( '[style*="position: fixed"]' ).remove( );
+    const modal = document.querySelector( '[style*="position: fixed"]' );
+    if ( modal ) modal.remove( );
 
-    showStatus( 'Calendar file downloaded successfully!', 'success' );
+    showStatus( 'Calendar file ready for download!', 'success' );
+}
+
+function openCalendarApp( url, platform ) {
+    if ( platform === 'ios' ) {
+        // For iOS, try to open native calendar app with .ics file
+        downloadICS( url );
+    } else if ( platform === 'android' ) {
+        // For Android, try intent-based approach first, fallback to URL
+        const intentUrl = `intent://calendar.google.com/calendar/render${url.split('render')[1]}#Intent;scheme=https;package=com.google.android.calendar;end`;
+
+        try {
+            window.location.href = intentUrl;
+        } catch ( e ) {
+            // Fallback to regular URL
+            window.open( url, '_blank' );
+        }
+    }
+
+    // Close modal
+    const modal = document.querySelector( '[style*="position: fixed"]' );
+    if ( modal ) modal.remove( );
 }
 
 function showStatus( message, type ) {
