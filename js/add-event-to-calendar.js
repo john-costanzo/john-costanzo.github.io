@@ -1,3 +1,5 @@
+const addEventToCalendarVersion = "Saturday, 2025-06-07 @ 16:00:04";
+
 function addToCalendar( title, description, location, startTime, endTime ) {
     try {
         // Convert datetime strings to Date objects
@@ -25,7 +27,7 @@ function addToCalendar( title, description, location, startTime, endTime ) {
 
     } catch ( error ) {
         console.error( 'Error creating calendar event:', error, " startTime='", startTime, "' endTime='", endTime, "'" );
-        showStatus( 'Error creating calendar event. Please check the date format.', 'error' );
+        showStatus( 'Error creating calendar event. Please check the date format: ' + " startTime='" + startTime + "' endTime='" + endTime + "'", 'error' );
     }
 }
 
@@ -252,3 +254,11 @@ function showStatus( message, type ) {
         }, 5000 );
     }
 }
+
+// Local Variables:
+// time-stamp-line-limit: 10
+// time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S"
+// time-stamp-active: t
+// time-stamp-start: "const addEventToCalendarVersion = \""
+// time-stamp-end: "\";"
+// End:
