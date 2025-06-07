@@ -4,9 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<script src="js/add-event-to-calendar.js"></script>
+		<link
+			rel="stylesheet"
+			href="css/add-event-to-calendar.css"
+			media="screen"
+		/>
+
 		<script>
+			const eighthours = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
 			setTimeout(function () {
-				const eighthours = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
 				console.log(
 					`About to reload the page after ${eighthours} milliseconds...`,
 				);
@@ -386,6 +393,18 @@
 						nameElement.className = "event-name";
 						nameElement.textContent = event.name;
 
+						const addToCalendarElement = document.createElement("span");
+						addToCalendarElement.textContent = " 📅 ";
+						addToCalendarElement.addEventListener("click", function () {
+							addToCalendar(
+								event.name,
+								event.detail,
+								event.venue,
+								event.date + " " + event.start_time,
+								event.date + " " + event.end_time,
+							);
+						});
+
 						var descriptionElement = null;
 						var toggleElement = null;
 						if (event.detail !== "None") {
@@ -410,6 +429,7 @@
 						eventElement.appendChild(venueElement);
 						eventElement.appendChild(timeElement);
 						eventElement.appendChild(nameElement);
+						eventElement.appendChild(addToCalendarElement);
 						if (descriptionElement) {
 							eventElement.appendChild(toggleElement);
 							eventElement.appendChild(descriptionElement);
