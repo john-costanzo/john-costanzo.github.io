@@ -79,10 +79,10 @@ h1 {
 }
 
 .outlook {
-	background: #0f3464;
+	background: grey;
 }
 .outlook:hover {
-	box-shadow: 0 5px 15px rgba(0, 120, 212, 0.4);
+	box-shadow: 0 5px 15px black;
 }
 
 .download {
