@@ -1,4 +1,4 @@
-const addEventToCalendarVersion = "Saturday, 2025-06-07 @ 16:00:04";
+const addEventToCalendarVersion = "Saturday, 2025-06-07 @ 16:11:53";
 
 function addToCalendar( title, description, location, startTime, endTime ) {
     try {
@@ -27,7 +27,7 @@ function addToCalendar( title, description, location, startTime, endTime ) {
 
     } catch ( error ) {
         console.error( 'Error creating calendar event:', error, " startTime='", startTime, "' endTime='", endTime, "'" );
-        showStatus( 'Error creating calendar event. Please check the date format: ' + " startTime='" + startTime + "' endTime='" + endTime + "'", 'error' );
+        showStatus( f "Error creating calendar event. Check date format: startTime='{startTime}; endTime='{endTime}'", 'error' );
     }
 }
 
