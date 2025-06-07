@@ -24,7 +24,7 @@ function addToCalendar( title, description, location, startTime, endTime ) {
         showCalendarOptions( calendarUrls );
 
     } catch ( error ) {
-        console.error( 'Error creating calendar event:', error );
+        console.error( 'Error creating calendar event:', error, " startTime='", startTime, "' endTime='", endTime, "'" );
         showStatus( 'Error creating calendar event. Please check the date format.', 'error' );
     }
 }
