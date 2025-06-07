@@ -71,36 +71,22 @@ h1 {
 	color: white;
 }
 
-.google {
-	background: #4285f4;
-}
-.google:hover {
-	box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4);
-}
-
-.outlook {
-	background: grey;
-}
-.outlook:hover {
-	box-shadow: 0 5px 15px black;
+.calendar-links {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
-.download {
-	background: #28a745;
-}
-.download:hover {
-	box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
-}
-
-.add-calendar-btn {
+.calendar-link {
+	display: inline-block;
 	padding: 12px 24px;
-	border-radius: 25px;
-	cursor: pointer;
-	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	border-radius: 8px;
+	text-align: center;
 	font-weight: 500;
 	transition: all 0.3s ease;
-	margin-top: 15px;
-	width: 100%;
 }
 
 .status {
