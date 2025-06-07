@@ -191,36 +191,6 @@ const events = [
     },
     {
         venue: "Trailside",
-        date: "2025-06-06",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Food Truck: Milk & Honey",
-        sorttime: "¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-06",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Food Truck: Silly Willies Hot Dogs",
-        sorttime: "¿ - ?",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
-        date: "2025-06-06",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: "Live Music: Jazz",
-        sorttime: "2025-06-06 18:00",
-        detail: "None"
-    },
-    {
-        venue: "Trailside",
         date: "2025-06-07",
         time: "¿ - ?",
         start_time: "¿",
@@ -1328,16 +1298,6 @@ const events = [
         name: "Todd Cecil & The Dirt Yard Choir",
         sorttime: "2025-02-28 17:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat."
-    },
-    {
-        venue: "Guidon",
-        date: "2025-06-06",
-        time: "06:00 pm - 10:00 pm",
-        start_time: "06:00 PM",
-        end_time: "10:00 PM",
-        name: "Karaoke",
-        sorttime: "2025-06-06 18:00",
-        detail: "06:00 PM - 10:00 PM"
     },
     {
         venue: "Guidon",
