@@ -1,12 +1,15 @@
-const addEventToCalendarVersion = "Saturday, 2025-06-07 @ 17:24:05";
+const addEventToCalendarVersion = "Saturday, 2025-06-07 @ 18:19:48";
 
 function addToCalendar( title, description, location, startTime, endTime ) {
     try {
         // Convert datetime strings to Date objects
         console.log( `addToCalendar: startTime='${startTime}'; endTime='${endTime}'` );
 
-        const startDate = new Date( startTime );
-        const endDate = new Date( endTime );
+        const fixedStartTimeString = startTime.replace( /-/g, '/' );
+        const startDate = new Date( fixedStartTimeString );
+
+        const fixedEndTimeString = endTime.replace( /-/g, '/' );
+        const endDate = new Date( fixedEndTimeString );
 
         // Format dates for different calendar systems
         const formatDateForCalendar = ( date ) => {
