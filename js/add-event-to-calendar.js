@@ -1,4 +1,64 @@
-const addEventToCalendarVersion = "Saturday, 2025-06-07 @ 18:19:48";
+const addEventToCalendarVersion = "Sunday, 2025-06-08 @ 08:23:27";
+
+function createCalendarDispatcher( url, title, description, location, startTime, endTime ) {
+    if ( description === "None" ) {
+        description = "";
+    }
+    const eventCardElement = document.createElement( "div" );
+    eventCardElement.className = "event-card";
+
+    const eventTitleElement = document.createElement( "div" );
+    eventTitleElement.className = "event-title";
+    eventTitleElement.textContent = title;
+    const titleEncoded = encodeURIComponent( title );
+
+    const eventLocationElement = document.createElement( "div" );
+    eventLocationElement.className = "event-location";
+    eventLocationElement.textContent = location;
+    const locationEncoded = encodeURIComponent( location );
+
+    const eventDateTimeElement = document.createElement( "div" );
+    eventDateTimeElement.className = "event-datetime";
+    eventDateTimeElement.textContent = startTime + "-"
+    endTime;
+
+    const eventDescriptionElement = document.createElement( "div" );
+    eventDescriptionElement.className = "event-details event-description";
+    eventDescriptionElement.textContent = description;
+    const descriptionEncoded = encodeURIComponent( url + "\n\n" + description );
+
+    const calendarLinksElement = document.createElement( "div" );
+    calendarLinksElement.className = "calendar-links";
+
+    const googleCalendarLinkElement = document.createElement( "a" );
+    googleCalendarLinkElement.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${titleEncoded}&details=${descriptionEncoded}&location=${locationEncoded}&dates=20241215T140000Z%2F20241215T150000Z`;
+    googleCalendarLinkElement.target = "_blank";
+    googleCalendarLinkElement.className = "calendar-link google";
+    googleCalendarLinkElement.textContent = "Google calendar";
+    calendarLinksElement.appendChild( googleCalendarLinkElement );
+
+    const outlookCalendarLinkElement = document.createElement( "a" );
+    outlookCalendarLinkElement.href = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${titleEncoded}&body=${descriptionEncoded}&location=${locationEncoded}&startdt=2024-12-15T14%3A00%3A00&enddt=2024-12-15T15%3A00%3A00`;
+    outlookCalendarLinkElement.target = "_blank";
+    outlookCalendarLinkElement.className = "calendar-link outlook";
+    outlookCalendarLinkElement.textContent = "Outlook calendar";
+    calendarLinksElement.appendChild( outlookCalendarLinkElement );
+
+    const downloadCalendarInfoElement = document.createElement( "a" );
+    downloadCalendarInfoElement.href = ``;
+    downloadCalendarInfoElement.download = "team-meeting.ics";
+    downloadCalendarInfoElement.className = "calendar-link download";
+    downloadCalendarInfoElement.textContent = "Download ICS file";
+    calendarLinksElement.appendChild( downloadCalendarInfoElement );
+
+    eventCardElement.appendChild( eventTitleElement );
+    eventCardElement.appendChild( eventLocationElement );
+    eventCardElement.appendChild( eventDateTimeElement );
+    eventCardElement.appendChild( eventDescriptionElement );
+    eventCardElement.appendChild( calendarLinksElement );
+
+    return ( eventCardElement );
+}
 
 function addToCalendar( title, description, location, startTime, endTime ) {
     try {

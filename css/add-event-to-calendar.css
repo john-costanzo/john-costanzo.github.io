@@ -49,7 +49,23 @@ h1 {
 	color: #6c757d;
 	margin: 5px 0;
 }
+.event-location::before {
+	content: "📍";
+	margin-right: 6px;
+}
+
+.event-datetime::before {
+	content: "🕐";
+	margin-right: 6px;
+}
+
+.event-details::before {
+	content: "📝";
+	margin-right: 6px;
+}
+
 .calendar-links {
+	color: black;
 	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
@@ -70,23 +86,9 @@ h1 {
 	text-decoration: none;
 	color: white;
 }
-
-.calendar-links {
-	margin-top: 15px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.calendar-link {
-	display: inline-block;
-	padding: 12px 24px;
-	text-decoration: none;
-	color: white;
-	border-radius: 8px;
-	text-align: center;
-	font-weight: 500;
-	transition: all 0.3s ease;
+.calendar-link::before {
+	content: "📅";
+	margin-right: 6px;
 }
 
 .status {
@@ -94,6 +96,25 @@ h1 {
 	padding: 10px;
 	border-radius: 5px;
 	display: none;
+}
+
+.google {
+	background: #2196f3;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.outlook {
+	background: grey;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.download {
+	background: pink;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .mobile-note {
