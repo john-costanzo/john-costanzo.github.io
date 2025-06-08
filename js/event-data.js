@@ -1,6 +1,8 @@
-const eventDataVersion = "2025-06-08 08:00:54";
+const eventDataVersion = "Sunday, 2025-06-08 08:29:39";
+console.log("eventDataVersion = Sunday, 2025-06-08 08:29:39")
 const events = [
     {
+        url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
         date: "2025-06-20",
         time: "7:00 pm - 10:00 pm",
@@ -12,6 +14,7 @@ const events = [
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
         date: "2025-07-19",
         time: "7:00 pm - 10:00 pm",
@@ -23,6 +26,7 @@ const events = [
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
         date: "2025-08-09",
         time: "8:00 am - 5:00 pm",
@@ -34,6 +38,7 @@ const events = [
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
         date: "2025-08-15",
         time: "7:00 pm - 10:00 pm",
@@ -45,6 +50,7 @@ const events = [
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
         date: "2025-08-23",
         time: "¿ - ?",
@@ -56,6 +62,7 @@ const events = [
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
         date: "2025-09-12",
         time: "7:00 pm - 10:00 pm",
@@ -67,6 +74,7 @@ const events = [
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-08",
         time: "12:00 pm - 3:30 pm",
@@ -78,6 +86,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-08",
         time: "1:00 pm - 4:00 pm",
@@ -89,6 +98,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-08",
         time: "7:30 pm - 9:00 pm",
@@ -100,6 +110,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-14",
         time: "12:00 pm - 5:00 pm",
@@ -111,6 +122,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-14",
         time: "2:00 pm - 5:00 pm",
@@ -122,6 +134,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-15",
         time: "12:00 pm - 6:00 pm",
@@ -133,6 +146,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-15",
         time: "2:00 pm - 5:00 pm",
@@ -144,6 +158,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-21",
         time: "2:00 pm - 5:00 pm",
@@ -155,6 +170,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-22",
         time: "12:00 pm - 5:00 pm",
@@ -166,6 +182,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-22",
         time: "2:00 pm - 5:00 pm",
@@ -177,6 +194,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-28",
         time: "12:00 pm - 5:00 pm",
@@ -188,6 +206,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
         date: "2025-06-28",
         time: "2:00 pm - 5:00 pm",
@@ -199,6 +218,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-08",
         time: "¿ - ?",
@@ -210,6 +230,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-08",
         time: "2:00 pm - 5:00 pm",
@@ -221,6 +242,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-09",
         time: "¿ - ?",
@@ -232,6 +254,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-09",
         time: "4:00 pm - 6:00 pm",
@@ -243,6 +266,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-10",
         time: "6:00 pm - 9:00 pm",
@@ -254,6 +278,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-11",
         time: "6:00 pm - 8:00 pm",
@@ -265,6 +290,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-12",
         time: "5:30 pm - 7:00 pm",
@@ -276,6 +302,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-12",
         time: "6:30 pm - 8:30 pm",
@@ -287,6 +314,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-13",
         time: "¿ - ?",
@@ -298,6 +326,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-13",
         time: "¿ - ?",
@@ -309,6 +338,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-13",
         time: "6:00 pm - 9:00 pm",
@@ -320,6 +350,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-14",
         time: "¿ - ?",
@@ -331,6 +362,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-14",
         time: "1:00 pm - 5:00 pm",
@@ -342,6 +374,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-14",
         time: "6:00 pm - 9:00 pm",
@@ -353,6 +386,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-15",
         time: "¿ - ?",
@@ -364,6 +398,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-15",
         time: "2:00 pm - 5:00 pm",
@@ -375,6 +410,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-16",
         time: "4:00 pm - 6:00 pm",
@@ -386,6 +422,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-16",
         time: "6:30 pm - 8:30 pm",
@@ -397,6 +434,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-17",
         time: "6:00 pm - 8:00 pm",
@@ -408,6 +446,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-17",
         time: "6:00 pm - 9:00 pm",
@@ -419,6 +458,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-18",
         time: "¿ - ?",
@@ -430,6 +470,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-18",
         time: "6:00 pm - 8:00 pm",
@@ -441,6 +482,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-19",
         time: "¿ - ?",
@@ -452,6 +494,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-19",
         time: "6:30 pm - 8:30 pm",
@@ -463,6 +506,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-19",
         time: "7:30 pm - 9:30 pm",
@@ -474,6 +518,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-20",
         time: "¿ - ?",
@@ -485,6 +530,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-20",
         time: "6:00 pm - 9:00 pm",
@@ -496,6 +542,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-21",
         time: "1:00 pm - 6:00 pm",
@@ -507,6 +554,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-21",
         time: "2:00 pm - 5:00 pm",
@@ -518,6 +566,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-21",
         time: "6:00 pm - 9:00 pm",
@@ -529,6 +578,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-22",
         time: "1:00 pm - 4:00 pm",
@@ -540,6 +590,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-22",
         time: "2:00 pm - 5:00 pm",
@@ -551,6 +602,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-23",
         time: "4:00 pm - 6:00 pm",
@@ -562,6 +614,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-24",
         time: "6:00 pm - 9:00 pm",
@@ -573,6 +626,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-25",
         time: "¿ - ?",
@@ -584,6 +638,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-25",
         time: "6:00 pm - 8:00 pm",
@@ -595,6 +650,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-26",
         time: "¿ - ?",
@@ -606,6 +662,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-26",
         time: "6:30 pm - 8:30 pm",
@@ -617,6 +674,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-27",
         time: "¿ - ?",
@@ -628,6 +686,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-27",
         time: "5:00 pm - 7:00 pm",
@@ -639,6 +698,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-27",
         time: "6:00 pm - 9:00 pm",
@@ -650,6 +710,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-28",
         time: "¿ - ?",
@@ -661,6 +722,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-28",
         time: "¿ - ?",
@@ -672,6 +734,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-28",
         time: "7:00 am - 12:00 pm",
@@ -683,6 +746,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-29",
         time: "2:00 pm - 5:00 pm",
@@ -694,6 +758,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-30",
         time: "4:00 pm - 6:00 pm",
@@ -705,6 +770,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-06-30",
         time: "6:00 pm - 8:00 pm",
@@ -716,6 +782,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-07-01",
         time: "6:00 pm - 9:00 pm",
@@ -727,6 +794,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-07-02",
         time: "6:00 pm - 8:00 pm",
@@ -738,6 +806,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-07-03",
         time: "6:30 pm - 8:30 pm",
@@ -749,6 +818,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-07-04",
         time: "2:00 pm - 4:00 pm",
@@ -760,6 +830,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-07-04",
         time: "5:00 pm - 8:00 pm",
@@ -771,6 +842,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-07-05",
         time: "6:00 pm - 9:00 pm",
@@ -782,6 +854,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-07-07",
         time: "4:00 pm - 6:00 pm",
@@ -793,6 +866,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-08",
         time: "3:00 pm - 5:00 pm",
@@ -804,6 +878,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-12",
         time: "7:00 pm - 9:00 pm",
@@ -815,6 +890,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-13",
         time: "8:00 pm - 11:00 pm",
@@ -826,6 +902,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-14",
         time: "8:00 pm - 11:00 pm",
@@ -837,6 +914,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-15",
         time: "3:00 pm - 5:00 pm",
@@ -848,6 +926,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-19",
         time: "8:00 pm - 10:00 pm",
@@ -859,6 +938,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-20",
         time: "8:00 pm - 11:00 pm",
@@ -870,6 +950,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-21",
         time: "8:00 pm - 11:00 pm",
@@ -881,6 +962,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-22",
         time: "3:00 pm - 5:00 pm",
@@ -892,6 +974,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-13",
         time: "6:00 pm - 9:00 pm",
@@ -903,6 +986,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-15",
         time: "11:00 am - 7:00 pm",
@@ -914,6 +998,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-20",
         time: "11:00 am - 9:00 pm",
@@ -925,6 +1010,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-20",
         time: "6:00 pm - 9:00 pm",
@@ -936,6 +1022,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-21",
         time: "11:00 am - 9:00 pm",
@@ -947,6 +1034,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-26",
         time: "5:00 pm - 7:00 pm",
@@ -958,6 +1046,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-27",
         time: "6:00 pm - 9:00 pm",
@@ -969,6 +1058,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-28",
         time: "6:00 pm - 9:00 pm",
@@ -980,6 +1070,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-05",
         time: "6:00 pm - 9:00 pm",
@@ -991,6 +1082,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-11",
         time: "6:00 pm - 9:00 pm",
@@ -1002,6 +1094,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-12",
         time: "6:00 pm - 9:00 pm",
@@ -1013,6 +1106,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-18",
         time: "6:00 pm - 9:00 pm",
@@ -1024,6 +1118,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-19",
         time: "6:00 pm - 9:00 pm",
@@ -1035,6 +1130,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-24",
         time: "5:00 pm - 7:00 pm",
@@ -1046,6 +1142,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-25",
         time: "6:00 pm - 9:00 pm",
@@ -1057,6 +1154,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-07-26",
         time: "11:00 am - 9:00 pm",
@@ -1068,6 +1166,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-07",
         time: "6:00 pm - 9:00 pm",
@@ -1079,6 +1178,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-06-06",
         time: "6:00 pm - 9:00 pm",
@@ -1090,6 +1190,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-31",
         time: "6:00 pm - 9:00 pm",
@@ -1101,6 +1202,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-30",
         time: "6:00 pm - 9:00 pm",
@@ -1112,6 +1214,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-24",
         time: "11:00 am - 9:00 pm",
@@ -1123,6 +1226,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-23",
         time: "6:00 pm - 9:00 pm",
@@ -1134,6 +1238,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-17",
         time: "6:00 pm - 8:00 pm",
@@ -1145,6 +1250,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-16",
         time: "6:00 pm - 8:00 pm",
@@ -1156,6 +1262,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-15",
         time: "5:00 pm - 7:00 pm",
@@ -1167,6 +1274,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-11",
         time: "11:00 am - 7:00 pm",
@@ -1178,6 +1286,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-10",
         time: "6:00 pm - 8:00 pm",
@@ -1189,6 +1298,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-09",
         time: "6:00 pm - 8:00 pm",
@@ -1200,6 +1310,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-03",
         time: "5:30 pm - 8:30 pm",
@@ -1211,6 +1322,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-05-02",
         time: "6:00 pm - 8:00 pm",
@@ -1222,6 +1334,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-26",
         time: "6:00 pm - 8:00 pm",
@@ -1233,6 +1346,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-25",
         time: "6:00 pm - 8:00 pm",
@@ -1244,6 +1358,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-19",
         time: "11:00 am - 9:00 pm",
@@ -1255,6 +1370,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-18",
         time: "6:00 pm - 8:00 pm",
@@ -1266,6 +1382,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-17",
         time: "5:00 pm - 7:00 pm",
@@ -1277,6 +1394,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-12",
         time: "6:00 pm - 8:00 pm",
@@ -1288,6 +1406,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-11",
         time: "6:00 pm - 8:00 pm",
@@ -1299,6 +1418,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-05",
         time: "12:00 pm - 4:00 pm",
@@ -1310,6 +1430,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-04-04",
         time: "6:00 pm - 10:00 pm",
@@ -1321,6 +1442,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-03-28",
         time: "5:00 pm - 8:00 pm",
@@ -1332,6 +1454,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-03-27",
         time: "5:00 pm - 7:00 pm",
@@ -1343,6 +1466,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-03-21",
         time: "5:00 pm - 8:00 pm",
@@ -1354,6 +1478,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-03-17",
         time: "12:00 pm - 8:00 pm",
@@ -1365,6 +1490,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-03-15",
         time: "¿ - ?",
@@ -1376,6 +1502,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-03-14",
         time: "11:00 am - 10:00 pm",
@@ -1387,6 +1514,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-03-08",
         time: "6:00 pm - 8:00 pm",
@@ -1398,6 +1526,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
         date: "2025-06-10",
         time: "06:00 pm - 08:30 pm",
@@ -1409,6 +1538,7 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
         date: "2025-06-11",
         time: "07:00 pm - 09:00 pm",
@@ -1420,6 +1550,7 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
         date: "2025-06-12",
         time: "07:00 pm - 09:00 pm",
@@ -1431,6 +1562,7 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
         date: "2025-06-13",
         time: "06:00 pm - 10:00 pm",
@@ -1442,6 +1574,7 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
         date: "2025-06-14",
         time: "11:00 am - 10:00 pm",
@@ -1453,6 +1586,7 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
         date: "2025-07-29",
         time: "11:00 am - 09:00 pm",
@@ -1464,6 +1598,7 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
         date: "2025-09-06",
         time: "06:30 pm - 09:30 pm",
@@ -1475,17 +1610,7 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
-        venue: "St. Paul",
-        date: "2025-06-07",
-        time: " 7:00 pm - 10:00 pm",
-        start_time: " 7:00 pm",
-        end_time: "10:00 pm",
-        name: "Bob Zullo performs at Saint Paul, first Saturday of every Month!   (1)",
-        sorttime: "2025-06-07 19:00",
-        detail: "Enjoy great music  and great wine  Saturday afternoon with Bob Zullo at the Vineyard.  Sipping wine, Enjoying friends and listening to Bob on the patio sitting in the vineyard where the grapes are grown!  Travelin Dough Food Truck on Site",
-        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
-    },
-    {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-06-08",
         time: " 6:30 pm -  9:30 pm",
@@ -1497,6 +1622,7 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-06-15",
         time: " 6:30 pm -  9:30 pm",
@@ -1508,6 +1634,7 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-06-21",
         time: " 7:00 pm - 10:00 pm",
@@ -1519,6 +1646,7 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-06-22",
         time: " 6:30 pm -  9:30 pm",
@@ -1530,6 +1658,7 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-06-28",
         time: " 7:00 pm - 10:00 pm",
@@ -1541,6 +1670,7 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-06-29",
         time: " 6:30 pm -  9:30 pm",
@@ -1552,17 +1682,19 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
-        venue: "Appalachian Ridge",
+        url: "https://www.saintpaulfarms.com/vineyard-events",
+        venue: "St. Paul",
         date: "2025-06-07",
         time: " 7:00 pm - 10:00 pm",
         start_time: " 7:00 pm",
         end_time: "10:00 pm",
-        name: "Possum Royal at the Ridge",
+        name: "Bob Zullo performs at Saint Paul, first Saturday of every Month!   (1)",
         sorttime: "2025-06-07 19:00",
-        detail: "Satuday at the Ridge! Enjoy the sounds of Possum Royal. A great Saturday afternoon with Music, Cider, Beer and Friends!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        detail: "Enjoy great music  and great wine  Saturday afternoon with Bob Zullo at the Vineyard.  Sipping wine, Enjoying friends and listening to Bob on the patio sitting in the vineyard where the grapes are grown!  Travelin Dough Food Truck on Site",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
+        url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
         date: "2025-06-08",
         time: " 6:30 pm -  9:30 pm",
@@ -1574,6 +1706,7 @@ const events = [
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
         date: "2025-06-14",
         time: " 7:00 pm - 10:00 pm",
@@ -1585,6 +1718,7 @@ const events = [
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
         date: "2025-06-15",
         time: " 6:30 pm -  9:30 pm",
@@ -1596,6 +1730,7 @@ const events = [
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
         date: "2025-06-21",
         time: " 7:00 pm - 10:00 pm",
@@ -1607,6 +1742,7 @@ const events = [
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
         date: "2025-06-22",
         time: " 6:30 pm -  9:30 pm",
@@ -1618,6 +1754,19 @@ const events = [
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-06-07",
+        time: " 7:00 pm - 10:00 pm",
+        start_time: " 7:00 pm",
+        end_time: "10:00 pm",
+        name: "Possum Royal at the Ridge",
+        sorttime: "2025-06-07 19:00",
+        detail: "Satuday at the Ridge! Enjoy the sounds of Possum Royal. A great Saturday afternoon with Music, Cider, Beer and Friends!",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-01",
         time: "4:00 pm - 6:00 pm",
@@ -1629,6 +1778,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-04",
         time: "6:00 pm - 8:00 pm",
@@ -1640,6 +1790,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-05",
         time: "6:00 pm - 8:00 pm",
@@ -1651,6 +1802,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-06",
         time: "7:00 pm - 9:00 pm",
@@ -1662,6 +1814,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-07",
         time: "12:00 pm - 1:00 pm",
@@ -1673,6 +1826,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-07",
         time: "7:00 pm - 9:00 pm",
@@ -1684,6 +1838,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-08",
         time: "3:00 pm - 5:00 pm",
@@ -1695,6 +1850,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-11",
         time: "6:00 pm - 8:00 pm",
@@ -1706,6 +1862,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-12",
         time: "6:00 pm - 8:00 pm",
@@ -1717,6 +1874,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-13",
         time: "7:00 pm - 9:00 pm",
@@ -1728,6 +1886,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-14",
         time: "7:00 pm - 9:00 pm",
@@ -1739,6 +1898,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-14",
         time: "12:00 pm - 1:00 pm",
@@ -1750,6 +1910,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-15",
         time: "1:00 pm - 4:00 pm",
@@ -1761,6 +1922,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-15",
         time: "12:00 pm - 4:00 pm",
@@ -1772,6 +1934,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-17",
         time: "5:00 pm - 7:00 pm",
@@ -1783,6 +1946,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-18",
         time: "6:00 pm - 8:00 pm",
@@ -1794,6 +1958,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-20",
         time: "7:00 pm - 9:00 pm",
@@ -1805,6 +1970,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-21",
         time: "7:00 pm - 9:00 pm",
@@ -1816,6 +1982,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-22",
         time: "12:00 pm - 5:00 pm",
@@ -1827,6 +1994,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
         date: "2025-06-25",
         time: "6:00 pm - 8:00 pm",
@@ -1838,6 +2006,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-08",
         time: "2:00 pm - 5:00 pm",
@@ -1849,6 +2018,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-13",
         time: "7:00 pm - 9:30 pm",
@@ -1860,6 +2030,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-14",
         time: "2:00 pm - 5:00 pm",
@@ -1871,6 +2042,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-15",
         time: "2:00 pm - 5:00 pm",
@@ -1882,6 +2054,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-20",
         time: "7:00 pm - 9:30 pm",
@@ -1893,6 +2066,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-21",
         time: "2:00 pm - 5:00 pm",
@@ -1904,6 +2078,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-22",
         time: "2:00 pm - 5:00 pm",
@@ -1915,6 +2090,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-26",
         time: "6:00 pm - 9:00 pm",
@@ -1926,6 +2102,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-28",
         time: "2:00 pm - 5:00 pm",
@@ -1937,6 +2114,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-06-29",
         time: "2:00 pm - 5:00 pm",
@@ -1948,6 +2126,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-05",
         time: "2:00 pm - 5:00 pm",
@@ -1959,6 +2138,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-10",
         time: "6:00 pm - 10:00 pm",
@@ -1970,6 +2150,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-11",
         time: "6:00 pm - 9:30 pm",
@@ -1981,6 +2162,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-11",
         time: "6:00 pm - 9:00 pm",
@@ -1992,6 +2174,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-11",
         time: "7:30 pm - 10:00 pm",
@@ -2003,6 +2186,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-12",
         time: "2:00 pm - 5:00 pm",
@@ -2014,6 +2198,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-13",
         time: "2:00 pm - 5:00 pm",
@@ -2025,6 +2210,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-18",
         time: "7:00 pm - 9:30 pm",
@@ -2036,6 +2222,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-19",
         time: "2:00 pm - 5:00 pm",
@@ -2047,6 +2234,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-20",
         time: "2:00 pm - 5:00 pm",
@@ -2058,6 +2246,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-25",
         time: "6:00 pm - 9:30 pm",
@@ -2069,6 +2258,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-26",
         time: "2:00 pm - 5:00 pm",
@@ -2080,6 +2270,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-27",
         time: "2:00 pm - 5:00 pm",
@@ -2091,6 +2282,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-07-31",
         time: "5:30 pm - 8:30 pm",
@@ -2102,6 +2294,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-01",
         time: "7:00 pm - 9:30 pm",
@@ -2113,6 +2306,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-02",
         time: "2:00 pm - 5:00 pm",
@@ -2124,6 +2318,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-03",
         time: "2:00 pm - 5:00 pm",
@@ -2135,6 +2330,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-08",
         time: "6:00 pm - 9:30 pm",
@@ -2146,6 +2342,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-09",
         time: "2:00 pm - 5:00 pm",
@@ -2157,6 +2354,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-10",
         time: "2:00 pm - 5:00 pm",
@@ -2168,6 +2366,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-14",
         time: "6:00 pm - 9:30 pm",
@@ -2179,6 +2378,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-16",
         time: "2:00 pm - 5:00 pm",
@@ -2190,6 +2390,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-17",
         time: "2:00 pm - 5:00 pm",
@@ -2201,6 +2402,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-22",
         time: "6:00 pm - 9:00 pm",
@@ -2212,6 +2414,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-24",
         time: "2:00 pm - 5:00 pm",
@@ -2223,6 +2426,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-27",
         time: "6:00 pm - 9:30 pm",
@@ -2234,6 +2438,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-09-05",
         time: "6:00 pm - 9:30 pm",
@@ -2245,6 +2450,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-09-06",
         time: "2:00 pm - 5:00 pm",
@@ -2256,6 +2462,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-09-07",
         time: "2:00 pm - 5:00 pm",
@@ -2267,6 +2474,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-09-13",
         time: "2:00 pm - 5:00 pm",
@@ -2278,6 +2486,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-09-14",
         time: "2:00 pm - 5:00 pm",
@@ -2289,6 +2498,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-09-21",
         time: "6:00 pm - 9:00 pm",
@@ -2300,6 +2510,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-09-28",
         time: "2:00 pm - 5:00 pm",
@@ -2311,6 +2522,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-04",
         time: "2:00 pm - 5:00 pm",
@@ -2322,6 +2534,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-05",
         time: "2:00 pm - 5:00 pm",
@@ -2333,6 +2546,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-11",
         time: "2:00 pm - 5:00 pm",
@@ -2344,6 +2558,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-16",
         time: "6:00 pm - 9:30 pm",
@@ -2355,6 +2570,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-18",
         time: "2:00 pm - 5:00 pm",
@@ -2366,6 +2582,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-19",
         time: "2:00 pm - 5:00 pm",
@@ -2377,6 +2594,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-25",
         time: "2:00 pm - 5:00 pm",
@@ -2388,6 +2606,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-26",
         time: "2:00 pm - 5:00 pm",
@@ -2399,6 +2618,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-10-29",
         time: "6:00 pm - 9:30 pm",
@@ -2410,6 +2630,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-11-01",
         time: "2:00 pm - 5:00 pm",
@@ -2421,6 +2642,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-11-09",
         time: "2:00 pm - 5:00 pm",
@@ -2432,6 +2654,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-11-16",
         time: "2:00 pm - 5:00 pm",
@@ -2443,6 +2666,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://visithendersonvillenc.org/summer-concerts",
         venue: "Music on Main",
         date: "2025-06-20",
         time: "7:00 pm - 9:00 pm",
@@ -2454,6 +2678,7 @@ const events = [
         location: "Music on Main Main St. Hendersonville",
     },
     {
+        url: "https://visithendersonvillenc.org/summer-concerts",
         venue: "Music on Main",
         date: "2025-07-04",
         time: "7:00 pm - 9:00 pm",
@@ -2465,6 +2690,7 @@ const events = [
         location: "Music on Main Main St. Hendersonville",
     },
     {
+        url: "https://visithendersonvillenc.org/summer-concerts",
         venue: "Music on Main",
         date: "2025-07-18",
         time: "7:00 pm - 9:00 pm",
@@ -2476,6 +2702,7 @@ const events = [
         location: "Music on Main Main St. Hendersonville",
     },
     {
+        url: "https://visithendersonvillenc.org/summer-concerts",
         venue: "Music on Main",
         date: "2025-08-01",
         time: "7:00 pm - 9:00 pm",
@@ -2487,6 +2714,7 @@ const events = [
         location: "Music on Main Main St. Hendersonville",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-03",
         time: "8:00 am - 10:00 am",
@@ -2498,6 +2726,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-03",
         time: "9:00 am - 10:30 am",
@@ -2509,6 +2738,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-03",
         time: "1:00 pm - 3:00 pm",
@@ -2520,6 +2750,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-04",
         time: "10:00 am - 12:00 pm",
@@ -2531,6 +2762,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-07",
         time: "10:00 am - 12:00 pm",
@@ -2542,6 +2774,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-07",
         time: "1:00 pm - 3:00 pm",
@@ -2553,6 +2786,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-10",
         time: "1:00 pm - 3:00 pm",
@@ -2564,6 +2798,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-10",
         time: "2:00 pm - 4:00 pm",
@@ -2575,6 +2810,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-11",
         time: "5:30 pm - 8:30 pm",
@@ -2586,6 +2822,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-12",
         time: "10:00 am - 2:00 pm",
@@ -2597,6 +2834,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-12",
         time: "5:30 pm - 8:30 pm",
@@ -2608,6 +2846,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-13",
         time: "9:30 am - 12:30 pm",
@@ -2619,6 +2858,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-13",
         time: "1:00 pm - 3:30 pm",
@@ -2630,6 +2870,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-14",
         time: "9:30 am - 4:30 pm",
@@ -2641,6 +2882,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-14",
         time: "10:00 am - 12:00 pm",
@@ -2652,6 +2894,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-14",
         time: "10:00 am - 1:00 pm",
@@ -2663,6 +2906,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-17",
         time: "10:00 am - 1:00 pm",
@@ -2674,6 +2918,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-17",
         time: "1:00 pm - 3:00 pm",
@@ -2685,6 +2930,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-18",
         time: "1:00 pm - 3:00 pm",
@@ -2696,6 +2942,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-18",
         time: "5:30 pm - 8:30 pm",
@@ -2707,6 +2954,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-19",
         time: "1:00 pm - 4:00 pm",
@@ -2718,6 +2966,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-19",
         time: "5:30 pm - 8:30 pm",
@@ -2729,6 +2978,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-20",
         time: "9:00 am - 10:00 am",
@@ -2740,6 +2990,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-20",
         time: "1:00 pm - 3:30 pm",
@@ -2751,6 +3002,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-21",
         time: "10:00 am - 12:00 pm",
@@ -2762,6 +3014,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-21",
         time: "1:00 pm - 3:00 pm",
@@ -2773,6 +3026,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-21",
         time: "1:00 pm - 4:00 pm",
@@ -2784,6 +3038,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-22",
         time: "11:00 am - 3:00 pm",
@@ -2795,6 +3050,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-24",
         time: "12:00 pm - 4:00 pm",
@@ -2806,6 +3062,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-24",
         time: "1:00 pm - 3:00 pm",
@@ -2817,6 +3074,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-25",
         time: "5:30 pm - 8:30 pm",
@@ -2828,6 +3086,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-26",
         time: "12:00 pm - 4:00 pm",
@@ -2839,6 +3098,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-26",
         time: "5:30 pm - 8:30 pm",
@@ -2850,6 +3110,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-27",
         time: "12:00 pm - 4:00 pm",
@@ -2861,6 +3122,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-28",
         time: "10:00 am - 12:00 pm",
@@ -2872,6 +3134,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-28",
         time: "10:00 am - 12:00 pm",
@@ -2883,6 +3146,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-06-28",
         time: "1:00 pm - 3:00 pm",
@@ -2894,6 +3158,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-01",
         time: "8:00 am - 10:00 am",
@@ -2905,6 +3170,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-01",
         time: "9:00 am - 10:30 am",
@@ -2916,6 +3182,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-01",
         time: "11:00 am - 1:00 pm",
@@ -2927,6 +3194,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-02",
         time: "5:30 pm - 8:30 pm",
@@ -2938,6 +3206,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-03",
         time: "1:00 pm - 4:00 pm",
@@ -2949,6 +3218,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-03",
         time: "5:30 pm - 8:30 pm",
@@ -2960,6 +3230,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-05",
         time: "10:00 am - 12:00 pm",
@@ -2971,6 +3242,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-05",
         time: "1:00 pm - 3:00 pm",
@@ -2982,6 +3254,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-01",
         time: "8:00 am - 10:00 am",
@@ -2993,6 +3266,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-01",
         time: "9:00 am - 10:30 am",
@@ -3004,6 +3278,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-01",
         time: "11:00 am - 1:00 pm",
@@ -3015,6 +3290,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-02",
         time: "5:30 pm - 8:30 pm",
@@ -3026,6 +3302,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-03",
         time: "1:00 pm - 4:00 pm",
@@ -3037,6 +3314,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-03",
         time: "5:30 pm - 8:30 pm",
@@ -3048,6 +3326,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-05",
         time: "10:00 am - 12:00 pm",
@@ -3059,6 +3338,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-05",
         time: "1:00 pm - 3:00 pm",
@@ -3070,6 +3350,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-08",
         time: "1:00 pm - 3:00 pm",
@@ -3081,6 +3362,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-08",
         time: "5:00 pm - 6:30 pm",
@@ -3092,6 +3374,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-09",
         time: "5:30 pm - 8:30 pm",
@@ -3103,6 +3386,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-10",
         time: "5:30 pm - 8:30 pm",
@@ -3114,6 +3398,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-11",
         time: "12:00 pm - 4:00 pm",
@@ -3125,6 +3410,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-12",
         time: "10:00 am - 12:00 pm",
@@ -3136,6 +3422,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-12",
         time: "10:00 am - 1:00 pm",
@@ -3147,6 +3434,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-12",
         time: "10:00 am - 1:00 pm",
@@ -3158,6 +3446,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-15",
         time: "1:00 pm - 3:00 pm",
@@ -3169,6 +3458,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-16",
         time: "5:30 pm - 8:30 pm",
@@ -3180,6 +3470,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-17",
         time: "1:00 pm - 3:00 pm",
@@ -3191,6 +3482,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-17",
         time: "5:30 pm - 8:30 pm",
@@ -3202,6 +3494,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-18",
         time: "10:00 am - 1:00 pm",
@@ -3213,6 +3506,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-18",
         time: "12:00 pm - 4:00 pm",
@@ -3224,6 +3518,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-19",
         time: "10:00 am - 12:00 pm",
@@ -3235,6 +3530,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-19",
         time: "10:00 am - 12:00 pm",
@@ -3246,6 +3542,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-19",
         time: "1:00 pm - 3:00 pm",
@@ -3257,6 +3554,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-22",
         time: "1:00 pm - 3:00 pm",
@@ -3268,6 +3566,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-23",
         time: "1:00 pm - 4:00 pm",
@@ -3279,6 +3578,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-23",
         time: "5:30 pm - 8:30 pm",
@@ -3290,6 +3590,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-24",
         time: "5:30 pm - 8:30 pm",
@@ -3301,6 +3602,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-26",
         time: "10:00 am - 12:00 pm",
@@ -3312,6 +3614,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-26",
         time: "1:00 pm - 3:00 pm",
@@ -3323,6 +3626,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-27",
         time: "1:00 pm - 2:30 pm",
@@ -3334,6 +3638,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-29",
         time: "1:00 pm - 3:00 pm",
@@ -3345,6 +3650,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-30",
         time: "5:30 pm - 8:30 pm",
@@ -3356,6 +3662,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-31",
         time: "12:00 pm - 4:00 pm",
@@ -3367,6 +3674,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-07-31",
         time: "5:30 pm - 8:30 pm",
@@ -3378,6 +3686,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-08-02",
         time: "10:00 am - 12:00 pm",
@@ -3389,6 +3698,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
         venue: "Arboretum",
         date: "2025-08-02",
         time: "1:00 pm - 3:00 pm",
@@ -3400,6 +3710,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://feedandseednc.com/music",
         venue: "Feed and Seed",
         date: "2025-06-06",
         time: "7 - 9pm",
@@ -3411,6 +3722,7 @@ const events = [
         location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
+        url: "https://feedandseednc.com/music",
         venue: "Feed and Seed",
         date: "2025-06-07",
         time: "7 - 9PM",
@@ -3422,6 +3734,7 @@ const events = [
         location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
+        url: "https://feedandseednc.com/music",
         venue: "Feed and Seed",
         date: "2025-06-13",
         time: "7 - 9pm",
@@ -3433,6 +3746,7 @@ const events = [
         location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
+        url: "https://feedandseednc.com/music",
         venue: "Feed and Seed",
         date: "2025-06-20",
         time: "7 - 9PM",
@@ -3444,6 +3758,7 @@ const events = [
         location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
+        url: "https://feedandseednc.com/music",
         venue: "Feed and Seed",
         date: "2025-06-27",
         time: "7 - 9PM",
@@ -3455,6 +3770,7 @@ const events = [
         location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
+        url: "https://feedandseednc.com/music",
         venue: "Feed and Seed",
         date: "2025-06-28",
         time: "7 - 9PM",
@@ -3466,6 +3782,7 @@ const events = [
         location: "Feed and Seed 3715 Hendersonville Road Fletcher, NC 28732",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-01",
         time: "12:00 pm - 8:00 pm",
@@ -3477,6 +3794,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-02",
         time: "6:00 pm - 8:00 pm",
@@ -3488,6 +3806,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-02",
         time: "4:00 pm - 8:00 pm",
@@ -3499,6 +3818,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-03",
         time: "3:00 pm - 8:00 pm",
@@ -3510,6 +3830,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-04",
         time: "3:00 pm - 8:00 pm",
@@ -3521,6 +3842,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-04",
         time: "6:00 pm - 8:00 pm",
@@ -3532,6 +3854,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-05",
         time: "4:00 pm - 8:00 pm",
@@ -3543,6 +3866,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-05",
         time: "6:00 pm - 9:00 pm",
@@ -3554,6 +3878,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-06",
         time: "7:00 pm - 10:00 pm",
@@ -3565,6 +3890,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-06",
         time: "12:00 pm - 8:00 pm",
@@ -3576,6 +3902,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-07",
         time: "7:00 pm - 10:00 pm",
@@ -3587,6 +3914,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-07",
         time: "12:00 pm - 8:00 pm",
@@ -3598,6 +3926,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-08",
         time: "12:00 pm - 8:00 pm",
@@ -3609,6 +3938,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-09",
         time: "6:00 pm - 8:00 pm",
@@ -3620,6 +3950,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-09",
         time: "4:00 pm - 8:00 pm",
@@ -3631,6 +3962,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-10",
         time: "3:00 pm - 8:00 pm",
@@ -3642,6 +3974,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-11",
         time: "3:00 pm - 8:00 pm",
@@ -3653,6 +3986,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-11",
         time: "6:00 pm - 8:00 pm",
@@ -3664,6 +3998,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-12",
         time: "4:00 pm - 8:00 pm",
@@ -3675,6 +4010,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-12",
         time: "6:00 pm - 9:00 pm",
@@ -3686,6 +4022,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-13",
         time: "12:00 pm - 8:00 pm",
@@ -3697,6 +4034,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-13",
         time: "7:00 pm - 10:00 pm",
@@ -3708,6 +4046,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-14",
         time: "7:00 pm - 10:00 pm",
@@ -3719,6 +4058,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-14",
         time: "12:00 pm - 8:00 pm",
@@ -3730,6 +4070,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-15",
         time: "12:00 pm - 8:00 pm",
@@ -3741,6 +4082,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-16",
         time: "6:00 pm - 8:00 pm",
@@ -3752,6 +4094,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-16",
         time: "4:00 pm - 8:00 pm",
@@ -3763,6 +4106,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-17",
         time: "3:00 pm - 8:00 pm",
@@ -3774,6 +4118,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-18",
         time: "3:00 pm - 8:00 pm",
@@ -3785,6 +4130,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-18",
         time: "6:00 pm - 8:00 pm",
@@ -3796,6 +4142,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-19",
         time: "5:00 pm - 9:30 pm",
@@ -3807,6 +4154,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-19",
         time: "6:00 pm - 9:00 pm",
@@ -3818,6 +4166,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-20",
         time: "7:00 pm - 10:00 pm",
@@ -3829,6 +4178,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-20",
         time: "12:00 pm - 8:00 pm",
@@ -3840,6 +4190,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-21",
         time: "7:00 pm - 10:00 pm",
@@ -3851,6 +4202,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-21",
         time: "12:00 pm - 8:00 pm",
@@ -3862,6 +4214,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-22",
         time: "12:00 pm - 8:00 pm",
@@ -3873,6 +4226,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-23",
         time: "6:00 pm - 8:00 pm",
@@ -3884,6 +4238,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-23",
         time: "4:00 pm - 8:00 pm",
@@ -3895,6 +4250,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-24",
         time: "3:00 pm - 8:00 pm",
@@ -3906,6 +4262,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-25",
         time: "3:00 pm - 8:00 pm",
@@ -3917,6 +4274,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-25",
         time: "6:00 pm - 8:00 pm",
@@ -3928,6 +4286,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-26",
         time: "4:00 pm - 8:00 pm",
@@ -3939,6 +4298,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-26",
         time: "6:00 pm - 9:00 pm",
@@ -3950,6 +4310,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-27",
         time: "12:00 pm - 8:00 pm",
@@ -3961,6 +4322,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-27",
         time: "7:00 pm - 10:00 pm",
@@ -3972,6 +4334,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-28",
         time: "12:00 pm - 8:00 pm",
@@ -3983,6 +4346,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-28",
         time: "7:00 pm - 10:00 pm",
@@ -3994,6 +4358,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-29",
         time: "12:00 pm - 8:00 pm",
@@ -4005,6 +4370,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-30",
         time: "6:00 pm - 8:00 pm",
@@ -4016,6 +4382,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-06-30",
         time: "4:00 pm - 8:00 pm",
@@ -4027,6 +4394,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-07-01",
         time: "3:00 pm - 8:00 pm",
@@ -4038,6 +4406,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-07-03",
         time: "4:00 pm - 8:00 pm",
@@ -4049,6 +4418,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-07-03",
         time: "6:00 pm - 9:00 pm",
@@ -4060,6 +4430,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         date: "2025-07-04",
         time: "12:00 pm - 8:00 pm",
@@ -4071,6 +4442,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://claywoodnc.com/weekly-events",
         venue: "Claywood",
         date: "2025-06-06",
         time: "6:00 pm-8:00 pm",
@@ -4082,6 +4454,7 @@ const events = [
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
+        url: "https://claywoodnc.com/weekly-events",
         venue: "Claywood",
         date: "2025-06-13",
         time: "6:00 pm-8:00 pm",
@@ -4093,6 +4466,7 @@ const events = [
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
+        url: "https://claywoodnc.com/weekly-events",
         venue: "Claywood",
         date: "2025-06-20",
         time: "6:00 pm-8:00 pm",
@@ -4104,6 +4478,7 @@ const events = [
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
+        url: "https://claywoodnc.com/weekly-events",
         venue: "Claywood",
         date: "2025-06-27",
         time: "6:00 pm-8:00 pm",
@@ -4115,6 +4490,7 @@ const events = [
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-05-28",
         time: "6-9pm",
@@ -4126,6 +4502,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-05-29",
         time: "6-9pm",
@@ -4137,6 +4514,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-05-30",
         time: "6-9pm",
@@ -4148,6 +4526,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-01",
         time: "2-5pm",
@@ -4159,6 +4538,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-06",
         time: "6-9pm",
@@ -4170,6 +4550,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-07",
         time: "5-8pm",
@@ -4181,6 +4562,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-08",
         time: "2-5pm",
@@ -4192,6 +4574,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-11",
         time: "6-9pm",
@@ -4203,6 +4586,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-13",
         time: "6-9pm",
@@ -4214,6 +4598,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-14",
         time: "2-5pm",
@@ -4225,6 +4610,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-14",
         time: "5-8pm",
@@ -4236,6 +4622,7 @@ const events = [
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
     },
     {
+        url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-15",
         time: "2-5pm",

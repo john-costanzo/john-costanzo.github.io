@@ -26,7 +26,8 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-01 @ 19:45:51";
+			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 08:30:08";
+			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
 			body {
@@ -215,48 +216,44 @@
 			</p>
 		</header>
 
-		<!-- Mobile  -->
-		<div class="mobile-note">
-			📱 <strong>Mobile users:</strong> Use the direct links below to add events
-			to your calendar. On iOS, use the "Download" option and open the file in
-			your Calendar app.
-		</div>
+		<!-- <\!-- Mobile  -\-> -->
 
-		<div class="event-card">
-			<div class="event-title">Team Meeting</div>
-			<div class="event-details">📍 Conference Room A</div>
-			<div class="event-details">🕐 Dec 15, 2024 at 2:00 PM - 3:00 PM</div>
-			<div class="event-details">
-				📝 Weekly team sync to discuss project progress
-			</div>
+		<!-- <div class="event-card"> -->
+		<!-- 	<div class="event-title">Team Meeting</div> -->
+		<!-- 	<div class="event-details">📍 Conference Room A</div> -->
+		<!-- 	<div class="event-details">🕐 Dec 15, 2024 at 2:00 PM - 3:00 PM</div> -->
+		<!-- 	<div class="event-details"> -->
+		<!-- 		📝 Weekly team sync to discuss project progress -->
+		<!-- 	</div> -->
 
-			<div class="calendar-links">
-				<a
-					href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Team%20Meeting&details=Weekly%20team%20sync%20to%20discuss%20project%20progress&location=Conference%20Room%20A&dates=20241215T140000Z%2F20241215T150000Z"
-					target="_blank"
-					class="calendar-link google"
-				>
-					📅 Add to Google Calendar
-				</a>
+		<!-- 	<div class="calendar-links"> -->
+		<!-- 		<a -->
+		<!-- 			href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Team%20Meeting&details=Weekly%20team%20sync%20to%20discuss%20project%20progress&location=Conference%20Room%20A&dates=20241215T140000Z%2F20241215T150000Z" -->
+		<!-- 			target="_blank" -->
+		<!-- 			class="calendar-link google" -->
+		<!-- 		> -->
+		<!-- 			📅 Add to Google Calendar -->
+		<!-- 		</a> -->
 
-				<a
-					href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Team%20Meeting&body=Weekly%20team%20sync%20to%20discuss%20project%20progress&location=Conference%20Room%20A&startdt=2024-12-15T14%3A00%3A00&enddt=2024-12-15T15%3A00%3A00"
-					target="_blank"
-					class="calendar-link outlook"
-				>
-					📅 Add to Outlook Calendar
-				</a>
+		<!-- 		<a -->
+		<!-- 			href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Team%20Meeting&body=Weekly%20team%20sync%20to%20discuss%20project%20progress&location=Conference%20Room%20A&startdt=2024-12-15T14%3A00%3A00&enddt=2024-12-15T15%3A00%3A00" -->
+		<!-- 			target="_blank" -->
+		<!-- 			class="calendar-link outlook" -->
+		<!-- 		> -->
+		<!-- 			📅 Add to Outlook Calendar -->
+		<!-- 		</a> -->
 
-				<a
-					href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//Calendar//EN%0ABEGIN:VEVENT%0ADTSTART:20241215T140000Z%0ADTEND:20241215T150000Z%0ASUMMARY:Team Meeting%0ADESCRIPTION:Weekly team sync to discuss project progress%0ALOCATION:Conference Room A%0AUID:1@calendar.local%0AEND:VEVENT%0AEND:VCALENDAR"
-					download="team-meeting.ics"
-					class="calendar-link download"
-				>
-					💾 Download Calendar File (.ics)
-				</a>
-			</div>
-		</div>
-		<!-- Mobile  -->
+		<!-- 		<a -->
+		<!-- 			href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//Calendar//EN%0ABEGIN:VEVENT%0ADTSTART:20241215T140000Z%0ADTEND:20241215T150000Z%0ASUMMARY:Team Meeting%0ADESCRIPTION:Weekly team sync to discuss project progress%0ALOCATION:Conference Room A%0AUID:1@calendar.local%0AEND:VEVENT%0AEND:VCALENDAR" -->
+		<!-- 			download="team-meeting.ics" -->
+		<!-- 			class="calendar-link download" -->
+		<!-- 		> -->
+		<!-- 			💾 Download Calendar File (.ics) -->
+		<!-- 		</a> -->
+		<!-- 	</div> -->
+		<!-- </div> -->
+		<!-- <\!-- Mobile  -\-> -->
+
 		<div class="filter-controls">
 			<h3>Filter Events</h3>
 			<div>
@@ -435,20 +432,28 @@
 						nameElement.className = "event-name";
 						nameElement.textContent = event.name;
 
-						const addToCalendarElement = document.createElement("span");
-						addToCalendarElement.textContent = " 📅 ";
-						addToCalendarElement.addEventListener("click", function () {
-							addToCalendar(
-								event.name,
-								event.detail,
-								event.location,
-								event.date + " " + event.start_time,
-								event.date + " " + event.end_time,
-							);
+						var addCalendarElement = null;
+						var descriptionElement = null;
+						var toggleAddCalendarElement = null;
+						var toggleElement = null;
+
+						addCalendarElement = createCalendarDispatcher(
+							event.url,
+							event.name,
+							event.detail,
+							event.location,
+							event.start_time,
+							event.end_time,
+						);
+						addCalendarElement.className = "hidden";
+
+						toggleAddCalendarElement = document.createElement("span");
+						toggleAddCalendarElement.textContent = "🗓";
+						toggleAddCalendarElement.className = "toggle-control";
+						toggleAddCalendarElement.addEventListener("click", function () {
+							addCalendarElement.classList.toggle("hidden");
 						});
 
-						var descriptionElement = null;
-						var toggleElement = null;
 						if (event.detail !== "None") {
 							descriptionElement = document.createElement("span");
 							descriptionElement.textContent = event.detail;
@@ -471,7 +476,8 @@
 						eventElement.appendChild(venueElement);
 						eventElement.appendChild(timeElement);
 						eventElement.appendChild(nameElement);
-						eventElement.appendChild(addToCalendarElement);
+						eventElement.appendChild(toggleAddCalendarElement);
+						eventElement.appendChild(addCalendarElement);
 						if (descriptionElement) {
 							eventElement.appendChild(toggleElement);
 							eventElement.appendChild(descriptionElement);
@@ -589,7 +595,7 @@
 </html>
 
 <!-- Local Variables: -->
-<!-- time-stamp-line-limit: 10 -->
+<!-- time-stamp-line-limit: 50 -->
 <!-- time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S" -->
 <!-- time-stamp-active: t -->
 <!-- time-stamp-start: "const localEventBrowserVersion = \"" -->
