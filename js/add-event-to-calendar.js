@@ -1,4 +1,18 @@
-const addEventToCalendarVersion = "Sunday, 2025-06-08 @ 20:51:46";
+const addEventToCalendarVersion = "Monday, 2025-06-09 @ 17:52:37";
+
+function utcToMicrosoft( datetime ) {
+    // 20250623T220000Z -> 2025-06-23T22%3A00%3A00Z
+    return ( datetime.slice( 0, 4 ) +
+        "-" +
+        datetime.slice( 4, 6 ) +
+        "-" +
+        datetime.slice( 6, 11 ) +
+        "%3A" +
+        datetime.slice( 11, 13 ) +
+        "%3A" +
+        datetime.slice( 13, 16 )
+    );
+}
 
 function createCalendarDispatcher( url, title, description, location, startTime, endTime ) {
     console.log( `startTime=${startTime}` );
@@ -21,15 +35,15 @@ function createCalendarDispatcher( url, title, description, location, startTime,
     calendarLinksElement.appendChild( googleCalendarLinkElement );
 
     const outlookCalendarLinkElement = document.createElement( "a" );
-    outlookCalendarLinkElement.href = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${titleEncoded}&body=${descriptionEncoded}&location=${locationEncoded}&startdt=2024-12-15T14%3A00%3A00&enddt=2024-12-15T15%3A00%3A00`;
+    outlookCalendarLinkElement.href = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${titleEncoded}&body=${descriptionEncoded}&location=${locationEncoded}&startdt=${utcToMicrosoft(startTime)}&enddt=${utcToMicrosoft(endTime)}`;
     outlookCalendarLinkElement.target = "_blank";
     outlookCalendarLinkElement.className = "calendar-link outlook";
     outlookCalendarLinkElement.textContent = "Outlook calendar";
     calendarLinksElement.appendChild( outlookCalendarLinkElement );
 
     const downloadCalendarInfoElement = document.createElement( "a" );
-    downloadCalendarInfoElement.href = ``;
-    downloadCalendarInfoElement.download = "team-meeting.ics";
+    downloadCalendarInfoElement.href = `data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//Calendar//EN%0ABEGIN:VEVENT%0ADTSTART:${startTime}%0ADTEND:${endTime}%0ASUMMARY:${titleEncoded}%0ADESCRIPTION:${descriptionEncoded}%0ALOCATION:${locationEncoded}%0AUID:1@calendar.local%0AEND:VEVENT%0AEND:VCALENDAR`;
+    downloadCalendarInfoElement.download = "hendo-happening.ics";
     downloadCalendarInfoElement.className = "calendar-link download";
     downloadCalendarInfoElement.textContent = "Download ICS file";
     calendarLinksElement.appendChild( downloadCalendarInfoElement );
