@@ -26,7 +26,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 21:29:22";
+			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 22:54:22";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -292,8 +292,87 @@
 				return date.toLocaleDateString("en-US", options);
 			}
 
+			function toUTCFormat(dateStr) {
+				// Match: YYYY-MM-DD hh:mm:ss am/pm
+				dateStr = dateStr.replace(/ noon$/i, " 12:00 pm");
+				dateStr = dateStr.replace(/ 12:00$/i, " 12:00 pm");
+				dateStr = dateStr.replace(
+					/ (\d{1,2}):(\d{2})\s*(am|pm)$/i,
+					" $1:$2:00 $3",
+				);
+				const regex =
+					/^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2}) (am|pm)$/i;
+				const match = dateStr.match(regex);
+				if (!match) throw new Error("Invalid date format");
+
+				let [_, year, month, day, hour, minute, second, ampm] = match;
+				year = parseInt(year, 10);
+				month = parseInt(month, 10) - 1; // JS months: 0-11
+				day = parseInt(day, 10);
+				hour = parseInt(hour, 10);
+				minute = parseInt(minute, 10);
+				second = parseInt(second, 10);
+
+				// Convert 12-hour to 24-hour
+				if (ampm.toLowerCase() === "pm" && hour !== 12) hour += 12;
+				if (ampm.toLowerCase() === "am" && hour === 12) hour = 0;
+
+				// Create local Date object
+				const localDate = new Date(year, month, day, hour, minute, second);
+
+				// Get UTC components
+				const y = localDate.getUTCFullYear();
+				const m = String(localDate.getUTCMonth() + 1).padStart(2, "0");
+				const d = String(localDate.getUTCDate()).padStart(2, "0");
+				const h = String(localDate.getUTCHours()).padStart(2, "0");
+				const min = String(localDate.getUTCMinutes()).padStart(2, "0");
+				const s = String(localDate.getUTCSeconds()).padStart(2, "0");
+
+				// Format as YYYYMMDDThhmmssZ
+				return `${y}${m}${d}T${h}${min}${s}Z`;
+			}
+
 			function formatDateUTC(date) {
+				// DATE is something like "2025-06-08 2:00:00 pm". Return "20250608T140000Z"
+
 				console.log(`formatDateUTC = ${date}`);
+				var cleaned_date;
+				const timeParts = date.match(
+					/^(\d{1,4})-(\d{1,2})-(\d{1,2})\s*(\d{1,2}):(\d{2})(:\d{2})?\s*(am|pm)$/i,
+				);
+				if (timeParts) {
+					console.log(`timeParts = ${timeParts}`);
+					var hour = parseInt(timeParts[4], 10);
+					if (timeParts[7].toLowerCase() === "pm") {
+						if (hour < 12) hour += 12;
+					}
+					if (timeParts[7].toLowerCase() === "am" && hour === 12) {
+						hour -= 12;
+					}
+					if (hour < 10) hour = "0" + hour;
+
+					cleaned_date =
+						timeParts[1] +
+						"-" +
+						timeParts[2] +
+						"-" +
+						timeParts[3] +
+						"T" +
+						hour +
+						":" +
+						timeParts[5] +
+						":" +
+						(timeParts[6] === undefined
+							? "00"
+							: timeParts[6].replace(":", "")) +
+						"Z";
+
+					console.log(`cleaned_date=${cleaned_date}`);
+				} else {
+					return `formatDateUTC: Unable to parse ${date}`;
+				}
+				const cleaned_date_obj = new Date(cleaned_date);
+				console.log(`cleaned_date_obj=${cleaned_date_obj}`);
 				const options = {
 					timeZone: "UTC", // "America/New_York", // Set to Eastern US timezone
 					year: "numeric",
@@ -305,8 +384,12 @@
 					hour12: false, // Use 24-hour format
 				};
 
+				console.log(
+					`cleaned_date_obj.toLocaleDateString("en-US", options) = ${cleaned_date_obj.toLocaleDateString("en-US", options)}`,
+				);
+
 				const formatter = new Intl.DateTimeFormat("en-US", options);
-				const parts = formatter.formatToParts(date);
+				const parts = formatter.formatToParts(cleaned_date_obj);
 
 				// Helper to extract and pad values
 				const pad = (n) => n.toString().padStart(2, "0");
@@ -319,7 +402,7 @@
 
 				const formatted = `${yearPart}${monthPart}${dayPart}T${pad(hourPart)}${pad(minutePart)}${pad(secondPart)}Z`;
 				console.log(`formatDateUTC returning ${formatted}`);
-				return formatted; // e.g., 20250608T140000 (for June 8, 2025, 2:00:00 PM EDT)
+				return formatted; // e.g., 20250608T140000Z (for June 8, 2025, 2:00:00 PM EDT)
 			}
 
 			function formatTime(timeStr) {
@@ -480,7 +563,7 @@
 						console.log(`start_time_string="${start_time_string}"`);
 						const start_date = new Date(start_time_string);
 						console.log(`start_date="${start_date}"`);
-						const start = formatDateUTC(start_date);
+						const start = toUTCFormat(start_time_string);
 						const end_time_string =
 							event.date +
 							" " +
@@ -488,7 +571,7 @@
 						console.log(`end_time_string="${end_time_string}"`);
 						const end_date = new Date(end_time_string);
 						console.log(`end_date="${end_date}"`);
-						const end = formatDateUTC(end_date);
+						const end = toUTCFormat(end_time_string);
 
 						addCalendarElement = createCalendarDispatcher(
 							event.url,
