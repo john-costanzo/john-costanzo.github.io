@@ -1,37 +1,20 @@
-const addEventToCalendarVersion = "Sunday, 2025-06-08 @ 08:23:27";
+const addEventToCalendarVersion = "Sunday, 2025-06-08 @ 20:51:46";
 
 function createCalendarDispatcher( url, title, description, location, startTime, endTime ) {
+    console.log( `startTime=${startTime}` );
+    console.log( `endTime=${endTime}` );
     if ( description === "None" ) {
         description = "";
     }
-    const eventCardElement = document.createElement( "div" );
-    eventCardElement.className = "event-card";
-
-    const eventTitleElement = document.createElement( "div" );
-    eventTitleElement.className = "event-title";
-    eventTitleElement.textContent = title;
     const titleEncoded = encodeURIComponent( title );
-
-    const eventLocationElement = document.createElement( "div" );
-    eventLocationElement.className = "event-location";
-    eventLocationElement.textContent = location;
     const locationEncoded = encodeURIComponent( location );
-
-    const eventDateTimeElement = document.createElement( "div" );
-    eventDateTimeElement.className = "event-datetime";
-    eventDateTimeElement.textContent = startTime + "-"
-    endTime;
-
-    const eventDescriptionElement = document.createElement( "div" );
-    eventDescriptionElement.className = "event-details event-description";
-    eventDescriptionElement.textContent = description;
     const descriptionEncoded = encodeURIComponent( url + "\n\n" + description );
-
     const calendarLinksElement = document.createElement( "div" );
+
     calendarLinksElement.className = "calendar-links";
 
     const googleCalendarLinkElement = document.createElement( "a" );
-    googleCalendarLinkElement.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${titleEncoded}&details=${descriptionEncoded}&location=${locationEncoded}&dates=20241215T140000Z%2F20241215T150000Z`;
+    googleCalendarLinkElement.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${titleEncoded}&details=${descriptionEncoded}&location=${locationEncoded}&dates=${startTime}%2F${endTime}`;
     googleCalendarLinkElement.target = "_blank";
     googleCalendarLinkElement.className = "calendar-link google";
     googleCalendarLinkElement.textContent = "Google calendar";
@@ -51,13 +34,7 @@ function createCalendarDispatcher( url, title, description, location, startTime,
     downloadCalendarInfoElement.textContent = "Download ICS file";
     calendarLinksElement.appendChild( downloadCalendarInfoElement );
 
-    eventCardElement.appendChild( eventTitleElement );
-    eventCardElement.appendChild( eventLocationElement );
-    eventCardElement.appendChild( eventDateTimeElement );
-    eventCardElement.appendChild( eventDescriptionElement );
-    eventCardElement.appendChild( calendarLinksElement );
-
-    return ( eventCardElement );
+    return ( calendarLinksElement );
 }
 
 function addToCalendar( title, description, location, startTime, endTime ) {
