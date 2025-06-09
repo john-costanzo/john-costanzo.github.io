@@ -26,7 +26,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 17:01:28";
+			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 21:13:57";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -294,19 +294,6 @@
 
 			function formatDateUTC(date) {
 				console.log(`formatDateUTC=${date}`);
-				<!-- function pad(n) { -->
-				<!-- 	return n < 10 ? "0" + n : n; -->
-				<!-- } -->
-				<!-- return ( -->
-				<!-- 	d.getFullYear().toString() + -->
-				<!-- 	pad(d.getMonth() + 1) + -->
-				<!-- 	pad(d.getDate()) + -->
-				<!-- 	"T" + -->
-				<!-- 	pad(d.getHours()) + -->
-				<!-- 	pad(d.getMinutes()) + -->
-				<!-- 	pad(d.getSeconds()) + -->
-				<!-- 	"EDT" -->
-				<!-- ); -->
 				const options = {
 					timeZone: "UTC", // "America/New_York", // Set to Eastern US timezone
 					year: "numeric",
@@ -485,20 +472,18 @@
 						console.log(
 							`event.date=${event.date}  event.start_time = ${event.start_time}  event.end_time = ${event.end_time}`,
 						);
-						const start = formatDateUTC(
-							new Date(
-								event.date +
-									" " +
-									(isTimeString(event.start_time) ? event.start_time : "12:00"),
-							),
-						);
-						const end = formatDateUTC(
-							new Date(
-								event.date +
-									" " +
-									(isTimeString(event.end_time) ? event.end_time : "12:00"),
-							),
-						);
+						const start_time_string =
+							event.date +
+							" " +
+							(isTimeString(event.start_time) ? event.start_time : "12:00");
+						console.log(`start_time_string="${start_time_string}"`);
+						const start = formatDateUTC(new Date(start_time_string));
+						const end_time_string =
+							event.date +
+							" " +
+							(isTimeString(event.end_time) ? event.end_time : "12:00");
+						console.log(`end_time_string="${end_time_string}"`);
+						const end = formatDateUTC(new Date(end_time_string));
 
 						addCalendarElement = createCalendarDispatcher(
 							event.url,
