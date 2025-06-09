@@ -26,7 +26,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 21:13:57";
+			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 21:25:02";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -477,13 +477,17 @@
 							" " +
 							(isTimeString(event.start_time) ? event.start_time : "12:00");
 						console.log(`start_time_string="${start_time_string}"`);
-						const start = formatDateUTC(new Date(start_time_string));
+						const start_date = new Date(start_time_string);
+						console.log(`start_date="${start_date}"`);
+						const start = formatDateUTC(start_date);
 						const end_time_string =
 							event.date +
 							" " +
 							(isTimeString(event.end_time) ? event.end_time : "12:00");
 						console.log(`end_time_string="${end_time_string}"`);
-						const end = formatDateUTC(new Date(end_time_string));
+						const end_date = new Date(end_time_string);
+						console.log(`end_date="${end_date}"`);
+						const end = formatDateUTC(end_date);
 
 						addCalendarElement = createCalendarDispatcher(
 							event.url,
