@@ -1,6 +1,18 @@
-const eventDataVersion = "Tuesday, 2025-06-10 12:00:42";
-console.log("eventDataVersion = Tuesday, 2025-06-10 12:00:42")
+const eventDataVersion = "Tuesday, 2025-06-10 20:00:41";
+console.log("eventDataVersion = Tuesday, 2025-06-10 20:00:41")
 const events = [
+    {
+        url: "https://pointlookoutvineyards.com/whats-happening",
+        venue: "Point Lookout",
+        date: "2025-06-15",
+        time: "12:00 pm - 3:00 pm",
+        start_time: "12:00 pm",
+        end_time: "3:00 pm",
+        name: "Father’s Day BBQ",
+        sorttime: "2025-06-15 12:00",
+        detail: "None",
+        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
+    },
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
@@ -893,12 +905,12 @@ const events = [
         url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         date: "2025-06-19",
-        time: "8:00 pm - 10:00 pm",
-        start_time: "8:00 pm",
-        end_time: "10:00 pm",
-        name: "Kid Billy",
-        sorttime: "2025-06-19 20:00",
-        detail: "Join us for the unofficial afterparty to the kick off of Rhythm and Brews with Kid Billy! Music starts @8pm!",
+        time: "7:30 pm - 10:30 pm",
+        start_time: "7:30 pm",
+        end_time: "10:30 pm",
+        name: "Jr. Ranger",
+        sorttime: "2025-06-19 19:30",
+        detail: "Join us for the unofficial afterparty to the kick off of Rhythm and Brews! Music starts @7:30pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
