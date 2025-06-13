@@ -1,5 +1,5 @@
-const eventDataVersion = "Friday, 2025-06-13 11:11:02";
-console.log("eventDataVersion = Friday, 2025-06-13 11:11:02")
+const eventDataVersion = "Friday, 2025-06-13 12:00:33";
+console.log("eventDataVersion = Friday, 2025-06-13 12:00:33")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -2249,11 +2249,11 @@ const events = [
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         date: "2025-08-01",
-        time: "7:00 pm - 9:30 pm",
-        start_time: "7:00 pm",
+        time: "7:30 pm - 9:30 pm",
+        start_time: "7:30 pm",
         end_time: "9:30 pm",
         name: "Dangermuffin",
-        sorttime: "2025-08-01 19:00",
+        sorttime: "2025-08-01 19:30",
         detail: "Dangermuffin are storytellers. Casting images that are timeless yet novel, the band blends mindful lyrics with contemplative sounds, creating songs ai...",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
