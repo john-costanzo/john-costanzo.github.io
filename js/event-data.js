@@ -1,5 +1,5 @@
-const eventDataVersion = "Friday, 2025-06-13 12:00:33";
-console.log("eventDataVersion = Friday, 2025-06-13 12:00:33")
+const eventDataVersion = "Friday, 2025-06-13 20:00:34";
+console.log("eventDataVersion = Friday, 2025-06-13 20:00:34")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -1972,18 +1972,6 @@ const events = [
     {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
-        date: "2025-06-13",
-        time: "7:00 pm - 9:30 pm",
-        start_time: "7:00 pm",
-        end_time: "9:30 pm",
-        name: "Hustle Souls",
-        sorttime: "2025-06-13 19:00",
-        detail: "Hustle Souls, based in Asheville, NC, masterfully blend Retro-Soul, Brass Band Funk, and Singer-Songwriter Americana into a unique and captivating sou...",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
         date: "2025-06-14",
         time: "2:00 pm - 5:00 pm",
         start_time: "2:00 pm",
@@ -2087,6 +2075,18 @@ const events = [
         name: "Lyric",
         sorttime: "2025-07-05 14:00",
         detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in Decem...",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        date: "2025-07-06",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: "The Mojo Brothers",
+        sorttime: "2025-07-06 14:00",
+        detail: "Based in Brevard, NC, The Mojo Brothers Blues Band is the Southeast’s Premier Blues Band performing",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
