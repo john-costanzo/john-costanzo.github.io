@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
     <script>
-        const recipeBrowserVersion = "Sunday, 2025-06-15 @ 19:02:44";
+        const recipeBrowserVersion = "Sunday, 2025-06-15 @ 19:41:36";
     </script>
 
     <script>
@@ -69,6 +69,7 @@
             if ( nextArg >= args.length ) return ( undefined );
 
             const nvp = args[ nextArg ].split( "=" );
+            if ( nvp.length > 0 ) nvp[ 0 ] = nvp[ 0 ].toLowerCase( );
             nextArg++;
             return ( nvp );
         }
@@ -397,7 +398,7 @@
                         const listSubContainer = domConstruct.create( "ul" );
                         domConstruct.place( listSubContainer, catHeader );
 
-                        if ( rbDebug ) console.log( "recipeList= " + recipeList.length + " ==> " + recipeList );
+                        if ( rbDebug ) console.log( `recipeList(${cat}): ${recipeList.length} ==> ${recipeList}` );
                         recipeList.forEach( function( recipe ) {
                             const recipeTitle = recipe[ 0 ];
                             const recipeId = recipe[ 1 ];
@@ -448,7 +449,7 @@
         function toggleDrawer( drawer, forceOpen = false ) {
             require( [ "dojo/dom", "dojo/dom-style", "dojo/domReady!" ],
                 function( dom, domStyle ) {
-                    console.log( "toggleDrawer: starting..." );
+                    if ( rbDebug ) console.log( "toggleDrawer: starting..." );
                     const panel = dom.byId( drawer );
                     if ( panel ) {
                         const left = domStyle.get( panel, "left" );
@@ -456,12 +457,12 @@
                             domStyle.set( panel, "left", "0px" );
                         } else {
                             domStyle.set( panel, "left", ( left < -390 ? "0px" : "-400px" ) );
-                            console.log( "toggleDrawer: Setting left to " + ( left < -390 ? "0px" : "-400px" ) );
+                            if ( rbDebug ) console.log( "toggleDrawer: Setting left to " + ( left < -390 ? "0px" : "-400px" ) );
                         }
                         focusOn( "searchBox" );
                         searchKeyboardHandler( null );
                     }
-                    console.log( "toggleDrawer: finished." );
+                    if ( rbDebug ) console.log( "toggleDrawer: finished." );
 
                 } );
         };
@@ -618,9 +619,9 @@
     <script src="js/circular-timer-using-dojo.js"></script>
     <script src="js/recipe-scaling.js"></script>
     <script>
-        let largeFontSize = '1.25';
-        let mediumFontSize = '1.0';
-        let smallFontSize = '0.75';
+        let largeFontSize = '16';
+        let mediumFontSize = '13';
+        let smallFontSize = '10';
 
         var currentFontSize = mediumFontSize;
 
@@ -661,7 +662,7 @@
                 }
 
                 const newRule = `${selector} {
-                                        font-size: clamp(0.75rem, ${newFontSize}vw, 2rem);
+                                        font-size: calc(${newFontSize}px + 0.390625vw);
                            }`;
 
                 styleSheet.insertRule( newRule, styleSheet.cssRules.length );
@@ -774,7 +775,7 @@
         function redirectHere( ) {
             // Redirect the page to the current URL using now-current values.
             const originPathname = window.location.origin + window.location.pathname;
-            console.log( "redirectHere: currentScalingPercentage=" + currentScalingPercentage );
+            if ( rbDebug ) console.log( "redirectHere: currentScalingPercentage=" + currentScalingPercentage );
             const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm( ) );
             window.open( url, "_self" );
         }
@@ -945,26 +946,27 @@
                 let nextNvp;
 
                 while ( nextNvp = nextArgNVP( ) ) {
-                    const action = nextNvp[ 0 ].toLowerCase( );
+                    const action = nextNvp[ 0 ];
 
                     switch ( action ) {
                         case "view":
                             recipesToBeViewed.push( nextNvp[ 1 ] );
                             break;
                         case "fontsize":
-                            targetFontSize = nextNvp[ 1 ];
+                            targetFontSize = nextNvp[ 1 ].toLowerCase( );
                             break;
                         case "scalingpercentage":
                             targetScalingPercentage = nextNvp[ 1 ];
                             break;
                         case "searchterm":
-                            targetSearchTerm = decodeURIComponent( nextNvp[ 1 ] );
+                            targetSearchTerm = decodeURIComponent( nextNvp[ 1 ].toLowerCase( ) );
                             break;
                         case "print":
                             recipesToBePrinted.push( nextNvp[ 1 ] );
                             break;
                         default:
-                            console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'scalingpercentage', 'searchterm', 'print' }", action, window.location.href );
+                            console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'scalingpercentage', 'searchterm', 'print' }",
+                                action, window.location.href );
                     }
                 }
 
