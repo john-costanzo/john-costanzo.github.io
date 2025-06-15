@@ -1,56 +1,64 @@
 <html>
-  <head>
-    <style type="text/css">
-      body   {
-          font-size: 36pt;
-      }
+	<head>
+		<style type="text/css">
+			body {
+				font-size: 36pt;
+			}
 
-      .faded  {
-          color: #9e9e9e;
-      }
+			.faded {
+				color: #9e9e9e;
+			}
 
-      .person-number-label  {
-          font-size: 48px;
-          font-style: italic;
-      }
+			.person-number-label {
+				font-size: 48px;
+				font-style: italic;
+			}
 
-      .person-class  {
-          font-size: 128px;
-          animation: rotate-and-zoom 3s ease-in-out;
-          font-weight: bold;
-          color: red;
-          text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-      }
+			.person-class {
+				font-size: 128px;
+				animation: rotate-and-zoom 3s ease-in-out;
+				font-weight: bold;
+				color: red;
+				text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+			}
 
+			@keyframes rotate-and-zoom {
+				0% {
+					transform: rotateZ(180deg) rotateY(180deg) scale(0.05);
+				}
+				50% {
+					transform: rotateZ(360deg) rotateY(360deg) scale(1.5);
+				}
+				100% {
+					transform: rotateZ(360deg) rotateY(360deg) scale(1);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h3>
+				<img src="https://www.cphassn.org/grfx/logo.jpg" />Interesting Facts...
+				<i>Revealed!</i>
+			</h3>
 
-      @keyframes rotate-and-zoom {
-	  0% {
-	      transform: rotateZ(180deg) rotateY(180deg) scale(.05);
-	  }
-	  50% {
-	      transform: rotateZ(360deg) rotateY(360deg) scale(1.5);
-	  }
-	  100% {
-	      transform: rotateZ(360deg) rotateY(360deg) scale(1);
-	  }
-      }
-    </style>
-  </head>
-  <body>
-    <center>
-      <h3><img src="https://www.cphassn.org/grfx/logo.jpg"/>Interesting Facts... <i>Revealed!</i></h3>
+			<span id="person_number_label" class="person-number-label"></span
+			><span id="person_number" class="person-number-label"></span><br />
 
-      <span id="person_number_label" class="person-number-label"></span><span id="person_number" class="person-number-label"></span><br>
+			<span id="fact"></span>
 
-      <span id="fact"></span>
+			<div class="text-container">
+				<div id="person" class="person-class"></div>
+			</div>
+		</center>
 
-      <div class="text-container">
-	<div id="person" class="person-class"></div>
-      </div>
-
-    </center>
-
-    <script type="text/javascript" src="https://john-costanzo.github.io/revealer.js"></script>
-    <script type="text/javascript" src="https://john-costanzo.github.io/set-revealer-info.js"></script>
-  </body>
+		<script
+			type="text/javascript"
+			src="https://john-costanzo.github.io/js/revealer.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://john-costanzo.github.io/js/set-revealer-info.js"
+		></script>
+	</body>
 </html>
