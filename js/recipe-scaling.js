@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Monday, 2025-04-07 @ 20:48:45";
+const recipeScalingVersion = "Sunday, 2025-06-15 @ 17:25:53";
 
 /*
  *    In response to this prompt:
@@ -18,80 +18,85 @@ const recipeScalingVersion = "Monday, 2025-04-07 @ 20:48:45";
  * See https://www.perplexity.ai/search/write-a-javascript-function-th-UKrqUr78RYSdet.LM11xvQ
  */
 
-function promptForScalingPercentage() {
+function promptForScalingPercentage( ) {
     // Prompt the user for a scalingPercentage
-    const scalingPercentageText = prompt("Please enter a percentage with which to scale the recipe:");
+    const scalingPercentageText = prompt( "Please enter a percentage with which to scale the recipe:" );
 
-    if (scalingPercentageText !== null) {
-        if (!/^[\d.]+$/.test(scalingPercentageText)) {
-            alert("Invalid input! Please enter (only) a number.");
+    scalingPercentageText = scalingPercentageText.replace( /\s+/g, '' );
+
+    if ( scalingPercentageText !== null ) {
+        if ( scalingPercentageText === "" ) {
+            scalingPercentageText = "100";
+        }
+        if ( !/^[\d.]+$/.test( scalingPercentageText ) ) {
+            alert( "Invalid input! Please enter (only) a number." );
             return;
         }
 
         // Convert the input to a number
-        const targetScalingPercentage = parseFloat(scalingPercentageText);
+        const targetScalingPercentage = parseFloat( scalingPercentageText );
 
         // Validate the input
-        if (isNaN(targetScalingPercentage) || targetScalingPercentage < 0) {
-            alert("Invalid input! Please enter a number greater than 0.");
+        if ( isNaN( targetScalingPercentage ) || targetScalingPercentage < 0 ) {
+            alert( "Invalid input! Please enter a number greater than 0." );
             return;
         }
-        return (currentScalingPercentage = targetScalingPercentage);
+        return ( currentScalingPercentage = targetScalingPercentage );
     } else {
-        return (null);
+        return ( null );
     }
 }
 
-function scaleRecipe(newScalingPercentage) {
-    console.log("scaleRecipe: newScalingPercentage=" + newScalingPercentage + "; currentScalingPercentage=" + currentScalingPercentage);
-    if (newScalingPercentage === undefined) {
-        if (!promptForScalingPercentage())
-            return (null);
+function scaleRecipe( newScalingPercentage ) {
+    console.log( "scaleRecipe: newScalingPercentage=" + newScalingPercentage + "; currentScalingPercentage=" + currentScalingPercentage );
+    if ( newScalingPercentage === undefined ) {
+        if ( !promptForScalingPercentage( ) )
+            return ( null );
     } else {
         currentScalingPercentage = newScalingPercentage;
     }
 
-    if (currentScalingPercentage !== undefined) {
+    if ( currentScalingPercentage !== undefined ) {
         // Convert scalingPercentage to scaling factor
         const scaling_factor = currentScalingPercentage / 100.0;
 
         // Call the updateAmounts function with the scaling factor
-        updateAmounts(scaling_factor);
+        updateAmounts( scaling_factor );
 
-        const sf = document.getElementById("scaling_factor");
-        if (sf) {
-            if (scaling_factor === 1) {
+        const sf = document.getElementById( "scaling_factor" );
+        if ( sf ) {
+            if ( scaling_factor === 1 ) {
                 sf.innerHTML = "";
             } else {
-                sf.innerHTML = "scaled to " + (scaling_factor * 100) + "%";
+                sf.innerHTML = "scaled to " + ( scaling_factor * 100 ) + "%";
             }
         }
     }
 }
 
 
-function updateAmounts(scaling_factor) {
+function updateAmounts( scaling_factor ) {
     // Select all elements with the tag name "amount"
-    const amountElements = document.getElementsByTagName("amount");
+    const amountElements = document.getElementsByTagName( "amount" );
 
     // Iterate through each "amount" element
-    for (let element of amountElements) {
+    for ( let element of amountElements ) {
         // Get the fraction and units attributes
-        const fraction = parseFloat(element.getAttribute("fraction"));
-        const units = element.getAttribute("units");
+        const fraction = parseFloat( element.getAttribute( "fraction" ) );
+        const units = element.getAttribute( "units" );
 
         // Calculate the new amount
         const newAmount = scaling_factor * fraction;
 
         // Set the element's value to the new amount concatenated with units
-        element.textContent = numberToFraction(newAmount) + " " + units;
+        element.textContent = numberToFraction( newAmount ) + " " + units;
 
         // Handle the title attribute based on scaling_factor
-        if (scaling_factor === 1) {
-            element.removeAttribute("title");
+        if ( scaling_factor === 1 ) {
+            element.removeAttribute( "title" );
         } else {
-            const originalAmount = element.getAttribute("original_amount");
-            element.setAttribute("title", "originally: " + originalAmount);
+            const originalAmount = element.getAttribute( "original_amount" );
+            element.setAttribute( "title", "originally: " + originalAmount );
         }
     }
 }
@@ -118,9 +123,9 @@ const fractionalTextToGlyphMap = {
     "1/10": "⅒",
 };
 
-function numberToFraction(number) {
+function numberToFraction( number ) {
     // Handle whole numbers
-    if (Number.isInteger(number)) {
+    if ( Number.isInteger( number ) ) {
         return "" + number;
     }
 
@@ -129,8 +134,8 @@ function numberToFraction(number) {
     let numerator = 1;
     let denominator = 1;
 
-    while (Math.abs((numerator / denominator) - number) > precision) {
-        if ((numerator / denominator) < number) {
+    while ( Math.abs( ( numerator / denominator ) - number ) > precision ) {
+        if ( ( numerator / denominator ) < number ) {
             numerator++;
         } else {
             denominator++;
@@ -138,30 +143,30 @@ function numberToFraction(number) {
     }
 
     // Simplify the fraction
-    const gcd = findGCD(numerator, denominator);
+    const gcd = findGCD( numerator, denominator );
     numerator /= gcd;
     denominator /= gcd;
 
     let wholePart = 0;
-    if (numerator > denominator) {
-        wholePart = Math.floor(numerator / denominator);
-        numerator = numerator - (wholePart * denominator);
+    if ( numerator > denominator ) {
+        wholePart = Math.floor( numerator / denominator );
+        numerator = numerator - ( wholePart * denominator );
     }
 
     let fraction = numerator + "/" + denominator;
-    if (fraction in fractionalTextToGlyphMap) {
-        fraction = fractionalTextToGlyphMap[fraction];
+    if ( fraction in fractionalTextToGlyphMap ) {
+        fraction = fractionalTextToGlyphMap[ fraction ];
     }
 
-    return (wholePart === 0 ? "" : wholePart + " ") + fraction;
+    return ( wholePart === 0 ? "" : wholePart + " " ) + fraction;
 }
 
 // Helper function to find the Greatest Common Divisor
-function findGCD(a, b) {
-    if (Number.isInteger(a) && Number.isInteger(b)) {
-        return b === 0 ? a : findGCD(b, a % b);
+function findGCD( a, b ) {
+    if ( Number.isInteger( a ) && Number.isInteger( b ) ) {
+        return b === 0 ? a : findGCD( b, a % b );
     } else {
-        console.error("findGCD: passed bad arguments. a=[%d] b=[%d]", a, b);
+        console.error( "findGCD: passed bad arguments. a=[%d] b=[%d]", a, b );
     }
 }
 
