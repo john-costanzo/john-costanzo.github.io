@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
     <script>
-        const recipeBrowserVersion = "Sunday, 2025-04-20 @ 19:22:48";
+        const recipeBrowserVersion = "Sunday, 2025-06-15 @ 18:17:51";
     </script>
 
     <script>
@@ -618,9 +618,9 @@
     <script src="js/circular-timer-using-dojo.js"></script>
     <script src="js/recipe-scaling.js"></script>
     <script>
-        let largeFontSize = '42';
-        let mediumFontSize = '34';
-        let smallFontSize = '14';
+        let largeFontSize = '1.5';
+        let mediumFontSize = '1.0';
+        let smallFontSize = '0.5';
 
         var currentFontSize = mediumFontSize;
 
@@ -661,7 +661,7 @@
                 }
 
                 const newRule = `${selector} {
-                                        font-size: ${newFontSize}px;
+                                        font-size: clamp(0.5rem, ${newFontSize}vw + 0.25rem, 1.5rem);
                            }`;
 
                 styleSheet.insertRule( newRule, styleSheet.cssRules.length );
