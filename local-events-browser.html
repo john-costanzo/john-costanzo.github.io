@@ -26,7 +26,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-08 @ 22:54:22";
+			const localEventBrowserVersion = "Sunday, 2025-06-15 @ 12:54:55";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -431,6 +431,35 @@
 				}
 			}
 
+			function getLocalISODateString(date) {
+				const pad = (num, size = 2) =>
+					String(Math.floor(Math.abs(num))).padStart(size, "0");
+
+				// Timezone offset in minutes, negative for locations ahead of UTC, positive for behind
+				const tzo = -date.getTimezoneOffset();
+				const sign = tzo >= 0 ? "+" : "-";
+				const offsetHours = pad(Math.trunc(Math.abs(tzo) / 60));
+				const offsetMinutes = pad(Math.abs(tzo) % 60);
+
+				return (
+					date.getFullYear() +
+					"-" +
+					pad(date.getMonth() + 1) +
+					"-" +
+					pad(date.getDate()) +
+					"T" +
+					pad(date.getHours()) +
+					":" +
+					pad(date.getMinutes()) +
+					":" +
+					pad(date.getSeconds()) +
+					sign +
+					offsetHours +
+					":" +
+					offsetMinutes
+				);
+			}
+
 			/**
 			 * Groups and sorts subdictionaries by date.
 			 * @param {Object} dictOfDicts - The input dictionary of dictionaries.
@@ -512,6 +541,7 @@
 			function isTimeString(timeStr) {
 				return timeStr.match(/^\d{1,2}(:\d{2})?\s*(am|pm|AM|PM)$/i);
 			}
+
 			// Function to render events
 			function renderEvents(eventsByDate) {
 				const container = document.getElementById("events-container");
@@ -659,8 +689,8 @@
 
 				const organizedEvents = organizeEventsByDate(
 					filteredEvents,
-					today.toISOString().split("T")[0],
-					endDate.toISOString().split("T")[0],
+					toLocaleDateString(today).split("T")[0],
+					toLocaleDateString(endDate).split("T")[0],
 				);
 
 				renderEvents(organizedEvents);
