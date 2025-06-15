@@ -1,257 +1,260 @@
 h1 {
-    font-size: 24px;
+	/* font-size: 24px; */
 }
 
 h2 {
-    font-size: 18px;
-    height: 4px;
-    font-weight: normal;
-    color: grey;
+	/* font-size: 18px; */
+	height: 4px;
+	font-weight: normal;
+	color: grey;
 }
 
 @media screen {
-    html, body {
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	font-size: 34px;
-    }
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		/* font-size: 34px; */
+	}
 }
 
 #appLayout {
-    height: 100%;
+	height: 100%;
 }
 
 #topHeader {
-    height: 5px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    margin-left: 48px;
-    margin-right: 48px;
+	height: 5px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: 48px;
+	margin-right: 48px;
 }
 
 #leftCol {
-    width: 20%;
+	width: 20%;
 }
 
-
 #rightCol {
-    width: 35%;
+	width: 35%;
 }
 
 .claro .demoLayout .edgePanel {
-    background-color: #d0e9fc;
+	background-color: #d0e9fc;
 }
 
 .dijitButtonText {
-    font-size: 16px !important;
+	font-size: 16px !important;
 }
 
 li {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .recipe-item {
-    list-style-type: circle;
-    cursor: pointer;
-    font-style: normal;
+	list-style-type: circle;
+	cursor: pointer;
+	font-style: normal;
 }
 
 .category-heading {
-    list-style-type: none; /* Remove default bullet */
-    font-style: italic;
-    margin-left: -36px;
+	list-style-type: none; /* Remove default bullet */
+	font-style: italic;
+	margin-left: -36px;
 }
 
 .selectedRecipe {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .conditional-space:after {
-    content: " ";
+	content: " ";
 }
 
 /* Prevent line breaks after word constituents */
 .conditional-space + * {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 h2 {
-    margin-top: 0px;
-    margin-bottom: 12px;
+	margin-top: 0px;
+	margin-bottom: 12px;
 }
 
-
-h3,h4,h5,h6,h7,h8 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .search-box-control {
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    width: 95%;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width: 95%;
 }
 
 .gears-control {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    cursor: pointer;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	cursor: pointer;
 }
 
-
 .recipe-clock {
-    position: absolute;
-    top: 10px;
-    right: 80px;
-    font-size: 16px !important;
+	position: absolute;
+	top: 10px;
+	right: 80px;
+	font-size: 16px !important;
 }
 
 .toggle-button {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 10px;
 }
 
 .search-box-control {
-    background-color: lightyellow;
+	background-color: lightyellow;
 }
 
 .search-box-control:focus {
-    background-color: #eeff2e;
+	background-color: #eeff2e;
 }
 
 /* Tooltip container */
 .tooltip {
-    margin-left: 5px;
-    font-size: 12px;
+	margin-left: 5px;
+	font-size: 12px;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 90%;
-    background-color: lightgrey;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+	visibility: hidden;
+	width: 90%;
+	background-color: lightgrey;
+	color: black;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
 
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.9s;
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.9s;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .tooltiptext-para {
-    text-align:left;
-    padding-left: 5px;
-    padding-right: 5px;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #recipeDrawer {
-    width: 390px;
-    height: 999%;
-    background-color: #f0f0f0;
-    position: absolute;
-    top: 0;
-    left: -400px;
-    border: double;
-    transition: left 0.3s ease;
+	width: 390px;
+	height: 999%;
+	background-color: #f0f0f0;
+	position: absolute;
+	top: 0;
+	left: -400px;
+	border: double;
+	transition: left 0.3s ease;
 }
 
 .hidden {
-    left: 0;
-    height: 100%;
+	left: 0;
+	height: 100%;
 }
 
 .gearsButtonIcon {
-    background-image: url('../images/gears.png');
-    width: 24px;
-    height: 24px;
-    background-size: cover;
+	background-image: url("../images/gears.png");
+	width: 24px;
+	height: 24px;
+	background-size: cover;
 }
 .scaleRecipeIcon {
-    background-image: url('../images/scales.png');
-    width: 24px;
-    height: 24px;
-    background-size: cover;
+	background-image: url("../images/scales.png");
+	width: 24px;
+	height: 24px;
+	background-size: cover;
 }
 .printerIcon {
-    background-image: url('../images/printer.jpg');
-    width: 24px;
-    height: 24px;
-    background-size: cover;
+	background-image: url("../images/printer.jpg");
+	width: 24px;
+	height: 24px;
+	background-size: cover;
 }
 .emailLinkIcon {
-    background-image: url('../images/email-link.png');
-    width: 36px;
-    height: 36px;
-    background-size: cover;
-    margin-left: -8px;
+	background-image: url("../images/email-link.png");
+	width: 36px;
+	height: 36px;
+	background-size: cover;
+	margin-left: -8px;
 }
 .small-A {
-    background-image: url('../images/letter-A.jpg');
-    width: 6px;
-    height: 6px;
-    background-size: cover;
+	background-image: url("../images/letter-A.jpg");
+	width: 6px;
+	height: 6px;
+	background-size: cover;
 }
 .medium-A {
-    background-image: url('../images/letter-A.jpg');
-    width: 12px;
-    height: 12px;
-    background-size: cover;
+	background-image: url("../images/letter-A.jpg");
+	width: 12px;
+	height: 12px;
+	background-size: cover;
 }
 .large-A {
-    background-image: url('../images/letter-A.jpg');
-    width: 24px;
-    height: 24px;
-    background-size: cover;
+	background-image: url("../images/letter-A.jpg");
+	width: 24px;
+	height: 24px;
+	background-size: cover;
 }
 .color-picker-icon {
-    background-image: url('../images/color-picker-icon.png');
-    width: 24px;
-    height: 24px;
-    background-size: cover;
+	background-image: url("../images/color-picker-icon.png");
+	width: 24px;
+	height: 24px;
+	background-size: cover;
 }
 .alarm-clock-icon {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 }
 .itemClicked {
-    color: gray !important;
-    font-style: italic !important;
+	color: gray !important;
+	font-style: italic !important;
 }
 .verticallyAligned {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center align items */
+	display: flex; /* Use flexbox for alignment */
+	align-items: center; /* Vertically center align items */
 }
 amount {
-    color: slateblue;
+	color: slateblue;
 }
 .dijitMenuItem {
-    font-size: 18px !important;
+	font-size: 18px !important;
 }
 .recipe-statistic {
-    font-size: 18px !important;
+	font-size: 18px !important;
 }
 .dijitMenuItemLabel {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 .text-align-left {
-  text-align: left;
+	text-align: left;
 }
 .text-align-right {
-  text-align: right;
+	text-align: right;
 }
