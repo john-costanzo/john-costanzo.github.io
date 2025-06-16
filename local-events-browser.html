@@ -28,7 +28,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-15 @ 13:01:03";
+			const localEventBrowserVersion = "Sunday, 2025-06-15 @ 20:29:27";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -494,6 +494,9 @@
 			// Calculate date range for display
 			const twoWeeksLater = new Date(today);
 			twoWeeksLater.setDate(today.getDate() + 14);
+			console.warn(
+				`groupAndSortByDate: today=${today}  twoWeeksLater=${twoWeeksLater}`,
+			);
 
 			document.getElementById("date-range").textContent =
 				`${formatDate(today)} - ${formatDate(twoWeeksLater)}`;
@@ -502,6 +505,9 @@
 			function organizeEventsByDate(events, startDate, endDate) {
 				const startDateObj = new Date(startDate);
 				const endDateObj = new Date(endDate);
+				console.warn(
+					`organizeEventsByDate: startDate=${startDate}  endDate=${endDate}`,
+				);
 
 				// Filter events within date range
 				const filteredEvents = events.filter((event) => {
@@ -691,8 +697,8 @@
 
 				const organizedEvents = organizeEventsByDate(
 					filteredEvents,
-					toLocaleDateString(today).split("T")[0],
-					toLocaleDateString(endDate).split("T")[0],
+					getLocalISODateString(today).split("T")[0],
+					getLocalISODateString(endDate).split("T")[0],
 				);
 
 				renderEvents(organizedEvents);
@@ -752,8 +758,8 @@
 
 				const organizedEvents = organizeEventsByDate(
 					events,
-					today.toISOString().split("T")[0],
-					endDate.toISOString().split("T")[0],
+					getLocalISODateString(today).split("T")[0],
+					getLocalISODateString(endDate).split("T")[0],
 				);
 
 				renderEvents(organizedEvents);
