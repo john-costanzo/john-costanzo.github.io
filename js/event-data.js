@@ -1,18 +1,6 @@
-const eventDataVersion = "Sunday, 2025-06-15 12:00:31";
-console.log("eventDataVersion = Sunday, 2025-06-15 12:00:31")
+const eventDataVersion = "Sunday, 2025-06-15 20:00:34";
+console.log("eventDataVersion = Sunday, 2025-06-15 20:00:34")
 const events = [
-    {
-        url: "https://pointlookoutvineyards.com/whats-happening",
-        venue: "Point Lookout",
-        date: "2025-06-15",
-        time: "12:00 pm - 3:00 pm",
-        start_time: "12:00 pm",
-        end_time: "3:00 pm",
-        name: "Father’s Day BBQ",
-        sorttime: "2025-06-15 12:00",
-        detail: "None",
-        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
-    },
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
@@ -784,18 +772,6 @@ const events = [
     {
         url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
-        date: "2025-06-15",
-        time: "3:00 pm - 5:00 pm",
-        start_time: "3:00 pm",
-        end_time: "5:00 pm",
-        name: "Pleasure Chest",
-        sorttime: "2025-06-15 15:00",
-        detail: "Music starts @3pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
-    },
-    {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
         date: "2025-06-19",
         time: "7:30 pm - 10:30 pm",
         start_time: "7:30 pm",
@@ -887,6 +863,18 @@ const events = [
         name: "Cody Gentry Trio",
         sorttime: "2025-06-29 15:00",
         detail: "Music starts @3pm",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        date: "2025-07-03",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "Bearded Bards LIVE @ Oklawaha",
+        sorttime: "2025-07-03 19:00",
+        detail: "Music starts @6pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -1516,18 +1504,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
-        date: "2025-06-14",
-        time: " 7:00 pm - 10:00 pm",
-        start_time: " 7:00 pm",
-        end_time: "10:00 pm",
-        name: "Live Music with Christine Chandler at the Ridge",
-        sorttime: "2025-06-14 19:00",
-        detail: "Come enjoy Christina Chandler! MEMPHIS-MADE AND MOUNTAIN-BOUND. Enjoy a cold glass of beer or cider while enjoying the tunes of Christina Chandler!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
         date: "2025-06-15",
         time: " 6:30 pm -  9:30 pm",
         start_time: " 6:30 pm",
@@ -1559,6 +1535,18 @@ const events = [
         name: "Bill and Tad Amazing Duo at the Ridge!",
         sorttime: "2025-06-22 18:30",
         detail: "An afternoon with Bill and Tad! Doesn't get any better than that, great music, great cider and great friends! See you at the Ridge",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-06-14",
+        time: " 7:00 pm - 10:00 pm",
+        start_time: " 7:00 pm",
+        end_time: "10:00 pm",
+        name: "Live Music with Christine Chandler at the Ridge",
+        sorttime: "2025-06-14 19:00",
+        detail: "Come enjoy Christina Chandler! MEMPHIS-MADE AND MOUNTAIN-BOUND. Enjoy a cold glass of beer or cider while enjoying the tunes of Christina Chandler!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -1896,18 +1884,6 @@ const events = [
         sorttime: "2025-06-29 16:00",
         detail: "The last Sunday of the month we welcome back Peggy Ratusz, Adam Rose, and Bob Songster!",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        date: "2025-06-15",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: "Julio & the Saltines",
-        sorttime: "2025-06-15 14:00",
-        detail: "South Carolina’s ultimate party band, Julio & the Saltines provides ultra-high quality live entertainment to every crowd they encounter. Th...",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
