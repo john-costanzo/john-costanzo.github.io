@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
     <script>
-        const recipeBrowserVersion = "Sunday, 2025-06-15 @ 19:41:36";
+        const recipeBrowserVersion = "Sunday, 2025-06-15 @ 19:59:13";
     </script>
 
     <script>
@@ -31,6 +31,11 @@
         var commentMenuItem;
         const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
         var currentScalingPercentage = 100;
+        let largeFontSize = '16';
+        let mediumFontSize = '13';
+        let smallFontSize = '10';
+
+        var currentFontSize = mediumFontSize;
 
         let alertSounds = new Object( );
         alertSounds[ 60 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
@@ -619,12 +624,6 @@
     <script src="js/circular-timer-using-dojo.js"></script>
     <script src="js/recipe-scaling.js"></script>
     <script>
-        let largeFontSize = '16';
-        let mediumFontSize = '13';
-        let smallFontSize = '10';
-
-        var currentFontSize = mediumFontSize;
-
         function changeSearchTerm( newSearchTerm ) {
             const searchBox = document.getElementById( "searchBox" );
             if ( searchBox ) {
@@ -644,30 +643,28 @@
         }
 
         function changeFontSize( selector, newFontSize ) {
-            if ( currentFontSize != newFontSize ) {
-                let styleElement = document.getElementById( 'dynamic-styles' );
+            let styleElement = document.getElementById( 'dynamic-styles' );
 
-                if ( !styleElement ) {
-                    const style = document.createElement( 'style' );
-                    style.id = 'dynamic-styles';
-                    styleElement = document.head.appendChild( style );
-                }
+            if ( !styleElement ) {
+                const style = document.createElement( 'style' );
+                style.id = 'dynamic-styles';
+                styleElement = document.head.appendChild( style );
+            }
 
-                const styleSheet = styleElement.sheet;
+            const styleSheet = styleElement.sheet;
 
-                const ruleIndex = Array.from( styleSheet.cssRules ).findIndex( rule => rule.selectorText === selector );
+            const ruleIndex = Array.from( styleSheet.cssRules ).findIndex( rule => rule.selectorText === selector );
 
-                if ( ruleIndex !== -1 ) {
-                    styleSheet.deleteRule( ruleIndex );
-                }
+            if ( ruleIndex !== -1 ) {
+                styleSheet.deleteRule( ruleIndex );
+            }
 
-                const newRule = `${selector} {
+            const newRule = `${selector} {
                                         font-size: calc(${newFontSize}px + 0.390625vw);
                            }`;
 
-                styleSheet.insertRule( newRule, styleSheet.cssRules.length );
-                currentFontSize = newFontSize;
-            }
+            styleSheet.insertRule( newRule, styleSheet.cssRules.length );
+            currentFontSize = newFontSize;
         }
 
         function fontSizeDescriptionToValue( fontSizeDescription ) {
