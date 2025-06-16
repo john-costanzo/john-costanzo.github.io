@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Recipe Browser</title>
     <script>
-        const recipeBrowserVersion = "Monday, 2025-06-16 @ 14:19:34";
+        const recipeBrowserVersion = "Monday, 2025-06-16 @ 15:09:01";
     </script>
 
     <script>
@@ -31,9 +31,9 @@
         var commentMenuItem;
         const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
         var currentScalingPercentage = 100;
-        let largeFontSize = '26';
-        let mediumFontSize = '22';
-        let smallFontSize = '18';
+        const largeFontSize = 'large-text';
+        const mediumFontSize = 'medium-text';
+        const smallFontSize = 'small-text';
 
         var currentFontSize = mediumFontSize;
 
@@ -643,27 +643,16 @@
         }
 
         function changeFontSize( selector, newFontSize ) {
-            let styleElement = document.getElementById( 'dynamic-styles' );
-
-            if ( !styleElement ) {
-                const style = document.createElement( 'style' );
-                style.id = 'dynamic-styles';
-                styleElement = document.head.appendChild( style );
-            }
-
-            const styleSheet = styleElement.sheet;
-
-            const ruleIndex = Array.from( styleSheet.cssRules ).findIndex( rule => rule.selectorText === selector );
-
-            if ( ruleIndex !== -1 ) {
-                styleSheet.deleteRule( ruleIndex );
-            }
-
-            const newRule = `${selector} {
-                                        font-size: calc(${newFontSize}px + 0.390625vw);
-                           }`;
-
-            styleSheet.insertRule( newRule, styleSheet.cssRules.length );
+            require( [ "dojo/query", "dojo/dom-class", "dojo/domReady!" ],
+                function( query, domClass ) {
+                    const selectorElements = query( selector );
+                    selectorElements.forEach( function( node ) {
+                        domClass.remove( node, "small-text" );
+                        domClass.remove( node, "medium-text" );
+                        domClass.remove( node, "large-text" );
+                        domClass.add( node, newFontSize );
+                    } );
+                } );
             currentFontSize = newFontSize;
         }
 

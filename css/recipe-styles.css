@@ -258,3 +258,25 @@ amount {
 .text-align-right {
 	text-align: right;
 }
+
+.small-text {
+	font-size: 16px;
+}
+.medium-text {
+	font-size: 22px;
+}
+.large-text {
+	font-size: 26px;
+}
+
+@media (max-width: 414px) {
+	.small-text {
+		font-size: 14px;
+	}
+	.medium-text {
+		font-size: 34px;
+	}
+	.large-text {
+		font-size: 42px;
+	}
+}
