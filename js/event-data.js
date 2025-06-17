@@ -1,5 +1,5 @@
-const eventDataVersion = "Tuesday, 2025-06-17 17:47:14";
-console.log("eventDataVersion = Tuesday, 2025-06-17 17:47:14")
+const eventDataVersion = "Tuesday, 2025-06-17 17:59:36";
+console.log("eventDataVersion = Tuesday, 2025-06-17 17:59:36")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -1402,8 +1402,7 @@ const events = [
         end_time: " 1:00 am",
         name: "Beginning of Summer Kick-Off with Sound Invasion!",
         sorttime: "2025-06-20 22:00",
-        detail: "Come Dance the night away with the Sound Invasion - Summer Kick-off
-Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
+        detail: "Come Dance the night away with the Sound Invasion - Summer Kick-off Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
@@ -1463,8 +1462,7 @@ Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. 
         end_time: " 1:00 am",
         name: "Beginning of Summer Kick-Off with Sound Invasion!",
         sorttime: "2025-06-20 22:00",
-        detail: "Come Dance the night away with the Sound Invasion - Summer Kick-off
-Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
+        detail: "Come Dance the night away with the Sound Invasion - Summer Kick-off Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
