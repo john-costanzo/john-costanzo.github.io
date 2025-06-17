@@ -1,5 +1,5 @@
-const eventDataVersion = "Tuesday, 2025-06-17 18:15:25";
-console.log("eventDataVersion = Tuesday, 2025-06-17 18:15:25")
+const eventDataVersion = "Tuesday, 2025-06-17 18:26:19";
+console.log("eventDataVersion = Tuesday, 2025-06-17 18:26:19")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -2531,7 +2531,7 @@ const events = [
         name: "Blue Ridge Community College Music by the Lake Concert: Asheville Junction",
         sorttime: "2025-06-22 17:00",
         detail: "None",
-        location: "Music on Main Main St. Hendersonville",
+        location: "Blue Ridge Community College, Flat Rock",
     },
     {
         url: "https://visithendersonvillenc.org/summer-concerts",
@@ -2543,7 +2543,7 @@ const events = [
         name: "Blue Ridge Community College Music by the Lake Concert: Lynn Goldsmith & The Jeter Mountain Band",
         sorttime: "2025-07-27 17:00",
         detail: "None",
-        location: "Music on Main Main St. Hendersonville",
+        location: "Blue Ridge Community College, Flat Rock",
     },
     {
         url: "https://visithendersonvillenc.org/summer-concerts",
@@ -2555,7 +2555,7 @@ const events = [
         name: "Blue Ridge Community College Music by the Lake: The Julie McConnell Quartet",
         sorttime: "2025-08-10 17:00",
         detail: "None",
-        location: "Music on Main Main St. Hendersonville",
+        location: "Blue Ridge Community College, Flat Rock",
     },
     {
         url: "https://visithendersonvillenc.org/summer-concerts",
@@ -2567,7 +2567,7 @@ const events = [
         name: "Blue Ridge Community College Music by the Lake Concert: Tuxedo Junction",
         sorttime: "2025-08-17 17:00",
         detail: "None",
-        location: "Music on Main Main St. Hendersonville",
+        location: "Blue Ridge Community College, Flat Rock",
     },
     {
         url: "https://visithendersonvillenc.org/summer-concerts",
@@ -2579,7 +2579,7 @@ const events = [
         name: "Rockin’ on the Rock with Showboat Band",
         sorttime: "5:00 pm - ?",
         detail: "None",
-        location: "Music on Main Main St. Hendersonville",
+        location: "Jump Off Rock, Laurel Park, NC and Laurel Green Park",
     },
     {
         url: "https://visithendersonvillenc.org/summer-concerts",
@@ -2591,7 +2591,7 @@ const events = [
         name: "Rockin’ on the Rock with Autumnwud",
         sorttime: "5:00 pm - ?",
         detail: "None",
-        location: "Music on Main Main St. Hendersonville",
+        location: "Jump Off Rock, Laurel Park, NC and Laurel Green Park",
     },
     {
         url: "https://www.ncarboretum.org/events/month/2025-06",
