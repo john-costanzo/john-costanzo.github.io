@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-06-18 11:02:51";
-console.log("eventDataVersion = Wednesday, 2025-06-18 11:02:51")
+const eventDataVersion = "Wednesday, 2025-06-18 12:00:29";
+console.log("eventDataVersion = Wednesday, 2025-06-18 12:00:29")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -298,6 +298,18 @@ const events = [
         end_time: "9:00 pm",
         name: "Live Music: Riyen Roots",
         sorttime: "2025-06-20 18:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-06-21",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Trucks: Milk & Honey, Panorama Mediterranean Grill, Silly Willie's Hot Dogs",
+        sorttime: "¿ - ?",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
