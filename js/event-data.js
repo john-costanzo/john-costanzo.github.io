@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-06-18 12:00:29";
-console.log("eventDataVersion = Wednesday, 2025-06-18 12:00:29")
+const eventDataVersion = "Wednesday, 2025-06-18 20:00:37";
+console.log("eventDataVersion = Wednesday, 2025-06-18 20:00:37")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -1768,6 +1768,18 @@ const events = [
     {
         url: "https://www.sabrewery.com/events/2025-06",
         venue: "Southern App",
+        date: "2025-06-27",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "Possum Royale",
+        sorttime: "2025-06-27 19:00",
+        detail: "Possum Royale has the distinction of being the very first band to perform at Southern App in the year 2025.\nThey also have the distinction of being the only current band…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-06",
+        venue: "Southern App",
         date: "2025-06-28",
         time: "7:00 pm - 9:00 pm",
         start_time: "7:00 pm",
@@ -1799,6 +1811,18 @@ const events = [
         name: "SundayFunday w/Peggy Ratusz, Adam Rose, and Bob Songster",
         sorttime: "2025-06-29 16:00",
         detail: "The last Sunday of the month we welcome back Peggy Ratusz, Adam Rose, and Bob Songster!",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
+        date: "2025-07-02",
+        time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: "Jason DeCristofaro’s Jazz Jam",
+        sorttime: "2025-07-02 18:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -3065,6 +3089,18 @@ const events = [
         url: "https://www.ncarboretum.org/events/month/2025-06",
         venue: "Arboretum",
         date: "2025-07-02",
+        time: "11:00 am - 8:30 pm",
+        start_time: "11:00 am",
+        end_time: "8:30 pm",
+        name: "Founder’s Day",
+        sorttime: "2025-07-02 11:00",
+        detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media.",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://www.ncarboretum.org/events/month/2025-06",
+        venue: "Arboretum",
+        date: "2025-07-02",
         time: "5:30 pm - 8:30 pm",
         start_time: "5:30 pm",
         end_time: "8:30 pm",
@@ -3154,6 +3190,18 @@ const events = [
         end_time: "1:00 pm",
         name: "Botanical Drawing for Beginners",
         sorttime: "2025-07-01 11:00",
+        detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media.",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://www.ncarboretum.org/events/month/2025-07",
+        venue: "Arboretum",
+        date: "2025-07-02",
+        time: "11:00 am - 8:30 pm",
+        start_time: "11:00 am",
+        end_time: "8:30 pm",
+        name: "Founder’s Day",
+        sorttime: "2025-07-02 11:00",
         detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media.",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
