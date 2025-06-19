@@ -1,5 +1,5 @@
-const eventDataVersion = "Thursday, 2025-06-19 11:00:29";
-console.log("eventDataVersion = Thursday, 2025-06-19 11:00:29")
+const eventDataVersion = "Thursday, 2025-06-19 12:00:40";
+console.log("eventDataVersion = Thursday, 2025-06-19 12:00:40")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -4373,10 +4373,10 @@ const events = [
         url: "https://jandmfarmsnc.com/the-corner-at-j%26m",
         venue: "J&M Farms",
         date: "2025-06-21",
-        time: "5:00 pm - 8:00 pm",
+        time: "5:00 pm - 9:00 pm",
         start_time: "5:00 pm",
-        end_time: "8:00 pm",
-        name: "3 Shades of Gray",
+        end_time: "9:00 pm",
+        name: "The Accentrix",
         sorttime: "2025-06-21 17:00",
         detail: "None",
         location: "J&M Farms 3016 Chimney Rock Road, Hendersonville, NC 28792",
