@@ -1,5 +1,5 @@
-const eventDataVersion = "Friday, 2025-06-20 11:34:02";
-console.log("eventDataVersion = Friday, 2025-06-20 11:34:02")
+const eventDataVersion = "Friday, 2025-06-20 12:02:29";
+console.log("eventDataVersion = Friday, 2025-06-20 12:02:29")
 const events = [
     {
         url: "",
