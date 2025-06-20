@@ -1,5 +1,5 @@
-const eventDataVersion = "Friday, 2025-06-20 09:58:50";
-console.log("eventDataVersion = Friday, 2025-06-20 09:58:50")
+const eventDataVersion = "Friday, 2025-06-20 10:02:28";
+console.log("eventDataVersion = Friday, 2025-06-20 10:02:28")
 const events = [
     {
         url: "",
@@ -8,7 +8,7 @@ const events = [
         time: "",
         start_time: "",
         end_time: "",
-        name: "Failed to fetch events: HTTPSConnectionPool(host='pointlookoutvineyards.com', port=443): Max retries exceeded with url: /whats-happening (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb377a11a50>: Failed to resolve 'pointlookoutvineyards.com' ([Errno -3] Temporary failure in name resolution)"))",
+        name: "Failed to fetch events: HTTPSConnectionPool(host='pointlookoutvineyards.com', port=443): Max retries exceeded with url: /whats-happening (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:992)')))",
         sorttime: "",
         detail: "",
         location: "",
@@ -20,7 +20,7 @@ const events = [
         time: "",
         start_time: "",
         end_time: "",
-        name: "Failed to fetch events: HTTPSConnectionPool(host='southerwilliams.com', port=443): Max retries exceeded with url: /events (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb377a11ad0>: Failed to resolve 'southerwilliams.com' ([Errno -3] Temporary failure in name resolution)"))",
+        name: "Failed to fetch events: HTTPSConnectionPool(host='southerwilliams.com', port=443): Max retries exceeded with url: /events (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:992)')))",
         sorttime: "",
         detail: "",
         location: "",
