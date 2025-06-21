@@ -1,5 +1,5 @@
-const eventDataVersion = "Saturday, 2025-06-21 09:00:31";
-console.log("eventDataVersion = Saturday, 2025-06-21 09:00:31")
+const eventDataVersion = "Saturday, 2025-06-21 11:06:15";
+console.log("eventDataVersion = Saturday, 2025-06-21 11:06:15")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -1300,18 +1300,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
-        date: "2025-06-20",
-        time: "10:00 pm -  1:00 am",
-        start_time: "10:00 pm",
-        end_time: " 1:00 am",
-        name: "Beginning of Summer Kick-Off with Sound Invasion!",
-        sorttime: "2025-06-20 22:00",
-        detail: "Come Dance the night away with the Sound Invasion - Summer Kick-off Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
-        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/vineyard-events",
-        venue: "St. Paul",
         date: "2025-06-21",
         time: " 7:00 pm - 10:00 pm",
         start_time: " 7:00 pm",
@@ -1358,8 +1346,8 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
+        url: "https://www.saintpaulfarms.com/vineyard-events",
+        venue: "St. Paul",
         date: "2025-06-20",
         time: "10:00 pm -  1:00 am",
         start_time: "10:00 pm",
@@ -1367,7 +1355,7 @@ const events = [
         name: "Beginning of Summer Kick-Off with Sound Invasion!",
         sorttime: "2025-06-20 22:00",
         detail: "Come Dance the night away with the Sound Invasion - Summer Kick-off Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
@@ -1391,6 +1379,18 @@ const events = [
         name: "Bill and Tad Amazing Duo at the Ridge!",
         sorttime: "2025-06-22 18:30",
         detail: "An afternoon with Bill and Tad! Doesn't get any better than that, great music, great cider and great friends! See you at the Ridge",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-06-20",
+        time: "10:00 pm -  1:00 am",
+        start_time: "10:00 pm",
+        end_time: " 1:00 am",
+        name: "Beginning of Summer Kick-Off with Sound Invasion!",
+        sorttime: "2025-06-20 22:00",
+        detail: "Come Dance the night away with the Sound Invasion - Summer Kick-off Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
