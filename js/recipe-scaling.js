@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Saturday, 2025-06-21 @ 01:39:49";
+const recipeScalingVersion = "Saturday, 2025-06-21 @ 19:49:48";
 
 /*
  *    In response to this prompt:
@@ -83,13 +83,18 @@ function updateAmounts( scaling_factor ) {
     for ( let element of amountElements ) {
         // Get the fraction and units attributes
         const fraction = parseFloat( element.getAttribute( "fraction" ) );
+        const original_amount = element.getAttribute( "original_amount" );
         const units = element.getAttribute( "units" );
 
         // Calculate the new amount
         const newAmount = scaling_factor * fraction;
 
         // Set the element's value to the new amount concatenated with units
-        element.textContent = numberToFraction( newAmount ) + " " + units;
+        if ( scaling_factor === 1 ) {
+            element.textContent = original_amount;
+        } else {
+            element.textContent = numberToFraction( newAmount ) + " " + units;
+        }
 
         // Handle the title attribute based on scaling_factor
         if ( scaling_factor === 1 ) {
