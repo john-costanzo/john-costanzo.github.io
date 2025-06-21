@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Sunday, 2025-06-15 @ 17:25:53";
+const recipeScalingVersion = "Saturday, 2025-06-21 @ 01:39:49";
 
 /*
  *    In response to this prompt:
@@ -20,7 +20,7 @@ const recipeScalingVersion = "Sunday, 2025-06-15 @ 17:25:53";
 
 function promptForScalingPercentage( ) {
     // Prompt the user for a scalingPercentage
-    const scalingPercentageText = prompt( "Please enter a percentage with which to scale the recipe:" );
+    var scalingPercentageText = prompt( "Please enter a percentage with which to scale the recipe:" );
 
     scalingPercentageText = scalingPercentageText.replace( /\s+/g, '' );
 
