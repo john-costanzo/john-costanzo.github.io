@@ -1,5 +1,5 @@
-const eventDataVersion = "Saturday, 2025-06-21 12:00:31";
-console.log("eventDataVersion = Saturday, 2025-06-21 12:00:31")
+const eventDataVersion = "Saturday, 2025-06-21 20:00:31";
+console.log("eventDataVersion = Saturday, 2025-06-21 20:00:31")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -1776,18 +1776,6 @@ const events = [
         sorttime: "2025-07-30 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        date: "2025-06-21",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: "The Heavy Lifters",
-        sorttime: "2025-06-21 14:00",
-        detail: "Heavy Lifters are an 8-piece ska / reggae / soul band based in Brevard, NC. Lifting spirits on the dance floor since 2023! With a repertoire of both o...",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
