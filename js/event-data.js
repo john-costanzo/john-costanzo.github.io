@@ -1,5 +1,5 @@
-const eventDataVersion = "Tuesday, 2025-06-24 13:41:02";
-console.log("eventDataVersion = Tuesday, 2025-06-24 13:41:02")
+const eventDataVersion = "Tuesday, 2025-06-24 20:00:32";
+console.log("eventDataVersion = Tuesday, 2025-06-24 20:00:32")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -647,18 +647,6 @@ const events = [
         name: "Traditional Irish Music Session",
         sorttime: "2025-07-21 16:00",
         detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-07-21",
-        time: "6:30 pm - 8:30 pm",
-        start_time: "6:30 pm",
-        end_time: "8:30 pm",
-        name: "Paint Your Own Pottery Class!",
-        sorttime: "2025-07-21 18:30",
-        detail: "Join us for a Paint your own Pottery class with Half Light Honey! Click here for more information!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
