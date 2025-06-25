@@ -1,5 +1,5 @@
-const eventDataVersion = "Tuesday, 2025-06-24 20:00:32";
-console.log("eventDataVersion = Tuesday, 2025-06-24 20:00:32")
+const eventDataVersion = "Wednesday, 2025-06-25 08:00:34";
+console.log("eventDataVersion = Wednesday, 2025-06-25 08:00:34")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -204,30 +204,6 @@ const events = [
         sorttime: "2025-07-20 14:00",
         detail: "Americana Soul, Singer-songwriter & guitarist, Whitney Mongé learned to capture",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-06-24",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Panorama Mediterranean Grill",
-        sorttime: "¿ - ?",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-06-24",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: "Round Robin Open Mic Hosted by Letters To Abigail",
-        sorttime: "2025-06-24 18:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://trailsidebrews.com/calendar",
@@ -671,6 +647,18 @@ const events = [
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-07-23 18:00",
         detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-07-24",
+        time: "6:30 pm - 8:30 pm",
+        start_time: "6:30 pm",
+        end_time: "8:30 pm",
+        name: "Adventure Film Night: Five Summer Stories Film",
+        sorttime: "2025-07-24 18:30",
+        detail: "Join us at Trailside Brewing Co. for our FREE Adventure Film Series with seven films (listed below) this April-July, sponsored by Mast General Store!\nFive Summer Stories screens Thursday, July 24 at 6:30 PM and is an iconic surf film that changed the genre forever! Widely regarded as the greatest surf movie of all time, this visually stunning and culturally significant film captured the soul of surfing in the 1970s, featuring legendary surfers like Gerry Lopez, Eddie Aikau, and Shaun Tomson.\nNow digitally remastered with a brand-new soundtrack featuring Honk and The Beach Boys, this 50th-anniversary edition expands the original five stories to ten, bringing even more groundbreaking cinematography and timeless surf culture to the big screen.\nWhether you’re a lifelong surfer or just love epic adventure films, don’t miss this chance to experience a piece of surf history!\nWe’re excited to have Created for Adventure, a locally owned Teen Adventure camp as the co-host and emcee of the film.\n✨ What to Expect:🎥 A visually stunning, digitally remastered 50th-anniversary edition of the greatest surf film of all time, featuring legendary surfers, groundbreaking cinematography, and a new soundtrack by Honk and The Beach Boys.🍻 Drinks from Trailside Brewing & food available for purchase🎟️ FREE & open to all ages!Mark your calendar, invite your friends, and come celebrate adventure with us! Let us know you’re coming—we can’t wait to see you on July 24!Adventure Film Series at Trailside BrewingThursday Evenings at 6:30pmFree Community EventApril 17: Women’s Adventure FilmMay 1: Climbing Film TourMay 22: Fly Fishing TourJune 5: One Ocean Film TourJune 26: Run Nation Film FestivalJuly 3: A Life of Endless Summer FilmJuly 24: 5 Summer Stories Film",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -4474,7 +4462,7 @@ const events = [
         end_time: "8:30 PM",
         name: "Run Club",
         sorttime: "2025-06-24 18:00",
-        detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer.  We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
+        detail: "https://www.facebook.com/groups/1795381247483886",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
@@ -4499,6 +4487,18 @@ const events = [
         name: "Karaoke",
         sorttime: "2025-06-27 18:00",
         detail: "Karaoke with Thunderstruck Entertainment. Every 1st, 2nd, and 3rd Friday of the month from 6-10pm",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
+        venue: "Guidon",
+        date: "2025-07-01",
+        time: "6:00 pm - 8:30 pm",
+        start_time: "6:00 PM",
+        end_time: "8:30 PM",
+        name: "Run Club",
+        sorttime: "2025-07-01 18:00",
+        detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer.  We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
