@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-06-25 20:00:33";
-console.log("eventDataVersion = Wednesday, 2025-06-25 20:00:33")
+const eventDataVersion = "Wednesday, 2025-06-25 20:16:02";
+console.log("eventDataVersion = Wednesday, 2025-06-25 20:16:02")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -370,7 +370,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-30 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -382,7 +382,7 @@ const events = [
         end_time: "8:00 pm",
         name: "Paint & Sip with Monet and Chardonnay",
         sorttime: "2025-06-30 18:00",
-        detail: "Unleash your creativity with us at Trailside Brewing Company on Monday, June 30 at 6:00 pm! No experience is needed. Our skilled instructors will help guide you through each step so that you can create a beautiful painting! Registration link coming soon!\nEveryone will receive a 16x20\" canvas with a pre-sketched drawing and all necessary painting supplies. We kindly ask that each guest buys at least one drink or menu item to support this awesome venue. For the best experience, we recommend arriving early to get cozy and order some tasty bites/beverages before we begin!",
+        detail: "Unleash your creativity with us at Trailside Brewing Company on Monday, June 30 at 6:00 pm! No experience is needed. Our skilled instructors will help guide you through each step so that you can create a beautiful painting! Registration link coming soon!\nEveryone will receive a 16x20\\" canvas with a pre-sketched drawing and all necessary painting supplies. We kindly ask that each guest buys at least one drink or menu item to support this awesome venue. For the best experience, we recommend arriving early to get cozy and order some tasty bites/beverages before we begin!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -466,7 +466,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-07-07 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -538,7 +538,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-07-14 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -622,7 +622,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-07-21 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
