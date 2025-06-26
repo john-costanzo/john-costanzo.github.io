@@ -1,5 +1,5 @@
-const eventDataVersion = "Thursday, 2025-06-26 12:56:54";
-console.log("eventDataVersion = Thursday, 2025-06-26 12:56:54")
+const eventDataVersion = "Thursday, 2025-06-26 13:29:05";
+console.log("eventDataVersion = Thursday, 2025-06-26 13:29:05")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
