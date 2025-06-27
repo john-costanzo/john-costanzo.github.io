@@ -1,5 +1,5 @@
-const eventDataVersion = "Thursday, 2025-06-26 14:02:16";
-console.log("eventDataVersion = Thursday, 2025-06-26 14:02:16")
+const eventDataVersion = "Thursday, 2025-06-26 22:25:34";
+console.log("eventDataVersion = Thursday, 2025-06-26 22:25:34")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -346,7 +346,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-06-30 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -358,7 +358,7 @@ const events = [
         end_time: "8:00 pm",
         name: "Paint & Sip with Monet and Chardonnay",
         sorttime: "2025-06-30 18:00",
-        detail: "Unleash your creativity with us at Trailside Brewing Company on Monday, June 30 at 6:00 pm! No experience is needed. Our skilled instructors will help guide you through each step so that you can create a beautiful painting! Registration link coming soon!\nEveryone will receive a 16x20\" canvas with a pre-sketched drawing and all necessary painting supplies. We kindly ask that each guest buys at least one drink or menu item to support this awesome venue. For the best experience, we recommend arriving early to get cozy and order some tasty bites/beverages before we begin!",
+        detail: "Unleash your creativity with us at Trailside Brewing Company on Monday, June 30 at 6:00 pm! No experience is needed. Our skilled instructors will help guide you through each step so that you can create a beautiful painting! Registration link coming soon!\nEveryone will receive a 16x20\\" canvas with a pre-sketched drawing and all necessary painting supplies. We kindly ask that each guest buys at least one drink or menu item to support this awesome venue. For the best experience, we recommend arriving early to get cozy and order some tasty bites/beverages before we begin!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -490,7 +490,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-07-07 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -562,7 +562,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-07-14 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -646,7 +646,7 @@ const events = [
         end_time: "6:00 pm",
         name: "Traditional Irish Music Session",
         sorttime: "2025-07-21 16:00",
-        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \"craic\" as they say in Ireland!",
+        detail: "Liven up your evening with a taste of Ireland year round (paired with the finest brews!)  Jigs, reels and the occasional song will lift spirits.  Good \\"craic\\" as they say in Ireland!",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -684,18 +684,6 @@ const events = [
         sorttime: "2025-07-24 18:30",
         detail: "Join us at Trailside Brewing Co. for our FREE Adventure Film Series with seven films (listed below) this April-July, sponsored by Mast General Store!\nFive Summer Stories screens Thursday, July 24 at 6:30 PM and is an iconic surf film that changed the genre forever! Widely regarded as the greatest surf movie of all time, this visually stunning and culturally significant film captured the soul of surfing in the 1970s, featuring legendary surfers like Gerry Lopez, Eddie Aikau, and Shaun Tomson.\nNow digitally remastered with a brand-new soundtrack featuring Honk and The Beach Boys, this 50th-anniversary edition expands the original five stories to ten, bringing even more groundbreaking cinematography and timeless surf culture to the big screen.\nWhether you’re a lifelong surfer or just love epic adventure films, don’t miss this chance to experience a piece of surf history!\nWe’re excited to have Created for Adventure, a locally owned Teen Adventure camp as the co-host and emcee of the film.\n✨ What to Expect:🎥 A visually stunning, digitally remastered 50th-anniversary edition of the greatest surf film of all time, featuring legendary surfers, groundbreaking cinematography, and a new soundtrack by Honk and The Beach Boys.🍻 Drinks from Trailside Brewing & food available for purchase🎟️ FREE & open to all ages!Mark your calendar, invite your friends, and come celebrate adventure with us! Let us know you’re coming—we can’t wait to see you on July 24!Adventure Film Series at Trailside BrewingThursday Evenings at 6:30pmFree Community EventApril 17: Women’s Adventure FilmMay 1: Climbing Film TourMay 22: Fly Fishing TourJune 5: One Ocean Film TourJune 26: Run Nation Film FestivalJuly 3: A Life of Endless Summer FilmJuly 24: 5 Summer Stories Film",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
-        date: "2025-06-26",
-        time: "7:00 pm - 9:00 pm",
-        start_time: "7:00 pm",
-        end_time: "9:00 pm",
-        name: "Peggy Ratusz",
-        sorttime: "2025-06-26 19:00",
-        detail: "Music starts @7pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://oklawahabrewing.com/events",
@@ -791,6 +779,18 @@ const events = [
         name: "Phuncle Sam LIVE @Oklawaha!",
         sorttime: "2025-07-12 20:00",
         detail: "Music starts @8pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        date: "2025-07-13",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: "Peggy Ratusz Trio LIVE @Oklawaha!",
+        sorttime: "2025-07-13 14:00",
+        detail: "Music start @2pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -1708,6 +1708,18 @@ const events = [
     {
         url: "https://www.sabrewery.com/events/2025-07",
         venue: "Southern App",
+        date: "2025-07-04",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "Andrew Thelston Band",
+        sorttime: "2025-07-04 19:00",
+        detail: "The Andrew Thelston Band, voted #1 favorite rock band in the 2023 Best of WNC contest by Mountain Xpress, has been stunning audiences in the WNC region (and beyond) for…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
         date: "2025-07-05",
         time: "12:00 pm - 1:00 pm",
         start_time: "12:00 pm",
@@ -1720,6 +1732,30 @@ const events = [
     {
         url: "https://www.sabrewery.com/events/2025-07",
         venue: "Southern App",
+        date: "2025-07-05",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "Lewendahl Acoustic Trio",
+        sorttime: "2025-07-05 19:00",
+        detail: "Acoustic Trio with Jason DeCristofaro on Drums!!!\nLewendahl delivers smooth RnB vocals with funky instrumentation combining a joyous pairing of juicy licks with subtle nods to the soulful stylings of Cory…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
+        date: "2025-07-06",
+        time: "4:00 pm - 6:00 pm",
+        start_time: "4:00 pm",
+        end_time: "6:00 pm",
+        name: "The Dan Keller Trio",
+        sorttime: "2025-07-06 16:00",
+        detail: "Dan Keller’s band puts their own spin on timeless standards and melodies, without losing the grit and authenticity of jazz.\nMany eras from early swing, latin jazz, bebop, and soul-jazz are…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
         date: "2025-07-09",
         time: "6:00 pm - 8:00 pm",
         start_time: "6:00 pm",
@@ -1727,6 +1763,18 @@ const events = [
         name: "Jason DeCristofaro’s Jazz Night",
         sorttime: "2025-07-09 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
+        date: "2025-07-10",
+        time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: "EC & Howie Guitarmaggedon",
+        sorttime: "2025-07-10 18:00",
+        detail: "Lots of guitar and beer. This is not a drill.",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -1800,18 +1848,6 @@ const events = [
         sorttime: "2025-07-30 18:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        date: "2025-06-26",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: "Who’s Bad: The Ultimate Michael Jackson Experience",
-        sorttime: "2025-06-26 18:00",
-        detail: "$34.76 – ADV | $40.38 – Day of show | $51.62 – Early Access",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
