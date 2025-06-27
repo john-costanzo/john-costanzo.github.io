@@ -1,5 +1,5 @@
-const eventDataVersion = "Friday, 2025-06-27 11:00:30";
-console.log("eventDataVersion = Friday, 2025-06-27 11:00:30")
+const eventDataVersion = "Friday, 2025-06-27 14:54:53";
+console.log("eventDataVersion = Friday, 2025-06-27 14:54:53")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -832,18 +832,6 @@ const events = [
     {
         url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
-        date: "2025-06-26",
-        time: "5:00 pm - 7:00 pm",
-        start_time: "5:00 PM",
-        end_time: "7:00 PM",
-        name: "Macarons & Flight Pairing",
-        sorttime: "2025-06-26 17:00",
-        detail: "Sweet dreams are made of cider and macarons! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with delicate, flavorful macarons—all for just $18!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
         date: "2025-06-27",
         time: "6:00 pm - 9:00 pm",
         start_time: "6:00 PM",
@@ -959,6 +947,18 @@ const events = [
         name: "4th Annual Bold Rock Fishing Fest",
         sorttime: "2025-07-26 11:00",
         detail: "🎣 Reel in the Fun at our 4th Annual Fishing Fest! 🎶🐟Join us at Bold Rock Mills River on Saturday, July 26 for a day full of fishing, fun, and fundraising! We\'re casting out good vibes to support Casting for Recovery Carolinas with raffles, vendors, fishing education, and local fishing groups onsite.",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
+        url: "https://millsriver.boldrock.com/taproomevents",
+        venue: "Boldrock",
+        date: "2025-06-26",
+        time: "5:00 pm - 7:00 pm",
+        start_time: "5:00 PM",
+        end_time: "7:00 PM",
+        name: "Macarons & Flight Pairing",
+        sorttime: "2025-06-26 17:00",
+        detail: "Sweet dreams are made of cider and macarons! Join us for a deliciously indulgent evening featuring a flight of four refreshing Bold Rock ciders perfectly paired with delicate, flavorful macarons—all for just $18!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -1307,18 +1307,6 @@ const events = [
         name: "Finkelstein 3",
         sorttime: "2025-03-28 17:00",
         detail: "Stop by the taproom for live music from amazing local musicians while enjoying your favorite Bold Rock cider and a bite to eat.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        date: "2025-03-27",
-        time: "5:00 pm - 7:00 pm",
-        start_time: "5:00 PM",
-        end_time: "7:00 PM",
-        name: "Cheesecake & Flight Pairing",
-        sorttime: "2025-03-27 17:00",
-        detail: "Sweeten your day with the perfect pairing! Join us at the taproom for our Cheesecake & Flight Pairing—an exciting combo of creamy cheesecakes and crisp ciders. For just $18, it’s the ultimate treat to share with family and friends. Don’t miss out on this delicious experience!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
