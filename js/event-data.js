@@ -1,14 +1,5 @@
-year=2025 month=06: skipping event for 2025-07-01...
-year=2025 month=06: skipping event for 2025-07-02...
-year=2025 month=06: skipping event for 2025-07-03...
-year=2025 month=06: skipping event for 2025-07-04...
-year=2025 month=06: skipping event for 2025-07-05...
-year=2025 month=07: skipping event for 2025-06-29...
-year=2025 month=07: skipping event for 2025-06-30...
-year=2025 month=07: skipping event for 2025-08-01...
-year=2025 month=07: skipping event for 2025-08-02...
-const eventDataVersion = "Saturday, 2025-06-28 15:24:46";
-console.log("eventDataVersion = Saturday, 2025-06-28 15:24:46")
+const eventDataVersion = "Saturday, 2025-06-28 15:29:08";
+console.log("eventDataVersion = Saturday, 2025-06-28 15:29:08")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -1297,6 +1288,18 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
+        date: "2025-06-27",
+        time: "10:00 pm -  1:00 am",
+        start_time: "10:00 pm",
+        end_time: " 1:00 am",
+        name: "3 Shades of Gray perform to kick off our Friday Night Summer Music at the Ridge",
+        sorttime: "2025-06-27 22:00",
+        detail: "Enjoy great music  and great cider, wine, beer & BBQ !  3 Shades of Gray play at the Appalachian Friday Night Music Kick-Off.  BBQ Food truck on site. Bring a chair just in case.   See you at the Ridge this Friday and every Friday night this summer!!!!!",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
+        venue: "St. Paul",
         date: "2025-06-28",
         time: " 7:00 pm - 10:00 pm",
         start_time: " 7:00 pm",
@@ -1316,18 +1319,6 @@ const events = [
         name: "Hunnilicious at the Vineyard",
         sorttime: "2025-06-29 18:30",
         detail: "Live music with our favorite Mother, Daughter Duo! Elaine and Amber entertain with their mix of covers and amazing originals.  Travlin Dough food truck on site, Charcuterie options available or bring your own picnic to go with your amazing music and wine!",
-        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/vineyard-events",
-        venue: "St. Paul",
-        date: "2025-06-27",
-        time: "10:00 pm -  1:00 am",
-        start_time: "10:00 pm",
-        end_time: " 1:00 am",
-        name: "3 Shades of Gray perform to kick off our Friday Night Summer Music at the Ridge",
-        sorttime: "2025-06-27 22:00",
-        detail: "Enjoy great music  and great cider, wine, beer & BBQ !  3 Shades of Gray play at the Appalachian Friday Night Music Kick-Off.  BBQ Food truck on site. Bring a chair just in case.   See you at the Ridge this Friday and every Friday night this summer!!!!!",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
