@@ -28,7 +28,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-06-29 @ 19:15:23";
+			const localEventBrowserVersion = "Wednesday, 2025-07-02 @ 11:20:55";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -196,7 +196,7 @@
 				text-align: center;
 				padding: 30px;
 				font-style: italic;
-				color: #666;
+				color: white;
 			}
 			.green {
 				color: green;
@@ -262,8 +262,8 @@
 				<label>
 					<input type="text" id="search-input" placeholder="Search events..." />
 				</label>
-				<button id="search-button">Search</button>
-				<button id="clear-button">Clear</button>
+				<!-- <button id="search-button">Search</button> -->
+				<!-- <button id="clear-button">Clear</button> -->
 			</div>
 			<div id="venue-filters" style="margin-top: 15px">
 				<h4 style="margin-bottom: 8px">Venues:</h4>
@@ -337,13 +337,13 @@
 			function formatDateUTC(date) {
 				// DATE is something like "2025-06-08 2:00:00 pm". Return "20250608T140000Z"
 
-				console.log(`formatDateUTC = ${date}`);
+				// console.log(`formatDateUTC = ${date}`);
 				var cleaned_date;
 				const timeParts = date.match(
 					/^(\d{1,4})-(\d{1,2})-(\d{1,2})\s*(\d{1,2}):(\d{2})(:\d{2})?\s*(am|pm)$/i,
 				);
 				if (timeParts) {
-					console.log(`timeParts = ${timeParts}`);
+					// console.log(`timeParts = ${timeParts}`);
 					var hour = parseInt(timeParts[4], 10);
 					if (timeParts[7].toLowerCase() === "pm") {
 						if (hour < 12) hour += 12;
@@ -369,12 +369,12 @@
 							: timeParts[6].replace(":", "")) +
 						"Z";
 
-					console.log(`cleaned_date=${cleaned_date}`);
+					// console.log(`cleaned_date=${cleaned_date}`);
 				} else {
 					return `formatDateUTC: Unable to parse ${date}`;
 				}
 				const cleaned_date_obj = new Date(cleaned_date);
-				console.log(`cleaned_date_obj=${cleaned_date_obj}`);
+				// console.log(`cleaned_date_obj=${cleaned_date_obj}`);
 				const options = {
 					timeZone: "UTC", // "America/New_York", // Set to Eastern US timezone
 					year: "numeric",
@@ -386,9 +386,9 @@
 					hour12: false, // Use 24-hour format
 				};
 
-				console.log(
-					`cleaned_date_obj.toLocaleDateString("en-US", options) = ${cleaned_date_obj.toLocaleDateString("en-US", options)}`,
-				);
+				// console.log(
+				// 	`cleaned_date_obj.toLocaleDateString("en-US", options) = ${cleaned_date_obj.toLocaleDateString("en-US", options)}`,
+				// );
 
 				const formatter = new Intl.DateTimeFormat("en-US", options);
 				const parts = formatter.formatToParts(cleaned_date_obj);
@@ -403,7 +403,7 @@
 				const secondPart = parts.find((p) => p.type === "second").value;
 
 				const formatted = `${yearPart}${monthPart}${dayPart}T${pad(hourPart)}${pad(minutePart)}${pad(secondPart)}Z`;
-				console.log(`formatDateUTC returning ${formatted}`);
+				// console.log(`formatDateUTC returning ${formatted}`);
 				return formatted; // e.g., 20250608T140000Z (for June 8, 2025, 2:00:00 PM EDT)
 			}
 
@@ -591,24 +591,24 @@
 						var toggleAddCalendarElement = null;
 						var toggleElement = null;
 
-						console.log(
-							`event.date=${event.date}  event.start_time = ${event.start_time}  event.end_time = ${event.end_time}`,
-						);
+						// console.log(
+						// 	`event.date=${event.date}  event.start_time = ${event.start_time}  event.end_time = ${event.end_time}`,
+						// );
 						const start_time_string =
 							event.date +
 							" " +
 							(isTimeString(event.start_time) ? event.start_time : "12:00");
-						console.log(`start_time_string="${start_time_string}"`);
+						// console.log(`start_time_string="${start_time_string}"`);
 						const start_date = new Date(start_time_string);
-						console.log(`start_date="${start_date}"`);
+						// console.log(`start_date="${start_date}"`);
 						const start = toUTCFormat(start_time_string);
 						const end_time_string =
 							event.date +
 							" " +
 							(isTimeString(event.end_time) ? event.end_time : "12:00");
-						console.log(`end_time_string="${end_time_string}"`);
+						// console.log(`end_time_string="${end_time_string}"`);
 						const end_date = new Date(end_time_string);
-						console.log(`end_date="${end_date}"`);
+						// console.log(`end_date="${end_date}"`);
 						const end = toUTCFormat(end_time_string);
 
 						addCalendarElement = createCalendarDispatcher(
@@ -664,6 +664,32 @@
 				});
 			}
 
+			function removeDiacritics(string) {
+				// Return STRING but with all diacritics removed.
+				return string
+					.normalize("NFD")
+					.replace(/[\u0300-\u036f]/g, "")
+					.replace(/ß/g, "ss")
+					.replace(/æ/g, "ae");
+			}
+
+			function areAllPrefixesPresent(s1, s2) {
+				// Returns whether all words in s1 appear as prefixes of words in s2
+				// Split strings into word arrays (handling multiple spaces)
+				const words1 = removeDiacritics(s1)
+					.toLowerCase()
+					.split(/\s+/)
+					.filter(Boolean);
+				const s2Lower = removeDiacritics(s2).toLowerCase();
+
+				// Check if every word from s1 exists in s2
+				const prefixesArePresent = words1.every((word) => {
+					const regex = new RegExp(`\\b${word}\\w*`);
+					return s2Lower.match(regex);
+				});
+				return prefixesArePresent;
+			}
+
 			// Filter functions
 			function applyFilters() {
 				const searchTerm = document
@@ -674,13 +700,16 @@
 				).map((chip) => chip.textContent);
 
 				let filteredEvents = [...events];
-
 				// Apply search term filter
 				if (searchTerm) {
 					filteredEvents = filteredEvents.filter(
 						(event) =>
-							event.name.toLowerCase().includes(searchTerm) ||
-							event.venue.toLowerCase().includes(searchTerm),
+							/* event.name.toLowerCase().includes(searchTerm) || */
+							/* event.detail.toLowerCase().includes(searchTerm) || */
+							/* event.venue.toLowerCase().includes(searchTerm), */
+							areAllPrefixesPresent(searchTerm, event.name) ||
+							areAllPrefixesPresent(searchTerm, event.venue) ||
+							areAllPrefixesPresent(searchTerm, event.detail),
 					);
 				}
 
@@ -725,26 +754,27 @@
 
 			// Initialize the page
 			window.addEventListener("DOMContentLoaded", () => {
-				// In a real application, we would fetch data from the provided URLs here
-
 				// Setup search functionality
-				document
-					.getElementById("search-button")
-					.addEventListener("click", applyFilters);
+				// document
+				// 	.getElementById("search-button")
+				// 	.addEventListener("click", applyFilters);
 				document
 					.getElementById("search-input")
-					.addEventListener("keypress", (e) => {
-						if (e.key === "Enter") applyFilters();
-					});
-				document
-					.getElementById("clear-button")
-					.addEventListener("click", () => {
-						document.getElementById("search-input").value = "";
-						document.querySelectorAll(".venue-chip.active").forEach((chip) => {
-							chip.classList.remove("active");
-						});
+					.addEventListener("input", (e) => {
 						applyFilters();
+						const searchTerm = document
+							.getElementById("search-input")
+							.value.toLowerCase();
 					});
+				// document
+				// 	.getElementById("clear-button")
+				// 	.addEventListener("click", () => {
+				// 		document.getElementById("search-input").value = "";
+				// 		document.querySelectorAll(".venue-chip.active").forEach((chip) => {
+				// 			chip.classList.remove("active");
+				// 		});
+				// 		applyFilters();
+				// 	});
 
 				// Create venue filters
 				createVenueFilters();
