@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-07-02 11:00:32";
-console.log("eventDataVersion = Wednesday, 2025-07-02 11:00:32")
+const eventDataVersion = "Wednesday, 2025-07-02 12:00:36";
+console.log("eventDataVersion = Wednesday, 2025-07-02 12:00:36")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -334,6 +334,18 @@ const events = [
         end_time: "?",
         name: "Silly Willie’s Hot dogs Food Truck",
         sorttime: "¿ - ?",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-07-06",
+        time: "2:00 pm - 4:00 pm",
+        start_time: "2:00 pm",
+        end_time: "4:00 pm",
+        name: "Live Music: Andy Ferrell",
+        sorttime: "2025-07-06 14:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
