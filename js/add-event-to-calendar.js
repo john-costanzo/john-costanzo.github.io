@@ -1,4 +1,4 @@
-const addEventToCalendarVersion = "Monday, 2025-06-09 @ 17:52:37";
+const addEventToCalendarVersion = "Thursday, 2025-07-03 @ 14:52:29";
 
 function utcToMicrosoft( datetime ) {
     // 20250623T220000Z -> 2025-06-23T22%3A00%3A00Z
@@ -15,8 +15,8 @@ function utcToMicrosoft( datetime ) {
 }
 
 function createCalendarDispatcher( url, title, description, location, startTime, endTime ) {
-    console.log( `startTime=${startTime}` );
-    console.log( `endTime=${endTime}` );
+    // console.log( `startTime=${startTime}` );
+    // console.log( `endTime=${endTime}` );
     if ( description === "None" ) {
         description = "";
     }
