@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-07-02 20:23:03";
-console.log("eventDataVersion = Wednesday, 2025-07-02 20:23:03")
+const eventDataVersion = "Thursday, 2025-07-03 10:33:37";
+console.log("eventDataVersion = Thursday, 2025-07-03 10:33:37")
 const events = [
     {
         url: "https://pointlookoutvineyards.com/whats-happening",
@@ -204,30 +204,6 @@ const events = [
         sorttime: "2025-08-03 12:00",
         detail: "Authentic Indian Food with a range of flavorful Indian dishes.",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-07-02",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Food Truck: Heidi Ho on the Go",
-        sorttime: "¿ - ?",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-07-02",
-        time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
-        sorttime: "2025-07-02 18:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://trailsidebrews.com/calendar",
@@ -767,6 +743,18 @@ const events = [
         name: "Trailside Harry Potter Trivia",
         sorttime: "2025-07-31 18:30",
         detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-02",
+        time: "2:00 pm - 4:00 pm",
+        start_time: "2:00 pm",
+        end_time: "4:00 pm",
+        name: "Flat Rock Playhouse Rock Out Performance and Fundraiser",
+        sorttime: "2025-08-02 14:00",
+        detail: "We\'re so excited to host the Flat Rock Playhouse Rock Out Tour at Trailside! This event is family-friendly. 10% of our sales from the day will be donated to the Dave Hart Youth Scholarship fund to support young performers at the Flat Rock Playhouse.",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3460,18 +3448,6 @@ const events = [
     {
         url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
         venue: "Guidon",
-        date: "2025-07-02",
-        time: "7:00 pm - 9:00 pm",
-        start_time: "7:00 PM",
-        end_time: "9:00 PM",
-        name: "Team Trivia",
-        sorttime: "2025-07-02 19:00",
-        detail: "Grab your smartest friends and join us for two fun rounds of trivia.",
-        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
-    },
-    {
-        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
-        venue: "Guidon",
         date: "2025-07-04",
         time: "6:00 pm - 10:00 pm",
         start_time: "6:00 PM",
@@ -3527,6 +3503,18 @@ const events = [
         name: "Run Club",
         sorttime: "2025-07-08 18:00",
         detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer.  We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
+        venue: "Guidon",
+        date: "2025-07-09",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 PM",
+        end_time: "9:00 PM",
+        name: "Team Trivia",
+        sorttime: "2025-07-09 19:00",
+        detail: "Grab your smartest friends and join us for two fun rounds of trivia.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
