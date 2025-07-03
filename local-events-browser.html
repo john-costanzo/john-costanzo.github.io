@@ -28,7 +28,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Wednesday, 2025-07-02 @ 11:20:55";
+			const localEventBrowserVersion = "Wednesday, 2025-07-02 @ 20:55:26";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -218,58 +218,32 @@
 			</p>
 		</header>
 
-		<!-- <\!-- Mobile  -\-> -->
-
-		<!-- <div class="event-card"> -->
-		<!-- 	<div class="event-title">Team Meeting</div> -->
-		<!-- 	<div class="event-details">📍 Conference Room A</div> -->
-		<!-- 	<div class="event-details">🕐 Dec 15, 2024 at 2:00 PM - 3:00 PM</div> -->
-		<!-- 	<div class="event-details"> -->
-		<!-- 		📝 Weekly team sync to discuss project progress -->
-		<!-- 	</div> -->
-
-		<!-- 	<div class="calendar-links"> -->
-		<!-- 		<a -->
-		<!-- 			href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Team%20Meeting&details=Weekly%20team%20sync%20to%20discuss%20project%20progress&location=Conference%20Room%20A&dates=20241215T140000Z%2F20241215T150000Z" -->
-		<!-- 			target="_blank" -->
-		<!-- 			class="calendar-link google" -->
-		<!-- 		> -->
-		<!-- 			📅 Add to Google Calendar -->
-		<!-- 		</a> -->
-
-		<!-- 		<a -->
-		<!-- 			href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Team%20Meeting&body=Weekly%20team%20sync%20to%20discuss%20project%20progress&location=Conference%20Room%20A&startdt=2024-12-15T14%3A00%3A00&enddt=2024-12-15T15%3A00%3A00" -->
-		<!-- 			target="_blank" -->
-		<!-- 			class="calendar-link outlook" -->
-		<!-- 		> -->
-		<!-- 			📅 Add to Outlook Calendar -->
-		<!-- 		</a> -->
-
-		<!-- 		<a -->
-		<!-- 			href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//Calendar//EN%0ABEGIN:VEVENT%0ADTSTART:20241215T140000Z%0ADTEND:20241215T150000Z%0ASUMMARY:Team Meeting%0ADESCRIPTION:Weekly team sync to discuss project progress%0ALOCATION:Conference Room A%0AUID:1@calendar.local%0AEND:VEVENT%0AEND:VCALENDAR" -->
-		<!-- 			download="team-meeting.ics" -->
-		<!-- 			class="calendar-link download" -->
-		<!-- 		> -->
-		<!-- 			💾 Download Calendar File (.ics) -->
-		<!-- 		</a> -->
-		<!-- 	</div> -->
-		<!-- </div> -->
-		<!-- <\!-- Mobile  -\-> -->
-
 		<div class="filter-controls">
 			<h3>Filter Events</h3>
-			<div>
-				<label>
-					<input type="text" id="search-input" placeholder="Search events..." />
-				</label>
-				<!-- <button id="search-button">Search</button> -->
-				<!-- <button id="clear-button">Clear</button> -->
-			</div>
-			<div id="venue-filters" style="margin-top: 15px">
-				<h4 style="margin-bottom: 8px">Venues:</h4>
+			<label>
+				<input type="text" id="search-input" placeholder="Search events..." />
+			</label>
+			<span style="margin-bottom: 8px">Venues:</span>
+			<span id="venue-toggle" class="toggle-control green">⊕</span>
+			<span id="venue-filters" style="margin-top: 15px" class="hidden">
 				<!-- Venue chips will be generated here -->
-			</div>
+			</span>
 		</div>
+
+		<script>
+			const venue_toggle = document.getElementById("venue-toggle");
+			const venue_filters = document.getElementById("venue-filters");
+			venue_toggle.addEventListener("click", function () {
+				venue_filters.classList.toggle("hidden");
+				if (venue_toggle.textContent === "⊕") {
+					venue_toggle.textContent = "Θ";
+					venue_toggle.className = "toggle-control red";
+				} else {
+					venue_toggle.textContent = "⊕";
+					venue_toggle.className = "toggle-control green";
+				}
+			});
+		</script>
 
 		<!-- <div class="info"> -->
 		<!--     <p>This guide shows entertainment events at various local establishments for the next two weeks. Events are organized by date.</p> -->
@@ -704,9 +678,6 @@
 				if (searchTerm) {
 					filteredEvents = filteredEvents.filter(
 						(event) =>
-							/* event.name.toLowerCase().includes(searchTerm) || */
-							/* event.detail.toLowerCase().includes(searchTerm) || */
-							/* event.venue.toLowerCase().includes(searchTerm), */
 							areAllPrefixesPresent(searchTerm, event.name) ||
 							areAllPrefixesPresent(searchTerm, event.venue) ||
 							areAllPrefixesPresent(searchTerm, event.detail),
@@ -755,9 +726,6 @@
 			// Initialize the page
 			window.addEventListener("DOMContentLoaded", () => {
 				// Setup search functionality
-				// document
-				// 	.getElementById("search-button")
-				// 	.addEventListener("click", applyFilters);
 				document
 					.getElementById("search-input")
 					.addEventListener("input", (e) => {
@@ -766,16 +734,6 @@
 							.getElementById("search-input")
 							.value.toLowerCase();
 					});
-				// document
-				// 	.getElementById("clear-button")
-				// 	.addEventListener("click", () => {
-				// 		document.getElementById("search-input").value = "";
-				// 		document.querySelectorAll(".venue-chip.active").forEach((chip) => {
-				// 			chip.classList.remove("active");
-				// 		});
-				// 		applyFilters();
-				// 	});
-
 				// Create venue filters
 				createVenueFilters();
 
@@ -791,7 +749,6 @@
 					getLocalISODateString(today).split("T")[0],
 					getLocalISODateString(endDate).split("T")[0],
 				);
-
 				renderEvents(organizedEvents);
 			});
 		</script>
