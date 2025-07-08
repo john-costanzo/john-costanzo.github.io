@@ -1,5 +1,5 @@
-const eventDataVersion = "Monday, 2025-07-07 17:37:39";
-console.log("eventDataVersion = Monday, 2025-07-07 17:37:39")
+const eventDataVersion = "Monday, 2025-07-07 20:00:51";
+console.log("eventDataVersion = Monday, 2025-07-07 20:00:51")
 const events = [
     {
         url: "https://www.millsriverbrewingco.com/events",
@@ -1499,6 +1499,18 @@ const events = [
         name: "EC & Howie Guitarmaggedon",
         sorttime: "2025-07-10 18:00",
         detail: "Lots of guitar and beer. This is not a drill.",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
+        date: "2025-07-11",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "Musical Mayhem with Mary Kay & Friends",
+        sorttime: "2025-07-11 19:00",
+        detail: "Join vocalist Mary Kay Williams while she and her band explores fun and lively tunes in the jazz, swing, blues, funk, and soul styles. Get ready for some unexpected songs…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
