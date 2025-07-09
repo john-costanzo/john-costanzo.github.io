@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-07-09 10:00:51";
-console.log("eventDataVersion = Wednesday, 2025-07-09 10:00:51")
+const eventDataVersion = "Wednesday, 2025-07-09 11:00:54";
+console.log("eventDataVersion = Wednesday, 2025-07-09 11:00:54")
 const events = [
     {
         url: "https://www.millsriverbrewingco.com/events",
