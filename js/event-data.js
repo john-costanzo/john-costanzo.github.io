@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-07-09 09:05:46";
-console.log("eventDataVersion = Wednesday, 2025-07-09 09:05:46")
+const eventDataVersion = "Wednesday, 2025-07-09 10:00:51";
+console.log("eventDataVersion = Wednesday, 2025-07-09 10:00:51")
 const events = [
     {
         url: "https://www.millsriverbrewingco.com/events",
@@ -172,6 +172,18 @@ const events = [
     {
         url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
+        date: "2025-07-11",
+        time: "3:00 pm - 5:00 pm",
+        start_time: "3:00 pm",
+        end_time: "5:00 pm",
+        name: "Wine Down Fridays – Live Music",
+        sorttime: "2025-07-11 15:00",
+        detail: "Why wait for the weekend to unwind? Take the afternoon",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
         date: "2025-07-12",
         time: "2:00 pm - 5:00 pm",
         start_time: "2:00 pm",
@@ -299,18 +311,6 @@ const events = [
         name: "El Bodegon – Food Truck",
         sorttime: "2025-08-09 12:00",
         detail: "Serving comfort food from Argentina with Italian and Spanish influences",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        date: "2025-08-09",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: "Will Hartz – Live Music",
-        sorttime: "2025-08-09 14:00",
-        detail: "A born entertainer and a multi instrumentalist, Will Hartz has been",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -2868,18 +2868,6 @@ const events = [
         sorttime: "2025-08-01 18:00",
         detail: "None",
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
-        venue: "Guidon",
-        date: "2025-07-08",
-        time: "6:00 pm - 8:30 pm",
-        start_time: "6:00 PM",
-        end_time: "8:30 PM",
-        name: "Run Club",
-        sorttime: "2025-07-08 18:00",
-        detail: "https://www.facebook.com/groups/1795381247483886",
-        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
