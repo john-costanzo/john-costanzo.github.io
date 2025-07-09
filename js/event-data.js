@@ -1,5 +1,5 @@
-const eventDataVersion = "Wednesday, 2025-07-09 11:00:54";
-console.log("eventDataVersion = Wednesday, 2025-07-09 11:00:54")
+const eventDataVersion = "Wednesday, 2025-07-09 12:01:22";
+console.log("eventDataVersion = Wednesday, 2025-07-09 12:01:22")
 const events = [
     {
         url: "https://www.millsriverbrewingco.com/events",
@@ -536,7 +536,7 @@ const events = [
         time: "¿ - ?",
         start_time: "¿",
         end_time: "?",
-        name: "Panorama Mediterranean Grill and Milk and Honey",
+        name: "Palms Food Truck, Panorama Mediterranean Grill and Milk and Honey",
         sorttime: "¿ - ?",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
