@@ -25,7 +25,7 @@
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Thursday, 2025-07-03 @ 14:51:34";
+        const localEventBrowserVersion = "Saturday, 2025-07-12 @ 19:43:24";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
@@ -213,7 +213,7 @@
     <header>
         <h1>Hendo Happenings</h1>
         <p style="display: none">
-            Events for the next two weeks: <span id="date-range"></span>
+            Events for the next four weeks: <span id="date-range"></span>
         </p>
     </header>
 
@@ -245,7 +245,7 @@
     </script>
 
     <!-- <div class="info"> -->
-    <!--     <p>This guide shows entertainment events at various local establishments for the next two weeks. Events are organized by date.</p> -->
+    <!--     <p>This guide shows entertainment events at various local establishments for the next four weeks. Events are organized by date.</p> -->
     <!-- </div> -->
 
     <div id="loading">Loading events, please wait...</div>
@@ -465,14 +465,14 @@
         }
 
         // Calculate date range for display
-        const twoWeeksLater = new Date( today );
-        twoWeeksLater.setDate( today.getDate( ) + 14 );
+        const fourWeeksLater = new Date( today );
+        fourWeeksLater.setDate( today.getDate( ) + 28 );
         console.warn(
-            `groupAndSortByDate: today=${today}  twoWeeksLater=${twoWeeksLater}`,
+            `groupAndSortByDate: today=${today}  fourWeeksLater=${fourWeeksLater}`,
         );
 
         document.getElementById( "date-range" ).textContent =
-            `${formatDate(today)} - ${formatDate(twoWeeksLater)}`;
+            `${formatDate(today)} - ${formatDate(fourWeeksLater)}`;
 
         // Function to organize events by date
         function organizeEventsByDate( events, startDate, endDate ) {
@@ -711,9 +711,9 @@
                 );
             }
 
-            // Get date range (today to two weeks from now)
+            // Get date range (today to four weeks from now)
             const endDate = new Date( today );
-            endDate.setDate( today.getDate( ) + 14 );
+            endDate.setDate( today.getDate( ) + 28 );
 
             const organizedEvents = organizeEventsByDate(
                 filteredEvents,
