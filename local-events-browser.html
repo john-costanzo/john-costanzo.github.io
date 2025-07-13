@@ -21,11 +21,12 @@
                 `Finished reloading the page after ${eighthours} milliseconds.`,
             );
         }, eighthours );
+        var lookahead_days = 28;
     </script>
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Saturday, 2025-07-12 @ 19:43:24";
+        const localEventBrowserVersion = "Sunday, 2025-07-13 @ 12:39:14";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
@@ -465,14 +466,14 @@
         }
 
         // Calculate date range for display
-        const fourWeeksLater = new Date( today );
-        fourWeeksLater.setDate( today.getDate( ) + 28 );
+        const future_date = new Date( today );
+        future_date.setDate( today.getDate( ) + lookahead_days );
         console.warn(
-            `groupAndSortByDate: today=${today}  fourWeeksLater=${fourWeeksLater}`,
+            `groupAndSortByDate: today=${today}  future_date=${future_date}`,
         );
 
         document.getElementById( "date-range" ).textContent =
-            `${formatDate(today)} - ${formatDate(fourWeeksLater)}`;
+            `${formatDate(today)} - ${formatDate(future_date)}`;
 
         // Function to organize events by date
         function organizeEventsByDate( events, startDate, endDate ) {
@@ -635,6 +636,7 @@
 
                 container.appendChild( dateContainer );
             } );
+            // TODO: update a counter to show how many matching events
         }
 
         function expandDigitsWithWords( input ) {
@@ -713,7 +715,7 @@
 
             // Get date range (today to four weeks from now)
             const endDate = new Date( today );
-            endDate.setDate( today.getDate( ) + 28 );
+            endDate.setDate( today.getDate( ) + lookahead_days );
 
             const organizedEvents = organizeEventsByDate(
                 filteredEvents,
@@ -762,7 +764,7 @@
 
             // Show initial events
             const endDate = new Date( today );
-            endDate.setDate( today.getDate( ) + 14 );
+            endDate.setDate( today.getDate( ) + lookahead_days );
 
             const organizedEvents = organizeEventsByDate(
                 events,
