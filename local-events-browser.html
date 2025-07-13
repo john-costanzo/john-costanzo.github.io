@@ -26,7 +26,7 @@
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Sunday, 2025-07-13 @ 12:54:45";
+        const localEventBrowserVersion = "Sunday, 2025-07-13 @ 17:53:34";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
@@ -53,17 +53,20 @@
         }
 
         .date-container {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             background-color: white;
             border-radius: 8px;
-            padding: 10px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             color: #3a6ea5;
             border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
             margin-top: -10px;
             margin-bottom: -10px;
             font-size: 1.1em;
@@ -77,12 +80,21 @@
         .event {
             padding-bottom: 5px;
             padding-top: 5px;
-            padding-left: 15px;
+            padding-left: 5px;
             padding-right: 15px;
-            margin-bottom: 15px;
             border-left: 4px solid #6c9ece;
             background-color: #f5f8fa;
             border-radius: 0 4px 4px 0;
+        }
+
+        /* Remove margin from all .event divs by default */
+        .event {
+            margin-bottom: 0;
+        }
+
+        /* Apply margin-bottom: 5px ONLY to the last .event in its parent */
+        .event:last-child {
+            margin-bottom: 5px;
         }
 
         .event:hover {
@@ -92,16 +104,20 @@
         .venue {
             font-weight: bold;
             color: #d35400;
+            line-height: 1.3;
         }
 
         .time {
             color: #666;
+            padding-left: 10px;
             font-style: italic;
+            line-height: 1.3;
         }
 
         .event-name {
             font-weight: 500;
             margin-top: 5px;
+            line-height: 1.3;
         }
 
         .event-description {
@@ -114,10 +130,12 @@
             margin-left: 10px;
             margin-top: 5px;
             margin-right: 3px;
+            line-height: 1.3;
         }
 
         .hidden {
             display: none;
+            line-height: 1.3;
         }
 
         .info {
@@ -525,7 +543,47 @@
         }
 
         // Function to render events
-        function renderEvents( eventsByDate ) {
+        function renderEvents( eventsByDate, clusterVenues = false ) {
+
+            function sortDivsByVenue( container ) {
+                // Get an array of the direct child divs
+                const children = Array.from( container.children );
+
+                // Sort the child divs based on the text content of their .venue div
+                children.sort( ( a, b ) => {
+                    const venueA = a.querySelector( '.venue' )?.textContent.trim( ) || '';
+                    const venueB = b.querySelector( '.venue' )?.textContent.trim( ) || '';
+                    return venueA.localeCompare( venueB );
+                } );
+
+                // Re-append the sorted divs to the container
+                children.forEach( child => container.appendChild( child ) );
+
+                return container;
+            }
+
+            function removeDuplicateVenues( container ) {
+                let lastVenueValue = null;
+
+                // Get all immediate child divs of the container
+                const childDivs = Array.from( container.children );
+
+                childDivs.forEach( child => {
+                    // Find the nested .venue div within this child
+                    const venueDiv = child.querySelector( '.venue' );
+                    if ( venueDiv ) {
+                        const currentVenueValue = venueDiv.textContent.trim( );
+                        if ( currentVenueValue === lastVenueValue ) {
+                            // Remove only the .venue div
+                            venueDiv.parentNode.removeChild( venueDiv );
+                        } else {
+                            lastVenueValue = currentVenueValue;
+                        }
+                    }
+                } );
+
+                return container;
+            }
 
             function updateEventCount( ) {
 
@@ -562,7 +620,7 @@
 
             eventsByDate.forEach( ( day ) => {
                 const dateObj = new Date( day.date );
-                const dateContainer = document.createElement( "div" );
+                var dateContainer = document.createElement( "div" );
                 dateContainer.className = "date-container";
 
                 const dateHeading = document.createElement( "h2" );
@@ -658,7 +716,11 @@
 
                     dateContainer.appendChild( eventElement );
                 } );
-
+                if ( clusterVenues ) {
+                    const sorted = sortDivsByVenue( dateContainer );
+                    const deduped = removeDuplicateVenues( sorted );
+                    dateContainer = deduped;
+                }
                 container.appendChild( dateContainer );
             } );
             updateEventCount( )
@@ -748,7 +810,7 @@
                 getLocalISODateString( endDate ).split( "T" )[ 0 ],
             );
 
-            renderEvents( organizedEvents );
+            renderEvents( organizedEvents, true );
         }
 
         // Create venue filter chips
@@ -796,7 +858,7 @@
                 getLocalISODateString( today ).split( "T" )[ 0 ],
                 getLocalISODateString( endDate ).split( "T" )[ 0 ],
             );
-            renderEvents( organizedEvents );
+            renderEvents( organizedEvents, true );
         } );
     </script>
 </body>
