@@ -26,7 +26,7 @@
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Sunday, 2025-07-13 @ 12:39:14";
+        const localEventBrowserVersion = "Sunday, 2025-07-13 @ 12:54:45";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
@@ -219,7 +219,7 @@
     </header>
 
     <div class="filter-controls">
-        <h3>Filter Events</h3>
+        <h3>Filter Events <span id="event_count"></span></h3>
         <label>
             <input type="text" id="search-input" placeholder="Search events..." />
         </label>
@@ -526,12 +526,37 @@
 
         // Function to render events
         function renderEvents( eventsByDate ) {
+
+            function updateEventCount( ) {
+
+                function countElementsWithEvents( arr ) {
+                    if ( !Array.isArray( arr ) ) {
+                        throw new Error( 'Input must be an array' );
+                    }
+                    let count = 0;
+                    for ( const map of arr ) {
+                        if ( map && Array.isArray( map.events ) ) {
+                            count += map.events.length;
+                        }
+                    }
+                    return count;
+                }
+
+                const event_count_control = document.getElementById( "event_count" );
+                if ( event_count_control ) {
+                    const ce = countElementsWithEvents( eventsByDate );
+                    event_count_control.innerHTML = " (" + countElementsWithEvents( eventsByDate ) + " events)";
+                }
+
+            }
+
             const container = document.getElementById( "events-container" );
             container.innerHTML = "";
 
             if ( eventsByDate.length === 0 ) {
                 container.innerHTML =
                     '<div class="no-events">No events found matching your criteria.</div>';
+                updateEventCount( );
                 return;
             }
 
@@ -636,7 +661,7 @@
 
                 container.appendChild( dateContainer );
             } );
-            // TODO: update a counter to show how many matching events
+            updateEventCount( )
         }
 
         function expandDigitsWithWords( input ) {
