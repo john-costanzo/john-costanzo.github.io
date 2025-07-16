@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2025-07-16 08:02:00";
+const eventDataVersion = "Wednesday, 2025-07-16 12:01:19";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1984,6 +1984,18 @@ const events = [
     {
         url: "https://www.sabrewery.com/events/2025-07",
         venue: "Southern App",
+        date: "2025-07-20",
+        time: "12:00 pm - 5:00 pm",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: "Happy July Pop-Up Market",
+        sorttime: "2025-07-20 12:00",
+        detail: "Happy Pop-Up Markets and Southern Appalachian Brewery host this Art, Craft and Vintage Vendor Market in the courtyard at SAB…..\n\nCome enjoy live music, sip on some delicious cold craft beer…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
         date: "2025-07-23",
         time: "6:00 pm - 8:00 pm",
         start_time: "6:00 pm",
@@ -2027,6 +2039,18 @@ const events = [
         name: "Saturday Yoga Class",
         sorttime: "2025-07-26 12:00",
         detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-07",
+        venue: "Southern App",
+        date: "2025-07-26",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "An Evening of John Prine music by Highway 52",
+        sorttime: "2025-07-26 19:00",
+        detail: "Highway 52 will perform the songs of John Prine spanning his entire career. You’ll hear favorites as well as some lesser known songs that will become your new favorites.\n\nHighway 52…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -3396,18 +3420,6 @@ const events = [
         sorttime: "2025-08-01 18:00",
         detail: "None",
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
-        venue: "Guidon",
-        date: "2025-07-15",
-        time: "6:00 pm - 8:30 pm",
-        start_time: "6:00 PM",
-        end_time: "8:30 PM",
-        name: "Run Club",
-        sorttime: "2025-07-15 18:00",
-        detail: "https://www.facebook.com/groups/1795381247483886",
-        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
