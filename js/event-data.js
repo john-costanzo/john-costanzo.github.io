@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2025-07-16 12:01:19";
+const eventDataVersion = "Wednesday, 2025-07-16 20:00:48";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -940,6 +940,30 @@ const events = [
     {
         url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
+        date: "2025-07-17",
+        time: "8:00 pm - 10:00 pm",
+        start_time: "8:00 pm",
+        end_time: "10:00 pm",
+        name: "Detective Blind",
+        sorttime: "2025-07-17 20:00",
+        detail: "Music starts @8pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        date: "2025-07-18",
+        time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: "ALR Trio",
+        sorttime: "2025-07-18 20:00",
+        detail: "Music starts @8pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
         date: "2025-07-19",
         time: "8:30 pm - 10:30 pm",
         start_time: "8:30 pm",
@@ -959,18 +983,6 @@ const events = [
         name: "Sleeping Dogz LIVE @Oklawaha!",
         sorttime: "2025-07-20 14:00",
         detail: "Music starts @2pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
-    },
-    {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
-        date: "2025-07-20",
-        time: "7:00 pm - 9:00 pm",
-        start_time: "7:00 pm",
-        end_time: "9:00 pm",
-        name: "Comedy Night with Next Step Comedy",
-        sorttime: "2025-07-20 19:00",
-        detail: "Comedy starts @7pm! Get your tickets here: https://www.eventbrite.com/e/next-stop-comedy-at-oklawaha-brewing-company-hendersonville-nc-tickets-1302243518419?aff=efbevent&fbclid=IwY2xjawK1RrdleHRuA2FlbQIxMABicmlkETFqeG12R2lhZ01MV1BsVUxWAR48JuGx7-zkqL1SQ3sEgW1gXWylU30uEMfc29rGWqRTNKUs43PCZYa_TpucuA_aem_3jkh-fctaLw3O1USBA5Vfg",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -1019,6 +1031,18 @@ const events = [
         name: "Kid Billy",
         sorttime: "2025-07-31 19:00",
         detail: "Music starts @7pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        date: "2025-08-01",
+        time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: "Randomonium",
+        sorttime: "2025-08-01 20:00",
+        detail: "Music starts @8pm! $10 cover!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
