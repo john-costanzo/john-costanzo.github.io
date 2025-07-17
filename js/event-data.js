@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2025-07-16 20:00:48";
+const eventDataVersion = "Thursday, 2025-07-17 08:00:42";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -312,30 +312,6 @@ const events = [
         sorttime: "2025-08-09 12:00",
         detail: "Serving comfort food from Argentina with Italian and Spanish influences",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-07-16",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Indian Aroma Bistro",
-        sorttime: "¿ - ?",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-07-16",
-        time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
-        sorttime: "2025-07-16 18:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://trailsidebrews.com/calendar",
@@ -934,6 +910,18 @@ const events = [
         end_time: "8:30 pm",
         name: "Trailside Trivia",
         sorttime: "2025-08-14 18:30",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-16",
+        time: "12:00 pm - 5:00 pm",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: "Blue ridge Artisan Summer Market",
+        sorttime: "2025-08-16 12:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
@@ -3454,7 +3442,7 @@ const events = [
         end_time: "9:00 PM",
         name: "Team Trivia",
         sorttime: "2025-07-16 19:00",
-        detail: "Grab your smartest friends and join us for two fun rounds of trivia.",
+        detail: "07:00 PM - 09:00 PM",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
@@ -3503,6 +3491,18 @@ const events = [
         name: "Run Club",
         sorttime: "2025-07-22 18:00",
         detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer. We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
+        venue: "Guidon",
+        date: "2025-07-23",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 PM",
+        end_time: "9:00 PM",
+        name: "Team Trivia",
+        sorttime: "2025-07-23 19:00",
+        detail: "Grab your smartest friends and join us for two fun rounds of trivia.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
