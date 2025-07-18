@@ -1,41 +1,34 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Redirecting to a podcast of a fixed Carriage Post edition...</title>
-
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-2YJ0LBXFN9"
+		></script>
 		<script>
-			const PARAMS = {};
-
-			function getAllUrlParams(url) {
-				const queryString = url
-					? url.split("?")[1]
-					: window.location.search.slice(1);
-
-				if (queryString) {
-					queryString.split("&").forEach((param) => {
-						const [key, value] = param.split("=");
-						PARAMS[key] = decodeURIComponent(value);
-					});
-				}
-
-				return PARAMS;
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
 			}
+			gtag("js", new Date());
 
-			// Usage
-			const params = getAllUrlParams();
-			console.log(params);
+			gtag("config", "G-2YJ0LBXFN9");
 		</script>
+		<meta charset="UTF-8" />
+
+		<title>A podcast discussing the latest version of the Carriage Post</title>
 	</head>
 
 	<body>
-		<script>
-			getAllUrlParams();
-			var base_url =
-				"https://soundcloud.com/john-costanzo-456368900/carriage-post-summer-2025";
-			// temporary placeholder
-			//base_url =
-			//	"https://john-costanzo.github.io/images/Carriage%20Post%20Podcast%20Coming%20Soon.png";
-			window.location.href = base_url;
-		</script>
+		<h1>Listen: "That's All Folks!"</h1>
+		<audio controls>
+			<source
+				src="https://john-costanzo.github.io/sounds/Carriage%20Post%20-%20Summer%202025.wav"
+				type="audio/mpeg"
+			/>
+			Your browser does not support the audio element.
+		</audio>
+		<br />
 	</body>
 </html>
