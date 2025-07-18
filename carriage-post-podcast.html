@@ -15,20 +15,68 @@
 
 			gtag("config", "G-2YJ0LBXFN9");
 		</script>
+
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TFXT2H9P");
+		</script>
+		<!-- End Google Tag Manager -->
+
 		<meta charset="UTF-8" />
 
 		<title>A podcast discussing the latest version of the Carriage Post</title>
 	</head>
 
 	<body>
-		<h1>Listen to a podcast of the most recent <i>Carriage Post</i></h1>
-		<audio controls>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-TFXT2H9P"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<center>
+			<img src="images/Carriage%20Post%20Masthead.png" />
+		</center>
+		<h1>
+			Listen to a podcast of the
+			<i
+				><a
+					href="https://www.cphassn.org/editor_upload/File/Carriage%20Post/2025/2025-2_CarriagePost_Summer-2025.pdf"
+					>Carriage Post - Summer 2025</a
+				>
+				edition</i
+			>
+		</h1>
+		<audio id="carriage-post-podcast" controls>
 			<source
 				src="https://john-costanzo.github.io/sounds/Carriage%20Post%20-%20Summer%202025.wav"
 				type="audio/mpeg"
 			/>
 			Your browser does not support the audio element.
 		</audio>
-		<br />
+		<script>
+			const audio = document.getElementById("carriage-post-podcast");
+			audio.addEventListener("play", function () {
+				window.dataLayer = window.dataLayer || [];
+				window.dataLayer.push({
+					event: "audio_play",
+					audio_title: "Carriage Post Podcast - Summer 2025",
+					audio_url: audio.currentSrc,
+				});
+			});
+		</script>
 	</body>
 </html>
