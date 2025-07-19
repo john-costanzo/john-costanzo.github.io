@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-07-19 17:03:45";
+const eventDataVersion = "Saturday, 2025-07-19 17:08:35";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -172,18 +172,6 @@ const events = [
     {
         url: "https://southerwilliams.com/events",
         venue: "Souther Williams",
-        date: "2025-07-19",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: "Downtown Trio Deluxe – Live Music",
-        sorttime: "2025-07-19 14:00",
-        detail: "Guitarist and singer Kelly Jones, bassist Zack Page & Blues",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
         date: "2025-07-20",
         time: "12:00 pm - 6:00 pm",
         start_time: "12:00 pm",
@@ -311,6 +299,18 @@ const events = [
         name: "El Bodegon – Food Truck",
         sorttime: "2025-08-09 12:00",
         detail: "Serving comfort food from Argentina with Italian and Spanish influences",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        date: "2025-08-09",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: "Will Hartz – Live Music",
+        sorttime: "2025-08-09 14:00",
+        detail: "A born entertainer and a multi instrumentalist, Will Hartz has been",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -1540,18 +1540,6 @@ const events = [
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
-        date: "2025-07-19",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: "MYRON HYMAN",
-        sorttime: "2025-07-19 14:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
         date: "2025-07-20",
         time: "2:00 pm - 5:00 pm",
         start_time: "2:00 pm",
@@ -1654,6 +1642,18 @@ const events = [
         end_time: "5:00 pm",
         name: "THE JACKTOWN RAMBLERS",
         sorttime: "2025-08-09 14:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        date: "2025-08-10",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: "ERIC CONGDON",
+        sorttime: "2025-08-10 14:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
