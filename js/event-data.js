@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-07-19 08:00:50";
+const eventDataVersion = "Saturday, 2025-07-19 10:04:36";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3492,18 +3492,6 @@ const events = [
         sorttime: "2025-08-01 18:00",
         detail: "None",
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
-        venue: "Guidon",
-        date: "2025-07-18",
-        time: "6:00 pm - 10:00 pm",
-        start_time: "6:00 PM",
-        end_time: "10:00 PM",
-        name: "Karaoke",
-        sorttime: "2025-07-18 18:00",
-        detail: "06:00 PM - 10:00 PM",
-        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
