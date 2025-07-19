@@ -12,22 +12,22 @@
     <link rel="stylesheet" href="css/add-event-to-calendar.css" media="screen" />
 
     <script>
-        const eighthours = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
+        const reload_period_ms = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
         setTimeout( function( ) {
             console.log(
-                `About to reload the page after ${eighthours} milliseconds...`,
+                `About to reload the page after ${reload_period_ms} milliseconds...`,
             );
-            location.reload( );
+            window.location.reload( );
             console.log(
-                `Finished reloading the page after ${eighthours} milliseconds.`,
+                `Finished reloading the page after ${reload_period_ms} milliseconds.`,
             );
-        }, eighthours );
+        }, reload_period_ms );
         var lookahead_days = 28;
     </script>
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Saturday, 2025-07-19 @ 12:20:14";
+        const localEventBrowserVersion = "Saturday, 2025-07-19 @ 16:59:33";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
