@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-07-19 12:11:54";
+const eventDataVersion = "Saturday, 2025-07-19 15:27:11";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
