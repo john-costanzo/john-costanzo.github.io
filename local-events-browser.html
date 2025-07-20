@@ -27,7 +27,7 @@
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Saturday, 2025-07-19 @ 16:59:33";
+        const localEventBrowserVersion = "Saturday, 2025-07-19 @ 22:45:36";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
@@ -498,14 +498,13 @@
         function organizeEventsByDate( events, startDate, endDate ) {
             const startDateObj = new Date( startDate );
             const endDateObj = new Date( endDate );
-            console.warn(
-                `organizeEventsByDate: startDate=${startDate}  endDate=${endDate}`,
-            );
+            const nowObj = new Date( );
 
             // Filter events within date range
             const filteredEvents = events.filter( ( event ) => {
                 const eventDate = new Date( event.date );
-                return eventDate >= startDateObj && eventDate <= endDateObj;
+                const endTimeFormattedObj = new Date( event.end_time_formatted );
+                return eventDate >= startDateObj && eventDate <= endDateObj && endTimeFormattedObj >= nowObj;
             } );
 
             // Group by date
@@ -774,6 +773,15 @@
             return prefixesArePresent;
         }
 
+        function excludePastEvents( events ) {
+            // Exclude past events
+            let now = new Date( );
+            return events.filter( ( event ) =>
+                new Date( event.end_time_formatted ) >= now,
+            );
+        }
+
+
         // Filter functions
         function applyFilters( ) {
             const searchTerm = document
@@ -801,7 +809,9 @@
                 );
             }
 
-            // Get date range (today to four weeks from now)
+            filteredEvents = excludePastEvents( filteredEvents );
+
+            // Get date range (today to lookahead_days from now)
             const endDate = new Date( today );
             endDate.setDate( today.getDate( ) + lookahead_days );
 
@@ -859,6 +869,7 @@
                 getLocalISODateString( today ).split( "T" )[ 0 ],
                 getLocalISODateString( endDate ).split( "T" )[ 0 ],
             );
+
             renderEvents( organizedEvents, true );
         } );
     </script>
