@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2025-07-24 10:28:48";
+const eventDataVersion = "Thursday, 2025-07-24 20:00:45";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2682,6 +2682,19 @@ const events = [
     {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
+        date: "2025-08-23",
+        time: "6:00 pm - 9:30 pm",
+        start_time: "6:00 pm",
+        end_time: "9:30 pm",
+        name: "Smokey The Groove, Blü Egyptian & Black Pine Revival",
+        sorttime: "2025-08-23 18:00",
+        end_time_formatted: "2025-08-23 21:30",
+        detail: "Free Admission",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
         date: "2025-08-24",
         time: "2:00 pm - 5:00 pm",
         start_time: "2:00 pm",
@@ -3294,13 +3307,26 @@ const events = [
         url: "https://www.ncarboretum.org/events/month/2025-08",
         venue: "Arboretum",
         date: "2025-09-02",
-        time: "1:00 pm - 3:00 pm",
-        start_time: "1:00 pm",
-        end_time: "3:00 pm",
-        name: "Guided Trail Walk",
-        sorttime: "2025-09-02 13:00",
-        end_time_formatted: "2025-09-02 15:00",
-        detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
+        time: "9:00 am - 10:30 am",
+        start_time: "9:00 am",
+        end_time: "10:30 am",
+        name: "Birding for Beginners",
+        sorttime: "2025-09-02 09:00",
+        end_time_formatted: "2025-09-02 10:30",
+        detail: "Join us on this birding walk around the NC Arboretum gardens and trails in search of our most colorful residents.",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://www.ncarboretum.org/events/month/2025-08",
+        venue: "Arboretum",
+        date: "2025-09-02",
+        time: "11:00 am - 1:00 pm",
+        start_time: "11:00 am",
+        end_time: "1:00 pm",
+        name: "Botanical Drawing for Beginners",
+        sorttime: "2025-09-02 11:00",
+        end_time_formatted: "2025-09-02 13:00",
+        detail: "Join retired art teacher Camille in this monthly class for beginners to learn about Botanical Art in different media.",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
