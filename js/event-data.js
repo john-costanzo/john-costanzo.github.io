@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-07-26 08:13:53";
+const eventDataVersion = "Saturday, 2025-07-26 09:00:47";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1681,19 +1681,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
-        date: "2025-07-25",
-        time: "10:00 pm -  1:00 am",
-        start_time: "10:00 pm",
-        end_time: " 1:00 am",
-        name: "3 Shades of Gray Friday Night for Summer Music at the Ridge - Haus Heidelberg on site",
-        sorttime: "2025-07-25 22:00",
-        end_time_formatted: "2025-07-25 01:00",
-        detail: "Enjoy great music and great cider, wine, beer & Haus heidelberg! 3 Shades of Gray play at the Appalachian Friday Night Summer Music Series. Food truck on site. Bring a chair just in case. See you at the Ridge this Friday and every Friday night this summer!!!!!",
-        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/vineyard-events",
-        venue: "St. Paul",
         date: "2025-07-26",
         time: " 7:00 pm - 10:00 pm",
         start_time: " 7:00 pm",
@@ -1744,8 +1731,8 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
+        url: "https://www.saintpaulfarms.com/vineyard-events",
+        venue: "St. Paul",
         date: "2025-07-25",
         time: "10:00 pm -  1:00 am",
         start_time: "10:00 pm",
@@ -1754,7 +1741,7 @@ const events = [
         sorttime: "2025-07-25 22:00",
         end_time_formatted: "2025-07-25 01:00",
         detail: "Enjoy great music and great cider, wine, beer & Haus heidelberg! 3 Shades of Gray play at the Appalachian Friday Night Summer Music Series. Food truck on site. Bring a chair just in case. See you at the Ridge this Friday and every Friday night this summer!!!!!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
@@ -1806,6 +1793,19 @@ const events = [
         sorttime: "2025-08-03 18:30",
         end_time_formatted: "2025-08-03 21:30",
         detail: "Enjoy live tunes with Daniel Sage while enjoying a delicious glass of wine, cider or beer! Please feel free to bring your own food. A great way to spend a Sunday afternoon",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-07-25",
+        time: "10:00 pm -  1:00 am",
+        start_time: "10:00 pm",
+        end_time: " 1:00 am",
+        name: "3 Shades of Gray Friday Night for Summer Music at the Ridge - Haus Heidelberg on site",
+        sorttime: "2025-07-25 22:00",
+        end_time_formatted: "2025-07-25 01:00",
+        detail: "Enjoy great music and great cider, wine, beer & Haus heidelberg! 3 Shades of Gray play at the Appalachian Friday Night Summer Music Series. Food truck on site. Bring a chair just in case. See you at the Ridge this Friday and every Friday night this summer!!!!!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
