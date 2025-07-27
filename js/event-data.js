@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2025-07-27 12:15:32";
+const eventDataVersion = "Sunday, 2025-07-27 16:53:00";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1694,19 +1694,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
-        date: "2025-07-26",
-        time: " 7:00 pm - 10:00 pm",
-        start_time: " 7:00 pm",
-        end_time: "10:00 pm",
-        name: "Ken Morgan Saturday at Appalachian Ridge",
-        sorttime: "2025-07-26 19:00",
-        end_time_formatted: "2025-07-26 22:00",
-        detail: "Ken Morgan playing covers from multiple decades and genres. A great day with live music, great ciders, great friends and Saint Paul Wine!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
         date: "2025-07-27",
         time: " 6:30 pm -  9:30 pm",
         start_time: " 6:30 pm",
@@ -1741,6 +1728,19 @@ const events = [
         sorttime: "2025-08-03 18:30",
         end_time_formatted: "2025-08-03 21:30",
         detail: "Enjoy live tunes with Daniel Sage while enjoying a delicious glass of wine, cider or beer! Please feel free to bring your own food. A great way to spend a Sunday afternoon",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-07-26",
+        time: " 7:00 pm - 10:00 pm",
+        start_time: " 7:00 pm",
+        end_time: "10:00 pm",
+        name: "Ken Morgan Saturday at Appalachian Ridge",
+        sorttime: "2025-07-26 19:00",
+        end_time_formatted: "2025-07-26 22:00",
+        detail: "Ken Morgan playing covers from multiple decades and genres. A great day with live music, great ciders, great friends and Saint Paul Wine!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
