@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-07-29 20:00:48";
+const eventDataVersion = "Wednesday, 2025-07-30 08:00:56";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -338,32 +338,6 @@ const events = [
         end_time_formatted: "2025-08-17 17:00",
         detail: "Bandmates since 2018, Bob Zullo, Dex Stutzman & James Leyva",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-07-29",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Food Truck: Sabora",
-        sorttime: "¿ - ?",
-        end_time_formatted: "2025-07-29 23:59",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://trailsidebrews.com/calendar",
-        venue: "Trailside",
-        date: "2025-07-29",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: "Round Robin Open Mic Hosted by Letters To Abigail",
-        sorttime: "2025-07-29 18:00",
-        end_time_formatted: "2025-07-29 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://trailsidebrews.com/calendar",
@@ -908,6 +882,19 @@ const events = [
         name: "Trailside Trivia",
         sorttime: "2025-08-28 18:30",
         end_time_formatted: "2025-08-28 20:30",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-29",
+        time: "6:00 pm - 9:00 pm",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: "Live Music: Collin Cheek",
+        sorttime: "2025-08-29 18:00",
+        end_time_formatted: "2025-08-29 21:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
@@ -3638,7 +3625,7 @@ const events = [
         name: "Run Club",
         sorttime: "2025-07-29 18:00",
         end_time_formatted: "2025-07-29 20:30",
-        detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer. We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
+        detail: "https://www.facebook.com/groups/1795381247483886",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
@@ -3665,6 +3652,19 @@ const events = [
         sorttime: "2025-08-01 18:00",
         end_time_formatted: "2025-08-01 22:00",
         detail: "Karaoke with Thunderstruck Entertainment. Every 1st, 2nd, and 3rd Friday of the month from 6-10pm",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
+        venue: "Guidon",
+        date: "2025-08-05",
+        time: "6:00 pm - 8:30 pm",
+        start_time: "6:00 PM",
+        end_time: "8:30 PM",
+        name: "Run Club",
+        sorttime: "2025-08-05 18:00",
+        end_time_formatted: "2025-08-05 20:30",
+        detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer. We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
