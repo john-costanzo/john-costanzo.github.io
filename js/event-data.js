@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2025-07-31 11:00:43";
+const eventDataVersion = "Thursday, 2025-07-31 12:00:48";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1152,10 +1152,10 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         start_time: "6:00 PM",
         end_time: "9:00 PM",
-        name: "Jon Cox Band",
+        name: "Iggy Radio",
         sorttime: "2025-08-30 18:00",
         end_time_formatted: "2025-08-30 21:00",
-        detail: "Join us in the taproom as we host live music from the Jon Cox Band! Stop by for a beer & a good time starting at 6PM!",
+        detail: "Join us in the taproom as we host live music from Iggy Radio! Stop by for a beer & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
