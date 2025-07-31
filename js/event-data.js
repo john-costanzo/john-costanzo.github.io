@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2025-07-31 12:00:48";
+const eventDataVersion = "Thursday, 2025-07-31 15:13:51";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1122,6 +1122,19 @@ const events = [
     {
         url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
+        date: "2025-08-27",
+        time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 PM",
+        end_time: "8:00 PM",
+        name: "The Office Trivia Night",
+        sorttime: "2025-08-27 18:00",
+        end_time_formatted: "2025-08-27 20:00",
+        detail: "Join us at Bold Rock Mills River for an evening of paper company pandemonium with The Office Trivia Night! Whether you’re the Assistant (to the) Regional Manager or just here for the trivia vibes, it’s time to show off your Dunder Mifflin knowledge. Expect rounds packed with hilarious quotes, cringe-worthy moments, and all your favorite Scranton shenanigans.",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
+        url: "https://millsriver.boldrock.com/taproomevents",
+        venue: "Boldrock",
         date: "2025-08-28",
         time: "5:00 pm - 7:00 pm",
         start_time: "5:00 PM",
@@ -2235,6 +2248,19 @@ const events = [
         sorttime: "2025-08-13 18:00",
         end_time_formatted: "2025-08-13 20:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-08",
+        venue: "Southern App",
+        date: "2025-08-14",
+        time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: "Mr Jimmy & Bill Loftus- John Lee Hooker Birthday Tribute",
+        sorttime: "2025-08-14 18:00",
+        end_time_formatted: "2025-08-14 20:00",
+        detail: "Mr Jimmy & Bill Loftus grew up a mile away from each other on the south side of Chicago and were connected in North Carolina by a mutual friend.\nThey both…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -3653,6 +3679,19 @@ const events = [
         end_time_formatted: "2025-09-28 20:00",
         detail: "11:00 AM - 08:00 PM",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.stoneashevineyards.com/events",
+        venue: "Stoneashe",
+        date: "2025-08-16",
+        time: "1:00 pm-5:00 pm",
+        start_time: "1:00 PM",
+        end_time: "5:00 PM",
+        name: "Harvest Party",
+        sorttime: "2025-08-16 13:00",
+        end_time_formatted: "2025-08-16 17:00",
+        detail: "Come join the party! Enjoy a complimentary tasting of our new release! Special pricing on Fume’ Blanc bottles to go! A special surprise on the patio! Exclusive tours and tasting sample in our winery!",
+        location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
         url: "https://www.stoneashevineyards.com/events",
