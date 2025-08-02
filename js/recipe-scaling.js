@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Saturday, 2025-06-21 @ 19:52:06";
+const recipeScalingVersion = "Thursday, 2025-07-24 @ 15:17:56";
 
 /*
  *    In response to this prompt:
@@ -91,7 +91,7 @@ function updateAmounts( scaling_factor ) {
 
         // Set the element's value to the new amount concatenated with units
         if ( scaling_factor === 1 ) {
-            element.textContent = original_amount + " ";
+            element.textContent = original_amount;
         } else {
             element.textContent = numberToFraction( newAmount ) + " " + units;
         }
