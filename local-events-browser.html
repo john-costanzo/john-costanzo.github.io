@@ -24,14 +24,14 @@
             );
         }
         setTimeout( reloadPage, reload_period_ms ); // If user is still on this page...
-        window.addEventListener( 'beforeunload', reloadPage ); // ...or if user navigates away
+        document.addEventListener( 'visibilitychange', reloadPage ); //...or navigates back
 
         var lookahead_days = 28;
     </script>
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Sunday, 2025-08-03 @ 11:17:49";
+        const localEventBrowserVersion = "Sunday, 2025-08-03 @ 11:21:59";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
