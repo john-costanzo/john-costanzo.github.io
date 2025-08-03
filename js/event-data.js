@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2025-08-03 10:29:04";
+const eventDataVersion = "Sunday, 2025-08-03 12:00:51";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -463,7 +463,7 @@ const events = [
         time: "¿ - ?",
         start_time: "¿",
         end_time: "?",
-        name: "Food Truck: Adairs Cajun Cooking and Panorama Mediterranean Grill",
+        name: "Food Truck: Adairs Cajun Cooking and Indian Aroma",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-08 23:59",
         detail: "None",
