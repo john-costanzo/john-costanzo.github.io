@@ -1,4 +1,5 @@
-const addEventToCalendarVersion = "Thursday, 2025-07-03 @ 14:52:29";
+const addEventToCalendarVersion = "Sunday, 2025-08-03 @ 10:46:26";
+console.log( `addEventToCalendarVersion=${addEventToCalendarVersion}` );
 
 function utcToMicrosoft( datetime ) {
     // 20250623T220000Z -> 2025-06-23T22%3A00%3A00Z
