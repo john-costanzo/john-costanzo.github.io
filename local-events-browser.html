@@ -13,7 +13,8 @@
 
     <script>
         const reload_period_ms = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
-        setTimeout( function( ) {
+
+        function reloadPage( ) {
             console.log(
                 `About to reload the page after ${reload_period_ms} milliseconds...`,
             );
@@ -21,13 +22,16 @@
             console.log(
                 `Finished reloading the page after ${reload_period_ms} milliseconds.`,
             );
-        }, reload_period_ms );
+        }
+        setTimeout( reloadPage, reload_period_ms ); // If user is still on this page...
+        window.addEventListener( 'beforeunload', reloadPage ); // ...or if user navigates away
+
         var lookahead_days = 28;
     </script>
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Saturday, 2025-07-19 @ 23:09:22";
+        const localEventBrowserVersion = "Sunday, 2025-08-03 @ 11:17:49";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
