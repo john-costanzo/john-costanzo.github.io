@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2025-08-03 09:00:46";
+const eventDataVersion = "Sunday, 2025-08-03 10:29:04";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -463,7 +463,7 @@ const events = [
         time: "¿ - ?",
         start_time: "¿",
         end_time: "?",
-        name: "Food Truck: Panorama Mediterranean Grill",
+        name: "Food Truck: Adairs Cajun Cooking and Panorama Mediterranean Grill",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-08 23:59",
         detail: "None",
@@ -1668,19 +1668,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
-        date: "2025-08-02",
-        time: " 7:00 pm - 10:00 pm",
-        start_time: " 7:00 pm",
-        end_time: "10:00 pm",
-        name: "Bob Zullo performs at Saint Paul, first Saturday of every Month!",
-        sorttime: "2025-08-02 19:00",
-        end_time_formatted: "2025-08-02 22:00",
-        detail: "Enjoy great music and great wine Saturday afternoon with Bob Zullo at the Vineyard. Sipping wine, Enjoying friends and listening to Bob on the patio sitting in the vineyard where the grapes are grown! No Food Truck on Site, Charcuterie available or bring your own picnic",
-        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/vineyard-events",
-        venue: "St. Paul",
         date: "2025-08-03",
         time: " 6:30 pm -  9:30 pm",
         start_time: " 6:30 pm",
@@ -1689,6 +1676,19 @@ const events = [
         sorttime: "2025-08-03 18:30",
         end_time_formatted: "2025-08-03 21:30",
         detail: "First Sunday of Every Month Eric Congdon\'s acoustic supergroup AUTUMNWÜD is playing a year long residency at the beautiful and fun Saint Paul Vineyards. Every first Sunday of the month they will be filling the grape soaked air with beautiful 3 part harmonies and jams as only Autumnwüd can deliver.",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
+        venue: "St. Paul",
+        date: "2025-08-02",
+        time: " 7:00 pm - 10:00 pm",
+        start_time: " 7:00 pm",
+        end_time: "10:00 pm",
+        name: "Bob Zullo performs at Saint Paul, first Saturday of every Month!",
+        sorttime: "2025-08-02 19:00",
+        end_time_formatted: "2025-08-02 22:00",
+        detail: "Enjoy great music and great wine Saturday afternoon with Bob Zullo at the Vineyard. Sipping wine, Enjoying friends and listening to Bob on the patio sitting in the vineyard where the grapes are grown! No Food Truck on Site, Charcuterie available or bring your own picnic",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
@@ -1733,19 +1733,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
-        date: "2025-08-02",
-        time: " 7:00 pm - 10:00 pm",
-        start_time: " 7:00 pm",
-        end_time: "10:00 pm",
-        name: "Folkadelic at Appalachian Ridge Artisan Hard Cider",
-        sorttime: "2025-08-02 19:00",
-        end_time_formatted: "2025-08-02 22:00",
-        detail: "The perfect Saturday at the ridge! Live music, cider and Friends!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
         date: "2025-08-03",
         time: " 6:30 pm -  9:30 pm",
         start_time: " 6:30 pm",
@@ -1754,6 +1741,19 @@ const events = [
         sorttime: "2025-08-03 18:30",
         end_time_formatted: "2025-08-03 21:30",
         detail: "Enjoy live tunes with Daniel Sage while enjoying a delicious glass of wine, cider or beer! Please feel free to bring your own food. A great way to spend a Sunday afternoon",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-08-02",
+        time: " 7:00 pm - 10:00 pm",
+        start_time: " 7:00 pm",
+        end_time: "10:00 pm",
+        name: "Folkadelic at Appalachian Ridge Artisan Hard Cider",
+        sorttime: "2025-08-02 19:00",
+        end_time_formatted: "2025-08-02 22:00",
+        detail: "The perfect Saturday at the ridge! Live music, cider and Friends!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
