@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-08-05 09:00:47";
+const eventDataVersion = "Tuesday, 2025-08-05 11:00:50";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -369,12 +369,38 @@ const events = [
         url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-08-06",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Indian Aroma",
+        sorttime: "¿ - ?",
+        end_time_formatted: "2025-08-06 23:59",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-06",
         time: "6:00 pm - 8:00 pm",
         start_time: "6:00 pm",
         end_time: "8:00 pm",
         name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
         sorttime: "2025-08-06 18:00",
         end_time_formatted: "2025-08-06 20:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-07",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Adair’s Cajun Cooking",
+        sorttime: "¿ - ?",
+        end_time_formatted: "2025-08-07 23:59",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
