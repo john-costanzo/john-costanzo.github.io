@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-08-05 03:22:40";
+const eventDataVersion = "Tuesday, 2025-08-05 09:00:47";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -421,6 +421,19 @@ const events = [
         url: "https://trailsidebrews.com/calendar",
         venue: "Trailside",
         date: "2025-08-09",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Adairs Cajun Cooking",
+        sorttime: "¿ - ?",
+        end_time_formatted: "2025-08-09 23:59",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-09",
         time: "6:00 pm - 9:00 pm",
         start_time: "6:00 pm",
         end_time: "9:00 pm",
@@ -440,6 +453,19 @@ const events = [
         name: "Live Music: Spiro Nicolopoulos",
         sorttime: "2025-08-10 14:00",
         end_time_formatted: "2025-08-10 17:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-11",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Adair’s Cajun Cooking",
+        sorttime: "¿ - ?",
+        end_time_formatted: "2025-08-11 23:59",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
@@ -467,6 +493,19 @@ const events = [
         sorttime: "2025-08-11 18:30",
         end_time_formatted: "2025-08-11 20:30",
         detail: "Join us for a Paint your own Pottery class with Half Light Honey! Click here for more information!",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://trailsidebrews.com/calendar",
+        venue: "Trailside",
+        date: "2025-08-12",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Adair’s Cajun Cooking",
+        sorttime: "¿ - ?",
+        end_time_formatted: "2025-08-12 23:59",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
