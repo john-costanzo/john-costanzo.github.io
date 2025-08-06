@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Tuesday, 2025-08-05 @ 22:33:25";
+const eventUtilsVersion = "Wednesday, 2025-08-06 @ 09:24:19";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 // Function to organize events by date
@@ -601,6 +601,18 @@ function areAllPrefixesPresent( s1, s2 ) {
     return prefixesArePresent;
 }
 
+function mapVenues( arr ) {
+    // arr is an array of objects with (at least) keys 'url' and 'venue'
+    // Output: an object mapping 'venue' to 'url'
+    return arr.reduce( ( result, item ) => {
+        if ( item.venue && item.url ) {
+            result[ item.venue ] = item.url;
+        }
+        return result;
+    }, {} );
+}
+var menuToURLMap = mapVenues( events );
+
 // Create venue filter chips
 function createVenueFilters( ) {
     const venueFiltersContainer = document.getElementById( "venue-filters" );
@@ -612,9 +624,16 @@ function createVenueFilters( ) {
         const chip = document.createElement( "span" );
         chip.className = "venue-chip";
         chip.textContent = venue;
-        chip.addEventListener( "click", ( ) => {
-            chip.classList.toggle( "active" );
-            applyFilters( );
+        chip.addEventListener( "click", function( event ) {
+            if ( event.ctrlKey ) {
+                // Ctrl+Click behavior here
+                console.log( `control pressed: opening a new window for ${venue} => ${menuToURLMap[venue]}` );
+                const url = menuToURLMap[ venue ];
+                if ( url ) window.open( url, '_blank' );
+            } else {
+                chip.classList.toggle( "active" );
+                applyFilters( );
+            }
         } );
         venueFiltersContainer.appendChild( chip );
     } );
