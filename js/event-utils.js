@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Tuesday, 2025-08-05 @ 04:57:19";
+const eventUtilsVersion = "Tuesday, 2025-08-05 @ 22:33:25";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 // Function to organize events by date
@@ -431,7 +431,7 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
         const event_count_control = document.getElementById( "event_count" );
         if ( event_count_control ) {
             const ce = countElementsWithEvents( eventsByDate );
-            event_count_control.innerHTML = " (" + countElementsWithEvents( eventsByDate ) + " events)";
+            event_count_control.innerHTML = " (" + ce + " event" + ( ce == 1 ? "" : "s" ) + ")";
         }
 
     }
