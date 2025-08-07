@@ -1,5 +1,42 @@
-const eventUtilsVersion = "Wednesday, 2025-08-06 @ 20:40:03";
+const eventUtilsVersion = "Thursday, 2025-08-07 @ 12:51:15";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
+
+const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
+const startTime = Date.now( );
+
+function reloadPage( ) {
+    const searchTerm = document
+        .getElementById( "search-input" )
+        .value.toLowerCase( );
+
+    console.log(
+        `About to reload the page...`,
+    );
+
+    // Parse the current URL
+    const url = new URL( window.location );
+
+    // Set new parameters (overwriting existing values if present)
+    url.searchParams.set( 'searchTerm', searchTerm );
+    url.searchParams.set( 'venueFilters', venueFilters.join( ',' ) );
+
+    // Reload the page with the updated parameters
+    window.location.href = url.toString( );
+
+    console.log(
+        `Finished reloading the page.`,
+    );
+}
+
+function checkRefresh( ) {
+    const currentTime = Date.now( );
+    console.log( `checkRefresh: ${currentTime}` );
+    if ( currentTime - startTime >= refreshIntervalMs ) {
+        reloadPage( );
+    }
+}
+
+setInterval( checkRefresh, 10000 ); // Check every 10 seconds
 
 // Function to organize events by date
 function organizeEventsByDate( events, startDate, endDate ) {
