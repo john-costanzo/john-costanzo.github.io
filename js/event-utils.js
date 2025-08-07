@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Wednesday, 2025-08-06 @ 09:24:19";
+const eventUtilsVersion = "Wednesday, 2025-08-06 @ 20:40:03";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 // Function to organize events by date
@@ -637,6 +637,31 @@ function createVenueFilters( ) {
         } );
         venueFiltersContainer.appendChild( chip );
     } );
+
+    const allChip = document.createElement( "span" );
+    allChip.className = "venue-chip";
+    allChip.innerHTML = "<i>all</i>";
+    allChip.addEventListener( "click", function( event ) {
+        const chips = Array.from( document.getElementsByClassName( "venue-chip" ) );
+        chips.forEach( ( chip ) => {
+            chip.classList.add( "active" );
+        } );
+        applyFilters( );
+    } );
+    venueFiltersContainer.appendChild( allChip );
+
+    const noneChip = document.createElement( "span" );
+    noneChip.className = "venue-chip";
+    noneChip.innerHTML = "<i>none</i>";
+    noneChip.addEventListener( "click", function( event ) {
+        const chips = Array.from( document.getElementsByClassName( "venue-chip" ) );
+        chips.forEach( ( chip ) => {
+            chip.classList.remove( "active" );
+        } );
+        applyFilters( );
+    } );
+    venueFiltersContainer.appendChild( noneChip );
+
 }
 
 function applyURLParameters( ) {
