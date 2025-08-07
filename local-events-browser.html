@@ -12,6 +12,8 @@
         var lookahead_days = 28;
         // Current date and date formatting utility
         const today = new Date( );
+        const endDate = new Date( today );
+        endDate.setDate( today.getDate( ) + lookahead_days );
     </script>
 
     <script src="js/event-data.js"></script>
@@ -22,43 +24,17 @@
     <script>
         const reload_period_ms = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
         var venueFilters = [ ]; // array of names of currently selected venues
-
-        function reloadPage( ) {
-            const searchTerm = document
-                .getElementById( "search-input" )
-                .value.toLowerCase( );
-
-            console.log(
-                `About to reload the page...`,
-            );
-
-            // Parse the current URL
-            const url = new URL( window.location );
-
-            // Set new parameters (overwriting existing values if present)
-            url.searchParams.set( 'searchTerm', searchTerm );
-            url.searchParams.set( 'venueFilters', venueFilters.join( ',' ) );
-
-            // Reload the page with the updated parameters
-            window.location.href = url.toString( );
-
-            console.log(
-                `Finished reloading the page.`,
-            );
-        }
-        setTimeout( reloadPage, reload_period_ms ); // If user is still on this page...
-        document.addEventListener( 'visibilitychange', reloadPage ); //...or navigates back
     </script>
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Tuesday, 2025-08-05 @ 03:35:20";
+        const localEventBrowserVersion = "Thursday, 2025-08-07 @ 12:50:45";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
         body {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.1;
             color: #333;
             max-width: 1200px;
             margin: 0 auto;
@@ -75,7 +51,10 @@
 
         h1 {
             color: white;
+            margin-top: 0px;
             margin-bottom: 0px;
+            font-size: 1.5em;
+            line-height: 0.1;
         }
 
         .date-container {
@@ -94,7 +73,7 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
             margin-top: -10px;
-            margin-bottom: -10px;
+            margin-bottom: -5px;
             font-size: 1.1em;
         }
 
@@ -111,16 +90,16 @@
             border-left: 4px solid #6c9ece;
             background-color: #f5f8fa;
             border-radius: 0 4px 4px 0;
-        }
-
-        /* Remove margin from all .event divs by default */
-        .event {
-            margin-bottom: 0;
+            margin-bottom: 0px;
         }
 
         /* Apply margin-bottom: 5px ONLY to the last .event in its parent */
         .event:last-child {
             margin-bottom: 5px;
+        }
+
+        .event>.venue {
+            margin-top: 0px;
         }
 
         .event:hover {
@@ -250,14 +229,18 @@
             color: red;
             border-color: red;
         }
+
+        .date-range {
+            line-height: 0.7;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Hendo Happenings</h1>
-        <p style="display: none">
-            Events for the next four weeks: <span id="date-range"></span>
+        <p class="date-range">
+            Events for: <span id="date-range"></span>
         </p>
     </header>
 
@@ -318,9 +301,6 @@
             document.getElementById( "loading" ).style.display = "none";
 
             // Show initial events
-            const endDate = new Date( today );
-            endDate.setDate( today.getDate( ) + lookahead_days );
-
             const organizedEvents = organizeEventsByDate(
                 events,
                 getLocalISODateString( today ).split( "T" )[ 0 ],
