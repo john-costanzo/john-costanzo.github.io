@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2025-08-07 11:01:01";
+const eventDataVersion = "Thursday, 2025-08-07 12:00:56";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2781,6 +2781,19 @@ const events = [
         sorttime: "2025-11-09 14:00",
         end_time_formatted: "2025-11-09 17:00",
         detail: "Tremendous musicality, versatility and the ability to entertain everyone from the casual listener to the most discriminating music aficionados. These ...",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        date: "2025-11-13",
+        time: "6:00 pm - 9:30 pm",
+        start_time: "6:00 pm",
+        end_time: "9:30 pm",
+        name: "The Altons & Thee Sinseers",
+        sorttime: "2025-11-13 18:00",
+        end_time_formatted: "2025-11-13 21:30",
+        detail: "Emerging from Southeast Los Angeles, The Altons have become a fixture in the burgeoning West Coast souldies scene. Helping launch the Daptone Records ...",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
