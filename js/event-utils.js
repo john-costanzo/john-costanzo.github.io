@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Friday, 2025-08-08 @ 07:23:58";
+const eventUtilsVersion = "Friday, 2025-08-08 @ 18:55:57";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -156,6 +156,15 @@ function applyFilters( ) {
     let filteredEvents = [ ...events ];
     // Apply search term filter
     if ( searchTerm ) {
+
+        gtag( "event", "search_term_provided", {
+            event_category: "Page",
+            event_label: `Hendo Happenings`,
+            value: 1,
+        } );
+        console.log( "Analytics: search term provided" );
+
+
         filteredEvents = filteredEvents.filter(
             ( event ) =>
             areAllPrefixesPresent( searchTerm, event.name ) ||
@@ -547,6 +556,14 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
             toggleAddCalendarElement.textContent = "🗓";
             toggleAddCalendarElement.className = "toggle-control";
             toggleAddCalendarElement.addEventListener( "click", function( ) {
+
+                gtag( "event", "calendar_add", {
+                    event_category: "Page",
+                    event_label: `Hendo Happenings`,
+                    value: 1,
+                } );
+                console.log( "Analytics: add-to-calendar is clicked" );
+
                 addCalendarElement.classList.toggle( "hidden" );
             } );
 
@@ -559,6 +576,13 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
                 toggleElement.textContent = "⊕";
                 toggleElement.className = "toggle-control green";
                 toggleElement.addEventListener( "click", function( ) {
+                    gtag( "event", "description_expanded", {
+                        event_category: "Page",
+                        event_label: `Hendo Happenings`,
+                        value: 1,
+                    } );
+                    console.log( "Analytics: description is expanded" );
+
                     descriptionElement.classList.toggle( "hidden" );
                     if ( toggleElement.textContent === "⊕" ) {
                         toggleElement.textContent = "Θ";
@@ -662,12 +686,29 @@ function createVenueFilters( ) {
         chip.className = "venue-chip";
         chip.textContent = venue;
         chip.addEventListener( "click", function( event ) {
+
             if ( event.ctrlKey ) {
-                // Ctrl+Click behavior here
+
+                gtag( "event", "open_url_reference", {
+                    event_category: "Page",
+                    event_label: `Hendo Happenings`,
+                    value: 1,
+                } );
+                console.log( "Analytics: open_url_reference" );
+
                 console.log( `control pressed: opening a new window for ${venue} => ${menuToURLMap[venue]}` );
                 const url = menuToURLMap[ venue ];
                 if ( url ) window.open( url, '_blank' );
             } else {
+
+                gtag( "event", "venue_toggled", {
+                    event_category: "Page",
+                    event_label: `Hendo Happenings`,
+                    value: 1,
+                } );
+                console.log( "Analytics: venue toggled" );
+
+
                 chip.classList.toggle( "active" );
                 applyFilters( );
             }
@@ -679,6 +720,13 @@ function createVenueFilters( ) {
     allChip.className = "venue-chip";
     allChip.innerHTML = "<i>all</i>";
     allChip.addEventListener( "click", function( event ) {
+        gtag( "event", "all_chip", {
+            event_category: "Page",
+            event_label: `Hendo Happenings`,
+            value: 1,
+        } );
+        console.log( "Analytics: all_chip clicked" );
+
         const chips = Array.from( document.getElementsByClassName( "venue-chip" ) );
         chips.forEach( ( chip ) => {
             chip.classList.add( "active" );
@@ -691,6 +739,13 @@ function createVenueFilters( ) {
     noneChip.className = "venue-chip";
     noneChip.innerHTML = "<i>none</i>";
     noneChip.addEventListener( "click", function( event ) {
+        gtag( "event", "none_chip", {
+            event_category: "Page",
+            event_label: `Hendo Happenings`,
+            value: 1,
+        } );
+        console.log( "Analytics: none_chip clicked" );
+
         const chips = Array.from( document.getElementsByClassName( "venue-chip" ) );
         chips.forEach( ( chip ) => {
             chip.classList.remove( "active" );
