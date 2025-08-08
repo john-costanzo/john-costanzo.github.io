@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Thursday, 2025-08-07 @ 12:51:15";
+const eventUtilsVersion = "Friday, 2025-08-08 @ 07:23:58";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -30,13 +30,13 @@ function reloadPage( ) {
 
 function checkRefresh( ) {
     const currentTime = Date.now( );
-    console.log( `checkRefresh: ${currentTime}` );
+    // console.log( `checkRefresh: ${currentTime}` );
     if ( currentTime - startTime >= refreshIntervalMs ) {
         reloadPage( );
     }
 }
 
-setInterval( checkRefresh, 10000 ); // Check every 10 seconds
+setInterval( checkRefresh, 60000 ); // Check every 60 seconds
 
 // Function to organize events by date
 function organizeEventsByDate( events, startDate, endDate ) {
