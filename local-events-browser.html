@@ -39,7 +39,7 @@
 
     <title>Hendo Happenings</title>
     <script>
-        const localEventBrowserVersion = "Friday, 2025-08-08 @ 18:42:24";
+        const localEventBrowserVersion = "Friday, 2025-08-08 @ 19:51:24";
         console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
     </script>
     <style>
@@ -271,6 +271,14 @@
         const venue_toggle = document.getElementById( "venue-toggle" );
         const venue_filters = document.getElementById( "venue-filters" );
         venue_toggle.addEventListener( "click", function( ) {
+
+            gtag( "event", "venues_toggled", {
+                event_category: "Page",
+                event_label: `Hendo Happenings`,
+                value: 1,
+            } );
+            console.log( "Analytics: venues toggled" );
+
             venue_filters.classList.toggle( "hidden" );
             if ( venue_toggle.textContent === "⊕" ) {
                 venue_toggle.textContent = "Θ";
