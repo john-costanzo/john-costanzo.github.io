@@ -1,4 +1,4 @@
-const addEventToCalendarVersion = "Sunday, 2025-08-03 @ 10:55:48";
+const addEventToCalendarVersion = "Friday, 2025-08-08 @ 19:12:38";
 console.log( `addEventToCalendarVersion = ${addEventToCalendarVersion}` );
 
 function utcToMicrosoft( datetime ) {
@@ -167,6 +167,35 @@ function createICSFile( title, description, location, startDate, endDate ) {
 }
 
 function showCalendarOptions( urls ) {
+
+    function dispatchCalendar( url ) {
+        if ( url = urls.google ) {
+            gtag( "event", "add_to_google_calendar", {
+                event_category: "Page",
+                event_label: `Hendo Happenings`,
+                value: 1,
+            } );
+            console.log( "Analytics: add_to_google_calendar" );
+        }
+        if ( url = urls.outlook ) {
+            gtag( "event", "add_to_outlook_calendar", {
+                event_category: "Page",
+                event_label: `Hendo Happenings`,
+                value: 1,
+            } );
+            console.log( "Analytics: add_to_outlook_calendar" );
+        }
+        if ( url = urls.yahoo ) {
+            gtag( "event", "add_to_yahoo_calendar", {
+                event_category: "Page",
+                event_label: `Hendo Happenings`,
+                value: 1,
+            } );
+            console.log( "Analytics: add_to_yahoo_calendar" );
+        }
+        window.open( url, '_blank' );
+    }
+
     const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
     const isIOS = /iPad|iPhone|iPod/.test( navigator.userAgent );
     const isAndroid = /Android/.test( navigator.userAgent );
@@ -215,9 +244,9 @@ function showCalendarOptions( urls ) {
     } else {
         // Desktop options
         buttonsHTML += `
-                    <button onclick="window.open('${urls.google}', '_blank')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar</button>
-                    <button onclick="window.open('${urls.outlook}', '_blank')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Outlook Calendar</button>
-                    <button onclick="window.open('${urls.yahoo}', '_blank')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Yahoo Calendar</button>
+                    <button onclick="dispatchCalendar('${urls.google}')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar</button>
+                    <button onclick="dispatchCalendar('${urls.outlook}')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Outlook Calendar</button>
+                    <button onclick="dispatchCalendar('${urls.yahoo}')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Yahoo Calendar</button>
                     <button onclick="downloadICS('${urls.ics}')" style="padding: 12px; border: none; background: #28a745; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">💾 Download .ics file</button>
                 `;
     }
@@ -247,6 +276,13 @@ function downloadICS( url ) {
     a.download = 'event.ics';
     // For mobile devices, try different approaches
     const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
+
+    gtag( "event", "download_ics", {
+        event_category: "Page",
+        event_label: `Hendo Happenings`,
+        value: 1,
+    } );
+    console.log( "Analytics: download_ics" );
 
     if ( isMobile ) {
         // Try to trigger download with user interaction
