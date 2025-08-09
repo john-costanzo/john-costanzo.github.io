@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-08-09 08:00:50";
+const eventDataVersion = "Saturday, 2025-08-09 11:34:21";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1239,19 +1239,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
-        date: "2025-08-08",
-        time: "10:00 pm -  1:00 am",
-        start_time: "10:00 pm",
-        end_time: " 1:00 am",
-        name: "Friday Night Music series presents...Music with Kevin and Kelley",
-        sorttime: "2025-08-08 22:00",
-        end_time_formatted: "2025-08-08 01:00",
-        detail: "Our Friday night music series continues at the Ridge with Kevin and Kelley. Great times with great friends! If you haven\'t heard them you are missing out! Food will be available for your perfect Friday night evening",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
         date: "2025-08-09",
         time: " 7:00 pm - 10:00 pm",
         start_time: " 7:00 pm",
@@ -1377,6 +1364,19 @@ const events = [
         sorttime: "2025-08-31 18:30",
         end_time_formatted: "2025-08-31 21:30",
         detail: "Come out and enjoy Jennifer share a blend of rock, folk, and originals. A great Sunday at the Ridge with Great music, great cider and great friends",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-08-08",
+        time: "10:00 pm -  1:00 am",
+        start_time: "10:00 pm",
+        end_time: " 1:00 am",
+        name: "Friday Night Music series presents...Music with Kevin and Kelley",
+        sorttime: "2025-08-08 22:00",
+        end_time_formatted: "2025-08-08 01:00",
+        detail: "Our Friday night music series continues at the Ridge with Kevin and Kelley. Great times with great friends! If you haven\'t heard them you are missing out! Food will be available for your perfect Friday night evening",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
