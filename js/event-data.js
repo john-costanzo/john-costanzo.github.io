@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-08-09 11:34:21";
+const eventDataVersion = "Saturday, 2025-08-09 11:34:26";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1096,19 +1096,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
-        date: "2025-08-08",
-        time: "10:00 pm -  1:00 am",
-        start_time: "10:00 pm",
-        end_time: " 1:00 am",
-        name: "Friday Night Music series presents...Music with Kevin and Kelley",
-        sorttime: "2025-08-08 22:00",
-        end_time_formatted: "2025-08-08 01:00",
-        detail: "Our Friday night music series continues at the Ridge with Kevin and Kelley. Great times with great friends! If you haven\'t heard them you are missing out! Food will be available for your perfect Friday night evening",
-        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/vineyard-events",
-        venue: "St. Paul",
         date: "2025-08-09",
         time: " 7:00 pm - 10:00 pm",
         start_time: " 7:00 pm",
@@ -1234,6 +1221,19 @@ const events = [
         sorttime: "2025-08-31 18:30",
         end_time_formatted: "2025-08-31 21:30",
         detail: "Wiregrass at Saint Paul Mountain Vineyards! It\'s going to be a great day at the Vineyard! Amazing music to pair with our amazing wine wine. See you at Saint Paul! No food truck on site, Charcuterie available or bring your own picnic",
+        location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/vineyard-events",
+        venue: "St. Paul",
+        date: "2025-08-08",
+        time: "10:00 pm -  1:00 am",
+        start_time: "10:00 pm",
+        end_time: " 1:00 am",
+        name: "Friday Night Music series presents...Music with Kevin and Kelley",
+        sorttime: "2025-08-08 22:00",
+        end_time_formatted: "2025-08-08 01:00",
+        detail: "Our Friday night music series continues at the Ridge with Kevin and Kelley. Great times with great friends! If you haven\'t heard them you are missing out! Food will be available for your perfect Friday night evening",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
