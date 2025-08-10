@@ -11,6 +11,16 @@
         const recipeBrowserVersion = "Monday, 2025-06-16 @ 17:20:43";
     </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-532DKX1BRN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-532DKX1BRN');
+    </script>
+
     <script>
         dojoConfig = {
             parseOnLoad: true
@@ -255,6 +265,20 @@
             for ( let child of children ) {
                 child.classList.toggle( 'itemClicked' )
             }
+
+            let event_category;
+            if (document.getElementById('recipe_ingredients').contains(element)) {
+                event_category = 'ingredient_click';
+            } else if (document.getElementById('recipe_method').contains(element)) {
+                event_category = 'method_step_click';
+            }
+
+            if (event_category) {
+                gtag('event', event_category, {
+                  'recipe_id': currentRecipeId,
+                  'item_text': element.textContent.trim()
+                });
+            }
         }
 
         function fillInRecipe( id ) {
@@ -417,6 +441,10 @@
                             } );
                             // Add an event listener to each list item
                             on( listItem, "click", function( ) {
+                                gtag('event', 'recipe_click', {
+                                  'recipe_id': recipeId,
+                                  'recipe_title': recipeTitle
+                                });
                                 const originPathname = window.location.origin + window.location.pathname;
                                 // const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
                                 const searchBox = document.getElementById( "searchBox" );
@@ -788,6 +816,7 @@
                     label: '<span class="text-align-left">Large font</span><span class="text-align-right">Ctrl+3</span>',
                     iconClass: "large-A",
                     onClick: function( ) {
+                        gtag('event', 'font_size_change', { 'size': 'large' });
                         currentFontSize = largeFontSize;
                         redirectHere( );
                     }
@@ -797,6 +826,7 @@
                     label: '<span class="text-align-left">Medium font</span><span class="text-align-right">Ctrl+2</span>',
                     iconClass: "medium-A",
                     onClick: function( ) {
+                        gtag('event', 'font_size_change', { 'size': 'medium' });
                         currentFontSize = mediumFontSize;
                         redirectHere( );
                     }
@@ -806,6 +836,7 @@
                     label: '<span class="text-align-left">Small font</span><span class="text-align-right">Ctrl+1</span>',
                     iconClass: "small-A",
                     onClick: function( ) {
+                        gtag('event', 'font_size_change', { 'size': 'small' });
                         currentFontSize = smallFontSize;
                         redirectHere( );
                     }
@@ -813,6 +844,7 @@
 
                 var colorPalette = new ColorPalette( {
                     onChange: function( color ) {
+                        gtag('event', 'change_color', { 'color': color });
                         changeColor( color );
                     }
                 } );
@@ -827,6 +859,7 @@
                     label: '<span class="text-align-left">Scale recipe</span><span class="text-align-right">Ctrl+s</span>',
                     iconClass: "scaleRecipeIcon",
                     onClick: function( ) {
+                        gtag('event', 'scale_recipe', { 'recipe_id': currentRecipeId });
                         if ( promptForScalingPercentage( ) )
                             redirectHere( )
                     },
@@ -837,6 +870,7 @@
                     label: '<span class="text-align-left">Print recipe</span><span class="text-align-right">Ctrl+p</span>',
                     iconClass: "printerIcon",
                     onClick: function( ) {
+                        gtag('event', 'print_recipe', { 'recipe_id': currentRecipeId });
                         printRecipe( );
                     },
                     disabled: true,
@@ -846,6 +880,7 @@
                     label: '<span class="text-align-left">Email link</span><span class="text-align-right">Ctrl+e</span>',
                     iconClass: "emailLinkIcon",
                     onClick: function( ) {
+                        gtag('event', 'email_recipe_link', { 'recipe_id': currentRecipeId });
                         emailLinkToRecipe( );
                     },
                     disabled: true,
