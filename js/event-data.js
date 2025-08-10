@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2025-08-10 11:00:46";
+const eventDataVersion = "Sunday, 2025-08-10 12:17:46";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1226,19 +1226,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
-        date: "2025-08-09",
-        time: " 7:00 pm - 10:00 pm",
-        start_time: " 7:00 pm",
-        end_time: "10:00 pm",
-        name: "Live Music with Christine Chandler at the Ridge",
-        sorttime: "2025-08-09 19:00",
-        end_time_formatted: "2025-08-09 22:00",
-        detail: "Come enjoy Christina Chandler! MEMPHIS-MADE AND MOUNTAIN-BOUND. Enjoy a cold glass of beer or cider while enjoying the tunes of Christina Chandler!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
         date: "2025-08-10",
         time: " 6:30 pm -  9:30 pm",
         start_time: " 6:30 pm",
@@ -1351,6 +1338,19 @@ const events = [
         sorttime: "2025-08-31 18:30",
         end_time_formatted: "2025-08-31 21:30",
         detail: "Come out and enjoy Jennifer share a blend of rock, folk, and originals. A great Sunday at the Ridge with Great music, great cider and great friends",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-08-09",
+        time: " 7:00 pm - 10:00 pm",
+        start_time: " 7:00 pm",
+        end_time: "10:00 pm",
+        name: "Live Music with Christine Chandler at the Ridge",
+        sorttime: "2025-08-09 19:00",
+        end_time_formatted: "2025-08-09 22:00",
+        detail: "Come enjoy Christina Chandler! MEMPHIS-MADE AND MOUNTAIN-BOUND. Enjoy a cold glass of beer or cider while enjoying the tunes of Christina Chandler!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
