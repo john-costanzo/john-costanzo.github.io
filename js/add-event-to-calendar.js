@@ -52,6 +52,23 @@ function createCalendarDispatcher( url, title, description, location, startTime,
     return ( calendarLinksElement );
 }
 
+function trackCalendarClick(type, url, eventDetailsJson) {
+    const eventDetails = JSON.parse(eventDetailsJson);
+    gtag('event', 'add_to_calendar', {
+        'calendar_type': type,
+        'event_name': eventDetails.title,
+        'event_location': eventDetails.location,
+        'event_start_time': eventDetails.startTime,
+        'event_end_time': eventDetails.endTime,
+    });
+    if (type === 'download_ics') {
+        downloadICS(url, eventDetails);
+    } else {
+        window.open(url, '_blank');
+    }
+}
+
+
 function addToCalendar( title, description, location, startTime, endTime ) {
     try {
         // Convert datetime strings to Date objects
@@ -79,8 +96,10 @@ function addToCalendar( title, description, location, startTime, endTime ) {
             ics: createICSFile( title, description, location, startDate, endDate )
         };
 
+        const eventDetails = { title, description, location, startTime, endTime };
+
         // Show calendar options to user
-        showCalendarOptions( calendarUrls );
+        showCalendarOptions( calendarUrls, eventDetails );
 
     } catch ( error ) {
         console.error( 'Error creating calendar event:', error, " startTime='", startTime, "' endTime='", endTime, "'" );
@@ -166,35 +185,7 @@ function createICSFile( title, description, location, startDate, endDate ) {
     return URL.createObjectURL( blob );
 }
 
-function showCalendarOptions( urls ) {
-
-    function dispatchCalendar( url ) {
-        if ( url = urls.google ) {
-            gtag( "event", "add_to_google_calendar", {
-                event_category: "Page",
-                event_label: `Hendo Happenings`,
-                value: 1,
-            } );
-            console.log( "Analytics: add_to_google_calendar" );
-        }
-        if ( url = urls.outlook ) {
-            gtag( "event", "add_to_outlook_calendar", {
-                event_category: "Page",
-                event_label: `Hendo Happenings`,
-                value: 1,
-            } );
-            console.log( "Analytics: add_to_outlook_calendar" );
-        }
-        if ( url = urls.yahoo ) {
-            gtag( "event", "add_to_yahoo_calendar", {
-                event_category: "Page",
-                event_label: `Hendo Happenings`,
-                value: 1,
-            } );
-            console.log( "Analytics: add_to_yahoo_calendar" );
-        }
-        window.open( url, '_blank' );
-    }
+function showCalendarOptions( urls, eventDetails ) {
 
     const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
     const isIOS = /iPad|iPhone|iPod/.test( navigator.userAgent );
@@ -243,11 +234,12 @@ function showCalendarOptions( urls ) {
                 `;
     } else {
         // Desktop options
+        const eventDetailsJson = JSON.stringify(eventDetails);
         buttonsHTML += `
-                    <button onclick="dispatchCalendar('${urls.google}')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar</button>
-                    <button onclick="dispatchCalendar('${urls.outlook}')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Outlook Calendar</button>
-                    <button onclick="dispatchCalendar('${urls.yahoo}')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Yahoo Calendar</button>
-                    <button onclick="downloadICS('${urls.ics}')" style="padding: 12px; border: none; background: #28a745; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">💾 Download .ics file</button>
+                    <button onclick="trackCalendarClick('google', '${urls.google}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar</button>
+                    <button onclick="trackCalendarClick('outlook', '${urls.outlook}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Outlook Calendar</button>
+                    <button onclick="trackCalendarClick('yahoo', '${urls.yahoo}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Yahoo Calendar</button>
+                    <button onclick="trackCalendarClick('download_ics', '${urls.ics}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #28a745; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">💾 Download .ics file</button>
                 `;
     }
 
@@ -270,19 +262,12 @@ function showCalendarOptions( urls ) {
     } );
 }
 
-function downloadICS( url ) {
+function downloadICS( url, eventDetails ) {
     const a = document.createElement( 'a' );
     a.href = url;
     a.download = 'event.ics';
     // For mobile devices, try different approaches
     const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
-
-    gtag( "event", "download_ics", {
-        event_category: "Page",
-        event_label: `Hendo Happenings`,
-        value: 1,
-    } );
-    console.log( "Analytics: download_ics" );
 
     if ( isMobile ) {
         // Try to trigger download with user interaction

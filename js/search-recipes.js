@@ -81,6 +81,8 @@ function removeDiacritics( string ) {
 }
 
 
+var searchTrackTimer;
+
 // Assume the keyboard event has already been processed.
 // Use the query in the query box to filter the page according to the recipeIndex
 function searchKeyboardHandler( ) {
@@ -92,6 +94,15 @@ function searchKeyboardHandler( ) {
     );
     if ( debugSearchRecipes ) console.log( "query=[%s]", query );
     searchElements( query.split( " " ), recipeIndexArray );
+
+    clearTimeout(searchTrackTimer);
+    searchTrackTimer = setTimeout(() => {
+        if (query.length > 2) { // Only track queries with more than 2 chars
+            gtag('event', 'search', {
+              search_term: query
+            });
+        }
+    }, 500);
 }
 
 document.getElementById( "searchBox" ).addEventListener( 'input', searchKeyboardHandler );
