@@ -12,6 +12,8 @@ function toggleElement( elementId, displayStyle ) {
     }
 
     const style = element.style;
+    const isShowing = (displayStyle && displayStyle !== "none") || (!displayStyle && style.display === "none");
+
 
     if ( displayStyle ) {
         style.display = displayStyle;
@@ -20,6 +22,14 @@ function toggleElement( elementId, displayStyle ) {
             style.display = "flex";
         else
             style.display = "none";
+    }
+
+    if (isShowing) {
+        const recipeId = elementId.split('-timer-')[0];
+        gtag('event', 'timer_click', {
+          'timer_id': elementId,
+          'recipe_id': recipeId
+        });
     }
 }
 
