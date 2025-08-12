@@ -1,4 +1,4 @@
-const addEventToCalendarVersion = "Sunday, 2025-08-10 @ 14:33:41";
+const addEventToCalendarVersion = "Monday, 2025-08-11 @ 21:59:31";
 console.log( `addEventToCalendarVersion = ${addEventToCalendarVersion}` );
 
 /**
@@ -73,9 +73,9 @@ function createCalendarDispatcher( url, title, description, location, startTime,
  * @param {string} url - The URL to navigate to.
  * @param {string} eventDetailsJson - A JSON string containing the event details.
  */
-function trackCalendarClick(type, url, eventDetailsJson) {
-    const eventDetails = JSON.parse(eventDetailsJson);
-    gtag('event', 'add_to_calendar', {
+function trackCalendarClick( type, url, eventDetailsJson ) {
+    const eventDetails = JSON.parse( eventDetailsJson );
+    gtag( 'event', 'add_to_calendar', {
         'calendar_type': type,
         'event_name': eventDetails.title,
         'event_location': eventDetails.location,

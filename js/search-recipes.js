@@ -1,4 +1,4 @@
-const searchRecipesVersion = "Wednesday, 2025-07-02 @ 11:15:11";
+const searchRecipesVersion = "Monday, 2025-08-11 @ 21:59:23";
 
 var debugSearchRecipes = false;
 
@@ -122,14 +122,14 @@ function searchKeyboardHandler( ) {
     if ( debugSearchRecipes ) console.log( "query=[%s]", query );
     searchElements( query.split( " " ), recipeIndexArray );
 
-    clearTimeout(searchTrackTimer);
-    searchTrackTimer = setTimeout(() => {
-        if (query.length > 2) { // Only track queries with more than 2 chars
-            gtag('event', 'search', {
-              search_term: query
-            });
+    clearTimeout( searchTrackTimer );
+    searchTrackTimer = setTimeout( ( ) => {
+        if ( query.length > 2 ) { // Only track queries with more than 2 chars
+            gtag( 'event', 'search', {
+                search_term: query
+            } );
         }
-    }, 500);
+    }, 500 );
 }
 
 document.getElementById( "searchBox" ).addEventListener( 'input', searchKeyboardHandler );

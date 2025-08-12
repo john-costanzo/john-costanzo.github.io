@@ -1,4 +1,4 @@
-const circularTimerVersion = "Friday, 2025-04-11 @ 11:59:25";
+const circularTimerVersion = "Monday, 2025-08-11 @ 21:59:37";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -17,7 +17,7 @@ function toggleElement( elementId, displayStyle ) {
     }
 
     const style = element.style;
-    const isShowing = (displayStyle && displayStyle !== "none") || (!displayStyle && style.display === "none");
+    const isShowing = ( displayStyle && displayStyle !== "none" ) || ( !displayStyle && style.display === "none" );
 
 
     if ( displayStyle ) {
@@ -29,12 +29,12 @@ function toggleElement( elementId, displayStyle ) {
             style.display = "none";
     }
 
-    if (isShowing) {
-        const recipeId = elementId.split('-timer-')[0];
-        gtag('event', 'timer_click', {
-          'timer_id': elementId,
-          'recipe_id': recipeId
-        });
+    if ( isShowing ) {
+        const recipeId = elementId.split( '-timer-' )[ 0 ];
+        gtag( 'event', 'timer_click', {
+            'timer_id': elementId,
+            'recipe_id': recipeId
+        } );
     }
 }
 
