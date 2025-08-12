@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Tuesday, 2025-08-12 @ 09:16:40";
+const eventUtilsVersion = "Tuesday, 2025-08-12 @ 10:10:44";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -686,9 +686,11 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
 
             let currentCollectionWrapper = null;
             Array.from( tempContainer.children ).forEach( eventEl => {
-                if ( eventEl.querySelector( '.venue' ) ) {
+                const venueElement = eventEl.querySelector( '.venue' );
+                if ( venueElement ) {
                     currentCollectionWrapper = document.createElement( 'div' );
                     currentCollectionWrapper.className = 'event-collection';
+                    dateContainer.appendChild( venueElement );
                     dateContainer.appendChild( currentCollectionWrapper );
                 }
                 if ( !currentCollectionWrapper ) { // Gracefully handle if first event has no venue
