@@ -1,340 +1,338 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/x-icon" href="images/event-browser-icon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-HXEY2N6DY2"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/event-browser-icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXEY2N6DY2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [ ];
 
-			gtag("config", "G-HXEY2N6DY2");
-		</script>
+        function gtag( ) {
+            dataLayer.push( arguments );
+        }
+        gtag( 'js', new Date( ) );
 
-		<script>
-			var lookahead_days = 28;
-			// Current date and date formatting utility
-			const today = new Date();
-			const endDate = new Date(today);
-			endDate.setDate(today.getDate() + lookahead_days);
-		</script>
+        gtag( 'config', 'G-HXEY2N6DY2' );
+    </script>
 
-		<script src="js/event-data.js"></script>
-		<script src="js/add-event-to-calendar.js"></script>
-		<script src="js/event-utils.js"></script>
-		<link
-			rel="stylesheet"
-			href="css/add-event-to-calendar.css"
-			media="screen"
-		/>
+    <script>
+        var lookahead_days = 28;
+        // Current date and date formatting utility
+        const today = new Date( );
+        const endDate = new Date( today );
+        endDate.setDate( today.getDate( ) + lookahead_days );
+    </script>
 
-		<script>
-			const reload_period_ms = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
-			var venueFilters = []; // array of names of currently selected venues
-		</script>
+    <script src="js/event-data.js"></script>
+    <script src="js/add-event-to-calendar.js"></script>
+    <script src="js/event-utils.js"></script>
+    <link rel="stylesheet" href="css/add-event-to-calendar.css" media="screen" />
 
-		<title>Hendo Happenings</title>
-		<script>
-			const localEventBrowserVersion = "Monday, 2025-08-11 @ 21:23:26";
-			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
-		</script>
-		<style>
-			body {
-				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-				line-height: 1.1;
-				color: #333;
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 20px;
-				background-color: #f9f9f9;
-			}
+    <script>
+        const reload_period_ms = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
+        var venueFilters = [ ]; // array of names of currently selected venues
+    </script>
 
-			header {
-				text-align: center;
-				margin-bottom: 0px;
-				border-bottom: 2px solid #3a6ea5;
-				padding-bottom: 0px;
-			}
+    <title>Hendo Happenings</title>
+    <script>
+        const localEventBrowserVersion = "Friday, 2025-08-08 @ 19:51:24";
+        console.log( `localEventBrowserVersion = ${localEventBrowserVersion}` );
+    </script>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.1;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
 
-			h1 {
-				color: white;
-				margin-top: 0px;
-				margin-bottom: 0px;
-				font-size: 1.5em;
-				line-height: 0.1;
-			}
+        header {
+            text-align: center;
+            margin-bottom: 0px;
+            border-bottom: 2px solid #3a6ea5;
+            padding-bottom: 0px;
+        }
 
-			.date-container {
-				margin-bottom: 10px;
-				background-color: white;
-				border-radius: 8px;
-				padding-top: 10px;
-				padding-left: 10px;
-				padding-right: 10px;
-				padding-bottom: 5px;
-				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-			}
+        h1 {
+            color: white;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 1.5em;
+            line-height: 0.1;
+        }
 
-			h2 {
-				color: #3a6ea5;
-				border-bottom: 1px solid #ddd;
-				padding-bottom: 5px;
-				margin-top: -10px;
-				margin-bottom: -5px;
-				font-size: 1.1em;
-			}
+        .date-container {
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 8px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-			h3 {
-				margin-top: 0px;
-				margin-bottom: 0px;
-			}
+        h2 {
+            color: #3a6ea5;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: -10px;
+            margin-bottom: -5px;
+            font-size: 1.1em;
+        }
 
-			.event {
-				padding-bottom: 5px;
-				padding-top: 5px;
-				padding-left: 5px;
-				padding-right: 15px;
-				border-left: 4px solid #6c9ece;
-				background-color: #f5f8fa;
-				border-radius: 0 4px 4px 0;
-				margin-bottom: 0px;
-			}
+        h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
 
-			/* Apply margin-bottom: 5px ONLY to the last .event in its parent */
-			.event:last-child {
-				margin-bottom: 5px;
-			}
+        .event {
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 15px;
+            border-left: 4px solid #6c9ece;
+            background-color: #f5f8fa;
+            border-radius: 0 4px 4px 0;
+            margin-bottom: 0px;
+        }
 
-			.event > .venue {
-				margin-top: 0px;
-			}
+        /* Apply margin-bottom: 5px ONLY to the last .event in its parent */
+        .event:last-child {
+            margin-bottom: 5px;
+        }
 
-			.event:hover {
-				background-color: #e9f0f7;
-			}
+        .event>.venue {
+            margin-top: 0px;
+        }
 
-			.venue {
-				font-weight: bold;
-				color: #d35400;
-				line-height: 1.3;
-			}
+        .event:hover {
+            background-color: #e9f0f7;
+        }
 
-			.time {
-				color: #666;
-				padding-left: 10px;
-				font-style: italic;
-				line-height: 1.3;
-			}
+        .venue {
+            font-weight: bold;
+            color: #d35400;
+            line-height: 1.3;
+        }
 
-			.event-name {
-				font-weight: 500;
-				margin-top: 5px;
-				line-height: 1.3;
-			}
+        .time {
+            color: #666;
+            padding-left: 10px;
+            font-style: italic;
+            line-height: 1.3;
+        }
 
-			.event-description {
-				font-weight: 500;
-				margin-top: 5px;
-			}
+        .event-name {
+            font-weight: 500;
+            margin-top: 5px;
+            line-height: 1.3;
+        }
 
-			.toggle-control {
-				font-weight: 500;
-				margin-left: 10px;
-				margin-top: 5px;
-				margin-right: 3px;
-				line-height: 1.3;
-			}
+        .event-description {
+            font-weight: 500;
+            margin-top: 5px;
+        }
 
-			.hidden {
-				display: none;
-				line-height: 1.3;
-			}
+        .toggle-control {
+            font-weight: 500;
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-right: 3px;
+            line-height: 1.3;
+        }
 
-			.info {
-				background-color: #e9f7ef;
-				padding: 15px;
-				margin: 20px 0;
-				border-radius: 4px;
-				border-left: 4px solid #27ae60;
-			}
+        .hidden {
+            display: none;
+            line-height: 1.3;
+        }
 
-			#loading {
-				text-align: center;
-				padding: 30px;
-				font-size: 18px;
-			}
+        .info {
+            background-color: #e9f7ef;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid #27ae60;
+        }
 
-			.error {
-				background-color: #fdedec;
-				color: #c0392b;
-				padding: 10px;
-				margin: 10px 0;
-				border-radius: 4px;
-			}
+        #loading {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+        }
 
-			.filter-controls {
-				margin-bottom: 20px;
-				padding: 15px;
-				background-color: white;
-				border-radius: 8px;
-				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-			}
+        .error {
+            background-color: #fdedec;
+            color: #c0392b;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
 
-			.filter-controls label {
-				margin-right: 15px;
-			}
+        .filter-controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-			select,
-			input {
-				padding: 8px;
-				border-radius: 4px;
-				border: 1px solid #ddd;
-			}
+        .filter-controls label {
+            margin-right: 15px;
+        }
 
-			button {
-				background-color: #3a6ea5;
-				color: white;
-				border: none;
-				padding: 8px 15px;
-				border-radius: 4px;
-				cursor: pointer;
-			}
+        select,
+        input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
 
-			button:hover {
-				background-color: #2c5282;
-			}
+        button {
+            background-color: #3a6ea5;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-			.venue-chip {
-				display: inline-block;
-				padding: 3px 8px;
-				margin-right: 5px;
-				margin-bottom: 5px;
-				background-color: #e9f0f7;
-				border-radius: 15px;
-				font-size: 0.8rem;
-				cursor: pointer;
-			}
+        button:hover {
+            background-color: #2c5282;
+        }
 
-			.venue-chip.active {
-				background-color: #3a6ea5;
-				color: white;
-			}
+        .venue-chip {
+            display: inline-block;
+            padding: 3px 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            background-color: #e9f0f7;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
 
-			.no-events {
-				text-align: center;
-				padding: 30px;
-				font-style: italic;
-				color: white;
-			}
+        .venue-chip.active {
+            background-color: #3a6ea5;
+            color: white;
+        }
 
-			.green {
-				color: green;
-				border-color: green;
-			}
+        .no-events {
+            text-align: center;
+            padding: 30px;
+            font-style: italic;
+            color: white;
+        }
 
-			.red {
-				color: red;
-				border-color: red;
-			}
+        .green {
+            color: green;
+            border-color: green;
+        }
 
-			.date-range {
-				line-height: 1;
-			}
-		</style>
-	</head>
+        .red {
+            color: red;
+            border-color: red;
+        }
 
-	<body>
-		<header>
-			<h1>Hendo Happenings</h1>
-			<p class="date-range">Events for: <span id="date-range"></span></p>
-		</header>
+        .date-range {
+            line-height: 0.7;
+        }
+    </style>
+</head>
 
-		<div class="filter-controls">
-			<h3>Filter Events <span id="event_count"></span></h3>
-			<label>
-				<input type="text" id="search-input" placeholder="Search events..." />
-			</label>
-			<span style="margin-bottom: 8px">Venues:</span>
-			<span id="venue-toggle" class="toggle-control green">⊕</span>
-			<span id="venue-filters" style="margin-top: 15px" class="hidden">
-				<!-- Venue chips will be generated here -->
-			</span>
-		</div>
+<body>
+    <header>
+        <h1>Hendo Happenings</h1>
+        <p class="date-range">
+            Events for: <span id="date-range"></span>
+        </p>
+    </header>
 
-		<script>
-			const venue_toggle = document.getElementById("venue-toggle");
-			const venue_filters = document.getElementById("venue-filters");
-			venue_toggle.addEventListener("click", function () {
-				gtag("event", "venues_toggled", {
-					event_category: "Page",
-					event_label: `Hendo Happenings`,
-					value: 1,
-				});
-				console.log("Analytics: venues toggled");
+    <div class="filter-controls">
+        <h3>Filter Events <span id="event_count"></span></h3>
+        <label>
+            <input type="text" id="search-input" placeholder="Search events..." />
+        </label>
+        <span style="margin-bottom: 8px">Venues:</span>
+        <span id="venue-toggle" class="toggle-control green">⊕</span>
+        <span id="venue-filters" style="margin-top: 15px" class="hidden">
+            <!-- Venue chips will be generated here -->
+        </span>
+    </div>
 
-				venue_filters.classList.toggle("hidden");
-				if (venue_toggle.textContent === "⊕") {
-					venue_toggle.textContent = "Θ";
-					venue_toggle.className = "toggle-control red";
-				} else {
-					venue_toggle.textContent = "⊕";
-					venue_toggle.className = "toggle-control green";
-				}
-			});
-		</script>
+    <script>
+        const venue_toggle = document.getElementById( "venue-toggle" );
+        const venue_filters = document.getElementById( "venue-filters" );
+        venue_toggle.addEventListener( "click", function( ) {
 
-		<!-- <div class="info"> -->
-		<!--     <p>This guide shows entertainment events at various local establishments for the next four weeks. Events are organized by date.</p> -->
-		<!-- </div> -->
+            gtag( "event", "venues_toggled", {
+                event_category: "Page",
+                event_label: `Hendo Happenings`,
+                value: 1,
+            } );
+            console.log( "Analytics: venues toggled" );
 
-		<div id="loading">Loading events, please wait...</div>
+            venue_filters.classList.toggle( "hidden" );
+            if ( venue_toggle.textContent === "⊕" ) {
+                venue_toggle.textContent = "Θ";
+                venue_toggle.className = "toggle-control red";
+            } else {
+                venue_toggle.textContent = "⊕";
+                venue_toggle.className = "toggle-control green";
+            }
+        } );
+    </script>
 
-		<div id="events-container"></div>
+    <!-- <div class="info"> -->
+    <!--     <p>This guide shows entertainment events at various local establishments for the next four weeks. Events are organized by date.</p> -->
+    <!-- </div> -->
 
-		<script>
-			document.getElementById("date-range").textContent =
-				`${formatDate(today, "EST")} - ${formatDate(future_date, "EST")}`;
+    <div id="loading">Loading events, please wait...</div>
 
-			// Initialize the page
-			window.addEventListener("DOMContentLoaded", () => {
-				// Setup search functionality
-				document
-					.getElementById("search-input")
-					.addEventListener("input", (e) => {
-						applyFilters();
-						const searchTerm = document
-							.getElementById("search-input")
-							.value.toLowerCase();
-					});
-				createVenueFilters();
-				applyURLParameters();
+    <div id="events-container"></div>
 
-				// Hide loading message
-				document.getElementById("loading").style.display = "none";
+    <script>
+        document.getElementById( "date-range" ).textContent =
+            `${formatDate(today)} - ${formatDate(future_date)}`;
 
-				// Show initial events
-				const organizedEvents = organizeEventsByDate(
-					events,
-					getLocalISODateString(today).split("T")[0],
-					getLocalISODateString(endDate).split("T")[0],
-				);
-				applyFilters();
+        // Initialize the page
+        window.addEventListener( "DOMContentLoaded", ( ) => {
+            // Setup search functionality
+            document
+                .getElementById( "search-input" )
+                .addEventListener( "input", ( e ) => {
+                    applyFilters( );
+                    const searchTerm = document
+                        .getElementById( "search-input" )
+                        .value.toLowerCase( );
+                } );
+            createVenueFilters( );
+            applyURLParameters( );
 
-				// TODO: why does calling the following line (admittedly unnecessarily since applyFilters() calls it) show events that are not filtered by venue?
-				// renderEvents( organizedEvents, true );
-			});
-		</script>
-	</body>
+            // Hide loading message
+            document.getElementById( "loading" ).style.display = "none";
+
+            // Show initial events
+            const organizedEvents = organizeEventsByDate(
+                events,
+                getLocalISODateString( today ).split( "T" )[ 0 ],
+                getLocalISODateString( endDate ).split( "T" )[ 0 ],
+            );
+            applyFilters( );
+
+            // TODO: why does calling the following line (admittedly unnecessarily since applyFilters() calls it) show events that are not filtered by venue?
+            // renderEvents( organizedEvents, true );
+        } );
+    </script>
+</body>
+
 </html>
 
 <!-- Local Variables: -->

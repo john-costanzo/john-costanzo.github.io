@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Monday, 2025-08-11 @ 21:23:49";
+const eventUtilsVersion = "Friday, 2025-08-08 @ 18:55:57";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -228,18 +228,17 @@ function applyFilters( ) {
 
 
 /**
- * Formats a date object into a string (e.g., "Sunday, June 8, 2025") based on the given timezone.
+ * Formats a date object into a string (e.g., "Sunday, June 8, 2025").
  * @param {Date} date - The date object to format.
- * @param {Tz} string - The timezone to use when formatting the date object.
  * @returns {string} The formatted date string.
  */
-function formatDate( date, tz ) {
+function formatDate( date ) {
     const options = {
         weekday: "long",
         year: "numeric",
         month: "long",
         day: "numeric",
-        timeZone: tz,
+        timeZone: "UTC", // interpret everything as UTC
     };
     return date.toLocaleDateString( "en-US", options );
 }
@@ -578,14 +577,14 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
 
     eventsByDate.forEach( ( day ) => {
         const dateObj = new Date( day.date );
-        var dateContainer = document.createElement( "div" );
+        const dateContainer = document.createElement( "div" );
         dateContainer.className = "date-container";
 
         const dateHeading = document.createElement( "h2" );
-        dateHeading.textContent = formatDate( dateObj, "UTC" );
+        dateHeading.textContent = formatDate( dateObj );
         dateContainer.appendChild( dateHeading );
 
-        day.events.forEach( ( event ) => {
+        const eventElements = day.events.map( ( event ) => {
             const eventElement = document.createElement( "div" );
             eventElement.className = "event";
 
@@ -606,24 +605,15 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
             var toggleAddCalendarElement = null;
             var toggleElement = null;
 
-            // console.log(
-            // 	`event.date=${event.date}  event.start_time = ${event.start_time}  event.end_time = ${event.end_time}`,
-            // );
             const start_time_string =
                 event.date +
                 " " +
                 ( isTimeString( event.start_time ) ? event.start_time : "12:00" );
-            // console.log(`start_time_string="${start_time_string}"`);
-            const start_date = new Date( start_time_string );
-            // console.log(`start_date="${start_date}"`);
             const start = toUTCFormat( start_time_string );
             const end_time_string =
                 event.date +
                 " " +
                 ( isTimeString( event.end_time ) ? event.end_time : "12:00" );
-            // console.log(`end_time_string="${end_time_string}"`);
-            const end_date = new Date( end_time_string );
-            // console.log(`end_date="${end_date}"`);
             const end = toUTCFormat( end_time_string );
 
             addCalendarElement = createCalendarDispatcher(
@@ -640,14 +630,12 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
             toggleAddCalendarElement.textContent = "🗓";
             toggleAddCalendarElement.className = "toggle-control";
             toggleAddCalendarElement.addEventListener( "click", function( ) {
-
                 gtag( "event", "calendar_add", {
                     event_category: "Page",
                     event_label: `Hendo Happenings`,
                     value: 1,
                 } );
                 console.log( "Analytics: add-to-calendar is clicked" );
-
                 addCalendarElement.classList.toggle( "hidden" );
             } );
 
@@ -666,7 +654,6 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
                         value: 1,
                     } );
                     console.log( "Analytics: description is expanded" );
-
                     descriptionElement.classList.toggle( "hidden" );
                     if ( toggleElement.textContent === "⊕" ) {
                         toggleElement.textContent = "Θ";
@@ -686,14 +673,37 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
                 eventElement.appendChild( toggleElement );
                 eventElement.appendChild( descriptionElement );
             }
-
-            dateContainer.appendChild( eventElement );
+            return eventElement;
         } );
+
         if ( clusterVenues ) {
-            const sorted = sortDivsByVenue( dateContainer );
-            const deduped = removeDuplicateVenues( sorted );
-            dateContainer = deduped;
+            const tempContainer = document.createElement('div');
+            eventElements.forEach(el => tempContainer.appendChild(el));
+
+            sortDivsByVenue(tempContainer);
+            removeDuplicateVenues(tempContainer);
+
+            let currentCollectionWrapper = null;
+            Array.from(tempContainer.children).forEach(eventEl => {
+                if (eventEl.querySelector('.venue')) {
+                    currentCollectionWrapper = document.createElement('div');
+                    currentCollectionWrapper.className = 'event-collection';
+                    dateContainer.appendChild(currentCollectionWrapper);
+                }
+                if (!currentCollectionWrapper) { // Gracefully handle if first event has no venue
+                    currentCollectionWrapper = document.createElement('div');
+                    currentCollectionWrapper.className = 'event-collection';
+                    dateContainer.appendChild(currentCollectionWrapper);
+                }
+                currentCollectionWrapper.appendChild(eventEl);
+            });
+        } else {
+            const eventsWrapper = document.createElement( "div" );
+            eventsWrapper.className = "event-collection";
+            eventElements.forEach(el => eventsWrapper.appendChild(el));
+            dateContainer.appendChild(eventsWrapper);
         }
+
         container.appendChild( dateContainer );
     } );
     updateEventCount( )
