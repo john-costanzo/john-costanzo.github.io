@@ -2,6 +2,11 @@ const circularTimerVersion = "Friday, 2025-04-11 @ 11:59:25";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
+/**
+ * Toggles the display of an element.
+ * @param {string} elementId The ID of the element to toggle.
+ * @param {string} [displayStyle] The display style to set. If not provided, it toggles between "none" and "flex".
+ */
 function toggleElement( elementId, displayStyle ) {
     // Set the style.display to DISPLAYSTYLE if provided.
     // Else toggle its state between "none" and "flex".
@@ -40,8 +45,8 @@ class CircularTimer {
      * @param {string} timerContainer - The id of an element to anchor this CircularTimer to.
      * @param {number} initialTime    - The number of seconds the timer is initialized with each time it is run.
      * @param {number} alertTime      - The number of seconds remaining in the countdown that the timer should go into alert mode.
-     * @param {map of arrays} sounds  - A HashMap keyed on integers, which specify number of seconds remaining in the countdown,
-     *                                  and values of either a string or an  arrary of strings that specify file names to play at those times.
+     * @param {Object.<number, (string|string[])>} [sounds]  - A map where keys are seconds remaining and values are sound file(s) to play.
+     * @param {number} [position=-1] - The position to insert the timer within its container.
      *
      * @example
      * // Constructs a new ( silent ) CircularTimer initialized to 10 seconds.
@@ -53,7 +58,7 @@ class CircularTimer {
      * let s = new Object( );
      * s[ 10 ] = [ 'fileA', 'fileB' ];
      * s[ 0 ] = 'fileC';
-     * let ct2 = new CircularTimer( 'timerContainer-002', 30, s )
+     * let ct2 = new CircularTimer( 'timerContainer-002', 30, 30, s )
      *
      * @returns {CircularTimer} Returns a new CircularTimer embedded in the page at the point of call.
      */
@@ -271,6 +276,9 @@ class CircularTimer {
 
                 startButtonHandler = on( startButton, "click", startTimer );
 
+                /**
+                 * The main timer loop, called every second.
+                 */
                 function commenceTicking( ) {
                     if ( remainingTime <= 0 ) {
                         clearInterval( self.timerInterval );
@@ -288,6 +296,9 @@ class CircularTimer {
                     updateDisplay( );
                 }
 
+                /**
+                 * Pauses the timer.
+                 */
                 function pauseTimer( ) {
                     clearInterval( self.timerInterval );
                     timeAtPause = Date.now( );
@@ -297,6 +308,9 @@ class CircularTimer {
                     startButtonHandler = on( startButton, "click", resumeTimer );
                 }
 
+                /**
+                 * Resumes a paused timer.
+                 */
                 function resumeTimer( ) {
                     clearInterval( self.timerInterval );
                     expirationTime += Date.now( ) - timeAtPause;
@@ -309,6 +323,9 @@ class CircularTimer {
                     self.timerInterval = setInterval( commenceTicking, 1000 );
                 }
 
+                /**
+                 * Starts the timer from the beginning.
+                 */
                 function startTimer( ) {
                     totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
                     expirationTime = Date.now( ) + ( totalTime * 1000 );
@@ -326,6 +343,12 @@ class CircularTimer {
                     self.timerInterval = setInterval( commenceTicking, 1000 );
                 }
 
+                /**
+                 * Finds the index of a child element within its parent.
+                 * @param {HTMLElement} parent The parent element.
+                 * @param {HTMLElement} child The child element.
+                 * @returns {number} The index of the child, or -1 if not found.
+                 */
                 function childsIndex( parent, child ) {
                     // return the index of PARENT's CHILD.
                     for ( const i in parent.children ) {
@@ -334,6 +357,9 @@ class CircularTimer {
                     return ( -1 );
                 }
 
+                /**
+                 * Creates a duplicate of the current timer.
+                 */
                 function duplicateTimer( ) {
                     const childIndex = childsIndex( circularTimer, self.timerControls );
                     const latestInitialTime = ( ( parseInt( hours.value ) || 0 ) * 3600 ) + ( ( parseInt( minutes.value ) || 0 ) * 60 ) + ( parseInt( seconds.value ) || 0 );
@@ -341,6 +367,9 @@ class CircularTimer {
                     toggleElement( timerContainer, "flex" );
                 }
 
+                /**
+                 * Resets the timer to its initial state.
+                 */
                 function resetTimer( ) {
                     clearInterval( self.timerInterval );
                     timeAtPause = Date.now( );
@@ -356,6 +385,10 @@ class CircularTimer {
                     self.cleanUp( );
                 }
 
+                /**
+                 * Updates the timer's visual display.
+                 * @param {boolean} [silently=false] - If true, do not play sounds.
+                 */
                 function updateDisplay( siliently = false ) {
                     remainingTime = ( expirationTime - Date.now( ) ) / 1000;
                     if ( !siliently ) playSounds( remainingTime );
@@ -430,6 +463,9 @@ class CircularTimer {
         return ( circularTimer );
     }
 
+    /**
+     * Cleans up timer resources, like intervals and audio.
+     */
     cleanUp( ) {
         // Clean up any pending intervals and audio
         clearInterval( this.timerInterval );
@@ -439,6 +475,9 @@ class CircularTimer {
         document.title = document.title.replace( /^!*/, "" );
     }
 
+    /**
+     * Destroys the timer instance and removes it from the DOM.
+     */
     destroy( ) {
         // Remove this CircularTimer
         this.cleanUp( );

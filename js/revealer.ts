@@ -17,18 +17,32 @@ let fact = document.getElementById( "fact" );
 let person = document.getElementById( "person" );
 let person_number_label = document.getElementById( "person_number_label" );
 
+/**
+ * Sets the data for the revealer.
+ * @param {[string, string][]} revealerInfo An array of tuples, where each tuple is [answer, clue].
+ */
 function setRevealInfo( revealerInfo: [string,string][]) {
     revealer_info = revealerInfo;
 }
 
-// Function to remove an element from the DOM
+/**
+ * Removes an element from the DOM.
+ * @param {HTMLElement} elementToRemove The element to remove.
+ */
 function removeElement( elementToRemove: HTMLElement ): void {
     if( elementToRemove && elementToRemove.parentNode ) {
 	elementToRemove.parentNode.removeChild( elementToRemove );
     }
 }
 
-// Function to create a new element and replace the old one, returning the new one
+/**
+ * Replaces an HTML element with a new one.
+ * @param {string} id The ID for the new element.
+ * @param {HTMLElement} oldElement The element to be replaced.
+ * @param {string} newElementTag The tag for the new element (e.g., 'div').
+ * @param {string} [newElementContent] The text content for the new element.
+ * @returns {HTMLElement | null} The newly created element or null.
+ */
 function replaceElement( id: string, oldElement: HTMLElement, newElementTag: string, newElementContent?: string ): HTMLElement | null {
     // Create a new element
     const newElement = document.createElement( newElementTag );
@@ -46,6 +60,10 @@ function replaceElement( id: string, oldElement: HTMLElement, newElementTag: str
     return( newElement );
 }
 
+/**
+ * Initializes the revealer, checking for required DOM elements.
+ * @returns {number | undefined} Error code if an element is not found.
+ */
 function reveal() {
     if( !fact ) {
 	console.error( "reveal: cannot find fact" );
@@ -58,6 +76,10 @@ function reveal() {
     }
 };
 
+/**
+ * Updates the fact/clue element on the page.
+ * @param {number} entry The current step in the reveal sequence.
+ */
 function updateFact( entry: number ) {
     const newFact = revealer_info[ Math.trunc( entry / 2 ) ][ 1 ];
     if( person ) {
@@ -69,6 +91,10 @@ function updateFact( entry: number ) {
     }
 }
 
+/**
+ * Updates the person/answer element on the page.
+ * @param {number} entry The current step in the reveal sequence.
+ */
 function updatePerson( entry: number ) {
     const newPerson= revealer_info[ Math.trunc( entry / 2 ) ][ 0 ];
     if( person_number_label ) {
@@ -91,6 +117,9 @@ function updatePerson( entry: number ) {
     }
 }
 
+/**
+ * Enum for keyboard navigation directions.
+ */
 enum Directions {
     right = 0,
     left = 1,
@@ -98,6 +127,9 @@ enum Directions {
 
 let direction: Directions = Directions.right;
 
+/**
+ * Handles keyboard events for navigating the revealer.
+ */
 document.addEventListener( 'keydown', (event) => {
     switch( event.key ) {
     case 'ArrowRight':
