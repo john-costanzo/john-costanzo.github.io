@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Tuesday, 2025-08-12 @ 10:10:44";
+const eventUtilsVersion = "Tuesday, 2025-08-12 @ 12:28:37";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -589,8 +589,12 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
             const eventElement = document.createElement( "div" );
             eventElement.className = "event";
 
-            const venueElement = document.createElement( "div" );
+            const venueElement = document.createElement( "a" );
             venueElement.className = "venue";
+            venueElement.href = event.url;
+            venueElement.target = "_blank";
+            // Improve security (prevents the new page from accessing window.opener)
+            venueElement.rel = "noopener noreferrer";
             venueElement.textContent = event.venue;
 
             const timeElement = document.createElement( "span" );
