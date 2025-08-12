@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Monday, 2025-08-11 @ 20:46:56";
+const eventUtilsVersion = "Monday, 2025-08-11 @ 21:23:49";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -197,13 +197,13 @@ function applyFilters( ) {
 }
 
 
-function formatDate( date ) {
+function formatDate( date, tz ) {
     const options = {
         weekday: "long",
         year: "numeric",
         month: "long",
         day: "numeric",
-        timeZone: "EST", // interpret everything as UTC
+        timeZone: tz,
     };
     return date.toLocaleDateString( "en-US", options );
 }
@@ -498,7 +498,7 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
         dateContainer.className = "date-container";
 
         const dateHeading = document.createElement( "h2" );
-        dateHeading.textContent = formatDate( dateObj );
+        dateHeading.textContent = formatDate( dateObj, "UTC" );
         dateContainer.appendChild( dateHeading );
 
         day.events.forEach( ( event ) => {
