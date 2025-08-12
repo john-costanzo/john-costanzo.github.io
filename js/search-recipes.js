@@ -2,7 +2,10 @@ const searchRecipesVersion = "Wednesday, 2025-07-02 @ 11:15:11";
 
 var debugSearchRecipes = false;
 
-// Turn off display for element with ID.
+/**
+ * Hides an element by setting its display style to "none".
+ * @param {string} id The ID of the element to hide.
+ */
 function hideElement( id ) {
     // if( debugSearchRecipes ) console.log( "\t\t\thide element with id=[%s]", id );
     const el = document.getElementById( id );
@@ -13,12 +16,19 @@ function hideElement( id ) {
     }
 }
 
-// Turn off display for element with ID and its related ids.
+/**
+ * Hides an element and its related elements. Currently, this function
+ * only hides the element with the given ID.
+ * @param {string} id The ID of the element to hide.
+ */
 function hideElements( id ) {
     hideElement( id );
 }
 
-// Turn on display for element with ID. Use block display.
+/**
+ * Shows an element by setting its display style to "list-item".
+ * @param {string} id The ID of the element to show.
+ */
 function showElement( id ) {
     // if( debugSearchRecipes ) console.log( "\t\t\tshow element with id=[%s]", id );
     const el = document.getElementById( id );
@@ -29,13 +39,22 @@ function showElement( id ) {
     }
 }
 
-// Turn on display for element with ID and its related ids.
+/**
+ * Shows an element and its related elements. Currently, this function
+ * only shows the element with the given ID.
+ * @param {string} id The ID of the element to show.
+ */
 function showElements( id ) {
     showElement( id );
 }
 
-// Return true if all of the terms in the array QUERY
-// are found within the string STR, else false.
+
+/**
+ * Checks if all terms in a query array are present in a string.
+ * @param {string[]} query An array of search terms.
+ * @param {string} str The string to search within.
+ * @returns {boolean} True if all query terms are found in the string, false otherwise.
+ */
 function matchesAll( query, str ) {
     for ( const term of query ) {
         const regexp = new RegExp( term );
@@ -49,11 +68,11 @@ function matchesAll( query, str ) {
 }
 
 
-// QUERY is an array of strings.
-// INDEX is an array of arrays: [ id, indexString ].
-// Call hideElement for all elements with an id from INDEX where *all* of the strings
-// in the QUERY array may be found as regular expressions in the corresponding indexString.
-// Else call showElement for those ids.
+/**
+ * Searches for elements based on a query and shows or hides them accordingly.
+ * @param {string[]} query An array of search terms.
+ * @param {Array<[string, string]>} index An array of tuples, where each tuple contains an element ID and its associated index string.
+ */
 function searchElements( query, index ) {
     let result = [ ]
     if ( debugSearchRecipes ) console.log( "searchElements: index=[%s]\tquery=[%s]", index.join( ", " ), query.join( ", " ) );
@@ -71,6 +90,12 @@ function searchElements( query, index ) {
         }
 }
 
+/**
+ * Removes diacritics from a string, converting it to a simpler form.
+ * For example, "jalapeño" becomes "jalapeno".
+ * @param {string} string The string to remove diacritics from.
+ * @returns {string} The string with diacritics removed.
+ */
 function removeDiacritics( string ) {
     // Return STRING but with all diacritics removed.
     return string
@@ -83,8 +108,10 @@ function removeDiacritics( string ) {
 
 var searchTrackTimer;
 
-// Assume the keyboard event has already been processed.
-// Use the query in the query box to filter the page according to the recipeIndex
+/**
+ * Handles keyboard input in the search box, filtering recipes based on the query.
+ * It also tracks search events for analytics.
+ */
 function searchKeyboardHandler( ) {
     let query = removeDiacritics(
         document.getElementById( "searchBox" )
@@ -120,6 +147,10 @@ document.getElementById( "searchBox" ).addEventListener( 'input', searchKeyboard
 //     [ 'outline-container-org0a2d7ff', 'german muffin sourdough' ],
 // ];
 
+/**
+ * A driver function for testing the search functionality.
+ * It runs a series of predefined queries against the recipe index.
+ */
 function searchDriver( ) {
     const queries = [
         // ['bre'],

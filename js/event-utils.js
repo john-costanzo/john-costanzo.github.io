@@ -4,6 +4,9 @@ console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
 const startTime = Date.now( );
 
+/**
+ * Reloads the page with the current search term and venue filters as URL parameters.
+ */
 function reloadPage( ) {
     const searchTerm = document
         .getElementById( "search-input" )
@@ -28,6 +31,9 @@ function reloadPage( ) {
     );
 }
 
+/**
+ * Checks if the page should be refreshed based on the refresh interval.
+ */
 function checkRefresh( ) {
     const currentTime = Date.now( );
     // console.log( `checkRefresh: ${currentTime}` );
@@ -38,7 +44,13 @@ function checkRefresh( ) {
 
 setInterval( checkRefresh, 60000 ); // Check every 60 seconds
 
-// Function to organize events by date
+/**
+ * Organizes events by date, filtering them by a date range and sorting them by time.
+ * @param {Array<Object>} events - The list of events to organize.
+ * @param {string} startDate - The start date of the date range.
+ * @param {string} endDate - The end date of the date range.
+ * @returns {Array<Object>} A list of objects, where each object represents a date and contains the events for that date.
+ */
 function organizeEventsByDate( events, startDate, endDate ) {
     const startDateObj = new Date( startDate );
     const endDateObj = new Date( endDate );
@@ -82,6 +94,11 @@ function organizeEventsByDate( events, startDate, endDate ) {
     return temp_result;
 }
 
+/**
+ * Gets a venue filter chip element by its name.
+ * @param {string} venueName - The name of the venue to find.
+ * @returns {HTMLElement|null} The chip element, or null if not found.
+ */
 function getVenueChipByName( venueName ) {
     const chips = document.querySelectorAll( 'span.venue-chip' );
     for ( let chip of chips ) {
@@ -93,7 +110,11 @@ function getVenueChipByName( venueName ) {
 }
 
 
-// Filter functions
+/**
+ * Filters out past events from a list of events.
+ * @param {Array<Object>} events - The list of events to filter.
+ * @returns {Array<Object>} A new list of events with past events removed.
+ */
 function excludePastEvents( events ) {
     // Exclude past events
     let now = new Date( );
@@ -102,7 +123,13 @@ function excludePastEvents( events ) {
     );
 }
 
-// Function to organize events by date
+/**
+ * Organizes events by date, filtering them by a date range and sorting them by time.
+ * @param {Array<Object>} events - The list of events to organize.
+ * @param {string} startDate - The start date of the date range.
+ * @param {string} endDate - The end date of the date range.
+ * @returns {Array<Object>} A list of objects, where each object represents a date and contains the events for that date.
+ */
 function organizeEventsByDate( events, startDate, endDate ) {
     const startDateObj = new Date( startDate );
     const endDateObj = new Date( endDate );
@@ -146,6 +173,9 @@ function organizeEventsByDate( events, startDate, endDate ) {
     return temp_result;
 }
 
+/**
+ * Applies search and venue filters to the events and re-renders the event list.
+ */
 function applyFilters( ) {
     const searchTerm = document
         .getElementById( "search-input" )
@@ -197,6 +227,11 @@ function applyFilters( ) {
 }
 
 
+/**
+ * Formats a date object into a string (e.g., "Sunday, June 8, 2025").
+ * @param {Date} date - The date object to format.
+ * @returns {string} The formatted date string.
+ */
 function formatDate( date ) {
     const options = {
         weekday: "long",
@@ -208,6 +243,11 @@ function formatDate( date ) {
     return date.toLocaleDateString( "en-US", options );
 }
 
+/**
+ * Converts a date string in "YYYY-MM-DD hh:mm:ss am/pm" format to "YYYYMMDDThhmmssZ" UTC format.
+ * @param {string} dateStr - The date string to convert.
+ * @returns {string} The date string in UTC format.
+ */
 function toUTCFormat( dateStr ) {
     // Match: YYYY-MM-DD hh:mm:ss am/pm
     dateStr = dateStr.replace( / noon$/i, " 12:00 pm" );
@@ -248,6 +288,12 @@ function toUTCFormat( dateStr ) {
     return `${y}${m}${d}T${h}${min}${s}Z`;
 }
 
+/**
+ * Converts a date string in "YYYY-MM-DD hh:mm:ss am/pm" format to "YYYYMMDDThhmmssZ" UTC format.
+ * This is a more complex version of toUTCFormat.
+ * @param {string} date - The date string to convert.
+ * @returns {string} The date string in UTC format.
+ */
 function formatDateUTC( date ) {
     // DATE is something like "2025-06-08 2:00:00 pm". Return "20250608T140000Z"
 
@@ -321,6 +367,11 @@ function formatDateUTC( date ) {
     return formatted; // e.g., 20250608T140000Z (for June 8, 2025, 2:00:00 PM EDT)
 }
 
+/**
+ * Formats a time string into a standard format (e.g., "07:00 PM").
+ * @param {string} timeStr - The time string to format.
+ * @returns {string} The formatted time string.
+ */
 function formatTime( timeStr ) {
     // Handle different time formats or return original if can't parse
     if ( !timeStr ) return "";
@@ -347,6 +398,11 @@ function formatTime( timeStr ) {
     }
 }
 
+/**
+ * Converts a Date object to a local ISO date string with timezone offset.
+ * @param {Date} date - The date object to convert.
+ * @returns {string} The local ISO date string.
+ */
 function getLocalISODateString( date ) {
     const pad = ( num, size = 2 ) =>
         String( Math.floor( Math.abs( num ) ) ).padStart( size, "0" );
@@ -412,13 +468,27 @@ console.warn(
     `groupAndSortByDate: today=${today}  future_date=${future_date}`,
 );
 
+/**
+ * Checks if a string is a time string in "h:mm am/pm" format.
+ * @param {string} timeStr - The string to check.
+ * @returns {boolean} True if the string is a time string, false otherwise.
+ */
 function isTimeString( timeStr ) {
     return timeStr.match( /^\d{1,2}(:\d{2})?\s*(am|pm|AM|PM)$/i );
 }
 
-// Function to render events
+/**
+ * Renders the events on the page.
+ * @param {Array<Object>} eventsByDate - The list of events grouped by date.
+ * @param {boolean} [clusterVenues=false] - Whether to cluster events by venue.
+ */
 function renderEvents( eventsByDate, clusterVenues = false ) {
 
+    /**
+     * Sorts the direct child divs of a container by venue name.
+     * @param {HTMLElement} container - The container element.
+     * @returns {HTMLElement} The container element with its children sorted.
+     */
     function sortDivsByVenue( container ) {
         // Get an array of the direct child divs
         const children = Array.from( container.children );
@@ -436,6 +506,11 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
         return container;
     }
 
+    /**
+     * Removes duplicate consecutive venue divs from a container.
+     * @param {HTMLElement} container - The container element.
+     * @returns {HTMLElement} The container element with duplicate venues removed.
+     */
     function removeDuplicateVenues( container ) {
         let lastVenueValue = null;
 
@@ -459,8 +534,16 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
         return container;
     }
 
+    /**
+     * Updates the event count display on the page.
+     */
     function updateEventCount( ) {
 
+        /**
+         * Counts the total number of events in an array of date objects.
+         * @param {Array<Object>} arr - The array of date objects.
+         * @returns {number} The total number of events.
+         */
         function countElementsWithEvents( arr ) {
             if ( !Array.isArray( arr ) ) {
                 throw new Error( 'Input must be an array' );
@@ -615,6 +698,11 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
     updateEventCount( )
 }
 
+/**
+ * Expands digits in a string with their corresponding words (e.g., "1" becomes "1 one").
+ * @param {string} input - The input string.
+ * @returns {string} The string with digits expanded.
+ */
 function expandDigitsWithWords( input ) {
     const digitWords = [
         "zero",
@@ -634,6 +722,11 @@ function expandDigitsWithWords( input ) {
     } );
 }
 
+/**
+ * Removes diacritics from a string.
+ * @param {string} string - The input string.
+ * @returns {string} The string with diacritics removed.
+ */
 function removeDiacritics( string ) {
     // Return STRING but with all diacritics removed.
     return string
@@ -643,6 +736,12 @@ function removeDiacritics( string ) {
         .replace( /æ/g, "ae" );
 }
 
+/**
+ * Checks if all words in a string are present as prefixes in another string.
+ * @param {string} s1 - The string of prefixes.
+ * @param {string} s2 - The string to check for prefixes.
+ * @returns {boolean} True if all prefixes are present, false otherwise.
+ */
 function areAllPrefixesPresent( s1, s2 ) {
     // Returns whether all words in s1 appear as prefixes of words in s2
     // Split strings into word arrays (handling multiple spaces)
@@ -662,6 +761,11 @@ function areAllPrefixesPresent( s1, s2 ) {
     return prefixesArePresent;
 }
 
+/**
+ * Creates a map of venues to their URLs.
+ * @param {Array<Object>} arr - An array of event objects.
+ * @returns {Object} A map of venue names to URLs.
+ */
 function mapVenues( arr ) {
     // arr is an array of objects with (at least) keys 'url' and 'venue'
     // Output: an object mapping 'venue' to 'url'
@@ -674,7 +778,9 @@ function mapVenues( arr ) {
 }
 var menuToURLMap = mapVenues( events );
 
-// Create venue filter chips
+/**
+ * Creates venue filter chips and adds them to the page.
+ */
 function createVenueFilters( ) {
     const venueFiltersContainer = document.getElementById( "venue-filters" );
 
@@ -756,6 +862,9 @@ function createVenueFilters( ) {
 
 }
 
+/**
+ * Applies URL parameters to the search input and venue filters.
+ */
 function applyURLParameters( ) {
     const url = new URL( window.location );
     const st = url.searchParams.get( 'searchTerm' );

@@ -1,6 +1,11 @@
 const addEventToCalendarVersion = "Friday, 2025-08-08 @ 19:12:38";
 console.log( `addEventToCalendarVersion = ${addEventToCalendarVersion}` );
 
+/**
+ * Converts a UTC datetime string to a Microsoft-compatible format.
+ * @param {string} datetime - The UTC datetime string (e.g., "20250623T220000Z").
+ * @returns {string} The formatted datetime string for Microsoft calendars.
+ */
 function utcToMicrosoft( datetime ) {
     // 20250623T220000Z -> 2025-06-23T22%3A00%3A00Z
     return ( datetime.slice( 0, 4 ) +
@@ -15,6 +20,16 @@ function utcToMicrosoft( datetime ) {
     );
 }
 
+/**
+ * Creates a container with links to add an event to various calendars.
+ * @param {string} url - The URL of the event.
+ * @param {string} title - The title of the event.
+ * @param {string} description - The description of the event.
+ * @param {string} location - The location of the event.
+ * @param {string} startTime - The start time of the event in UTC format.
+ * @param {string} endTime - The end time of the event in UTC format.
+ * @returns {HTMLElement} A div element containing the calendar links.
+ */
 function createCalendarDispatcher( url, title, description, location, startTime, endTime ) {
     // console.log( `startTime=${startTime}` );
     // console.log( `endTime=${endTime}` );
@@ -52,6 +67,12 @@ function createCalendarDispatcher( url, title, description, location, startTime,
     return ( calendarLinksElement );
 }
 
+/**
+ * Tracks a click on a calendar link and navigates to the URL.
+ * @param {string} type - The type of calendar (e.g., "google", "outlook").
+ * @param {string} url - The URL to navigate to.
+ * @param {string} eventDetailsJson - A JSON string containing the event details.
+ */
 function trackCalendarClick(type, url, eventDetailsJson) {
     const eventDetails = JSON.parse(eventDetailsJson);
     gtag('event', 'add_to_calendar', {
@@ -69,6 +90,14 @@ function trackCalendarClick(type, url, eventDetailsJson) {
 }
 
 
+/**
+ * Creates calendar event URLs and shows options to the user.
+ * @param {string} title - The title of the event.
+ * @param {string} description - The description of the event.
+ * @param {string} location - The location of the event.
+ * @param {string} startTime - The start time of the event.
+ * @param {string} endTime - The end time of the event.
+ */
 function addToCalendar( title, description, location, startTime, endTime ) {
     try {
         // Convert datetime strings to Date objects
@@ -107,6 +136,15 @@ function addToCalendar( title, description, location, startTime, endTime ) {
     }
 }
 
+/**
+ * Creates a Google Calendar URL for adding an event.
+ * @param {string} title - The title of the event.
+ * @param {string} description - The description of the event.
+ * @param {string} location - The location of the event.
+ * @param {Date} startDate - The start date of the event.
+ * @param {Date} endDate - The end date of the event.
+ * @returns {string} The Google Calendar URL.
+ */
 function createGoogleCalendarUrl( title, description, location, startDate, endDate ) {
     const formatGoogleDate = ( date ) => {
         return date.toISOString( ).replace( /[-:]/g, '' ).split( '.' )[ 0 ] + 'Z';
@@ -128,6 +166,15 @@ function createGoogleCalendarUrl( title, description, location, startDate, endDa
     return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
 
+/**
+ * Creates an Outlook Calendar URL for adding an event.
+ * @param {string} title - The title of the event.
+ * @param {string} description - The description of the event.
+ * @param {string} location - The location of the event.
+ * @param {Date} startDate - The start date of the event.
+ * @param {Date} endDate - The end date of the event.
+ * @returns {string} The Outlook Calendar URL.
+ */
 function createOutlookCalendarUrl( title, description, location, startDate, endDate ) {
     const params = new URLSearchParams( {
         subject: title,
@@ -140,6 +187,15 @@ function createOutlookCalendarUrl( title, description, location, startDate, endD
     return `https://outlook.live.com/calendar/0/deeplink/compose?${params.toString()}`;
 }
 
+/**
+ * Creates a Yahoo Calendar URL for adding an event.
+ * @param {string} title - The title of the event.
+ * @param {string} description - The description of the event.
+ * @param {string} location - The location of the event.
+ * @param {Date} startDate - The start date of the event.
+ * @param {Date} endDate - The end date of the event.
+ * @returns {string} The Yahoo Calendar URL.
+ */
 function createYahooCalendarUrl( title, description, location, startDate, endDate ) {
     const formatYahooDate = ( date ) => {
         return date.toISOString( ).replace( /[-:]/g, '' ).split( '.' )[ 0 ] + 'Z';
@@ -159,6 +215,15 @@ function createYahooCalendarUrl( title, description, location, startDate, endDat
     return `https://calendar.yahoo.com/?${params.toString()}`;
 }
 
+/**
+ * Creates an ICS file for adding an event to a calendar.
+ * @param {string} title - The title of the event.
+ * @param {string} description - The description of the event.
+ * @param {string} location - The location of the event.
+ * @param {Date} startDate - The start date of the event.
+ * @param {Date} endDate - The end date of the event.
+ * @returns {string} A data URL for the ICS file.
+ */
 function createICSFile( title, description, location, startDate, endDate ) {
     const formatICSDate = ( date ) => {
         return date.toISOString( ).replace( /[-:]/g, '' ).split( '.' )[ 0 ] + 'Z';
@@ -185,6 +250,11 @@ function createICSFile( title, description, location, startDate, endDate ) {
     return URL.createObjectURL( blob );
 }
 
+/**
+ * Shows a modal with options to add an event to various calendars.
+ * @param {Object} urls - An object containing the URLs for different calendar services.
+ * @param {Object} eventDetails - An object containing the details of the event.
+ */
 function showCalendarOptions( urls, eventDetails ) {
 
     const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent );
@@ -262,6 +332,11 @@ function showCalendarOptions( urls, eventDetails ) {
     } );
 }
 
+/**
+ * Downloads an ICS file.
+ * @param {string} url - The data URL of the ICS file.
+ * @param {Object} eventDetails - An object containing the details of the event.
+ */
 function downloadICS( url, eventDetails ) {
     const a = document.createElement( 'a' );
     a.href = url;
@@ -296,6 +371,11 @@ function downloadICS( url, eventDetails ) {
     showStatus( 'Calendar file ready for download!', 'success' );
 }
 
+/**
+ * Opens the native calendar app on a mobile device.
+ * @param {string} url - The URL for the calendar event.
+ * @param {string} platform - The mobile platform (e.g., "ios", "android").
+ */
 function openCalendarApp( url, platform ) {
     if ( platform === 'ios' ) {
         // For iOS, try to open native calendar app with .ics file
@@ -317,6 +397,11 @@ function openCalendarApp( url, platform ) {
     if ( modal ) modal.remove( );
 }
 
+/**
+ * Shows a status message to the user.
+ * @param {string} message - The message to show.
+ * @param {string} type - The type of message (e.g., "success", "error").
+ */
 function showStatus( message, type ) {
     // Find the next available status div
     const statusDivs = document.querySelectorAll( '.status' );

@@ -18,6 +18,10 @@ const recipeScalingVersion = "Thursday, 2025-07-24 @ 15:17:56";
  * See https://www.perplexity.ai/search/write-a-javascript-function-th-UKrqUr78RYSdet.LM11xvQ
  */
 
+/**
+ * Prompts the user for a scaling percentage and validates the input.
+ * @returns {number|null} The user-provided scaling percentage, or null if cancelled.
+ */
 function promptForScalingPercentage( ) {
     // Prompt the user for a scalingPercentage
     var scalingPercentageText = prompt( "Please enter a percentage with which to scale the recipe:" );
@@ -47,6 +51,12 @@ function promptForScalingPercentage( ) {
     }
 }
 
+/**
+ * Scales the recipe based on a new percentage.
+ * If no percentage is provided, it prompts the user for one.
+ * @param {number} [newScalingPercentage] - The new scaling percentage.
+ * @returns {null|undefined}
+ */
 function scaleRecipe( newScalingPercentage ) {
     console.log( "scaleRecipe: newScalingPercentage=" + newScalingPercentage + "; currentScalingPercentage=" + currentScalingPercentage );
     if ( newScalingPercentage === undefined ) {
@@ -75,6 +85,10 @@ function scaleRecipe( newScalingPercentage ) {
 }
 
 
+/**
+ * Updates the amounts of ingredients in the recipe based on a scaling factor.
+ * @param {number} scaling_factor - The factor by which to scale the recipe.
+ */
 function updateAmounts( scaling_factor ) {
     // Select all elements with the tag name "amount"
     const amountElements = document.getElementsByTagName( "amount" );
@@ -128,6 +142,11 @@ const fractionalTextToGlyphMap = {
     "1/10": "⅒",
 };
 
+/**
+ * Converts a number to a string representation of a fraction.
+ * @param {number} number - The number to convert.
+ * @returns {string} The fractional representation of the number.
+ */
 function numberToFraction( number ) {
     // Handle whole numbers
     if ( Number.isInteger( number ) ) {
@@ -166,7 +185,12 @@ function numberToFraction( number ) {
     return ( wholePart === 0 ? "" : wholePart + " " ) + fraction;
 }
 
-// Helper function to find the Greatest Common Divisor
+/**
+ * Finds the Greatest Common Divisor (GCD) of two numbers.
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} The GCD of a and b.
+ */
 function findGCD( a, b ) {
     if ( Number.isInteger( a ) && Number.isInteger( b ) ) {
         return b === 0 ? a : findGCD( b, a % b );
