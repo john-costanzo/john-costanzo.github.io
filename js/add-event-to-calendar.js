@@ -1,4 +1,4 @@
-const addEventToCalendarVersion = "Friday, 2025-08-08 @ 19:12:38";
+const addEventToCalendarVersion = "Sunday, 2025-08-10 @ 14:33:41";
 console.log( `addEventToCalendarVersion = ${addEventToCalendarVersion}` );
 
 /**
@@ -81,11 +81,11 @@ function trackCalendarClick(type, url, eventDetailsJson) {
         'event_location': eventDetails.location,
         'event_start_time': eventDetails.startTime,
         'event_end_time': eventDetails.endTime,
-    });
-    if (type === 'download_ics') {
-        downloadICS(url, eventDetails);
+    } );
+    if ( type === 'download_ics' ) {
+        downloadICS( url, eventDetails );
     } else {
-        window.open(url, '_blank');
+        window.open( url, '_blank' );
     }
 }
 
@@ -125,7 +125,13 @@ function addToCalendar( title, description, location, startTime, endTime ) {
             ics: createICSFile( title, description, location, startDate, endDate )
         };
 
-        const eventDetails = { title, description, location, startTime, endTime };
+        const eventDetails = {
+            title,
+            description,
+            location,
+            startTime,
+            endTime
+        };
 
         // Show calendar options to user
         showCalendarOptions( calendarUrls, eventDetails );
@@ -304,11 +310,11 @@ function showCalendarOptions( urls, eventDetails ) {
                 `;
     } else {
         // Desktop options
-        const eventDetailsJson = JSON.stringify(eventDetails);
+        const eventDetailsJson = JSON.stringify( eventDetails );
         buttonsHTML += `
-                    <button onclick="trackCalendarClick('google', '${urls.google}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar</button>
-                    <button onclick="trackCalendarClick('outlook', '${urls.outlook}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Outlook Calendar</button>
-                    <button onclick="trackCalendarClick('yahoo', '${urls.yahoo}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Yahoo Calendar</button>
+                    <button onclick="trackCalendarClick('add-to-google-calendar', '${urls.google}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #4285f4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Google Calendar</button>
+                    <button onclick="trackCalendarClick('add-to-outlook-calendar', '${urls.outlook}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #0078d4; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Outlook Calendar</button>
+                    <button onclick="trackCalendarClick('add-to-yahoo-calendar', '${urls.yahoo}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #7b1fa2; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">📅 Yahoo Calendar</button>
                     <button onclick="trackCalendarClick('download_ics', '${urls.ics}', '${eventDetailsJson}')" style="padding: 12px; border: none; background: #28a745; color: white; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px;">💾 Download .ics file</button>
                 `;
     }
