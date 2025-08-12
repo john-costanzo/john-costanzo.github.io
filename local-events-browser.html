@@ -45,7 +45,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Sunday, 2025-08-10 @ 22:56:01";
+			const localEventBrowserVersion = "Monday, 2025-08-11 @ 21:23:26";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -303,7 +303,7 @@
 
 		<script>
 			document.getElementById("date-range").textContent =
-				`${formatDate(today)} - ${formatDate(future_date)}`;
+				`${formatDate(today, "EST")} - ${formatDate(future_date, "EST")}`;
 
 			// Initialize the page
 			window.addEventListener("DOMContentLoaded", () => {
