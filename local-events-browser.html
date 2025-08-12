@@ -45,7 +45,7 @@
 
 		<title>Hendo Happenings</title>
 		<script>
-			const localEventBrowserVersion = "Monday, 2025-08-11 @ 22:00:23";
+			const localEventBrowserVersion = "Tuesday, 2025-08-12 @ 09:25:25";
 			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
 		</script>
 		<style>
@@ -95,10 +95,19 @@
 			}
 
 			h3 {
+				margin-top: -10px;
+				font-weight: normal;
 				margin-top: 0px;
 				margin-bottom: 0px;
 			}
 
+			.event-count {
+				color: #bab6aa;
+				font-size: 0.8em;
+			}
+			.event-collection {
+				margin-bottom: 10px;
+			}
 			.event {
 				padding-bottom: 5px;
 				padding-top: 5px;
@@ -183,8 +192,8 @@
 			}
 
 			.filter-controls {
-				margin-bottom: 20px;
-				padding: 15px;
+				margin-bottom: 10px;
+				padding: 5px;
 				background-color: white;
 				border-radius: 8px;
 				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -260,7 +269,7 @@
 		</header>
 
 		<div class="filter-controls">
-			<h3>Filter Events <span id="event_count"></span></h3>
+			<h3>Filter Events <span id="event_count" class="event-count"></span></h3>
 			<label>
 				<input type="text" id="search-input" placeholder="Search events..." />
 			</label>
@@ -303,7 +312,7 @@
 
 		<script>
 			document.getElementById("date-range").textContent =
-				`${formatDate(today, "EST")} - ${formatDate(future_date, "EST")}`;
+				`${formatDate(today, "EST")} → ${formatDate(future_date, "EST")}`;
 
 			// Initialize the page
 			window.addEventListener("DOMContentLoaded", () => {
