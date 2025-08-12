@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Monday, 2025-08-11 @ 21:23:49";
+const eventUtilsVersion = "Monday, 2025-08-11 @ 21:58:45";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
