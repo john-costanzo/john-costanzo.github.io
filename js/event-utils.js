@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Friday, 2025-08-08 @ 18:55:57";
+const eventUtilsVersion = "Monday, 2025-08-11 @ 20:46:56";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -203,7 +203,7 @@ function formatDate( date ) {
         year: "numeric",
         month: "long",
         day: "numeric",
-        timeZone: "UTC", // interpret everything as UTC
+        timeZone: "EST", // interpret everything as UTC
     };
     return date.toLocaleDateString( "en-US", options );
 }
