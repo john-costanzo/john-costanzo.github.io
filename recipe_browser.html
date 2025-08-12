@@ -65,20 +65,45 @@
         let numArgs = ( args[ 0 ] === '' ) ? undefined : args.length;
         let nextArg = 0;
 
+        /**
+         * Removes the 'fontsize' parameter from a URL query string.
+         * @param {string} string - The URL query string.
+         * @returns {string} The query string without the 'fontsize' parameter.
+         */
         function removeFontSize( string ) {
             const stringWithoutFontsize = string.split( "&" ).filter( element => !element.startsWith( "fontsize" ) ).join( "&" );
             return stringWithoutFontsize === "" ? "" : stringWithoutFontsize;
         }
 
+        /**
+         * Creates a URL with a new argument.
+         * @param {string} originPath - The base path of the URL.
+         * @param {string} searchString - The existing query string.
+         * @param {string} arg - The new argument to add.
+         * @returns {string} The new URL.
+         */
         function formURL( originPath, searchString, arg ) {
             const modifiedSearchString = removeFontSize( searchString );
             return ( originPath + modifiedSearchString + ( modifiedSearchString === "" ? "?" : "&" ) + arg );
         }
 
+        /**
+         * Formats a URL for the recipe browser.
+         * @param {string} originPath - The base path of the URL.
+         * @param {string} recipeId - The ID of the recipe.
+         * @param {string} fontSize - The font size.
+         * @param {number} currentScalingPercentage - The scaling percentage.
+         * @param {string} searchTerm - The search term.
+         * @returns {string} The formatted URL.
+         */
         function formatURL( originPath, recipeId, fontSize, currentScalingPercentage, searchTerm ) {
             return ( originPath + "?view=" + recipeId + "&fontsize=" + fontSize + "&scalingpercentage=" + currentScalingPercentage + "&searchterm=" + searchTerm );
         }
 
+        /**
+         * Gets the next name-value pair from the URL arguments.
+         * @returns {Array<string>|undefined} An array containing the name and value, or undefined if no more arguments.
+         */
         function nextArgNVP( ) {
             // Return an array [ name, value ] containing the "next" argument.
             // If all arguments have been processed, return undefined.
@@ -97,6 +122,10 @@
         const INGREDIENTS = 1;
         const METHODS = 2;
 
+        /**
+         * Changes the background color of the header and ingredients panel.
+         * @param {string} color - The color to set.
+         */
         function changeColor( color ) {
             const topHeaderContainer = document.getElementById( "dijit_layout_ContentPane_0" );
             if ( topHeaderContainer ) topHeaderContainer.style.backgroundColor = color;
@@ -104,6 +133,10 @@
             if ( ingredientContainer ) ingredientContainer.style.backgroundColor = color;
         }
 
+        /**
+         * Toggles the visibility of a recipe section.
+         * @param {string} id - The ID of the section to toggle.
+         */
         function toggleSection( id ) {
             // Toggle the visibility of the sections identified by ID.
             require( [ "dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx", "dojo/dom-class" ],
@@ -145,6 +178,11 @@
     </script>
 
     <script>
+        /**
+         * Extracts timing information from a string.
+         * @param {string} s - The string to extract timing information from.
+         * @returns {Array<string>} An array containing timer IDs, timing info, and the string with timing information removed.
+         */
         function extractTimingInformation( s ) {
             // Extract timing information from the string S.
             // Return a list containing successive pairs of elements are ( timerId timingInfo )
@@ -164,6 +202,10 @@
             return ( result );
         }
 
+        /**
+         * Adds the ingredients for a recipe to the page.
+         * @param {string} recipeId - The ID of the recipe.
+         */
         function addIngredients( recipeId ) {
             // Add all ingredients for RECIPEID.
             require( [ "dojo/dom", "dojo/domReady!" ],
@@ -187,6 +229,10 @@
                 } );
         }
 
+        /**
+         * Adds the methods, yield, tags, and credits for a recipe to the page.
+         * @param {string} recipeId - The ID of the recipe.
+         */
         function addMethods( recipeId ) {
             // Add all methods for RECIPEID.
             require( [ "dojo/dom", "dojo/domReady!" ],
@@ -257,6 +303,10 @@
                 } );
         }
 
+        /**
+         * Toggles the 'itemClicked' class on an element and its children to de-emphasize it.
+         * @param {HTMLElement} element - The element that was clicked.
+         */
         function handleItemClick( element ) {
             element.classList.toggle( 'itemClicked' );
 
@@ -281,6 +331,10 @@
             }
         }
 
+        /**
+         * Fills in the recipe details on the page.
+         * @param {string} id - The ID of the recipe to fill in.
+         */
         function fillInRecipe( id ) {
             console.debug( "fillInRecipe: id=" + id );
             const title = recipeIdToNameMap.get( id );
@@ -308,6 +362,10 @@
             scaleRecipe( currentScalingPercentage );
         }
 
+        /**
+         * Prints a recipe.
+         * @param {string} [id] - The ID of the recipe to print. If not provided, the current recipe is printed.
+         */
         function printRecipe( id ) {
             // Print a recipe.
             // If given a recipe ID, load it first.
@@ -371,6 +429,10 @@
             }
         }
 
+        /**
+         * Shows a dialog box indicating that a recipe ID was not found.
+         * @param {string} id - The invalid recipe ID.
+         */
         function noSuchId( id ) {
             require( [ "dijit/Dialog", "dijit/form/Button" ],
                 function( Dialog, Button ) {
@@ -394,6 +456,9 @@
                 } );
         }
 
+        /**
+         * Opens the user's email client with a link to the current recipe.
+         */
         function emailLinkToRecipe( ) {
             // Send a link to the email client
             if ( !currentRecipeId ) return;
@@ -403,6 +468,9 @@
             window.open( "mailto:?subject=" + title + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
         }
 
+        /**
+         * Opens the user's email client with a pre-filled email for commenting on the current recipe.
+         */
         function commentOnRecipe( ) {
             if ( !currentRecipeId ) return;
             const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
@@ -411,6 +479,11 @@
             window.open( "mailto:?subject=Comments on the \"" + title + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
         }
 
+        /**
+         * Adds a list of recipes to the page.
+         * @param {Map<string, Array<Array<string>>>} recipeNameMap - A map of recipe categories to lists of recipes.
+         * @param {HTMLElement} refNode - The node to which the recipe list will be added.
+         */
         function addRecipes( recipeNameMap, refNode ) {
             // Add recipes in RECIPENAMEMAP as an unordered list and place it as REFNODE
             require( [ "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/domReady!" ],
@@ -467,6 +540,10 @@
     </script>
 
     <script>
+        /**
+         * Sets the focus on a given element.
+         * @param {string} element - The ID of the element to focus on.
+         */
         function focusOn( element ) {
             require( [ "dojo/dom", "dojo/ready" ],
                 function( dom, ready ) {
@@ -481,6 +558,11 @@
                 } );
         }
 
+        /**
+         * Toggles the visibility of a drawer.
+         * @param {string} drawer - The ID of the drawer to toggle.
+         * @param {boolean} [forceOpen=false] - Whether to force the drawer open.
+         */
         function toggleDrawer( drawer, forceOpen = false ) {
             require( [ "dojo/dom", "dojo/dom-style", "dojo/domReady!" ],
                 function( dom, domStyle ) {
@@ -502,6 +584,10 @@
                 } );
         };
 
+        /**
+         * Opens the gear menu and focuses on the first item.
+         * @param {dijit/DropDownMenu} menu - The menu to open.
+         */
         function selectGearMenu( menu ) {
             if ( menu ) {
                 require( [ "dijit/registry", "dojo/domReady!" ],
@@ -622,6 +708,10 @@
     <script>
         var clockElement = document.getElementById( "recipeClock" );
 
+        /**
+         * Updates the clock display.
+         * @param {HTMLElement} clock - The clock element to update.
+         */
         function updateClock( clock ) {
             const date = new Date( );
             const dateOptions = {
@@ -654,6 +744,10 @@
     <script src="js/circular-timer-using-dojo.js"></script>
     <script src="js/recipe-scaling.js"></script>
     <script>
+        /**
+         * Changes the value of the search term input box.
+         * @param {string} newSearchTerm - The new search term.
+         */
         function changeSearchTerm( newSearchTerm ) {
             const searchBox = document.getElementById( "searchBox" );
             if ( searchBox ) {
@@ -663,7 +757,11 @@
             }
         }
 
-        function getSearchTerm( newSearchTerm ) {
+        /**
+         * Gets the current search term from the input box.
+         * @returns {string} The current search term.
+         */
+        function getSearchTerm( ) {
             const searchBox = document.getElementById( "searchBox" );
             if ( searchBox ) {
                 return ( searchBox.value );
@@ -672,6 +770,11 @@
             }
         }
 
+        /**
+         * Changes the font size of elements matching a selector.
+         * @param {string} selector - The CSS selector for the elements to change.
+         * @param {string} newFontSize - The new font size class to apply.
+         */
         function changeFontSize( selector, newFontSize ) {
             require( [ "dojo/query", "dojo/dom-class", "dojo/domReady!" ],
                 function( query, domClass ) {
@@ -686,6 +789,11 @@
             currentFontSize = newFontSize;
         }
 
+        /**
+         * Converts a font size description to a font size value.
+         * @param {string} fontSizeDescription - The font size description (e.g., "small", "medium", "large").
+         * @returns {string} The corresponding font size class.
+         */
         function fontSizeDescriptionToValue( fontSizeDescription ) {
             switch ( fontSizeDescription ) {
                 case "small":
@@ -703,6 +811,11 @@
             }
         }
 
+        /**
+         * Converts a font size value to a font size description.
+         * @param {string} fontSizeValue - The font size class.
+         * @returns {string} The corresponding font size description.
+         */
         function fontSizeValueToDescription( fontSizeValue ) {
             switch ( fontSizeValue ) {
                 case smallFontSize:
@@ -788,6 +901,9 @@
 
         var gearsDropDownMenu;
 
+        /**
+         * Redirects the page to the current URL with updated parameters.
+         */
         function redirectHere( ) {
             // Redirect the page to the current URL using now-current values.
             const originPathname = window.location.origin + window.location.pathname;
