@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2025-08-13 08:00:59";
+const eventDataVersion = "Wednesday, 2025-08-13 09:01:01";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -564,12 +564,12 @@ const events = [
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         date: "2025-08-17",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
+        time: "1:00 pm - 4:00 pm",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
         name: "Live Music: Eric Congdon",
-        sorttime: "14:00",
-        end_time_formatted: "2025-08-17 17:00",
+        sorttime: "13:00",
+        end_time_formatted: "2025-08-17 16:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
