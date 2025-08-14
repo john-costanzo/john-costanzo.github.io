@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2025-08-13 09:01:01";
+const eventDataVersion = "Wednesday, 2025-08-13 22:13:04";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -433,6 +433,19 @@ const events = [
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
+        date: "2025-08-19",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Panorama Mediterranean Grill",
+        sorttime: "¿",
+        end_time_formatted: "2025-08-19 23:59",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
         date: "2025-08-14",
         time: "5:30 pm - 7:00 pm",
         start_time: "5:30 pm",
@@ -622,19 +635,6 @@ const events = [
         name: "Paint Your Pet Class",
         sorttime: "15:00",
         end_time_formatted: "2025-08-24 17:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        date: "2025-08-19",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Panorama Mediterranean Grill",
-        sorttime: "¿",
-        end_time_formatted: "2025-08-19 23:59",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
@@ -2604,6 +2604,19 @@ const events = [
     {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
+        date: "2025-10-11",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: "Coconut Cake",
+        sorttime: "2025-10-11 14:00",
+        end_time_formatted: "2025-10-11 17:00",
+        detail: "Coconut Cake is an ensemble dedicated to rumba music – chiming and reverberant guitars, syncopated bass, drums, and shakers all dancing together...",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
         date: "2025-10-16",
         time: "6:00 pm - 9:30 pm",
         start_time: "6:00 pm",
@@ -3365,7 +3378,7 @@ const events = [
         name: "Team Trivia",
         sorttime: "2025-08-13 19:00",
         end_time_formatted: "2025-08-13 21:00",
-        detail: "Grab your smartest friends and join us for two fun rounds of trivia.",
+        detail: "07:00 PM - 09:00 PM",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
@@ -3405,6 +3418,19 @@ const events = [
         sorttime: "2025-08-19 18:00",
         end_time_formatted: "2025-08-19 20:30",
         detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer. We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.",
+        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
+        venue: "Guidon",
+        date: "2025-08-20",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 PM",
+        end_time: "9:00 PM",
+        name: "Team Trivia",
+        sorttime: "2025-08-20 19:00",
+        end_time_formatted: "2025-08-20 21:00",
+        detail: "Grab your smartest friends and join us for two fun rounds of trivia.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
