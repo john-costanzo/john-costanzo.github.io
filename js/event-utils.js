@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Tuesday, 2025-08-12 @ 12:28:37";
+const eventUtilsVersion = "Thursday, 2025-08-14 @ 19:00:47";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -839,6 +839,9 @@ function createVenueFilters( ) {
         } );
         venueFiltersContainer.appendChild( chip );
     } );
+
+    const line_break = document.createElement( "br" );
+    venueFiltersContainer.appendChild( line_break );
 
     const allChip = document.createElement( "span" );
     allChip.className = "venue-chip";
