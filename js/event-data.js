@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2025-08-14 18:26:17";
+const eventDataVersion = "Thursday, 2025-08-14 20:01:05";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2331,6 +2331,32 @@ const events = [
     {
         url: "https://www.sabrewery.com/events/2025-09",
         venue: "Southern App",
+        date: "2025-09-06",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "Unpaid Bill & The Bad Czechs",
+        sorttime: "2025-09-06 19:00",
+        end_time_formatted: "2025-09-06 21:00",
+        detail: "Independent Folk / Ragtime band based in Brevard, NC. Playin’ music from the 1840’s – present day!\nUnpaidBillandtheBadCzechs",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-09",
+        venue: "Southern App",
+        date: "2025-09-07",
+        time: "4:00 pm - 6:00 pm",
+        start_time: "4:00 pm",
+        end_time: "6:00 pm",
+        name: "The Dan Keller Trio",
+        sorttime: "2025-09-07 16:00",
+        end_time_formatted: "2025-09-07 18:00",
+        detail: "Dan Keller’s band puts their own spin on timeless standards and melodies, without losing the grit and authenticity of jazz.\nMany eras from early swing, latin jazz, bebop, and soul-jazz are…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-09",
+        venue: "Southern App",
         date: "2025-09-10",
         time: "6:00 pm - 8:00 pm",
         start_time: "6:00 pm",
@@ -2379,19 +2405,6 @@ const events = [
         end_time_formatted: "2025-09-24 20:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        date: "2025-08-14",
-        time: "6:00 pm - 9:30 pm",
-        start_time: "6:00 pm",
-        end_time: "9:30 pm",
-        name: "Femi Kuti & The Positive Force",
-        sorttime: "2025-08-14 18:00",
-        end_time_formatted: "2025-08-14 21:30",
-        detail: "GA Advance $37.93 | GA Day of Show $43.20 | GA + Early Access $53.75",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
