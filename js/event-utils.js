@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Thursday, 2025-08-14 @ 19:00:47";
+const eventUtilsVersion = "Tuesday, 2025-08-19 @ 11:03:01";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
@@ -646,7 +646,8 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
 
             if ( event.detail !== "None" ) {
                 descriptionElement = document.createElement( "span" );
-                descriptionElement.textContent = event.detail;
+                htmlizedDetails = event.detail.replace( /\n/g, "<p>" );
+                descriptionElement.innerHTML = htmlizedDetails;
                 descriptionElement.className = "hidden";
 
                 toggleElement = document.createElement( "span" );
