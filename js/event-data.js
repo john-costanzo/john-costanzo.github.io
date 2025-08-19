@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-08-19 11:01:24";
+const eventDataVersion = "Tuesday, 2025-08-19 12:11:26";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -5806,7 +5806,7 @@ const events = [
         time: "",
         start_time: "",
         end_time: "",
-        name: "Failed to fetch events: 429 Client Error: Too Many Requests for url: https://www.peacecenter.org/events/detail/25-america",
+        name: "Failed to fetch events: 429 Client Error: Too Many Requests for url: https://www.peacecenter.org/events/detail/26-gso-ch-1",
         sorttime: "",
         end_time_formatted: "",
         detail: "",
