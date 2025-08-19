@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-08-19 10:01:47";
+const eventDataVersion = "Tuesday, 2025-08-19 11:01:24";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3947,7 +3947,7 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         start_time: "12:00 pm",
         end_time: "8:00 pm",
-        name: "Papa\'s Express",
+        name: "Papa’s Express",
         sorttime: "2025-09-07 12:00",
         end_time_formatted: "2025-09-07 20:00",
         detail: "None",
@@ -4025,7 +4025,7 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         start_time: "12:00 pm",
         end_time: "8:00 pm",
-        name: "Papa\'s Express",
+        name: "Papa’s Express",
         sorttime: "2025-09-14 12:00",
         end_time_formatted: "2025-09-14 20:00",
         detail: "None",
@@ -4116,7 +4116,7 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         start_time: "12:00 pm",
         end_time: "8:00 pm",
-        name: "Papa\'s Express",
+        name: "Papa’s Express",
         sorttime: "2025-09-21 12:00",
         end_time_formatted: "2025-09-21 20:00",
         detail: "None",
@@ -4194,7 +4194,7 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         start_time: "12:00 pm",
         end_time: "8:00 pm",
-        name: "Papa\'s Express",
+        name: "Papa’s Express",
         sorttime: "2025-09-28 12:00",
         end_time_formatted: "2025-09-28 20:00",
         detail: "None",
@@ -5806,7 +5806,7 @@ const events = [
         time: "",
         start_time: "",
         end_time: "",
-        name: "Failed to fetch events: 429 Client Error: Too Many Requests for url: https://www.peacecenter.org/events/detail/25-tom-segura",
+        name: "Failed to fetch events: 429 Client Error: Too Many Requests for url: https://www.peacecenter.org/events/detail/25-america",
         sorttime: "",
         end_time_formatted: "",
         detail: "",
