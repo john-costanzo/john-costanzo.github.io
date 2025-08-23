@@ -1,19 +1,6 @@
-const eventDataVersion = "Thursday, 2025-08-21 14:43:47";
+const eventDataVersion = "Saturday, 2025-08-23 07:44:36";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
-    {
-        url: "https://www.millsriverbrewingco.com/events",
-        venue: "Mills River Brewing",
-        date: "2025-08-21",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: "Live Music!",
-        sorttime: "2025-08-21 18:00:00",
-        end_time_formatted: "2025-08-21 21:00",
-        detail: "Live Music! Thu, Aug 21, 6:00 pm - 9:00 pm Live music from 6-9pm. Jesse Talbott will be playing a blend of folk/blues/Americana!",
-        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
-    },
     {
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
@@ -77,6 +64,19 @@ const events = [
         sorttime: "2025-08-28 18:00:00",
         end_time_formatted: "2025-08-28 21:00",
         detail: "Live Music! Thu, Aug 28, 6:00 pm - 9:00 pm Live music from 6-9pm. The Brue will be playing classic rock with a little pop, a little blues & a lot of groove!",
+        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
+    },
+    {
+        url: "https://www.millsriverbrewingco.com/events",
+        venue: "Mills River Brewing",
+        date: "2025-08-29",
+        time: "6:30 pm - 9:30 pm",
+        start_time: "6:30 pm",
+        end_time: "9:30 pm",
+        name: "Live Music!",
+        sorttime: "2025-08-29 18:30:00",
+        end_time_formatted: "2025-08-29 21:30",
+        detail: "Live Music! Fri, Aug 29, 6:30 pm - 9:30 pm Live music from 6:30-9:30pm. Crimson Moon will be playing classic rock!",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -255,10 +255,10 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         start_time: "2:00 pm",
         end_time: "5:00 pm",
-        name: "Moonshine State – Live Music",
+        name: "Raphael Graves – Live Music",
         sorttime: "2025-08-31 14:00",
         end_time_formatted: "2025-08-31 17:00",
-        detail: "Moonshine State features alternative and folk rock artist Raphael Graves(LAZRLUVR,",
+        detail: "Alternative and folk rock artist Raphael Graves is known for",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -342,6 +342,19 @@ const events = [
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
+        date: "2025-09-10",
+        time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: "FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell",
+        sorttime: "18:00",
+        end_time_formatted: "2025-09-10 20:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
         date: "2025-09-06",
         time: "¿ - ?",
         start_time: "¿",
@@ -349,6 +362,19 @@ const events = [
         name: "Food Truck: Adair Cajun Cooking and Panorama Mediterranean Grill",
         sorttime: "¿",
         end_time_formatted: "2025-09-06 23:59",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        date: "2025-09-10",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Adair’s Cajun Cooking",
+        sorttime: "¿",
+        end_time_formatted: "2025-09-10 23:59",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
@@ -505,19 +531,6 @@ const events = [
         name: "Food Truck: Indian Aroma Bistro",
         sorttime: "¿",
         end_time_formatted: "2025-09-08 23:59",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        date: "2025-08-21",
-        time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Food Truck: Panorama Mediterranean Grill",
-        sorttime: "¿",
-        end_time_formatted: "2025-08-21 23:59",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
@@ -797,19 +810,6 @@ const events = [
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
-        date: "2025-08-21",
-        time: "6:30 pm - 8:30 pm",
-        start_time: "6:30 pm",
-        end_time: "8:30 pm",
-        name: "Trailside Trivia",
-        sorttime: "18:30",
-        end_time_formatted: "2025-08-21 20:30",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
         date: "2025-08-28",
         time: "6:30 pm - 8:30 pm",
         start_time: "6:30 pm",
@@ -845,19 +845,6 @@ const events = [
         end_time_formatted: "2025-09-07 17:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
-        date: "2025-08-21",
-        time: "8:00 pm - 10:00 pm",
-        start_time: "8:00 pm",
-        end_time: "10:00 pm",
-        name: "Kid Billy",
-        sorttime: "2025-08-21 20:00",
-        end_time_formatted: "2025-08-21 22:00",
-        detail: "Music starts @8pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://oklawahabrewing.com/events",
@@ -961,6 +948,19 @@ const events = [
         sorttime: "2025-09-05 20:00",
         end_time_formatted: "2025-09-05 23:00",
         detail: "Music starts @8pm! $7 cover!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        date: "2025-09-06",
+        time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: "Dr. Bacon and Jesse Velvet",
+        sorttime: "2025-09-06 20:00",
+        end_time_formatted: "2025-09-06 23:00",
+        detail: "Music starts @8pm $10 cover",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -2474,6 +2474,19 @@ const events = [
     {
         url: "https://www.sabrewery.com/events/2025-09",
         venue: "Southern App",
+        date: "2025-09-14",
+        time: "1:00 pm - 4:00 pm",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: "Hammock Theory",
+        sorttime: "2025-09-14 13:00",
+        end_time_formatted: "2025-09-14 16:00",
+        detail: "Hammock Theory is a jam band based in Greenville, SC.\nWe draw inspiration from funk, rock, reggae, and jazz to deliver what has been best described as “feel good music”.\nhammocktheoryband.com",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-09",
+        venue: "Southern App",
         date: "2025-09-16",
         time: "5:00 pm - 7:00 pm",
         start_time: "5:00 pm",
@@ -2495,6 +2508,19 @@ const events = [
         sorttime: "2025-09-17 18:00",
         end_time_formatted: "2025-09-17 20:00",
         detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-09",
+        venue: "Southern App",
+        date: "2025-09-18",
+        time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: "Music Bingo",
+        sorttime: "2025-09-18 18:00",
+        end_time_formatted: "2025-09-18 20:00",
+        detail: "Join us for Music Bingo at the brewery!\nHosted by Sam Henry (SAB bartender and our Trivia host!).\nExpect lots of great music, great craft beer, and prizes!",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -2977,6 +3003,32 @@ const events = [
         end_time_formatted: "2025-11-29 17:00",
         detail: "Underwater funk from Madonna to Monk. Team Awesome features some of the best improvisers in town with “alternate” takes on pop, funk and jazz classics...",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://visithendersonvillenc.org/summer-concerts",
+        venue: "Music on Main",
+        date: "2025-09-06",
+        time: "5:00 pm - ?",
+        start_time: "5:00 pm",
+        end_time: "?",
+        name: "Rockin’ on the Rock with Showboat Band",
+        sorttime: "5:00 pm - ?",
+        end_time_formatted: "2025-09-06 23:59",
+        detail: "None",
+        location: "Jump Off Rock, Laurel Park, NC and Laurel Green Park",
+    },
+    {
+        url: "https://visithendersonvillenc.org/summer-concerts",
+        venue: "Music on Main",
+        date: "2025-10-04",
+        time: "5:00 pm - ?",
+        start_time: "5:00 pm",
+        end_time: "?",
+        name: "Rockin’ on the Rock with Autumnwud",
+        sorttime: "5:00 pm - ?",
+        end_time_formatted: "2025-10-04 23:59",
+        detail: "None",
+        location: "Jump Off Rock, Laurel Park, NC and Laurel Green Park",
     },
     {
         url: "https://www.ncarboretum.org/events/month/2025-08",
@@ -4860,7 +4912,7 @@ const events = [
         name: "Food Truck: Hit the Pit BBQ",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-06-11 23:59",
-        detail: "<a href='https://www.hitthepitbbq.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.hitthepitbbq.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4899,7 +4951,7 @@ const events = [
         name: "Food Truck: Cooking With Comedy",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-06-12 23:59",
-        detail: "<a href='https://cookingwithcomedyavl.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://cookingwithcomedyavl.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4938,7 +4990,7 @@ const events = [
         name: "Food Truck: Mehfil",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-06-18 23:59",
-        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4977,7 +5029,7 @@ const events = [
         name: "Food Truck: Glazed and Infused and Silly Willies",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-06-19 23:59",
-        detail: "<a href='https://glazedandinfused2112.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://glazedandinfused2112.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5016,7 +5068,7 @@ const events = [
         name: "Food Truck: Mehfil",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-06-25 23:59",
-        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5094,7 +5146,7 @@ const events = [
         name: "Food Truck: Mehfil",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-02 23:59",
-        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5133,7 +5185,7 @@ const events = [
         name: "Food Truck: Ono Poke Bowl",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-03 23:59",
-        detail: "<a href='https://ono-pokebowl.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://ono-pokebowl.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5172,7 +5224,7 @@ const events = [
         name: "Food Truck: Appalachian Chic",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-09 23:59",
-        detail: "<a href='https://www.facebook.com/p/Appalachian-Chics-61555164222068/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.facebook.com/p/Appalachian-Chics-61555164222068/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5250,7 +5302,7 @@ const events = [
         name: "Food Truck: Glazed and Infused and Silly Willies",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-16 23:59",
-        detail: "<a href='https://glazedandinfused2112.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://glazedandinfused2112.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5289,7 +5341,7 @@ const events = [
         name: "Food Truck: Mehfil",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-17 23:59",
-        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5315,7 +5367,7 @@ const events = [
         name: "Food Truck: Cooking With Comedy",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-23 23:59",
-        detail: "<a href='https://cookingwithcomedyavl.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://cookingwithcomedyavl.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5354,7 +5406,7 @@ const events = [
         name: "Food Truck: Ono Poke Bowl",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-24 23:59",
-        detail: "<a href='https://ono-pokebowl.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://ono-pokebowl.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5393,7 +5445,7 @@ const events = [
         name: "Food Truck: Silly Willies",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-30 23:59",
-        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5432,7 +5484,7 @@ const events = [
         name: "Food Truck: Mehfil",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-07-31 23:59",
-        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://mehfilasheville.com/asheville-downtown-mehfil-food-truck' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5471,7 +5523,7 @@ const events = [
         name: "Food Truck: Silly Willies",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-06 23:59",
-        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5510,7 +5562,7 @@ const events = [
         name: "Food Truck: Silly Willies and Glazed and Infused",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-07 23:59",
-        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5549,7 +5601,7 @@ const events = [
         name: "Food Truck: Appalachian Chic",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-13 23:59",
-        detail: "<a href='https://www.facebook.com/p/Appalachian-Chics-61555164222068/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.facebook.com/p/Appalachian-Chics-61555164222068/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5588,7 +5640,7 @@ const events = [
         name: "Food Truck: Appalachian Chic",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-14 23:59",
-        detail: "<a href='https://www.facebook.com/p/Appalachian-Chics-61555164222068/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.facebook.com/p/Appalachian-Chics-61555164222068/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5627,7 +5679,7 @@ const events = [
         name: "Food Truck: Silly Willies",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-20 23:59",
-        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5666,7 +5718,7 @@ const events = [
         name: "Food Truck: Ono Poke Bowl",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-21 23:59",
-        detail: "<a href='https://ono-pokebowl.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://ono-pokebowl.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5705,7 +5757,7 @@ const events = [
         name: "Food Truck: Silly Willies and Glazed and Infused",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-27 23:59",
-        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5744,7 +5796,7 @@ const events = [
         name: "Food Truck: Cooking With Comedy and Silly Willies",
         sorttime: "¿ - ?",
         end_time_formatted: "2025-08-28 23:59",
-        detail: "<a href='https://cookingwithcomedyavl.com' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://cookingwithcomedyavl.com' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6134,7 +6186,7 @@ const events = [
         name: "Bluegrass First Class (Feb 13 -> Feb 15)",
         sorttime: "¿-?",
         end_time_formatted: "2026-02-13 23:59",
-        detail: "There will be 2 stages with National and Regional talent. The entertainment will be Bluegrass, Country and Old-time, and there will be other activities like vendor market, workshops & jam sessions.<a href='https://festivalnet.com/10384/Asheville-North-Carolina/Bluegrass-Festivals/Bluegrass-First-Class' target='_blank'><em>link</em></a>",
+        detail: "There will be 2 stages with National and Regional talent. The entertainment will be Bluegrass, Country and Old-time, and there will be other activities like vendor market, workshops & jam sessions.<a href='https://festivalnet.com/10384/Asheville-North-Carolina/Bluegrass-Festivals/Bluegrass-First-Class' target='_blank'> <em>link</em></a>",
         location: "Festival Net Bluegrass First Class",
     },
     {
@@ -6147,7 +6199,7 @@ const events = [
         name: "Bluegrass First Class (Feb 13 -> Feb 15)",
         sorttime: "¿-?",
         end_time_formatted: "2026-02-14 23:59",
-        detail: "There will be 2 stages with National and Regional talent. The entertainment will be Bluegrass, Country and Old-time, and there will be other activities like vendor market, workshops & jam sessions.<a href='https://festivalnet.com/10384/Asheville-North-Carolina/Bluegrass-Festivals/Bluegrass-First-Class' target='_blank'><em>link</em></a>",
+        detail: "There will be 2 stages with National and Regional talent. The entertainment will be Bluegrass, Country and Old-time, and there will be other activities like vendor market, workshops & jam sessions.<a href='https://festivalnet.com/10384/Asheville-North-Carolina/Bluegrass-Festivals/Bluegrass-First-Class' target='_blank'> <em>link</em></a>",
         location: "Festival Net Bluegrass First Class",
     },
     {
@@ -6160,7 +6212,7 @@ const events = [
         name: "Bluegrass First Class (Feb 13 -> Feb 15)",
         sorttime: "¿-?",
         end_time_formatted: "2026-02-15 23:59",
-        detail: "There will be 2 stages with National and Regional talent. The entertainment will be Bluegrass, Country and Old-time, and there will be other activities like vendor market, workshops & jam sessions.<a href='https://festivalnet.com/10384/Asheville-North-Carolina/Bluegrass-Festivals/Bluegrass-First-Class' target='_blank'><em>link</em></a>",
+        detail: "There will be 2 stages with National and Regional talent. The entertainment will be Bluegrass, Country and Old-time, and there will be other activities like vendor market, workshops & jam sessions.<a href='https://festivalnet.com/10384/Asheville-North-Carolina/Bluegrass-Festivals/Bluegrass-First-Class' target='_blank'> <em>link</em></a>",
         location: "Festival Net Bluegrass First Class",
     },
     {
@@ -6173,7 +6225,7 @@ const events = [
         name: "Asheville Spring Herb Festival (Apr 24 -> Apr 26)",
         sorttime: "¿-?",
         end_time_formatted: "2026-04-24 23:59",
-        detail: "<a href='https://festivalnet.com/10455/Fletcher-North-Carolina/Home-and-Garden-Shows/Asheville-Spring-Herb-Festival' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/10455/Fletcher-North-Carolina/Home-and-Garden-Shows/Asheville-Spring-Herb-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Spring Herb Festival",
     },
     {
@@ -6186,7 +6238,7 @@ const events = [
         name: "Asheville Spring Herb Festival (Apr 24 -> Apr 26)",
         sorttime: "¿-?",
         end_time_formatted: "2026-04-25 23:59",
-        detail: "<a href='https://festivalnet.com/10455/Fletcher-North-Carolina/Home-and-Garden-Shows/Asheville-Spring-Herb-Festival' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/10455/Fletcher-North-Carolina/Home-and-Garden-Shows/Asheville-Spring-Herb-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Spring Herb Festival",
     },
     {
@@ -6199,7 +6251,7 @@ const events = [
         name: "Asheville Spring Herb Festival (Apr 24 -> Apr 26)",
         sorttime: "¿-?",
         end_time_formatted: "2026-04-26 23:59",
-        detail: "<a href='https://festivalnet.com/10455/Fletcher-North-Carolina/Home-and-Garden-Shows/Asheville-Spring-Herb-Festival' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/10455/Fletcher-North-Carolina/Home-and-Garden-Shows/Asheville-Spring-Herb-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Spring Herb Festival",
     },
     {
@@ -6212,7 +6264,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-05 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6225,7 +6277,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-06 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6238,7 +6290,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-07 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6251,7 +6303,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-08 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6264,7 +6316,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-09 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6277,7 +6329,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-10 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6290,7 +6342,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-11 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6303,7 +6355,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-12 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6316,7 +6368,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-13 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6329,7 +6381,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-14 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6342,7 +6394,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-15 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6355,7 +6407,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-16 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6368,7 +6420,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-17 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6381,7 +6433,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-18 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6394,7 +6446,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-19 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6407,7 +6459,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-20 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6420,7 +6472,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-21 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6433,7 +6485,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-22 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6446,7 +6498,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-23 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6459,7 +6511,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-24 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6472,7 +6524,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-25 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6485,7 +6537,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-26 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6498,7 +6550,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-27 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6511,7 +6563,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-28 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6524,7 +6576,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-29 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6537,7 +6589,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-30 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6550,7 +6602,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-07-31 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6563,7 +6615,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-01 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6576,7 +6628,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-02 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6589,7 +6641,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-03 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6602,7 +6654,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-04 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6615,7 +6667,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-05 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6628,7 +6680,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-06 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6641,7 +6693,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-07 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6654,7 +6706,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-08 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6667,7 +6719,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-09 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6680,7 +6732,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-10 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6693,7 +6745,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-11 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6706,7 +6758,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-12 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6719,7 +6771,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-13 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6732,7 +6784,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-14 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6745,7 +6797,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-15 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6758,7 +6810,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-16 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6771,7 +6823,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-17 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6784,7 +6836,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-18 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6797,7 +6849,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-19 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6810,7 +6862,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-20 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6823,7 +6875,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-21 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6836,7 +6888,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-22 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6849,7 +6901,7 @@ const events = [
         name: "Shindig on the Green (Jul 5 -> Aug 23)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-23 23:59",
-        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6862,7 +6914,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-02 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6875,7 +6927,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-03 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6888,7 +6940,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-04 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6901,7 +6953,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-05 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6914,7 +6966,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-06 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6927,7 +6979,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-07 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6940,7 +6992,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-08 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6953,7 +7005,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-09 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6966,7 +7018,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-10 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6979,7 +7031,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-11 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -6992,7 +7044,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-12 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7005,7 +7057,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-13 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7018,7 +7070,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-14 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7031,7 +7083,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-15 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7044,7 +7096,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-16 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7057,7 +7109,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-17 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7070,7 +7122,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-18 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7083,7 +7135,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-19 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7096,7 +7148,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-20 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7109,7 +7161,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-21 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7122,7 +7174,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-22 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7135,7 +7187,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-23 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7148,7 +7200,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-24 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7161,7 +7213,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-25 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7174,7 +7226,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-26 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7187,7 +7239,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-27 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7200,7 +7252,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-28 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7213,7 +7265,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-29 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7226,7 +7278,7 @@ const events = [
         name: "Ooh La La Curiosity Market - August (Aug 2 -> Aug 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-30 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/92975/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - August",
     },
     {
@@ -7239,7 +7291,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-05 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7252,7 +7304,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-06 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7265,7 +7317,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-07 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7278,7 +7330,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-08 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7291,7 +7343,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-09 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7304,7 +7356,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-10 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7317,7 +7369,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-11 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7330,7 +7382,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-12 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7343,7 +7395,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-13 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7356,7 +7408,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-14 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7369,7 +7421,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-15 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7382,7 +7434,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-16 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7395,7 +7447,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-17 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7408,7 +7460,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-18 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7421,7 +7473,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-19 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7434,7 +7486,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-20 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7447,7 +7499,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-21 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7460,7 +7512,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-22 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7473,7 +7525,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-23 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7486,7 +7538,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-24 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7499,7 +7551,7 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-25 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
@@ -7512,21 +7564,8 @@ const events = [
         name: "West Asheville Tailgate Market - August (Aug 5 -> Aug 26)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-26 23:59",
-        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
-    },
-    {
-        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
-        venue: "Festival Net",
-        date: "2025-08-21",
-        time: "¿-?",
-        start_time: "¿",
-        end_time: "?",
-        name: "Rhythm & Brews Concert Series - August",
-        sorttime: "¿-?",
-        end_time_formatted: "2025-08-21 23:59",
-        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Americana, Bluegrass, Folk, Funk, Rock, Roots and Variety, and there will be other activities like kid's area, local food, craft beer, wine and hard cider.<a href='https://festivalnet.com/88556/Hendersonville-North-Carolina/Music-Festivals/Rhythm-Brews-Concert-Series-August' target='_blank'><em>link</em></a>",
-        location: "Festival Net Rhythm & Brews Concert Series - August",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
@@ -7538,7 +7577,7 @@ const events = [
         name: "North Carolina Apple Festival (Aug 29 -> Sep 1)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-29 23:59",
-        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7551,7 +7590,7 @@ const events = [
         name: "North Carolina Apple Festival (Aug 29 -> Sep 1)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-30 23:59",
-        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7564,7 +7603,7 @@ const events = [
         name: "North Carolina Apple Festival (Aug 29 -> Sep 1)",
         sorttime: "¿-?",
         end_time_formatted: "2025-08-31 23:59",
-        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7577,7 +7616,7 @@ const events = [
         name: "North Carolina Apple Festival (Aug 29 -> Sep 1)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-01 23:59",
-        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7590,7 +7629,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-02 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7603,7 +7642,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-03 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7616,7 +7655,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-04 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7629,7 +7668,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-05 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7642,7 +7681,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-06 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7655,7 +7694,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-07 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7668,7 +7707,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-08 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7681,7 +7720,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-09 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7694,7 +7733,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-10 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7707,7 +7746,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-11 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7720,7 +7759,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-12 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7733,7 +7772,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-13 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7746,7 +7785,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-14 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7759,7 +7798,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-15 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7772,7 +7811,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-16 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7785,7 +7824,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-17 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7798,7 +7837,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-18 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7811,7 +7850,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-19 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7824,7 +7863,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-20 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7837,7 +7876,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-21 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7850,7 +7889,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-22 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7863,7 +7902,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-23 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7876,7 +7915,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-24 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7889,7 +7928,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-25 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7902,7 +7941,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-26 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7915,7 +7954,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-27 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7928,7 +7967,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-28 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7941,7 +7980,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-29 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7954,7 +7993,7 @@ const events = [
         name: "West Asheville Tailgate Market - September (Sep 2 -> Sep 30)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-30 23:59",
-        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
     },
     {
@@ -7967,7 +8006,7 @@ const events = [
         name: "Goombay Festival (Sep 5 -> Sep 7)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-05 23:59",
-        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Goombay Festival",
     },
     {
@@ -7980,7 +8019,7 @@ const events = [
         name: "Goombay Festival (Sep 5 -> Sep 7)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-06 23:59",
-        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Goombay Festival",
     },
     {
@@ -7993,7 +8032,7 @@ const events = [
         name: "Goombay Festival (Sep 5 -> Sep 7)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-07 23:59",
-        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Goombay Festival",
     },
     {
@@ -8006,7 +8045,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-05 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8019,7 +8058,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-06 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8032,7 +8071,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-07 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8045,7 +8084,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-08 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8058,7 +8097,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-09 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8071,7 +8110,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-10 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8084,7 +8123,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-11 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8097,7 +8136,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-12 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8110,7 +8149,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-13 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8123,7 +8162,7 @@ const events = [
         name: "North Carolina Mountain State Fair (Sep 5 -> Sep 14)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-14 23:59",
-        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -8136,7 +8175,7 @@ const events = [
         name: "Thirty-Sixth Fall Doll Show and Sale",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-06 23:59",
-        detail: "<a href='https://festivalnet.com/93756/East-Flat-Rock-North-Carolina/Antiques-Collectibles-Shows/Thirty-Sixth-Fall-Doll-Show-and-Sale' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/93756/East-Flat-Rock-North-Carolina/Antiques-Collectibles-Shows/Thirty-Sixth-Fall-Doll-Show-and-Sale' target='_blank'> <em>link</em></a>",
         location: "Festival Net Thirty-Sixth Fall Doll Show and Sale",
     },
     {
@@ -8149,7 +8188,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-06 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8162,7 +8201,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-07 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8175,7 +8214,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-08 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8188,7 +8227,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-09 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8201,7 +8240,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-10 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8214,7 +8253,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-11 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8227,7 +8266,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-12 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8240,7 +8279,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-13 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8253,7 +8292,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-14 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8266,7 +8305,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-15 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8279,7 +8318,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-16 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8292,7 +8331,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-17 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8305,7 +8344,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-18 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8318,7 +8357,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-19 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8331,7 +8370,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-20 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8344,7 +8383,7 @@ const events = [
         name: "Ooh La La Curiosity Market - September (Sep 6 -> Sep 21)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-21 23:59",
-        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85798/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - September",
     },
     {
@@ -8357,7 +8396,7 @@ const events = [
         name: "Rhythm & Brews Concert Series - September",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-18 23:59",
-        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Americana, Bluegrass, Folk, Funk, Rock, Roots and Variety, and there will be other activities like kid's area, local food, craft beer, wine and hard cider.<a href='https://festivalnet.com/98386/Hendersonville-North-Carolina/Music-Festivals/Rhythm-Brews-Concert-Series-September' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Americana, Bluegrass, Folk, Funk, Rock, Roots and Variety, and there will be other activities like kid's area, local food, craft beer, wine and hard cider.<a href='https://festivalnet.com/98386/Hendersonville-North-Carolina/Music-Festivals/Rhythm-Brews-Concert-Series-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net Rhythm & Brews Concert Series - September",
     },
     {
@@ -8370,7 +8409,7 @@ const events = [
         name: "Blue Ridge Pride Festival",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-27 23:59",
-        detail: "There will be 2 stages with Regional and Local talent. The entertainment will be Blues, Country, Folk, Latin, R & B/Soul, Rock, Salsa, Variety and World.<a href='https://festivalnet.com/63285/Asheville-North-Carolina/Festivals/Blue-Ridge-Pride-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 2 stages with Regional and Local talent. The entertainment will be Blues, Country, Folk, Latin, R & B/Soul, Rock, Salsa, Variety and World.<a href='https://festivalnet.com/63285/Asheville-North-Carolina/Festivals/Blue-Ridge-Pride-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Blue Ridge Pride Festival",
     },
     {
@@ -8383,7 +8422,7 @@ const events = [
         name: "Art on Main: Fine Art & Fine Craft Fair (Sep 27 -> Sep 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-27 23:59",
-        detail: "<a href='https://festivalnet.com/53087/Hendersonville-North-Carolina/Festivals/Art-on-Main-Fine-Art-Fine-Craft-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/53087/Hendersonville-North-Carolina/Festivals/Art-on-Main-Fine-Art-Fine-Craft-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net Art on Main: Fine Art & Fine Craft Fair",
     },
     {
@@ -8396,7 +8435,7 @@ const events = [
         name: "Art on Main: Fine Art & Fine Craft Fair (Sep 27 -> Sep 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-09-28 23:59",
-        detail: "<a href='https://festivalnet.com/53087/Hendersonville-North-Carolina/Festivals/Art-on-Main-Fine-Art-Fine-Craft-Fair' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/53087/Hendersonville-North-Carolina/Festivals/Art-on-Main-Fine-Art-Fine-Craft-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net Art on Main: Fine Art & Fine Craft Fair",
     },
     {
@@ -8409,7 +8448,7 @@ const events = [
         name: "Farm City Day",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-04 23:59",
-        detail: "There will be 3 stages with Regional and Local talent. The entertainment will be Bluegrass, Christian, Country, Folk, Gospel, Latin and Variety, and there will be other activities like all listed below.<a href='https://festivalnet.com/50118/Hendersonville-North-Carolina/Family-Kids-Festivals/Farm-City-Day' target='_blank'><em>link</em></a>",
+        detail: "There will be 3 stages with Regional and Local talent. The entertainment will be Bluegrass, Christian, Country, Folk, Gospel, Latin and Variety, and there will be other activities like all listed below.<a href='https://festivalnet.com/50118/Hendersonville-North-Carolina/Family-Kids-Festivals/Farm-City-Day' target='_blank'> <em>link</em></a>",
         location: "Festival Net Farm City Day",
     },
     {
@@ -8422,7 +8461,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-04 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8435,7 +8474,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-05 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8448,7 +8487,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-06 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8461,7 +8500,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-07 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8474,7 +8513,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-08 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8487,7 +8526,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-09 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8500,7 +8539,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-10 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8513,7 +8552,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-11 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8526,7 +8565,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-12 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8539,7 +8578,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-13 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8552,7 +8591,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-14 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8565,7 +8604,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-15 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8578,7 +8617,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-16 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8591,7 +8630,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-17 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8604,7 +8643,7 @@ const events = [
         name: "Asheville Art in the Park - October (Oct 4 -> Oct 18)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-18 23:59",
-        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -8617,7 +8656,7 @@ const events = [
         name: "Art in the Lot",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-05 23:59",
-        detail: "<a href='https://festivalnet.com/100681/Hendersonville-North-Carolina/Craft-Shows/Art-in-the-Lot' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/100681/Hendersonville-North-Carolina/Craft-Shows/Art-in-the-Lot' target='_blank'> <em>link</em></a>",
         location: "Festival Net Art in the Lot",
     },
     {
@@ -8630,7 +8669,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-07 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8643,7 +8682,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-08 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8656,7 +8695,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-09 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8669,7 +8708,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-10 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8682,7 +8721,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-11 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8695,7 +8734,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-12 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8708,7 +8747,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-13 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8721,7 +8760,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-14 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8734,7 +8773,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-15 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8747,7 +8786,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-16 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8760,7 +8799,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-17 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8773,7 +8812,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-18 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8786,7 +8825,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-19 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8799,7 +8838,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-20 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8812,7 +8851,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-21 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8825,7 +8864,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-22 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8838,7 +8877,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-23 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8851,7 +8890,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-24 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8864,7 +8903,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-25 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8877,7 +8916,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-26 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8890,7 +8929,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-27 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8903,7 +8942,7 @@ const events = [
         name: "West Asheville Tailgate Market - October (Oct 7 -> Oct 28)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-28 23:59",
-        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95042/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
@@ -8916,7 +8955,7 @@ const events = [
         name: "Rhythm & Brews Concert Series - October",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-16 23:59",
-        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Americana, Bluegrass, Folk, Funk, Rock, Roots and Variety, and there will be other activities like kid's area, local food, craft beer, wine and hard cider.<a href='https://festivalnet.com/98387/Hendersonville-North-Carolina/Music-Festivals/Rhythm-Brews-Concert-Series-October' target='_blank'><em>link</em></a>",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Americana, Bluegrass, Folk, Funk, Rock, Roots and Variety, and there will be other activities like kid's area, local food, craft beer, wine and hard cider.<a href='https://festivalnet.com/98387/Hendersonville-North-Carolina/Music-Festivals/Rhythm-Brews-Concert-Series-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Rhythm & Brews Concert Series - October",
     },
     {
@@ -8929,7 +8968,7 @@ const events = [
         name: "Fall LEAF Festival (Oct 16 -> Oct 19)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-16 23:59",
-        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Fall LEAF Festival",
     },
     {
@@ -8942,7 +8981,7 @@ const events = [
         name: "Fall LEAF Festival (Oct 16 -> Oct 19)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-17 23:59",
-        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Fall LEAF Festival",
     },
     {
@@ -8955,7 +8994,7 @@ const events = [
         name: "Fall LEAF Festival (Oct 16 -> Oct 19)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-18 23:59",
-        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Fall LEAF Festival",
     },
     {
@@ -8968,7 +9007,7 @@ const events = [
         name: "Fall LEAF Festival (Oct 16 -> Oct 19)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-19 23:59",
-        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'><em>link</em></a>",
+        detail: "There will be 6 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Black-Mountain-North-Carolina/Festivals/Fall-LEAF-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Fall LEAF Festival",
     },
     {
@@ -8981,7 +9020,7 @@ const events = [
         name: "Lake Lure Autumn Arts & Crafts Festival (Oct 18 -> Oct 19)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-18 23:59",
-        detail: "<a href='https://festivalnet.com/45789/Lake-Lure-North-Carolina/Craft-Shows/Lake-Lure-Autumn-Arts-Crafts-Festival' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/45789/Lake-Lure-North-Carolina/Craft-Shows/Lake-Lure-Autumn-Arts-Crafts-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Lake Lure Autumn Arts & Crafts Festival",
     },
     {
@@ -8994,7 +9033,7 @@ const events = [
         name: "Lake Lure Autumn Arts & Crafts Festival (Oct 18 -> Oct 19)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-19 23:59",
-        detail: "<a href='https://festivalnet.com/45789/Lake-Lure-North-Carolina/Craft-Shows/Lake-Lure-Autumn-Arts-Crafts-Festival' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/45789/Lake-Lure-North-Carolina/Craft-Shows/Lake-Lure-Autumn-Arts-Crafts-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Lake Lure Autumn Arts & Crafts Festival",
     },
     {
@@ -9007,7 +9046,7 @@ const events = [
         name: "Art by the Tracks - Fall",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-25 23:59",
-        detail: "<a href='https://festivalnet.com/98680/Black-Mountain-North-Carolina/Craft-Shows/Art-by-the-Tracks-Fall' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/98680/Black-Mountain-North-Carolina/Craft-Shows/Art-by-the-Tracks-Fall' target='_blank'> <em>link</em></a>",
         location: "Festival Net Art by the Tracks - Fall",
     },
     {
@@ -9020,7 +9059,7 @@ const events = [
         name: "Asheville Gem and Jewelry Wholesale Trade Show - Oct (Oct 28 -> Oct 29)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-28 23:59",
-        detail: "<a href='https://festivalnet.com/4856/Fletcher-North-Carolina/Gem-Jewelry-Bead-Shows/Asheville-Gem-and-Jewelry-Wholesale-Trade-Show-Oct' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/4856/Fletcher-North-Carolina/Gem-Jewelry-Bead-Shows/Asheville-Gem-and-Jewelry-Wholesale-Trade-Show-Oct' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Gem and Jewelry Wholesale Trade Show - Oct",
     },
     {
@@ -9033,7 +9072,7 @@ const events = [
         name: "Asheville Gem and Jewelry Wholesale Trade Show - Oct (Oct 28 -> Oct 29)",
         sorttime: "¿-?",
         end_time_formatted: "2025-10-29 23:59",
-        detail: "<a href='https://festivalnet.com/4856/Fletcher-North-Carolina/Gem-Jewelry-Bead-Shows/Asheville-Gem-and-Jewelry-Wholesale-Trade-Show-Oct' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/4856/Fletcher-North-Carolina/Gem-Jewelry-Bead-Shows/Asheville-Gem-and-Jewelry-Wholesale-Trade-Show-Oct' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Gem and Jewelry Wholesale Trade Show - Oct",
     },
     {
@@ -9046,7 +9085,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-04 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9059,7 +9098,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-05 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9072,7 +9111,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-06 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9085,7 +9124,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-07 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9098,7 +9137,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-08 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9111,7 +9150,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-09 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9124,7 +9163,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-10 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9137,7 +9176,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-11 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9150,7 +9189,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-12 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9163,7 +9202,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-13 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9176,7 +9215,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-14 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9189,7 +9228,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-15 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9202,7 +9241,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-16 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9215,7 +9254,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-17 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9228,7 +9267,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-18 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9241,7 +9280,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-19 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9254,7 +9293,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-20 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9267,7 +9306,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-21 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9280,7 +9319,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-22 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9293,7 +9332,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-23 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9306,7 +9345,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-24 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
@@ -9319,7 +9358,7 @@ const events = [
         name: "West Asheville Tailgate Market - November (Nov 4 -> Nov 25)",
         sorttime: "¿-?",
         end_time_formatted: "2025-11-25 23:59",
-        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'><em>link</em></a>",
+        detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
     },
 ];
