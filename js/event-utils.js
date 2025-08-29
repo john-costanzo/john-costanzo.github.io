@@ -1,8 +1,16 @@
-const eventUtilsVersion = "Tuesday, 2025-08-19 @ 11:03:01";
+const eventUtilsVersion = "Thursday, 2025-08-28 @ 20:31:40";
 console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
 
-const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval
+function msUntilMidnight( ) {
+    const now = new Date( );
+    const midnight = new Date( now );
+    midnight.setHours( 24, 0, 0, 0 ); // Next midnight (today at 24:00)
+    return ( midnight.getTime( ) - now.getTime( ) );
+}
+
+const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval      FIXME: unused?
 const startTime = Date.now( );
+const nextMidnight = msUntilMidnight( );
 
 /**
  * Reloads the page with the current search term and venue filters as URL parameters.
@@ -37,7 +45,7 @@ function reloadPage( ) {
 function checkRefresh( ) {
     const currentTime = Date.now( );
     // console.log( `checkRefresh: ${currentTime}` );
-    if ( currentTime - startTime >= refreshIntervalMs ) {
+    if ( currentTime - startTime >= nextMidnight ) {
         reloadPage( );
     }
 }
