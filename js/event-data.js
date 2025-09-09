@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-09-09 11:49:40";
+const eventDataVersion = "Tuesday, 2025-09-09 14:30:39";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3635,7 +3635,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         start_time: "6:00 pm",
         end_time: "9:00 pm",
-        name: "Open Mic night",
+        name: "Ol\'Dan",
         sorttime: "1900-01-01 18:00",
         end_time_formatted: "1900-01-01 21:00",
         detail: "Bring your Talent",
@@ -5017,6 +5017,32 @@ const events = [
         sorttime: "¿ - ?",
         end_time_formatted: "2025-09-10 23:59",
         detail: "<a href='https://www.instagram.com/sillywillieshotdogs/' target='_blank'> <em>link</em></a>",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://www.ncarboretum.org/arborevenings",
+        venue: "Arboretum",
+        date: "2025-09-11",
+        time: "5:30 pm - 8:30 pm",
+        start_time: "5:30 pm",
+        end_time: "8:30 pm",
+        name: "Thomas Kozac (singer/songwriter)",
+        sorttime: "2025-09-11 17:30",
+        end_time_formatted: "2025-09-11 20:30",
+        detail: "None",
+        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://www.ncarboretum.org/arborevenings",
+        venue: "Arboretum",
+        date: "2025-09-11",
+        time: "¿ - ?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Food Truck: Appalachian Chic",
+        sorttime: "¿ - ?",
+        end_time_formatted: "2025-09-11 23:59",
+        detail: "<a href='https://www.facebook.com/p/Appalachian-Chics-61555164222068/' target='_blank'> <em>link</em></a>",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
