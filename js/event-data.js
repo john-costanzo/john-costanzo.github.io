@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2025-09-17 09:14:04";
+const eventDataVersion = "Wednesday, 2025-09-17 14:14:06";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3388,7 +3388,7 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         start_time: "12:00 pm",
         end_time: "8:00 pm",
-        name: "Food Truck: Papa’s Express",
+        name: "Food Truck: Papa\'s Express",
         sorttime: "2025-10-05 12:00",
         end_time_formatted: "2025-10-05 20:00",
         detail: "None",
@@ -3401,7 +3401,7 @@ const events = [
         time: "4:00 pm - 8:00 pm",
         start_time: "4:00 pm",
         end_time: "8:00 pm",
-        name: "Food Truck: Appalachian Chic’s",
+        name: "Food Truck: Appalachian Chic\'s",
         sorttime: "2025-10-06 16:00",
         end_time_formatted: "2025-10-06 20:00",
         detail: "None",
@@ -3505,7 +3505,7 @@ const events = [
         time: "12:00 pm - 8:00 pm",
         start_time: "12:00 pm",
         end_time: "8:00 pm",
-        name: "Food Truck: Papa’s Express",
+        name: "Food Truck: Papa\'s Express",
         sorttime: "2025-10-12 12:00",
         end_time_formatted: "2025-10-12 20:00",
         detail: "None",
@@ -3939,19 +3939,6 @@ const events = [
         end_time_formatted: "2025-09-19 20:00",
         detail: "None",
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
-        venue: "Guidon",
-        date: "2025-09-16",
-        time: "6:00 pm - 8:30 pm",
-        start_time: "6:00 PM",
-        end_time: "8:30 PM",
-        name: "Run Club",
-        sorttime: "2025-09-16 18:00",
-        end_time_formatted: "2025-09-16 20:30",
-        detail: "Guidon Brewing Co. Run Club. Every Tuesday starting at 6pm. Members can purchase a running club T-shirt, and earn points to receive Guidon swag. Hang out after the run for some beer and food. Or non-alcoholic drinks if you preferer. We have all ability groups, and walkers are also welcome. Check out the run clubs FB page.https://www.facebook.com/groups/1795381247483886",
-        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
