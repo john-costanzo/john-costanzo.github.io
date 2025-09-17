@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-09-16 14:18:58";
+const eventDataVersion = "Tuesday, 2025-09-16 20:13:50";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -70,13 +70,13 @@ const events = [
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
         date: "2025-09-18",
-        time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 pm",
+        time: "6:30 pm - 8:00 pm",
+        start_time: "6:30 pm",
         end_time: "8:00 pm",
         name: "Murder Mystery Dinner at the Barn!",
-        sorttime: "2025-09-18 18:00:00",
+        sorttime: "2025-09-18 18:30:00",
         end_time_formatted: "2025-09-18 20:00",
-        detail: "Murder Mystery Dinner at the Barn! Thu, Sep 18, 6:00 pm - 8:00 pm Godmama\'s Speakeasy gets raided on St. Patrick\'s Day the bartender is found dead. Cops want answers — but in this family, everyone\'s got a trigger and a secret. Time to find out ...",
+        detail: "Murder Mystery Dinner at the Barn! Thu, Sep 18, 6:30 pm - 8:00 pm Godmama\'s Speakeasy gets raided on St. Patrick\'s Day the bartender is found dead. Cops want answers — but in this family, everyone\'s got a trigger and a secret. Time to find out ...",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
