@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-10-14 14:34:29";
+const eventDataVersion = "Tuesday, 2025-10-14 20:14:17";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -853,7 +853,7 @@ const events = [
         time: "4:00 pm - 6:00 pm",
         start_time: "4:00 pm",
         end_time: "6:00 pm",
-        name: "The Lads",
+        name: "The Brue",
         sorttime: "2025-10-19 16:00",
         end_time_formatted: "2025-10-19 18:00",
         detail: "Music starts @4pm!",
@@ -1545,6 +1545,19 @@ const events = [
         name: "BOB ZULLO",
         sorttime: "2025-11-02 14:00",
         end_time_formatted: "2025-11-02 17:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        date: "2025-11-16",
+        time: "1:00 pm - 3:00 pm",
+        start_time: "1:00 pm",
+        end_time: "3:00 pm",
+        name: "Fall 2025 Wine Club Pickup Party",
+        sorttime: "2025-11-16 13:00",
+        end_time_formatted: "2025-11-16 15:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
