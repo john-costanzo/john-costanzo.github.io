@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-10-18 08:14:44";
+const eventDataVersion = "Saturday, 2025-10-18 15:24:09";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1512,19 +1512,6 @@ const events = [
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
         venue: "Appalachian Ridge",
-        date: "2025-10-17",
-        time: "6:00 PM - 9:00 PM",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: "S\'more Friday night music presents.....Possum Royal at the Ridge",
-        sorttime: "2025-10-17 18:00",
-        end_time_formatted: "2025-10-17 21:00",
-        detail: "Friday night S\'more music Enjoy the sounds of Possum Royal. A great Friday night with Bonfires, Pizza for dinner and Great, Cider, Beer, wine and Friends!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
         date: "2025-10-18",
         time: "3:00 PM - 6:00 PM",
         start_time: "3:00 PM",
@@ -1585,6 +1572,19 @@ const events = [
         sorttime: "2025-10-26 14:30",
         end_time_formatted: "2025-10-26 17:30",
         detail: "Ketura is a great songwriter, multi instrumentalist, an amazing performer! Come See for yourself! Great Music, Great Cider, Wine & Beer all with Great Friends!",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-10-17",
+        time: "6:00 PM - 9:00 PM",
+        start_time: "6:00 PM",
+        end_time: "9:00 PM",
+        name: "S\'more Friday night music presents.....Possum Royal at the Ridge",
+        sorttime: "2025-10-17 18:00",
+        end_time_formatted: "2025-10-17 21:00",
+        detail: "Friday night S\'more music Enjoy the sounds of Possum Royal. A great Friday night with Bonfires, Pizza for dinner and Great, Cider, Beer, wine and Friends!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -3120,19 +3120,6 @@ const events = [
         end_time_formatted: "2025-11-21 20:00",
         detail: "None",
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
-        venue: "Guidon",
-        date: "2025-10-17",
-        time: "6:30 pm - 10:30 pm",
-        start_time: "6:30 PM",
-        end_time: "10:30 PM",
-        name: "Karaoke",
-        sorttime: "2025-10-17 18:30",
-        end_time_formatted: "2025-10-17 22:30",
-        detail: "Karaoke with Thunderstruck Entertainment. Every 1st, 2nd, and 3rd Friday of the month from 6:30-10:30pm",
-        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
