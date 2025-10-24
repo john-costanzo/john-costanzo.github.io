@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2025-10-24 11:07:37";
+const eventDataVersion = "Friday, 2025-10-24 14:24:52";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -771,19 +771,6 @@ const events = [
     {
         url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
-        date: "2025-10-23",
-        time: "5:00 pm - 9:00 pm",
-        start_time: "5:00 PM",
-        end_time: "9:00 PM",
-        name: "Flight Pairing: Pop Tarts",
-        sorttime: "2025-10-23 17:00",
-        end_time_formatted: "2025-10-23 21:00",
-        detail: "Join us for a sweet-and-sippable showdown! We’re pairing four of our ciders with four playful Pop-Tart bites for a nostalgic, flavor-packed flight.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
         date: "2025-10-24",
         time: "11:00 am - 8:00 pm",
         start_time: "11:00 AM",
@@ -987,6 +974,19 @@ const events = [
         sorttime: "2025-11-29 18:00",
         end_time_formatted: "2025-11-29 21:00",
         detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
+        url: "https://millsriver.boldrock.com/taproomevents",
+        venue: "Boldrock",
+        date: "2025-10-23",
+        time: "5:00 pm - 9:00 pm",
+        start_time: "5:00 PM",
+        end_time: "9:00 PM",
+        name: "Flight Pairing: Pop Tarts",
+        sorttime: "2025-10-23 17:00",
+        end_time_formatted: "2025-10-23 21:00",
+        detail: "Join us for a sweet-and-sippable showdown! We’re pairing four of our ciders with four playful Pop-Tart bites for a nostalgic, flavor-packed flight.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -1364,19 +1364,6 @@ const events = [
         sorttime: "2025-07-26 11:00",
         end_time_formatted: "2025-07-26 21:00",
         detail: "🎣 Reel in the Fun at our 4th Annual Fishing Fest! 🎶🐟Join us at Bold Rock Mills River on Saturday, July 26 for a day full of fishing, fun, and fundraising! We\'re casting out good vibes to support Casting for Recovery Carolinas with raffles, vendors, fishing education, and local fishing groups onsite.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        date: "2025-07-25",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: "Todd Cecil & The Dirt Yard Choir",
-        sorttime: "2025-07-25 18:00",
-        end_time_formatted: "2025-07-25 21:00",
-        detail: "Join us in the taproom as we host live music from Todd Cecil & The Dirt Yard Choir! Stop by for a beer & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
