@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-10-28 08:14:10";
+const eventDataVersion = "Tuesday, 2025-10-28 14:38:43";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2312,7 +2312,7 @@ const events = [
         name: "Here Come the Mummies",
         sorttime: "2025-10-29 18:00",
         end_time_formatted: "2025-10-29 21:30",
-        detail: "6 PM DOORS | $40. 29 - GA ADV | $45.89 - Day of Show | $62.70 - Early/Balcony Access",
+        detail: "SOLD OUT - Show has been moved to High Gravity due to weather",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2339,6 +2339,19 @@ const events = [
         sorttime: "2025-11-02 14:00",
         end_time_formatted: "2025-11-02 17:00",
         detail: "Daniel Shearin is a singer, songwriter and producer living in Asheville, NC and a member of River Whyless. Growing up on a small town near the coast o...",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        date: "2025-11-07",
+        time: "6:30 pm - 9:00 pm",
+        start_time: "6:30 pm",
+        end_time: "9:00 pm",
+        name: "Christmas Jam Ale Release Party!",
+        sorttime: "2025-11-07 18:30",
+        end_time_formatted: "2025-11-07 21:00",
+        detail: "Free event with New Dawn Starkestra (ft. Jeff Sipe, Isaac Hadden & Rebekah Todd)",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2664,19 +2677,6 @@ const events = [
         sorttime: "2025-10-28 13:00",
         end_time_formatted: "2025-10-28 15:00",
         detail: "Learn about the lives of owls!\n",
-        location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
-    },
-    {
-        url: "https://www.ncarboretum.org/events/month/2025-11",
-        venue: "Arboretum",
-        date: "2025-10-29",
-        time: "1:00 pm - 3:00 pm",
-        start_time: "1:00 pm",
-        end_time: "3:00 pm",
-        name: "Fall Pruning 101",
-        sorttime: "2025-10-29 13:00",
-        end_time_formatted: "2025-10-29 15:00",
-        detail: "Learn the basics of pruning trees and shrubs in this hands-on class about the best practices of pruning.",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
