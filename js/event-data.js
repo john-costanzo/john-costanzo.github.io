@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-10-28 14:38:43";
+const eventDataVersion = "Tuesday, 2025-10-28 20:14:16";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2578,6 +2578,19 @@ const events = [
     {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
+        date: "2025-01-29",
+        time: "6:00 pm - 9:30 pm",
+        start_time: "6:00 pm",
+        end_time: "9:30 pm",
+        name: "Grateful Shred",
+        sorttime: "2025-01-29 18:00",
+        end_time_formatted: "2025-01-29 21:30",
+        detail: "GA Advance $30.53 | GA Day of Show $32.64| GA + Early Access $46.37",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
         date: "2025-01-30",
         time: "6:00 pm - 9:00 pm",
         start_time: "6:00 pm",
@@ -4691,7 +4704,7 @@ const events = [
         name: "The Tenors: Joy to the World Tour",
         sorttime: "2025-12-02 19:30",
         end_time_formatted: "2025-12-02 23:59",
-        detail: "\nCelebrate the wonder of the holiday season with The Tenors: Joy to the World Tour—an unforgettable evening of music, magic, and holiday spirit.\nThis festive season, The Tenors return to the stage with their signature blend of stunning harmonies, powerhouse vocals, and undeniable charm. From timeless Christmas classics to fresh new renditions of your favourite holiday songs, Joy to the World is a heartwarming concert experience perfect for audiences of all ages.\nMore than just a performance, Joy to the World is your favorite holiday tradition—a heartwarming celebration that brings people together and captures the true spirit of Christmas.\nSee them again for the first time—and make this holiday season truly unforgettable\n\n",
+        detail: "\n\nCelebrate the wonder of the holiday season with The Tenors: Joy to the World Tour—an unforgettable evening of music, magic, and holiday spirit.\nThis festive season, The Tenors return to the stage with their signature blend of stunning harmonies, powerhouse vocals, and undeniable charm. From timeless Christmas classics to fresh new renditions of your favourite holiday songs, Joy to the World is a heartwarming concert experience perfect for audiences of all ages.\nMore than just a performance, Joy to the World is your favorite holiday tradition—a heartwarming celebration that brings people together and captures the true spirit of Christmas.\nSee them again for the first time—and make this holiday season truly unforgettable\n \n",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
