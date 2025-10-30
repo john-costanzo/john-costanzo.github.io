@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2025-10-30 08:14:29";
+const eventDataVersion = "Thursday, 2025-10-30 14:53:35";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -771,19 +771,6 @@ const events = [
     {
         url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
-        date: "2025-10-29",
-        time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 PM",
-        end_time: "8:00 PM",
-        name: "Halloween Trivia",
-        sorttime: "2025-10-29 18:00",
-        end_time_formatted: "2025-10-29 20:00",
-        detail: "Grab your ghouls and come test your spooky smarts! From classic horror flicks to creepy pop culture, ghosts, goblins, and everything in between, our Halloween Trivia is all treats, no tricks.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
         date: "2025-10-31",
         time: "6:00 pm - 10:00 pm",
         start_time: "6:00 PM",
@@ -935,6 +922,19 @@ const events = [
         sorttime: "2025-11-29 18:00",
         end_time_formatted: "2025-11-29 21:00",
         detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
+        url: "https://millsriver.boldrock.com/taproomevents",
+        venue: "Boldrock",
+        date: "2025-10-29",
+        time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 PM",
+        end_time: "8:00 PM",
+        name: "Halloween Trivia",
+        sorttime: "2025-10-29 18:00",
+        end_time_formatted: "2025-10-29 20:00",
+        detail: "Grab your ghouls and come test your spooky smarts! From classic horror flicks to creepy pop culture, ghosts, goblins, and everything in between, our Halloween Trivia is all treats, no tricks.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -1312,19 +1312,6 @@ const events = [
         sorttime: "2025-08-08 18:00",
         end_time_formatted: "2025-08-08 21:00",
         detail: "Join us in the taproom as we host live music from Craig St. John! Stop by for a beer & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        date: "2025-08-02",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: "Silver Travis Band",
-        sorttime: "2025-08-02 18:00",
-        end_time_formatted: "2025-08-02 21:00",
-        detail: "Join us in the taproom as we host live music from the Silver Travis Band! Stop by for a beer & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -2105,6 +2092,19 @@ const events = [
         sorttime: "2025-11-08 12:00",
         end_time_formatted: "2025-11-08 13:00",
         detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2025-11",
+        venue: "Southern App",
+        date: "2025-11-08",
+        time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: "Tom Waits Night",
+        sorttime: "2025-11-08 19:00",
+        end_time_formatted: "2025-11-08 21:00",
+        detail: "Southern Appalachian Brewery and Bill Loftus Productions, LLC, are proud to present an evening celebrating the singular artistic luminescence of Thomas Alan Waits. Grim reapers and grand weepers will be…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -3081,19 +3081,6 @@ const events = [
         end_time_formatted: "2025-11-28 20:00",
         detail: "None",
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
-        venue: "Guidon",
-        date: "2025-10-29",
-        time: "6:30 pm - 8:30 pm",
-        start_time: "6:30 PM",
-        end_time: "8:30 PM",
-        name: "Music Bingo",
-        sorttime: "2025-10-29 18:30",
-        end_time_formatted: "2025-10-29 20:30",
-        detail: "NEW!! Check out our new music bingo hosted by Elite Entertainment.",
-        location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
         url: "https://guidonbrewing.com/hendersonville-historic-7th-ave-district-guidon-brewing-company-events",
@@ -4470,7 +4457,7 @@ const events = [
         name: "Il Divo By Candlelight",
         sorttime: "2025-11-05 19:30",
         end_time_formatted: "2025-11-05 23:59",
-        detail: "\nFor over 20 years, Il Divo has embodied the power of music, brotherhood, and artistic evolution. Since their debut in 2004, the iconic quartet, formed today with —Urs Bühler (tenor, Switzerland), Sébastien Izambard (tenor, France), David Miller (tenor, USA), and Steven LaBrie (baritone, USA)—have redefined classical crossover, captivating audiences worldwide with their breathtaking vocals and electrifying performances.\n \nWith over 30 million albums sold, 50 #1 hits, and 160 Gold and Platinum certifications across 35 countries, their impact is undeniable. They have graced the world\'s grandest stages, from the Summer Olympics and FIFA World Cup to the Diamond Jubilee at Windsor and the Commander-in-Chief’s Ball.\n \nDISCLAIMER: Il Divo By Candlelight is not associated with Fever’s Candlelight Concerts or the Candlelight registered trademarks owned by Fever.\n\n",
+        detail: "\n\n \nFor over 20 years, Il Divo has embodied the power of music, brotherhood, and artistic evolution. Since their debut in 2004, the iconic quartet, formed today with —Urs Bühler (tenor, Switzerland), Sébastien Izambard (tenor, France), David Miller (tenor, USA), and Steven LaBrie (baritone, USA)—have redefined classical crossover, captivating audiences worldwide with their breathtaking vocals and electrifying performances.\n \nWith over 30 million albums sold, 50 #1 hits, and 160 Gold and Platinum certifications across 35 countries, their impact is undeniable. They have graced the world\'s grandest stages, from the Summer Olympics and FIFA World Cup to the Diamond Jubilee at Windsor and the Commander-in-Chief’s Ball.\n \nDISCLAIMER: Il Divo By Candlelight is not associated with Fever’s Candlelight Concerts or the Candlelight registered trademarks owned by Fever.\n\n",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
