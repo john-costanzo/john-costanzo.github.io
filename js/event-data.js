@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2025-10-29 14:14:09";
+const eventDataVersion = "Wednesday, 2025-10-29 20:30:47";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2318,19 +2318,6 @@ const events = [
     {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
-        date: "2025-10-29",
-        time: "6:00 pm - 9:30 pm",
-        start_time: "6:00 pm",
-        end_time: "9:30 pm",
-        name: "Here Come the Mummies",
-        sorttime: "2025-10-29 18:00",
-        end_time_formatted: "2025-10-29 21:30",
-        detail: "SOLD OUT - Show has been moved to High Gravity due to weather",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
         date: "2025-11-01",
         time: "2:00 pm - 5:00 pm",
         start_time: "2:00 pm",
@@ -3046,32 +3033,6 @@ const events = [
     {
         url: "https://claywoodnc.com/weekly-events",
         venue: "Claywood",
-        date: "2025-10-17",
-        time: "6:00 pm-8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: "Hope Griffin",
-        sorttime: "2025-10-17 18:00",
-        end_time_formatted: "2025-10-17 20:00",
-        detail: "None",
-        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://claywoodnc.com/weekly-events",
-        venue: "Claywood",
-        date: "2025-10-24",
-        time: "6:00 pm-8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: "Hope Griffin",
-        sorttime: "2025-10-24 18:00",
-        end_time_formatted: "2025-10-24 20:00",
-        detail: "None",
-        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
-        url: "https://claywoodnc.com/weekly-events",
-        venue: "Claywood",
         date: "2025-10-31",
         time: "6:00 pm-8:00 pm",
         start_time: "6:00 pm",
@@ -3118,6 +3079,19 @@ const events = [
         name: "Hope Griffin",
         sorttime: "2025-11-21 18:00",
         end_time_formatted: "2025-11-21 20:00",
+        detail: "None",
+        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
+    },
+    {
+        url: "https://claywoodnc.com/weekly-events",
+        venue: "Claywood",
+        date: "2025-11-28",
+        time: "6:00 pm-8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: "Victor Varner",
+        sorttime: "2025-11-28 18:00",
+        end_time_formatted: "2025-11-28 20:00",
         detail: "None",
         location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
     },
