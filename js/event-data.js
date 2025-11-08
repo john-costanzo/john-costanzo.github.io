@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-11-08 16:29:34";
+const eventDataVersion = "Saturday, 2025-11-08 16:56:34";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -349,7 +349,7 @@ const events = [
         name: "Somewhat Petty (Tom Petty Tribute Band)",
         sorttime: "2025-01-30 18:00",
         end_time_formatted: "2025-01-30 21:00",
-        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is compose...",
+        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1870,7 +1870,7 @@ const events = [
         name: "The New Variants",
         sorttime: "2025-11-08 14:00",
         end_time_formatted: "2025-11-08 17:00",
-        detail: "The New Variants play your hard rock favorites: Zep, AC/DC, ZZ Top, VH, Skynyrd and Sabbath. We’re rock and roll veterans assembled from regional grou...",
+        detail: "The New Variants play your hard rock favorites: Zep, AC/DC, ZZ Top, VH, Skynyrd and Sabbath. We’re rock and roll veterans assembled from regional groups over the last 20 years. ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2013,7 +2013,7 @@ const events = [
         name: "The Patrick Lopez Experience",
         sorttime: "2025-11-09 14:00",
         end_time_formatted: "2025-11-09 17:00",
-        detail: "Tremendous musicality, versatility and the ability to entertain everyone from the casual listener to the most discriminating music aficionados. These ...",
+        detail: "Tremendous musicality, versatility and the ability to entertain everyone from the casual listener to the most discriminating music aficionados. These qualities have become the trademark of musician and entertainer Patrick Lopez. With performances that captivate and inspire his audiences, he interacts with Trumpet, Piano, and Vocals to give you a true taste of a complete entertainer. Patrick puts his own unique spin on everything from Pop and Rock to R&B and Latin Jazz. Listening to his original compositions is where you really start to get a sense of Patrick’s approach to music as well.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2117,7 +2117,7 @@ const events = [
         name: "The Altons & Thee Sinseers",
         sorttime: "2025-11-13 18:00",
         end_time_formatted: "2025-11-13 21:30",
-        detail: "Emerging from Southeast Los Angeles, The Altons have become a fixture in the burgeoning West Coast souldies scene. Helping launch the Daptone Records ...",
+        detail: "Emerging from Southeast Los Angeles, The Altons have become a fixture in the burgeoning West Coast souldies scene. Helping launch the Daptone Records imprint Penrose as one of the five ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2325,7 +2325,7 @@ const events = [
         name: "Reedy River String Band",
         sorttime: "2025-11-15 14:00",
         end_time_formatted: "2025-11-15 17:00",
-        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead sing...",
+        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s multi-instrumental prowess, this trio’s larger than life sound defies their numbers and transcends their bluegrass influences and instrumentation.\nFlying high from the success of their first European tour and with dates to be announced for their second, the Reedy River String Band recently flew back to the US to close out the 30th Albino Skunk Music Festival. Other notable festivals include The Earl Scruggs Music Festival, Merlefest, Charleston Bluegrass Festival, Birdfest and more.\nReedy River String Band released their debut self-titled album in 2022 and has since released two singles, “My Grass is Blue,” and “Punkin Brown” in 2023. Their studio releases and live performances have been played on multiple radio stations in the United States and Europe. Currently they are in preproduction for a 2025 release.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2507,7 +2507,7 @@ const events = [
         name: "Dustin Furlow",
         sorttime: "2025-11-16 14:00",
         end_time_formatted: "2025-11-16 17:00",
-        detail: "Dustin Furlow is an internationally-recognized singer/songwriter/instrumental-guitarist whose body of work occupies its own niche in the contemporary ...",
+        detail: "Dustin Furlow is an internationally-recognized singer/songwriter/instrumental-guitarist whose body of work occupies its own niche in the contemporary folk music scene. With comparisons to Ray LaMontagne and Gregory Alan Isakov, his voice is earthy and unassuming-conjuring subtle traces of soul and Americana, and supported by a well-informed background of guitar ranging from Celtic to Jazz. After recording 5 albums and playing over 1500 shows since pursuing music full-time in 2013, Furlow has carved out a sound distinguishable by its marriage of complex fingerstyle-guitar and warm, homespun lyrics. From the foot-tapping groove of “Cherokee Lake” to the haunting melodies in “Evergreen,” Dustin is an ambassador of dynamic control on stage. In both 2017 and 2023 he received the Veer Magazine Music Awards for “Best Acoustic/Folk Artist” and in 2021 was announced the winner of Scottish luthier Taran Guitars’ “Young Player Bursary” award. Today Dustin lives in Asheville, NC where he works at Dream Guitars and continues to share his music with the world via both live performance and online guitar demos supporting the world’s most talented guitarmakers.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2598,7 +2598,7 @@ const events = [
         name: "Celly Drippins 2025",
         sorttime: "2025-11-21 15:00",
         end_time_formatted: "2025-11-21 22:00",
-        detail: "Our rarest offering. A special occasion. Join us in Mills River, NC for the most anticipated release of the year: Celly Drippins.",
+        detail: "Tapping Friday, 11/21 at 3pm! Available onsite only through Monday 11/24, while supplies last.\nOnce a secret among brewers, this extremely rare release is a story of patience. Made from the drippings of the dry hop bags used to make Celebration Fresh Hop IPA, Celly Drippins is a more intense version of the beer. Smooth and deeply flavorful, this liquid gold brings our brewery together to enjoy the small handful of barrels produced each year.\nNow, you’re invited to join this special celebration. Gather around and raise your glass—this release will only last a few days. Trust us, it’s worth it.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2728,7 +2728,7 @@ const events = [
         name: "Peggy Ratusz and the Daddy Long Legs",
         sorttime: "2025-11-22 14:00",
         end_time_formatted: "2025-11-22 17:00",
-        detail: "Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives ...",
+        detail: "Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives back to the community. A three-time semi-finalist in the International Blues Challenge held in Memphis, TN for the past 36 years, Ratusz produces her own shows including “Love Letter: A Tribute to Bonnie Raitt,” and “Blues In the Night” a collection of torchy and tantalizing Jazz standards, Swing tunes and Blues Shuffles. She’s opened for Tedeschi Trucks band, Taj Mahal, Geoff Atchison, Bob Margolin, Danielle Nicole Band, the late Denise LaSalle and the Beach Boys. An advocate for female vocalists and musicians, she is published each month in SOFIA magazine writing a feature she created; “Women Making Music.”\nGenre: Traditional & Modern Blues & Swing, Old School Soul & Originals",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2845,7 +2845,7 @@ const events = [
         name: "Bob Sinclair and The Big Deals",
         sorttime: "2025-11-23 14:00",
         end_time_formatted: "2025-11-23 17:00",
-        detail: "When an acoustic string band wants to make a mark in the crowded Americana music scene, they need to be unique, talented and have a strong sense of wh...",
+        detail: "When an acoustic string band wants to make a mark in the crowded Americana music scene, they need to be unique, talented and have a strong sense of who they are. Bob Sinclair and The Big Deals have that singular musical voice in this crowded landscape. This talented group merges instrumental prowess, Southern storytelling, chamber music sensibilities, spot-on harmonies, and jazz-influenced spontaneity to create an elegant and engaging musical experience. The Big Deal’s showmanship and neo-traditionalism harken back to a much earlier period of Americana music. Sinclair has been awarded the NC Grassroots Artists Grant three times for his songwriting. The band crosses the lines of jazz, country, classical and folk music and as the Charlotte Observer said, “In all the important ways, The Big Deals are a major character in the Americana music circuit”.\nWe look forward to playing for you",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3014,7 +3014,7 @@ const events = [
         name: "Lyric",
         sorttime: "2025-11-28 18:00",
         end_time_formatted: "2025-11-28 20:30",
-        detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in Decem...",
+        detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in December of 2015. She is a Western North Carolina favorite and holds several Mountain Xpress “best of” awards including, but not limited to best funk band, best vocalist, best lyricist, best r&b/soul, best singer-songwriter, all around favorite band and band that gives back to the community.\nShe was born and raised in Asheville, North Carolina. It is safe to say that music is in her blood; her grandfather played harmonica and guitar with the late blues legend B.B. King, and father, who plays bass in her band has been playing in bands since his teenage years. Upon graduation of high school in 2006, Lyric enrolled at Western Carolina University where she played piano and sang in the choir. After going through the motions of college, she soon realized that it wasn’t the path she should be on, so she took to Youtube and taught herself how to play guitar. Which soon led to her to take the advice of her father and start busking on the streets of Asheville. Lyric began busking with only two songs, an original titled “Stride”, and “Halo” by Beyonce. During this time, she got a mix of reactions - some folks didn’t believe that those who were serious about their craft would take to the street corners, while others stood and awe and found themselves moved to tears by her lyrics. In 2009, she met Lizz Wright while busking, at the time, she had no idea that the two of them would share the same stage in 2011. Since taking to the streets, Lyric has shared the stage with legends such as George Clinton & Parliament Funkadelic, Mavis Staples, Gladys Knight, Booker T. Jones, Little Big Town, Dionne Warwick, Cedric Burnside, Amy Ray (Indigo Girls), Fred Wesley & the Lee Boys, Count M’Butu and Warren Haynes.\nLyric has just come off of her first North East Tour with Lizz Wright, and she draws inspiration from India Arie, Tracy Chapman, and Lauryn Hill. Which isn’t surprising once one hears the way she gracefully intertwines Soul, R&B, Funk, and even a little Hip-Hop - the best portrayal of this intertwinement can be heard in “You Can Win”, which is on her “Perspective” EP. be on the lookout for a her solo project to be released in the summer or fall!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3066,7 +3066,7 @@ const events = [
         name: "Team Awesome",
         sorttime: "2025-11-29 14:00",
         end_time_formatted: "2025-11-29 17:00",
-        detail: "Underwater funk from Madonna to Monk. Team Awesome features some of the best improvisers in town with “alternate” takes on pop, funk and jazz classics...",
+        detail: "Underwater funk from Madonna to Monk. Team Awesome features some of the best improvisers in town with “alternate” takes on pop, funk and jazz classics. If you’re there, you’re on Team Awesome. Come and Be Awesome.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3183,7 +3183,7 @@ const events = [
         name: "The Secret B-Sides",
         sorttime: "2025-11-30 14:00",
         end_time_formatted: "2025-11-30 17:00",
-        detail: "This band is for lovers. Based in the bohemian stronghold of Asheville, North Carolina, the Secret B-Sides produce a live sound best described as ‘Yac...",
+        detail: "This band is for lovers. Based in the bohemian stronghold of Asheville, North Carolina, the Secret B-Sides produce a live sound best described as ‘Yacht Rock on top—Hip-Hop on bottom’. The concept of the band is simple. It’s about three things: 1) flying saucers, 2) dinosaurs, and 3) love. Fully equipped with these three essentials, the B-Sides are here on the planet, ready to help the people of Earth get together and have some good clean fun.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
