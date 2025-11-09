@@ -1098,7 +1098,7 @@
                             targetScalingPercentage = nextNvp[ 1 ];
                             break;
                         case "searchterm":
-                            targetSearchTerm = decodeURIComponent( nextNvp[ 1 ].toLowerCase( ) );
+                            targetSearchTerm = decodeURIComponent( nextNvp[ 1 ].toLowerCase( ).replace(/\+/g, ' ') );
                             break;
                         case "print":
                             recipesToBePrinted.push( nextNvp[ 1 ] );
