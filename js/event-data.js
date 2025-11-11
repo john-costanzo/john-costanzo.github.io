@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2025-11-10 08:02:55";
+const eventDataVersion = "Monday, 2025-11-10 20:02:52";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2065,7 +2065,7 @@ const events = [
         name: "45th Anniversary Dinner",
         sorttime: "2025-11-14 18:00",
         end_time_formatted: "2025-11-14 21:00",
-        detail: "Hosted by our Chief Brewer and second-generation owner, Brian Grossman, this truly unique evening will unfold story-by-story and taste-by-taste.\nStart with a welcome reception of appetizers and beers. Then take your seat as Brian shares stories and answers questions in an intimate interview.\nOur in-house chefs will take the stage for a live culinary presentation and beer pairing at this dynamic, behind-the-scenes event.\nDon’t miss this truly one-of-a-kind celebration as we raise our glasses to the next 45 years!\nBUY TICKETS",
+        detail: "Because this year, it’s our 45th anniversary—and we’re throwing a party you won’t soon forget.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2182,7 +2182,7 @@ const events = [
         name: "Reedy River String Band",
         sorttime: "2025-11-15 14:00",
         end_time_formatted: "2025-11-15 17:00",
-        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s multi-instrumental prowess, this trio’s larger than life sound defies their numbers and transcends their bluegrass influences and instrumentation.\nFlying high from the success of their first European tour and with dates to be announced for their second, the Reedy River String Band recently flew back to the US to close out the 30th Albino Skunk Music Festival. Other notable festivals include The Earl Scruggs Music Festival, Merlefest, Charleston Bluegrass Festival, Birdfest and more.\nReedy River String Band released their debut self-titled album in 2022 and has since released two singles, “My Grass is Blue,” and “Punkin Brown” in 2023. Their studio releases and live performances have been played on multiple radio stations in the United States and Europe. Currently they are in preproduction for a 2025 release.",
+        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2556,7 +2556,7 @@ const events = [
         time: "7:00 pm - 9:00 pm",
         start_time: "7:00 pm",
         end_time: "9:00 pm",
-        name: "Slim Pickens",
+        name: "TBD",
         sorttime: "2025-11-21 19:00",
         end_time_formatted: "2025-11-21 21:00",
         detail: "None",
@@ -2637,7 +2637,7 @@ const events = [
         name: "Peggy Ratusz and the Daddy Long Legs",
         sorttime: "2025-11-22 14:00",
         end_time_formatted: "2025-11-22 17:00",
-        detail: "Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives back to the community. A three-time semi-finalist in the International Blues Challenge held in Memphis, TN for the past 36 years, Ratusz produces her own shows including “Love Letter: A Tribute to Bonnie Raitt,” and “Blues In the Night” a collection of torchy and tantalizing Jazz standards, Swing tunes and Blues Shuffles. She’s opened for Tedeschi Trucks band, Taj Mahal, Geoff Atchison, Bob Margolin, Danielle Nicole Band, the late Denise LaSalle and the Beach Boys. An advocate for female vocalists and musicians, she is published each month in SOFIA magazine writing a feature she created; “Women Making Music.”\nGenre: Traditional & Modern Blues & Swing, Old School Soul & Originals",
+        detail: "Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives back to the ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
