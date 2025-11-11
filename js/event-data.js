@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-11-11 08:02:55";
+const eventDataVersion = "Tuesday, 2025-11-11 14:02:45";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2517,7 +2517,7 @@ const events = [
         time: "6:00 pm - 9:00 pm",
         start_time: "6:00 PM",
         end_time: "9:00 PM",
-        name: "Finkelstein THree",
+        name: "Saints & Sinners",
         sorttime: "2025-11-21 18:00",
         end_time_formatted: "2025-11-21 21:00",
         detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
@@ -2543,7 +2543,7 @@ const events = [
         time: "7:00 pm - 9:00 pm",
         start_time: "7:00 pm",
         end_time: "9:00 pm",
-        name: "TBD",
+        name: "Harlan Country Grass",
         sorttime: "2025-11-21 19:00",
         end_time_formatted: "2025-11-21 21:00",
         detail: "None",
@@ -2875,6 +2875,19 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
+        url: "https://millsriver.boldrock.com/taproomevents",
+        venue: "Boldrock",
+        date: "2025-11-28",
+        time: "5:00 pm - 8:00 pm",
+        start_time: "5:00 PM",
+        end_time: "8:00 PM",
+        name: "End of Movember Party",
+        sorttime: "2025-11-28 17:00",
+        end_time_formatted: "2025-11-28 20:00",
+        detail: "We’re proud to support the Movember Foundation all month long at the taproom! Join us on Friday, November 28th at 5PM for our End of Movember Party featuring a mustache competition and live music from The Showboat Band starting at 6PM!",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
         date: "2025-11-28",
@@ -2923,7 +2936,7 @@ const events = [
         name: "Lyric",
         sorttime: "2025-11-28 18:00",
         end_time_formatted: "2025-11-28 20:30",
-        detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in December of 2015. She is a Western North Carolina favorite and holds several Mountain Xpress “best of” awards including, but not limited to best funk band, best vocalist, best lyricist, best r&b/soul, best singer-songwriter, all around favorite band and band that gives back to the community.\nShe was born and raised in Asheville, North Carolina. It is safe to say that music is in her blood; her grandfather played harmonica and guitar with the late blues legend B.B. King, and father, who plays bass in her band has been playing in bands since his teenage years. Upon graduation of high school in 2006, Lyric enrolled at Western Carolina University where she played piano and sang in the choir. After going through the motions of college, she soon realized that it wasn’t the path she should be on, so she took to Youtube and taught herself how to play guitar. Which soon led to her to take the advice of her father and start busking on the streets of Asheville. Lyric began busking with only two songs, an original titled “Stride”, and “Halo” by Beyonce. During this time, she got a mix of reactions - some folks didn’t believe that those who were serious about their craft would take to the street corners, while others stood and awe and found themselves moved to tears by her lyrics. In 2009, she met Lizz Wright while busking, at the time, she had no idea that the two of them would share the same stage in 2011. Since taking to the streets, Lyric has shared the stage with legends such as George Clinton & Parliament Funkadelic, Mavis Staples, Gladys Knight, Booker T. Jones, Little Big Town, Dionne Warwick, Cedric Burnside, Amy Ray (Indigo Girls), Fred Wesley & the Lee Boys, Count M’Butu and Warren Haynes.\nLyric has just come off of her first North East Tour with Lizz Wright, and she draws inspiration from India Arie, Tracy Chapman, and Lauryn Hill. Which isn’t surprising once one hears the way she gracefully intertwines Soul, R&B, Funk, and even a little Hip-Hop - the best portrayal of this intertwinement can be heard in “You Can Win”, which is on her “Perspective” EP. be on the lookout for a her solo project to be released in the summer or fall!",
+        detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in December of 2015. She is a Western North ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4732,6 +4745,32 @@ const events = [
         end_time_formatted: "2025-11-23 23:59",
         detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Americana and Country.<a href='https://festivalnet.com/80507/Fletcher-North-Carolina/Vintages/Vintage-Market-Days-Asheville-Metro' target='_blank'> <em>link</em></a>",
         location: "Festival Net Vintage Market Days Asheville Metro",
+    },
+    {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
+        venue: "Festival Net",
+        date: "2025-12-06",
+        time: "¿-?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Owen Middle Holiday Craft Fair",
+        sorttime: "¿-?",
+        end_time_formatted: "2025-12-06 23:59",
+        detail: "<a href='https://festivalnet.com/26981/Swannanoa-North-Carolina/Craft-Shows/Owen-Middle-Holiday-Craft-Fair' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Owen Middle Holiday Craft Fair",
+    },
+    {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
+        venue: "Festival Net",
+        date: "2025-12-11",
+        time: "¿-?",
+        start_time: "¿",
+        end_time: "?",
+        name: "Newsong Showcase & Contest",
+        sorttime: "¿-?",
+        end_time_formatted: "2025-12-11 23:59",
+        detail: "There will be 1 stage with International, National, Regional and Local talent. The entertainment will be Alternative, Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Funk, Jazz, Old-time, Rap/Hip-hop, R & B/Soul, Reggae, Rock, Roots, Swing, Top Forty/Pop, Variety and World, and there will be other activities like newsong contest for songwriters.<a href='https://festivalnet.com/24017/Asheville-North-Carolina/Festival-Concerts/Newsong-Showcase-Contest' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Newsong Showcase & Contest",
     },
     {
         url: "https://www.stoneashevineyards.com/events",
