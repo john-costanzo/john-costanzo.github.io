@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-11-18 14:02:38";
+const eventDataVersion = "Tuesday, 2025-11-18 14:59:04";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -8,7 +8,7 @@ const events = [
         time: "",
         start_time: "",
         end_time: "",
-        name: `Failed to fetch events: BrowserContext.add_cookies: cookies[0].expires: expected float, got string`,
+        name: `Failed to fetch events: 'str' object has no attribute 'timestamp'`,
         sorttime: "",
         end_time_formatted: "",
         detail: "",
@@ -21,7 +21,7 @@ const events = [
         time: "",
         start_time: "",
         end_time: "",
-        name: `Failed to fetch events: BrowserContext.add_cookies: cookies[0].expires: expected float, got string`,
+        name: `Failed to fetch events: 'str' object has no attribute 'timestamp'`,
         sorttime: "",
         end_time_formatted: "",
         detail: "",
@@ -2608,7 +2608,7 @@ const events = [
         time: "2:00 pm - 5:00 pm",
         start_time: "2:00 pm",
         end_time: "5:00 pm",
-        name: `RON LEE`,
+        name: `LYRISMITH`,
         sorttime: "2025-11-26 14:00",
         end_time_formatted: "2025-11-26 17:00",
         detail: "None",
