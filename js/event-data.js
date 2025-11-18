@@ -1,29 +1,27 @@
-const eventDataVersion = "Monday, 2025-11-17 19:27:32";
+const eventDataVersion = "Monday, 2025-11-17 20:02:17";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
-        url: "",
+        url: "https://dryfallsbrewing.com/?post_type=tribe_events&eventDisplay=month&eventDate=2025-11",
         venue: "Dry Falls",
         date: "Error retrieving data",
         time: "",
         start_time: "",
         end_time: "",
-        name: `Failed to fetch events: BrowserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-<launching> /home/jncostanzo/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-E5n5RW --remote-debugging-pipe --no-startup-window
-<launched> pid=19664
-Call log:
-  - <launching> /home/jncostanzo/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-E5n5RW --remote-debugging-pipe --no-startup-window
-  - <launched> pid=19664
-  - [pid=19664] <gracefully close start>
-  - [pid=19664] <kill>
-  - [pid=19664] <will force kill>
-  - [pid=19664] <process did exit: exitCode=null, signal=SIGSEGV>
-  - [pid=19664] starting temporary directories cleanup
-  - [pid=19664] finished temporary directories cleanup
-  - [pid=19664] <gracefully close end>
-`,
+        name: `Failed to fetch events: BrowserContext.add_cookies: cookies[0].expires: expected float, got string`,
+        sorttime: "",
+        end_time_formatted: "",
+        detail: "",
+        location: "",
+    },
+    {
+        url: "https://dryfallsbrewing.com/?post_type=tribe_events&eventDisplay=month&eventDate=2025-12",
+        venue: "Dry Falls",
+        date: "Error retrieving data",
+        time: "",
+        start_time: "",
+        end_time: "",
+        name: `Failed to fetch events: BrowserContext.add_cookies: cookies[0].expires: expected float, got string`,
         sorttime: "",
         end_time_formatted: "",
         detail: "",
@@ -2379,7 +2377,7 @@ Call log:
         name: `Peggy Ratusz and the Daddy Long Legs & Brian Felix Trio`,
         sorttime: "2025-11-22 13:00",
         end_time_formatted: "2025-11-22 18:00",
-        detail: "Peggy Ratusz and the Daddy Long Legs 1pm to 3pm Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist ...\nRead More",
+        detail: "Peggy Ratusz and the Daddy Long Legs 1pm to 3pm\nPeggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives back to the community. A three-time semi-finalist in the International Blues Challenge held in Memphis, TN for the past 36 years, Ratusz produces her own shows including “Love Letter: A Tribute to Bonnie Raitt,” and “Blues In the Night” a collection of torchy and tantalizing Jazz standards, Swing tunes and Blues Shuffles. She’s opened for Tedeschi Trucks band, Taj Mahal, Geoff Atchison, Bob Margolin, Danielle Nicole Band, the late Denise LaSalle and the Beach Boys. An advocate for female vocalists and musicians, she is published each month in SOFIA magazine writing a feature she created; “Women Making Music.”\nGenre: Traditional & Modern Blues & Swing, Old School Soul & Originals\nBrian Felix Trio 4pm to 6pm\nBrian Felix is widely recognized as an accomplished and versatile jazz keyboardist. He was co-leader of OM Trio, an acclaimed San Francisco-based jazz-rock group that toured internationally between 1999-2004. Brian is active today as a performer and recording artist with his Brian Felix Organ Trio and other groups. In 2025, Felix broke a two-decade recording silence with Level Up, a dynamic organ jazz double-LP that is a stylistic tour de force (Slimtrim Records, 2025). This ambitious release features twelve original compositions by Felix, spanning genres from straight-ahead jazz to funk, reggae, samba, surf rock, and gospel. Felix leads his working trio — Tim Fischer on guitar and Evan Martin on drums — whose telepathic interplay and extraordinary musicianship bring his diverse body of work to life. Felix, Fisher, and Martin will bring this original music to Sierra Nevada along with interesting jazz/funk reworkings of Beatles tunes and other surprises. \nFelix has performed at notable venues and festivals, including the Fillmore Auditorium and Great American Music Hall in San Francisco, the Bowery Ballroom and Mercury Lounge in NYC, and the Aberdeen Jazz Festival in Aberdeen, Scotland. He has shared the stage with well-known musicians such as Joshua Redman, Charlie Hunter, Umphrey’s McGee, Sara Caswell, Billy Hart, Joe Russo, Kelly Sill, and Dave Fiuczynski. Frequent current collaborators include Tim Fischer, Evan Martin, Justin Ray, and Jacob Rodriguez. Felix is a Professor of Music at UNC Asheville, where he teaches classes on jazz theory and improvisation, music business, jazz ensembles, keyboard skills, the Beatles, and the Grateful Dead.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
