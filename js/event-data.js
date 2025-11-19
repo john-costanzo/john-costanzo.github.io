@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-11-18 14:59:04";
+const eventDataVersion = "Tuesday, 2025-11-18 20:02:59";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2667,6 +2667,19 @@ const events = [
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        date: "2025-11-28",
+        time: "5:00 pm - 8:00 pm",
+        start_time: "5:00 pm",
+        end_time: "8:00 pm",
+        name: `HIGHWAY 52 TRIO`,
+        sorttime: "2025-11-28 17:00",
+        end_time_formatted: "2025-11-28 20:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
         url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-11-28",
@@ -2691,19 +2704,6 @@ const events = [
         end_time_formatted: "2025-11-28 20:00",
         detail: "We’re proud to support the Movember Foundation all month long at the taproom! Join us on Friday, November 28th at 5PM for our End of Movember Party featuring a mustache competition and live music from The Showboat Band starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        date: "2025-11-28",
-        time: "5:00 pm - 8:00 pm",
-        start_time: "5:00 pm",
-        end_time: "8:00 pm",
-        name: `HIGHWAY 52 TRIO`,
-        sorttime: "2025-11-28 17:00",
-        end_time_formatted: "2025-11-28 20:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://claywoodnc.com/weekly-events",
@@ -2914,19 +2914,6 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
-        url: "https://www.saintpaulfarms.com/cidery-events",
-        venue: "Appalachian Ridge",
-        date: "2025-11-30",
-        time: "2:00 PM - 5:00 PM",
-        start_time: "2:00 PM",
-        end_time: "5:00 PM",
-        name: `Myron Hyman live at Appalachian Ridge`,
-        sorttime: "2025-11-30 14:00",
-        end_time_formatted: "2025-11-30 17:00",
-        detail: "Sunday at the Ridge Myron Hyman! A great day with friends and music!",
-        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
         date: "2025-11-30",
@@ -2938,6 +2925,19 @@ const events = [
         end_time_formatted: "2025-11-30 17:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.saintpaulfarms.com/cidery-events",
+        venue: "Appalachian Ridge",
+        date: "2025-11-30",
+        time: "2:00 PM - 5:00 PM",
+        start_time: "2:00 PM",
+        end_time: "5:00 PM",
+        name: `Myron Hyman live at Appalachian Ridge`,
+        sorttime: "2025-11-30 14:00",
+        end_time_formatted: "2025-11-30 17:00",
+        detail: "Sunday at the Ridge Myron Hyman! A great day with friends and music!",
+        location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
         url: "https://www.saintpaulfarms.com/vineyard-events",
