@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2025-11-23 08:02:55";
+const eventDataVersion = "Sunday, 2025-11-23 14:56:30";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -388,7 +388,7 @@ const events = [
         name: `Somewhat Petty (Tom Petty Tribute Band)`,
         sorttime: "2025-01-30 18:00",
         end_time_formatted: "2025-01-30 21:00",
-        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with ...\nRead More",
+        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with one common goal: playing great rock music everyone loves - 40 years of Tom Petty.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2173,19 +2173,6 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        date: "2025-11-22",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `J STEPHENS`,
-        sorttime: "2025-11-22 14:00",
-        end_time_formatted: "2025-11-22 17:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
         url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-11-22",
@@ -2637,7 +2624,7 @@ const events = [
         name: `Team Awesome`,
         sorttime: "2025-11-29 14:00",
         end_time_formatted: "2025-11-29 17:00",
-        detail: "Underwater funk from Madonna to Monk. Team Awesome features some of the best improvisers in town with “alternate” takes on pop, funk and jazz classics. If you’re there, you’re on ...\nRead More",
+        detail: "Underwater funk from Madonna to Monk. Team Awesome features some of the best improvisers in town with “alternate” takes on pop, funk and jazz classics. If you’re there, you’re on Team Awesome. Come and Be Awesome.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3432,6 +3419,19 @@ const events = [
         end_time_formatted: "2025-12-20 13:00",
         detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        date: "2025-12-20",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `LETTERS TO ABIGAIL`,
+        sorttime: "2025-12-20 14:00",
+        end_time_formatted: "2025-12-20 17:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://www.sabrewery.com/events/2025-12",
