@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-11-25 08:02:49";
+const eventDataVersion = "Tuesday, 2025-11-25 14:03:03";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -414,7 +414,7 @@ const events = [
         name: `Somewhat Petty (Tom Petty Tribute Band)`,
         sorttime: "2025-01-30 18:00",
         end_time_formatted: "2025-01-30 21:00",
-        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with ...\nRead More",
+        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with one common goal: playing great rock music everyone loves - 40 years of Tom Petty.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2351,7 +2351,7 @@ const events = [
         name: `Team Awesome`,
         sorttime: "2025-11-29 14:00",
         end_time_formatted: "2025-11-29 17:00",
-        detail: "Underwater funk from Madonna to Monk. Team Awesome features some of the best improvisers in town with “alternate” takes on pop, funk and jazz classics. If you’re there, you’re on Team Awesome. Come and Be Awesome.",
+        detail: "TJ Stacy is a jazz artist, composer, producer and electronic musician. He resides in Asheville, NC. His electronic project Team Awesome draws together different sonic elements and blends them in ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
