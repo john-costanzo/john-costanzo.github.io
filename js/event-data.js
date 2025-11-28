@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2025-11-28 08:02:48";
+const eventDataVersion = "Friday, 2025-11-28 14:52:27";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1939,19 +1939,6 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
-        url: "https://claywoodnc.com/weekly-events",
-        venue: "Claywood",
-        date: "2025-11-21",
-        time: "6:00 pm-8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Hope Griffin`,
-        sorttime: "2025-11-21 18:00",
-        end_time_formatted: "2025-11-21 20:00",
-        detail: "None",
-        location: "Claywood 317 7th Avenue E Hendersonville NC 28792",
-    },
-    {
         url: "https://www.sabrewery.com/events/2025-11",
         venue: "Southern App",
         date: "2025-11-21",
@@ -2405,6 +2392,19 @@ const events = [
         end_time_formatted: "2025-11-30 17:00",
         detail: "This band is for lovers. Based in the bohemian stronghold of Asheville, North Carolina, the Secret B-Sides produce a live sound best described as ‘Yacht Rock on top—Hip-Hop on bottom’. The concept of the band is simple. It’s about three things: 1) flying saucers, 2) dinosaurs, and 3) love. Fully equipped with these three essentials, the B-Sides are here on the planet, ready to help the people of Earth get together and have some good clean fun.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        date: "2025-11-30",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Frances Eliza - Live Music`,
+        sorttime: "2025-11-30 14:00",
+        end_time_formatted: "2025-11-30 17:00",
+        detail: "Asheville-based singer-songwriter and guitarist Frances Eliza blends her love of songwriting with her passion for folk, jazz and pop music. Influenced by artists like Joni Mitchell, The Cranberries and Taylor Swift, Frances has performed at hundreds of venues around the Southern East Coast for the past decade.",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://www.millsriverbrewingco.com/events",
