@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2025-11-28 14:52:27";
+const eventDataVersion = "Friday, 2025-11-28 20:15:52";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2134,19 +2134,6 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        date: "2025-11-28",
-        time: "6:00 pm - 8:30 pm",
-        start_time: "6:00 pm",
-        end_time: "8:30 pm",
-        name: `Lyric`,
-        sorttime: "2025-11-28 18:00",
-        end_time_formatted: "2025-11-28 20:30",
-        detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in December of 2015. She is a Western North Carolina favorite and holds several Mountain Xpress “best of” awards including, but not limited to best funk band, best vocalist, best lyricist, best r&b/soul, best singer-songwriter, all around favorite band and band that gives back to the community.\nShe was born and raised in Asheville, North Carolina. It is safe to say that music is in her blood; her grandfather played harmonica and guitar with the late blues legend B.B. King, and father, who plays bass in her band has been playing in bands since his teenage years. Upon graduation of high school in 2006, Lyric enrolled at Western Carolina University where she played piano and sang in the choir. After going through the motions of college, she soon realized that it wasn’t the path she should be on, so she took to Youtube and taught herself how to play guitar. Which soon led to her to take the advice of her father and start busking on the streets of Asheville. Lyric began busking with only two songs, an original titled “Stride”, and “Halo” by Beyonce. During this time, she got a mix of reactions - some folks didn’t believe that those who were serious about their craft would take to the street corners, while others stood and awe and found themselves moved to tears by her lyrics. In 2009, she met Lizz Wright while busking, at the time, she had no idea that the two of them would share the same stage in 2011. Since taking to the streets, Lyric has shared the stage with legends such as George Clinton & Parliament Funkadelic, Mavis Staples, Gladys Knight, Booker T. Jones, Little Big Town, Dionne Warwick, Cedric Burnside, Amy Ray (Indigo Girls), Fred Wesley & the Lee Boys, Count M’Butu and Warren Haynes.\nLyric has just come off of her first North East Tour with Lizz Wright, and she draws inspiration from India Arie, Tracy Chapman, and Lauryn Hill. Which isn’t surprising once one hears the way she gracefully intertwines Soul, R&B, Funk, and even a little Hip-Hop - the best portrayal of this intertwinement can be heard in “You Can Win”, which is on her “Perspective” EP. be on the lookout for a her solo project to be released in the summer or fall!",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
-    },
-    {
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
         date: "2025-11-28",
@@ -2221,7 +2208,7 @@ const events = [
         name: `Team Awesome`,
         sorttime: "2025-11-29 14:00",
         end_time_formatted: "2025-11-29 17:00",
-        detail: "TJ Stacy is a jazz artist, composer, producer and electronic musician. He resides in Asheville, NC. His electronic project Team Awesome draws together different sonic elements and blends them in live performances. With a composer’s mind and a jazz musicians desire for exploring new improvisational realms, Team Awesome incorporates beats, loops and live musicians into a very groovy experience. If you’re there, you’re on Team Awesome. Come and Be Awesome.",
+        detail: "TJ Stacy is a jazz artist, composer, producer and electronic musician. He resides in Asheville, NC. His electronic project Team Awesome draws together different sonic elements and blends them in ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
