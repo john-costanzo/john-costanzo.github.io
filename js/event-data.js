@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2025-11-29 14:09:47";
+const eventDataVersion = "Saturday, 2025-11-29 20:02:50";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2158,32 +2158,6 @@ const events = [
         end_time_formatted: "2025-11-29 17:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        date: "2025-11-29",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `Team Awesome`,
-        sorttime: "2025-11-29 14:00",
-        end_time_formatted: "2025-11-29 17:00",
-        detail: "TJ Stacy is a jazz artist, composer, producer and electronic musician. He resides in Asheville, NC. His electronic project Team Awesome draws together different sonic elements and blends them in live performances. With a composer’s mind and a jazz musicians desire for exploring new improvisational realms, Team Awesome incorporates beats, loops and live musicians into a very groovy experience. If you’re there, you’re on Team Awesome. Come and Be Awesome.",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        date: "2025-11-29",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `Kevin Dolan and Paul Koptak - Live Music`,
-        sorttime: "2025-11-29 14:00",
-        end_time_formatted: "2025-11-29 17:00",
-        detail: "Kevin is a singer-songwriter and producer/owner of Shake Rag Recording Studio in Mars Hill. His recording of original song, Burning Bridges, features Paul on dobro and lap steel guitar. The duo performs songs from the CD along with favorites by Tom Petty, The Eagles, Chris Stapleton, The Avett Brothers, and Jason Isbell.",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://www.millsriverbrewingco.com/events",
