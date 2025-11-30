@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2025-11-30 08:02:43";
+const eventDataVersion = "Sunday, 2025-11-30 14:02:49";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1198,19 +1198,6 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        date: "2025-09-06",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: `CIDER SLAM IV`,
-        sorttime: "2025-09-06 18:00",
-        end_time_formatted: "2025-09-06 21:00",
-        detail: "It’s baaaack! CIDER SLAM returns to Bold Rock Mills River on September 6. Get ready for an epic day of cider, body slams, specialty cocktails, exclusive merch, and all around good vibes.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         date: "2025-09-10",
@@ -1248,19 +1235,6 @@ const events = [
         end_time_formatted: "2025-09-11 20:30",
         detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        date: "2025-09-12",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: `Kristen Toole & The Tooleshed`,
-        sorttime: "2025-09-12 18:00",
-        end_time_formatted: "2025-09-12 21:00",
-        detail: "Join us in the taproom as we host live music from Kristen Toole & The Tooleshed! Stop by for a cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -2075,10 +2049,10 @@ const events = [
         time: "5:00 pm - 8:00 pm",
         start_time: "5:00 PM",
         end_time: "8:00 PM",
-        name: `The Showboat Band`,
+        name: `End of Movember Party`,
         sorttime: "2025-11-28 17:00",
         end_time_formatted: "2025-11-28 20:00",
-        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
+        detail: "We’re proud to support the Movember Foundation all month long at the taproom! Join us on Friday, November 28th at 5PM for our End of Movember Party featuring a mustache competition and live music from The Showboat Band starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -2088,10 +2062,10 @@ const events = [
         time: "5:00 pm - 8:00 pm",
         start_time: "5:00 PM",
         end_time: "8:00 PM",
-        name: `End of Movember Party`,
+        name: `The Showboat Band`,
         sorttime: "2025-11-28 17:00",
         end_time_formatted: "2025-11-28 20:00",
-        detail: "We’re proud to support the Movember Foundation all month long at the taproom! Join us on Friday, November 28th at 5PM for our End of Movember Party featuring a mustache competition and live music from The Showboat Band starting at 6PM!",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
