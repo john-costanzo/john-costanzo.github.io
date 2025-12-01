@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2025-12-01 08:02:53";
+const eventDataVersion = "Monday, 2025-12-01 14:03:42";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1159,19 +1159,6 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
-        url: "https://www.millsriverbrewingco.com/events",
-        venue: "Mills River Brewing",
-        date: "2025-09-03",
-        time: "6:00 pm - Wed",
-        start_time: "6:00 pm",
-        end_time: "Wed",
-        name: `Wednesday Night Karaoke!`,
-        sorttime: "2025-09-03 18:00:00",
-        end_time_formatted: "2025-09-03 Can't convert Wed",
-        detail: "Wednesday Night Karaoke! Wed, Sep 03, 6:00 pm - Wed, Dec 30, 9:30 pm Weekly Wed at 6:00 pm - 9:30 pm Come sing your heart out every Wednesday Night with DJ Jason at the Barn from 6-9:30pm!",
-        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         date: "2025-09-03",
@@ -1874,19 +1861,6 @@ const events = [
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        date: "2025-11-30",
-        time: "2:00 pm - 5:00 pm",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `ERIC CONGDON`,
-        sorttime: "2025-11-30 14:00",
-        end_time_formatted: "2025-11-30 17:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
         url: "https://www.saintpaulfarms.com/vineyard-events",
         venue: "St. Paul",
         date: "2025-11-30",
@@ -2288,6 +2262,19 @@ const events = [
         end_time_formatted: "2025-12-07 17:00",
         detail: "This Folk/Rock Duo, combine intricate harmonies, heartfelt and emotional narratives, subtle rhythms, and sophisticated picking, making their music relatable, engaging, and sure to sway your hearts and bodies.",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
+        url: "https://www.millsriverbrewingco.com/events",
+        venue: "Mills River Brewing",
+        date: "2025-12-07",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Live Music!`,
+        sorttime: "2025-12-07 14:00:00",
+        end_time_formatted: "2025-12-07 17:00",
+        detail: "Live Music! Sun, Dec 07, 2:00 pm - 5:00 pm Live music from 2-5pm. Roots & Dore will be playing blues!",
+        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
@@ -3094,6 +3081,19 @@ const events = [
         end_time_formatted: "2025-12-28 18:00",
         detail: "The last Sunday of the month we welcome back Peggy Ratusz, Adam Rose, and Bob Songster!",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        date: "2025-12-31",
+        time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `THE PAPER CROWNS`,
+        sorttime: "2025-12-31 14:00",
+        end_time_formatted: "2025-12-31 17:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://www.sabrewery.com/events/2025-12",
