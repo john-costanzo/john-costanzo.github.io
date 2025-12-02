@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-12-02 08:01:56";
+const eventDataVersion = "Tuesday, 2025-12-02 14:02:07";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -466,7 +466,7 @@ const events = [
         name: `Somewhat Petty (Tom Petty Tribute Band)`,
         sorttime: "2025-01-30 18:00",
         end_time_formatted: "2025-01-30 21:00",
-        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with one common goal: playing great rock music everyone loves - 40 years of Tom Petty.",
+        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1250,19 +1250,6 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        date: "2025-09-13",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: `Hammock Theory`,
-        sorttime: "2025-09-13 18:00",
-        end_time_formatted: "2025-09-13 21:00",
-        detail: "Join us in the taproom as we host live music from Hammock Theory! Stop by for a cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         date: "2025-09-17",
@@ -2041,6 +2028,19 @@ const events = [
         end_time_formatted: "2025-12-05 21:00",
         detail: "“Good rhythm for a white dude”\nBut seriously, Lefty plays the guitar like no other.\nCome on out for a night of delicious craft beer and great live music!",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        date: "2025-12-05",
+        time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: `Phuncle Sam`,
+        sorttime: "2025-12-05 20:00",
+        end_time_formatted: "2025-12-05 23:00",
+        detail: "Phuncle Sam is Asheville’s go-to jam band firmly rooted in the spirit of the Grateful Dead — expect deep improvisation, layered instrumentation, and a set that invites movement, mindfulness, and groove. Since forming in 2004 they’ve built a loyal following through adventurous reinterpretations and originals alike.",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://www.peacecenter.org/events",
@@ -2875,17 +2875,17 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
-        date: "2025-12-21",
-        time: "3:00 pm - 6:00 pm",
-        start_time: "3:00 pm",
-        end_time: "6:00 pm",
-        name: `Chistmas Lu’ua with Pleasure Chest!`,
-        sorttime: "2025-12-21 15:00",
-        end_time_formatted: "2025-12-21 18:00",
-        detail: "Music starts @3pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+        url: "https://millsriver.boldrock.com/taproomevents",
+        venue: "Boldrock",
+        date: "2025-12-22",
+        time: "5:00 pm - 7:00 pm",
+        start_time: "5:00 PM",
+        end_time: "7:00 PM",
+        name: `Paint & Sip`,
+        sorttime: "2025-12-22 17:00",
+        end_time_formatted: "2025-12-22 19:00",
+        detail: "Unleash your creativity with us at Bold Rock (Mills River) on Monday, December 22nd, at 5:00 pm! No experience is needed. Our skilled instructors will guide you through each step, helping you recreate this wintry landscape, which features a rustic red barn.",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
@@ -2975,7 +2975,7 @@ const events = [
         name: `Aubrey Eisenman & The Clydes`,
         sorttime: "2025-12-27 14:00",
         end_time_formatted: "2025-12-27 17:00",
-        detail: "Aubrey Eisenman & The Clydes is a four piece, Asheville-based act with Aubrey Eisenman on the upright bass and vocals, John Duncan on the fiddle, Justin Eisenman on the guitar and vocals and James Kylen on the drums. Since their 2018 signing to Mountain Fever/Travianna Records they have had two singles on the Grassicana Charts for almost a year (with a high of no. 2)! Their album “Bowerbird” was on Roots Music top 50 albums for 2019 as well.\nAubrey, the frontwoman/upright bassist/songwriter placed second in the John Hartford National Songwriting Competition in 2017 and has had an active role in the women in music scene in the region, founding the annual “Women in Music Series”, which has sold out premiere theatre venues three years in a row.\nThe band has toured nationally and abroad and has made four IBMA appearances. They are looking forward to recording their second album with Travianna Records in the fall of 2020.",
+        detail: "Aubrey Eisenman & The Clydes is a four piece, Asheville-based act with Aubrey Eisenman on the upright bass and vocals, John Duncan on the fiddle, Justin Eisenman on the guitar ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
