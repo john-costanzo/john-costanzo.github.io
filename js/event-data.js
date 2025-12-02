@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2025-12-01 14:03:42";
+const eventDataVersion = "Monday, 2025-12-01 22:40:34";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1235,19 +1235,6 @@ const events = [
         end_time_formatted: "2025-09-11 20:30",
         detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        date: "2025-09-13",
-        time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: `Hammock Theory`,
-        sorttime: "2025-09-13 18:00",
-        end_time_formatted: "2025-09-13 21:00",
-        detail: "Join us in the taproom as we host live music from Hammock Theory! Stop by for a cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
