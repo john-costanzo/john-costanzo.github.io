@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2025-12-04 08:02:00";
+const eventDataVersion = "Thursday, 2025-12-04 14:02:04";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2667,6 +2667,19 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
+        url: "https://www.stoneashevineyards.com/events",
+        venue: "Stoneashe",
+        date: "2025-12-19",
+        time: "11:00 am-6:00 pm",
+        start_time: "11:00 AM",
+        end_time: "6:00 PM",
+        name: `Closed for Private Event`,
+        sorttime: "2025-12-19 11:00",
+        end_time_formatted: "2025-12-19 18:00",
+        detail: "Closed for Staff Christmas Party",
+        location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
+    },
+    {
         url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         date: "2025-12-19",
@@ -2899,6 +2912,19 @@ const events = [
         end_time_formatted: "2025-12-24 17:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.stoneashevineyards.com/events",
+        venue: "Stoneashe",
+        date: "2025-12-25",
+        time: "12:00 pm-6:00 pm",
+        start_time: "12:00 PM",
+        end_time: "6:00 PM",
+        name: `Closed for Christmas`,
+        sorttime: "2025-12-25 12:00",
+        end_time_formatted: "2025-12-25 18:00",
+        detail: "Merry Christmas! See you tomorrow!",
+        location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -4836,6 +4862,19 @@ const events = [
         end_time_formatted: "2025-12-11 23:59",
         detail: "There will be 1 stage with International, National, Regional and Local talent. The entertainment will be Alternative, Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Funk, Jazz, Old-time, Rap/Hip-hop, R & B/Soul, Reggae, Rock, Roots, Swing, Top Forty/Pop, Variety and World, and there will be other activities like newsong contest for songwriters.<a href='https://festivalnet.com/24017/Asheville-North-Carolina/Festival-Concerts/Newsong-Showcase-Contest' target='_blank'> <em>link</em></a>",
         location: "Festival Net Newsong Showcase & Contest",
+    },
+    {
+        url: "https://www.stoneashevineyards.com/events",
+        venue: "Stoneashe",
+        date: "2026-01-01",
+        time: "¿-?",
+        start_time: "¿",
+        end_time: "?",
+        name: `Closed for Winter Break`,
+        sorttime: "¿-?",
+        end_time_formatted: "2026-01-01 23:59",
+        detail: "Closed for Winter Break. See you January 15th!",
+        location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
         url: "https://www.stoneashevineyards.com/events",
