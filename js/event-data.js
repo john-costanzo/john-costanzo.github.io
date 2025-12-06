@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2025-12-05 14:18:12";
+const eventDataVersion = "Friday, 2025-12-05 20:01:46";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -453,7 +453,7 @@ const events = [
         name: `Somewhat Petty (Tom Petty Tribute Band)`,
         sorttime: "2025-01-30 18:00",
         end_time_formatted: "2025-01-30 21:00",
-        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with ...\nRead More",
+        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with one common goal: playing great rock music everyone loves - 40 years of Tom Petty.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2251,6 +2251,19 @@ const events = [
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
+        url: "https://www.sabrewery.com/events/2025-12",
+        venue: "Southern App",
+        date: "2025-12-09",
+        time: "6:00 pm - 9:00 pm",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Round Robin Open Mic Hosted by Letters to Abigail`,
+        sorttime: "2025-12-09 18:00",
+        end_time_formatted: "2025-12-09 21:00",
+        detail: "This Tuesday we are honored to be hosted by Southern Appalachian Brewery.\n\nThey are not usually open on Tuesdays…so we hope everyone will come support!!\n\nOpen Mic in the round….one song at…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
         date: "2025-12-09",
@@ -2975,7 +2988,7 @@ const events = [
         name: `Aubrey Eisenman & The Clydes`,
         sorttime: "2025-12-27 14:00",
         end_time_formatted: "2025-12-27 17:00",
-        detail: "Aubrey Eisenman & The Clydes is a four piece, Asheville-based act with Aubrey Eisenman on the upright bass and vocals, John Duncan on the fiddle, Justin Eisenman on the guitar ...\nRead More",
+        detail: "Aubrey Eisenman & The Clydes is a four piece, Asheville-based act with Aubrey Eisenman on the upright bass and vocals, John Duncan on the fiddle, Justin Eisenman on the guitar and vocals and James Kylen on the drums. Since their 2018 signing to Mountain Fever/Travianna Records they have had two singles on the Grassicana Charts for almost a year (with a high of no. 2)! Their album “Bowerbird” was on Roots Music top 50 albums for 2019 as well.\nAubrey, the frontwoman/upright bassist/songwriter placed second in the John Hartford National Songwriting Competition in 2017 and has had an active role in the women in music scene in the region, founding the annual “Women in Music Series”, which has sold out premiere theatre venues three years in a row.\nThe band has toured nationally and abroad and has made four IBMA appearances. They are looking forward to recording their second album with Travianna Records in the fall of 2020.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3157,7 +3170,7 @@ const events = [
         name: `\'NASHVILLE\': The Encore Tour`,
         sorttime: "2026-01-23 20:00",
         end_time_formatted: "2026-01-23 23:59",
-        detail: "Kick off the World Tour right here in Greenville - one of two U.S. tour stops. \n\'NASHVILLE\': The Encore Tour will see Clare Bowen, Charles Esten, Jonathan Jackson and Sam Palladio - the stars of the iconic, hit television series \'NASHVILLE\' - take to the stage to perform classic songs from the series as well as their own original material.\n\n\n\n\n\n \n\'NASHVILLE\' became a TV phenomenon when it first debuted in 2012 and its popularity grew, reaching over 225 territories worldwide before its final season in 2018. Since its debut, the show has inspired 22 soundtracks, including a Christmas album, which collectively sold millions of album units and single-track downloads around the world. \'NASHVILLE\' was also critically lauded with multiple Emmy®, Golden Globe® and Critics Choice award nominations.\n \n\n\n\n\nCharles Esten played Deacon Claybourne, a soulful guitarist, songwriter, and love interest whose story anchored much of the show’s heart. Esten is an actor-musician and comedian, and his time on Nashville helped spark a full-fledged music career of his own — he continues to perform, write songs, and tour.\n\n\n\n\n\n\nClare Bowen portrayed Scarlett O\'Connor, a poet-turned-singer and songwriter who worked at the Bluebird Cafe and rose through Nashville’s music world on the show. Since then, Bowen has continued her musical path, releasing solo and collaborative albums and remaining active musically beyond the series.\n\n\n\n\n\n\nJonathan Jackson played Avery Barkley, a rebellious musician with a “bad-boy” edge who navigated the highs and lows of fame and relationships during the series. Jackson, also a musician, has kept a foot in both acting and music since Nashville ended, including recent film work and ongoing musical output.\n\n\n\n\n\n\nSam Palladio was cast as Gunnar Scott, a sensitive, lovelorn country-music singer whose journey spanned all six seasons of the show. Following Nashville, Palladio has balanced music and acting, appearing in several film and TV projects while continuing to perform, describing the show as a career-defining blend of his passions.",
+        detail: "Kick off the World Tour right here in Greenville - one of two U.S. tour stops. \n\'NASHVILLE\': The Encore Tour will see Clare Bowen, Charles Esten, Jonathan Jackson and Sam Palladio - the stars of the iconic, hit television series \'NASHVILLE\' - take to the stage to perform clasic songs from the series as well as their own original material.\n\'NASHVILLE\' became a TV phenomenon when it first debuted in 2012 and its popularity grew, reaching over 225 territories worldwide before its final season in 2018. Since its debut, the show has inspired 22 soundtracks, including a Christmas album, which collectively sold millions of album units and single-track downloads around the world. \'NASHVILLE\' was also critically lauded with multiple Emmy®, Golden Globe® and Critics Choice award nominations.\n \n\n\n\n\nCharles Esten played Deacon Claybourne, a soulful guitarist, songwriter, and love interest whose story anchored much of the show’s heart. Esten is an actor-musician and comedian, and his time on Nashville helped spark a full-fledged music career of his own — he continues to perform, write songs, and tour.\n\n\n\n\n\n\nClare Bowen portrayed Scarlett O\'Connor, a poet-turned-singer and songwriter who worked at the Bluebird Cafe and rose through Nashville’s music world on the show. Since then, Bowen has continued her musical path, releasing solo and collaborative albums and remaining active musically beyond the series.\n\n\n\n\n\n\nJonathan Jackson played Avery Barkley, a rebellious musician with a “bad-boy” edge who navigated the highs and lows of fame and relationships during the series. Jackson, also a musician, has kept a foot in both acting and music since Nashville ended, including recent film work and ongoing musical output.\n\n\n\n\n\n\nSam Palladio was cast as Gunnar Scott, a sensitive, lovelorn country-music singer whose journey spanned all six seasons of the show. Following Nashville, Palladio has balanced music and acting, appearing in several film and TV projects while continuing to perform, describing the show as a career-defining blend of his passions.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
