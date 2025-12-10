@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2025-12-09 14:01:58";
+const eventDataVersion = "Tuesday, 2025-12-09 20:02:03";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -427,7 +427,7 @@ const events = [
         name: `Somewhat Petty (Tom Petty Tribute Band)`,
         sorttime: "2025-01-30 18:00",
         end_time_formatted: "2025-01-30 21:30",
-        detail: "Catch Somewhat Petty, as they bring the music of Tom Petty to life!",
+        detail: "Somewhat Petty is an Asheville-based tribute band playing the best of rock icon, Tom Petty, and of course the Heartbreakers. Somewhat Petty is composed of 6 local musicians, all with one common goal: playing great rock music everyone loves - 40 years of Tom Petty.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -440,7 +440,7 @@ const events = [
         name: `Rumours ATL: A Fleetwood Mac Tribute`,
         sorttime: "2025-03-15 18:00",
         end_time_formatted: "2025-03-15 21:00",
-        detail: "For over a decade, Rumours ATL: A Fleetwood Mac Tribute has proven to be the most authentic live recreation of Fleetwood Mac’s golden era. With a reverence for the legendary group’s rich history, Rumours ATL: A Fleetwood Mac Tribute masterfully captures the magic of Fleetwood Mac’s iconic sound. From the hauntingly beautiful melodies of “Rhiannon” and “Songbird” to the electrifying energy of “Go Your Own Way,” every performance is a journey through the timeless classics that defined a generation and continues to influence pop and rock music today. Each member of Rumours ATL: A Fleetwood Mac Tribute brings a unique touch to their role, immersing themselves in the essence of their iconic counterparts. Their attention to musical detail ensures that every show resonates with the essence of Fleetwood Mac’s original spirit. Yet, beyond the impeccable recreations, there is an enigmatic quality to their performances that keeps audiences guessing and longing for more. The band’s allure lies not just in their exceptional musicianship, but in their ability to evoke the mystical charm of Fleetwood Mac. They weave an experience that transcends mere imitation, offering a glimpse into the soul of the legendary band’s performances. Their intricate harmonies and evocative stage presence creates an atmosphere where each concert feels both familiar yet enchantingly new. Rumours ATL: A Fleetwood Mac Tribute invites you to step into a world where the legend of Fleetwood Mac comes alive once more. With a blend of nostalgia and intrigue, their shows promise a unique adventure that longtime fans and newcomers alike will cherish",
+        detail: "Rumours ATL is making their return to the Sierra Nevada High Gravity Room! Last year’s show sold out, so get yours soon!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
