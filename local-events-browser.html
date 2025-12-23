@@ -31,6 +31,19 @@
 			const today = new Date();
 			const endDate = new Date(today);
 			endDate.setDate(today.getDate() + lookahead_days);
+
+			function currentTime() {
+				const now = new Date();
+				const year = now.getFullYear();
+				const month = String(now.getMonth() + 1).padStart(2, "0");
+				const day = String(now.getDate()).padStart(2, "0");
+				const hours = String(now.getHours()).padStart(2, "0");
+				const minutes = String(now.getMinutes()).padStart(2, "0");
+				const seconds = String(now.getSeconds()).padStart(2, "0");
+
+				const formattedTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+				return formattedTime;
+			}
 		</script>
 
 		<script src="js/event-data.js"></script>
@@ -50,7 +63,9 @@
 		<title>Hendo Happenings</title>
 		<script>
 			const localEventBrowserVersion = "Thursday, 2025-08-21 @ 16:30:58";
-			console.log(`localEventBrowserVersion = ${localEventBrowserVersion}`);
+			console.log(
+				`[${currentTime()}] localEventBrowserVersion = ${localEventBrowserVersion}`,
+			);
 		</script>
 		<style>
 			body {
@@ -296,7 +311,7 @@
 					event_label: `Hendo Happenings`,
 					value: 1,
 				});
-				console.log("Analytics: venues toggled");
+				console.log(`[${currentTime()}] Analytics: venues toggled`);
 
 				venue_filters.classList.toggle("hidden");
 				if (venue_toggle.textContent === "⊕") {

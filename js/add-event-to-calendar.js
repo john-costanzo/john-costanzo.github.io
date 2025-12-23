@@ -1,5 +1,5 @@
-const addEventToCalendarVersion = "Monday, 2025-08-11 @ 21:59:31";
-console.log( `addEventToCalendarVersion = ${addEventToCalendarVersion}` );
+const addEventToCalendarVersion = "Monday, 2025-12-22 @ 22:30:28";
+console.log( `[${currentTime()}] addEventToCalendarVersion = ${addEventToCalendarVersion}` );
 
 /**
  * Converts a UTC datetime string to a Microsoft-compatible format.
@@ -101,7 +101,7 @@ function trackCalendarClick( type, url, eventDetailsJson ) {
 function addToCalendar( title, description, location, startTime, endTime ) {
     try {
         // Convert datetime strings to Date objects
-        console.log( `addToCalendar: startTime='${startTime}'; endTime='${endTime}'` );
+        console.log( `[${currentTime()}] addToCalendar: startTime='${startTime}'; endTime='${endTime}'` );
 
         const fixedStartTimeString = startTime.replace( /-/g, '/' );
         const startDate = new Date( fixedStartTimeString );
