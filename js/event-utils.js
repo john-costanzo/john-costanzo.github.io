@@ -1,5 +1,5 @@
-const eventUtilsVersion = "Thursday, 2025-08-28 @ 20:31:40";
-console.log( `eventUtilsVersion = ${eventUtilsVersion}` );
+const eventUtilsVersion = "Monday, 2025-12-22 @ 22:31:32";
+console.log( `[${currentTime()}] eventUtilsVersion = ${eventUtilsVersion}` );
 
 function msUntilMidnight( ) {
     const now = new Date( );
@@ -8,9 +8,21 @@ function msUntilMidnight( ) {
     return ( midnight.getTime( ) - now.getTime( ) );
 }
 
+function msToHMS( milliseconds ) {
+    const totalSeconds = Math.floor( milliseconds / 1000 );
+    const hours = Math.floor( totalSeconds / 3600 );
+    const minutes = Math.floor( ( totalSeconds % 3600 ) / 60 );
+    const seconds = totalSeconds % 60;
+
+    const formatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    return ( formatted );
+}
+
 const refreshIntervalMs = 8 * 60 * 60 * 1000; // 8 hour interval      FIXME: unused?
 const startTime = Date.now( );
 const nextMidnight = msUntilMidnight( );
+console.log( `[${currentTime()}] page will reload in ${msToHMS(nextMidnight)}` );
+
 
 /**
  * Reloads the page with the current search term and venue filters as URL parameters.
@@ -21,7 +33,7 @@ function reloadPage( ) {
         .value.toLowerCase( );
 
     console.log(
-        `About to reload the page...`,
+        `[${currentTime()}] About to reload the page...`,
     );
 
     // Parse the current URL
@@ -35,7 +47,7 @@ function reloadPage( ) {
     window.location.href = url.toString( );
 
     console.log(
-        `Finished reloading the page.`,
+        `[${currentTime()}] Finished reloading the page.`,
     );
 }
 
@@ -200,7 +212,7 @@ function applyFilters( ) {
             event_label: `Hendo Happenings`,
             value: 1,
         } );
-        console.log( "Analytics: search term provided" );
+        console.log( `[${currentTime()}] Analytics: search term provided` );
 
 
         filteredEvents = filteredEvents.filter(
@@ -648,7 +660,7 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
                     event_label: `Hendo Happenings`,
                     value: 1,
                 } );
-                console.log( "Analytics: add-to-calendar is clicked" );
+                console.log( `[${currentTime()}] Analytics: add-to-calendar is clicked` );
                 addCalendarElement.classList.toggle( "hidden" );
             } );
 
@@ -667,7 +679,7 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
                         event_label: `Hendo Happenings`,
                         value: 1,
                     } );
-                    console.log( "Analytics: description is expanded" );
+                    console.log( `[${currentTime()}] Analytics: description is expanded` );
                     descriptionElement.classList.toggle( "hidden" );
                     if ( toggleElement.textContent === "⊕" ) {
                         toggleElement.textContent = "Θ";
@@ -827,9 +839,9 @@ function createVenueFilters( ) {
                     event_label: `Hendo Happenings`,
                     value: 1,
                 } );
-                console.log( "Analytics: open_url_reference" );
+                console.log( `[${currentTime()}] Analytics: open_url_reference` );
 
-                console.log( `control pressed: opening a new window for ${venue} => ${menuToURLMap[venue]}` );
+                console.log( `[${currentTime()}] control pressed: opening a new window for ${venue} => ${menuToURLMap[venue]}` );
                 const url = menuToURLMap[ venue ];
                 if ( url ) window.open( url, '_blank' );
             } else {
@@ -839,7 +851,7 @@ function createVenueFilters( ) {
                     event_label: `Hendo Happenings`,
                     value: 1,
                 } );
-                console.log( "Analytics: venue toggled" );
+                console.log( `[${currentTime()}] Analytics: venue toggled` );
 
 
                 chip.classList.toggle( "active" );
@@ -861,7 +873,7 @@ function createVenueFilters( ) {
             event_label: `Hendo Happenings`,
             value: 1,
         } );
-        console.log( "Analytics: all_chip clicked" );
+        console.log( `[${currentTime()}] Analytics: all_chip clicked` );
 
         const chips = Array.from( document.getElementsByClassName( "venue-chip" ) );
         chips.forEach( ( chip ) => {
@@ -880,7 +892,7 @@ function createVenueFilters( ) {
             event_label: `Hendo Happenings`,
             value: 1,
         } );
-        console.log( "Analytics: none_chip clicked" );
+        console.log( `[${currentTime()}] Analytics: none_chip clicked` );
 
         const chips = Array.from( document.getElementsByClassName( "venue-chip" ) );
         chips.forEach( ( chip ) => {
