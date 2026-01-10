@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Monday, 2025-12-22 @ 22:31:32";
+const eventUtilsVersion = "Saturday, 2026-01-10 @ 13:49:16";
 console.log( `[${currentTime()}] eventUtilsVersion = ${eventUtilsVersion}` );
 
 function msUntilMidnight( ) {
@@ -78,7 +78,7 @@ function organizeEventsByDate( events, startDate, endDate ) {
 
     // Filter events within date range
     const filteredEvents = events.filter( ( event ) => {
-        const eventDate = new Date( event.date );
+        const eventDate = new Date( event.event_date );
         const endTimeFormattedObj = new Date( event.end_time_formatted );
         return eventDate >= startDateObj && eventDate <= endDateObj && endTimeFormattedObj >= nowObj;
     } );
@@ -87,10 +87,10 @@ function organizeEventsByDate( events, startDate, endDate ) {
     const groupedEvents = {};
 
     filteredEvents.forEach( ( event ) => {
-        if ( !groupedEvents[ event.date ] ) {
-            groupedEvents[ event.date ] = [ ];
+        if ( !groupedEvents[ event.event_date ] ) {
+            groupedEvents[ event.event_date ] = [ ];
         }
-        groupedEvents[ event.date ].push( event );
+        groupedEvents[ event.event_date ].push( event );
     } );
 
     // Sort dates
@@ -157,7 +157,7 @@ function organizeEventsByDate( events, startDate, endDate ) {
 
     // Filter events within date range
     const filteredEvents = events.filter( ( event ) => {
-        const eventDate = new Date( event.date );
+        const eventDate = new Date( event.event_date );
         const endTimeFormattedObj = new Date( event.end_time_formatted );
         return eventDate >= startDateObj && eventDate <= endDateObj && endTimeFormattedObj >= nowObj;
     } );
@@ -166,10 +166,10 @@ function organizeEventsByDate( events, startDate, endDate ) {
     const groupedEvents = {};
 
     filteredEvents.forEach( ( event ) => {
-        if ( !groupedEvents[ event.date ] ) {
-            groupedEvents[ event.date ] = [ ];
+        if ( !groupedEvents[ event.event_date ] ) {
+            groupedEvents[ event.event_date ] = [ ];
         }
-        groupedEvents[ event.date ].push( event );
+        groupedEvents[ event.event_date ].push( event );
     } );
 
     // Sort dates
@@ -280,7 +280,7 @@ function toUTCFormat( dateStr ) {
     const regex =
         /^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2}) (am|pm)$/i;
     const match = dateStr.match( regex );
-    if ( !match ) throw new Error( "Invalid date format" );
+    if ( !match ) throw new Error( `Invalid date format [${dateStr}]` );
 
     let [ _, year, month, day, hour, minute, second, ampm ] = match;
     year = parseInt( year, 10 );
@@ -619,7 +619,7 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
 
             const timeElement = document.createElement( "span" );
             timeElement.className = "time";
-            timeElement.textContent = formatTime( event.time ) + ":    ";
+            timeElement.textContent = formatTime( event.event_time ) + ":    ";
 
             const nameElement = document.createElement( "span" );
             nameElement.className = "event-name";
@@ -631,12 +631,12 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
             var toggleElement = null;
 
             const start_time_string =
-                event.date +
+                event.event_date +
                 " " +
                 ( isTimeString( event.start_time ) ? event.start_time : "12:00" );
             const start = toUTCFormat( start_time_string );
             const end_time_string =
-                event.date +
+                event.event_date +
                 " " +
                 ( isTimeString( event.end_time ) ? event.end_time : "12:00" );
             const end = toUTCFormat( end_time_string );
