@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-02-17 08:01:31";
+const eventDataVersion = "Tuesday, 2026-02-17 14:01:17";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -626,7 +626,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-17",
         event_time: "4:00 pm - 8:00 pm",
@@ -635,6 +635,19 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-02-17 16:00:00",
         end_time_formatted: "2026-02-17 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        venue: "Dry Falls",
+        event_date: "2026-02-17",
+        event_time: "6:00 pm - 9:00 pm",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Karaoke Night with Mandy`,
+        sort_time: "2026-02-17 18:00:00",
+        end_time_formatted: "2026-02-17 21:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
@@ -691,7 +704,7 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-18",
         event_time: "4:00 pm - 8:00 pm",
@@ -704,7 +717,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-18",
         event_time: "6:00 pm - 8:00 pm",
@@ -808,7 +821,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-19",
         event_time: "5:00 pm - 9:00 pm",
@@ -821,7 +834,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-19",
         event_time: "6:00 pm - 9:00 pm",
@@ -951,7 +964,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-20",
         event_time: "3:00 pm - 8:00 pm",
@@ -990,7 +1003,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-20",
         event_time: "7:00 pm - 9:00 pm",
@@ -1107,7 +1120,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-21",
         event_time: "12:00 pm - 8:00 pm",
@@ -1224,7 +1237,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-21",
         event_time: "7:00 pm - 10:00 pm",
@@ -1302,7 +1315,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-22",
         event_time: "12:00 pm - 8:00 pm",
@@ -1445,7 +1458,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-23",
         event_time: "4:00 pm - 8:00 pm",
@@ -1523,7 +1536,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-24",
         event_time: "4:00 pm - 8:00 pm",
@@ -1562,7 +1575,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-25",
         event_time: "4:00 pm - 8:00 pm",
@@ -1588,7 +1601,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-25",
         event_time: "6:00 pm - 8:00 pm",
@@ -1666,7 +1679,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-26",
         event_time: "4:00 pm - 8:00 pm",
@@ -1679,7 +1692,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-26",
         event_time: "6:00 pm - 9:00 pm",
@@ -1757,7 +1770,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-27",
         event_time: "3:00 pm - 8:00 pm",
@@ -1779,7 +1792,7 @@ const events = [
         name: `Holler Choir`,
         sort_time: "2026-02-27 18:00:00",
         end_time_formatted: "2026-02-27 20:30",
-        detail: "Led by the lyrical craftsmanship of singer, guitarist, and songwriter Clint Roberts, the distinctly Appalachian, old-time sound of Asheville’s Holler Choir combines haunting harmonies, stirring string compositions, and heart-wrenching ballads, yet hardly conforms to a stereotypical genre. Call it a confluence of old-time, Americana, and bluegrass, but, by its own exceptional design, the sound and atmosphere of Holler Choir are singular. Robert’s wordcraft and explosive vocal range is met with the dulcet clawhammer banjo plucking of long-time collaborator Helena Rose and the sturdy timekeeping of upright bassist Norbert McGettigan. With a rotating cast of gifted musicians featured on Holler Choir’s recordings and electrifying live performances, it’s no wonder they are the band to watch in 2023. \nThe band’s inception began when recording Robert’s 2022 solo release, entitled “Mountain Air”. That fortuitous collaboration of gifted roots musicians at Asheville’s Crossroads Studios proved to be the genesis of an unmistakable new sound built on that shared experience. Produced by Grammy award-winning multi-instrumentalist, Michael Ashworth, of The Steep Canyon Rangers, the five-song EP lit the fuse and Holler Choir was well on its way to delight audiences throughout the southeast and beyond. \nFor their debut full-length record, “Songs Before They Write Themselves,” Holler Choir again teamed up with producer Michael Ashworth. Set for release in summer of 2023, the album was tracked in the historic Echo Mountain Studio’s church room and boasts the engineering prowess of Jason Richmond (Avett Brothers, Rising Appalachia), and was mastered by Grammy Award-winning engineer, Kim Rosen. \nAccording to Roberts “Holler Choir” could be a double entendre. A choir that hollers, or a choir from the hollers of western North Carolina. What their sound and vision exude leaves the meaning up to you.",
+        detail: "Appalachian old-time, Americana and Bluegrass",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1796,7 +1809,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-27",
         event_time: "7:00 pm - 10:00 pm",
@@ -1874,7 +1887,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-28",
         event_time: "12:00 pm - 8:00 pm",
@@ -2026,7 +2039,7 @@ const events = [
         name: `Grain to Glass Beer Dinner`,
         sort_time: "2026-02-28 18:00:00",
         end_time_formatted: "2026-02-28 21:00",
-        detail: "Come sip, savor, and listen - where beer, food, music, and story meet from grain to glass.\nExperience an evening that traces the journey from field to fermenter to glass. This thoughtfully curated grain-to-glass beer dinner includes five chef-driven courses, each with a perfectly paired beer. Grains sourced from Marsh Henn Mill, a family-owned farm steeped in tradition, will be incorporated into the menu. \nThroughout the night, storytelling weaves its way between courses- featuring live musical moments from the Appalachian old-time do, Laura Boosinger and Josh Goforth that set the tone and bring rhythm to the table.\nGuest Speakers from Marsh Hen Mill will share insights into heritage grains, sustainable milling, and the role fresh-milled grain plays in flavor, texture, and community. \nMenu is announced in the new year.",
+        detail: "Come sip, savor, and listen - where beer, food, music, and story meet from grain to glass. Experience an evening that traces the journey from field to fermenter to glass. ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2043,7 +2056,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-02-28",
         event_time: "7:00 pm - 10:00 pm",
@@ -2121,7 +2134,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-01",
         event_time: "12:00 pm - 8:00 pm",
@@ -2173,7 +2186,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-02",
         event_time: "4:00 pm - 8:00 pm",
@@ -2212,7 +2225,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-03",
         event_time: "4:00 pm - 8:00 pm",
@@ -2238,7 +2251,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-04",
         event_time: "4:00 pm - 8:00 pm",
@@ -2251,7 +2264,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-04",
         event_time: "6:00 pm - 8:00 pm",
@@ -2316,7 +2329,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-05",
         event_time: "4:00 pm - 8:00 pm",
@@ -2329,7 +2342,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-05",
         event_time: "6:00 pm - 9:00 pm",
@@ -2381,7 +2394,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-06",
         event_time: "12:00 pm - 8:00 pm",
@@ -2394,7 +2407,20 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-03-06",
+        event_time: "5:30 pm - 9:00 pm",
+        start_time: "5:30 pm",
+        end_time: "9:00 pm",
+        name: `Earl Scruggs Music Festival Kick Off Party ft. Jacoozy`,
+        sort_time: "2026-03-06 17:30:00",
+        end_time_formatted: "2026-03-06 21:00",
+        detail: "Join us in The Sierra Nevada High Gravity Room on Friday, March 6 for a FREE Kick off Party to celebrate the launch of the Earl Scruggs Music Festival lineup!\nLive performances from Jacoozy and The Foreign Landers! We will be doing a ticket giveaway and handing out some special gifts to the first 50 folks!\n🪕 Festival lineup gets announced March 4 at 10am\n🪕 Festival tickets go on sale March 6 at 10am",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-06",
         event_time: "7:00 pm - 10:00 pm",
@@ -2420,7 +2446,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-07",
         event_time: "12:00 pm - 8:00 pm",
@@ -2459,7 +2485,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-07",
         event_time: "7:00 pm - 10:00 pm",
@@ -2485,7 +2511,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-08",
         event_time: "12:00 pm - 8:00 pm",
@@ -2537,7 +2563,7 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-09",
         event_time: "4:00 pm - 8:00 pm",
@@ -2550,7 +2576,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-10",
         event_time: "4:00 pm - 8:00 pm",
@@ -2563,7 +2589,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-11",
         event_time: "4:00 pm - 8:00 pm",
@@ -2576,7 +2602,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-11",
         event_time: "5:00 pm - 6:30 pm",
@@ -2589,7 +2615,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-11",
         event_time: "6:00 pm - 8:00 pm",
@@ -2615,7 +2641,7 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-12",
         event_time: "4:00 pm - 8:00 pm",
@@ -2628,7 +2654,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-12",
         event_time: "6:00 pm - 9:00 pm",
@@ -2641,7 +2667,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-13",
         event_time: "3:00 pm - 8:00 pm",
@@ -2654,7 +2680,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-14",
         event_time: "12:00 pm - 8:00 pm",
@@ -2706,7 +2732,7 @@ const events = [
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-14",
         event_time: "7:00 pm - 10:00 pm",
@@ -2719,7 +2745,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-15",
         event_time: "12:00 pm - 8:00 pm",
@@ -2745,7 +2771,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-16",
         event_time: "4:00 pm - 8:00 pm",
@@ -2758,7 +2784,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-17",
         event_time: "4:00 pm - 8:00 pm",
@@ -2771,7 +2797,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-18",
         event_time: "4:00 pm - 8:00 pm",
@@ -2784,7 +2810,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-18",
         event_time: "6:00 pm - 8:00 pm",
@@ -2823,7 +2849,7 @@ const events = [
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-19",
         event_time: "4:00 pm - 9:00 pm",
@@ -2836,7 +2862,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
+        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771354816000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
         venue: "Dry Falls",
         event_date: "2026-03-19",
         event_time: "6:00 pm - 9:00 pm",
@@ -2845,19 +2871,6 @@ const events = [
         name: `Event: Open Mic Night`,
         sort_time: "2026-03-19 18:00:00",
         end_time_formatted: "2026-03-19 21:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
-        url: "https://broker.eventscalendar.co/api/google/next?count=50&from=1771333223000&user=user_mvQC02o3ZRIn0YICBjjzi&project=proj_T1tpfuphd1D1vZ76vQnV3&calendar=055caf729cd77abfaec26f69603e9c155a7f7c8c4f745d0e9016fd84c7d39ff5%40group.calendar.google.com&options=undefined",
-        venue: "Dry Falls",
-        event_date: "2026-03-20",
-        event_time: "3:00 pm - 8:00 pm",
-        start_time: "3:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Toasted Cuban`,
-        sort_time: "2026-03-20 15:00:00",
-        end_time_formatted: "2026-03-20 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
