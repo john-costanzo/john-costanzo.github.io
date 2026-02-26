@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-02-26 08:01:37";
+const eventDataVersion = "Thursday, 2026-02-26 14:01:37";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -65,19 +65,6 @@ const events = [
         end_time_formatted: "2025-11-27 18:00",
         detail: "None",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2025-11-29",
-        event_time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 PM",
-        end_time: "9:00 PM",
-        name: `Fine Line Band`,
-        sort_time: "2025-11-29 18:00:00",
-        end_time_formatted: "2025-11-29 21:00",
-        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -910,6 +897,19 @@ const events = [
         end_time_formatted: "2026-02-28 23:59",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://www.stoneashevineyards.com/events",
+        venue: "Stoneashe",
+        event_date: "2026-02-28",
+        event_time: "11:00 am-6:00 pm",
+        start_time: "11:00 AM",
+        end_time: "6:00 PM",
+        name: `Closed for Private Event`,
+        sort_time: "2026-02-28 11:00:00",
+        end_time_formatted: "2026-02-28 18:00",
+        detail: "Closed for Private Event. We will reopen Sunday at 12:00.",
+        location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -3057,6 +3057,19 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - April",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-04-19",
+        event_time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `My Magnificent Nemesis w/ Alien Music Club`,
+        sort_time: "2026-04-19 14:00:00",
+        end_time_formatted: "2026-04-19 17:00",
+        detail: "My Magnificent Nemesis:\nIf you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor.\nAlien Music Club:\nAMC is the brainchild of Jonathan Pearlman, a veteran of the WNC Music Scene. He is a composer and producer. He’s an accomplished guitarist. Soft spoken and shy off stage he speaks from the heart on stage, and does so effortlessly and fluently.",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-04-20",
@@ -3174,6 +3187,19 @@ const events = [
         location: "Festival Net Asheville Spring Herb Festival",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-04-25",
+        event_time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Strange Rangers`,
+        sort_time: "2026-04-25 14:00:00",
+        end_time_formatted: "2026-04-25 17:00",
+        detail: "Pop/Funk/Soul/Improvisation\nStrange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-04-26",
@@ -3261,7 +3287,7 @@ const events = [
         name: `Juice`,
         sort_time: "2026-05-15 19:00:00",
         end_time_formatted: "2026-05-15 21:30",
-        detail: "Between their tight grooves, radiant harmonies, heartfelt lyrics, and jaw-dropping solos , there’s no simple, easy way to summarize New York City five-piece Juice.\nPulling from pop and rock, hip-hop and R&B, ‘90s alternative, modern electronic, folk, and more, their complexity is their strength: All six members are multi-instrumentalists from different musical backgrounds and upbringings, each one bringing his own unique flavor to the band. The result is a “multi-dimensional rock” identity that has continuously evolved over the past decade, as the band members themselves - Ben Stevens (vocals, keys), Christian Rose (vocals, violin), Kamau Burton (vocals, guitar), Daniel Moss (guitar), and Rami El-Abidin (bass) - went from students at Boston College to professional touring musicians and seasoned recording artists.\nJuice’s sound may be ever-evolving, but their bold energy is evergreen: The goal, both on stage and on record, is not just to connect on a human level, but to breathe life into every room. While they pack a punch on record, Juice shine their brightest onstage, bringing their music to life for all to see, hear, and feel. The band have played countless national tours over the past ten years, including four headline tours and support slots opening for bands like flipturn, Ocean Alley, and The Dip.",
+        detail: "Between their tight grooves, radiant harmonies, heartfelt lyrics, and jaw-dropping solos , there’s no simple, easy way to summarize New York City five-piece Juice. Pulling from pop and rock, hip-hop ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
