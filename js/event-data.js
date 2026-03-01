@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2026-03-01 08:01:28";
+const eventDataVersion = "Sunday, 2026-03-01 14:02:05";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -676,19 +676,6 @@ const events = [
         end_time_formatted: "2026-02-28 18:00",
         detail: "Closed for Private Event. We will reopen Sunday at 12:00.",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        event_date: "2026-02-28",
-        event_time: "1:00 pm - 4:00 pm",
-        start_time: "1:00 pm",
-        end_time: "4:00 pm",
-        name: `SETH AND SARA`,
-        sort_time: "2026-02-28 13:00:00",
-        end_time_formatted: "2026-02-28 16:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://oklawahabrewing.com/events",
@@ -2676,7 +2663,7 @@ const events = [
         name: `Larry Keel & Jon Stickley Duo`,
         sort_time: "2026-03-27 18:00:00",
         end_time_formatted: "2026-03-27 20:30",
-        detail: "Two of the best bluegrass pickers out there sharing the stage! Two sets, free show!",
+        detail: "The Larry Keel & Jon Stickley Duo features two of the finest flatpicking guitarists of this generation. Both share a lifelong love of acoustic bluegrass guitar music made famous by influential duets Doc and Merle Watson, and Tony Rice and Norman Blake. Keel, Stickley, and other modern flatpickers like Billy Strings grew up studying these legends. These masters were role models who provided inspiration to both Larry and Jon to pursue careers as professional guitar players. Each has gone on to pioneer his own distinct interpretation of the bluegrass artform, as well as fusing genres from roots, jazz, prog, and beyond. Now, Keel and Stickley have themselves become new masters of acoustic guitar. With this act, the two celebrate the pure joy of playing acoustic guitar music as a duo, effortlessly complementing each other’s rhythm and lead playing while never losing their own individual personality. Their sophisticated and awe-inspiring performances suit an array of venues including festival stages, listening rooms, private functions, and nightclubs. At the core of the Keel/Stickley Duo is an intimate conversation between two guitars and voices, done with superior skill and taste, with more than a hint of explosive late-night-jam vibe.\nStream or buy the new Larry Keel & Jon Stickley EP on your favorite platform now!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3083,6 +3070,19 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - April",
     },
     {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-04-19",
+        event_time: "1:00 pm - 4:00 pm",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: `THE JACKTOWN RAMBLERS`,
+        sort_time: "2026-04-19 13:00:00",
+        end_time_formatted: "2026-04-19 16:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-04-19",
@@ -3092,7 +3092,7 @@ const events = [
         name: `My Magnificent Nemesis w/ Alien Music Club`,
         sort_time: "2026-04-19 14:00:00",
         end_time_formatted: "2026-04-19 17:00",
-        detail: "My Magnificent Nemesis:\nIf you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor.\nAlien Music Club:\nAMC is the brainchild of Jonathan Pearlman, a veteran of the WNC Music Scene. He is a composer and producer. He’s an accomplished guitarist. Soft spoken and shy off stage he speaks from the heart on stage, and does so effortlessly and fluently.",
+        detail: "My Magnificent Nemesis: If you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor. ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3300,7 +3300,7 @@ const events = [
         name: `The Brothers Comatose`,
         sort_time: "2026-05-01 18:00:00",
         end_time_formatted: "2026-05-01 21:00",
-        detail: "Fusing old school string band instrumentation with rock and roll exuberance, The Brothers Comatose cement their status as standard bearers of a thriving, innovative West Coast roots movement on their intoxicating new album, Golden Grass. Recorded with co-producers Greg Holden and Tim Bluhm, the collection is as diverse and enthralling as the California landscape itself—at times carefree and breezy, at times wild and rugged—with lush, organic arrangements full of rich vocal harmonies and driving guitar, fiddle, banjo, mandolin, and upright bass. While the record marks the group’s first release with newest member Addie Levy, the result is quintessential Brothers Comatose: a warm, joyful reflection on identity and the ties that bind from a band that knows exactly who they are (and exactly where they come from).\nFounded by Ben and Alex Morrison in 2008, The Brothers Comatose first emerged from San Francisco with their 2010 debut, Songs from The Stoop, which helped earn dates with the likes of Gillian Welch & David Rawlings, Greensky Bluegrass, and Trampled by Turtles. In the decade-and-a-half that followed, the critically acclaimed quintet would go on to release five more full-length LPs, rack up nearly 50 million streams, land festival slots at Outside Lands, High Sierra, and Hardly Strictly Bluegrass, tour with Lake Street Dive, The Devil Makes Three, and Yonder Mountain String Band, and build up a devoted following thanks to their raucous live shows and relentless schedule.",
+        detail: "Tickets on Sale Dec 19 at 10:00am EST",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3326,7 +3326,7 @@ const events = [
         name: `Tina and Her Pony`,
         sort_time: "2026-05-03 14:00:00",
         end_time_formatted: "2026-05-03 17:00",
-        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence to the stage. Known for lush harmonies, country folk storytelling, and songs that soothe as much as they stir, Tina’s music carries a quiet magic that lingers long after the last note.\nFrom the hills of Asheville to the deserts of New Mexico, she’s spent over a decade refining her sound by melding classic folk with touches of Americana, and more recently, dreamy pop and psychedelic soul.",
+        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3339,7 +3339,7 @@ const events = [
         name: `The Deep Shallow Band`,
         sort_time: "2026-05-09 14:00:00",
         end_time_formatted: "2026-05-09 17:00",
-        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie ...\nRead More",
+        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie shine through during their energetic performances and on their new album, “Copy and Paste,” released in the spring of 2023. The band has entertained an enthusiastic following throughout North Carolina since 2014 and would love to see you at their next show.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3391,7 +3391,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3482,7 +3482,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-29 19:00:00",
         end_time_formatted: "2026-05-29 22:00",
-        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
+        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
