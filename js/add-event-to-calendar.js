@@ -103,11 +103,8 @@ function addToCalendar( title, description, location, startTime, endTime ) {
         // Convert datetime strings to Date objects
         console.log( `[${currentTime()}] addToCalendar: startTime='${startTime}'; endTime='${endTime}'` );
 
-        const fixedStartTimeString = startTime.replace( /-/g, '/' );
-        const startDate = new Date( fixedStartTimeString );
-
-        const fixedEndTimeString = endTime.replace( /-/g, '/' );
-        const endDate = new Date( fixedEndTimeString );
+        const startDate = parseET( startTime );
+        const endDate = parseET( endTime );
 
         // Format dates for different calendar systems
         const formatDateForCalendar = ( date ) => {
