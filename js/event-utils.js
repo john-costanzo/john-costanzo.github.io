@@ -1,6 +1,50 @@
 const eventUtilsVersion = "Saturday, 2026-01-10 @ 13:49:16";
 console.log( `[${currentTime()}] eventUtilsVersion = ${eventUtilsVersion}` );
 
+/**
+ * Creates a Date object from Eastern Time components, correctly handling DST.
+ * @param {number} year
+ * @param {number} month (0-11)
+ * @param {number} day
+ * @param {number} hour (0-23)
+ * @param {number} minute
+ * @param {number} second
+ * @returns {Date}
+ */
+function createETDate( year, month, day, hour, minute, second ) {
+    const s = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}T${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:${String(second).padStart(2, '0')}`;
+    const d4 = new Date( s + "-04:00" );
+    const formatter = new Intl.DateTimeFormat( "en-US", {
+        timeZone: "America/New_York",
+        hour: "numeric",
+        hour12: false
+    } );
+    let nyHour = parseInt( formatter.format( d4 ) );
+    if ( nyHour === 24 ) nyHour = 0;
+    return nyHour === hour ? d4 : new Date( s + "-05:00" );
+}
+
+/**
+ * Parses a date string as Eastern Time.
+ * @param {string} s - The date string (e.g., "2025-05-02 23:59" or "2025/05/02 23:59:00").
+ * @returns {Date} The Date object.
+ */
+function parseET( s ) {
+    if ( !s ) return new Date( );
+    const m = s.match( /^(\d{4})[/-](\d{2})[/-](\d{2})\s+(\d{1,2}):(\d{2})(:(\d{2}))?/ );
+    if ( m ) {
+        return createETDate(
+            parseInt( m[ 1 ] ),
+            parseInt( m[ 2 ] ) - 1,
+            parseInt( m[ 3 ] ),
+            parseInt( m[ 4 ] ),
+            parseInt( m[ 5 ] ),
+            m[ 7 ] ? parseInt( m[ 7 ] ) : 0
+        );
+    }
+    return new Date( s );
+}
+
 function msUntilMidnight( ) {
     const now = new Date( );
     const midnight = new Date( now );
@@ -65,56 +109,6 @@ function checkRefresh( ) {
 setInterval( checkRefresh, 60000 ); // Check every 60 seconds
 
 /**
- * Organizes events by date, filtering them by a date range and sorting them by time.
- * @param {Array<Object>} events - The list of events to organize.
- * @param {string} startDate - The start date of the date range.
- * @param {string} endDate - The end date of the date range.
- * @returns {Array<Object>} A list of objects, where each object represents a date and contains the events for that date.
- */
-function organizeEventsByDate( events, startDate, endDate ) {
-    const startDateObj = new Date( startDate );
-    const endDateObj = new Date( endDate );
-    const nowObj = new Date( );
-
-    // Filter events within date range
-    const filteredEvents = events.filter( ( event ) => {
-        const eventDate = new Date( event.event_date );
-        const endTimeFormattedObj = new Date( event.end_time_formatted );
-        return eventDate >= startDateObj && eventDate <= endDateObj && endTimeFormattedObj >= nowObj;
-    } );
-
-    // Group by date
-    const groupedEvents = {};
-
-    filteredEvents.forEach( ( event ) => {
-        if ( !groupedEvents[ event.event_date ] ) {
-            groupedEvents[ event.event_date ] = [ ];
-        }
-        groupedEvents[ event.event_date ].push( event );
-    } );
-
-    // Sort dates
-    var temp_result = Object.keys( groupedEvents )
-        .sort( )
-        .map( ( date ) => ( {
-            date,
-            events: groupedEvents[ date ],
-        } ) );
-
-    temp_result.forEach( ( result ) => {
-        result.events.sort( ( a, b ) => {
-            // Assumes sorttime is comparable (number or string that sorts correctly)
-            return a.sorttime > b.sorttime ?
-                1 :
-                a.sorttime < b.sorttime ?
-                -1 :
-                0;
-        } );
-    } );
-    return temp_result;
-}
-
-/**
  * Gets a venue filter chip element by its name.
  * @param {string} venueName - The name of the venue to find.
  * @returns {HTMLElement|null} The chip element, or null if not found.
@@ -139,7 +133,7 @@ function excludePastEvents( events ) {
     // Exclude past events
     let now = new Date( );
     return events.filter( ( event ) =>
-        new Date( event.end_time_formatted ) >= now,
+        parseET( event.end_time_formatted ) >= now,
     );
 }
 
@@ -151,14 +145,14 @@ function excludePastEvents( events ) {
  * @returns {Array<Object>} A list of objects, where each object represents a date and contains the events for that date.
  */
 function organizeEventsByDate( events, startDate, endDate ) {
-    const startDateObj = new Date( startDate );
-    const endDateObj = new Date( endDate );
+    const startDateObj = parseET( startDate + " 00:00:00" );
+    const endDateObj = parseET( endDate + " 23:59:59" );
     const nowObj = new Date( );
 
     // Filter events within date range
     const filteredEvents = events.filter( ( event ) => {
-        const eventDate = new Date( event.event_date );
-        const endTimeFormattedObj = new Date( event.end_time_formatted );
+        const eventDate = parseET( event.event_date + " 00:00:00" );
+        const endTimeFormattedObj = parseET( event.end_time_formatted );
         return eventDate >= startDateObj && eventDate <= endDateObj && endTimeFormattedObj >= nowObj;
     } );
 
@@ -294,16 +288,16 @@ function toUTCFormat( dateStr ) {
     if ( ampm.toLowerCase( ) === "pm" && hour !== 12 ) hour += 12;
     if ( ampm.toLowerCase( ) === "am" && hour === 12 ) hour = 0;
 
-    // Create local Date object
-    const localDate = new Date( year, month, day, hour, minute, second );
+    // Create Date object assuming Eastern Time
+    const etDate = createETDate( year, month, day, hour, minute, second );
 
     // Get UTC components
-    const y = localDate.getUTCFullYear( );
-    const m = String( localDate.getUTCMonth( ) + 1 ).padStart( 2, "0" );
-    const d = String( localDate.getUTCDate( ) ).padStart( 2, "0" );
-    const h = String( localDate.getUTCHours( ) ).padStart( 2, "0" );
-    const min = String( localDate.getUTCMinutes( ) ).padStart( 2, "0" );
-    const s = String( localDate.getUTCSeconds( ) ).padStart( 2, "0" );
+    const y = etDate.getUTCFullYear( );
+    const m = String( etDate.getUTCMonth( ) + 1 ).padStart( 2, "0" );
+    const d = String( etDate.getUTCDate( ) ).padStart( 2, "0" );
+    const h = String( etDate.getUTCHours( ) ).padStart( 2, "0" );
+    const min = String( etDate.getUTCMinutes( ) ).padStart( 2, "0" );
+    const s = String( etDate.getUTCSeconds( ) ).padStart( 2, "0" );
 
     // Format as YYYYMMDDThhmmssZ
     return `${y}${m}${d}T${h}${min}${s}Z`;
@@ -317,75 +311,7 @@ function toUTCFormat( dateStr ) {
  */
 function formatDateUTC( date ) {
     // DATE is something like "2025-06-08 2:00:00 pm". Return "20250608T140000Z"
-
-    // console.log(`formatDateUTC = ${date}`);
-    var cleaned_date;
-    const timeParts = date.match(
-        /^(\d{1,4})-(\d{1,2})-(\d{1,2})\s*(\d{1,2}):(\d{2})(:\d{2})?\s*(am|pm)$/i,
-    );
-    if ( timeParts ) {
-        // console.log(`timeParts = ${timeParts}`);
-        var hour = parseInt( timeParts[ 4 ], 10 );
-        if ( timeParts[ 7 ].toLowerCase( ) === "pm" ) {
-            if ( hour < 12 ) hour += 12;
-        }
-        if ( timeParts[ 7 ].toLowerCase( ) === "am" && hour === 12 ) {
-            hour -= 12;
-        }
-        if ( hour < 10 ) hour = "0" + hour;
-
-        cleaned_date =
-            timeParts[ 1 ] +
-            "-" +
-            timeParts[ 2 ] +
-            "-" +
-            timeParts[ 3 ] +
-            "T" +
-            hour +
-            ":" +
-            timeParts[ 5 ] +
-            ":" +
-            ( timeParts[ 6 ] === undefined ?
-                "00" :
-                timeParts[ 6 ].replace( ":", "" ) ) +
-            "Z";
-
-        // console.log(`cleaned_date=${cleaned_date}`);
-    } else {
-        return `formatDateUTC: Unable to parse ${date}`;
-    }
-    const cleaned_date_obj = new Date( cleaned_date );
-    // console.log(`cleaned_date_obj=${cleaned_date_obj}`);
-    const options = {
-        timeZone: "UTC", // "America/New_York", // Set to Eastern US timezone
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false, // Use 24-hour format
-    };
-
-    // console.log(
-    // 	`cleaned_date_obj.toLocaleDateString("en-US", options) = ${cleaned_date_obj.toLocaleDateString("en-US", options)}`,
-    // );
-
-    const formatter = new Intl.DateTimeFormat( "en-US", options );
-    const parts = formatter.formatToParts( cleaned_date_obj );
-
-    // Helper to extract and pad values
-    const pad = ( n ) => n.toString( ).padStart( 2, "0" );
-    const yearPart = parts.find( ( p ) => p.type === "year" ).value;
-    const monthPart = parts.find( ( p ) => p.type === "month" ).value;
-    const dayPart = parts.find( ( p ) => p.type === "day" ).value;
-    const hourPart = parts.find( ( p ) => p.type === "hour" ).value;
-    const minutePart = parts.find( ( p ) => p.type === "minute" ).value;
-    const secondPart = parts.find( ( p ) => p.type === "second" ).value;
-
-    const formatted = `${yearPart}${monthPart}${dayPart}T${pad(hourPart)}${pad(minutePart)}${pad(secondPart)}Z`;
-    // console.log(`formatDateUTC returning ${formatted}`);
-    return formatted; // e.g., 20250608T140000Z (for June 8, 2025, 2:00:00 PM EDT)
+    return toUTCFormat( date );
 }
 
 /**
@@ -420,37 +346,47 @@ function formatTime( timeStr ) {
 }
 
 /**
- * Converts a Date object to a local ISO date string with timezone offset.
+ * Converts a Date object to an Eastern Time ISO date string with timezone offset.
  * @param {Date} date - The date object to convert.
- * @returns {string} The local ISO date string.
+ * @returns {string} The Eastern Time ISO date string.
  */
 function getLocalISODateString( date ) {
-    const pad = ( num, size = 2 ) =>
-        String( Math.floor( Math.abs( num ) ) ).padStart( size, "0" );
+    const formatter = new Intl.DateTimeFormat( "en-US", {
+        timeZone: "America/New_York",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false,
+        timeZoneName: "shortOffset"
+    } );
+    const parts = formatter.formatToParts( date );
+    const getPart = ( type ) => parts.find( p => p.type === type )?.value;
 
-    // Timezone offset in minutes, negative for locations ahead of UTC, positive for behind
-    const tzo = -date.getTimezoneOffset( );
-    const sign = tzo >= 0 ? "+" : "-";
-    const offsetHours = pad( Math.trunc( Math.abs( tzo ) / 60 ) );
-    const offsetMinutes = pad( Math.abs( tzo ) % 60 );
+    const y = getPart( "year" );
+    const m = getPart( "month" );
+    const d = getPart( "day" );
+    let h = getPart( "hour" );
+    if ( h === "24" ) h = "00";
+    const min = getPart( "minute" );
+    const s = getPart( "second" );
+    let tz = getPart( "timeZoneName" ); // e.g., "GMT-5" or "GMT-4"
 
-    return (
-        date.getFullYear( ) +
-        "-" +
-        pad( date.getMonth( ) + 1 ) +
-        "-" +
-        pad( date.getDate( ) ) +
-        "T" +
-        pad( date.getHours( ) ) +
-        ":" +
-        pad( date.getMinutes( ) ) +
-        ":" +
-        pad( date.getSeconds( ) ) +
-        sign +
-        offsetHours +
-        ":" +
-        offsetMinutes
-    );
+    // Convert "GMT-5" to "-05:00"
+    let offset = "+00:00";
+    if ( tz ) {
+        const match = tz.match( /GMT([+-])(\d+)(:(\d+))?/ );
+        if ( match ) {
+            const sign = match[ 1 ];
+            const hours = match[ 2 ].padStart( 2, "0" );
+            const mins = ( match[ 4 ] || "00" ).padStart( 2, "0" );
+            offset = `${sign}${hours}:${mins}`;
+        }
+    }
+
+    return `${y}-${m}-${d}T${h}:${min}:${s}${offset}`;
 }
 
 /**
