@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-03-03 14:01:37";
+const eventDataVersion = "Tuesday, 2026-03-03 20:02:19";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -694,19 +694,6 @@ const events = [
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-03-03",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-03-03 16:00:00",
-        end_time_formatted: "2026-03-03 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-03-03",
         event_time: "6:00 pm - 9:00 pm",
         start_time: "6:00 pm",
         end_time: "9:00 pm",
@@ -999,7 +986,7 @@ const events = [
         name: `An Evening with Ben Sollee`,
         sort_time: "2026-03-06 19:30:00",
         end_time_formatted: "2026-03-06 23:59",
-        detail: "Celebrated cellist, songwriter and storyteller Ben Sollee is back with a fresh perspective and a new collection of songs. His upcoming album, Time On Hold, is set for global streaming release on February 27, 2026. This record serves as a vibrant follow-up to his 2024 full-length Long Haul and his recent, atmospheric EP Common Ghosts, marking a prolific period of creative renewal for the Kentucky artist.\nWhile Long Haul navigated the personal terrain of recovery and physical resilience, Time On Hold turns its gaze outward. The album finds Sollee leaning into a soulful, country-inflected sound that captures the warmth of his live performances. Drawing on influences from Willie Nelson to Phoebe Snow, it is a record that feels both grounded in tradition and keenly aware of the modern world\'s complexities.\nExplore Ben Sollee\'s new single and music catalog ⬇️\n\nThe journey began on January 16, 2026, with the release of the first single, \"Algorithmic Whispers.\" A standout track that anchors the album\'s narrative, the song explores the friction of maintaining human connection in a \"post-truth,\" AI-infused landscape. With his signature blend of folky cello and thoughtful lyricism, Sollee examines how we find our own rhythm when digital forces are constantly trying to set the pace for us.\nThe 10-track album features eight re-imagined fan favorites from Sollee\'s catalog, alongside two new songs.\nRecorded at Swingfingers Studios, the album features a tight-knit ensemble including Bradley Morse (bass), Kevin Matthews (drums), Brandon Coleman and Eric Wiggs (guitar) and Spencer Zweifel (keys/organ). Together, they\'ve crafted a sound that is confident and intentional - capturing the \"traveling groove\" that has become a hallmark of Sollee\'s work.",
+        detail: "Celebrated cellist, songwriter and storyteller Ben Sollee is back with a fresh perspective and a new collection of songs. His brand new album Time On Hold serves as a vibrant follow-up to his 2024 full-length Long Haul and his recent, atmospheric EP Common Ghosts, marking a prolific period of creative renewal for the Kentucky artist.\nWhile Long Haul navigated the personal terrain of recovery and physical resilience, Time On Hold turns its gaze outward. The album finds Sollee leaning into a soulful, country-inflected sound that captures the warmth of his live performances. Drawing on influences from Willie Nelson to Phoebe Snow, it is a record that feels both grounded in tradition and keenly aware of the modern world\'s complexities.\nExplore Ben Sollee\'s new single and music catalog ⬇️\n\nThe journey began on January 16 with the release of the first single, \"Algorithmic Whispers.\" A standout track that anchors the album\'s narrative, the song explores the friction of maintaining human connection in a \"post-truth,\" AI-infused landscape. With his signature blend of folky cello and thoughtful lyricism, Sollee examines how we find our own rhythm when digital forces are constantly trying to set the pace for us.\nThe 10-track album features eight re-imagined fan favorites from Sollee\'s catalog, alongside two new songs.\nThe album features a tight-knit ensemble including Bradley Morse (bass), Kevin Matthews (drums), Brandon Coleman and Eric Wiggs (guitar) and Spencer Zweifel (keys/organ). Together, they\'ve crafted a sound that is confident and intentional - capturing the \"traveling groove\" that has become a hallmark of Sollee\'s work.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -1727,7 +1714,7 @@ const events = [
         name: `Rumours ATL: A Fleetwood Mac Tribute`,
         sort_time: "2026-03-15 18:00:00",
         end_time_formatted: "2026-03-15 21:00",
-        detail: "For over a decade, Rumours ATL: A Fleetwood Mac Tribute has proven to be the most authentic live recreation of Fleetwood Mac’s golden era. With a reverence for the legendary group’s rich history, Rumours ATL: A Fleetwood Mac Tribute masterfully captures the magic of Fleetwood Mac’s iconic sound. From the hauntingly beautiful melodies of “Rhiannon” and “Songbird” to the electrifying energy of “Go Your Own Way,” every performance is a journey through the timeless classics that defined a generation and continues to influence pop and rock music today. Each member of Rumours ATL: A Fleetwood Mac Tribute brings a unique touch to their role, immersing themselves in the essence of their iconic counterparts. Their attention to musical detail ensures that every show resonates with the essence of Fleetwood Mac’s original spirit. Yet, beyond the impeccable recreations, there is an enigmatic quality to their performances that keeps audiences guessing and longing for more. The band’s allure lies not just in their exceptional musicianship, but in their ability to evoke the mystical charm of Fleetwood Mac. They weave an experience that transcends mere imitation, offering a glimpse into the soul of the legendary band’s performances. Their intricate harmonies and evocative stage presence creates an atmosphere where each concert feels both familiar yet enchantingly new. Rumours ATL: A Fleetwood Mac Tribute invites you to step into a world where the legend of Fleetwood Mac comes alive once more. With a blend of nostalgia and intrigue, their shows promise a unique adventure that longtime fans and newcomers alike will cherish",
+        detail: "For over a decade, Rumours ATL: A Fleetwood Mac Tribute has proven to be the most authentic live recreation of Fleetwood Mac’s golden era. With a reverence for the legendary ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2585,7 +2572,7 @@ const events = [
         name: `The Lone Bellow`,
         sort_time: "2026-03-27 19:30:00",
         end_time_formatted: "2026-03-27 23:59",
-        detail: "The Lone Bellow\'s upcoming sixth album, What A Time To Be Alive captures the band’s signature harmonies and heartfelt storytelling while boldly stepping into new sonic territory with their full touring ensemble.\nWith their upcoming sixth studio album, What A Time To Be Alive, The Lone Bellow embarks on a bold new chapter while honoring the deep bonds that have defined their journey. Written collaboratively for the first time with their full touring band—founding members Zach Williams, Brian Elmquist, and Kanene Pipkin joined by drummer Julian Dorio and multi-instrumentalist Tyler Geertsma—the album channels the raw, ecstatic energy of the band’s live show into a dynamic collection of songs that pulse with warmth, honesty, and human connection.\nRecorded live in Muscle Shoals, AL, after a writing retreat in a converted Kentucky firehouse, the album is both a celebration and a reckoning: of friendship, loss, love, and resilience. From the gritty, Stones-tinged opener “After The Rain” to the soul-stirring closer “What A Time To Be Alive,” the record captures the joy and vulnerability that have long defined The Lone Bellow’s sound—lush harmonies, heartfelt lyrics, and genre-blurring arrangements steeped in folk, rock, and gospel.\nThe album’s creation was marked by setbacks, including the theft of early recordings, but the outpouring of support from their fanbase reaffirmed what the band has always known: their music is a shared experience. That spirit echoes throughout the album, whether in anthems like “Common Folk” and “I’m Here For You,” or in intimate reflections like “You Were Leaving” and “Night Goes Black.”\nSince their acclaimed 2013 debut, The Lone Bellow has appeared on The Tonight Show, Austin City Limits, and The Late Show, topped Americana charts, and headlined storied venues from Carnegie Hall to the Ryman Auditorium. But with their next album, they reaffirm their commitment not just to making music, but to building community—on stage, in song, and around the table.",
+        detail: "The Lone Bellow\'s upcoming sixth album, What A Time To Be Alive captures the band’s signature harmonies and heartfelt storytelling while boldly stepping into new sonic territory with their full touring ensemble.\n\nWith their upcoming sixth studio album, What A Time To Be Alive, The Lone Bellow embarks on a bold new chapter while honoring the deep bonds that have defined their journey. Written collaboratively for the first time with their full touring band—founding members Zach Williams, Brian Elmquist, and Kanene Pipkin joined by drummer Julian Dorio and multi-instrumentalist Tyler Geertsma—the album channels the raw, ecstatic energy of the band’s live show into a dynamic collection of songs that pulse with warmth, honesty, and human connection.\nRecorded live in Muscle Shoals, AL, after a writing retreat in a converted Kentucky firehouse, the album is both a celebration and a reckoning: of friendship, loss, love, and resilience. From the gritty, Stones-tinged opener “After The Rain” to the soul-stirring closer “What A Time To Be Alive,” the record captures the joy and vulnerability that have long defined The Lone Bellow’s sound—lush harmonies, heartfelt lyrics, and genre-blurring arrangements steeped in folk, rock, and gospel.\nThe album’s creation was marked by setbacks, including the theft of early recordings, but the outpouring of support from their fanbase reaffirmed what the band has always known: their music is a shared experience. That spirit echoes throughout the album, whether in anthems like “Common Folk” and “I’m Here For You,” or in intimate reflections like “You Were Leaving” and “Night Goes Black.”\nSince their acclaimed 2013 debut, The Lone Bellow has appeared on The Tonight Show, Austin City Limits, and The Late Show, topped Americana charts, and headlined storied venues from Carnegie Hall to the Ryman Auditorium. But with their next album, they reaffirm their commitment not just to making music, but to building community—on stage, in song, and around the table.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2767,6 +2754,19 @@ const events = [
         name: `Event: Opinionary`,
         sort_time: "2026-04-01 18:00:00",
         end_time_formatted: "2026-04-01 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-04-02",
+        event_time: "4:00 pm - 8:00 pm",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Toasted Cuban`,
+        sort_time: "2026-04-02 16:00:00",
+        end_time_formatted: "2026-04-02 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
@@ -3352,7 +3352,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
