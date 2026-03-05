@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-03-05 08:02:25";
+const eventDataVersion = "Thursday, 2026-03-05 14:05:28";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -830,7 +830,7 @@ const events = [
         name: `Earl Scruggs Music Festival Kick Off Party ft. Jacoozy`,
         sort_time: "2026-03-06 17:30:00",
         end_time_formatted: "2026-03-06 21:00",
-        detail: "Join us in The Sierra Nevada High Gravity Room on Friday, March 6 for a FREE Kick off Party to celebrate the launch of the Earl Scruggs Music Festival lineup! ...\nRead More",
+        detail: "Join us in The Sierra Nevada High Gravity Room on Friday, March 6 for a FREE Kick off Party to celebrate the launch of the Earl Scruggs Music Festival lineup!\nLive performances from Jacoozy and The Foreign Landers! We will be doing a ticket giveaway and handing out some special gifts to the first 50 folks!\n🪕 Festival lineup gets announced March 4 at 10am\n🪕 Festival tickets go on sale March 6 at 10am",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3014,7 +3014,7 @@ const events = [
         name: `The Aaron Austin Band`,
         sort_time: "2026-04-12 14:00:00",
         end_time_formatted: "2026-04-12 17:00",
-        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North Carolina born guitarist Aaron Austin, the trio channels the grit of ’70s jazz fusion alongside imaginative new takes on the American Songbook inspired by Hendrix, Trucks, Scofield, and Frisell. Anchored by Asheville standouts Jake Wolf (bass) and Ted Marks(drums), The Aaron Austin Band brings emotive playing and locked in grooves that keep every performance alive and in the moment. A seasoned bandleader and collaborator, Austin released his debut solo album in 2019 featuring Jeff Sipe, Marcus King, and the late Kofi Burbridge. Austin tours internationally with “Caitlin Krisko & The Broadcast” sharing stages with Tedeschi Trucks Band, The Wood Brothers, Mavis Staples, Kacey Musgraves, and many more.",
+        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3144,7 +3144,7 @@ const events = [
         name: `My Magnificent Nemesis w/ Alien Music Club`,
         sort_time: "2026-04-19 14:00:00",
         end_time_formatted: "2026-04-19 17:00",
-        detail: "My Magnificent Nemesis:\nIf you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor.\nAlien Music Club:\nAMC is the brainchild of Jonathan Pearlman, a veteran of the WNC Music Scene. He is a composer and producer. He’s an accomplished guitarist. Soft spoken and shy off stage he speaks from the heart on stage, and does so effortlessly and fluently.",
+        detail: "My Magnificent Nemesis: If you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor. ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3274,7 +3274,7 @@ const events = [
         name: `Strange Rangers`,
         sort_time: "2026-04-25 14:00:00",
         end_time_formatted: "2026-04-25 17:00",
-        detail: "Pop/Funk/Soul/Improvisation\nStrange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
+        detail: "Pop/Funk/Soul/Improvisation Strange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3378,7 +3378,7 @@ const events = [
         name: `Tina and Her Pony`,
         sort_time: "2026-05-03 14:00:00",
         end_time_formatted: "2026-05-03 17:00",
-        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence to the stage. Known for lush harmonies, country folk storytelling, and songs that soothe as much as they stir, Tina’s music carries a quiet magic that lingers long after the last note.\nFrom the hills of Asheville to the deserts of New Mexico, she’s spent over a decade refining her sound by melding classic folk with touches of Americana, and more recently, dreamy pop and psychedelic soul.",
+        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3527,12 +3527,25 @@ const events = [
     {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
+        event_date: "2026-05-28",
+        event_time: "6:00 pm - 9:30 pm",
+        start_time: "6:00 pm",
+        end_time: "9:30 pm",
+        name: `Steep Canyon Rangers`,
+        sort_time: "2026-05-28 18:00:00",
+        end_time_formatted: "2026-05-28 21:30",
+        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
         event_date: "2026-05-29",
-        event_time: "7:00 pm - 10:00 pm",
-        start_time: "7:00 pm",
+        event_time: "6:00 pm - 10:00 pm",
+        start_time: "6:00 pm",
         end_time: "10:00 pm",
         name: `Steep Canyon Rangers`,
-        sort_time: "2026-05-29 19:00:00",
+        sort_time: "2026-05-29 18:00:00",
         end_time_formatted: "2026-05-29 22:00",
         detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
