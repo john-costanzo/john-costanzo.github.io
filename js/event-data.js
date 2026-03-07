@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2026-03-07 08:02:41";
+const eventDataVersion = "Saturday, 2026-03-07 14:04:33";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -65,19 +65,6 @@ const events = [
         end_time_formatted: "2025-11-27 18:00",
         detail: "None",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2025-12-06",
-        event_time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 PM",
-        end_time: "8:00 PM",
-        name: `Iggy Radio`,
-        sort_time: "2025-12-06 18:00:00",
-        end_time_formatted: "2025-12-06 20:00",
-        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -689,19 +676,6 @@ const events = [
         end_time_formatted: "2026-02-28 23:00",
         detail: "Amanda Platt and the Honeycutters headline our Winter Ramble weekend. Music starts @8pm! $26 at the door!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
-    },
-    {
-        url: "https://www.thecrowandquill.com/events",
-        venue: "Crow and Quill",
-        event_date: "2026-03-06",
-        event_time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: `Meschiya Lake & The Moodswingers`,
-        sort_time: "2026-03-06 00:00:00",
-        end_time_formatted: "2026-03-06 23:59",
-        detail: "New Orleans jazz & blues!",
-        location: "Crow and Quill 106 N Lexington Ave, Asheville, NC 28801",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -1328,6 +1302,19 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-03-14",
+        event_time: "2:00 am - 5:00 pm",
+        start_time: "2:00 am",
+        end_time: "5:00 pm",
+        name: `ST. PATRICK’S DAY PET PARADE!`,
+        sort_time: "2026-03-14 02:00:00",
+        end_time_formatted: "2026-03-14 17:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-03-14",
@@ -1532,7 +1519,7 @@ const events = [
         name: `Rumours ATL: A Fleetwood Mac Tribute`,
         sort_time: "2026-03-15 18:00:00",
         end_time_formatted: "2026-03-15 21:00",
-        detail: "For over a decade, Rumours ATL: A Fleetwood Mac Tribute has proven to be the most authentic live recreation of Fleetwood Mac’s golden era. With a reverence for the legendary group’s rich history, Rumours ATL: A Fleetwood Mac Tribute masterfully captures the magic of Fleetwood Mac’s iconic sound. From the hauntingly beautiful melodies of “Rhiannon” and “Songbird” to the electrifying energy of “Go Your Own Way,” every performance is a journey through the timeless classics that defined a generation and continues to influence pop and rock music today. Each member of Rumours ATL: A Fleetwood Mac Tribute brings a unique touch to their role, immersing themselves in the essence of their iconic counterparts. Their attention to musical detail ensures that every show resonates with the essence of Fleetwood Mac’s original spirit. Yet, beyond the impeccable recreations, there is an enigmatic quality to their performances that keeps audiences guessing and longing for more. The band’s allure lies not just in their exceptional musicianship, but in their ability to evoke the mystical charm of Fleetwood Mac. They weave an experience that transcends mere imitation, offering a glimpse into the soul of the legendary band’s performances. Their intricate harmonies and evocative stage presence creates an atmosphere where each concert feels both familiar yet enchantingly new. Rumours ATL: A Fleetwood Mac Tribute invites you to step into a world where the legend of Fleetwood Mac comes alive once more. With a blend of nostalgia and intrigue, their shows promise a unique adventure that longtime fans and newcomers alike will cherish",
+        detail: "For over a decade, Rumours ATL: A Fleetwood Mac Tribute has proven to be the most authentic live recreation of Fleetwood Mac’s golden era. With a reverence for the legendary ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3122,19 +3109,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - April",
     },
     {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        event_date: "2026-04-19",
-        event_time: "1:00 pm - 4:00 pm",
-        start_time: "1:00 pm",
-        end_time: "4:00 pm",
-        name: `THE JACKTOWN RAMBLERS`,
-        sort_time: "2026-04-19 13:00:00",
-        end_time_formatted: "2026-04-19 16:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-04-19",
@@ -3391,7 +3365,7 @@ const events = [
         name: `The Deep Shallow Band`,
         sort_time: "2026-05-09 14:00:00",
         end_time_formatted: "2026-05-09 17:00",
-        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie shine through during their energetic performances and on their new album, “Copy and Paste,” released in the spring of 2023. The band has entertained an enthusiastic following throughout North Carolina since 2014 and would love to see you at their next show.",
+        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3417,7 +3391,7 @@ const events = [
         name: `Reggie Watts`,
         sort_time: "2026-05-14 18:00:00",
         end_time_formatted: "2026-05-14 21:00",
-        detail: "Reggie Watts is an internationally renowned Musician/Comedian/Writer/Actor who most recently starred as the bandleader on CBS’s The Late Late Show with James Corden. Using his formidable voice, looping pedals, and his vast imagination, Watts blends and blurs the lines between music and comedy, wowing audiences with performances that are 100% improvised. \nHe was recently the DJ at the 2021 Emmy Awards, which saw a 15% ratings boost from 2020. \nWatts’ first Netflix special Spatial released to massive critical acclaim, with the New York Times calling it “a giddy rush of escapist nonsense” and dubbing Watts “the most influential absurdist in comedy today.” The A.V. Club described Spatial as “signature Watts, meaning it’s alternately exhilarating, silly, exhausting and transcendent,” and Exclaim! Magazine called his performance “engaging, absurd, thoughtful and, most importantly, wholly unpredictable.”\nAs a solo performer, Watts brand of musical/comedy fusion has led to sold out headlining tours in the U.S. and Europe, including festivals such as Bonnaroo, SXSW, Bumbershoot, Just For Laughs, Pemberton and more.\nIn 2020, Watts released his own content app called, WattsApp, a techno-savvy look into his life, work, and techno junk drawer. WattsApp has all original content including a show called, Droneversations where he interviews guests while it’s filmed by drones along with other fun content.\nIn 2010, Watts released his debut comedy special, Why Shit So Crazy? on Comedy Central Records, and is now available to stream on Netflix. Why Shit So Crazy? featured Watts in live performances at New York venues such as Galapagos, The Bellhouse, and Le Poisson Rouge, bookended with brief sketches and music videos. Later that year, at the invitation of Jack White, Watts recorded Reggie Watts: Live at Third Man Records which was released in limited edition vinyl. In 2012, Watts recorded his second comedy special, Reggie Watts: A Live at Central Park, which was released by Comedy Central.\nReggie’s memoir, Great Falls, MT will be published on October 17th, 2023, by Penguin’s highly curated Tiny Reparations imprint.\nWatts was born in Germany, raised in Montana, and currently resides in Los Angeles.",
+        detail: "At the intersection of music and comedy, lives Reggie Watts. A one of kind live looping performer known for his hilariously disorienting and fully improvised performances.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3443,7 +3417,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3534,7 +3508,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-28 18:00:00",
         end_time_formatted: "2026-05-28 21:30",
-        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
+        detail: "Second Night Added Due to Demand",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
