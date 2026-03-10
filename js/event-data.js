@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-03-09 08:02:43";
+const eventDataVersion = "Monday, 2026-03-09 20:03:54";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -691,19 +691,6 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-03-09",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Cactus Rainbow`,
-        sort_time: "2026-03-09 16:00:00",
-        end_time_formatted: "2026-03-09 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-03-09",
@@ -1285,7 +1272,7 @@ const events = [
         name: `Rumours ATL: A Fleetwood Mac Tribute`,
         sort_time: "2026-03-15 18:00:00",
         end_time_formatted: "2026-03-15 21:00",
-        detail: "For over a decade, Rumours ATL: A Fleetwood Mac Tribute has proven to be the most authentic live recreation of Fleetwood Mac’s golden era. With a reverence for the legendary ...\nRead More",
+        detail: "For over a decade, Rumours ATL: A Fleetwood Mac Tribute has proven to be the most authentic live recreation of Fleetwood Mac’s golden era. With a reverence for the legendary group’s rich history, Rumours ATL: A Fleetwood Mac Tribute masterfully captures the magic of Fleetwood Mac’s iconic sound. From the hauntingly beautiful melodies of “Rhiannon” and “Songbird” to the electrifying energy of “Go Your Own Way,” every performance is a journey through the timeless classics that defined a generation and continues to influence pop and rock music today. Each member of Rumours ATL: A Fleetwood Mac Tribute brings a unique touch to their role, immersing themselves in the essence of their iconic counterparts. Their attention to musical detail ensures that every show resonates with the essence of Fleetwood Mac’s original spirit. Yet, beyond the impeccable recreations, there is an enigmatic quality to their performances that keeps audiences guessing and longing for more. The band’s allure lies not just in their exceptional musicianship, but in their ability to evoke the mystical charm of Fleetwood Mac. They weave an experience that transcends mere imitation, offering a glimpse into the soul of the legendary band’s performances. Their intricate harmonies and evocative stage presence creates an atmosphere where each concert feels both familiar yet enchantingly new. Rumours ATL: A Fleetwood Mac Tribute invites you to step into a world where the legend of Fleetwood Mac comes alive once more. With a blend of nostalgia and intrigue, their shows promise a unique adventure that longtime fans and newcomers alike will cherish",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1870,7 +1857,7 @@ const events = [
         name: `Kindred Valley`,
         sort_time: "2026-03-22 19:30:00",
         end_time_formatted: "2026-03-22 23:59",
-        detail: "Indie folk band Kindred Valley began when three friends with a passion for music met at Marshall University in 2020. Initially under the name Back Row Baptists, Blake Lacy, Noah Freeman, and Breb McCoy met in Huntington, West Virginia, and began writing and recording music together.\n\nThe band released its first singles as a trio but found its footing in 2021 with two new members - husband and wife Rachael and Jadon Hayes. Following the unexpected success of their debut self-titled album, the band took to the road and began playing shows across the Eastern United States.\nIt was during this time that Kindred Valley began to form an identity and sound unique to itself, one built on the ideas and shared experiences of each member. After releasing their EP “What Was Left”, the group continued to hone their craft, writing songs and playing shows as often as time allowed.\nListen to Kindred Valley\'s music catalog ⬇️",
+        detail: "Indie folk band Kindred Valley began when three friends with a passion for music met at Marshall University in 2020. Initially under the name Back Row Baptists, Blake Lacy, Noah Freeman, and Breb McCoy met in Huntington, West Virginia, and began writing and recording music together.\nThe band released its first singles as a trio but found its footing in 2021 with two new members - husband and wife Rachael and Jadon Hayes. Following the unexpected success of their debut self-titled album, the band took to the road and began playing shows across the Eastern United States.\nIt was during this time that Kindred Valley began to form an identity and sound unique to itself, one built on the ideas and shared experiences of each member. After releasing their EP “What Was Left”, the group continued to hone their craft, writing songs and playing shows as often as time allowed.\nListen to Kindred Valley\'s music catalog ⬇️",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -1987,7 +1974,7 @@ const events = [
         name: `Larkin Poe`,
         sort_time: "2026-03-24 19:30:00",
         end_time_formatted: "2026-03-24 23:59",
-        detail: "Larkin Poe\'s latest album Bloom (GRAMMY nominated for Best Americana Album) sees the dynamic sister duo venturing further along on their evolving musical journey with a collection of songs that resonate with introspection, authenticity, and a profound connection to their roots in American music. Produced and largely co-written by Megan, Rebecca, and Tyler Bryant, the album marks a significant evolution for Larkin Poe, reflecting a synergy that extends beyond mere musical partnership. Already hailed for the sincerity of their songcraft, the Lovell sisters now place an even greater spotlight on their gift for storytelling, delving deep into personal narratives with universal themes of self-acceptance and individuality against a backdrop of contemporary blues and rock influences. With their distinctive blend of masterful instrumentation and soulful harmonies, each track unfolds like a chapter, with lyrics that wind deeper and deeper towards the heart of Larkin Poe.\nWatch Larkin Poe\'s performance from Jimmy Kimmel LIVE!",
+        detail: "Larkin Poe\'s latest album Bloom (GRAMMY nominated for Best Americana Album) sees the dynamic sister duo venturing further along on their evolving musical journey with a collection of songs that resonate with introspection, authenticity, and a profound connection to their roots in American music. Produced and largely co-written by Megan, Rebecca, and Tyler Bryant, the album marks a significant evolution for Larkin Poe, reflecting a synergy that extends beyond mere musical partnership. Already hailed for the sincerity of their songcraft, the Lovell sisters now place an even greater spotlight on their gift for storytelling, delving deep into personal narratives with universal themes of self-acceptance and individuality against a backdrop of contemporary blues and rock influences. With their distinctive blend of masterful instrumentation and soulful harmonies, each track unfolds like a chapter, with lyrics that wind deeper and deeper towards the heart of Larkin Poe.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2026,7 +2013,7 @@ const events = [
         name: `Be Like Blippi Tour`,
         sort_time: "2026-03-25 18:00:00",
         end_time_formatted: "2026-03-25 23:59",
-        detail: "Get ready to see the world more curiously, because Blippi is coming to your hometown in the all-new Be Like Blippi Tour!\n \nJoin Blippi and Meekah live on stage for a one-of-a-kind interactive adventure that inspires kids to move like, play like, and explore just like Blippi! \n\n \nThis brand-new show is packed with high-energy music and surprises, featuring fan-favorite songs like “The Excavator Song,” “Monster Truck,” “Dino Dance,” and “Curious Like Me.” With Blippi’s signature mix of play, learning, and exploration, families can get curious together while singing, laughing, and dancing along during this unforgettable adventure full of fun and discovery. \n \nThe Be Like Blippi Tour invites you to break out your orange Blippi glasses and ignite that spark of curiosity that lives inside every single one of us and share in an unforgettable experience that encourages kids to… Be Like Blippi!\n \nDownload your free Activity Sheets and start the fun at home! Sing, dance, and explore with Blippi before the big show, then join him live!\n \nDownload Activity Sheets",
+        detail: "Get ready to see the world more curiously, because Blippi is coming to your hometown in the all-new Be Like Blippi Tour! \n \nJoin Blippi and Meekah live on stage for a one-of-a-kind interactive adventure that inspires kids to move like, play like, and explore just like Blippi! \n\n \nThis brand-new show is packed with high-energy music and surprises, featuring fan-favorite songs like “The Excavator Song,” “Monster Truck,” “Dino Dance,” and “Curious Like Me.” With Blippi’s signature mix of play, learning, and exploration, families can get curious together while singing, laughing, and dancing along during this unforgettable adventure full of fun and discovery. \n \nThe Be Like Blippi Tour invites you to break out your orange Blippi glasses and ignite that spark of curiosity that lives inside every single one of us and share in an unforgettable experience that encourages kids to… Be Like Blippi!\n \nStart the fun early with these free downloadable activity sheets for kids!\n \nDownload the Activity Sheets",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2156,7 +2143,7 @@ const events = [
         name: `The Crossing`,
         sort_time: "2026-03-26 19:30:00",
         end_time_formatted: "2026-03-26 23:59",
-        detail: "Musical America’s 2024 Ensemble of the Year, The Crossing is a Grammy®-winning professional chamber choir dedicated to new music, and conducted by Donald Nally. With a commitment to recording its commissions, The Crossing has issued 36 releases, receiving four Grammy Awards for Best Choral Performance (2018, 2019, 2023, 2025), and ten Grammy nominations. Many of its nearly 190 commissioned premieres address social, environmental, and political issues and are collaborations with the most prestigious musicians, ensembles, and venues. They are the recipients of the 2015 Margaret Hillis Award for Choral Excellence, three ASCAP Awards for Adventurous Programming, and the Dale Warland Singers Commission Award from Chorus America.\nAbout the Program\nLike his Pulitzer-winning work the little match girl passion, David Lang’s poor hymnal tries to get to the core of what a religious experience can be. “What I love about hymnals,” the composer writes in his liner notes to the CD, “is that they’re a catalog of things a community of worshippers can agree on — a catalog that can be sung. And what the worshippers are singing about matters.”\npoor hymnal is a concert-length work written for The Crossing, conducted by Donald Nally. Lang constructed the text by stitching together lines, phrases and poignant utterances from sources as varied as the Old Testament, Mahatma Gandhi and Tolstoy — to name just a few. As Lang explains: “This piece is trying to say: The reason we are coming together is to remember how important we are to each other, and to remember how important it is that we take care of each other.”",
+        detail: "About The Crossing\nMusical America’s 2024 Ensemble of the Year, The Crossing is a Grammy®-winning professional chamber choir dedicated to new music, and conducted by Donald Nally. With a commitment to recording its commissions, The Crossing has issued 36 releases, receiving four Grammy Awards for Best Choral Performance (2018, 2019, 2023, 2025), and ten Grammy nominations. Many of its nearly 190 commissioned premieres address social, environmental, and political issues and are collaborations with the most prestigious musicians, ensembles, and venues. They are the recipients of the 2015 Margaret Hillis Award for Choral Excellence, three ASCAP Awards for Adventurous Programming, and the Dale Warland Singers Commission Award from Chorus America.\n\nA Note from the Composer\nI have a small collection of old hymnals that I have picked up over the years, used and thumbed over and smudged by the generations of people who had turned their pages. What I love about hymnals is that they are a catalog of things a community of worshippers can agree on, a catalog that can be sung. And what the worshippers are singing about matters. The texts represent the beliefs and values that the worshippers all share, so hymnals have the power to highlight the hymns that make a particular community feel and act differently from all the others.\nMany religions—mine included—profess that an important part of their belief is to care about how people who are comfortable should act toward people who are not. How we were strangers in a strange land, the least among us, the camel going through the eye of the needle, etc. Of course, it is hard for us to remind ourselves to keep caring, and it would be so much easier to forget. With this in mind, I wondered if the hymns of a community that did not want to forget our responsibilities to each other, and that wanted to make our responsibilities to each other the central tenet of our coming together, might be different from the hymns that we are singing now. I wrote poor hymnal to find out.\nI should add that I first became interested in the idea of a hymnal from my college enthusiasm for the music of Charles Ives. Ives’s music is full of references to the hymns of old New England that were so important to his upbringing. His pieces are full of distorted and fragmentary references to the music of his youth. This, of course, was not the music of my youth. I bought my first hymnal because I needed to learn more about Ives’s world if I was going to be able to go deeper into his music, and so if there is anything in poor hymnal that reminds the listener of a New England church experience that is most likely where it comes from.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2247,7 +2234,7 @@ const events = [
         name: `The Lone Bellow`,
         sort_time: "2026-03-27 19:30:00",
         end_time_formatted: "2026-03-27 23:59",
-        detail: "The Lone Bellow\'s upcoming sixth album, What A Time To Be Alive captures the band’s signature harmonies and heartfelt storytelling while boldly stepping into new sonic territory with their full touring ensemble.\n\nWith their upcoming sixth studio album, What A Time To Be Alive, The Lone Bellow embarks on a bold new chapter while honoring the deep bonds that have defined their journey. Written collaboratively for the first time with their full touring band—founding members Zach Williams, Brian Elmquist, and Kanene Pipkin joined by drummer Julian Dorio and multi-instrumentalist Tyler Geertsma—the album channels the raw, ecstatic energy of the band’s live show into a dynamic collection of songs that pulse with warmth, honesty, and human connection.\nRecorded live in Muscle Shoals, AL, after a writing retreat in a converted Kentucky firehouse, the album is both a celebration and a reckoning: of friendship, loss, love, and resilience. From the gritty, Stones-tinged opener “After The Rain” to the soul-stirring closer “What A Time To Be Alive,” the record captures the joy and vulnerability that have long defined The Lone Bellow’s sound—lush harmonies, heartfelt lyrics, and genre-blurring arrangements steeped in folk, rock, and gospel.\nThe album’s creation was marked by setbacks, including the theft of early recordings, but the outpouring of support from their fanbase reaffirmed what the band has always known: their music is a shared experience. That spirit echoes throughout the album, whether in anthems like “Common Folk” and “I’m Here For You,” or in intimate reflections like “You Were Leaving” and “Night Goes Black.”\nSince their acclaimed 2013 debut, The Lone Bellow has appeared on The Tonight Show, Austin City Limits, and The Late Show, topped Americana charts, and headlined storied venues from Carnegie Hall to the Ryman Auditorium. But with their next album, they reaffirm their commitment not just to making music, but to building community—on stage, in song, and around the table.",
+        detail: "The Lone Bellow\'s upcoming sixth album, What A Time To Be Alive captures the band’s signature harmonies and heartfelt storytelling while boldly stepping into new sonic territory with their full touring ensemble.\nWith their upcoming sixth studio album, What A Time To Be Alive, The Lone Bellow embarks on a bold new chapter while honoring the deep bonds that have defined their journey. Written collaboratively for the first time with their full touring band—founding members Zach Williams, Brian Elmquist, and Kanene Pipkin joined by drummer Julian Dorio and multi-instrumentalist Tyler Geertsma—the album channels the raw, ecstatic energy of the band’s live show into a dynamic collection of songs that pulse with warmth, honesty, and human connection.\nRecorded live in Muscle Shoals, AL, after a writing retreat in a converted Kentucky firehouse, the album is both a celebration and a reckoning: of friendship, loss, love, and resilience. From the gritty, Stones-tinged opener “After The Rain” to the soul-stirring closer “What A Time To Be Alive,” the record captures the joy and vulnerability that have long defined The Lone Bellow’s sound—lush harmonies, heartfelt lyrics, and genre-blurring arrangements steeped in folk, rock, and gospel.\nThe album’s creation was marked by setbacks, including the theft of early recordings, but the outpouring of support from their fanbase reaffirmed what the band has always known: their music is a shared experience. That spirit echoes throughout the album, whether in anthems like “Common Folk” and “I’m Here For You,” or in intimate reflections like “You Were Leaving” and “Night Goes Black.”\nSince their acclaimed 2013 debut, The Lone Bellow has appeared on The Tonight Show, Austin City Limits, and The Late Show, topped Americana charts, and headlined storied venues from Carnegie Hall to the Ryman Auditorium. But with their next album, they reaffirm their commitment not just to making music, but to building community—on stage, in song, and around the table.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2416,7 +2403,7 @@ const events = [
         name: `Dorrance Dance featuring Elizabeth Burke and Luke Hickey`,
         sort_time: "2026-03-28 20:00:00",
         end_time_formatted: "2026-03-28 23:59",
-        detail: "Join award-winning tap dance company Dorrance Dance for a brand new program that showcases the musicality and versatility of its “close-knit family” (Wall Street Journal) of dancer-musicians, featuring the DD choreographic debut of longtime company members Elizabeth Burke and Luke Hickey.\nGet a first look at A Swing Suite — where rhythm and storytelling meet.\n\n\n\n\n\nA Swing Suite (2023) is tremendously inspired by the music that Burke and Hickey’s mentor, Gene Medler, exposed them to as kids, and how it shaped their taste and artistic lives. The work is an homage to Gene and an offering around the idea that just about every road leads back to home.\nPaired with Michelle Dorrance’s critically acclaimed SOUNDspace | REDUX (2013), an originally site-specific work that explored the unique acoustics of New York City’s St. Mark’s Church through the myriad sounds and textures of the feet, the program continues to explore what is most beautiful and exceptional about tap dancing - movement as music.\nBy supporting the development and touring of new works alongside company classics, Dorrance Dance continues “blasting our notions of tap dance” with every performance.\nPhoto by Richard Termine\n\n\nEXCLUSIVE ARTICLE: Step inside the world of Dorrance Dance and discover the passion, rhythm, and artistry that bring tap dance to life. This exclusive feature highlights the dancers’ incredible talent and the stories behind the music that fuels their performances.\nRead now",
+        detail: "“With each performance of Dorrance Dance, tap expands.”— The New York Times\nJoin award-winning tap dance company Dorrance Dance for a brand new program that showcases the musicality and versatility of its “close-knit family” (Wall Street Journal) of dancer-musicians, featuring the DD choreographic debut of longtime company members Elizabeth Burke and Luke Hickey.\n\n \nA Swing Suite (2023) is tremendously inspired by the music that Burke and Hickey’s mentor, Gene Medler, exposed them to as kids, and how it shaped their taste and interest throughout their entire artistic lives. The work is an homage to Gene, and an offering around the idea that just about every road leads back to home.\nPaired with Michelle Dorrance’s critically acclaimed SOUNDspace | REDUX (2013), an originally site-specific work that explored the unique acoustics of New York City’s St. Mark’s Church through the myriad sounds and textures of the feet, which has been adapted and continues to explore what is most beautiful and exceptional about tap dancing - movement as music.\nBy supporting the development and touring of new works alongside company classics, Dorrance Dance continues “blasting our notions of tap dance” with every performance.\nA Carolinas Connection \nTap dancers Elizabeth Burke and Luke Hickey, both originally from Chapel Hill, North Carolina, bring world-class rhythm and artistry to the stage as members of the acclaimed Dorrance Dance. Longtime collaborators and internationally recognized performers, Burke and Hickey have toured the globe with the award-winning company while also creating and performing their own original choreography.\nRooted in the rich tap traditions they first explored in the Carolinas and shaped by years on stages from New York City Center to the Kennedy Center, their work blends virtuosic footwork, musicality, and live collaboration. Together, they showcase tap as both dance and music, dynamic, expressive, and deeply connected to its cultural roots.\nExperience their original work A Swing Suite live, a vibrant celebration of rhythm, collaboration, and the joyful spirit of tap dance.\nPhoto by Richard Termine",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2559,7 +2546,7 @@ const events = [
         name: `The Great Gatsby (2026-03-31 -> 2026-04-05)`,
         sort_time: "2026-03-31 00:00:00",
         end_time_formatted: "2026-03-31 23:59",
-        detail: "The party’s roaring in Greenville!\n\nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, this Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones), and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
+        detail: "The party’s roaring in Greenville!\n\n \nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, the Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones) and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2598,7 +2585,7 @@ const events = [
         name: `The Great Gatsby (2026-03-31 -> 2026-04-05)`,
         sort_time: "2026-04-01 00:00:00",
         end_time_formatted: "2026-04-01 23:59",
-        detail: "The party’s roaring in Greenville!\n\nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, this Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones), and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
+        detail: "The party’s roaring in Greenville!\n\n \nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, the Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones) and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2637,7 +2624,7 @@ const events = [
         name: `The Great Gatsby (2026-03-31 -> 2026-04-05)`,
         sort_time: "2026-04-02 00:00:00",
         end_time_formatted: "2026-04-02 23:59",
-        detail: "The party’s roaring in Greenville!\n\nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, this Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones), and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
+        detail: "The party’s roaring in Greenville!\n\n \nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, the Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones) and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2676,7 +2663,7 @@ const events = [
         name: `The Great Gatsby (2026-03-31 -> 2026-04-05)`,
         sort_time: "2026-04-03 00:00:00",
         end_time_formatted: "2026-04-03 23:59",
-        detail: "The party’s roaring in Greenville!\n\nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, this Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones), and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
+        detail: "The party’s roaring in Greenville!\n\n \nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, the Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones) and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2728,7 +2715,7 @@ const events = [
         name: `The Great Gatsby (2026-03-31 -> 2026-04-05)`,
         sort_time: "2026-04-04 00:00:00",
         end_time_formatted: "2026-04-04 23:59",
-        detail: "The party’s roaring in Greenville!\n\nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, this Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones), and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
+        detail: "The party’s roaring in Greenville!\n\n \nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, the Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones) and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2767,7 +2754,7 @@ const events = [
         name: `Morrissey Blvd`,
         sort_time: "2026-04-04 14:00:00",
         end_time_formatted: "2026-04-04 17:00",
-        detail: "Morrissey Blvd. is a sibling trio from New Bedford, Massachusetts made up of Zan (lead vocals/guitar), Henri (bass/vocals), and Wilson (drums). Their sound blends soulful funk and the raw energy ...\nRead More",
+        detail: "Morrissey Blvd. is a sibling trio from New Bedford, Massachusetts made up of Zan (lead vocals/guitar), Henri (bass/vocals), and Wilson (drums). Their sound blends soulful funk and the raw energy of rock, with influences ranging from Stevie Wonder and Jack Johnson to Mt. Joy and Marcus King. Known for heartfelt lyrics and high-energy live shows, their music dives into themes like heartbreak, growth, and learning to let go.\nIn Summer 2025, Morrissey Blvd will begin to roll out a six-song EP, slated for a late summer/early fall release. They’re also hitting the road for a 20-date Northeast tour, followed by a college tour that’ll bring them through the South, East Coast, and Midwest.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2793,7 +2780,7 @@ const events = [
         name: `The Great Gatsby (2026-03-31 -> 2026-04-05)`,
         sort_time: "2026-04-05 00:00:00",
         end_time_formatted: "2026-04-05 23:59",
-        detail: "The party’s roaring in Greenville!\n\nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, this Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones), and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
+        detail: "The party’s roaring in Greenville!\n\n \nTHE GREAT GATSBY is a “Broadway extravaganza that explodes with life and energy” (Entertainment Weekly). Based on the classic American novel by F. Scott Fitzgerald, the Tony Award®-winning new musical is an unforgettable journey of love, wealth, and tragedy that brings the Roaring Twenties to life on stage.\nDirected by Marc Bruni (Beautiful: The Carole King Musical), this story of extravagance and longing features choreography by Dominique Kelley (So You Think You Can Dance), a book by Kait Kerrigan (The Mad Ones) and a jazz- and pop-influenced original score by Jason Howland (Little Women) and Nathan Tysen (Paradise Square).\nThe Great Gatsby is recommended for ages 10+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2884,6 +2871,19 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-04-07 16:00:00",
         end_time_formatted: "2026-04-07 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-04-07",
+        event_time: "6:00 pm - 9:00 pm",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Karaoke Night with DJ Mandy`,
+        sort_time: "2026-04-07 18:00:00",
+        end_time_formatted: "2026-04-07 21:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
@@ -3001,7 +3001,7 @@ const events = [
         name: `The Aaron Austin Band`,
         sort_time: "2026-04-12 14:00:00",
         end_time_formatted: "2026-04-12 17:00",
-        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North ...\nRead More",
+        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North Carolina born guitarist Aaron Austin, the trio channels the grit of ’70s jazz fusion alongside imaginative new takes on the American Songbook inspired by Hendrix, Trucks, Scofield, and Frisell. Anchored by Asheville standouts Jake Wolf (bass) and Ted Marks(drums), The Aaron Austin Band brings emotive playing and locked in grooves that keep every performance alive and in the moment. A seasoned bandleader and collaborator, Austin released his debut solo album in 2019 featuring Jeff Sipe, Marcus King, and the late Kofi Burbridge. Austin tours internationally with “Caitlin Krisko & The Broadcast” sharing stages with Tedeschi Trucks Band, The Wood Brothers, Mavis Staples, Kacey Musgraves, and many more.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3144,7 +3144,7 @@ const events = [
         name: `My Magnificent Nemesis w/ Alien Music Club`,
         sort_time: "2026-04-19 14:00:00",
         end_time_formatted: "2026-04-19 17:00",
-        detail: "My Magnificent Nemesis:\nIf you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor.\nAlien Music Club:\nAMC is the brainchild of Jonathan Pearlman, a veteran of the WNC Music Scene. He is a composer and producer. He’s an accomplished guitarist. Soft spoken and shy off stage he speaks from the heart on stage, and does so effortlessly and fluently.",
+        detail: "My Magnificent Nemesis: If you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor. ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3365,7 +3365,7 @@ const events = [
         name: `Joe Moss Band`,
         sort_time: "2026-05-02 14:00:00",
         end_time_formatted: "2026-05-02 17:00",
-        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his own sound and material within the styles he chooses to play. And the music world is taking notice. A talented singer, writer, and guitarist, Joe is a consistent and entertaining performer with a monster groove. A guitarist since the age of 10, Moss was given his passport into the blues world by Buddy Scott, who noticed Moss at a jam session at Rosa’s Blues Lounge in Chicago. Soon, Moss was playing seven nights a week as a member of Buddy’s Rib Tip band. Moss’ guitar skills quickly became notorious on the local scene and made him an in-demand sideman. He has played all over the world with: Buddy Guy, Little Milton, Willy “Big Eyes” Smith, Lurrie Bell, Lefty Dizz, Magic Slim, A.C. Reed, Billy Branch, Walter Scott and many more! Joe was a 2013 Inductee into the Chicago Blues Hall of Fame!",
+        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3391,7 +3391,7 @@ const events = [
         name: `The Deep Shallow Band`,
         sort_time: "2026-05-09 14:00:00",
         end_time_formatted: "2026-05-09 17:00",
-        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie ...\nRead More",
+        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie shine through during their energetic performances and on their new album, “Copy and Paste,” released in the spring of 2023. The band has entertained an enthusiastic following throughout North Carolina since 2014 and would love to see you at their next show.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3404,7 +3404,7 @@ const events = [
         name: `Alex Krug Combo`,
         sort_time: "2026-05-10 14:00:00",
         end_time_formatted: "2026-05-10 17:00",
-        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive headfirst. The thrill of adventure looms ahead of this band. Their Genre Queer Psychedelic Roots strikes a stunningly evocative chord about life, being an outsider and the kind of heartache and healing that transforms your soul.",
+        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
