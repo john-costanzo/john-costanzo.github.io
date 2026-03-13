@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-03-12 14:05:24";
+const eventDataVersion = "Thursday, 2026-03-12 20:04:38";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -663,19 +663,6 @@ const events = [
         end_time_formatted: "2026-03-12 23:59",
         detail: "Surf rock, exotica and tiki tunes!",
         location: "Crow and Quill 106 N Lexington Ave, Asheville, NC 28801",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-03-12",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Appalachian Chicks`,
-        sort_time: "2026-03-12 16:00:00",
-        end_time_formatted: "2026-03-12 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -2208,7 +2195,7 @@ const events = [
         name: `Carolina Table Beer Dinner`,
         sort_time: "2026-03-28 18:00:00",
         end_time_formatted: "2026-03-28 21:00",
-        detail: "Beer deserves a seat at the table.\nJoin us for a one‑of‑a‑kind beer dinner that brings together Montgomery Sky Farm—a 2026 James Beard Foundation Semifinalist—and Sierra Nevada Brewing Co for an evening rooted in North Carolina’s ingredients, craft, and culinary innovation. This collaborative dinner celebrates a shared belief: that beer deserves a meaningful place at the table.\nAt Montgomery Sky Farm, thoughtful, ingredient‑driven cooking is woven into every dish, honoring the land, the seasons, and the stewardship behind each ingredient. Paired with SNBC’s long‑standing commitment to craft brewing, sustainability, and flavor‑forward hospitality, this dinner becomes more than a meal—it becomes an experience that showcases how food, farm, and brewery can come together with purpose.\nThroughout the evening, guests will explore the idea that beer can enhance a meal every bit as beautifully as wine—elevating flavors, providing contrast, and adding nuance to a carefully composed menu. Each course is designed to highlight the synergy between North Carolina-grown ingredients and a curated selection of beers created with the table in mind.\nThis is an intimate, chef‑led dining experience that honors local foodways, celebrates sustainability, and brings to life the belief that beer truly deserves a seat at the table.\nReserve your spot now and experience the next chapter of North Carolina’s culinary story.",
+        detail: "Beer deserves a seat at the table. Join us for a one‑of‑a‑kind beer dinner that brings together Montgomery Sky Farm—a 2026 James Beard Foundation Semifinalist—and Sierra Nevada Brewing Co for ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2689,7 +2676,7 @@ const events = [
         name: `Morrissey Blvd`,
         sort_time: "2026-04-04 14:00:00",
         end_time_formatted: "2026-04-04 17:00",
-        detail: "Morrissey Blvd. is a sibling trio from New Bedford, Massachusetts made up of Zan (lead vocals/guitar), Henri (bass/vocals), and Wilson (drums). Their sound blends soulful funk and the raw energy of rock, with influences ranging from Stevie Wonder and Jack Johnson to Mt. Joy and Marcus King. Known for heartfelt lyrics and high-energy live shows, their music dives into themes like heartbreak, growth, and learning to let go.\nIn Summer 2025, Morrissey Blvd will begin to roll out a six-song EP, slated for a late summer/early fall release. They’re also hitting the road for a 20-date Northeast tour, followed by a college tour that’ll bring them through the South, East Coast, and Midwest.",
+        detail: "Morrissey Blvd. is a sibling trio from New Bedford, Massachusetts made up of Zan (lead vocals/guitar), Henri (bass/vocals), and Wilson (drums). Their sound blends soulful funk and the raw energy ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2992,6 +2979,19 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - April",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-04-11",
+        event_time: "12:00 pm - 8:00 pm",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: MACsimum Carnage`,
+        sort_time: "2026-04-11 12:00:00",
+        end_time_formatted: "2026-04-11 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
         event_date: "2026-04-11",
@@ -3040,7 +3040,7 @@ const events = [
         name: `The Aaron Austin Band`,
         sort_time: "2026-04-12 14:00:00",
         end_time_formatted: "2026-04-12 17:00",
-        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North ...\nRead More",
+        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North Carolina born guitarist Aaron Austin, the trio channels the grit of ’70s jazz fusion alongside imaginative new takes on the American Songbook inspired by Hendrix, Trucks, Scofield, and Frisell. Anchored by Asheville standouts Jake Wolf (bass) and Ted Marks(drums), The Aaron Austin Band brings emotive playing and locked in grooves that keep every performance alive and in the moment. A seasoned bandleader and collaborator, Austin released his debut solo album in 2019 featuring Jeff Sipe, Marcus King, and the late Kofi Burbridge. Austin tours internationally with “Caitlin Krisko & The Broadcast” sharing stages with Tedeschi Trucks Band, The Wood Brothers, Mavis Staples, Kacey Musgraves, and many more.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3456,7 +3456,7 @@ const events = [
         name: `The Deep Shallow Band`,
         sort_time: "2026-05-09 14:00:00",
         end_time_formatted: "2026-05-09 17:00",
-        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie ...\nRead More",
+        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie shine through during their energetic performances and on their new album, “Copy and Paste,” released in the spring of 2023. The band has entertained an enthusiastic following throughout North Carolina since 2014 and would love to see you at their next show.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3508,7 +3508,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
