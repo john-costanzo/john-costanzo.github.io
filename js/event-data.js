@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-03-19 08:05:02";
+const eventDataVersion = "Thursday, 2026-03-19 20:03:54";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -676,19 +676,6 @@ const events = [
         end_time_formatted: "2026-03-19 21:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
-        event_date: "2026-03-19",
-        event_time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Kid Billy`,
-        sort_time: "2026-03-19 18:00:00",
-        end_time_formatted: "2026-03-19 20:00",
-        detail: "Kid Billy aka Billy Litz from Hustle Souls is gracing our stage at 6pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://www.sabrewery.com/events/2026-03",
@@ -1497,6 +1484,19 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-03-26",
+        event_time: "7:00 pm - 8:30 pm",
+        start_time: "7:00 pm",
+        end_time: "8:30 pm",
+        name: `Comedy Night with Next Stop Comedy!`,
+        sort_time: "2026-03-26 19:00:00",
+        end_time_formatted: "2026-03-26 20:30",
+        detail: "Comedy starts @7pm! Get your tickets here: https://nextstopcomedy.com/events/oklawaha-brewing-company-2026-03-26/",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-03-26",
@@ -2286,7 +2286,7 @@ const events = [
         name: `Morrissey Blvd`,
         sort_time: "2026-04-04 14:00:00",
         end_time_formatted: "2026-04-04 17:00",
-        detail: "Morrissey Blvd. is a sibling trio from New Bedford, Massachusetts made up of Zan (lead vocals/guitar), Henri (bass/vocals), and Wilson (drums). Their sound blends soulful funk and the raw energy ...\nRead More",
+        detail: "Morrissey Blvd. is a sibling trio from New Bedford, Massachusetts made up of Zan (lead vocals/guitar), Henri (bass/vocals), and Wilson (drums). Their sound blends soulful funk and the raw energy of rock, with influences ranging from Stevie Wonder and Jack Johnson to Mt. Joy and Marcus King. Known for heartfelt lyrics and high-energy live shows, their music dives into themes like heartbreak, growth, and learning to let go.\nIn Summer 2025, Morrissey Blvd will begin to roll out a six-song EP, slated for a late summer/early fall release. They’re also hitting the road for a 20-date Northeast tour, followed by a college tour that’ll bring them through the South, East Coast, and Midwest.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2845,7 +2845,7 @@ const events = [
         name: `Julianna Jade`,
         sort_time: "2026-04-11 14:00:00",
         end_time_formatted: "2026-04-11 17:00",
-        detail: "Julianna Jade is an up-and-coming star making waves with her angelic, ethereal voice. Her music feels like a spell, weaving light into every song. A lifelong artist, self-taught musician, and ...\nRead More",
+        detail: "Julianna Jade is an up-and-coming star making waves with her angelic, ethereal voice. Her music feels like a spell, weaving light into every song.\nA lifelong artist, self-taught musician, and intuitive performer, Julianna channels both the beauty and ache of being alive into sonic worlds that shimmer with vulnerability and truth. Blending experimental pop and dreamy indie, her music takes you to another world - creating undeniable ripples in the air. Whether alone on stage or with her band, her presence leaves behind a special kind of magic. Locals have commented, “There is no other voice like Julianna in Asheville”.\n“Julianna is creating an aura with her performance - a performance that never feels performative. She is popping up everywhere now and we want to know more… Fiddle Man says don’t miss it.” Written by local press - Fiddle Man from Where Y’at? AVL Live Music.\nWith her debut single, 444, and more original music to be released soon, Julianna Jade is here to leave a mark on the world and she’s only just getting started.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2949,7 +2949,7 @@ const events = [
         name: `The Aaron Austin Band`,
         sort_time: "2026-04-12 14:00:00",
         end_time_formatted: "2026-04-12 17:00",
-        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North ...\nRead More",
+        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North Carolina born guitarist Aaron Austin, the trio channels the grit of ’70s jazz fusion alongside imaginative new takes on the American Songbook inspired by Hendrix, Trucks, Scofield, and Frisell. Anchored by Asheville standouts Jake Wolf (bass) and Ted Marks(drums), The Aaron Austin Band brings emotive playing and locked in grooves that keep every performance alive and in the moment. A seasoned bandleader and collaborator, Austin released his debut solo album in 2019 featuring Jeff Sipe, Marcus King, and the late Kofi Burbridge. Austin tours internationally with “Caitlin Krisko & The Broadcast” sharing stages with Tedeschi Trucks Band, The Wood Brothers, Mavis Staples, Kacey Musgraves, and many more.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3146,6 +3146,19 @@ const events = [
         end_time_formatted: "2026-04-17 23:59",
         detail: "<a href='https://festivalnet.com/91238/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-April' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - April",
+    },
+    {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
+        venue: "Festival Net",
+        event_date: "2026-04-17",
+        event_time: "¿-?",
+        start_time: "¿",
+        end_time: "?",
+        name: `Asheville Downtown After Five - April`,
+        sort_time: "2026-04-17 00:00:00",
+        end_time_formatted: "2026-04-17 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Beach, Bluegrass, Blues, Country, Jazz, Rock and Variety.<a href='https://festivalnet.com/53583/Asheville-North-Carolina/Festival-Concerts/Asheville-Downtown-After-Five-April' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Asheville Downtown After Five - April",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -3495,7 +3508,7 @@ const events = [
         name: `Strange Rangers`,
         sort_time: "2026-04-25 14:00:00",
         end_time_formatted: "2026-04-25 17:00",
-        detail: "Pop/Funk/Soul/Improvisation\nStrange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
+        detail: "Pop/Funk/Soul/Improvisation Strange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3599,7 +3612,7 @@ const events = [
         name: `Joe Moss Band`,
         sort_time: "2026-05-02 14:00:00",
         end_time_formatted: "2026-05-02 17:00",
-        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his own sound and material within the styles he chooses to play. And the music world is taking notice. A talented singer, writer, and guitarist, Joe is a consistent and entertaining performer with a monster groove. A guitarist since the age of 10, Moss was given his passport into the blues world by Buddy Scott, who noticed Moss at a jam session at Rosa’s Blues Lounge in Chicago. Soon, Moss was playing seven nights a week as a member of Buddy’s Rib Tip band. Moss’ guitar skills quickly became notorious on the local scene and made him an in-demand sideman. He has played all over the world with: Buddy Guy, Little Milton, Willy “Big Eyes” Smith, Lurrie Bell, Lefty Dizz, Magic Slim, A.C. Reed, Billy Branch, Walter Scott and many more! Joe was a 2013 Inductee into the Chicago Blues Hall of Fame!",
+        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3612,7 +3625,7 @@ const events = [
         name: `Tina and Her Pony`,
         sort_time: "2026-05-03 14:00:00",
         end_time_formatted: "2026-05-03 17:00",
-        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence to the stage. Known for lush harmonies, country folk storytelling, and songs that soothe as much as they stir, Tina’s music carries a quiet magic that lingers long after the last note.\nFrom the hills of Asheville to the deserts of New Mexico, she’s spent over a decade refining her sound by melding classic folk with touches of Americana, and more recently, dreamy pop and psychedelic soul.",
+        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3638,7 +3651,7 @@ const events = [
         name: `Alex Krug Combo`,
         sort_time: "2026-05-10 14:00:00",
         end_time_formatted: "2026-05-10 17:00",
-        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive headfirst. The thrill of adventure looms ahead of this band. Their Genre Queer Psychedelic Roots strikes a stunningly evocative chord about life, being an outsider and the kind of heartache and healing that transforms your soul.",
+        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3653,6 +3666,19 @@ const events = [
         end_time_formatted: "2026-05-14 21:00",
         detail: "Reggie Watts is an internationally renowned Musician/Comedian/Writer/Actor who most recently starred as the bandleader on CBS’s The Late Late Show with James Corden. Using his formidable voice, looping pedals, and his vast imagination, Watts blends and blurs the lines between music and comedy, wowing audiences with performances that are 100% improvised. \nHe was recently the DJ at the 2021 Emmy Awards, which saw a 15% ratings boost from 2020. \nWatts’ first Netflix special Spatial released to massive critical acclaim, with the New York Times calling it “a giddy rush of escapist nonsense” and dubbing Watts “the most influential absurdist in comedy today.” The A.V. Club described Spatial as “signature Watts, meaning it’s alternately exhilarating, silly, exhausting and transcendent,” and Exclaim! Magazine called his performance “engaging, absurd, thoughtful and, most importantly, wholly unpredictable.”\nAs a solo performer, Watts brand of musical/comedy fusion has led to sold out headlining tours in the U.S. and Europe, including festivals such as Bonnaroo, SXSW, Bumbershoot, Just For Laughs, Pemberton and more.\nIn 2020, Watts released his own content app called, WattsApp, a techno-savvy look into his life, work, and techno junk drawer. WattsApp has all original content including a show called, Droneversations where he interviews guests while it’s filmed by drones along with other fun content.\nIn 2010, Watts released his debut comedy special, Why Shit So Crazy? on Comedy Central Records, and is now available to stream on Netflix. Why Shit So Crazy? featured Watts in live performances at New York venues such as Galapagos, The Bellhouse, and Le Poisson Rouge, bookended with brief sketches and music videos. Later that year, at the invitation of Jack White, Watts recorded Reggie Watts: Live at Third Man Records which was released in limited edition vinyl. In 2012, Watts recorded his second comedy special, Reggie Watts: A Live at Central Park, which was released by Comedy Central.\nReggie’s memoir, Great Falls, MT will be published on October 17th, 2023, by Penguin’s highly curated Tiny Reparations imprint.\nWatts was born in Germany, raised in Montana, and currently resides in Los Angeles.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
+        venue: "Festival Net",
+        event_date: "2026-05-15",
+        event_time: "¿-?",
+        start_time: "¿",
+        end_time: "?",
+        name: `Asheville Downtown After Five - May`,
+        sort_time: "2026-05-15 00:00:00",
+        end_time_formatted: "2026-05-15 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Beach, Bluegrass, Blues, Country, Jazz, Rock and Variety.<a href='https://festivalnet.com/101585/Asheville-North-Carolina/Festival-Concerts/Asheville-Downtown-After-Five-May' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Asheville Downtown After Five - May",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -4184,7 +4210,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4342,6 +4368,19 @@ const events = [
         end_time_formatted: "2026-06-19 23:59",
         detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
+    },
+    {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
+        venue: "Festival Net",
+        event_date: "2026-06-19",
+        event_time: "¿-?",
+        start_time: "¿",
+        end_time: "?",
+        name: `Asheville Downtown After Five - June`,
+        sort_time: "2026-06-19 00:00:00",
+        end_time_formatted: "2026-06-19 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Beach, Bluegrass, Blues, Country, Jazz, Rock and Variety.<a href='https://festivalnet.com/101586/Asheville-North-Carolina/Festival-Concerts/Asheville-Downtown-After-Five-June' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Asheville Downtown After Five - June",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
@@ -6840,6 +6879,19 @@ const events = [
         location: "Festival Net Shindig on the Green",
     },
     {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
+        venue: "Festival Net",
+        event_date: "2026-08-21",
+        event_time: "¿-?",
+        start_time: "¿",
+        end_time: "?",
+        name: `Asheville Downtown After Five - August`,
+        sort_time: "2026-08-21 00:00:00",
+        end_time_formatted: "2026-08-21 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Beach, Bluegrass, Blues, Country, Jazz, Rock and Variety.<a href='https://festivalnet.com/101587/Asheville-North-Carolina/Festival-Concerts/Asheville-Downtown-After-Five-August' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Asheville Downtown After Five - August",
+    },
+    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-08-21",
@@ -7282,7 +7334,7 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
-        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
         venue: "Festival Net",
         event_date: "2026-09-19",
         event_time: "¿-?",
