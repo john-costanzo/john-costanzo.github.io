@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-03-30 13:48:02";
+const eventDataVersion = "Monday, 2026-03-30 14:01:44";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -104,19 +104,6 @@ const events = [
         end_time_formatted: "2026-01-01 23:59",
         detail: "Closed for Winter Break. See you January 15th!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2026-01-03",
-        event_time: "5:00 pm - 8:00 pm",
-        start_time: "5:00 PM",
-        end_time: "8:00 PM",
-        name: `Iggy Radio`,
-        sort_time: "2026-01-03 17:00:00",
-        end_time_formatted: "2026-01-03 20:00",
-        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -1263,6 +1250,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://www.sabrewery.com/events/2026-04",
+        venue: "Southern App",
+        event_date: "2026-04-04",
+        event_time: "7:00 pm - 9:00 pm",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: `The Last Full Measure`,
+        sort_time: "2026-04-04 19:00:00",
+        end_time_formatted: "2026-04-04 21:00",
+        detail: "The Last Full Measure is an acoustic duo from Hendersonville, NC. The duo, comprised of Jamie Gorsuch and Karen Corn, perform originals and familiar favorites with a folk/blues sound and…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
         event_date: "2026-04-04",
@@ -1378,6 +1378,19 @@ const events = [
         end_time_formatted: "2026-04-05 18:00",
         detail: "We will be closed Easter Sunday to spend time with family. Enjoy your day!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2026-04",
+        venue: "Southern App",
+        event_date: "2026-04-05",
+        event_time: "1:00 pm - 4:00 pm",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: `Hendo Jam Brunch w/Highway 52: Easter Edition`,
+        sort_time: "2026-04-05 13:00:00",
+        end_time_formatted: "2026-04-05 16:00",
+        detail: "In January of 2014 Todd Hoke, Mare Carmody and Michael Carver played the first Gospel Brunch at Southern Appalachian Brewery. The Gospel Brunch became a popular Hendersonville community event held…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -3547,7 +3560,7 @@ const events = [
         name: `The Brothers Comatose`,
         sort_time: "2026-05-01 18:00:00",
         end_time_formatted: "2026-05-01 21:00",
-        detail: "Fusing old school string band instrumentation with rock and roll exuberance, The Brothers Comatose cement their status as standard bearers of a thriving, innovative West Coast roots movement on their intoxicating new album, Golden Grass. Recorded with co-producers Greg Holden and Tim Bluhm, the collection is as diverse and enthralling as the California landscape itself—at times carefree and breezy, at times wild and rugged—with lush, organic arrangements full of rich vocal harmonies and driving guitar, fiddle, banjo, mandolin, and upright bass. While the record marks the group’s first release with newest member Addie Levy, the result is quintessential Brothers Comatose: a warm, joyful reflection on identity and the ties that bind from a band that knows exactly who they are (and exactly where they come from).\nFounded by Ben and Alex Morrison in 2008, The Brothers Comatose first emerged from San Francisco with their 2010 debut, Songs from The Stoop, which helped earn dates with the likes of Gillian Welch & David Rawlings, Greensky Bluegrass, and Trampled by Turtles. In the decade-and-a-half that followed, the critically acclaimed quintet would go on to release five more full-length LPs, rack up nearly 50 million streams, land festival slots at Outside Lands, High Sierra, and Hardly Strictly Bluegrass, tour with Lake Street Dive, The Devil Makes Three, and Yonder Mountain String Band, and build up a devoted following thanks to their raucous live shows and relentless schedule.",
+        detail: "Tickets on Sale Dec 19 at 10:00am EST",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3586,7 +3599,7 @@ const events = [
         name: `Joe Moss Band`,
         sort_time: "2026-05-02 14:00:00",
         end_time_formatted: "2026-05-02 17:00",
-        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his ...\nRead More",
+        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his own sound and material within the styles he chooses to play. And the music world is taking notice. A talented singer, writer, and guitarist, Joe is a consistent and entertaining performer with a monster groove. A guitarist since the age of 10, Moss was given his passport into the blues world by Buddy Scott, who noticed Moss at a jam session at Rosa’s Blues Lounge in Chicago. Soon, Moss was playing seven nights a week as a member of Buddy’s Rib Tip band. Moss’ guitar skills quickly became notorious on the local scene and made him an in-demand sideman. He has played all over the world with: Buddy Guy, Little Milton, Willy “Big Eyes” Smith, Lurrie Bell, Lefty Dizz, Magic Slim, A.C. Reed, Billy Branch, Walter Scott and many more! Joe was a 2013 Inductee into the Chicago Blues Hall of Fame!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3703,7 +3716,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4184,7 +4197,7 @@ const events = [
         name: `Dr. Bacon`,
         sort_time: "2026-06-13 18:30:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating ...\nRead More",
+        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating a unique musical\nexpression.\nThe Dr. Bacon live experience is truly a spectacle to behold, bringing the audience on a musical journey, caressing ears with lush beauty then whipping crowds into a down-home tribal romp, shaking booties and shedding inhibitions. An undulating wave of energy and styles leads to massive and manic versatility ensuring that no matter what genre of music\nsuits your taste, you will hear something that resonates. Bacon goes good with everything!\nDr. Bacon started in 2012 on King Street in Boone as a 3-piece busking acoustic bluegrass, folk, and 90s pop/rock/hip-hop influenced band. Several lineup changes over the years and a move to Asheville have refined and redirected the band’s sound, incorporating funk, rock, soul, psychedelic, improvisation, blues, punk and world music. The blending of several elements of these genres, often within the same song, along with an arsenal of instrumentation brings the real Dr. Bacon flavor. The band tours regularly, up and down the East coast and beyond. With 3 EPs and two length albums\nunder their belts, Dr. Bacon performs an original focused setlist with a rotating and evolving palate of choice covers. Never performing the same set twice and constantly working towards the next musical achievement means that each show is a beast unto itself where you’ll never know what new tricks are in store.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
