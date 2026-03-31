@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-03-30 14:01:44";
+const eventDataVersion = "Monday, 2026-03-30 20:07:10";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -533,19 +533,6 @@ const events = [
         end_time_formatted: "2026-03-28 20:00",
         detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-03-30",
-        event_time: "3:00 pm - 7:00 pm",
-        start_time: "3:00 pm",
-        end_time: "7:00 pm",
-        name: `Food Truck: Heidi Ho `,
-        sort_time: "2026-03-30 15:00:00",
-        end_time_formatted: "2026-03-30 19:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -2104,7 +2091,7 @@ const events = [
         name: `The Aaron Austin Band`,
         sort_time: "2026-04-12 14:00:00",
         end_time_formatted: "2026-04-12 17:00",
-        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North ...\nRead More",
+        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North Carolina born guitarist Aaron Austin, the trio channels the grit of ’70s jazz fusion alongside imaginative new takes on the American Songbook inspired by Hendrix, Trucks, Scofield, and Frisell. Anchored by Asheville standouts Jake Wolf (bass) and Ted Marks(drums), The Aaron Austin Band brings emotive playing and locked in grooves that keep every performance alive and in the moment. A seasoned bandleader and collaborator, Austin released his debut solo album in 2019 featuring Jeff Sipe, Marcus King, and the late Kofi Burbridge. Austin tours internationally with “Caitlin Krisko & The Broadcast” sharing stages with Tedeschi Trucks Band, The Wood Brothers, Mavis Staples, Kacey Musgraves, and many more.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3398,6 +3385,19 @@ const events = [
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
         event_date: "2026-04-26",
+        event_time: "1:00 pm - 3:00 pm",
+        start_time: "1:00 pm",
+        end_time: "3:00 pm",
+        name: `Spring 2026 Wine Club Pickup Party`,
+        sort_time: "2026-04-26 13:00:00",
+        end_time_formatted: "2026-04-26 15:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-04-26",
         event_time: "1:00 pm - 4:00 pm",
         start_time: "1:00 pm",
         end_time: "4:00 pm",
@@ -3525,6 +3525,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-04-29",
+        event_time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Event: Opinionary`,
+        sort_time: "2026-04-29 18:00:00",
+        end_time_formatted: "2026-04-29 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://www.thecrowandquill.com/events",
         venue: "Crow and Quill",
         event_date: "2026-04-30",
@@ -3560,7 +3573,7 @@ const events = [
         name: `The Brothers Comatose`,
         sort_time: "2026-05-01 18:00:00",
         end_time_formatted: "2026-05-01 21:00",
-        detail: "Tickets on Sale Dec 19 at 10:00am EST",
+        detail: "Fusing old school string band instrumentation with rock and roll exuberance, The Brothers Comatose cement their status as standard bearers of a thriving, innovative West Coast roots movement on their intoxicating new album, Golden Grass. Recorded with co-producers Greg Holden and Tim Bluhm, the collection is as diverse and enthralling as the California landscape itself—at times carefree and breezy, at times wild and rugged—with lush, organic arrangements full of rich vocal harmonies and driving guitar, fiddle, banjo, mandolin, and upright bass. While the record marks the group’s first release with newest member Addie Levy, the result is quintessential Brothers Comatose: a warm, joyful reflection on identity and the ties that bind from a band that knows exactly who they are (and exactly where they come from).\nFounded by Ben and Alex Morrison in 2008, The Brothers Comatose first emerged from San Francisco with their 2010 debut, Songs from The Stoop, which helped earn dates with the likes of Gillian Welch & David Rawlings, Greensky Bluegrass, and Trampled by Turtles. In the decade-and-a-half that followed, the critically acclaimed quintet would go on to release five more full-length LPs, rack up nearly 50 million streams, land festival slots at Outside Lands, High Sierra, and Hardly Strictly Bluegrass, tour with Lake Street Dive, The Devil Makes Three, and Yonder Mountain String Band, and build up a devoted following thanks to their raucous live shows and relentless schedule.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3575,19 +3588,6 @@ const events = [
         end_time_formatted: "2026-05-02 17:00",
         detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        event_date: "2026-05-02",
-        event_time: "1:00 pm - 4:00 pm",
-        start_time: "1:00 pm",
-        end_time: "4:00 pm",
-        name: `THE JACKTOWN RAMBLERS & HIGH LONESOME VELVET`,
-        sort_time: "2026-05-02 13:00:00",
-        end_time_formatted: "2026-05-02 16:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -3703,7 +3703,7 @@ const events = [
         name: `Juice`,
         sort_time: "2026-05-15 19:00:00",
         end_time_formatted: "2026-05-15 21:30",
-        detail: "Between their tight grooves, radiant harmonies, heartfelt lyrics, and jaw-dropping solos , there’s no simple, easy way to summarize New York City five-piece Juice. Pulling from pop and rock, hip-hop ...\nRead More",
+        detail: "Between their tight grooves, radiant harmonies, heartfelt lyrics, and jaw-dropping solos , there’s no simple, easy way to summarize New York City five-piece Juice.\nPulling from pop and rock, hip-hop and R&B, ‘90s alternative, modern electronic, folk, and more, their complexity is their strength: All six members are multi-instrumentalists from different musical backgrounds and upbringings, each one bringing his own unique flavor to the band. The result is a “multi-dimensional rock” identity that has continuously evolved over the past decade, as the band members themselves - Ben Stevens (vocals, keys), Christian Rose (vocals, violin), Kamau Burton (vocals, guitar), Daniel Moss (guitar), and Rami El-Abidin (bass) - went from students at Boston College to professional touring musicians and seasoned recording artists.\nJuice’s sound may be ever-evolving, but their bold energy is evergreen: The goal, both on stage and on record, is not just to connect on a human level, but to breathe life into every room. While they pack a punch on record, Juice shine their brightest onstage, bringing their music to life for all to see, hear, and feel. The band have played countless national tours over the past ten years, including four headline tours and support slots opening for bands like flipturn, Ocean Alley, and The Dip.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3716,7 +3716,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3729,7 +3729,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-05-17 14:00:00",
         end_time_formatted: "2026-05-17 17:00",
-        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up is as unpredictable as his live performances, often spanning many genres and embracing themes of love, culture, resilience and adventure. He has begun releasing a new single each month in 2026 preceding the release of his debut, full length solo record.”",
+        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4197,7 +4197,7 @@ const events = [
         name: `Dr. Bacon`,
         sort_time: "2026-06-13 18:30:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating a unique musical\nexpression.\nThe Dr. Bacon live experience is truly a spectacle to behold, bringing the audience on a musical journey, caressing ears with lush beauty then whipping crowds into a down-home tribal romp, shaking booties and shedding inhibitions. An undulating wave of energy and styles leads to massive and manic versatility ensuring that no matter what genre of music\nsuits your taste, you will hear something that resonates. Bacon goes good with everything!\nDr. Bacon started in 2012 on King Street in Boone as a 3-piece busking acoustic bluegrass, folk, and 90s pop/rock/hip-hop influenced band. Several lineup changes over the years and a move to Asheville have refined and redirected the band’s sound, incorporating funk, rock, soul, psychedelic, improvisation, blues, punk and world music. The blending of several elements of these genres, often within the same song, along with an arsenal of instrumentation brings the real Dr. Bacon flavor. The band tours regularly, up and down the East coast and beyond. With 3 EPs and two length albums\nunder their belts, Dr. Bacon performs an original focused setlist with a rotating and evolving palate of choice covers. Never performing the same set twice and constantly working towards the next musical achievement means that each show is a beast unto itself where you’ll never know what new tricks are in store.",
+        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
