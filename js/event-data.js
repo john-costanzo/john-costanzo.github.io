@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-03-31 17:55:14";
+const eventDataVersion = "Tuesday, 2026-03-31 18:40:26";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -663,6 +663,19 @@ const events = [
         end_time_formatted: "2026-04-01 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://www.cphassn.org/rsvp/",
+        venue: "Carriage Park",
+        event_date: "2026-04-01",
+        event_time: "6:00 PM - 8:00 PM",
+        start_time: "6:00 PM",
+        end_time: "8:00 PM",
+        name: `Dr. John Quinley speaks on Carl Sandberg`,
+        sort_time: "2026-04-01 18:00:00",
+        end_time_formatted: "2026-04-01 20:00:00",
+        detail: "Discover or rediscover an American Icon from our own community. It touches on Sandburg's accomplishments and personal life, such as his wife's famous goats. Historical context, humorous anecdotes, and more will be provided.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -1575,6 +1588,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://www.cphassn.org/rsvp/",
+        venue: "Carriage Park",
+        event_date: "2026-04-08",
+        event_time: "6:00 PM - 8:00 PM",
+        start_time: "6:00 PM",
+        end_time: "9:00 PM",
+        name: `Live Music with Craig St. John`,
+        sort_time: "2026-04-08 18:00:00",
+        end_time_formatted: "2026-04-08 21:00:00",
+        detail: "None",
+        location: "Carriage Park clubhouse",
+    },
+    {
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-04-08",
@@ -2327,6 +2353,19 @@ const events = [
         end_time_formatted: "2026-04-15 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2026-04",
+        venue: "Southern App",
+        event_date: "2026-04-15",
+        event_time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Jason DeCristofaro’s Jazz Night`,
+        sort_time: "2026-04-15 18:00:00",
+        end_time_formatted: "2026-04-15 20:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -3109,6 +3148,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://www.sabrewery.com/events/2026-04",
+        venue: "Southern App",
+        event_date: "2026-04-22",
+        event_time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Jason DeCristofaro’s Jazz Night`,
+        sort_time: "2026-04-22 18:00:00",
+        end_time_formatted: "2026-04-22 20:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
         url: "https://www.thecrowandquill.com/events",
         venue: "Crow and Quill",
         event_date: "2026-04-23",
@@ -3603,6 +3655,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://www.sabrewery.com/events/2026-04",
+        venue: "Southern App",
+        event_date: "2026-04-29",
+        event_time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Jason DeCristofaro’s Jazz Night`,
+        sort_time: "2026-04-29 18:00:00",
+        end_time_formatted: "2026-04-29 20:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
         url: "https://www.thecrowandquill.com/events",
         venue: "Crow and Quill",
         event_date: "2026-04-30",
@@ -3898,7 +3963,7 @@ const events = [
         name: `Auspicious Golden Fish`,
         sort_time: "2026-05-24 18:30:00",
         end_time_formatted: "2026-05-24 21:00",
-        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson (The Fritz/ElectroLust) assembles a revolving lineup of all-star musicians that bring his compositions to life. The result is a sonic journey- one that invites listeners to dissolve the ego, embrace the present moment, and dance into higher states of consciousness.",
+        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
