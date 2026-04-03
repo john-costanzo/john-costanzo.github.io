@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-04-03 08:04:50";
+const eventDataVersion = "Friday, 2026-04-03 14:23:30";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -546,19 +546,6 @@ const events = [
         end_time_formatted: "2026-04-01 20:00:00",
         detail: "Discover or rediscover an American Icon from our own community. It touches on Sandburg's accomplishments and personal life, such as his wife's famous goats. Historical context, humorous anecdotes, and more will be provided.",
         location: "Carriage Park clubhouse",
-    },
-    {
-        url: "https://www.thecrowandquill.com/events",
-        venue: "Crow and Quill",
-        event_date: "2026-04-02",
-        event_time: "¿ - ?",
-        start_time: "¿",
-        end_time: "?",
-        name: `Music to Listen to Records By`,
-        sort_time: "2026-04-02 00:00:00",
-        end_time_formatted: "2026-04-02 23:59",
-        detail: "Legendary local DJ Whitney Shroyer plays vintage soul and rock n\' roll! Come sip and listen or cut a rug!",
-        location: "Crow and Quill 106 N Lexington Ave, Asheville, NC 28801",
     },
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
@@ -1961,7 +1948,7 @@ const events = [
         name: `The Aaron Austin Band`,
         sort_time: "2026-04-12 14:00:00",
         end_time_formatted: "2026-04-12 17:00",
-        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North Carolina born guitarist Aaron Austin, the trio channels the grit of ’70s jazz fusion alongside imaginative new takes on the American Songbook inspired by Hendrix, Trucks, Scofield, and Frisell. Anchored by Asheville standouts Jake Wolf (bass) and Ted Marks(drums), The Aaron Austin Band brings emotive playing and locked in grooves that keep every performance alive and in the moment. A seasoned bandleader and collaborator, Austin released his debut solo album in 2019 featuring Jeff Sipe, Marcus King, and the late Kofi Burbridge. Austin tours internationally with “Caitlin Krisko & The Broadcast” sharing stages with Tedeschi Trucks Band, The Wood Brothers, Mavis Staples, Kacey Musgraves, and many more.",
+        detail: "The Aaron Austin Band is a guitar forward instrumental group rooted in jazz, funk, rock and blues delivering rich textures, deep grooves, and soulful, unpredictable improvisation. Led by Eastern North ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2507,7 +2494,7 @@ const events = [
         name: `The Saint Cecilia`,
         sort_time: "2026-04-17 19:00:00",
         end_time_formatted: "2026-04-17 21:30",
-        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, ...\nRead More",
+        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, bringing a mix of emotional images, love, art, power, passion, lust, and verve to their music. The band’s mission is not to top the charts but to wake up a world that has gotten sleepy with repetitive and half-baked musical efforts. They are a synesthete band, meaning they can hear and see music, which adds a unique dimension to their musical journey. The band members have a deep love for music, which they discovered as children, and they have chosen their life path after hearing the opening chord to The Beatles’ “A Hard Day’s Night.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2754,7 +2741,7 @@ const events = [
         name: `My Magnificent Nemesis w/ Alien Music Club`,
         sort_time: "2026-04-19 14:00:00",
         end_time_formatted: "2026-04-19 17:00",
-        detail: "My Magnificent Nemesis: If you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor. ...\nRead More",
+        detail: "My Magnificent Nemesis:\nIf you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor.\nAlien Music Club:\nAMC is the brainchild of Jonathan Pearlman, a veteran of the WNC Music Scene. He is a composer and producer. He’s an accomplished guitarist. Soft spoken and shy off stage he speaks from the heart on stage, and does so effortlessly and fluently.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3469,7 +3456,7 @@ const events = [
         name: `Andrew Scotchie`,
         sort_time: "2026-04-26 14:00:00",
         end_time_formatted: "2026-04-26 17:00",
-        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues of Lightnin’ Hopkins, and the message of a punk-fueled preacher, Scotchie and his band have become a staple of the Southeast music scene. He’s shared stages with legends, crowd-surfed dive bars, and continues to craft his unique sound. His latest record, Love Is Enough, is a love letter to connection, chaos, and keeping your heart open in a world gone sideways.",
+        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3755,7 +3742,7 @@ const events = [
         name: `The Deep Shallow Band`,
         sort_time: "2026-05-09 14:00:00",
         end_time_formatted: "2026-05-09 17:00",
-        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie shine through during their energetic performances and on their new album, “Copy and Paste,” released in the spring of 2023. The band has entertained an enthusiastic following throughout North Carolina since 2014 and would love to see you at their next show.",
+        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3807,7 +3794,7 @@ const events = [
         name: `Juice`,
         sort_time: "2026-05-15 19:00:00",
         end_time_formatted: "2026-05-15 21:30",
-        detail: "Between their tight grooves, radiant harmonies, heartfelt lyrics, and jaw-dropping solos , there’s no simple, easy way to summarize New York City five-piece Juice. Pulling from pop and rock, hip-hop ...\nRead More",
+        detail: "Between their tight grooves, radiant harmonies, heartfelt lyrics, and jaw-dropping solos , there’s no simple, easy way to summarize New York City five-piece Juice.\nPulling from pop and rock, hip-hop and R&B, ‘90s alternative, modern electronic, folk, and more, their complexity is their strength: All six members are multi-instrumentalists from different musical backgrounds and upbringings, each one bringing his own unique flavor to the band. The result is a “multi-dimensional rock” identity that has continuously evolved over the past decade, as the band members themselves - Ben Stevens (vocals, keys), Christian Rose (vocals, violin), Kamau Burton (vocals, guitar), Daniel Moss (guitar), and Rami El-Abidin (bass) - went from students at Boston College to professional touring musicians and seasoned recording artists.\nJuice’s sound may be ever-evolving, but their bold energy is evergreen: The goal, both on stage and on record, is not just to connect on a human level, but to breathe life into every room. While they pack a punch on record, Juice shine their brightest onstage, bringing their music to life for all to see, hear, and feel. The band have played countless national tours over the past ten years, including four headline tours and support slots opening for bands like flipturn, Ocean Alley, and The Dip.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3820,7 +3807,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3833,7 +3820,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-05-17 14:00:00",
         end_time_formatted: "2026-05-17 17:00",
-        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up ...\nRead More",
+        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up is as unpredictable as his live performances, often spanning many genres and embracing themes of love, culture, resilience and adventure. He has begun releasing a new single each month in 2026 preceding the release of his debut, full length solo record.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3937,7 +3924,7 @@ const events = [
         name: `Auspicious Golden Fish`,
         sort_time: "2026-05-24 18:30:00",
         end_time_formatted: "2026-05-24 21:00",
-        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson (The Fritz/ElectroLust) assembles a revolving lineup of all-star musicians that bring his compositions to life. The result is a sonic journey- one that invites listeners to dissolve the ego, embrace the present moment, and dance into higher states of consciousness.",
+        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4314,7 +4301,7 @@ const events = [
         name: `Dr. Bacon`,
         sort_time: "2026-06-13 18:30:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating ...\nRead More",
+        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating a unique musical\nexpression.\nThe Dr. Bacon live experience is truly a spectacle to behold, bringing the audience on a musical journey, caressing ears with lush beauty then whipping crowds into a down-home tribal romp, shaking booties and shedding inhibitions. An undulating wave of energy and styles leads to massive and manic versatility ensuring that no matter what genre of music\nsuits your taste, you will hear something that resonates. Bacon goes good with everything!\nDr. Bacon started in 2012 on King Street in Boone as a 3-piece busking acoustic bluegrass, folk, and 90s pop/rock/hip-hop influenced band. Several lineup changes over the years and a move to Asheville have refined and redirected the band’s sound, incorporating funk, rock, soul, psychedelic, improvisation, blues, punk and world music. The blending of several elements of these genres, often within the same song, along with an arsenal of instrumentation brings the real Dr. Bacon flavor. The band tours regularly, up and down the East coast and beyond. With 3 EPs and two length albums\nunder their belts, Dr. Bacon performs an original focused setlist with a rotating and evolving palate of choice covers. Never performing the same set twice and constantly working towards the next musical achievement means that each show is a beast unto itself where you’ll never know what new tricks are in store.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4353,7 +4340,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4522,7 +4509,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4652,7 +4639,7 @@ const events = [
         name: `The Headtones`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage ...\nRead More",
+        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage sounds, complemented by electronic elements and echoing horn lines to thrill and chill the listener. Hi-energy charts, mixed with a chill vibe, will keep your heart and feet beating, as Tampa Bay’s leading experimental Funk and Soul 6-piece band takes over the stages and airwaves near and far.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
