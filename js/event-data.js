@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2026-04-04 08:02:59";
+const eventDataVersion = "Saturday, 2026-04-04 14:43:30";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2429,7 +2429,7 @@ const events = [
         name: `The Saint Cecilia`,
         sort_time: "2026-04-17 19:00:00",
         end_time_formatted: "2026-04-17 21:30",
-        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, ...\nRead More",
+        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, bringing a mix of emotional images, love, art, power, passion, lust, and verve to their music. The band’s mission is not to top the charts but to wake up a world that has gotten sleepy with repetitive and half-baked musical efforts. They are a synesthete band, meaning they can hear and see music, which adds a unique dimension to their musical journey. The band members have a deep love for music, which they discovered as children, and they have chosen their life path after hearing the opening chord to The Beatles’ “A Hard Day’s Night.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3434,6 +3434,19 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792St. Paul",
     },
     {
+        url: "https://www.cphassn.org/home",
+        venue: "Carriage Park",
+        event_date: "2026-04-26",
+        event_time: "4:00 PM - 6:00 PM",
+        start_time: "4:00 PM",
+        end_time: "6:00 PM",
+        name: `Volunteer Appreciation Event`,
+        sort_time: "2026-04-26 16:00:00",
+        end_time_formatted: "2026-04-26 18:00:00",
+        detail: "None",
+        location: "Carriage Park clubhouse",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-04-27",
@@ -3729,7 +3742,7 @@ const events = [
         name: `Alex Krug Combo`,
         sort_time: "2026-05-10 14:00:00",
         end_time_formatted: "2026-05-10 17:00",
-        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive ...\nRead More",
+        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive headfirst. The thrill of adventure looms ahead of this band. Their Genre Queer Psychedelic Roots strikes a stunningly evocative chord about life, being an outsider and the kind of heartache and healing that transforms your soul.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3770,6 +3783,19 @@ const events = [
         end_time_formatted: "2026-05-15 21:30",
         detail: "Between their tight grooves, radiant harmonies, heartfelt lyrics, and jaw-dropping solos , there’s no simple, easy way to summarize New York City five-piece Juice.\nPulling from pop and rock, hip-hop and R&B, ‘90s alternative, modern electronic, folk, and more, their complexity is their strength: All six members are multi-instrumentalists from different musical backgrounds and upbringings, each one bringing his own unique flavor to the band. The result is a “multi-dimensional rock” identity that has continuously evolved over the past decade, as the band members themselves - Ben Stevens (vocals, keys), Christian Rose (vocals, violin), Kamau Burton (vocals, guitar), Daniel Moss (guitar), and Rami El-Abidin (bass) - went from students at Boston College to professional touring musicians and seasoned recording artists.\nJuice’s sound may be ever-evolving, but their bold energy is evergreen: The goal, both on stage and on record, is not just to connect on a human level, but to breathe life into every room. While they pack a punch on record, Juice shine their brightest onstage, bringing their music to life for all to see, hear, and feel. The band have played countless national tours over the past ten years, including four headline tours and support slots opening for bands like flipturn, Ocean Alley, and The Dip.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://www.cphassn.org/home",
+        venue: "Carriage Park",
+        event_date: "2026-05-16",
+        event_time: "9:00 AM - 5:00 PM",
+        start_time: "9:00 AM",
+        end_time: "5:00 PM",
+        name: `Day of Caring`,
+        sort_time: "2026-05-16 09:00:00",
+        end_time_formatted: "2026-05-16 17:00:00",
+        detail: "Volunteer to help keep Carriage Park looking great!",
+        location: "All around Carriage Park",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -3911,7 +3937,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-28 18:00:00",
         end_time_formatted: "2026-05-28 21:30",
-        detail: "Second Night Added Due to Demand",
+        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3963,7 +3989,7 @@ const events = [
         name: `Smooth Goose`,
         sort_time: "2026-05-31 14:00:00",
         end_time_formatted: "2026-05-31 17:00",
-        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds ...\nRead More",
+        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds moving and scratching that itch in hard-to-reach places.\nThe bands work includes creative projects such as the popular rock opera Happyland at The Magnetic Theatre in 2023. Smooth Goose is currently in the studio recording but also in the lab reviving a species of Mastadon via cutting edge CRISPR technology.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4041,7 +4067,7 @@ const events = [
         name: `The Psycodelics`,
         sort_time: "2026-06-05 19:00:00",
         end_time_formatted: "2026-06-05 21:30",
-        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift is The Psycodelics. The group embodies and glorifies Black American Music. Elements from Funk, Blues, Gospel and R&B leave the audience in awe with sounds that hit you like a freight train. Audience members and fans have compared the band to the likes of Parliament Funkadelic, Prince and Morris Day & The Time. Their debut album “Please Keep Off The Grass” has already garnered Grammy Recording Academy attention and is set to release Easter Sunday, April 20th.\nThe band has already established a buzz amongst the festival scene by capturing audiences at Peach Fest, Joshua Tree Music Festival, Jam Cruise and many more. The Psycodelics have traveled the country supporting Neal Francis, Fearless Flyers and Durand Jones and the Indications. \nThe Psycodelics are Cameron Wescott (bass, vox), Sean Bing (drum, vox), Noah Jones (keys), Whitt Burn (guitar) and Chris Barnwell (percussion).",
+        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4275,7 +4301,7 @@ const events = [
         name: `Dr. Bacon`,
         sort_time: "2026-06-13 18:30:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating ...\nRead More",
+        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating a unique musical\nexpression.\nThe Dr. Bacon live experience is truly a spectacle to behold, bringing the audience on a musical journey, caressing ears with lush beauty then whipping crowds into a down-home tribal romp, shaking booties and shedding inhibitions. An undulating wave of energy and styles leads to massive and manic versatility ensuring that no matter what genre of music\nsuits your taste, you will hear something that resonates. Bacon goes good with everything!\nDr. Bacon started in 2012 on King Street in Boone as a 3-piece busking acoustic bluegrass, folk, and 90s pop/rock/hip-hop influenced band. Several lineup changes over the years and a move to Asheville have refined and redirected the band’s sound, incorporating funk, rock, soul, psychedelic, improvisation, blues, punk and world music. The blending of several elements of these genres, often within the same song, along with an arsenal of instrumentation brings the real Dr. Bacon flavor. The band tours regularly, up and down the East coast and beyond. With 3 EPs and two length albums\nunder their belts, Dr. Bacon performs an original focused setlist with a rotating and evolving palate of choice covers. Never performing the same set twice and constantly working towards the next musical achievement means that each show is a beast unto itself where you’ll never know what new tricks are in store.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4483,7 +4509,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4613,7 +4639,7 @@ const events = [
         name: `The Headtones`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage sounds, complemented by electronic elements and echoing horn lines to thrill and chill the listener. Hi-energy charts, mixed with a chill vibe, will keep your heart and feet beating, as Tampa Bay’s leading experimental Funk and Soul 6-piece band takes over the stages and airwaves near and far.",
+        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
