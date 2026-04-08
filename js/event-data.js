@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-04-08 08:05:34";
+const eventDataVersion = "Wednesday, 2026-04-08 14:05:26";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1987,7 +1987,7 @@ const events = [
         name: `The Saint Cecilia`,
         sort_time: "2026-04-17 19:00:00",
         end_time_formatted: "2026-04-17 21:30",
-        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, ...\nRead More",
+        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, bringing a mix of emotional images, love, art, power, passion, lust, and verve to their music. The band’s mission is not to top the charts but to wake up a world that has gotten sleepy with repetitive and half-baked musical efforts. They are a synesthete band, meaning they can hear and see music, which adds a unique dimension to their musical journey. The band members have a deep love for music, which they discovered as children, and they have chosen their life path after hearing the opening chord to The Beatles’ “A Hard Day’s Night.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2091,7 +2091,7 @@ const events = [
         name: `Ajeva`,
         sort_time: "2026-04-18 14:00:00",
         end_time_formatted: "2026-04-18 17:00",
-        detail: "Ajeva is a funk rock band from St Petersburg FL known for their electrifying mix of funk, rock, and improv, Ajeva brings high-energy performances that blend powerful grooves with feel-good vibes. This band’s soulful, funky sound and tight musicianship have made them a favorite across the Southeast, delivering performances that are as uplifting as they are musically diverse.",
+        detail: "Ajeva is a funk rock band from St Petersburg FL known for their electrifying mix of funk, rock, and improv, Ajeva brings high-energy performances that blend powerful grooves with feel-good ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3027,7 +3027,7 @@ const events = [
         name: `Andrew Scotchie`,
         sort_time: "2026-04-26 14:00:00",
         end_time_formatted: "2026-04-26 17:00",
-        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues ...\nRead More",
+        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues of Lightnin’ Hopkins, and the message of a punk-fueled preacher, Scotchie and his band have become a staple of the Southeast music scene. He’s shared stages with legends, crowd-surfed dive bars, and continues to craft his unique sound. His latest record, Love Is Enough, is a love letter to connection, chaos, and keeping your heart open in a world gone sideways.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3586,7 +3586,7 @@ const events = [
         name: `Alex Krug Combo`,
         sort_time: "2026-05-10 14:00:00",
         end_time_formatted: "2026-05-10 17:00",
-        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive headfirst. The thrill of adventure looms ahead of this band. Their Genre Queer Psychedelic Roots strikes a stunningly evocative chord about life, being an outsider and the kind of heartache and healing that transforms your soul.",
+        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3599,7 +3599,7 @@ const events = [
         name: `Reggie Watts`,
         sort_time: "2026-05-14 18:00:00",
         end_time_formatted: "2026-05-14 21:00",
-        detail: "At the intersection of music and comedy, lives Reggie Watts. A one of kind live looping performer known for his hilariously disorienting and fully improvised performances.",
+        detail: "Reggie Watts is an internationally renowned Musician/Comedian/Writer/Actor who most recently starred as the bandleader on CBS’s The Late Late Show with James Corden. Using his formidable voice, looping pedals, and his vast imagination, Watts blends and blurs the lines between music and comedy, wowing audiences with performances that are 100% improvised. \nHe was recently the DJ at the 2021 Emmy Awards, which saw a 15% ratings boost from 2020. \nWatts’ first Netflix special Spatial released to massive critical acclaim, with the New York Times calling it “a giddy rush of escapist nonsense” and dubbing Watts “the most influential absurdist in comedy today.” The A.V. Club described Spatial as “signature Watts, meaning it’s alternately exhilarating, silly, exhausting and transcendent,” and Exclaim! Magazine called his performance “engaging, absurd, thoughtful and, most importantly, wholly unpredictable.”\nAs a solo performer, Watts brand of musical/comedy fusion has led to sold out headlining tours in the U.S. and Europe, including festivals such as Bonnaroo, SXSW, Bumbershoot, Just For Laughs, Pemberton and more.\nIn 2020, Watts released his own content app called, WattsApp, a techno-savvy look into his life, work, and techno junk drawer. WattsApp has all original content including a show called, Droneversations where he interviews guests while it’s filmed by drones along with other fun content.\nIn 2010, Watts released his debut comedy special, Why Shit So Crazy? on Comedy Central Records, and is now available to stream on Netflix. Why Shit So Crazy? featured Watts in live performances at New York venues such as Galapagos, The Bellhouse, and Le Poisson Rouge, bookended with brief sketches and music videos. Later that year, at the invitation of Jack White, Watts recorded Reggie Watts: Live at Third Man Records which was released in limited edition vinyl. In 2012, Watts recorded his second comedy special, Reggie Watts: A Live at Central Park, which was released by Comedy Central.\nReggie’s memoir, Great Falls, MT will be published on October 17th, 2023, by Penguin’s highly curated Tiny Reparations imprint.\nWatts was born in Germany, raised in Montana, and currently resides in Los Angeles.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3651,7 +3651,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6149,6 +6149,19 @@ const events = [
         end_time_formatted: "2026-07-26 23:59",
         detail: "Buy now as part of a subscription.\nMember Presale: March 23 - April 23\nPublic Onsale: April 24 Read more",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-07-26",
+        event_time: "6:00 pm - 9:30 pm",
+        start_time: "6:00 pm",
+        end_time: "9:30 pm",
+        name: `The Dip`,
+        sort_time: "2026-07-26 18:00:00",
+        end_time_formatted: "2026-07-26 21:30",
+        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://secured.brevardmusic.org",
