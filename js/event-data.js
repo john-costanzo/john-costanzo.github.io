@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-04-10 08:05:43";
+const eventDataVersion = "Friday, 2026-04-10 20:06:07";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -676,19 +676,6 @@ const events = [
         end_time_formatted: "2026-04-10 23:59",
         detail: "Welcome to Song Sessions, your brand-new singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\nThis session has a lot of musical-influence wild cards and can go anywhere. Buckle up as Maia Sharp drives this multi-faceted music journey with genre-defying songwriter David Ryan Harris and literary master lyricist Adam Wright.\nABOUT MAIA SHARP\nMaia Sharp has had her songs recorded by Bonnie Raitt, The Chicks, Cher, Edwin McCain, David Wilcox, Art Garfunkel, Lizz Wright, Lisa Loeb, Terri Clark, Keb’ Mo’ (including his recent single \"Junkyard Dog\" with Taj Mahal) and Trisha Yearwood (including her recent single “The Wall or the Way Over”) and many more. And through it all, Maia has continued to record her own albums; nine solo releases, one collaborative project with Art Garfunkel and Buddy Mondlock and her duo project, Roscoe & Etta. Maia is also an adjunct professor at NYU and has been writing for Songwriting With: Soldiers for eight years. Her latest album Tomboy was released in September 2025.\nABOUT NATALIE HEMBY\nSince signing her first publishing deal at 19, Nashville’s Natalie Hemby has become one of most successful and sought after songwriters in music, with countless hit songs recorded by artists such as Kacey Musgraves, Maren Morris, Sheryl Crow, Miranda Lambert, Lady Gaga, Yola, Dierks Bentley, Rag\'n\'Bone Man, Lady A, Kelly Clarkson, Little Big Town, Ed Sheeran, and Labrinth, to name a few.\nHemby has accumulated eight No. 1 Billboard singles during her career. Hemby\'s cuts include \"White Liar\", Automatic”, and “Bluebird” by Miranda Lambert, “Pontoon\" and \"Tornado \" by Little Big Town, “Downtown” by Lady A, “You Look Like I Need a Drink” by Justin Moore, and \"Heartache Medication” by Jon Pardi. \nOn January 13, 2017, Hemby released her first studio album, “Puxico”, named after the Missouri town where her grandfather lived, via the label GetWrucke Productions which she runs with her husband, music producer Mike Wrucke. On October 8, 2021, she released her second album, Pins and Needles, also produced by Mike Wrucke.\nHemby became a member of the group known as The Highwomen, along with Brandi Carlile, Maren Morris and Amanda Shires. They released their critically acclaimed self-titled album in 2019. As a result, Hemby earned a Country Song of the Year GRAMMY, following her first GRAMMY, win for Best Song Written for Visual Media for Lady Gaga’s “I’ll Never Love Again,” from A Star Is Born, among five career nominations. \nHemby won an ACM Award for her song “Automatic” by Miranda Lambert, and has also been recognized by the CMA, CMT and NSAI Awards for her prodigious and versatile contributions to songwriting.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-04-10",
-        event_time: "12:00 pm - 8:00 pm",
-        start_time: "12:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Blue Sky Cafe`,
-        sort_time: "2026-04-10 12:00:00",
-        end_time_formatted: "2026-04-10 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
@@ -2702,7 +2689,7 @@ const events = [
         name: `Strange Rangers`,
         sort_time: "2026-04-25 14:00:00",
         end_time_formatted: "2026-04-25 17:00",
-        detail: "Pop/Funk/Soul/Improvisation Strange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
+        detail: "Pop/Funk/Soul/Improvisation\nStrange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3352,7 +3339,7 @@ const events = [
         name: `Tina and Her Pony`,
         sort_time: "2026-05-03 14:00:00",
         end_time_formatted: "2026-05-03 17:00",
-        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence ...\nRead More",
+        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence to the stage. Known for lush harmonies, country folk storytelling, and songs that soothe as much as they stir, Tina’s music carries a quiet magic that lingers long after the last note.\nFrom the hills of Asheville to the deserts of New Mexico, she’s spent over a decade refining her sound by melding classic folk with touches of Americana, and more recently, dreamy pop and psychedelic soul.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3538,6 +3525,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-05-08",
+        event_time: "7:00 pm - 10:00 pm",
+        start_time: "7:00 pm",
+        end_time: "10:00 pm",
+        name: `Music: Tracy Davis Duo`,
+        sort_time: "2026-05-08 19:00:00",
+        end_time_formatted: "2026-05-08 22:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-05-09",
@@ -3560,7 +3560,7 @@ const events = [
         name: `The Deep Shallow Band`,
         sort_time: "2026-05-09 14:00:00",
         end_time_formatted: "2026-05-09 17:00",
-        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie ...\nRead More",
+        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie shine through during their energetic performances and on their new album, “Copy and Paste,” released in the spring of 2023. The band has entertained an enthusiastic following throughout North Carolina since 2014 and would love to see you at their next show.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3586,7 +3586,7 @@ const events = [
         name: `Alex Krug Combo`,
         sort_time: "2026-05-10 14:00:00",
         end_time_formatted: "2026-05-10 17:00",
-        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive ...\nRead More",
+        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive headfirst. The thrill of adventure looms ahead of this band. Their Genre Queer Psychedelic Roots strikes a stunningly evocative chord about life, being an outsider and the kind of heartache and healing that transforms your soul.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3768,7 +3768,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-05-17 14:00:00",
         end_time_formatted: "2026-05-17 17:00",
-        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up is as unpredictable as his live performances, often spanning many genres and embracing themes of love, culture, resilience and adventure. He has begun releasing a new single each month in 2026 preceding the release of his debut, full length solo record.”",
+        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4032,6 +4032,19 @@ const events = [
         location: "Festival Net LEAF Deep Roots: Family Friendly One-Day Festival",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-05-30",
+        event_time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Magnolia Boulevard`,
+        sort_time: "2026-05-30 14:00:00",
+        end_time_formatted: "2026-05-30 17:00",
+        detail: "With a southern rock tinged flavor of soulful americana, and a powerful female vocalist reminiscent of Tedeschi Trucks Band, Magnolia Boulevard has blossomed through devastation since forming in 2017. They pushed through the turmoil of COVID-19 that devastated the music industry, the sorrow following the death of their beloved drummer, and the joys of welcoming Maggie’s daughter into the world. Much like the band members of Magnolia Boulevard have endured the highs and lows of the past few years, so has their music. The band’s emphatic and empowering anthems of love, self-discovery, grief, and uncertainty serve as a lesson to us all about life’s unpredictable nature and how to better live in the moment so we can appreciate everything and everyone around us before they’re gone.",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
         url: "https://secured.brevardmusic.org",
         venue: "BMC",
         event_date: "2026-05-30",
@@ -4054,7 +4067,7 @@ const events = [
         name: `Smooth Goose`,
         sort_time: "2026-05-31 14:00:00",
         end_time_formatted: "2026-05-31 17:00",
-        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds moving and scratching that itch in hard-to-reach places.\nThe bands work includes creative projects such as the popular rock opera Happyland at The Magnetic Theatre in 2023. Smooth Goose is currently in the studio recording but also in the lab reviving a species of Mastadon via cutting edge CRISPR technology.",
+        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4132,7 +4145,7 @@ const events = [
         name: `The Psycodelics`,
         sort_time: "2026-06-05 19:00:00",
         end_time_formatted: "2026-06-05 21:30",
-        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift ...\nRead More",
+        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift is The Psycodelics. The group embodies and glorifies Black American Music. Elements from Funk, Blues, Gospel and R&B leave the audience in awe with sounds that hit you like a freight train. Audience members and fans have compared the band to the likes of Parliament Funkadelic, Prince and Morris Day & The Time. Their debut album “Please Keep Off The Grass” has already garnered Grammy Recording Academy attention and is set to release Easter Sunday, April 20th.\nThe band has already established a buzz amongst the festival scene by capturing audiences at Peach Fest, Joshua Tree Music Festival, Jam Cruise and many more. The Psycodelics have traveled the country supporting Neal Francis, Fearless Flyers and Durand Jones and the Indications. \nThe Psycodelics are Cameron Wescott (bass, vox), Sean Bing (drum, vox), Noah Jones (keys), Whitt Burn (guitar) and Chris Barnwell (percussion).",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4548,7 +4561,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6134,7 +6147,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
+        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
