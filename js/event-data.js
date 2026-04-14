@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-04-14 08:06:25";
+const eventDataVersion = "Tuesday, 2026-04-14 14:15:57";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1207,7 +1207,7 @@ const events = [
         name: `The Saint Cecilia`,
         sort_time: "2026-04-17 19:00:00",
         end_time_formatted: "2026-04-17 21:30",
-        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, ...\nRead More",
+        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, bringing a mix of emotional images, love, art, power, passion, lust, and verve to their music. The band’s mission is not to top the charts but to wake up a world that has gotten sleepy with repetitive and half-baked musical efforts. They are a synesthete band, meaning they can hear and see music, which adds a unique dimension to their musical journey. The band members have a deep love for music, which they discovered as children, and they have chosen their life path after hearing the opening chord to The Beatles’ “A Hard Day’s Night.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1376,7 +1376,7 @@ const events = [
         name: `Ajeva`,
         sort_time: "2026-04-18 14:00:00",
         end_time_formatted: "2026-04-18 17:00",
-        detail: "Ajeva is a funk rock band from St Petersburg FL known for their electrifying mix of funk, rock, and improv, Ajeva brings high-energy performances that blend powerful grooves with feel-good ...\nRead More",
+        detail: "Ajeva is a funk rock band from St Petersburg FL known for their electrifying mix of funk, rock, and improv, Ajeva brings high-energy performances that blend powerful grooves with feel-good vibes. This band’s soulful, funky sound and tight musicianship have made them a favorite across the Southeast, delivering performances that are as uplifting as they are musically diverse.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1391,6 +1391,19 @@ const events = [
         end_time_formatted: "2026-04-18 21:00",
         detail: "Like Woodstock, Only Better!! Come celebrate the 60’s with me as we come together for Peace, Love & Music! Throw on some tie dye and bell bottoms and groove the…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-04-18",
+        event_time: "2:00 pm - 5:00 pm",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Peggy Ratusz Trio - Live Music`,
+        sort_time: "2026-04-18 14:00:00",
+        end_time_formatted: "2026-04-18 17:00",
+        detail: "",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
@@ -1597,7 +1610,7 @@ const events = [
         name: `My Magnificent Nemesis w/ Alien Music Club`,
         sort_time: "2026-04-19 14:00:00",
         end_time_formatted: "2026-04-19 17:00",
-        detail: "My Magnificent Nemesis: If you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor. ...\nRead More",
+        detail: "My Magnificent Nemesis:\nIf you like rock, we sound like a jazz band. If you like jazz, we sound like a rock band. Soaring intensity mixed with moments of humor.\nAlien Music Club:\nAMC is the brainchild of Jonathan Pearlman, a veteran of the WNC Music Scene. He is a composer and producer. He’s an accomplished guitarist. Soft spoken and shy off stage he speaks from the heart on stage, and does so effortlessly and fluently.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2312,7 +2325,7 @@ const events = [
         name: `Strange Rangers`,
         sort_time: "2026-04-25 14:00:00",
         end_time_formatted: "2026-04-25 17:00",
-        detail: "Pop/Funk/Soul/Improvisation\nStrange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
+        detail: "Pop/Funk/Soul/Improvisation Strange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2468,7 +2481,7 @@ const events = [
         name: `Andrew Scotchie`,
         sort_time: "2026-04-26 14:00:00",
         end_time_formatted: "2026-04-26 17:00",
-        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues ...\nRead More",
+        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues of Lightnin’ Hopkins, and the message of a punk-fueled preacher, Scotchie and his band have become a staple of the Southeast music scene. He’s shared stages with legends, crowd-surfed dive bars, and continues to craft his unique sound. His latest record, Love Is Enough, is a love letter to connection, chaos, and keeping your heart open in a world gone sideways.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2977,19 +2990,6 @@ const events = [
         end_time_formatted: "2026-05-03 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-05-03",
-        event_time: "12:00 pm - 5:00 pm",
-        start_time: "12:00 pm",
-        end_time: "5:00 pm",
-        name: `Mëhfil Indian Cuisine - Food Truck`,
-        sort_time: "2026-05-03 12:00:00",
-        end_time_formatted: "2026-05-03 17:00",
-        detail: "",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
@@ -3794,7 +3794,7 @@ const events = [
         name: `Reedy River String Band`,
         sort_time: "2026-05-23 14:00:00",
         end_time_formatted: "2026-05-23 17:00",
-        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s multi-instrumental prowess, this trio’s larger than life sound defies their numbers and transcends their bluegrass influences and instrumentation.\nFlying high from the success of their first European tour and with dates to be announced for their second, the Reedy River String Band recently flew back to the US to close out the 30th Albino Skunk Music Festival. Other notable festivals include The Earl Scruggs Music Festival, Merlefest, Charleston Bluegrass Festival, Birdfest and more.\nReedy River String Band released their debut self-titled album in 2022 and has since released two singles, “My Grass is Blue,” and “Punkin Brown” in 2023. Their studio releases and live performances have been played on multiple radio stations in the United States and Europe. Currently they are in preproduction for a 2025 release.",
+        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3885,7 +3885,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-28 18:00:00",
         end_time_formatted: "2026-05-28 21:30",
-        detail: "Second Night Added Due to Demand",
+        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3924,7 +3924,7 @@ const events = [
         name: `Magnolia Boulevard`,
         sort_time: "2026-05-30 14:00:00",
         end_time_formatted: "2026-05-30 17:00",
-        detail: "With a southern rock tinged flavor of soulful americana, and a powerful female vocalist reminiscent of Tedeschi Trucks Band, Magnolia Boulevard has blossomed through devastation since forming in 2017. They ...\nRead More",
+        detail: "With a southern rock tinged flavor of soulful americana, and a powerful female vocalist reminiscent of Tedeschi Trucks Band, Magnolia Boulevard has blossomed through devastation since forming in 2017. They pushed through the turmoil of COVID-19 that devastated the music industry, the sorrow following the death of their beloved drummer, and the joys of welcoming Maggie’s daughter into the world. Much like the band members of Magnolia Boulevard have endured the highs and lows of the past few years, so has their music. The band’s emphatic and empowering anthems of love, self-discovery, grief, and uncertainty serve as a lesson to us all about life’s unpredictable nature and how to better live in the moment so we can appreciate everything and everyone around us before they’re gone.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4028,7 +4028,7 @@ const events = [
         name: `The Psycodelics`,
         sort_time: "2026-06-05 19:00:00",
         end_time_formatted: "2026-06-05 21:30",
-        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift ...\nRead More",
+        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift is The Psycodelics. The group embodies and glorifies Black American Music. Elements from Funk, Blues, Gospel and R&B leave the audience in awe with sounds that hit you like a freight train. Audience members and fans have compared the band to the likes of Parliament Funkadelic, Prince and Morris Day & The Time. Their debut album “Please Keep Off The Grass” has already garnered Grammy Recording Academy attention and is set to release Easter Sunday, April 20th.\nThe band has already established a buzz amongst the festival scene by capturing audiences at Peach Fest, Joshua Tree Music Festival, Jam Cruise and many more. The Psycodelics have traveled the country supporting Neal Francis, Fearless Flyers and Durand Jones and the Indications. \nThe Psycodelics are Cameron Wescott (bass, vox), Sean Bing (drum, vox), Noah Jones (keys), Whitt Burn (guitar) and Chris Barnwell (percussion).",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4262,7 +4262,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
