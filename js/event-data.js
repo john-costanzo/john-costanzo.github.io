@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-04-17 14:07:40";
+const eventDataVersion = "Friday, 2026-04-17 20:06:05";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -808,19 +808,6 @@ const events = [
         location: "Festival Net Asheville Downtown After Five - April",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-04-17",
-        event_time: "3:00 pm - 8:00 pm",
-        start_time: "3:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Pigeon Hole Wings`,
-        sort_time: "2026-04-17 15:00:00",
-        end_time_formatted: "2026-04-17 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://millsriver.boldrock.com/taproomevents",
         venue: "Boldrock",
         event_date: "2026-04-17",
@@ -871,19 +858,6 @@ const events = [
         end_time_formatted: "2026-04-17 22:00",
         detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-04-17",
-        event_time: "7:00 pm - 9:30 pm",
-        start_time: "7:00 pm",
-        end_time: "9:30 pm",
-        name: `The Saint Cecilia`,
-        sort_time: "2026-04-17 19:00:00",
-        end_time_formatted: "2026-04-17 21:30",
-        detail: "The Saint Cecilia is a rock band from Costa Rica, known for their raw and original sound. They are a driven and unique band from all over the northern hemisphere, ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://www.sabrewery.com/events/2026-04",
@@ -1558,7 +1532,7 @@ const events = [
         name: `Hop Forward Mills River`,
         sort_time: "2026-04-22 11:00:00",
         end_time_formatted: "2026-04-22 18:00",
-        detail: "Come celebrate Hop Forward and Earth Day with us—beer, plants, tours!",
+        detail: "We believe it matters how a business operates. That’s why Hop Forward Hoppy Ale is more than a beer. Its annual release marks the new edition of our Hop Forward Impact Report, celebrating the plan and progress toward our 2030 sustainability goals.\nTry Hop Forward Hoppy Ale\nBrewed with sustainably sourced hops and our own Estate barley, Hop Forward blooms with orange blossom and grapefruit aromas, followed by juicy citrus flavor and a smooth, soft finish.\nShop Our Plant Sale\nSip your cold pint while you shop our garden spread—20+ herbs, dozens of annual and perennial flowers, vegetable starts galore, and even wool from our sheep. It’s all grown or harvested right here!\nTake A Trail Pass Tour\nThis outdoor hiking tour covers a lot of ground, from our sustainability goals and National Park Foundation partnership to our non-alcoholic lineup of Trail Pass brews.\nBOOK YOUR TOUR",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2039,7 +2013,7 @@ const events = [
         name: `Strange Rangers`,
         sort_time: "2026-04-25 14:00:00",
         end_time_formatted: "2026-04-25 17:00",
-        detail: "Pop/Funk/Soul/Improvisation\nStrange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
+        detail: "Pop/Funk/Soul/Improvisation Strange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2130,7 +2104,7 @@ const events = [
         name: `Hubbard Street Dance Chicago`,
         sort_time: "2026-04-25 20:00:00",
         end_time_formatted: "2026-04-25 23:59",
-        detail: "The mission of Hubbard Street Dance Chicago is to awaken the human spirit through contemporary dance, envisioning a dance landscape that is relevant and accessible to all.\n\n \nFor 48 years, Hubbard Street has been one of the most original forces in contemporary dance - bringing top choreographers and works to Chicago and beyond. Hubbard Street’s ever-evolving repertory, created by today’s leading choreographic voices, makes us a company that dancers aspire to join and performance venues all over the world are eager to present. To date, the main company has performed globally in 19 countries and 44 US states.\n“A company that can do anything … executed with stunning pace, precision, and purpose.”\n— San Francisco Classical Voice\n\nAt home in Chicago, Hubbard Street performs 20 times a year and delivers renowned education programs in 50 classrooms across 17 Chicagoland schools. HSDC Education utilizes the choreographic process to teach essential problem-solving skills, creativity, and collaboration - expanding our reach beyond traditional concert dance audiences, ensuring that everyone has access to world-class dance and instruction.\n \nProgram\nGnawa by Nacho Duato\nPercussion IV by Bob Fosse\nBeauty Chasers by Matthew Rushing\nBlue Soup by Aszure Barton\nPhoto by Michelle Reid\n \n\n\nEXCLUSIVE ARTICLE: Step inside the world of Hubbard Street Dance Chicago. What\'s it like to be in such a company? Find out here. We caught up with company member and Raleigh, NC, native Alexandria Best for an exclusive interview into the life of a Hubbard Street dancer.\nRead now",
+        detail: "The mission of Hubbard Street Dance Chicago is to awaken the human spirit through contemporary dance, envisioning a dance landscape that is relevant and accessible to all.\n\n \nFor 48 years, Hubbard Street has been one of the most original forces in contemporary dance - bringing top choreographers and works to Chicago and beyond. Hubbard Street’s ever-evolving repertory, created by today’s leading choreographic voices, makes us a company that dancers aspire to join and performance venues all over the world are eager to present. To date, the main company has performed globally in 19 countries and 44 US states.\n“A company that can do anything … executed with stunning pace, precision, and purpose.”\n— San Francisco Classical Voice\n\nAt home in Chicago, Hubbard Street performs 20 times a year and delivers renowned education programs in 50 classrooms across 17 Chicagoland schools. HSDC Education utilizes the choreographic process to teach essential problem-solving skills, creativity, and collaboration - expanding our reach beyond traditional concert dance audiences, ensuring that everyone has access to world-class dance and instruction.\n \nProgram\nSweet Gwen Suite by Bob Fosse and Gwen Verdon\nPercussion IV by Bob Fosse\nBeauty Chasers by Matthew Rushing\nBlue Soup by Aszure Barton\nPhoto by Michelle Reid\n \n\n\nEXCLUSIVE ARTICLE: Step inside the world of Hubbard Street Dance Chicago. What\'s it like to be in such a company? Find out here. We caught up with company member and Raleigh, NC, native Alexandria Best for an exclusive interview into the life of a Hubbard Street dancer.\nRead now",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2221,7 +2195,7 @@ const events = [
         name: `Andrew Scotchie`,
         sort_time: "2026-04-26 14:00:00",
         end_time_formatted: "2026-04-26 17:00",
-        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues ...\nRead More",
+        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues of Lightnin’ Hopkins, and the message of a punk-fueled preacher, Scotchie and his band have become a staple of the Southeast music scene. He’s shared stages with legends, crowd-surfed dive bars, and continues to craft his unique sound. His latest record, Love Is Enough, is a love letter to connection, chaos, and keeping your heart open in a world gone sideways.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2715,7 +2689,7 @@ const events = [
         name: `Joe Moss Band`,
         sort_time: "2026-05-02 14:00:00",
         end_time_formatted: "2026-05-02 17:00",
-        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his own sound and material within the styles he chooses to play. And the music world is taking notice. A talented singer, writer, and guitarist, Joe is a consistent and entertaining performer with a monster groove. A guitarist since the age of 10, Moss was given his passport into the blues world by Buddy Scott, who noticed Moss at a jam session at Rosa’s Blues Lounge in Chicago. Soon, Moss was playing seven nights a week as a member of Buddy’s Rib Tip band. Moss’ guitar skills quickly became notorious on the local scene and made him an in-demand sideman. He has played all over the world with: Buddy Guy, Little Milton, Willy “Big Eyes” Smith, Lurrie Bell, Lefty Dizz, Magic Slim, A.C. Reed, Billy Branch, Walter Scott and many more! Joe was a 2013 Inductee into the Chicago Blues Hall of Fame!",
+        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2780,7 +2754,7 @@ const events = [
         name: `Tina and Her Pony`,
         sort_time: "2026-05-03 14:00:00",
         end_time_formatted: "2026-05-03 17:00",
-        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence ...\nRead More",
+        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence to the stage. Known for lush harmonies, country folk storytelling, and songs that soothe as much as they stir, Tina’s music carries a quiet magic that lingers long after the last note.\nFrom the hills of Asheville to the deserts of New Mexico, she’s spent over a decade refining her sound by melding classic folk with touches of Americana, and more recently, dreamy pop and psychedelic soul.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3209,7 +3183,7 @@ const events = [
         name: `Alex Krug Combo`,
         sort_time: "2026-05-10 14:00:00",
         end_time_formatted: "2026-05-10 17:00",
-        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive headfirst. The thrill of adventure looms ahead of this band. Their Genre Queer Psychedelic Roots strikes a stunningly evocative chord about life, being an outsider and the kind of heartache and healing that transforms your soul.",
+        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3547,7 +3521,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3577,6 +3551,19 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - May",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-05-17",
+        event_time: "12:00 pm - 8:00 pm",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Papa's Express`,
+        sort_time: "2026-05-17 12:00:00",
+        end_time_formatted: "2026-05-17 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-05-17",
@@ -3586,7 +3573,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-05-17 14:00:00",
         end_time_formatted: "2026-05-17 17:00",
-        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up ...\nRead More",
+        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up is as unpredictable as his live performances, often spanning many genres and embracing themes of love, culture, resilience and adventure. He has begun releasing a new single each month in 2026 preceding the release of his debut, full length solo record.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3729,7 +3716,7 @@ const events = [
         name: `Reedy River String Band`,
         sort_time: "2026-05-23 14:00:00",
         end_time_formatted: "2026-05-23 17:00",
-        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s multi-instrumental prowess, this trio’s larger than life sound defies their numbers and transcends their bluegrass influences and instrumentation.\nFlying high from the success of their first European tour and with dates to be announced for their second, the Reedy River String Band recently flew back to the US to close out the 30th Albino Skunk Music Festival. Other notable festivals include The Earl Scruggs Music Festival, Merlefest, Charleston Bluegrass Festival, Birdfest and more.\nReedy River String Band released their debut self-titled album in 2022 and has since released two singles, “My Grass is Blue,” and “Punkin Brown” in 2023. Their studio releases and live performances have been played on multiple radio stations in the United States and Europe. Currently they are in preproduction for a 2025 release.",
+        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4028,7 +4015,7 @@ const events = [
         name: `Ryan Taylor Price`,
         sort_time: "2026-06-07 14:00:00",
         end_time_formatted: "2026-06-07 17:00",
-        detail: "Ryan Taylor Price crafts richly layered Americana with a songwriter’s precision and a roots musician’s soul. His album The Axe & The Tree blends pedal steel, mandolin, and warm folk-rock ...\nRead More",
+        detail: "Ryan Taylor Price crafts richly layered Americana with a songwriter’s precision and a roots musician’s soul. His album The Axe & The Tree blends pedal steel, mandolin, and warm folk-rock textures into songs that feel both cinematic and deeply personal. With a voice that carries grit and grace in equal measure, Price leans into thoughtful lyrics, strong melodies, and dynamic arrangements that move from intimate acoustic moments to sweeping, full-band sound. Honest, resonant, and beautifully crafted—his music lingers long after the last chord fades.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4236,7 +4223,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4496,7 +4483,7 @@ const events = [
         name: `The Headtones`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage ...\nRead More",
+        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage sounds, complemented by electronic elements and echoing horn lines to thrill and chill the listener. Hi-energy charts, mixed with a chill vibe, will keep your heart and feet beating, as Tampa Bay’s leading experimental Funk and Soul 6-piece band takes over the stages and airwaves near and far.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6056,7 +6043,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
+        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
