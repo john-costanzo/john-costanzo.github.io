@@ -91,6 +91,28 @@ function searchElements( query, index ) {
 }
 
 /**
+ * Updates the visibility of recipe categories based on whether they contain any visible recipes.
+ */
+function updateCategoryVisibility( ) {
+    const categories = document.querySelectorAll( '.category-heading' );
+    categories.forEach( category => {
+        const recipes = category.querySelectorAll( '.recipe-item' );
+        let hasVisibleRecipe = false;
+        for ( const recipe of recipes ) {
+            if ( recipe.style.display !== 'none' ) {
+                hasVisibleRecipe = true;
+                break;
+            }
+        }
+        if ( hasVisibleRecipe ) {
+            category.style.display = 'list-item';
+        } else {
+            category.style.display = 'none';
+        }
+    } );
+}
+
+/**
  * Removes diacritics from a string, converting it to a simpler form.
  * For example, "jalapeño" becomes "jalapeno".
  * @param {string} string The string to remove diacritics from.
@@ -121,6 +143,7 @@ function searchKeyboardHandler( ) {
     );
     if ( debugSearchRecipes ) console.log( "query=[%s]", query );
     searchElements( query.split( " " ), recipeIndexArray );
+    updateCategoryVisibility( );
 
     clearTimeout( searchTrackTimer );
     searchTrackTimer = setTimeout( ( ) => {
