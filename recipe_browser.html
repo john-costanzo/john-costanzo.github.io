@@ -1,847 +1,1018 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="images/chef-hat.png" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Recipe Browser</title>
-    <script>
-        const recipeBrowserVersion = "Monday, 2025-06-16 @ 17:20:43";
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-532DKX1BRN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-532DKX1BRN');
-    </script>
-
-    <script>
-        dojoConfig = {
-            parseOnLoad: true
-        }
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/recipe-styles.css" media="screen">
-    <link rel="stylesheet" href="css/special-block-styles.css" media="screen">
-    <link rel="stylesheet" href="css/circular-timer-style-using-dojo.css" media="screen">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
-    <script src="js/costanzo-recipes.js"></script>
-
-    <script>
-        // Some global variables
-        const rbDebug = false;
-        let currentRecipeId = undefined;
-        var printMenuItem;
-        var emailLinkMenuItem;
-        var commentMenuItem;
-        const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
-        var currentScalingPercentage = 100;
-        const largeFontSize = 'large-text';
-        const mediumFontSize = 'medium-text';
-        const smallFontSize = 'small-text';
-
-        var currentFontSize = mediumFontSize;
-
-        let alertSounds = new Object( );
-        alertSounds[ 60 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
-        alertSounds[ 32 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
-        alertSounds[ 4 ] = 'sounds/Slow-clock-ticking-sound-effect.mp3';
-        // alertSounds[ 3 ] = 'sounds/Thats All Folks.mp3';
-        alertSounds[ 0 ] = 'sounds/Clock-chimes-sounds.mp3';
-
-        const circularTimers = [ ]; // An array of all CircularTimers
-    </script>
-
-    <script>
-        // Process arguments
-        const args = window.location.search.substring( 1 ).split( "&" );
-        let numArgs = ( args[ 0 ] === '' ) ? undefined : args.length;
-        let nextArg = 0;
-
-        /**
-         * Removes the 'fontsize' parameter from a URL query string.
-         * @param {string} string - The URL query string.
-         * @returns {string} The query string without the 'fontsize' parameter.
-         */
-        function removeFontSize( string ) {
-            const stringWithoutFontsize = string.split( "&" ).filter( element => !element.startsWith( "fontsize" ) ).join( "&" );
-            return stringWithoutFontsize === "" ? "" : stringWithoutFontsize;
-        }
-
-        /**
-         * Creates a URL with a new argument.
-         * @param {string} originPath - The base path of the URL.
-         * @param {string} searchString - The existing query string.
-         * @param {string} arg - The new argument to add.
-         * @returns {string} The new URL.
-         */
-        function formURL( originPath, searchString, arg ) {
-            const modifiedSearchString = removeFontSize( searchString );
-            return ( originPath + modifiedSearchString + ( modifiedSearchString === "" ? "?" : "&" ) + arg );
-        }
-
-        /**
-         * Formats a URL for the recipe browser.
-         * @param {string} originPath - The base path of the URL.
-         * @param {string} recipeId - The ID of the recipe.
-         * @param {string} fontSize - The font size.
-         * @param {number} currentScalingPercentage - The scaling percentage.
-         * @param {string} searchTerm - The search term.
-         * @returns {string} The formatted URL.
-         */
-        function formatURL( originPath, recipeId, fontSize, currentScalingPercentage, searchTerm ) {
-            return ( originPath + "?view=" + recipeId + "&fontsize=" + fontSize + "&scalingpercentage=" + currentScalingPercentage + "&searchterm=" + searchTerm );
-        }
-
-        /**
-         * Gets the next name-value pair from the URL arguments.
-         * @returns {Array<string>|undefined} An array containing the name and value, or undefined if no more arguments.
-         */
-        function nextArgNVP( ) {
-            // Return an array [ name, value ] containing the "next" argument.
-            // If all arguments have been processed, return undefined.
-            if ( !numArgs ) return ( undefined );
-            if ( nextArg >= args.length ) return ( undefined );
-
-            const nvp = args[ nextArg ].split( "=" );
-            if ( nvp.length > 0 ) nvp[ 0 ] = nvp[ 0 ].toLowerCase( );
-            nextArg++;
-            return ( nvp );
-        }
-    </script>
-
-    <script>
-        const TITLE = 0;
-        const INGREDIENTS = 1;
-        const METHODS = 2;
-
-        /**
-         * Changes the background color of the header and ingredients panel.
-         * @param {string} color - The color to set.
-         */
-        function changeColor( color ) {
-            const topHeaderContainer = document.getElementById( "dijit_layout_ContentPane_0" );
-            if ( topHeaderContainer ) topHeaderContainer.style.backgroundColor = color;
-            const ingredientContainer = document.getElementById( "rightCol" );
-            if ( ingredientContainer ) ingredientContainer.style.backgroundColor = color;
-        }
-
-        /**
-         * Toggles the visibility of a recipe section.
-         * @param {string} id - The ID of the section to toggle.
-         */
-        function toggleSection( id ) {
-            // Toggle the visibility of the sections identified by ID.
-            require( [ "dojo/dom", "dojo/dom-style", "dojo/_base/fx", "dojo/fx", "dojo/dom-class" ],
-                function( dom, domStyle, fx, coreFx, domClass ) {
-                    const sectionHeaderId = "header-section-" + id;
-                    const sectionContentId = "heading-content-" + id;
-                    const content = dom.byId( sectionContentId );
-                    const contentEllipses = dom.byId( "heading-ellipses-" + id );
-
-                    if ( !content || !contentEllipses ) {
-                        console.error( "toggleSection: Error! content=[%s]; contentEllipses=[%s]", content, contentEllipses );
-                    } else {
-                        const display = domStyle.get( content, "display" );
-                        let wipe;
-                        let dots = "";
-
-                        if ( display === 'none' ) {
-                            // TODO: remove italic; make color black
-                            domClass.remove( sectionHeaderId, "itemClicked" );
-
-                            wipe = coreFx.wipeIn( {
-                                node: content,
-                                duration: 750
-                            } );
-                        } else {
-                            // TODO: make italic; make color grey
-                            domClass.add( sectionHeaderId, "itemClicked" );
-                            dots = "...";
-                            wipe = coreFx.wipeOut( {
-                                node: content,
-                                duration: 750
-                            } );
-                        }
-                        coreFx.combine( [ wipe ] ).play( );
-                        contentEllipses.innerHTML = dots;
-                    }
-                } );
-        }
-    </script>
-
-    <script>
-        /**
-         * Extracts timing information from a string.
-         * @param {string} s - The string to extract timing information from.
-         * @returns {Array<string>} An array containing timer IDs, timing info, and the string with timing information removed.
-         */
-        function extractTimingInformation( s ) {
-            // Extract timing information from the string S.
-            // Return a list containing successive pairs of elements are ( timerId timingInfo )
-            // and the last element is the string with the timing information removed.
-            const regex = /<script>\s*new\s+CircularTimer\("([^)]+)",\s*([^)]+)\)\s*<\/script>/;
-
-            let match;
-            let result = [ ];
-
-            while ( match = regex.exec( s ) ) {
-                const id = match[ 1 ];
-                const timing = match[ 2 ];
-                s = s.replace( regex, "" );
-                result.push( id, timing );
-            }
-            result.push( s );
-            return ( result );
-        }
-
-        /**
-         * Adds the ingredients for a recipe to the page.
-         * @param {string} recipeId - The ID of the recipe.
-         */
-        function addIngredients( recipeId ) {
-            // Add all ingredients for RECIPEID.
-            require( [ "dojo/dom", "dojo/domReady!" ],
-                function( dom ) {
-                    let recipeIngredients = dom.byId( "recipe_ingredients" );
-
-                    if ( typeof ingredientsMap !== "undefined" ) {
-                        let ingredients = ingredientsMap.get( recipeId );
-                        if ( ingredients ) {
-                            const result = extractTimingInformation( ingredients );
-                            recipeIngredients.innerHTML = result[ result.length - 1 ]; // The ingredients, stripped of timing info
-                            for ( let i = 0; i < result.length - 1; i += 2 ) {
-                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
-                                circularTimers.push( ct );
-                            }
-                        } else {
-                            console.error( "addIngredients: no such recipe id [%s]", recipeId );
-                            recipeIngredients.innerHTML = "";
-                        }
-                    }
-                } );
-        }
-
-        /**
-         * Adds the methods, yield, tags, and credits for a recipe to the page.
-         * @param {string} recipeId - The ID of the recipe.
-         */
-        function addMethods( recipeId ) {
-            // Add all methods for RECIPEID.
-            require( [ "dojo/dom", "dojo/domReady!" ],
-                function( dom ) {
-                    let recipeMethod = dom.byId( "recipe_method" );
-
-                    if ( typeof methodsMap !== "undefined" ) {
-                        let method = methodsMap.get( recipeId );
-                        if ( method ) {
-                            const result = extractTimingInformation( method );
-                            recipeMethod.innerHTML = result[ result.length - 1 ]; // The method, stripped of timing info
-                            for ( let i = 0; i < result.length - 1; i += 2 ) {
-                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
-                                circularTimers.push( ct );
-                            }
-                        } else {
-                            console.error( "addMethods: no such recipe id [%s]", recipeId );
-                            recipeMethod.innerHTML = "";
-                        }
-                    }
-
-                    if ( typeof yieldsMap !== "undefined" ) {
-                        let yield = yieldsMap.get( recipeId );
-                        if ( yield ) {
-                            const result = extractTimingInformation( yield );
-                            let yieldText = result[ result.length - 1 ]; // The yield, stripped of timing info
-                            recipeMethod.innerHTML =
-                                recipeMethod.innerHTML +
-                                "<h2>Yield</h2>" +
-                                yieldText;
-                            for ( let i = 0; i < result.length - 1; i += 2 ) {
-                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
-                                circularTimers.push( ct );
-                            }
-                        }
-                    }
-
-                    if ( typeof tagsMap !== "undefined" ) {
-                        let tag = tagsMap.get( recipeId );
-                        if ( tag ) {
-                            const result = extractTimingInformation( tag );
-                            let tagText = result[ result.length - 1 ]; // The tag, stripped of timing info
-                            recipeMethod.innerHTML =
-                                recipeMethod.innerHTML +
-                                "<h2>Tags</h2>" +
-                                tagText;
-                            for ( let i = 0; i < result.length - 1; i += 2 ) {
-                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
-                                circularTimers.push( ct );
-                            }
-                        }
-                    }
-                    if ( typeof creditsMap !== "undefined" ) {
-                        let credit = creditsMap.get( recipeId );
-                        if ( credit ) {
-                            const result = extractTimingInformation( credit );
-                            let creditText = result[ result.length - 1 ]; // The credit, stripped of timing info
-                            recipeMethod.innerHTML =
-                                recipeMethod.innerHTML +
-                                "<h2>Credit</h2>" +
-                                creditText;
-                            for ( let i = 0; i < result.length - 1; i += 2 ) {
-                                const ct = new CircularTimer( result[ i ], result[ i + 1 ], defaultAlertTime, alertSounds );
-                                circularTimers.push( ct );
-                            }
-                        }
-                    }
-                } );
-        }
-
-        /**
-         * Toggles the 'itemClicked' class on an element and its children to de-emphasize it.
-         * @param {HTMLElement} element - The element that was clicked.
-         */
-        function handleItemClick( element ) {
-            element.classList.toggle( 'itemClicked' );
-
-            // Now apply styles to all child elements
-            const children = element.getElementsByTagName( '*' );
-            for ( let child of children ) {
-                child.classList.toggle( 'itemClicked' )
-            }
-
-            let event_category;
-            if (document.getElementById('recipe_ingredients').contains(element)) {
-                event_category = 'ingredient_click';
-            } else if (document.getElementById('recipe_method').contains(element)) {
-                event_category = 'method_step_click';
-            }
-
-            if (event_category) {
-                gtag('event', event_category, {
-                  'recipe_id': currentRecipeId,
-                  'item_text': element.textContent.trim()
-                });
-            }
-        }
-
-        /**
-         * Fills in the recipe details on the page.
-         * @param {string} id - The ID of the recipe to fill in.
-         */
-        function fillInRecipe( id ) {
-            console.debug( "fillInRecipe: id=" + id );
-            const title = recipeIdToNameMap.get( id );
-            if ( title ) {
-                circularTimers.forEach( ( timer ) => {
-                    timer.cleanUp( );
-                } );
-                require( [ "dojo/dom" ],
-                    function( dom ) {
-                        let topHeader = dom.byId( "topHeader" );
-                        topHeader.innerHTML = title;
-                        addIngredients( id );
-                        addMethods( id );
-                    } );
-                currentRecipeId = id;
-                document.title = title;
-            } else {
-                toggleDrawer( 'recipeDrawer', true );
-                noSuchId( id );
-            }
-            scaleRecipeMenuItem.setDisabled( false );
-            printMenuItem.setDisabled( false );
-            emailLinkMenuItem.setDisabled( false );
-            commentMenuItem.setDisabled( false );
-            scaleRecipe( currentScalingPercentage );
-        }
-
-        /**
-         * Prints a recipe.
-         * @param {string} [id] - The ID of the recipe to print. If not provided, the current recipe is printed.
-         */
-        function printRecipe( id ) {
-            // Print a recipe.
-            // If given a recipe ID, load it first.
-            if ( id && currentRecipeId != id ) {
-                fillInRecipe( id );
-            }
-            if ( currentRecipeId ) {
-                // Create a new print window
-                const printWindow = window.open( "", "print" );
-
-                // Set the content of the print window to the element
-                require( [ "dojo/dom", "dojo/dom-construct" ],
-                    function( dom, domConstruct ) {
-                        const head = domConstruct.create( "head" );
-                        printWindow.document.body.appendChild( head );
-                        const ss1 = domConstruct.create( "link", {
-                            rel: "stylesheet",
-                            type: "text/css",
-                            href: "css/recipe-styles-print.css",
-                        } );
-                        printWindow.document.head.appendChild( ss1 );
-
-                        const ss2 = domConstruct.create( "link", {
-                            rel: "stylesheet",
-                            type: "text/css",
-                            href: "css/circular-timer-style-using-dojo-print.css",
-                        } );
-                        printWindow.document.head.appendChild( ss2 );
-
-                        const ss3 = domConstruct.create( "link", {
-                            rel: "stylesheet",
-                            type: "text/css",
-                            href: "css/special-block-styles.css",
-                        } );
-                        printWindow.document.head.appendChild( ss3 );
-
-                        const recipeIngredients = dom.byId( "recipe_ingredients" );
-                        const recipeMethod = dom.byId( "recipe_method" );
-                        const scalingMessage = ( currentScalingPercentage == 100 ? "" : " (scaled to " + currentScalingPercentage + "%)" );
-                        const recipeText = "<center><h1>" + topHeader.innerHTML + "</h1></center><p>\n" +
-                            "<h2>Ingredients" + scalingMessage + "</h2>" + recipeIngredients.innerHTML + "<p>\n" +
-                            "<h2>Method</h2>" + recipeMethod.innerHTML + "<p>\n";
-                        printWindow.document.body.innerHTML = recipeText;
-
-                        // Hide all the circular-timer-containers
-                        const elements = printWindow.document.querySelectorAll( '.circular-timer-container' );
-                        elements.forEach( function( element ) {
-                            element.style.display = "none";
-                        } );
-
-                        // Print the print window, but wait for the browser to process style sheet
-                        // Hack alert!
-                        setTimeout( function( ) {
-                            console.log( "printRecipe: printing recipe with id [%s]", currentRecipeId );
-                            printWindow.print( );
-                        }, 2000 );
-                    } );
-            } else {
-                console.error( "printRecipe: no recipe with id = [%s]", id );
-                noSuchId( id );
-            }
-        }
-
-        /**
-         * Shows a dialog box indicating that a recipe ID was not found.
-         * @param {string} id - The invalid recipe ID.
-         */
-        function noSuchId( id ) {
-            require( [ "dijit/Dialog", "dijit/form/Button" ],
-                function( Dialog, Button ) {
-
-                    // Create a Dialog widget
-                    const noSuchIdPopup = new Dialog( {
-                        content: "ERROR: No such id: [" + id + "]<p>"
-                    } );
-
-                    const dismissButton = new Button( {
-                        label: "Dismiss",
-                        showLabel: true,
-                        onClick: function( ) {
-                            noSuchIdPopup.hide( );
-                        }
-                    } );
-
-                    // Add the dismiss button to the pop-up
-                    noSuchIdPopup.addChild( dismissButton );
-                    noSuchIdPopup.show( );
-                } );
-        }
-
-        /**
-         * Opens the user's email client with a link to the current recipe.
-         */
-        function emailLinkToRecipe( ) {
-            // Send a link to the email client
-            if ( !currentRecipeId ) return;
-            const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
-            const title = topHeader.innerHTML;
-
-            window.open( "mailto:?subject=" + title + " recipe&body=I hope you enjoy this recipe:%0A%0A" + url );
-        }
-
-        /**
-         * Opens the user's email client with a pre-filled email for commenting on the current recipe.
-         */
-        function commentOnRecipe( ) {
-            if ( !currentRecipeId ) return;
-            const url = window.location.origin + window.location.pathname + "?view=" + currentRecipeId;
-            const title = topHeader.innerHTML;
-
-            window.open( "mailto:?subject=Comments on the \"" + title + "\" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A" + url );
-        }
-
-        /**
-         * Adds a list of recipes to the page.
-         * @param {Map<string, Array<Array<string>>>} recipeNameMap - A map of recipe categories to lists of recipes.
-         * @param {HTMLElement} refNode - The node to which the recipe list will be added.
-         */
-        function addRecipes( recipeNameMap, refNode ) {
-            // Add recipes in RECIPENAMEMAP as an unordered list and place it as REFNODE
-            require( [ "dojo/dom", "dojo/dom-construct", "dojo/on", "dojo/domReady!" ],
-                function( dom, domConstruct, on ) {
-
-                    // Create a list container
-                    const listContainer = domConstruct.create( "ul" );
-
-                    recipeNameMap.forEach( function( recipeList, cat ) {
-                        const catHeader = domConstruct.create( "li", {
-                            innerHTML: cat,
-                            class: "category-heading"
-                        } );
-                        domConstruct.place( catHeader, listContainer, "first" );
-
-                        const listSubContainer = domConstruct.create( "ul" );
-                        domConstruct.place( listSubContainer, catHeader );
-
-                        if ( rbDebug ) console.log( `recipeList(${cat}): ${recipeList.length} ==> ${recipeList}` );
-                        recipeList.forEach( function( recipe ) {
-                            const recipeTitle = recipe[ 0 ];
-                            const recipeId = recipe[ 1 ];
-
-                            const listItem = domConstruct.create( "li", {
-                                innerHTML: recipeTitle,
-                                id: recipeId,
-                                class: "recipe-item"
-                            } );
-                            // Add an event listener to each list item
-                            on( listItem, "click", function( ) {
-                                gtag('event', 'recipe_click', {
-                                  'recipe_id': recipeId,
-                                  'recipe_title': recipeTitle
-                                });
-                                const originPathname = window.location.origin + window.location.pathname;
-                                // const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
-                                const searchBox = document.getElementById( "searchBox" );
-                                if ( searchBox ) {
-                                    searchTerm = document.getElementById( "searchBox" ).value;
-                                } else {
-                                    console.error( "Cannot locate search box!" );
-                                }
-                                // Make sure to revert to 100% scale on this newly chosen recipe.
-                                const url = formatURL( originPathname, recipeId, fontSizeValueToDescription( currentFontSize ), 100, searchTerm );
-                                if ( rbDebug ) console.log( "url = " + url );
-                                window.open( url, "_self" );
-                            } );
-                            domConstruct.place( listItem, listSubContainer, "first" );
-                        } );
-                    } );
-                    domConstruct.place( listContainer, refNode );
-                } );
-        }
-    </script>
-
-    <script>
-        /**
-         * Sets the focus on a given element.
-         * @param {string} element - The ID of the element to focus on.
-         */
-        function focusOn( element ) {
-            require( [ "dojo/dom", "dojo/ready" ],
-                function( dom, ready ) {
-                    ready( 10000, function( ) { // Priority 10,000: force execution very late in the game!
-                        const el = dom.byId( element );
-                        if ( el ) {
-                            el.focus( );
-                        } else {
-                            console.error( "Cannot focus on '" + element + "'!!!" );
-                        }
-                    } );
-                } );
-        }
-
-        /**
-         * Toggles the visibility of a drawer.
-         * @param {string} drawer - The ID of the drawer to toggle.
-         * @param {boolean} [forceOpen=false] - Whether to force the drawer open.
-         */
-        function toggleDrawer( drawer, forceOpen = false ) {
-            require( [ "dojo/dom", "dojo/dom-style", "dojo/domReady!" ],
-                function( dom, domStyle ) {
-                    if ( rbDebug ) console.log( "toggleDrawer: starting..." );
-                    const panel = dom.byId( drawer );
-                    if ( panel ) {
-                        const left = domStyle.get( panel, "left" );
-                        if ( forceOpen ) {
-                            domStyle.set( panel, "left", "0px" );
-                        } else {
-                            domStyle.set( panel, "left", ( left < -390 ? "0px" : "-400px" ) );
-                            if ( rbDebug ) console.log( "toggleDrawer: Setting left to " + ( left < -390 ? "0px" : "-400px" ) );
-                        }
-                        focusOn( "searchBox" );
-                        searchKeyboardHandler( null );
-                    }
-                    if ( rbDebug ) console.log( "toggleDrawer: finished." );
-
-                } );
-        };
-
-        /**
-         * Opens the gear menu and focuses on the first item.
-         * @param {dijit/DropDownMenu} menu - The menu to open.
-         */
-        function selectGearMenu( menu ) {
-            if ( menu ) {
-                require( [ "dijit/registry", "dojo/domReady!" ],
-                    function( registry ) {
-                        const gearsButtonName = "gearsButton";
-                        const gearsButton = registry.byId( gearsButtonName );
-                        if ( gearsButton ) {
-                            gearsButton.openDropDown( );
-                            menu.focusFirstChild( );
-                        } else {
-                            console.error( "selectGearMenu: can't locate element with id = '" + gearsButtonName + "'!" );
-                        }
-                    } );
-            } else {
-                console.error( "selectGearMenu: expected menu argument" );
-            }
-        }
-
-        require( [ "dojo/on", "dojo/dom" ], function( on, dom ) {
-            on( document, "keydown", function( event ) {
-                if ( event.altKey ) {
-                    switch ( event.key ) {
-                        case 's':
-                            toggleDrawer( 'recipeDrawer' );
-                            break;
-                        case 'g':
-                            event.preventDefault( );
-                            selectGearMenu( gearsDropDownMenu );
-                            break;
-                    }
-                }
-
-                if ( event.ctrlKey ) {
-                    switch ( event.key ) {
-                        case 'p':
-                            event.preventDefault( );
-                            printRecipe( );
-                            break;
-                        case 's':
-                            event.preventDefault( );
-                            if ( promptForScalingPercentage( ) )
-                                redirectHere( )
-                            break;
-                        case 'e':
-                            event.preventDefault( );
-                            emailLinkToRecipe( );
-                            break;
-                        case '1':
-                            event.preventDefault( );
-                            currentFontSize = smallFontSize;
-                            redirectHere( );
-                            break;
-                        case '2':
-                            event.preventDefault( );
-                            currentFontSize = mediumFontSize;
-                            redirectHere( );
-                            break;
-                        case '3':
-                            event.preventDefault( );
-                            currentFontSize = largeFontSize;
-                            redirectHere( );
-                            break;
-                    }
-                }
-            } );
-        } );
-
-        addRecipes( recipeNameMap, "recipe_titles" );
-    </script>
-</head>
-
-<body class="claro">
-    <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
-
-        <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
-            <center>
-                <h1 id="topHeader">Recipe Browser<img src="images/chef-hat.png" width=35px></h1>
-            </center>
-
-            <div class="toggle-button">
-                <button data-dojo-type="dijit/form/Button" type="button">Search
-                    <script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-                        toggleDrawer( 'recipeDrawer' );
-	    </script>
-                </button>
-            </div>
-        </div>
-
-        <div id="centerCol" class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
-            <center>
-                <h2>Method</h2>
-            </center>
-            <div id="recipe_method"></div>
-
-            <div id="recipeDrawer" class="hidden">
-                <center>
-                    <h2>Recipes</h2>
-                </center>
-                <div class="tooltip">
-                    <input id="searchBox" class="search-box-control">
-                    <div class="tooltiptext">⇧ Narrow recipes to certain titles, ingredients and tags.</div>
-                </div>
-                <div id="recipe_titles"></div>
-            </div>
-        </div>
-
-        <div id="rightCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right', splitter: false">
-            <center>
-                <h2>Ingredients <span id="scaling_factor"></span>
-            </center>
-            </h2>
-            <div id="recipe_ingredients"></div>
-        </div>
-    </div>
-
-    <span id="recipeClock" class="recipe-clock"></span>
-
-    <script>
-        var clockElement = document.getElementById( "recipeClock" );
-
-        /**
-         * Updates the clock display.
-         * @param {HTMLElement} clock - The clock element to update.
-         */
-        function updateClock( clock ) {
-            const date = new Date( );
-            const dateOptions = {
-                weekday: 'short',
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric'
-            };
-            const formattedDate = date.toLocaleDateString( 'en-US', dateOptions );
-
-            const timeOptions = {
-                hour: 'numeric',
-                minute: 'numeric',
-                second: 'numeric',
-                hour12: true
-            };
-            const formattedTime = date.toLocaleTimeString( 'en-US', timeOptions );
-
-            clock.innerHTML = "<center>" + formattedDate + "<br>" + formattedTime + "</center>";
-        }
-
-        setInterval( function( ) {
-            updateClock( clockElement );
-        }, 1000 );
-    </script>
-
-    <div id="gearsMenu" class="gears-control"></div>
-
-    <script src="js/search-recipes.js"></script>
-    <script src="js/circular-timer-using-dojo.js"></script>
-    <script src="js/recipe-scaling.js"></script>
-    <script>
-        /**
-         * Changes the value of the search term input box.
-         * @param {string} newSearchTerm - The new search term.
-         */
-        function changeSearchTerm( newSearchTerm ) {
-            const searchBox = document.getElementById( "searchBox" );
-            if ( searchBox ) {
-                searchBox.value = newSearchTerm;
-            } else {
-                console.error( "Cannot locate search box!" );
-            }
-        }
-
-        /**
-         * Gets the current search term from the input box.
-         * @returns {string} The current search term.
-         */
-        function getSearchTerm( ) {
-            const searchBox = document.getElementById( "searchBox" );
-            if ( searchBox ) {
-                return ( searchBox.value );
-            } else {
-                console.error( "Cannot locate search box!" );
-            }
-        }
-
-        /**
-         * Changes the font size of elements matching a selector.
-         * @param {string} selector - The CSS selector for the elements to change.
-         * @param {string} newFontSize - The new font size class to apply.
-         */
-        function changeFontSize( selector, newFontSize ) {
-            require( [ "dojo/query", "dojo/dom-class", "dojo/domReady!" ],
-                function( query, domClass ) {
-                    const selectorElements = query( selector );
-                    selectorElements.forEach( function( node ) {
-                        domClass.remove( node, "small-text" );
-                        domClass.remove( node, "medium-text" );
-                        domClass.remove( node, "large-text" );
-                        domClass.add( node, newFontSize );
-                    } );
-                } );
-            currentFontSize = newFontSize;
-        }
-
-        /**
-         * Converts a font size description to a font size value.
-         * @param {string} fontSizeDescription - The font size description (e.g., "small", "medium", "large").
-         * @returns {string} The corresponding font size class.
-         */
-        function fontSizeDescriptionToValue( fontSizeDescription ) {
-            switch ( fontSizeDescription ) {
-                case "small":
-                    return ( smallFontSize );
-                    break;
-                case "medium":
-                    return ( mediumFontSize );
-                    break;
-                case "large":
-                    return ( largeFontSize );
-                    break;
-                default:
-                    console.error( "Error: Unknown font size [%s]; href=[%s] (expected one of { 'small', 'medium', 'large' })",
-                        fontSizeDescription, window.location.href );
-            }
-        }
-
-        /**
-         * Converts a font size value to a font size description.
-         * @param {string} fontSizeValue - The font size class.
-         * @returns {string} The corresponding font size description.
-         */
-        function fontSizeValueToDescription( fontSizeValue ) {
-            switch ( fontSizeValue ) {
-                case smallFontSize:
-                    return ( "small" );
-                    break;
-                case mediumFontSize:
-                    return ( "medium" );
-                    break;
-                case largeFontSize:
-                    return ( "large" );
-                    break;
-                default:
-                    console.error( "Error: Unknown font size [%d]; href=[%s] (expected one of { %d, %d or %d })",
-                        fontSizeValue, window.location.href, smallFontSize, mediumFontSize, largeFontSize );
-            }
-        }
-
-        const recipeStats =
-            recipeNameArray.map( function( cat ) {
-                return [ cat[ 0 ], cat[ 1 ].length ]
-            } )
-            .sort( )
-            .map( function( entry ) {
-                return ( "<li class='recipe-statistic'>" + entry[ 0 ] + ": " + entry[ 1 ] + "</li>" )
-            } ).join( "" );
-        const aboutText = `<center><h1>Recipe Browser Component Versions</h1></center>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="images/chef-hat.png" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>Recipe Browser</title>
+		<script>
+			const recipeBrowserVersion = "Wednesday, 2026-04-22 @ 10:01:55";
+		</script>
+
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-532DKX1BRN"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-532DKX1BRN");
+		</script>
+
+		<script>
+			dojoConfig = {
+				parseOnLoad: true,
+			};
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="css/recipe-styles.css" media="screen" />
+		<link rel="stylesheet" href="css/special-block-styles.css" media="screen" />
+		<link
+			rel="stylesheet"
+			href="css/circular-timer-style-using-dojo.css"
+			media="screen"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css"
+			media="screen"
+		/>
+		<script src="js/costanzo-recipes.js"></script>
+
+		<script>
+			// Some global variables
+			const rbDebug = false;
+			let currentRecipeId = undefined;
+			var printMenuItem;
+			var emailLinkMenuItem;
+			var commentMenuItem;
+			const defaultAlertTime = 30; // Time before CircularTimer expiration that it goes into alert mode
+			var currentScalingPercentage = 100;
+			const largeFontSize = "large-text";
+			const mediumFontSize = "medium-text";
+			const smallFontSize = "small-text";
+
+			var currentFontSize = mediumFontSize;
+
+			let alertSounds = new Object();
+			alertSounds[60] = "sounds/Slow-clock-ticking-sound-effect.mp3";
+			alertSounds[32] = "sounds/Slow-clock-ticking-sound-effect.mp3";
+			alertSounds[4] = "sounds/Slow-clock-ticking-sound-effect.mp3";
+			// alertSounds[ 3 ] = 'sounds/Thats All Folks.mp3';
+			alertSounds[0] = "sounds/Clock-chimes-sounds.mp3";
+
+			const circularTimers = []; // An array of all CircularTimers
+		</script>
+
+		<script>
+			// Process arguments
+			const args = window.location.search.substring(1).split("&");
+			let numArgs = args[0] === "" ? undefined : args.length;
+			let nextArg = 0;
+
+			/**
+			 * Removes the 'fontsize' parameter from a URL query string.
+			 * @param {string} string - The URL query string.
+			 * @returns {string} The query string without the 'fontsize' parameter.
+			 */
+			function removeFontSize(string) {
+				const stringWithoutFontsize = string
+					.split("&")
+					.filter((element) => !element.startsWith("fontsize"))
+					.join("&");
+				return stringWithoutFontsize === "" ? "" : stringWithoutFontsize;
+			}
+
+			/**
+			 * Creates a URL with a new argument.
+			 * @param {string} originPath - The base path of the URL.
+			 * @param {string} searchString - The existing query string.
+			 * @param {string} arg - The new argument to add.
+			 * @returns {string} The new URL.
+			 */
+			function formURL(originPath, searchString, arg) {
+				const modifiedSearchString = removeFontSize(searchString);
+				return (
+					originPath +
+					modifiedSearchString +
+					(modifiedSearchString === "" ? "?" : "&") +
+					arg
+				);
+			}
+
+			/**
+			 * Formats a URL for the recipe browser.
+			 * @param {string} originPath - The base path of the URL.
+			 * @param {string} recipeId - The ID of the recipe.
+			 * @param {string} fontSize - The font size.
+			 * @param {number} currentScalingPercentage - The scaling percentage.
+			 * @param {string} searchTerm - The search term.
+			 * @returns {string} The formatted URL.
+			 */
+			function formatURL(
+				originPath,
+				recipeId,
+				fontSize,
+				currentScalingPercentage,
+				searchTerm,
+			) {
+				return (
+					originPath +
+					"?view=" +
+					recipeId +
+					"&fontsize=" +
+					fontSize +
+					"&scalingpercentage=" +
+					currentScalingPercentage +
+					"&searchterm=" +
+					searchTerm
+				);
+			}
+
+			/**
+			 * Gets the next name-value pair from the URL arguments.
+			 * @returns {Array<string>|undefined} An array containing the name and value, or undefined if no more arguments.
+			 */
+			function nextArgNVP() {
+				// Return an array [ name, value ] containing the "next" argument.
+				// If all arguments have been processed, return undefined.
+				if (!numArgs) return undefined;
+				if (nextArg >= args.length) return undefined;
+
+				const nvp = args[nextArg].split("=");
+				if (nvp.length > 0) nvp[0] = nvp[0].toLowerCase();
+				nextArg++;
+				return nvp;
+			}
+		</script>
+
+		<script>
+			const TITLE = 0;
+			const INGREDIENTS = 1;
+			const METHODS = 2;
+
+			/**
+			 * Changes the background color of the header and ingredients panel.
+			 * @param {string} color - The color to set.
+			 */
+			function changeColor(color) {
+				const topHeaderContainer = document.getElementById(
+					"dijit_layout_ContentPane_0",
+				);
+				if (topHeaderContainer)
+					topHeaderContainer.style.backgroundColor = color;
+				const ingredientContainer = document.getElementById("rightCol");
+				if (ingredientContainer)
+					ingredientContainer.style.backgroundColor = color;
+			}
+
+			/**
+			 * Toggles the visibility of a recipe section.
+			 * @param {string} id - The ID of the section to toggle.
+			 */
+			function toggleSection(id) {
+				// Toggle the visibility of the sections identified by ID.
+				require([
+					"dojo/dom",
+					"dojo/dom-style",
+					"dojo/_base/fx",
+					"dojo/fx",
+					"dojo/dom-class",
+				], function (dom, domStyle, fx, coreFx, domClass) {
+					const sectionHeaderId = "header-section-" + id;
+					const sectionContentId = "heading-content-" + id;
+					const content = dom.byId(sectionContentId);
+					const contentEllipses = dom.byId("heading-ellipses-" + id);
+
+					if (!content || !contentEllipses) {
+						console.error(
+							"toggleSection: Error! content=[%s]; contentEllipses=[%s]",
+							content,
+							contentEllipses,
+						);
+					} else {
+						const display = domStyle.get(content, "display");
+						let wipe;
+						let dots = "";
+
+						if (display === "none") {
+							// TODO: remove italic; make color black
+							domClass.remove(sectionHeaderId, "itemClicked");
+
+							wipe = coreFx.wipeIn({
+								node: content,
+								duration: 750,
+							});
+						} else {
+							// TODO: make italic; make color grey
+							domClass.add(sectionHeaderId, "itemClicked");
+							dots = "...";
+							wipe = coreFx.wipeOut({
+								node: content,
+								duration: 750,
+							});
+						}
+						coreFx.combine([wipe]).play();
+						contentEllipses.innerHTML = dots;
+					}
+				});
+			}
+		</script>
+
+		<script>
+			/**
+			 * Extracts timing information from a string.
+			 * @param {string} s - The string to extract timing information from.
+			 * @returns {Array<string>} An array containing timer IDs, timing info, and the string with timing information removed.
+			 */
+			function extractTimingInformation(s) {
+				// Extract timing information from the string S.
+				// Return a list containing successive pairs of elements are ( timerId timingInfo )
+				// and the last element is the string with the timing information removed.
+				const regex =
+					/<script>\s*new\s+CircularTimer\("([^)]+)",\s*([^)]+)\)\s*<\/script>/;
+
+				let match;
+				let result = [];
+
+				while ((match = regex.exec(s))) {
+					const id = match[1];
+					const timing = match[2];
+					s = s.replace(regex, "");
+					result.push(id, timing);
+				}
+				result.push(s);
+				return result;
+			}
+
+			/**
+			 * Adds the ingredients for a recipe to the page.
+			 * @param {string} recipeId - The ID of the recipe.
+			 */
+			function addIngredients(recipeId) {
+				// Add all ingredients for RECIPEID.
+				require(["dojo/dom", "dojo/domReady!"], function (dom) {
+					let recipeIngredients = dom.byId("recipe_ingredients");
+
+					if (typeof ingredientsMap !== "undefined") {
+						let ingredients = ingredientsMap.get(recipeId);
+						if (ingredients) {
+							const result = extractTimingInformation(ingredients);
+							recipeIngredients.innerHTML = result[result.length - 1]; // The ingredients, stripped of timing info
+							for (let i = 0; i < result.length - 1; i += 2) {
+								const ct = new CircularTimer(
+									result[i],
+									result[i + 1],
+									defaultAlertTime,
+									alertSounds,
+								);
+								circularTimers.push(ct);
+							}
+						} else {
+							console.error("addIngredients: no such recipe id [%s]", recipeId);
+							recipeIngredients.innerHTML = "";
+						}
+					}
+				});
+			}
+
+			/**
+			 * Adds the methods, yield, tags, and credits for a recipe to the page.
+			 * @param {string} recipeId - The ID of the recipe.
+			 */
+			function addMethods(recipeId) {
+				// Add all methods for RECIPEID.
+				require(["dojo/dom", "dojo/domReady!"], function (dom) {
+					let recipeMethod = dom.byId("recipe_method");
+
+					if (typeof methodsMap !== "undefined") {
+						let method = methodsMap.get(recipeId);
+						if (method) {
+							const result = extractTimingInformation(method);
+							recipeMethod.innerHTML = result[result.length - 1]; // The method, stripped of timing info
+							for (let i = 0; i < result.length - 1; i += 2) {
+								const ct = new CircularTimer(
+									result[i],
+									result[i + 1],
+									defaultAlertTime,
+									alertSounds,
+								);
+								circularTimers.push(ct);
+							}
+						} else {
+							console.error("addMethods: no such recipe id [%s]", recipeId);
+							recipeMethod.innerHTML = "";
+						}
+					}
+
+					if (typeof yieldsMap !== "undefined") {
+						let yield = yieldsMap.get(recipeId);
+						if (yield) {
+							const result = extractTimingInformation(yield);
+							let yieldText = result[result.length - 1]; // The yield, stripped of timing info
+							recipeMethod.innerHTML =
+								recipeMethod.innerHTML + "<h2>Yield</h2>" + yieldText;
+							for (let i = 0; i < result.length - 1; i += 2) {
+								const ct = new CircularTimer(
+									result[i],
+									result[i + 1],
+									defaultAlertTime,
+									alertSounds,
+								);
+								circularTimers.push(ct);
+							}
+						}
+					}
+
+					if (typeof tagsMap !== "undefined") {
+						let tag = tagsMap.get(recipeId);
+						if (tag) {
+							const result = extractTimingInformation(tag);
+							let tagText = result[result.length - 1]; // The tag, stripped of timing info
+							recipeMethod.innerHTML =
+								recipeMethod.innerHTML + "<h2>Tags</h2>" + tagText;
+							for (let i = 0; i < result.length - 1; i += 2) {
+								const ct = new CircularTimer(
+									result[i],
+									result[i + 1],
+									defaultAlertTime,
+									alertSounds,
+								);
+								circularTimers.push(ct);
+							}
+						}
+					}
+					if (typeof creditsMap !== "undefined") {
+						let credit = creditsMap.get(recipeId);
+						if (credit) {
+							const result = extractTimingInformation(credit);
+							let creditText = result[result.length - 1]; // The credit, stripped of timing info
+							recipeMethod.innerHTML =
+								recipeMethod.innerHTML + "<h2>Credit</h2>" + creditText;
+							for (let i = 0; i < result.length - 1; i += 2) {
+								const ct = new CircularTimer(
+									result[i],
+									result[i + 1],
+									defaultAlertTime,
+									alertSounds,
+								);
+								circularTimers.push(ct);
+							}
+						}
+					}
+				});
+			}
+
+			/**
+			 * Toggles the 'itemClicked' class on an element and its children to de-emphasize it.
+			 * @param {HTMLElement} element - The element that was clicked.
+			 */
+			function handleItemClick(element) {
+				element.classList.toggle("itemClicked");
+
+				// Now apply styles to all child elements
+				const children = element.getElementsByTagName("*");
+				for (let child of children) {
+					child.classList.toggle("itemClicked");
+				}
+
+				let event_category;
+				if (document.getElementById("recipe_ingredients").contains(element)) {
+					event_category = "ingredient_click";
+				} else if (document.getElementById("recipe_method").contains(element)) {
+					event_category = "method_step_click";
+				}
+
+				if (event_category) {
+					gtag("event", event_category, {
+						recipe_id: currentRecipeId,
+						item_text: element.textContent.trim(),
+					});
+				}
+			}
+
+			/**
+			 * Fills in the recipe details on the page.
+			 * @param {string} id - The ID of the recipe to fill in.
+			 */
+			function fillInRecipe(id) {
+				console.debug("fillInRecipe: id=" + id);
+				const title = recipeIdToNameMap.get(id);
+				if (title) {
+					circularTimers.forEach((timer) => {
+						timer.cleanUp();
+					});
+					require(["dojo/dom"], function (dom) {
+						let topHeader = dom.byId("topHeader");
+						topHeader.innerHTML = title;
+						addIngredients(id);
+						addMethods(id);
+					});
+					currentRecipeId = id;
+					document.title = title;
+				} else {
+					toggleDrawer("recipeDrawer", true);
+					noSuchId(id);
+				}
+				scaleRecipeMenuItem.setDisabled(false);
+				printMenuItem.setDisabled(false);
+				emailLinkMenuItem.setDisabled(false);
+				commentMenuItem.setDisabled(false);
+				scaleRecipe(currentScalingPercentage);
+			}
+
+			/**
+			 * Prints a recipe.
+			 * @param {string} [id] - The ID of the recipe to print. If not provided, the current recipe is printed.
+			 */
+			function printRecipe(id) {
+				// Print a recipe.
+				// If given a recipe ID, load it first.
+				if (id && currentRecipeId != id) {
+					fillInRecipe(id);
+				}
+				if (currentRecipeId) {
+					// Create a new print window
+					const printWindow = window.open("", "print");
+
+					// Set the content of the print window to the element
+					require(["dojo/dom", "dojo/dom-construct"], function (
+						dom,
+						domConstruct,
+					) {
+						const head = domConstruct.create("head");
+						printWindow.document.body.appendChild(head);
+						const ss1 = domConstruct.create("link", {
+							rel: "stylesheet",
+							type: "text/css",
+							href: "css/recipe-styles-print.css",
+						});
+						printWindow.document.head.appendChild(ss1);
+
+						const ss2 = domConstruct.create("link", {
+							rel: "stylesheet",
+							type: "text/css",
+							href: "css/circular-timer-style-using-dojo-print.css",
+						});
+						printWindow.document.head.appendChild(ss2);
+
+						const ss3 = domConstruct.create("link", {
+							rel: "stylesheet",
+							type: "text/css",
+							href: "css/special-block-styles.css",
+						});
+						printWindow.document.head.appendChild(ss3);
+
+						const recipeIngredients = dom.byId("recipe_ingredients");
+						const recipeMethod = dom.byId("recipe_method");
+						const scalingMessage =
+							currentScalingPercentage == 100
+								? ""
+								: " (scaled to " + currentScalingPercentage + "%)";
+						const recipeText =
+							"<center><h1>" +
+							topHeader.innerHTML +
+							"</h1></center><p>\n" +
+							"<h2>Ingredients" +
+							scalingMessage +
+							"</h2>" +
+							recipeIngredients.innerHTML +
+							"<p>\n" +
+							"<h2>Method</h2>" +
+							recipeMethod.innerHTML +
+							"<p>\n";
+						printWindow.document.body.innerHTML = recipeText;
+
+						// Hide all the circular-timer-containers
+						const elements = printWindow.document.querySelectorAll(
+							".circular-timer-container",
+						);
+						elements.forEach(function (element) {
+							element.style.display = "none";
+						});
+
+						// Print the print window, but wait for the browser to process style sheet
+						// Hack alert!
+						setTimeout(function () {
+							console.log(
+								"printRecipe: printing recipe with id [%s]",
+								currentRecipeId,
+							);
+							printWindow.print();
+						}, 2000);
+					});
+				} else {
+					console.error("printRecipe: no recipe with id = [%s]", id);
+					noSuchId(id);
+				}
+			}
+
+			/**
+			 * Shows a dialog box indicating that a recipe ID was not found.
+			 * @param {string} id - The invalid recipe ID.
+			 */
+			function noSuchId(id) {
+				require(["dijit/Dialog", "dijit/form/Button"], function (
+					Dialog,
+					Button,
+				) {
+					// Create a Dialog widget
+					const noSuchIdPopup = new Dialog({
+						content: "ERROR: No such id: [" + id + "]<p>",
+					});
+
+					const dismissButton = new Button({
+						label: "Dismiss",
+						showLabel: true,
+						onClick: function () {
+							noSuchIdPopup.hide();
+						},
+					});
+
+					// Add the dismiss button to the pop-up
+					noSuchIdPopup.addChild(dismissButton);
+					noSuchIdPopup.show();
+				});
+			}
+
+			/**
+			 * Opens the user's email client with a link to the current recipe.
+			 */
+			function emailLinkToRecipe() {
+				// Send a link to the email client
+				if (!currentRecipeId) return;
+				const url =
+					window.location.origin +
+					window.location.pathname +
+					"?view=" +
+					currentRecipeId;
+				const title = topHeader.innerHTML;
+
+				window.open(
+					"mailto:?subject=" +
+						title +
+						" recipe&body=I hope you enjoy this recipe:%0A%0A" +
+						url,
+				);
+			}
+
+			/**
+			 * Opens the user's email client with a pre-filled email for commenting on the current recipe.
+			 */
+			function commentOnRecipe() {
+				if (!currentRecipeId) return;
+				const url =
+					window.location.origin +
+					window.location.pathname +
+					"?view=" +
+					currentRecipeId;
+				const title = topHeader.innerHTML;
+
+				window.open(
+					'mailto:?subject=Comments on the "' +
+						title +
+						'" recipe&body=Here are my comments:%0A%0AIngredients:%0A%0AMethod::%0A%0AOther:%0A%0A____________________________________________________________%0A%0A' +
+						url,
+				);
+			}
+
+			/**
+			 * Adds a list of recipes to the page.
+			 * @param {Map<string, Array<Array<string>>>} recipeNameMap - A map of recipe categories to lists of recipes.
+			 * @param {HTMLElement} refNode - The node to which the recipe list will be added.
+			 */
+			function addRecipes(recipeNameMap, refNode) {
+				// Add recipes in RECIPENAMEMAP as an unordered list and place it as REFNODE
+				require([
+					"dojo/dom",
+					"dojo/dom-construct",
+					"dojo/on",
+					"dojo/domReady!",
+				], function (dom, domConstruct, on) {
+					// Create a list container
+					const listContainer = domConstruct.create("ul");
+
+					recipeNameMap.forEach(function (recipeList, cat) {
+						const catHeader = domConstruct.create("li", {
+							innerHTML: cat,
+							class: "category-heading",
+						});
+						domConstruct.place(catHeader, listContainer, "first");
+
+						const listSubContainer = domConstruct.create("ul");
+						domConstruct.place(listSubContainer, catHeader);
+
+						if (rbDebug)
+							console.log(
+								`recipeList(${cat}): ${recipeList.length} ==> ${recipeList}`,
+							);
+						recipeList.forEach(function (recipe) {
+							const recipeTitle = recipe[0];
+							const recipeId = recipe[1];
+
+							const listItem = domConstruct.create("li", {
+								innerHTML: recipeTitle,
+								id: recipeId,
+								class: "recipe-item",
+							});
+							// Add an event listener to each list item
+							on(listItem, "click", function () {
+								gtag("event", "recipe_click", {
+									recipe_id: recipeId,
+									recipe_title: recipeTitle,
+								});
+								const originPathname =
+									window.location.origin + window.location.pathname;
+								// const url = formURL( originPathname, "fontsize=" + fontSizeValueToDescription( currentFontSize ), "view=" + recipeId );
+								const searchBox = document.getElementById("searchBox");
+								if (searchBox) {
+									searchTerm = document.getElementById("searchBox").value;
+								} else {
+									console.error("Cannot locate search box!");
+								}
+								// Make sure to revert to 100% scale on this newly chosen recipe.
+								const url = formatURL(
+									originPathname,
+									recipeId,
+									fontSizeValueToDescription(currentFontSize),
+									100,
+									searchTerm,
+								);
+								if (rbDebug) console.log("url = " + url);
+								window.open(url, "_self");
+							});
+							domConstruct.place(listItem, listSubContainer, "first");
+						});
+					});
+					domConstruct.place(listContainer, refNode);
+				});
+			}
+		</script>
+
+		<script>
+			/**
+			 * Sets the focus on a given element.
+			 * @param {string} element - The ID of the element to focus on.
+			 */
+			function focusOn(element) {
+				require(["dojo/dom", "dojo/ready"], function (dom, ready) {
+					ready(10000, function () {
+						// Priority 10,000: force execution very late in the game!
+						const el = dom.byId(element);
+						if (el) {
+							el.focus();
+						} else {
+							console.error("Cannot focus on '" + element + "'!!!");
+						}
+					});
+				});
+			}
+
+			/**
+			 * Toggles the visibility of a drawer.
+			 * @param {string} drawer - The ID of the drawer to toggle.
+			 * @param {boolean} [forceOpen=false] - Whether to force the drawer open.
+			 */
+			function toggleDrawer(drawer, forceOpen = false) {
+				require(["dojo/dom", "dojo/dom-style", "dojo/domReady!"], function (
+					dom,
+					domStyle,
+				) {
+					if (rbDebug) console.log("toggleDrawer: starting...");
+					const panel = dom.byId(drawer);
+					if (panel) {
+						const left = domStyle.get(panel, "left");
+						if (forceOpen) {
+							domStyle.set(panel, "left", "0px");
+						} else {
+							domStyle.set(panel, "left", left < -390 ? "0px" : "-400px");
+							if (rbDebug)
+								console.log(
+									"toggleDrawer: Setting left to " +
+										(left < -390 ? "0px" : "-400px"),
+								);
+						}
+						focusOn("searchBox");
+						searchKeyboardHandler(null);
+					}
+					if (rbDebug) console.log("toggleDrawer: finished.");
+				});
+			}
+
+			/**
+			 * Opens the gear menu and focuses on the first item.
+			 * @param {dijit/DropDownMenu} menu - The menu to open.
+			 */
+			function selectGearMenu(menu) {
+				if (menu) {
+					require(["dijit/registry", "dojo/domReady!"], function (registry) {
+						const gearsButtonName = "gearsButton";
+						const gearsButton = registry.byId(gearsButtonName);
+						if (gearsButton) {
+							gearsButton.openDropDown();
+							menu.focusFirstChild();
+						} else {
+							console.error(
+								"selectGearMenu: can't locate element with id = '" +
+									gearsButtonName +
+									"'!",
+							);
+						}
+					});
+				} else {
+					console.error("selectGearMenu: expected menu argument");
+				}
+			}
+
+			require(["dojo/on", "dojo/dom"], function (on, dom) {
+				on(document, "keydown", function (event) {
+					if (event.altKey) {
+						switch (event.key) {
+							case "s":
+								toggleDrawer("recipeDrawer");
+								break;
+							case "g":
+								event.preventDefault();
+								selectGearMenu(gearsDropDownMenu);
+								break;
+						}
+					}
+
+					if (event.ctrlKey) {
+						switch (event.key) {
+							case "p":
+								event.preventDefault();
+								printRecipe();
+								break;
+							case "s":
+								event.preventDefault();
+								if (promptForScalingPercentage()) redirectHere();
+								break;
+							case "e":
+								event.preventDefault();
+								emailLinkToRecipe();
+								break;
+							case "1":
+								event.preventDefault();
+								currentFontSize = smallFontSize;
+								redirectHere();
+								break;
+							case "2":
+								event.preventDefault();
+								currentFontSize = mediumFontSize;
+								redirectHere();
+								break;
+							case "3":
+								event.preventDefault();
+								currentFontSize = largeFontSize;
+								redirectHere();
+								break;
+						}
+					}
+				});
+			});
+
+			addRecipes(recipeNameMap, "recipe_titles");
+		</script>
+	</head>
+
+	<body class="claro">
+		<div
+			id="appLayout"
+			class="demoLayout"
+			data-dojo-type="dijit/layout/BorderContainer"
+			data-dojo-props="design: 'headline'"
+		>
+			<div
+				class="edgePanel"
+				data-dojo-type="dijit/layout/ContentPane"
+				data-dojo-props="region: 'top'"
+			>
+				<center>
+					<h1 id="topHeader">
+						Recipe Browser<img src="images/chef-hat.png" width="35px" />
+					</h1>
+				</center>
+
+				<div class="toggle-button">
+					<button data-dojo-type="dijit/form/Button" type="button">
+						Search
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							toggleDrawer( 'recipeDrawer' );
+						</script>
+					</button>
+				</div>
+			</div>
+
+			<div
+				id="centerCol"
+				class="centerPanel"
+				data-dojo-type="dijit/layout/ContentPane"
+				data-dojo-props="region: 'center'"
+			>
+				<center>
+					<h2>Method</h2>
+				</center>
+				<div id="recipe_method"></div>
+
+				<div id="recipeDrawer" class="hidden">
+					<center>
+						<h2>Recipes</h2>
+					</center>
+					<div class="tooltip">
+						<input id="searchBox" class="search-box-control" />
+						<div class="tooltiptext">
+							⇧ Narrow recipes to certain titles, ingredients and tags.
+						</div>
+					</div>
+					<div id="recipe_titles"></div>
+				</div>
+			</div>
+
+			<div
+				id="rightCol"
+				class="edgePanel"
+				data-dojo-type="dijit/layout/ContentPane"
+				data-dojo-props="region: 'right', splitter: false"
+			>
+				<center>
+					<h2>Ingredients <span id="scaling_factor"></span></h2>
+				</center>
+				<div id="recipe_ingredients"></div>
+			</div>
+		</div>
+
+		<span id="recipeClock" class="recipe-clock"></span>
+
+		<script>
+			var clockElement = document.getElementById("recipeClock");
+
+			/**
+			 * Updates the clock display.
+			 * @param {HTMLElement} clock - The clock element to update.
+			 */
+			function updateClock(clock) {
+				const date = new Date();
+				const dateOptions = {
+					weekday: "short",
+					month: "short",
+					day: "numeric",
+					year: "numeric",
+				};
+				const formattedDate = date.toLocaleDateString("en-US", dateOptions);
+
+				const timeOptions = {
+					hour: "numeric",
+					minute: "numeric",
+					second: "numeric",
+					hour12: true,
+				};
+				const formattedTime = date.toLocaleTimeString("en-US", timeOptions);
+
+				clock.innerHTML =
+					"<center>" + formattedDate + "<br>" + formattedTime + "</center>";
+			}
+
+			setInterval(function () {
+				updateClock(clockElement);
+			}, 1000);
+		</script>
+
+		<div id="gearsMenu" class="gears-control"></div>
+
+		<script src="js/search-recipes.js"></script>
+		<script src="js/circular-timer-using-dojo.js"></script>
+		<script src="js/recipe-scaling.js"></script>
+		<script>
+			/**
+			 * Changes the value of the search term input box.
+			 * @param {string} newSearchTerm - The new search term.
+			 */
+			function changeSearchTerm(newSearchTerm) {
+				const searchBox = document.getElementById("searchBox");
+				if (searchBox) {
+					searchBox.value = newSearchTerm;
+				} else {
+					console.error("Cannot locate search box!");
+				}
+			}
+
+			/**
+			 * Gets the current search term from the input box.
+			 * @returns {string} The current search term.
+			 */
+			function getSearchTerm() {
+				const searchBox = document.getElementById("searchBox");
+				if (searchBox) {
+					return searchBox.value;
+				} else {
+					console.error("Cannot locate search box!");
+				}
+			}
+
+			/**
+			 * Changes the font size of elements matching a selector.
+			 * @param {string} selector - The CSS selector for the elements to change.
+			 * @param {string} newFontSize - The new font size class to apply.
+			 */
+			function changeFontSize(selector, newFontSize) {
+				require(["dojo/query", "dojo/dom-class", "dojo/domReady!"], function (
+					query,
+					domClass,
+				) {
+					const selectorElements = query(selector);
+					selectorElements.forEach(function (node) {
+						domClass.remove(node, "small-text");
+						domClass.remove(node, "medium-text");
+						domClass.remove(node, "large-text");
+						domClass.add(node, newFontSize);
+					});
+				});
+				currentFontSize = newFontSize;
+			}
+
+			/**
+			 * Converts a font size description to a font size value.
+			 * @param {string} fontSizeDescription - The font size description (e.g., "small", "medium", "large").
+			 * @returns {string} The corresponding font size class.
+			 */
+			function fontSizeDescriptionToValue(fontSizeDescription) {
+				switch (fontSizeDescription) {
+					case "small":
+						return smallFontSize;
+						break;
+					case "medium":
+						return mediumFontSize;
+						break;
+					case "large":
+						return largeFontSize;
+						break;
+					default:
+						console.error(
+							"Error: Unknown font size [%s]; href=[%s] (expected one of { 'small', 'medium', 'large' })",
+							fontSizeDescription,
+							window.location.href,
+						);
+				}
+			}
+
+			/**
+			 * Converts a font size value to a font size description.
+			 * @param {string} fontSizeValue - The font size class.
+			 * @returns {string} The corresponding font size description.
+			 */
+			function fontSizeValueToDescription(fontSizeValue) {
+				switch (fontSizeValue) {
+					case smallFontSize:
+						return "small";
+						break;
+					case mediumFontSize:
+						return "medium";
+						break;
+					case largeFontSize:
+						return "large";
+						break;
+					default:
+						console.error(
+							"Error: Unknown font size [%d]; href=[%s] (expected one of { %d, %d or %d })",
+							fontSizeValue,
+							window.location.href,
+							smallFontSize,
+							mediumFontSize,
+							largeFontSize,
+						);
+				}
+			}
+
+			const recipeStats = recipeNameArray
+				.map(function (cat) {
+					return [cat[0], cat[1].length];
+				})
+				.sort()
+				.map(function (entry) {
+					return (
+						"<li class='recipe-statistic'>" +
+						entry[0] +
+						": " +
+						entry[1] +
+						"</li>"
+					);
+				})
+				.join("");
+			const aboutText = `<center><h1>Recipe Browser Component Versions</h1></center>
     <table class="pretty-table">
       <tr><td>Dojo software</td> <td>${dojo.version}</td></tr>
       <tr><td>Recipe Browser software</td> <td>${recipeBrowserVersion}</td></tr>
@@ -857,7 +1028,7 @@
     </ul>
     <p>
     `;
-        const helpText = `<center><h1>Recipe Browser Help</h1></center>
+			const helpText = `<center><h1>Recipe Browser Help</h1></center>
     <ul>
       <li>
 	<b>Search Button</b><br>
@@ -899,254 +1070,318 @@
     </ul>
 `;
 
-        var gearsDropDownMenu;
+			var gearsDropDownMenu;
 
-        /**
-         * Redirects the page to the current URL with updated parameters.
-         */
-        function redirectHere( ) {
-            // Redirect the page to the current URL using now-current values.
-            const originPathname = window.location.origin + window.location.pathname;
-            if ( rbDebug ) console.log( "redirectHere: currentScalingPercentage=" + currentScalingPercentage );
-            const url = formatURL( originPathname, currentRecipeId, fontSizeValueToDescription( currentFontSize ), currentScalingPercentage, getSearchTerm( ) );
-            window.open( url, "_self" );
-        }
+			/**
+			 * Redirects the page to the current URL with updated parameters.
+			 */
+			function redirectHere() {
+				// Redirect the page to the current URL using now-current values.
+				const originPathname =
+					window.location.origin + window.location.pathname;
+				if (rbDebug)
+					console.log(
+						"redirectHere: currentScalingPercentage=" +
+							currentScalingPercentage,
+					);
+				const url = formatURL(
+					originPathname,
+					currentRecipeId,
+					fontSizeValueToDescription(currentFontSize),
+					currentScalingPercentage,
+					getSearchTerm(),
+				);
+				window.open(url, "_self");
+			}
 
-        require( [ "dijit/form/DropDownButton", "dijit/DropDownMenu", "dijit/MenuItem", "dijit/MenuSeparator", "dijit/Dialog", "dijit/form/Button", "dojo/dom", "dojo/on", "dijit/PopupMenuItem", "dijit/ColorPalette", "dojo/domReady!" ],
-            function( DropDownButton, DropDownMenu, MenuItem, MenuSeparator, Dialog, Button, dom, on, PopupMenuItem, ColorPalette, domReady ) {
+			require([
+				"dijit/form/DropDownButton",
+				"dijit/DropDownMenu",
+				"dijit/MenuItem",
+				"dijit/MenuSeparator",
+				"dijit/Dialog",
+				"dijit/form/Button",
+				"dojo/dom",
+				"dojo/on",
+				"dijit/PopupMenuItem",
+				"dijit/ColorPalette",
+				"dojo/domReady!",
+			], function (
+				DropDownButton,
+				DropDownMenu,
+				MenuItem,
+				MenuSeparator,
+				Dialog,
+				Button,
+				dom,
+				on,
+				PopupMenuItem,
+				ColorPalette,
+				domReady,
+			) {
+				gearsDropDownMenu = new DropDownMenu({
+					style: "display: none;",
+				});
 
-                gearsDropDownMenu = new DropDownMenu( {
-                    style: "display: none;"
-                } );
+				var button = new DropDownButton(
+					{
+						label: "",
+						id: "gearsButton",
+						iconClass: "gearsButtonIcon",
+						dropDown: gearsDropDownMenu,
+					},
+					"gearsButton",
+				);
 
-                var button = new DropDownButton( {
-                    label: "",
-                    id: "gearsButton",
-                    iconClass: "gearsButtonIcon",
-                    dropDown: gearsDropDownMenu
-                }, "gearsButton" );
+				// Create menu items
 
-                // Create menu items
+				var largeFontItem = new MenuItem({
+					label:
+						'<span class="text-align-left">Large font</span><span class="text-align-right">Ctrl+3</span>',
+					iconClass: "large-A",
+					onClick: function () {
+						gtag("event", "font_size_change", { size: "large" });
+						currentFontSize = largeFontSize;
+						redirectHere();
+					},
+				});
 
-                var largeFontItem = new MenuItem( {
-                    label: '<span class="text-align-left">Large font</span><span class="text-align-right">Ctrl+3</span>',
-                    iconClass: "large-A",
-                    onClick: function( ) {
-                        gtag('event', 'font_size_change', { 'size': 'large' });
-                        currentFontSize = largeFontSize;
-                        redirectHere( );
-                    }
-                } );
+				var mediumFontItem = new MenuItem({
+					label:
+						'<span class="text-align-left">Medium font</span><span class="text-align-right">Ctrl+2</span>',
+					iconClass: "medium-A",
+					onClick: function () {
+						gtag("event", "font_size_change", { size: "medium" });
+						currentFontSize = mediumFontSize;
+						redirectHere();
+					},
+				});
 
-                var mediumFontItem = new MenuItem( {
-                    label: '<span class="text-align-left">Medium font</span><span class="text-align-right">Ctrl+2</span>',
-                    iconClass: "medium-A",
-                    onClick: function( ) {
-                        gtag('event', 'font_size_change', { 'size': 'medium' });
-                        currentFontSize = mediumFontSize;
-                        redirectHere( );
-                    }
-                } );
+				var smallFontItem = new MenuItem({
+					label:
+						'<span class="text-align-left">Small font</span><span class="text-align-right">Ctrl+1</span>',
+					iconClass: "small-A",
+					onClick: function () {
+						gtag("event", "font_size_change", { size: "small" });
+						currentFontSize = smallFontSize;
+						redirectHere();
+					},
+				});
 
-                var smallFontItem = new MenuItem( {
-                    label: '<span class="text-align-left">Small font</span><span class="text-align-right">Ctrl+1</span>',
-                    iconClass: "small-A",
-                    onClick: function( ) {
-                        gtag('event', 'font_size_change', { 'size': 'small' });
-                        currentFontSize = smallFontSize;
-                        redirectHere( );
-                    }
-                } );
+				var colorPalette = new ColorPalette({
+					onChange: function (color) {
+						gtag("event", "change_color", { color: color });
+						changeColor(color);
+					},
+				});
 
-                var colorPalette = new ColorPalette( {
-                    onChange: function( color ) {
-                        gtag('event', 'change_color', { 'color': color });
-                        changeColor( color );
-                    }
-                } );
+				var changeColorItem = new PopupMenuItem({
+					label: "Select Color",
+					iconClass: "color-picker-icon",
+					popup: colorPalette,
+				});
 
-                var changeColorItem = new PopupMenuItem( {
-                    label: "Select Color",
-                    iconClass: "color-picker-icon",
-                    popup: colorPalette
-                } );
+				scaleRecipeMenuItem = new MenuItem({
+					label:
+						'<span class="text-align-left">Scale recipe</span><span class="text-align-right">Ctrl+s</span>',
+					iconClass: "scaleRecipeIcon",
+					onClick: function () {
+						gtag("event", "scale_recipe", { recipe_id: currentRecipeId });
+						if (promptForScalingPercentage()) redirectHere();
+					},
+					disabled: true,
+				});
 
-                scaleRecipeMenuItem = new MenuItem( {
-                    label: '<span class="text-align-left">Scale recipe</span><span class="text-align-right">Ctrl+s</span>',
-                    iconClass: "scaleRecipeIcon",
-                    onClick: function( ) {
-                        gtag('event', 'scale_recipe', { 'recipe_id': currentRecipeId });
-                        if ( promptForScalingPercentage( ) )
-                            redirectHere( )
-                    },
-                    disabled: true,
-                } );
+				printMenuItem = new MenuItem({
+					label:
+						'<span class="text-align-left">Print recipe</span><span class="text-align-right">Ctrl+p</span>',
+					iconClass: "printerIcon",
+					onClick: function () {
+						gtag("event", "print_recipe", { recipe_id: currentRecipeId });
+						printRecipe();
+					},
+					disabled: true,
+				});
 
-                printMenuItem = new MenuItem( {
-                    label: '<span class="text-align-left">Print recipe</span><span class="text-align-right">Ctrl+p</span>',
-                    iconClass: "printerIcon",
-                    onClick: function( ) {
-                        gtag('event', 'print_recipe', { 'recipe_id': currentRecipeId });
-                        printRecipe( );
-                    },
-                    disabled: true,
-                } );
+				emailLinkMenuItem = new MenuItem({
+					label:
+						'<span class="text-align-left">Email link</span><span class="text-align-right">Ctrl+e</span>',
+					iconClass: "emailLinkIcon",
+					onClick: function () {
+						gtag("event", "email_recipe_link", { recipe_id: currentRecipeId });
+						emailLinkToRecipe();
+					},
+					disabled: true,
+				});
 
-                emailLinkMenuItem = new MenuItem( {
-                    label: '<span class="text-align-left">Email link</span><span class="text-align-right">Ctrl+e</span>',
-                    iconClass: "emailLinkIcon",
-                    onClick: function( ) {
-                        gtag('event', 'email_recipe_link', { 'recipe_id': currentRecipeId });
-                        emailLinkToRecipe( );
-                    },
-                    disabled: true,
-                } );
+				commentMenuItem = new MenuItem({
+					label: "Comment on recipe",
+					iconClass: "fa-regular fa-comment",
+					onClick: function () {
+						commentOnRecipe();
+					},
+					disabled: true,
+				});
 
-                commentMenuItem = new MenuItem( {
-                    label: "Comment on recipe",
-                    iconClass: "fa-regular fa-comment",
-                    onClick: function( ) {
-                        commentOnRecipe( );
-                    },
-                    disabled: true,
-                } );
+				// Create a Dialog widget
+				const aboutPopup = new Dialog({
+					content: aboutText,
+				});
 
-                // Create a Dialog widget
-                const aboutPopup = new Dialog( {
-                    content: aboutText,
-                } );
+				const aboutDismissButton = new Button({
+					label: "Dismiss",
+					showLabel: true,
+					onClick: function () {
+						aboutPopup.hide();
+					},
+				});
 
-                const aboutDismissButton = new Button( {
-                    label: "Dismiss",
-                    showLabel: true,
-                    onClick: function( ) {
-                        aboutPopup.hide( );
-                    }
-                } );
+				// Add the dismiss button to the pop-up
+				aboutPopup.addChild(aboutDismissButton);
 
-                // Add the dismiss button to the pop-up
-                aboutPopup.addChild( aboutDismissButton );
+				aboutMenuItem = new MenuItem({
+					label: "About",
+					onClick: function () {
+						aboutPopup.show();
+					},
+					iconClass: "fa-solid fa-circle-info",
+					disabled: false,
+				});
 
-                aboutMenuItem = new MenuItem( {
-                    label: "About",
-                    onClick: function( ) {
-                        aboutPopup.show( );
-                    },
-                    iconClass: "fa-solid fa-circle-info",
-                    disabled: false,
-                } );
+				// Create a Dialog widget
+				const helpPopup = new Dialog({
+					content: helpText,
+				});
 
-                // Create a Dialog widget
-                const helpPopup = new Dialog( {
-                    content: helpText,
-                } );
+				const helpDismissButton = new Button({
+					label: "Dismiss",
+					showLabel: true,
+					onClick: function () {
+						helpPopup.hide();
+					},
+				});
 
-                const helpDismissButton = new Button( {
-                    label: "Dismiss",
-                    showLabel: true,
-                    onClick: function( ) {
-                        helpPopup.hide( );
-                    }
-                } );
+				// Add the dismiss button to the pop-up
+				helpPopup.addChild(helpDismissButton);
 
-                // Add the dismiss button to the pop-up
-                helpPopup.addChild( helpDismissButton );
+				helpMenuItem = new MenuItem({
+					label: "Help",
+					onClick: function () {
+						helpPopup.show();
+					},
+					iconClass: "fa-solid fa-life-ring",
+					disabled: false,
+				});
 
-                helpMenuItem = new MenuItem( {
-                    label: "Help",
-                    onClick: function( ) {
-                        helpPopup.show( );
-                    },
-                    iconClass: "fa-solid fa-life-ring",
-                    disabled: false,
-                } );
+				button.dropDown.addChild(largeFontItem);
+				button.dropDown.addChild(mediumFontItem);
+				button.dropDown.addChild(smallFontItem);
+				button.dropDown.addChild(changeColorItem);
+				button.dropDown.addChild(scaleRecipeMenuItem);
+				button.dropDown.addChild(new MenuSeparator());
+				button.dropDown.addChild(printMenuItem);
+				button.dropDown.addChild(emailLinkMenuItem);
+				button.dropDown.addChild(commentMenuItem);
+				button.dropDown.addChild(new MenuSeparator());
+				button.dropDown.addChild(aboutMenuItem);
+				button.dropDown.addChild(helpMenuItem);
 
-                button.dropDown.addChild( largeFontItem );
-                button.dropDown.addChild( mediumFontItem );
-                button.dropDown.addChild( smallFontItem );
-                button.dropDown.addChild( changeColorItem );
-                button.dropDown.addChild( scaleRecipeMenuItem );
-                button.dropDown.addChild( new MenuSeparator( ) );
-                button.dropDown.addChild( printMenuItem );
-                button.dropDown.addChild( emailLinkMenuItem );
-                button.dropDown.addChild( commentMenuItem );
-                button.dropDown.addChild( new MenuSeparator( ) );
-                button.dropDown.addChild( aboutMenuItem );
-                button.dropDown.addChild( helpMenuItem );
+				// Attach button to DOM
+				button.placeAt("gearsMenu");
 
-                // Attach button to DOM
-                button.placeAt( "gearsMenu" );
+				const recipesToBeViewed = [];
+				const recipesToBePrinted = [];
+				let targetFontSize = "medium";
+				let targetScalingPercentage = "100";
+				let targetSearchTerm = "";
+				let nextNvp;
 
-                const recipesToBeViewed = [ ];
-                const recipesToBePrinted = [ ];
-                let targetFontSize = "medium";
-                let targetScalingPercentage = "100";
-                let targetSearchTerm = "";
-                let nextNvp;
+				while ((nextNvp = nextArgNVP())) {
+					const action = nextNvp[0];
 
-                while ( nextNvp = nextArgNVP( ) ) {
-                    const action = nextNvp[ 0 ];
+					switch (action) {
+						case "view":
+							recipesToBeViewed.push(nextNvp[1]);
+							break;
+						case "fontsize":
+							targetFontSize = nextNvp[1].toLowerCase();
+							break;
+						case "scalingpercentage":
+							targetScalingPercentage = nextNvp[1];
+							break;
+						case "searchterm":
+							targetSearchTerm = decodeURIComponent(
+								nextNvp[1].toLowerCase().replace(/\+/g, " "),
+							);
+							break;
+						case "print":
+							recipesToBePrinted.push(nextNvp[1]);
+							break;
+						default:
+							console.error(
+								"Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'scalingpercentage', 'searchterm', 'print' }",
+								action,
+								window.location.href,
+							);
+					}
+				}
 
-                    switch ( action ) {
-                        case "view":
-                            recipesToBeViewed.push( nextNvp[ 1 ] );
-                            break;
-                        case "fontsize":
-                            targetFontSize = nextNvp[ 1 ].toLowerCase( );
-                            break;
-                        case "scalingpercentage":
-                            targetScalingPercentage = nextNvp[ 1 ];
-                            break;
-                        case "searchterm":
-                            targetSearchTerm = decodeURIComponent( nextNvp[ 1 ].toLowerCase( ).replace(/\+/g, ' ') );
-                            break;
-                        case "print":
-                            recipesToBePrinted.push( nextNvp[ 1 ] );
-                            break;
-                        default:
-                            console.error( "Error: Unknown action [%s]; href=[%s] (expected one of { 'view', 'fontsize', 'scalingpercentage', 'searchterm', 'print' }",
-                                action, window.location.href );
-                    }
-                }
+				changeFontSize("body", fontSizeDescriptionToValue(targetFontSize));
+				currentScalingPercentage = targetScalingPercentage;
+				changeSearchTerm(targetSearchTerm);
 
-                changeFontSize( 'body', fontSizeDescriptionToValue( targetFontSize ) );
-                currentScalingPercentage = targetScalingPercentage;
-                changeSearchTerm( targetSearchTerm );
+				if (recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0) {
+					toggleDrawer("recipeDrawer", true);
+				} else if (recipesToBeViewed.length + recipesToBePrinted.length == 1) {
+					if (recipesToBeViewed.length == 1) {
+						fillInRecipe(decodeURIComponent(recipesToBeViewed[0]));
+					} else if (recipesToBePrinted.length == 1) {
+						printRecipe(decodeURIComponent(recipesToBePrinted[0]));
+					}
+				} else {
+					const originPathname =
+						window.location.origin + window.location.pathname;
 
-                if ( recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0 ) {
-                    toggleDrawer( 'recipeDrawer', true );
-                } else if ( recipesToBeViewed.length + recipesToBePrinted.length == 1 ) {
-                    if ( recipesToBeViewed.length == 1 ) {
-                        fillInRecipe( decodeURIComponent( recipesToBeViewed[ 0 ] ) );
-                    } else if ( recipesToBePrinted.length == 1 ) {
-                        printRecipe( decodeURIComponent( recipesToBePrinted[ 0 ] ) );
-                    }
-                } else {
-                    const originPathname = window.location.origin + window.location.pathname;
+					let where = "_self";
 
-                    let where = "_self";
-
-                    recipesToBeViewed.forEach( ( id ) => {
-                        // Spawn a separate window for each recipe to be viewed
-                        const url = originPathname + "?view=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
-                        window.open( url, where );
-                        where = "_blank";
-                    } );
-                    recipesToBePrinted.forEach( ( id ) => {
-                        // Spawn a separate window for each recipe to be printed
-                        const url = originPathname + "?print=" + id + "&fontsize=" + targetFontSize + "&scalingpercentage=" + targetScalingPercentage + "&searchterm=" + targetSearchTerm;
-                        window.open( url, where );
-                        where = "_blank";
-                    } );
-                }
-            } );
-    </script>
-</body>
-
+					recipesToBeViewed.forEach((id) => {
+						// Spawn a separate window for each recipe to be viewed
+						const url =
+							originPathname +
+							"?view=" +
+							id +
+							"&fontsize=" +
+							targetFontSize +
+							"&scalingpercentage=" +
+							targetScalingPercentage +
+							"&searchterm=" +
+							targetSearchTerm;
+						window.open(url, where);
+						where = "_blank";
+					});
+					recipesToBePrinted.forEach((id) => {
+						// Spawn a separate window for each recipe to be printed
+						const url =
+							originPathname +
+							"?print=" +
+							id +
+							"&fontsize=" +
+							targetFontSize +
+							"&scalingpercentage=" +
+							targetScalingPercentage +
+							"&searchterm=" +
+							targetSearchTerm;
+						window.open(url, where);
+						where = "_blank";
+					});
+				}
+			});
+		</script>
+	</body>
 </html>
 
 <!-- Local Variables: -->
-<!-- time-stamp-line-limit: 10 -->
+<!-- time-stamp-line-limit: 30 -->
 <!-- time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S" -->
 <!-- time-stamp-active: t -->
 <!-- time-stamp-start: "const recipeBrowserVersion = \"" -->
