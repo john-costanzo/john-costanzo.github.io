@@ -235,6 +235,9 @@ h8 {
 	color: gray !important;
 	font-style: italic !important;
 }
+.clickable-header {
+	cursor: pointer;
+}
 .verticallyAligned {
 	display: flex; /* Use flexbox for alignment */
 	align-items: center; /* Vertically center align items */

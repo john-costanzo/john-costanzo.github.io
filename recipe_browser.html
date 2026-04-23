@@ -824,9 +824,17 @@
 				data-dojo-props="region: 'center'"
 			>
 				<center>
-					<h2>Method</h2>
+					<h2
+						id="header-section-method"
+						onclick="toggleSection('method')"
+						class="clickable-header"
+					>
+						Method<span id="heading-ellipses-method"></span>
+					</h2>
 				</center>
-				<div id="recipe_method"></div>
+				<div id="heading-content-method">
+					<div id="recipe_method"></div>
+				</div>
 
 				<div id="recipeDrawer" class="hidden">
 					<center>
@@ -849,9 +857,18 @@
 				data-dojo-props="region: 'right', splitter: false"
 			>
 				<center>
-					<h2>Ingredients <span id="scaling_factor"></span></h2>
+					<h2
+						id="header-section-ingredients"
+						onclick="toggleSection('ingredients')"
+						class="clickable-header"
+					>
+						Ingredients <span id="scaling_factor"></span
+						><span id="heading-ellipses-ingredients"></span>
+					</h2>
 				</center>
-				<div id="recipe_ingredients"></div>
+				<div id="heading-content-ingredients">
+					<div id="recipe_ingredients"></div>
+				</div>
 			</div>
 		</div>
 
