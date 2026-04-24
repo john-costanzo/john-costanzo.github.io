@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Friday, 2026-04-24 @ 08:19:18";
+			const recipeBrowserVersion = "Friday, 2026-04-24 @ 13:59:33";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -183,11 +183,12 @@
 			 * Updates the layout based on the visibility of the Method and Ingredients sections.
 			 */
 			function updateLayout() {
-				require(["dojo/dom", "dojo/dom-style", "dijit/registry"], function (
-					dom,
-					domStyle,
-					registry,
-				) {
+				require([
+					"dojo/dom",
+					"dojo/dom-style",
+					"dijit/registry",
+					"dojo/fx",
+				], function (dom, domStyle, registry, coreFx) {
 					const methodCol = dom.byId("methodCol");
 					const rightCol = dom.byId("rightCol");
 
@@ -199,8 +200,19 @@
 					const methodVisible = methodBtn.get("checked");
 					const ingredientsVisible = ingredientsBtn.get("checked");
 
-					domStyle.set(methodCol, "display", methodVisible ? "" : "none");
-					domStyle.set(rightCol, "display", ingredientsVisible ? "" : "none");
+					const methodShowing = domStyle.get(methodCol, "display") !== "none";
+					const ingredientsShowing =
+						domStyle.get(rightCol, "display") !== "none";
+
+					if (methodVisible !== methodShowing) {
+						if (methodVisible) coreFx.wipeIn({ node: methodCol }).play();
+						else coreFx.wipeOut({ node: methodCol }).play();
+					}
+
+					if (ingredientsVisible !== ingredientsShowing) {
+						if (ingredientsVisible) coreFx.wipeIn({ node: rightCol }).play();
+						else coreFx.wipeOut({ node: rightCol }).play();
+					}
 
 					if (methodVisible && ingredientsVisible) {
 						domStyle.set(methodCol, { flex: "1 1 0", width: "" });
@@ -248,10 +260,10 @@
 				require([
 					"dojo/dom",
 					"dojo/dom-style",
-					"dojo/fx",
 					"dojo/dom-class",
 					"dijit/registry",
-				], function (dom, domStyle, fx, domClass, registry) {
+					"dojo/fx",
+				], function (dom, domStyle, domClass, registry, coreFx) {
 					if (id === "method" || id === "ingredients") {
 						const button = registry.byId(id + "ToggleButton");
 						if (button) {
@@ -269,6 +281,7 @@
 						const ellipsesNode = dom.byId("heading-ellipses-" + id);
 
 						if (newVisible) {
+							coreFx.wipeIn({ node: contentNode }).play();
 							if (headerNode) domClass.remove(headerNode, "itemClicked");
 							if (ellipsesNode) ellipsesNode.innerHTML = "";
 							wipe = fx.wipeIn({
@@ -276,6 +289,7 @@
 								duration: 750,
 							});
 						} else {
+							coreFx.wipeOut({ node: contentNode }).play();
 							if (headerNode) domClass.add(headerNode, "itemClicked");
 							if (ellipsesNode) ellipsesNode.innerHTML = "...";
 							wipe = fx.wipeOut({
@@ -1209,6 +1223,7 @@
 			require([
 				"dijit/form/DropDownButton",
 				"dijit/form/ToggleButton",
+				"dijit/form/CheckBox",
 				"dijit/layout/BorderContainer",
 				"dijit/layout/ContentPane",
 				"dijit/DropDownMenu",
@@ -1224,6 +1239,7 @@
 			], function (
 				DropDownButton,
 				ToggleButton,
+				CheckBox,
 				BorderContainer,
 				ContentPane,
 				DropDownMenu,
