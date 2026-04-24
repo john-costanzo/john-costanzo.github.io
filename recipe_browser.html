@@ -185,20 +185,41 @@
 			 * @param {boolean} isVisible - Whether the pane should be visible.
 			 */
 			function togglePane(id, isVisible) {
-				require(["dojo/dom", "dojo/dom-style"], function (dom, domStyle) {
+				require(["dojo/dom", "dojo/dom-style", "dojo/dom-class"], function (
+					dom,
+					domStyle,
+					domClass,
+				) {
 					const methodCol = dom.byId("methodCol");
 					const rightCol = dom.byId("rightCol");
+					const methodContent = dom.byId("heading-content-method");
+					const ingredientsContent = dom.byId("heading-content-ingredients");
+					const sectionHeaderId = "header-section-" + id;
+					const contentEllipses = dom.byId("heading-ellipses-" + id);
 
 					if (id === "method") {
-						domStyle.set(methodCol, "display", isVisible ? "" : "none");
+						domStyle.set(methodContent, "display", isVisible ? "" : "none");
 					} else if (id === "ingredients") {
-						domStyle.set(rightCol, "display", isVisible ? "" : "none");
+						domStyle.set(ingredientsContent, "display", isVisible ? "" : "none");
+					}
+
+					if (isVisible) {
+						domClass.remove(sectionHeaderId, "itemClicked");
+						if (contentEllipses) contentEllipses.innerHTML = "";
+					} else {
+						domClass.add(sectionHeaderId, "itemClicked");
+						if (contentEllipses) contentEllipses.innerHTML = "...";
 					}
 
 					const methodVisible =
-						methodCol && domStyle.get(methodCol, "display") !== "none";
+						methodContent && domStyle.get(methodContent, "display") !== "none";
 					const ingredientsVisible =
-						rightCol && domStyle.get(rightCol, "display") !== "none";
+						ingredientsContent &&
+						domStyle.get(ingredientsContent, "display") !== "none";
+
+					// Keep columns visible even if content is hidden, so headers remain accessible
+					domStyle.set(methodCol, "display", "");
+					domStyle.set(rightCol, "display", "");
 
 					if (methodVisible && ingredientsVisible) {
 						domStyle.set(methodCol, "flex", "1");
@@ -206,9 +227,17 @@
 						domStyle.set(rightCol, "width", "35%");
 					} else if (methodVisible && !ingredientsVisible) {
 						domStyle.set(methodCol, "flex", "1");
+						domStyle.set(rightCol, "flex", "none");
+						domStyle.set(rightCol, "width", "auto");
 					} else if (!methodVisible && ingredientsVisible) {
+						domStyle.set(methodCol, "flex", "none");
+						domStyle.set(methodCol, "width", "auto");
 						domStyle.set(rightCol, "flex", "1");
 						domStyle.set(rightCol, "width", "auto");
+					} else {
+						// Both hidden
+						domStyle.set(methodCol, "flex", "1");
+						domStyle.set(rightCol, "flex", "1");
 					}
 				});
 			}
@@ -224,10 +253,11 @@
 					if (button) {
 						button.set("checked", !button.get("checked"));
 					} else {
-						console.error(
-							"toggleSection: Could not find button with id [%s]",
-							buttonId,
-						);
+						// Fallback if registry is not ready yet
+						const contentId = "heading-content-" + id;
+						const isVisible =
+							document.getElementById(contentId).style.display !== "none";
+						togglePane(id, !isVisible);
 					}
 				});
 			}
@@ -857,15 +887,17 @@
 			>
 				<div id="recipeColumns" style="display: flex; height: 100%; width: 100%;">
 					<div id="methodCol" style="flex: 1; overflow: auto; padding: 10px;">
-						<center>
-							<h2
-								id="header-section-method"
-								onclick="toggleSection('method')"
-								class="clickable-header"
-							>
-								Method<span id="heading-ellipses-method"></span>
-							</h2>
-						</center>
+						<div id="methodHeader">
+							<center>
+								<h2
+									id="header-section-method"
+									onclick="toggleSection('method')"
+									class="clickable-header"
+								>
+									Method<span id="heading-ellipses-method"></span>
+								</h2>
+							</center>
+						</div>
 						<div id="heading-content-method">
 							<div id="recipe_method"></div>
 						</div>
@@ -876,16 +908,18 @@
 						class="edgePanel"
 						style="width: 35%; overflow: auto; padding: 10px; border-left: 1px solid #ccc;"
 					>
-						<center>
-							<h2
-								id="header-section-ingredients"
-								onclick="toggleSection('ingredients')"
-								class="clickable-header"
-							>
-								Ingredients <span id="scaling_factor"></span
-								><span id="heading-ellipses-ingredients"></span>
-							</h2>
-						</center>
+						<div id="ingredientsHeader">
+							<center>
+								<h2
+									id="header-section-ingredients"
+									onclick="toggleSection('ingredients')"
+									class="clickable-header"
+								>
+									Ingredients <span id="scaling_factor"></span
+									><span id="heading-ellipses-ingredients"></span>
+								</h2>
+							</center>
+						</div>
 						<div id="heading-content-ingredients">
 							<div id="recipe_ingredients"></div>
 						</div>
