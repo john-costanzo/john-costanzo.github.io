@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-04-24 08:19:23";
+const eventDataVersion = "Friday, 2026-04-24 14:13:45";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1155,7 +1155,7 @@ const events = [
         name: `Strange Rangers`,
         sort_time: "2026-04-25 14:00:00",
         end_time_formatted: "2026-04-25 17:00",
-        detail: "Pop/Funk/Soul/Improvisation\nStrange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
+        detail: "Pop/Funk/Soul/Improvisation Strange Rangers is a musical duo composed of Alex Taub (keys/vox) and JC Mears (drums) with rotating guests.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1248,6 +1248,19 @@ const events = [
         end_time_formatted: "2026-04-25 21:00",
         detail: "Powerhouse vocals deliver Nikki’s award winning songwriting about life’s simple pleasures travel, motherhood, fishing, rhododendron & moonshine. Beautiful, lush guitar tones & harmonies are handled by her long time partner…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-04-25",
+        event_time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: `The Twinz`,
+        sort_time: "2026-04-25 20:00:00",
+        end_time_formatted: "2026-04-25 23:00",
+        detail: "Music starts @8pm! $5 cover",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://www.peacecenter.org/events",
@@ -1389,7 +1402,7 @@ const events = [
         name: `Andrew Scotchie`,
         sort_time: "2026-04-26 14:00:00",
         end_time_formatted: "2026-04-26 17:00",
-        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues of Lightnin’ Hopkins, and the message of a punk-fueled preacher, Scotchie and his band have become a staple of the Southeast music scene. He’s shared stages with legends, crowd-surfed dive bars, and continues to craft his unique sound. His latest record, Love Is Enough, is a love letter to connection, chaos, and keeping your heart open in a world gone sideways.",
+        detail: "Born and raised in Asheville, Andrew Scotchie is everything rock-n-roll was meant to be: sweaty, soul-stirring, a little dangerous, and absolutely alive. With the fire of the Stones, the blues ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1939,6 +1952,19 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-05-01",
+        event_time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: `Elizabeth McCorvey`,
+        sort_time: "2026-05-01 20:00:00",
+        end_time_formatted: "2026-05-01 23:00",
+        detail: "Music starts @8pm! $5 cover",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
         url: "https://www.peacecenter.org/events",
         venue: "Peace Center",
         event_date: "2026-05-01",
@@ -2052,7 +2078,7 @@ const events = [
         name: `Joe Moss Band`,
         sort_time: "2026-05-02 14:00:00",
         end_time_formatted: "2026-05-02 17:00",
-        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his own sound and material within the styles he chooses to play. And the music world is taking notice. A talented singer, writer, and guitarist, Joe is a consistent and entertaining performer with a monster groove. A guitarist since the age of 10, Moss was given his passport into the blues world by Buddy Scott, who noticed Moss at a jam session at Rosa’s Blues Lounge in Chicago. Soon, Moss was playing seven nights a week as a member of Buddy’s Rib Tip band. Moss’ guitar skills quickly became notorious on the local scene and made him an in-demand sideman. He has played all over the world with: Buddy Guy, Little Milton, Willy “Big Eyes” Smith, Lurrie Bell, Lefty Dizz, Magic Slim, A.C. Reed, Billy Branch, Walter Scott and many more! Joe was a 2013 Inductee into the Chicago Blues Hall of Fame!",
+        detail: "Chicago based guitarist/bandleader Joe Moss is one of the hardest working performers on the scene today. Not just an imitator of the music’s glorious past, he strives to find his ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2119,6 +2145,19 @@ const events = [
         end_time_formatted: "2026-05-02 21:00",
         detail: "TrancEnd is an alt-rock band based out of Western NC/Upstate SC, covering 90’s, 2000’s AND MORE!\nTrancEndBand",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-05-02",
+        event_time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: `Beer and Loathing`,
+        sort_time: "2026-05-02 20:00:00",
+        end_time_formatted: "2026-05-02 23:00",
+        detail: "Music starts @8pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -2197,6 +2236,19 @@ const events = [
         end_time_formatted: "2026-05-03 17:30",
         detail: "Eric Congdon\'s acoustic supergroup AUTUMNWÜD is playing a year long residency at the beautiful and fun Saint Paul Vineyards. Every first Sunday, they will be filling the grape soaked air with beautiful 3 part harmonies and jams as only Autumnwüd can. La Jarochita Romero Food Truck onsite.",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-05-03",
+        event_time: "3:00 pm - 6:00 pm",
+        start_time: "3:00 pm",
+        end_time: "6:00 pm",
+        name: `All Crawfish Go To Heaven LIVE @ Oklawaha`,
+        sort_time: "2026-05-03 15:00:00",
+        end_time_formatted: "2026-05-03 18:00",
+        detail: "Music starts @3pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://www.peacecenter.org/events",
@@ -2433,6 +2485,19 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - May",
     },
     {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-05-07",
+        event_time: "8:00 am - 5:00 pm",
+        start_time: "8:00 am",
+        end_time: "5:00 pm",
+        name: `Comedy @ Oklawaha with Zane Lamprey!`,
+        sort_time: "2026-05-07 08:00:00",
+        end_time_formatted: "2026-05-07 17:00",
+        detail: "Comedy starts @8pm! Get your tickets here: https://www.eventbrite.com/e/comedian-zane-lamprey-in-hendersonville-nc-tickets-1980658701494?aff=oddtdtcreator",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-05-07",
@@ -2535,6 +2600,19 @@ const events = [
         end_time_formatted: "2026-05-08 22:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-05-08",
+        event_time: "8:00 pm - 11:00 pm",
+        start_time: "8:00 pm",
+        end_time: "11:00 pm",
+        name: `Kayla McKinney`,
+        sort_time: "2026-05-08 20:00:00",
+        end_time_formatted: "2026-05-08 23:00",
+        detail: "Music starts @ 8pm! $5 cover!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
@@ -3196,7 +3274,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3300,7 +3378,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-05-17 14:00:00",
         end_time_formatted: "2026-05-17 17:00",
-        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up ...\nRead More",
+        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up is as unpredictable as his live performances, often spanning many genres and embracing themes of love, culture, resilience and adventure. He has begun releasing a new single each month in 2026 preceding the release of his debut, full length solo record.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3820,7 +3898,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-28 18:00:00",
         end_time_formatted: "2026-05-28 21:30",
-        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
+        detail: "Second Night Added Due to Demand",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3846,7 +3924,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-29 18:00:00",
         end_time_formatted: "2026-05-29 22:00",
-        detail: "Sold Out - Tickets still Available Thursday, May 28th",
+        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4028,7 +4106,7 @@ const events = [
         name: `The New Variants with Doss Church & The Unholy Noise`,
         sort_time: "2026-06-06 18:30:00",
         end_time_formatted: "2026-06-06 21:00",
-        detail: "New Variants is an Asheville-based band known for blending classic rock, alternative rock, and modern favorites into an energetic live performance.\nDoss Church & the Unholy Noise is an Asheville-based Americana Rock & Roll band that plays a mix of originals written by singer/songwriter Doss Church, along with a wide range of crowd-pleasing cover songs.\nDoss Church is a seasoned songwriter who fuses soulful, heartfelt vocals with warm, expressive acoustic guitar. His deeply storied, personal lyrics are filled with hope found and love lost. The Unholy Noise combines Americana, Country, and Folk Rock influences that range from the 60’s to today and delivers a sound that feels both new and old at the same time. The honest songwriting, veteran musicianship, and electric stage presence of the entire group make for a truly moving live performance.",
+        detail: "New Variants is an Asheville-based band known for blending classic rock, alternative rock, and modern favorites into an energetic live performance. Doss Church & the Unholy Noise is an Asheville-based ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4158,7 +4236,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint P...",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4197,7 +4275,7 @@ const events = [
         name: `The Bright Light Social Hour`,
         sort_time: "2026-06-12 19:00:00",
         end_time_formatted: "2026-06-12 21:30",
-        detail: "Austin’s The Bright Light Social Hour are widely recognized as the essence of Texas psych rock - no one better captures or defies the genre, twisting ...",
+        detail: "Austin’s The Bright Light Social Hour are widely recognized as the essence of Texas psych rock - no one better captures or defies the genre, twisting southern blues, hypnotic grooves, ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4457,7 +4535,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4587,7 +4665,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6433,7 +6511,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
+        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
