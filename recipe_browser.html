@@ -180,59 +180,111 @@
 			}
 
 			/**
-			 * Toggles the visibility of a recipe pane and adjusts the layout.
-			 * @param {string} id - The ID of the pane to toggle ('method' or 'ingredients').
-			 * @param {boolean} isVisible - Whether the pane should be visible.
+			 * Updates the layout based on the visibility of the Method and Ingredients sections.
 			 */
-			function togglePane(id, isVisible) {
-				require(["dojo/dom", "dojo/dom-style", "dijit/registry"], function (
-					dom,
-					domStyle,
-					registry,
-				) {
+			function updateLayout() {
+				require(["dojo/dom", "dojo/dom-style"], function (dom, domStyle) {
 					const methodCol = dom.byId("methodCol");
 					const rightCol = dom.byId("rightCol");
+					const methodContent = dom.byId("heading-content-method");
+					const ingredientsContent = dom.byId("heading-content-ingredients");
 
-					if (id === "method") {
-						domStyle.set(methodCol, "display", isVisible ? "" : "none");
-					} else if (id === "ingredients") {
-						domStyle.set(rightCol, "display", isVisible ? "" : "none");
-					}
+					if (!methodCol || !rightCol) return;
 
-					// Sync button state if it's not already correct
-					const button = registry.byId(id + "ToggleButton");
-					if (button && button.get("checked") !== isVisible) {
-						button.set("checked", isVisible, false);
-					}
-
-					const methodVisible = domStyle.get(methodCol, "display") !== "none";
-					const ingredientsVisible = domStyle.get(rightCol, "display") !== "none";
+					const methodVisible =
+						methodContent && domStyle.get(methodContent, "display") !== "none";
+					const ingredientsVisible =
+						ingredientsContent &&
+						domStyle.get(ingredientsContent, "display") !== "none";
 
 					if (methodVisible && ingredientsVisible) {
-						domStyle.set(methodCol, { flex: "1", width: "auto" });
-						domStyle.set(rightCol, {
-							display: "",
-							flex: "none",
-							width: "35%",
-						});
+						domStyle.set(methodCol, { flex: "1 1 0", width: "" });
+						domStyle.set(rightCol, { flex: "0 0 35%", width: "35%" });
 					} else if (methodVisible) {
-						domStyle.set(methodCol, { flex: "1", width: "100%" });
+						domStyle.set(methodCol, { flex: "1 1 0", width: "100%" });
+						domStyle.set(rightCol, { flex: "0 0 auto", width: "auto" });
 					} else if (ingredientsVisible) {
-						domStyle.set(rightCol, {
-							display: "",
-							flex: "1",
-							width: "100%",
-						});
+						domStyle.set(methodCol, { flex: "0 0 auto", width: "auto" });
+						domStyle.set(rightCol, { flex: "1 1 0", width: "100%" });
+					} else {
+						// Both collapsed
+						domStyle.set(methodCol, { flex: "0 0 auto", width: "auto" });
+						domStyle.set(rightCol, { flex: "0 0 auto", width: "auto" });
 					}
 				});
 			}
 
 			/**
-			 * Toggles the visibility of a recipe section by triggering the corresponding toggle button.
+			 * Toggles the visibility of a recipe pane.
+			 * @param {string} id - The ID of the pane to toggle ('method' or 'ingredients').
+			 * @param {boolean} isVisible - Whether the pane should be visible.
+			 */
+			function togglePane(id, isVisible) {
+				require(["dojo/dom", "dojo/dom-style", "dojo/dom-class"], function (
+					dom,
+					domStyle,
+					domClass,
+				) {
+					const contentNode = dom.byId("heading-content-" + id);
+					const headerNode = dom.byId("header-section-" + id);
+					const ellipsesNode = dom.byId("heading-ellipses-" + id);
+
+					if (contentNode) {
+						domStyle.set(contentNode, "display", isVisible ? "" : "none");
+					}
+					if (headerNode) {
+						if (isVisible) {
+							domClass.remove(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "";
+						} else {
+							domClass.add(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "...";
+						}
+					}
+					updateLayout();
+				});
+			}
+
+			/**
+			 * Toggles the visibility of a recipe section.
 			 * @param {string} id - The ID of the section to toggle.
 			 */
 			function toggleSection(id) {
-				togglePane(id, false);
+				require(["dojo/dom", "dojo/dom-style", "dojo/dom-class", "dijit/registry"], function (
+					dom,
+					domStyle,
+					domClass,
+					registry,
+				) {
+					const contentNode = dom.byId("heading-content-" + id);
+					if (!contentNode) return;
+
+					const isVisible = domStyle.get(contentNode, "display") !== "none";
+					const newVisible = !isVisible;
+
+					if (id === "method" || id === "ingredients") {
+						const button = registry.byId(id + "ToggleButton");
+						if (button) {
+							button.set("checked", newVisible); // Triggers togglePane via 'change' event
+						} else {
+							togglePane(id, newVisible);
+						}
+					} else {
+						// Regular sub-section toggle
+						const headerNode = dom.byId("header-section-" + id);
+						const ellipsesNode = dom.byId("heading-ellipses-" + id);
+
+						domStyle.set(contentNode, "display", newVisible ? "" : "none");
+
+						if (newVisible) {
+							if (headerNode) domClass.remove(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "";
+						} else {
+							if (headerNode) domClass.add(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "...";
+						}
+					}
+				});
 			}
 		</script>
 
@@ -868,7 +920,7 @@
 									onclick="toggleSection('method')"
 									class="clickable-header"
 								>
-									Method
+									Method<span id="heading-ellipses-method"></span>
 								</h2>
 							</center>
 						</div>
@@ -889,7 +941,8 @@
 									onclick="toggleSection('ingredients')"
 									class="clickable-header"
 								>
-									Ingredients <span id="scaling_factor"></span>
+									Ingredients <span id="scaling_factor"></span
+									><span id="heading-ellipses-ingredients"></span>
 								</h2>
 							</center>
 						</div>
@@ -1444,11 +1497,3 @@
 		</script>
 	</body>
 </html>
-
-<!-- Local Variables: -->
-<!-- time-stamp-line-limit: 30 -->
-<!-- time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S" -->
-<!-- time-stamp-active: t -->
-<!-- time-stamp-start: "const recipeBrowserVersion = \"" -->
-<!-- time-stamp-end: "\";" -->
-<!-- End: -->
