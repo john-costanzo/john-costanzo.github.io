@@ -183,11 +183,7 @@
 			 * Updates the layout based on the visibility of the Method and Ingredients sections.
 			 */
 			function updateLayout() {
-				require(["dojo/dom", "dojo/dom-style", "dijit/registry"], function (
-					dom,
-					domStyle,
-					registry,
-				) {
+				require(["dojo/dom", "dojo/dom-style", "dijit/registry"], function (dom, domStyle, registry) {
 					const methodCol = dom.byId("methodCol");
 					const rightCol = dom.byId("rightCol");
 
@@ -245,48 +241,36 @@
 			 * @param {string} id - The ID of the section to toggle.
 			 */
 			function toggleSection(id) {
-				// Toggle the visibility of the sections identified by ID.
-				require([
-					"dojo/dom",
-					"dojo/dom-style",
-					"dojo/fx",
-					"dojo/dom-class",
-				], function (dom, domStyle, fx, domClass) {
-					const sectionHeaderId = "header-section-" + id;
-					const sectionContentId = "heading-content-" + id;
-					const content = dom.byId(sectionContentId);
-					const contentEllipses = dom.byId("heading-ellipses-" + id);
-
-					if (!content || !contentEllipses) {
-						console.error(
-							"toggleSection: Error! content=[%s]; contentEllipses=[%s]",
-							content,
-							contentEllipses,
-						);
-					} else {
-						const display = domStyle.get(content, "display");
-						let wipe;
-						let dots = "";
-
-						if (display === "none") {
-							// TODO: remove italic; make color black
-							domClass.remove(sectionHeaderId, "itemClicked");
-
-							wipe = fx.wipeIn({
-								node: content,
-								duration: 750,
-							});
-						} else {
-							// TODO: make italic; make color grey
-							domClass.add(sectionHeaderId, "itemClicked");
-							dots = "...";
-							wipe = fx.wipeOut({
-								node: content,
-								duration: 750,
-							});
+				require(["dojo/dom", "dojo/dom-style", "dojo/dom-class", "dijit/registry"], function (
+					dom,
+					domStyle,
+					domClass,
+					registry,
+				) {
+					if (id === "method" || id === "ingredients") {
+						const button = registry.byId(id + "ToggleButton");
+						if (button) {
+							button.set("checked", !button.get("checked"));
 						}
-						fx.combine([wipe]).play();
-						contentEllipses.innerHTML = dots;
+					} else {
+						// Regular sub-section toggle
+						const contentNode = dom.byId("heading-content-" + id);
+						if (!contentNode) return;
+
+						const isVisible = domStyle.get(contentNode, "display") !== "none";
+						const newVisible = !isVisible;
+						const headerNode = dom.byId("header-section-" + id);
+						const ellipsesNode = dom.byId("heading-ellipses-" + id);
+
+						domStyle.set(contentNode, "display", newVisible ? "" : "none");
+
+						if (newVisible) {
+							if (headerNode) domClass.remove(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "";
+						} else {
+							if (headerNode) domClass.add(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "...";
+						}
 					}
 				});
 			}
@@ -860,7 +844,7 @@
 				class="edgePanel"
 				data-dojo-type="dijit/layout/ContentPane"
 				data-dojo-props="region: 'top'"
-				style="min-height: 60px; height: auto; overflow: visible"
+				style="min-height: 60px; height: auto; overflow: visible;"
 			>
 				<center>
 					<h1 id="topHeader">
@@ -879,36 +863,14 @@
 							toggleDrawer( 'recipeDrawer' );
 						</script>
 					</button>
-					<button
-						id="methodToggleButton"
-						data-dojo-type="dijit/form/ToggleButton"
-						data-dojo-props="checked: true"
-						class="toggle-button-item"
-					>
-						Method
-						<script
-							type="dojo/on"
-							data-dojo-event="change"
-							data-dojo-args="checked"
-						>
-							togglePane('method', checked);
-						</script>
-					</button>
-					<button
-						id="ingredientsToggleButton"
-						data-dojo-type="dijit/form/ToggleButton"
-						data-dojo-props="checked: true"
-						class="toggle-button-item"
-					>
-						Ingredients
-						<script
-							type="dojo/on"
-							data-dojo-event="change"
-							data-dojo-args="checked"
-						>
-							togglePane('ingredients', checked);
-						</script>
-					</button>
+                    <div class="toggle-button-item verticallyAligned">
+                        <input id="methodToggleButton" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked: true" />
+                        <label for="methodToggleButton">Method</label>
+                    </div>
+                    <div class="toggle-button-item verticallyAligned">
+                        <input id="ingredientsToggleButton" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked: true" />
+                        <label for="ingredientsToggleButton">Ingredients</label>
+                    </div>
 				</div>
 			</div>
 
@@ -917,13 +879,10 @@
 				class="centerPanel"
 				data-dojo-type="dijit/layout/ContentPane"
 				data-dojo-props="region: 'center'"
-				style="padding: 0"
+				style="padding: 0;"
 			>
-				<div
-					id="recipeColumns"
-					style="display: flex; height: 100%; width: 100%"
-				>
-					<div id="methodCol" style="flex: 1; overflow: auto; padding: 10px">
+				<div id="recipeColumns" style="display: flex; height: 100%; width: 100%;">
+					<div id="methodCol" style="flex: 1; overflow: auto; padding: 10px;">
 						<div id="methodHeader">
 							<center>
 								<h2
@@ -943,12 +902,7 @@
 					<div
 						id="rightCol"
 						class="edgePanel"
-						style="
-							width: 35%;
-							overflow: auto;
-							padding: 10px;
-							border-left: 1px solid #ccc;
-						"
+						style="width: 35%; overflow: auto; padding: 10px; border-left: 1px solid #ccc;"
 					>
 						<div id="ingredientsHeader">
 							<center>
@@ -1422,6 +1376,23 @@
 
 				// Attach button to DOM
 				button.placeAt("gearsMenu");
+
+				require(["dijit/registry", "dojo/ready"], function (registry, ready) {
+					ready(function () {
+						const mBtn = registry.byId("methodToggleButton");
+						if (mBtn) {
+							mBtn.watch("checked", function (name, oldVal, newVal) {
+								togglePane("method", newVal);
+							});
+						}
+						const iBtn = registry.byId("ingredientsToggleButton");
+						if (iBtn) {
+							iBtn.watch("checked", function (name, oldVal, newVal) {
+								togglePane("ingredients", newVal);
+							});
+						}
+					});
+				});
 
 				const recipesToBeViewed = [];
 				const recipesToBePrinted = [];
