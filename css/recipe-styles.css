@@ -280,6 +280,13 @@ amount {
 }
 
 @media (max-width: 480px) {
+	#recipeColumns {
+		flex-direction: column !important;
+	}
+	#methodCol, #rightCol {
+		width: 100% !important;
+		flex: none !important;
+	}
 	.small-text {
 		font-size: 12px;
 	}
