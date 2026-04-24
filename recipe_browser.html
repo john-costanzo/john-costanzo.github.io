@@ -183,33 +183,28 @@
 			 * Updates the layout based on the visibility of the Method and Ingredients sections.
 			 */
 			function updateLayout() {
-				require(["dojo/dom", "dojo/dom-style"], function (dom, domStyle) {
+				require(["dojo/dom", "dojo/dom-style", "dijit/registry"], function (dom, domStyle, registry) {
 					const methodCol = dom.byId("methodCol");
 					const rightCol = dom.byId("rightCol");
-					const methodContent = dom.byId("heading-content-method");
-					const ingredientsContent = dom.byId("heading-content-ingredients");
 
-					if (!methodCol || !rightCol) return;
+					const methodBtn = registry.byId("methodToggleButton");
+					const ingredientsBtn = registry.byId("ingredientsToggleButton");
 
-					const methodVisible =
-						methodContent && domStyle.get(methodContent, "display") !== "none";
-					const ingredientsVisible =
-						ingredientsContent &&
-						domStyle.get(ingredientsContent, "display") !== "none";
+					if (!methodCol || !rightCol || !methodBtn || !ingredientsBtn) return;
+
+					const methodVisible = methodBtn.get("checked");
+					const ingredientsVisible = ingredientsBtn.get("checked");
+
+					domStyle.set(methodCol, "display", methodVisible ? "" : "none");
+					domStyle.set(rightCol, "display", ingredientsVisible ? "" : "none");
 
 					if (methodVisible && ingredientsVisible) {
 						domStyle.set(methodCol, { flex: "1 1 0", width: "" });
 						domStyle.set(rightCol, { flex: "0 0 35%", width: "35%" });
 					} else if (methodVisible) {
 						domStyle.set(methodCol, { flex: "1 1 0", width: "100%" });
-						domStyle.set(rightCol, { flex: "0 0 auto", width: "auto" });
 					} else if (ingredientsVisible) {
-						domStyle.set(methodCol, { flex: "0 0 auto", width: "auto" });
 						domStyle.set(rightCol, { flex: "1 1 0", width: "100%" });
-					} else {
-						// Both collapsed
-						domStyle.set(methodCol, { flex: "0 0 auto", width: "auto" });
-						domStyle.set(rightCol, { flex: "0 0 auto", width: "auto" });
 					}
 				});
 			}
@@ -225,13 +220,9 @@
 					domStyle,
 					domClass,
 				) {
-					const contentNode = dom.byId("heading-content-" + id);
 					const headerNode = dom.byId("header-section-" + id);
 					const ellipsesNode = dom.byId("heading-ellipses-" + id);
 
-					if (contentNode) {
-						domStyle.set(contentNode, "display", isVisible ? "" : "none");
-					}
 					if (headerNode) {
 						if (isVisible) {
 							domClass.remove(headerNode, "itemClicked");
@@ -256,21 +247,18 @@
 					domClass,
 					registry,
 				) {
-					const contentNode = dom.byId("heading-content-" + id);
-					if (!contentNode) return;
-
-					const isVisible = domStyle.get(contentNode, "display") !== "none";
-					const newVisible = !isVisible;
-
 					if (id === "method" || id === "ingredients") {
 						const button = registry.byId(id + "ToggleButton");
 						if (button) {
-							button.set("checked", newVisible); // Triggers togglePane via 'change' event
-						} else {
-							togglePane(id, newVisible);
+							button.set("checked", !button.get("checked"));
 						}
 					} else {
 						// Regular sub-section toggle
+						const contentNode = dom.byId("heading-content-" + id);
+						if (!contentNode) return;
+
+						const isVisible = domStyle.get(contentNode, "display") !== "none";
+						const newVisible = !isVisible;
 						const headerNode = dom.byId("header-section-" + id);
 						const ellipsesNode = dom.byId("heading-ellipses-" + id);
 
