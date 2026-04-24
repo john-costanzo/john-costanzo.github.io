@@ -185,59 +185,44 @@
 			 * @param {boolean} isVisible - Whether the pane should be visible.
 			 */
 			function togglePane(id, isVisible) {
-				require(["dojo/dom", "dojo/dom-style", "dojo/dom-class"], function (
+				require(["dojo/dom", "dojo/dom-style", "dijit/registry"], function (
 					dom,
 					domStyle,
-					domClass,
+					registry,
 				) {
 					const methodCol = dom.byId("methodCol");
 					const rightCol = dom.byId("rightCol");
-					const methodContent = dom.byId("heading-content-method");
-					const ingredientsContent = dom.byId("heading-content-ingredients");
-					const sectionHeaderId = "header-section-" + id;
-					const contentEllipses = dom.byId("heading-ellipses-" + id);
 
 					if (id === "method") {
-						domStyle.set(methodContent, "display", isVisible ? "" : "none");
+						domStyle.set(methodCol, "display", isVisible ? "" : "none");
 					} else if (id === "ingredients") {
-						domStyle.set(ingredientsContent, "display", isVisible ? "" : "none");
+						domStyle.set(rightCol, "display", isVisible ? "" : "none");
 					}
 
-					if (isVisible) {
-						domClass.remove(sectionHeaderId, "itemClicked");
-						if (contentEllipses) contentEllipses.innerHTML = "";
-					} else {
-						domClass.add(sectionHeaderId, "itemClicked");
-						if (contentEllipses) contentEllipses.innerHTML = "...";
+					// Sync button state if it's not already correct
+					const button = registry.byId(id + "ToggleButton");
+					if (button && button.get("checked") !== isVisible) {
+						button.set("checked", isVisible, false);
 					}
 
-					const methodVisible =
-						methodContent && domStyle.get(methodContent, "display") !== "none";
-					const ingredientsVisible =
-						ingredientsContent &&
-						domStyle.get(ingredientsContent, "display") !== "none";
-
-					// Keep columns visible even if content is hidden, so headers remain accessible
-					domStyle.set(methodCol, "display", "");
-					domStyle.set(rightCol, "display", "");
+					const methodVisible = domStyle.get(methodCol, "display") !== "none";
+					const ingredientsVisible = domStyle.get(rightCol, "display") !== "none";
 
 					if (methodVisible && ingredientsVisible) {
-						domStyle.set(methodCol, "flex", "1");
-						domStyle.set(rightCol, "flex", "none");
-						domStyle.set(rightCol, "width", "35%");
-					} else if (methodVisible && !ingredientsVisible) {
-						domStyle.set(methodCol, "flex", "1");
-						domStyle.set(rightCol, "flex", "none");
-						domStyle.set(rightCol, "width", "auto");
-					} else if (!methodVisible && ingredientsVisible) {
-						domStyle.set(methodCol, "flex", "none");
-						domStyle.set(methodCol, "width", "auto");
-						domStyle.set(rightCol, "flex", "1");
-						domStyle.set(rightCol, "width", "auto");
-					} else {
-						// Both hidden
-						domStyle.set(methodCol, "flex", "1");
-						domStyle.set(rightCol, "flex", "1");
+						domStyle.set(methodCol, { flex: "1", width: "auto" });
+						domStyle.set(rightCol, {
+							display: "",
+							flex: "none",
+							width: "35%",
+						});
+					} else if (methodVisible) {
+						domStyle.set(methodCol, { flex: "1", width: "100%" });
+					} else if (ingredientsVisible) {
+						domStyle.set(rightCol, {
+							display: "",
+							flex: "1",
+							width: "100%",
+						});
 					}
 				});
 			}
@@ -247,19 +232,7 @@
 			 * @param {string} id - The ID of the section to toggle.
 			 */
 			function toggleSection(id) {
-				require(["dijit/registry"], function (registry) {
-					const buttonId = id + "ToggleButton";
-					const button = registry.byId(buttonId);
-					if (button) {
-						button.set("checked", !button.get("checked"));
-					} else {
-						// Fallback if registry is not ready yet
-						const contentId = "heading-content-" + id;
-						const isVisible =
-							document.getElementById(contentId).style.display !== "none";
-						togglePane(id, !isVisible);
-					}
-				});
+				togglePane(id, false);
 			}
 		</script>
 
@@ -831,6 +804,7 @@
 				class="edgePanel"
 				data-dojo-type="dijit/layout/ContentPane"
 				data-dojo-props="region: 'top'"
+				style="min-height: 60px; height: auto; overflow: visible;"
 			>
 				<center>
 					<h1 id="topHeader">
@@ -894,7 +868,7 @@
 									onclick="toggleSection('method')"
 									class="clickable-header"
 								>
-									Method<span id="heading-ellipses-method"></span>
+									Method
 								</h2>
 							</center>
 						</div>
@@ -915,8 +889,7 @@
 									onclick="toggleSection('ingredients')"
 									class="clickable-header"
 								>
-									Ingredients <span id="scaling_factor"></span
-									><span id="heading-ellipses-ingredients"></span>
+									Ingredients <span id="scaling_factor"></span>
 								</h2>
 							</center>
 						</div>
