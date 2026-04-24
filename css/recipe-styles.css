@@ -124,7 +124,7 @@ h8 {
 }
 
 .toggle-button-item {
-	font-size: 14px;
+	font-size: 10px;
 }
 
 .search-box-control {
@@ -283,8 +283,7 @@ amount {
 	#recipeColumns {
 		flex-direction: column !important;
 	}
-	#methodCol,
-	#rightCol {
+	#methodCol, #rightCol {
 		width: 100% !important;
 		flex: none !important;
 	}
