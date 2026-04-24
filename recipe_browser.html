@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Friday, 2026-04-24 @ 08:04:39";
+			const recipeBrowserVersion = "Friday, 2026-04-24 @ 08:19:18";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -248,9 +248,10 @@
 				require([
 					"dojo/dom",
 					"dojo/dom-style",
+					"dojo/fx",
 					"dojo/dom-class",
 					"dijit/registry",
-				], function (dom, domStyle, domClass, registry) {
+				], function (dom, domStyle, fx, domClass, registry) {
 					if (id === "method" || id === "ingredients") {
 						const button = registry.byId(id + "ToggleButton");
 						if (button) {
@@ -258,6 +259,7 @@
 						}
 					} else {
 						// Regular sub-section toggle
+						let wipe;
 						const contentNode = dom.byId("heading-content-" + id);
 						if (!contentNode) return;
 
@@ -266,15 +268,23 @@
 						const headerNode = dom.byId("header-section-" + id);
 						const ellipsesNode = dom.byId("heading-ellipses-" + id);
 
-						domStyle.set(contentNode, "display", newVisible ? "" : "none");
-
 						if (newVisible) {
 							if (headerNode) domClass.remove(headerNode, "itemClicked");
 							if (ellipsesNode) ellipsesNode.innerHTML = "";
+							wipe = fx.wipeIn({
+								node: contentNode,
+								duration: 750,
+							});
 						} else {
 							if (headerNode) domClass.add(headerNode, "itemClicked");
 							if (ellipsesNode) ellipsesNode.innerHTML = "...";
+							wipe = fx.wipeOut({
+								node: contentNode,
+								duration: 750,
+							});
 						}
+						fx.combine([wipe]).play();
+						domStyle.set(contentNode, "display", newVisible ? "" : "none");
 					}
 				});
 			}
