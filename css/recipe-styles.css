@@ -279,7 +279,7 @@ amount {
 	font-size: 26px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
 	.small-text {
 		font-size: 12px;
 	}
@@ -310,7 +310,7 @@ amount {
 	}
 }
 
-@media screen and (max-height: 480px) and (orientation: landscape) {
+@media screen and (max-height: 500px) and (orientation: landscape) {
 	.small-text {
 		font-size: 18px;
 	}
