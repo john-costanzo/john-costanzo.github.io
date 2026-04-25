@@ -281,7 +281,7 @@ amount {
 
 @media (max-width: 480px) {
 	#recipeColumns {
-		flex-direction: column !important;
+		flex-direction: column-reverse !important;
 	}
 	#methodCol, #rightCol {
 		width: 100% !important;
