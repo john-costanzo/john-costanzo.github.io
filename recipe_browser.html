@@ -180,53 +180,113 @@
 			}
 
 			/**
+			 * Updates the layout based on the visibility of the Method and Ingredients sections.
+			 */
+			function updateLayout() {
+				require(["dojo/dom", "dojo/dom-style", "dijit/registry", "dojo/fx"], function (
+					dom,
+					domStyle,
+					registry,
+					coreFx,
+				) {
+					const methodCol = dom.byId("methodCol");
+					const rightCol = dom.byId("rightCol");
+
+					const methodBtn = registry.byId("methodToggleButton");
+					const ingredientsBtn = registry.byId("ingredientsToggleButton");
+
+					if (!methodCol || !rightCol || !methodBtn || !ingredientsBtn) return;
+
+					const methodVisible = methodBtn.get("checked");
+					const ingredientsVisible = ingredientsBtn.get("checked");
+
+					const methodShowing = domStyle.get(methodCol, "display") !== "none";
+					const ingredientsShowing = domStyle.get(rightCol, "display") !== "none";
+
+					if (methodVisible !== methodShowing) {
+						if (methodVisible) coreFx.wipeIn({ node: methodCol }).play();
+						else coreFx.wipeOut({ node: methodCol }).play();
+					}
+
+					if (ingredientsVisible !== ingredientsShowing) {
+						if (ingredientsVisible) coreFx.wipeIn({ node: rightCol }).play();
+						else coreFx.wipeOut({ node: rightCol }).play();
+					}
+
+					if (methodVisible && ingredientsVisible) {
+						domStyle.set(methodCol, { flex: "1 1 0", width: "" });
+						domStyle.set(rightCol, { flex: "0 0 35%", width: "35%" });
+					} else if (methodVisible) {
+						domStyle.set(methodCol, { flex: "1 1 0", width: "100%" });
+					} else if (ingredientsVisible) {
+						domStyle.set(rightCol, { flex: "1 1 0", width: "100%" });
+					}
+				});
+			}
+
+			/**
+			 * Toggles the visibility of a recipe pane.
+			 * @param {string} id - The ID of the pane to toggle ('method' or 'ingredients').
+			 * @param {boolean} isVisible - Whether the pane should be visible.
+			 */
+			function togglePane(id, isVisible) {
+				require(["dojo/dom", "dojo/dom-style", "dojo/dom-class"], function (
+					dom,
+					domStyle,
+					domClass,
+				) {
+					const headerNode = dom.byId("header-section-" + id);
+					const ellipsesNode = dom.byId("heading-ellipses-" + id);
+
+					if (headerNode) {
+						if (isVisible) {
+							domClass.remove(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "";
+						} else {
+							domClass.add(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "...";
+						}
+					}
+					updateLayout();
+				});
+			}
+
+			/**
 			 * Toggles the visibility of a recipe section.
 			 * @param {string} id - The ID of the section to toggle.
 			 */
 			function toggleSection(id) {
-				// Toggle the visibility of the sections identified by ID.
 				require([
 					"dojo/dom",
 					"dojo/dom-style",
-					"dojo/_base/fx",
-					"dojo/fx",
 					"dojo/dom-class",
-				], function (dom, domStyle, fx, coreFx, domClass) {
-					const sectionHeaderId = "header-section-" + id;
-					const sectionContentId = "heading-content-" + id;
-					const content = dom.byId(sectionContentId);
-					const contentEllipses = dom.byId("heading-ellipses-" + id);
-
-					if (!content || !contentEllipses) {
-						console.error(
-							"toggleSection: Error! content=[%s]; contentEllipses=[%s]",
-							content,
-							contentEllipses,
-						);
-					} else {
-						const display = domStyle.get(content, "display");
-						let wipe;
-						let dots = "";
-
-						if (display === "none") {
-							// TODO: remove italic; make color black
-							domClass.remove(sectionHeaderId, "itemClicked");
-
-							wipe = coreFx.wipeIn({
-								node: content,
-								duration: 750,
-							});
-						} else {
-							// TODO: make italic; make color grey
-							domClass.add(sectionHeaderId, "itemClicked");
-							dots = "...";
-							wipe = coreFx.wipeOut({
-								node: content,
-								duration: 750,
-							});
+					"dijit/registry",
+					"dojo/fx",
+				], function (dom, domStyle, domClass, registry, coreFx) {
+					if (id === "method" || id === "ingredients") {
+						const button = registry.byId(id + "ToggleButton");
+						if (button) {
+							button.set("checked", !button.get("checked"));
 						}
-						coreFx.combine([wipe]).play();
-						contentEllipses.innerHTML = dots;
+					} else {
+						// Regular sub-section toggle
+						const contentNode = dom.byId("heading-content-" + id);
+						if (!contentNode) return;
+
+						const isVisible = domStyle.get(contentNode, "display") !== "none";
+						const newVisible = !isVisible;
+						const headerNode = dom.byId("header-section-" + id);
+						const ellipsesNode = dom.byId("heading-ellipses-" + id);
+
+						if (newVisible) {
+							coreFx.wipeIn({ node: contentNode }).play();
+							if (headerNode) domClass.remove(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "";
+						} else {
+							coreFx.wipeOut({ node: contentNode }).play();
+							if (headerNode) domClass.add(headerNode, "itemClicked");
+							if (ellipsesNode) ellipsesNode.innerHTML = "...";
+						}
 					}
 				});
 			}
@@ -800,6 +860,7 @@
 				class="edgePanel"
 				data-dojo-type="dijit/layout/ContentPane"
 				data-dojo-props="region: 'top'"
+				style="min-height: 60px; height: auto; overflow: visible;"
 			>
 				<center>
 					<h1 id="topHeader">
@@ -807,13 +868,25 @@
 					</h1>
 				</center>
 
-				<div class="toggle-button">
-					<button data-dojo-type="dijit/form/Button" type="button">
+				<div class="toggle-buttons-container">
+					<button
+						data-dojo-type="dijit/form/Button"
+						type="button"
+						class="toggle-button-item"
+					>
 						Search
 						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
 							toggleDrawer( 'recipeDrawer' );
 						</script>
 					</button>
+                    <div class="toggle-button-item verticallyAligned">
+                        <input id="methodToggleButton" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked: true" />
+                        <label for="methodToggleButton">Method</label>
+                    </div>
+                    <div class="toggle-button-item verticallyAligned">
+                        <input id="ingredientsToggleButton" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked: true" />
+                        <label for="ingredientsToggleButton">Ingredients</label>
+                    </div>
 				</div>
 			</div>
 
@@ -822,11 +895,48 @@
 				class="centerPanel"
 				data-dojo-type="dijit/layout/ContentPane"
 				data-dojo-props="region: 'center'"
+				style="padding: 0;"
 			>
-				<center>
-					<h2>Method</h2>
-				</center>
-				<div id="recipe_method"></div>
+				<div id="recipeColumns" style="display: flex; height: 100%; width: 100%;">
+					<div id="methodCol" style="flex: 1; overflow: auto; padding: 10px;">
+						<div id="methodHeader">
+							<center>
+								<h2
+									id="header-section-method"
+									onclick="toggleSection('method')"
+									class="clickable-header"
+								>
+									Method<span id="heading-ellipses-method"></span>
+								</h2>
+							</center>
+						</div>
+						<div id="heading-content-method">
+							<div id="recipe_method"></div>
+						</div>
+					</div>
+
+					<div
+						id="rightCol"
+						class="edgePanel"
+						style="width: 35%; overflow: auto; padding: 10px; border-left: 1px solid #ccc;"
+					>
+						<div id="ingredientsHeader">
+							<center>
+								<h2
+									id="header-section-ingredients"
+									onclick="toggleSection('ingredients')"
+									class="clickable-header"
+								>
+									Ingredients <span id="scaling_factor"></span
+									><span id="heading-ellipses-ingredients"></span>
+								</h2>
+							</center>
+						</div>
+						<div id="heading-content-ingredients">
+							<div id="recipe_ingredients"></div>
+						</div>
+					</div>
+				</div>
 
 				<div id="recipeDrawer" class="hidden">
 					<center>
@@ -840,18 +950,6 @@
 					</div>
 					<div id="recipe_titles"></div>
 				</div>
-			</div>
-
-			<div
-				id="rightCol"
-				class="edgePanel"
-				data-dojo-type="dijit/layout/ContentPane"
-				data-dojo-props="region: 'right', splitter: false"
-			>
-				<center>
-					<h2>Ingredients <span id="scaling_factor"></span></h2>
-				</center>
-				<div id="recipe_ingredients"></div>
 			</div>
 		</div>
 
@@ -1096,6 +1194,10 @@
 
 			require([
 				"dijit/form/DropDownButton",
+				"dijit/form/ToggleButton",
+				"dijit/form/CheckBox",
+				"dijit/layout/BorderContainer",
+				"dijit/layout/ContentPane",
 				"dijit/DropDownMenu",
 				"dijit/MenuItem",
 				"dijit/MenuSeparator",
@@ -1108,6 +1210,10 @@
 				"dojo/domReady!",
 			], function (
 				DropDownButton,
+				ToggleButton,
+				CheckBox,
+				BorderContainer,
+				ContentPane,
 				DropDownMenu,
 				MenuItem,
 				MenuSeparator,
@@ -1289,6 +1395,23 @@
 				// Attach button to DOM
 				button.placeAt("gearsMenu");
 
+				require(["dijit/registry", "dojo/ready"], function (registry, ready) {
+					ready(function () {
+						const mBtn = registry.byId("methodToggleButton");
+						if (mBtn) {
+							mBtn.watch("checked", function (name, oldVal, newVal) {
+								togglePane("method", newVal);
+							});
+						}
+						const iBtn = registry.byId("ingredientsToggleButton");
+						if (iBtn) {
+							iBtn.watch("checked", function (name, oldVal, newVal) {
+								togglePane("ingredients", newVal);
+							});
+						}
+					});
+				});
+
 				const recipesToBeViewed = [];
 				const recipesToBePrinted = [];
 				let targetFontSize = "medium";
@@ -1379,11 +1502,3 @@
 		</script>
 	</body>
 </html>
-
-<!-- Local Variables: -->
-<!-- time-stamp-line-limit: 30 -->
-<!-- time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S" -->
-<!-- time-stamp-active: t -->
-<!-- time-stamp-start: "const recipeBrowserVersion = \"" -->
-<!-- time-stamp-end: "\";" -->
-<!-- End: -->
