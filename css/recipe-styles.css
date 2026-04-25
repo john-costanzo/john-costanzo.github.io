@@ -37,8 +37,24 @@ h2 {
 	width: 20%;
 }
 
+#recipeColumns {
+	display: flex;
+	flex-direction: row-reverse;
+	height: 100%;
+	width: 100%;
+}
+
+#methodCol {
+	flex: 1;
+	overflow: auto;
+	padding: 10px;
+}
+
 #rightCol {
 	width: 35%;
+	overflow: auto;
+	padding: 10px;
+	border-left: 1px solid #ccc;
 }
 
 .claro .demoLayout .edgePanel {
@@ -283,27 +299,48 @@ amount {
 }
 
 @media (max-width: 480px) {
+	html,
+	body,
+	#appLayout,
+	#centerCol {
+		height: auto !important;
+		overflow: visible !important;
+		position: static !important;
+	}
+	#appLayout > .dijitContentPane {
+		position: static !important;
+	}
 	#recipeColumns {
-		flex-direction: column-reverse !important;
+		flex-direction: column !important;
+		height: auto !important;
+		overflow: visible !important;
+		display: block !important;
 	}
 	#methodCol,
 	#rightCol {
 		width: 100% !important;
 		flex: none !important;
+		overflow: visible !important;
+		height: auto !important;
+		border-left: none !important;
+		display: block !important;
 	}
 	.small-text {
 		font-size: 12px;
 	}
 	.medium-text {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.large-text {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	h1#topHeader {
 		font-size: 18px;
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+	h2 {
+		font-size: 16px;
 	}
 	h1#topHeader img {
 		display: none;
@@ -323,18 +360,21 @@ amount {
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
 	.small-text {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.medium-text {
-		font-size: 24px;
+		font-size: 26px;
 	}
 	.large-text {
-		font-size: 30px;
+		font-size: 32px;
 	}
 	h1#topHeader {
-		font-size: 18px;
+		font-size: 26px;
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+	h2 {
+		font-size: 22px;
 	}
 	h1#topHeader img {
 		display: none;

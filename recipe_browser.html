@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Friday, 2026-04-24 @ 21:34:07";
+			const recipeBrowserVersion = "Saturday, 2026-04-25 @ 08:59:09";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -491,6 +491,11 @@
 						topHeader.innerHTML = title;
 						addIngredients(id);
 						addMethods(id);
+
+						// Ensure the view is at the top when a new recipe is loaded
+						window.scrollTo(0, 0);
+						const recipeColumns = dom.byId("recipeColumns");
+						if (recipeColumns) recipeColumns.scrollTop = 0;
 					});
 					currentRecipeId = id;
 					document.title = title;
@@ -916,37 +921,8 @@
 				data-dojo-props="region: 'center'"
 				style="padding: 0"
 			>
-				<div
-					id="recipeColumns"
-					style="display: flex; height: 100%; width: 100%"
-				>
-					<div id="methodCol" style="flex: 1; overflow: auto; padding: 10px">
-						<div id="methodHeader">
-							<center>
-								<h2
-									id="header-section-method"
-									onclick="toggleSection('method')"
-									class="clickable-header"
-								>
-									Method<span id="heading-ellipses-method"></span>
-								</h2>
-							</center>
-						</div>
-						<div id="heading-content-method">
-							<div id="recipe_method"></div>
-						</div>
-					</div>
-
-					<div
-						id="rightCol"
-						class="edgePanel"
-						style="
-							width: 35%;
-							overflow: auto;
-							padding: 10px;
-							border-left: 1px solid #ccc;
-						"
-					>
+				<div id="recipeColumns">
+					<div id="rightCol" class="edgePanel">
 						<div id="ingredientsHeader">
 							<center>
 								<h2
@@ -961,6 +937,23 @@
 						</div>
 						<div id="heading-content-ingredients">
 							<div id="recipe_ingredients"></div>
+						</div>
+					</div>
+
+					<div id="methodCol">
+						<div id="methodHeader">
+							<center>
+								<h2
+									id="header-section-method"
+									onclick="toggleSection('method')"
+									class="clickable-header"
+								>
+									Method<span id="heading-ellipses-method"></span>
+								</h2>
+							</center>
+						</div>
+						<div id="heading-content-method">
+							<div id="recipe_method"></div>
 						</div>
 					</div>
 				</div>
