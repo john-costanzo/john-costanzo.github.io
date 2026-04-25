@@ -26,11 +26,11 @@ h2 {
 }
 
 #topHeader {
-	height: 5px;
+	height: auto;
 	margin-top: 0px;
 	margin-bottom: 30px;
-	margin-left: 48px;
-	margin-right: 48px;
+	margin-left: 140px;
+	margin-right: 140px;
 }
 
 #leftCol {
@@ -114,10 +114,16 @@ h8 {
 	font-size: 16px !important;
 }
 
-.toggle-button {
+.toggle-buttons-container {
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: flex;
+	gap: 5px;
+	padding: 5px;
+}
+
+.toggle-button-item {
 	font-size: 10px;
 }
 
@@ -235,6 +241,9 @@ h8 {
 	color: gray !important;
 	font-style: italic !important;
 }
+.clickable-header {
+	cursor: pointer;
+}
 .verticallyAligned {
 	display: flex; /* Use flexbox for alignment */
 	align-items: center; /* Vertically center align items */
@@ -270,14 +279,74 @@ amount {
 	font-size: 26px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
+	#recipeColumns {
+		flex-direction: column !important;
+		overflow-y: auto !important;
+	}
+	#methodCol {
+		order: 2;
+		width: 100% !important;
+		flex: none !important;
+		overflow: visible !important;
+		height: auto !important;
+	}
+	#rightCol {
+		order: 1;
+		width: 100% !important;
+		flex: none !important;
+		overflow: visible !important;
+		height: auto !important;
+	}
 	.small-text {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.medium-text {
-		font-size: 40px;
+		font-size: 18px;
 	}
 	.large-text {
-		font-size: 50px;
+		font-size: 24px;
+	}
+	h1#topHeader {
+		font-size: 18px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	h1#topHeader img {
+		display: none;
+	}
+	.recipe-clock {
+		display: none !important;
+	}
+	.toggle-buttons-container {
+		flex-direction: column;
+		gap: 2px;
+		padding: 2px;
+	}
+	.toggle-button-item .dijitButtonText {
+		font-size: 10px !important;
+	}
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+	.small-text {
+		font-size: 18px;
+	}
+	.medium-text {
+		font-size: 24px;
+	}
+	.large-text {
+		font-size: 30px;
+	}
+	h1#topHeader {
+		font-size: 18px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	h1#topHeader img {
+		display: none;
+	}
+	.recipe-clock {
+		display: none !important;
 	}
 }
