@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Wednesday, 2026-04-22 @ 10:01:55";
+			const recipeBrowserVersion = "Friday, 2026-04-24 @ 21:31:55";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -183,12 +183,12 @@
 			 * Updates the layout based on the visibility of the Method and Ingredients sections.
 			 */
 			function updateLayout() {
-				require(["dojo/dom", "dojo/dom-style", "dijit/registry", "dojo/fx"], function (
-					dom,
-					domStyle,
-					registry,
-					coreFx,
-				) {
+				require([
+					"dojo/dom",
+					"dojo/dom-style",
+					"dijit/registry",
+					"dojo/fx",
+				], function (dom, domStyle, registry, coreFx) {
 					const methodCol = dom.byId("methodCol");
 					const rightCol = dom.byId("rightCol");
 
@@ -201,7 +201,8 @@
 					const ingredientsVisible = ingredientsBtn.get("checked");
 
 					const methodShowing = domStyle.get(methodCol, "display") !== "none";
-					const ingredientsShowing = domStyle.get(rightCol, "display") !== "none";
+					const ingredientsShowing =
+						domStyle.get(rightCol, "display") !== "none";
 
 					if (methodVisible !== methodShowing) {
 						if (methodVisible) coreFx.wipeIn({ node: methodCol }).play();
@@ -860,7 +861,7 @@
 				class="edgePanel"
 				data-dojo-type="dijit/layout/ContentPane"
 				data-dojo-props="region: 'top'"
-				style="min-height: 60px; height: auto; overflow: visible;"
+				style="min-height: 60px; height: auto; overflow: visible"
 			>
 				<center>
 					<h1 id="topHeader">
@@ -879,14 +880,22 @@
 							toggleDrawer( 'recipeDrawer' );
 						</script>
 					</button>
-                    <div class="toggle-button-item verticallyAligned">
-                        <input id="methodToggleButton" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked: true" />
-                        <label for="methodToggleButton">Method</label>
-                    </div>
-                    <div class="toggle-button-item verticallyAligned">
-                        <input id="ingredientsToggleButton" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked: true" />
-                        <label for="ingredientsToggleButton">Ingredients</label>
-                    </div>
+					<div class="toggle-button-item verticallyAligned">
+						<input
+							id="methodToggleButton"
+							data-dojo-type="dijit/form/CheckBox"
+							data-dojo-props="checked: true"
+						/>
+						<label for="methodToggleButton">Method</label>
+					</div>
+					<div class="toggle-button-item verticallyAligned">
+						<input
+							id="ingredientsToggleButton"
+							data-dojo-type="dijit/form/CheckBox"
+							data-dojo-props="checked: true"
+						/>
+						<label for="ingredientsToggleButton">Ingredients</label>
+					</div>
 				</div>
 			</div>
 
@@ -895,10 +904,13 @@
 				class="centerPanel"
 				data-dojo-type="dijit/layout/ContentPane"
 				data-dojo-props="region: 'center'"
-				style="padding: 0;"
+				style="padding: 0"
 			>
-				<div id="recipeColumns" style="display: flex; height: 100%; width: 100%;">
-					<div id="methodCol" style="flex: 1; overflow: auto; padding: 10px;">
+				<div
+					id="recipeColumns"
+					style="display: flex; height: 100%; width: 100%"
+				>
+					<div id="methodCol" style="flex: 1; overflow: auto; padding: 10px">
 						<div id="methodHeader">
 							<center>
 								<h2
@@ -918,7 +930,12 @@
 					<div
 						id="rightCol"
 						class="edgePanel"
-						style="width: 35%; overflow: auto; padding: 10px; border-left: 1px solid #ccc;"
+						style="
+							width: 35%;
+							overflow: auto;
+							padding: 10px;
+							border-left: 1px solid #ccc;
+						"
 					>
 						<div id="ingredientsHeader">
 							<center>
@@ -1502,3 +1519,10 @@
 		</script>
 	</body>
 </html>
+<!-- Local Variables: -->
+<!-- time-stamp-line-limit: 30 -->
+<!-- time-stamp-format: "%A, %Y-%02m-%02d @ %02H:%02M:%02S" -->
+<!-- time-stamp-active: t -->
+<!-- time-stamp-start: "const recipeBrowserVersion = \"" -->
+<!-- time-stamp-end: "\";" -->
+<!-- End: -->
