@@ -314,7 +314,6 @@ amount {
 		flex-direction: column !important;
 		height: auto !important;
 		overflow: visible !important;
-		display: block !important;
 	}
 	#methodCol,
 	#rightCol {
@@ -323,7 +322,6 @@ amount {
 		overflow: visible !important;
 		height: auto !important;
 		border-left: none !important;
-		display: block !important;
 	}
 	.small-text {
 		font-size: 12px;
