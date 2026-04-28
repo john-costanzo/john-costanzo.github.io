@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-04-27 15:14:38";
+const eventDataVersion = "Monday, 2026-04-27 20:10:23";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -886,32 +886,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - April",
     },
     {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        event_date: "2026-04-26",
-        event_time: "1:00 pm - 3:00 pm",
-        start_time: "1:00 pm",
-        end_time: "3:00 pm",
-        name: `Spring 2026 Wine Club Pickup Party`,
-        sort_time: "2026-04-26 13:00:00",
-        end_time_formatted: "2026-04-26 15:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        event_date: "2026-04-26",
-        event_time: "1:00 pm - 4:00 pm",
-        start_time: "1:00 pm",
-        end_time: "4:00 pm",
-        name: `ANDREW WAKEFIELD`,
-        sort_time: "2026-04-26 13:00:00",
-        end_time_formatted: "2026-04-26 16:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
         url: "https://www.cphassn.org/home",
         venue: "Carriage Park",
         event_date: "2026-04-26",
@@ -936,19 +910,6 @@ const events = [
         end_time_formatted: "2026-04-27 23:59",
         detail: "<a href='https://festivalnet.com/91238/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-April' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - April",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-04-27",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Heidi Ho`,
-        sort_time: "2026-04-27 16:00:00",
-        end_time_formatted: "2026-04-27 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -1692,6 +1653,19 @@ const events = [
         location: "Crow and Quill 106 N Lexington Ave, Asheville, NC 28801",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-05-02",
+        event_time: "7:00 pm - 10:00 pm",
+        start_time: "7:00 pm",
+        end_time: "10:00 pm",
+        name: `Decades Dance Party`,
+        sort_time: "2026-05-02 19:00:00",
+        end_time_formatted: "2026-05-02 22:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://www.sabrewery.com/events/2026-05",
         venue: "Southern App",
         event_date: "2026-05-02",
@@ -1779,7 +1753,7 @@ const events = [
         name: `Tina and Her Pony`,
         sort_time: "2026-05-03 14:00:00",
         end_time_formatted: "2026-05-03 17:00",
-        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence ...\nRead More",
+        detail: "With deep roots in the Appalachian folk tradition and a voice that feels like it’s been carried on the mountain wind, Tina & Her Pony brings a uniquely soulful presence to the stage. Known for lush harmonies, country folk storytelling, and songs that soothe as much as they stir, Tina’s music carries a quiet magic that lingers long after the last note.\nFrom the hills of Asheville to the deserts of New Mexico, she’s spent over a decade refining her sound by melding classic folk with touches of Americana, and more recently, dreamy pop and psychedelic soul.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2234,7 +2208,7 @@ const events = [
         name: `The Deep Shallow Band`,
         sort_time: "2026-05-09 14:00:00",
         end_time_formatted: "2026-05-09 17:00",
-        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie ...\nRead More",
+        detail: "The Deep Shallow Band’s music is often described as “Southern soul rock and roll” reminiscent of the Allman Brothers Band and The Black Crowes. Their musical chemistry, talent, and camaraderie shine through during their energetic performances and on their new album, “Copy and Paste,” released in the spring of 2023. The band has entertained an enthusiastic following throughout North Carolina since 2014 and would love to see you at their next show.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2351,7 +2325,7 @@ const events = [
         name: `Alex Krug Combo`,
         sort_time: "2026-05-10 14:00:00",
         end_time_formatted: "2026-05-10 17:00",
-        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive headfirst. The thrill of adventure looms ahead of this band. Their Genre Queer Psychedelic Roots strikes a stunningly evocative chord about life, being an outsider and the kind of heartache and healing that transforms your soul.",
+        detail: "Life is at its very core about exploring. We can remain stagnant and rooted in place, or we can take a page out of Alex Krug Combo’s playbook and dive ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3027,7 +3001,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-05-17 14:00:00",
         end_time_formatted: "2026-05-17 17:00",
-        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up ...\nRead More",
+        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up is as unpredictable as his live performances, often spanning many genres and embracing themes of love, culture, resilience and adventure. He has begun releasing a new single each month in 2026 preceding the release of his debut, full length solo record.”",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3508,7 +3482,7 @@ const events = [
         name: `Reedy River String Band`,
         sort_time: "2026-05-23 14:00:00",
         end_time_formatted: "2026-05-23 17:00",
-        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s multi-instrumental prowess, this trio’s larger than life sound defies their numbers and transcends their bluegrass influences and instrumentation.\nFlying high from the success of their first European tour and with dates to be announced for their second, the Reedy River String Band recently flew back to the US to close out the 30th Albino Skunk Music Festival. Other notable festivals include The Earl Scruggs Music Festival, Merlefest, Charleston Bluegrass Festival, Birdfest and more.\nReedy River String Band released their debut self-titled album in 2022 and has since released two singles, “My Grass is Blue,” and “Punkin Brown” in 2023. Their studio releases and live performances have been played on multiple radio stations in the United States and Europe. Currently they are in preproduction for a 2025 release.",
+        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3603,6 +3577,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-05-24",
+        event_time: "1:00 pm - 4:00 pm",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: `THE JACKTOWN RAMBLERS`,
+        sort_time: "2026-05-24 13:00:00",
+        end_time_formatted: "2026-05-24 16:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-05-24",
@@ -3612,7 +3599,7 @@ const events = [
         name: `Abby Bryant`,
         sort_time: "2026-05-24 14:00:00",
         end_time_formatted: "2026-05-24 17:00",
-        detail: "A music minister’s daughter and vocal force of nature turned fierce frontwoman on the festival scene, Abby Bryant learned early how to turn faith into fire, fusing Sunday spirit with Saturday night energy. Bryant enchants audiences with a unique best-of-both-worlds edge that proves beautifully-crafted songs and the living pulse of the jam world can synergize into one unforgettable experience. Her striking stage presence and electrifying five-piece band bring palpable energy and groove to the last note.\nBryant found her true love for performing in college at Appalachian State University in Boone, North Carolina. She quickly formed a touring band playing the Southeast and beyond. During her first year on the road, FloydFest named Bryant winner of the festival’s 2019 “On-the-Rise” competition. She went on to release her debut album Not Your Little Girl in 2021 which garnered critical acclaim and Americana chart success with themes of growing up, leaving home, and finding her own identity outside her traditional upbringing.\nProduced by Dave Schools of Widespread Panic, Bryant’s highly anticipated sophomore album Glowing, released fall 2024, includes a cast of heavy-hitting session musicians including Adam MacDougall (Circles Around the Sun, Chris Robinson Brotherhood) and John Kimock (Mike Gordon Band, Oteil Burbridge & Friends). Glowing features a collection of dynamic and contemplative tracks that highlight Bryant’s artistic growth and evolving sonic landscapes as she comes into her own and ventures into ever-bolder explorations..",
+        detail: "A music minister’s daughter and vocal force of nature turned fierce frontwoman on the festival scene, Abby Bryant learned early how to turn faith into fire, fusing Sunday spirit with ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3729,7 +3716,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-29 18:00:00",
         end_time_formatted: "2026-05-29 22:00",
-        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
+        detail: "Sold Out - Tickets still Available Thursday, May 28th",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3744,6 +3731,19 @@ const events = [
         end_time_formatted: "2026-05-30 23:59",
         detail: "There will be 1 stage with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, Ethnic, Folk, Funk, Jazz, Latin, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World.<a href='https://festivalnet.com/42856/Black-Mountain-North-Carolina/Festivals/LEAF-Deep-Roots-Family-Friendly-One-Day-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net LEAF Deep Roots: Family Friendly One-Day Festival",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-05-30",
+        event_time: "1:00 pm - 4:00 pm",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: `SETH AND SARA`,
+        sort_time: "2026-05-30 13:00:00",
+        end_time_formatted: "2026-05-30 16:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -3794,7 +3794,7 @@ const events = [
         name: `Smooth Goose`,
         sort_time: "2026-05-31 14:00:00",
         end_time_formatted: "2026-05-31 17:00",
-        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds ...\nRead More",
+        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds moving and scratching that itch in hard-to-reach places.\nThe bands work includes creative projects such as the popular rock opera Happyland at The Magnetic Theatre in 2023. Smooth Goose is currently in the studio recording but also in the lab reviving a species of Mastadon via cutting edge CRISPR technology.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4119,7 +4119,7 @@ const events = [
         name: `Dr. Bacon`,
         sort_time: "2026-06-13 18:30:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating ...\nRead More",
+        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating a unique musical\nexpression.\nThe Dr. Bacon live experience is truly a spectacle to behold, bringing the audience on a musical journey, caressing ears with lush beauty then whipping crowds into a down-home tribal romp, shaking booties and shedding inhibitions. An undulating wave of energy and styles leads to massive and manic versatility ensuring that no matter what genre of music\nsuits your taste, you will hear something that resonates. Bacon goes good with everything!\nDr. Bacon started in 2012 on King Street in Boone as a 3-piece busking acoustic bluegrass, folk, and 90s pop/rock/hip-hop influenced band. Several lineup changes over the years and a move to Asheville have refined and redirected the band’s sound, incorporating funk, rock, soul, psychedelic, improvisation, blues, punk and world music. The blending of several elements of these genres, often within the same song, along with an arsenal of instrumentation brings the real Dr. Bacon flavor. The band tours regularly, up and down the East coast and beyond. With 3 EPs and two length albums\nunder their belts, Dr. Bacon performs an original focused setlist with a rotating and evolving palate of choice covers. Never performing the same set twice and constantly working towards the next musical achievement means that each show is a beast unto itself where you’ll never know what new tricks are in store.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4470,7 +4470,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
