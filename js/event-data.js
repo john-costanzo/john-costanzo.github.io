@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-05-11 08:07:10";
+const eventDataVersion = "Monday, 2026-05-11 15:43:22";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -130,19 +130,6 @@ const events = [
         end_time_formatted: "2026-01-28 Can't convert Tue",
         detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2026-02-14",
-        event_time: "12:00 pm - 8:00 pm",
-        start_time: "12:00 PM",
-        end_time: "8:00 PM",
-        name: `Mardi Gras at Bold Rock`,
-        sort_time: "2026-02-14 12:00:00",
-        end_time_formatted: "2026-02-14 20:00",
-        detail: "We’re bringing the flavors and fun with king cakes filled with prizes, gumbo over red beans and rice, and shrimp po’ boy sandwiches. Grab some beads, dress to impress in your favorite Mardi Gras attire, and soak up the festive vibes.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -1532,7 +1519,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1718,19 +1705,6 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-05-17",
-        event_time: "12:00 pm - 5:00 pm",
-        start_time: "12:00 pm",
-        end_time: "5:00 pm",
-        name: `Mëhfil Indian Cuisine - Food Truck`,
-        sort_time: "2026-05-17 12:00:00",
-        end_time_formatted: "2026-05-17 17:00",
-        detail: "",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
         event_date: "2026-05-17",
@@ -1766,7 +1740,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-05-17 14:00:00",
         end_time_formatted: "2026-05-17 17:00",
-        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up is as unpredictable as his live performances, often spanning many genres and embracing themes of love, culture, resilience and adventure. He has begun releasing a new single each month in 2026 preceding the release of his debut, full length solo record.”",
+        detail: "Award winning WNC regional producer, songwriter and performer, Raphael Graves is regularly joined by an unexpected ensemble of premier musicians spanning all walks of life here in Appalachia. His line-up ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1835,6 +1809,19 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
+        url: "https://www.sabrewery.com/events/2026-05",
+        venue: "Southern App",
+        event_date: "2026-05-17",
+        event_time: "4:00 pm - 6:00 pm",
+        start_time: "4:00 pm",
+        end_time: "6:00 pm",
+        name: `Izzi Hughes`,
+        sort_time: "2026-05-17 16:00:00",
+        end_time_formatted: "2026-05-17 18:00",
+        detail: "Izzi is a gigging musician in Western North Carolina playing cover songs of all genres and decades.\nizzihughes.com",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-05-18",
@@ -1885,6 +1872,19 @@ const events = [
         end_time_formatted: "2026-05-18 18:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://www.millsriverbrewingco.com/events",
+        venue: "Mills River Brewing",
+        event_date: "2026-05-18",
+        event_time: "6:00 pm - 8:00 pm",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `We are bringing music bingo back for a one time replay, don\'t miss it! 6-8pm with DJ Jason!`,
+        sort_time: "2026-05-18 18:00:00",
+        end_time_formatted: "2026-05-18 20:00",
+        detail: "None",
+        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -2340,19 +2340,6 @@ const events = [
         end_time_formatted: "2026-05-22 21:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://www.millsriverbrewingco.com/events",
-        venue: "Mills River Brewing",
-        event_date: "2026-05-22",
-        event_time: "6:30 pm - 9:30 pm",
-        start_time: "6:30 pm",
-        end_time: "9:30 pm",
-        name: `Matt Phillips & What\'s Good will be playing dynamic & versatile covers!`,
-        sort_time: "2026-05-22 18:30:00",
-        end_time_formatted: "2026-05-22 21:30",
-        detail: "None",
-        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -3492,7 +3479,7 @@ const events = [
         event_time: "12:00 pm - 5:00 pm",
         start_time: "12:00 pm",
         end_time: "5:00 pm",
-        name: `Mëhfil Indian Cuisine - Food Truck`,
+        name: `Grass Roots Pizza - Food Truck`,
         sort_time: "2026-05-31 12:00:00",
         end_time_formatted: "2026-05-31 17:00",
         detail: "",
@@ -3508,7 +3495,7 @@ const events = [
         name: `Smooth Goose`,
         sort_time: "2026-05-31 14:00:00",
         end_time_formatted: "2026-05-31 17:00",
-        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds ...\nRead More",
+        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds moving and scratching that itch in hard-to-reach places.\nThe bands work includes creative projects such as the popular rock opera Happyland at The Magnetic Theatre in 2023. Smooth Goose is currently in the studio recording but also in the lab reviving a species of Mastadon via cutting edge CRISPR technology.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3824,6 +3811,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-06-06",
+        event_time: "12:00 pm - 5:00 pm",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: `Bistro Betty - Food Truck`,
+        sort_time: "2026-06-06 12:00:00",
+        end_time_formatted: "2026-06-06 17:00",
+        detail: "",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-06-06",
@@ -4028,7 +4028,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4119,7 +4119,7 @@ const events = [
         name: `Dr. Bacon`,
         sort_time: "2026-06-13 18:30:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating a unique musical\nexpression.\nThe Dr. Bacon live experience is truly a spectacle to behold, bringing the audience on a musical journey, caressing ears with lush beauty then whipping crowds into a down-home tribal romp, shaking booties and shedding inhibitions. An undulating wave of energy and styles leads to massive and manic versatility ensuring that no matter what genre of music\nsuits your taste, you will hear something that resonates. Bacon goes good with everything!\nDr. Bacon started in 2012 on King Street in Boone as a 3-piece busking acoustic bluegrass, folk, and 90s pop/rock/hip-hop influenced band. Several lineup changes over the years and a move to Asheville have refined and redirected the band’s sound, incorporating funk, rock, soul, psychedelic, improvisation, blues, punk and world music. The blending of several elements of these genres, often within the same song, along with an arsenal of instrumentation brings the real Dr. Bacon flavor. The band tours regularly, up and down the East coast and beyond. With 3 EPs and two length albums\nunder their belts, Dr. Bacon performs an original focused setlist with a rotating and evolving palate of choice covers. Never performing the same set twice and constantly working towards the next musical achievement means that each show is a beast unto itself where you’ll never know what new tricks are in store.",
+        detail: "DR. BACON is a 4 Piece touring Appalachian Rock, Funk, Grass and Soul band. Blending diverse instrumentation, inspirations, and influence allows the band to perform a synthesis of styles creating ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4808,7 +4808,7 @@ const events = [
         name: `CarolinAloha`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian ...\nRead More",
+        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian music tradition. CarolinAloha has been featured at the Waikiki Steel Guitar Festival in Oahu, the Kona Steel Guitar Festival in Kona, and The Station Inn in Nashville, TN; Billy’s playing has been featured within a wide variety of genres from gypsy jazz to bluegrass all over North America, India, and Europe on stages such as Bonnaroo, The Grand Ole Opry, MerleFest, Carnegie Hall, The Ryman Auditorium and Rockygrass, to name a few. Surrounded by an alternating cast of stellar, emotive and joyful musicians, CarolinAloha brings heartfelt Hawaiian vibes to the mountains of North Carolina and beyond.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
