@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-05-11 15:43:22";
+const eventDataVersion = "Monday, 2026-05-11 20:06:33";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -741,19 +741,6 @@ const events = [
         end_time_formatted: "2026-05-11 23:59",
         detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85793/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-May' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - May",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-05-11",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Heidi Ho`,
-        sort_time: "2026-05-11 16:00:00",
-        end_time_formatted: "2026-05-11 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -1519,7 +1506,7 @@ const events = [
         name: `SOOZA`,
         sort_time: "2026-05-16 14:00:00",
         end_time_formatted: "2026-05-16 17:00",
-        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends electronic dance beats, Afro-Cuban rhythms, djent-style metal, punk energy, and second-line traditions into a genre-blending force of sound.\nThey are redefining the future of instrumental music with fearless, genre-blending, danceable compositions that unite voices and traditions from around the world.",
+        detail: "SOOZA is an American brass band from Gainesville, FL that has spent over seven years redefining what brass music can be. With five horns and a drummer, the band blends ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2793,7 +2780,7 @@ const events = [
         name: `Abby Bryant`,
         sort_time: "2026-05-24 14:00:00",
         end_time_formatted: "2026-05-24 17:00",
-        detail: "A music minister’s daughter and vocal force of nature turned fierce frontwoman on the festival scene, Abby Bryant learned early how to turn faith into fire, fusing Sunday spirit with ...\nRead More",
+        detail: "A music minister’s daughter and vocal force of nature turned fierce frontwoman on the festival scene, Abby Bryant learned early how to turn faith into fire, fusing Sunday spirit with Saturday night energy. Bryant enchants audiences with a unique best-of-both-worlds edge that proves beautifully-crafted songs and the living pulse of the jam world can synergize into one unforgettable experience. Her striking stage presence and electrifying five-piece band bring palpable energy and groove to the last note.\nBryant found her true love for performing in college at Appalachian State University in Boone, North Carolina. She quickly formed a touring band playing the Southeast and beyond. During her first year on the road, FloydFest named Bryant winner of the festival’s 2019 “On-the-Rise” competition. She went on to release her debut album Not Your Little Girl in 2021 which garnered critical acclaim and Americana chart success with themes of growing up, leaving home, and finding her own identity outside her traditional upbringing.\nProduced by Dave Schools of Widespread Panic, Bryant’s highly anticipated sophomore album Glowing, released fall 2024, includes a cast of heavy-hitting session musicians including Adam MacDougall (Circles Around the Sun, Chris Robinson Brotherhood) and John Kimock (Mike Gordon Band, Oteil Burbridge & Friends). Glowing features a collection of dynamic and contemplative tracks that highlight Bryant’s artistic growth and evolving sonic landscapes as she comes into her own and ventures into ever-bolder explorations..",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2897,7 +2884,7 @@ const events = [
         name: `Auspicious Golden Fish`,
         sort_time: "2026-05-24 18:30:00",
         end_time_formatted: "2026-05-24 21:00",
-        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson (The Fritz/ElectroLust) assembles a revolving lineup of all-star musicians that bring his compositions to life. The result is a sonic journey- one that invites listeners to dissolve the ego, embrace the present moment, and dance into higher states of consciousness.",
+        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3115,7 +3102,7 @@ const events = [
         event_time: "4:00 pm - 8:00 pm",
         start_time: "4:00 pm",
         end_time: "8:00 pm",
-        name: `Food Truck: Appalachian Chick`,
+        name: `Food Truck: Taste of Pea Ridge`,
         sort_time: "2026-05-28 16:00:00",
         end_time_formatted: "2026-05-28 20:00",
         detail: "None",
@@ -3495,7 +3482,7 @@ const events = [
         name: `Smooth Goose`,
         sort_time: "2026-05-31 14:00:00",
         end_time_formatted: "2026-05-31 17:00",
-        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds moving and scratching that itch in hard-to-reach places.\nThe bands work includes creative projects such as the popular rock opera Happyland at The Magnetic Theatre in 2023. Smooth Goose is currently in the studio recording but also in the lab reviving a species of Mastadon via cutting edge CRISPR technology.",
+        detail: "Smooth Goose is a Neo-soul Country-Funk band hailing from Asheville, North Carolina. Known for blending soul-wrenching blues grooves with boogie-down dance rhythms, the group delivers high-energy performances that get crowds ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3954,6 +3941,19 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-06-09",
+        event_time: "6:00 pm - 9:00 pm",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Karaoke Night with DJ Mandy`,
+        sort_time: "2026-06-09 18:00:00",
+        end_time_formatted: "2026-06-09 21:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-06-10",
@@ -4340,7 +4340,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4808,7 +4808,7 @@ const events = [
         name: `CarolinAloha`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian music tradition. CarolinAloha has been featured at the Waikiki Steel Guitar Festival in Oahu, the Kona Steel Guitar Festival in Kona, and The Station Inn in Nashville, TN; Billy’s playing has been featured within a wide variety of genres from gypsy jazz to bluegrass all over North America, India, and Europe on stages such as Bonnaroo, The Grand Ole Opry, MerleFest, Carnegie Hall, The Ryman Auditorium and Rockygrass, to name a few. Surrounded by an alternating cast of stellar, emotive and joyful musicians, CarolinAloha brings heartfelt Hawaiian vibes to the mountains of North Carolina and beyond.",
+        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
