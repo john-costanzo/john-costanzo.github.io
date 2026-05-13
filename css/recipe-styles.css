@@ -44,6 +44,13 @@ h2 {
 	width: 100%;
 }
 
+#searchCol {
+	width: 25%;
+	overflow: auto;
+	padding: 10px;
+	border-left: 1px solid #ccc;
+}
+
 #methodCol {
 	flex: 1;
 	overflow: auto;
@@ -188,19 +195,7 @@ h8 {
 }
 
 #recipeDrawer {
-	width: 390px;
-	height: 999%;
-	background-color: #f0f0f0;
-	position: absolute;
-	top: 0;
-	left: -400px;
-	border: double;
-	transition: left 0.3s ease;
-}
-
-.hidden {
-	left: 0;
-	height: 100%;
+	display: none;
 }
 
 .gearsButtonIcon {
@@ -315,6 +310,7 @@ amount {
 		height: auto !important;
 		overflow: visible !important;
 	}
+	#searchCol,
 	#methodCol,
 	#rightCol {
 		width: 100% !important;
