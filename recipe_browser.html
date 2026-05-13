@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Sunday, 2026-04-26 @ 17:31:12";
+			const recipeBrowserVersion = "Wednesday, 2026-05-13 @ 16:59:41";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -199,10 +199,11 @@
 
 					const searchVisible = searchBtn ? searchBtn.get("checked") : false;
 					const methodVisible = methodBtn ? methodBtn.get("checked") : false;
-					const ingredientsVisible = ingredientsBtn ? ingredientsBtn.get("checked") : false;
+					const ingredientsVisible = ingredientsBtn
+						? ingredientsBtn.get("checked")
+						: false;
 
 					if (!searchCol || !methodCol || !rightCol) return;
-
 
 					const searchShowing = domStyle.get(searchCol, "display") !== "none";
 					const methodShowing = domStyle.get(methodCol, "display") !== "none";
@@ -227,7 +228,11 @@
 					const cols = [
 						{ node: searchCol, visible: searchVisible, defaultWidth: "25%" },
 						{ node: methodCol, visible: methodVisible, defaultWidth: "" },
-						{ node: rightCol, visible: ingredientsVisible, defaultWidth: "35%" },
+						{
+							node: rightCol,
+							visible: ingredientsVisible,
+							defaultWidth: "35%",
+						},
 					];
 
 					const visibleCols = cols.filter((col) => col.visible);
@@ -507,26 +512,28 @@
 					circularTimers.forEach((timer) => {
 						timer.cleanUp();
 					});
-					require(["dojo/dom", "dijit/registry", "dojo/ready"], function (dom, registry, ready) {
-						ready(function() {
-						let topHeader = dom.byId("topHeader");
-						topHeader.innerHTML = title;
-						addIngredients(id);
-						addMethods(id);
+					require(["dojo/dom", "dijit/registry", "dojo/ready"], function (
+						dom,
+						registry,
+						ready,
+					) {
+						ready(function () {
+							let topHeader = dom.byId("topHeader");
+							topHeader.innerHTML = title;
+							addIngredients(id);
+							addMethods(id);
 
-						// Ensure the view is at the top when a new recipe is loaded
-						window.scrollTo(0, 0);
-						const recipeColumns = dom.byId("recipeColumns");
-						if (recipeColumns) recipeColumns.scrollTop = 0;
+							// Ensure the view is at the top when a new recipe is loaded
+							window.scrollTo(0, 0);
+							const recipeColumns = dom.byId("recipeColumns");
+							if (recipeColumns) recipeColumns.scrollTop = 0;
 
-						// Hide search panel when a recipe is selected
-						const sBtn = registry.byId("searchToggleButton");
-						if (sBtn) {
-
-							sBtn.set("checked", false);
-						} else {
-
-						}
+							// Hide search panel when a recipe is selected
+							const sBtn = registry.byId("searchToggleButton");
+							if (sBtn) {
+								sBtn.set("checked", false);
+							} else {
+							}
 						});
 					});
 					currentRecipeId = id;
@@ -795,17 +802,18 @@
 			 * @param {boolean} [forceOpen=false] - Whether to force the drawer open.
 			 */
 			function toggleDrawer(drawer, forceOpen = false) {
+				/* FIXME: this function is (probably) no longer needed. */
 				require(["dijit/registry", "dojo/ready"], function (registry, ready) {
-					ready(function() {
-					if (rbDebug) console.log("toggleDrawer: starting...");
-					const button = registry.byId("searchToggleButton");
-					if (button) {
-						if (forceOpen) {
-							button.set("checked", true);
-						} else {
-							button.set("checked", !button.get("checked"));
+					ready(function () {
+						if (rbDebug) console.log("toggleDrawer: starting...");
+						const button = registry.byId(drawer);
+						if (button) {
+							if (forceOpen) {
+								button.set("checked", true);
+							} else {
+								button.set("checked", !button.get("checked"));
+							}
 						}
-					}
 						if (rbDebug) console.log("toggleDrawer: finished.");
 					});
 				});
@@ -841,7 +849,16 @@
 					if (event.altKey) {
 						switch (event.key) {
 							case "s":
-								toggleDrawer("searchCol");
+								console.log("keydown: Alt-s");
+								toggleSection("search");
+								break;
+							case "m":
+								console.log("keydown: Alt-m");
+								toggleSection("method");
+								break;
+							case "i":
+								console.log("keydown: Alt-i");
+								toggleSection("ingredients");
 								break;
 							case "g":
 								event.preventDefault();
@@ -914,7 +931,7 @@
 							data-dojo-type="dijit/form/CheckBox"
 							data-dojo-props="checked: true"
 						/>
-						<label for="searchToggleButton">Search</label>
+						<label for="searchToggleButton">Search (Alt-s)</label>
 					</div>
 					<div class="toggle-button-item verticallyAligned">
 						<input
@@ -922,7 +939,7 @@
 							data-dojo-type="dijit/form/CheckBox"
 							data-dojo-props="checked: true"
 						/>
-						<label for="methodToggleButton">Method</label>
+						<label for="methodToggleButton">Method (Alt-m) </label>
 					</div>
 					<div class="toggle-button-item verticallyAligned">
 						<input
@@ -930,7 +947,7 @@
 							data-dojo-type="dijit/form/CheckBox"
 							data-dojo-props="checked: true"
 						/>
-						<label for="ingredientsToggleButton">Ingredients</label>
+						<label for="ingredientsToggleButton">Ingredients (Alt-i)</label>
 					</div>
 				</div>
 			</div>
