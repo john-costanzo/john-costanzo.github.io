@@ -39,7 +39,7 @@ h2 {
 
 #recipeColumns {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	height: 100%;
 	width: 100%;
 }
@@ -48,13 +48,13 @@ h2 {
 	width: 25%;
 	overflow: auto;
 	padding: 10px;
-	border-left: 1px solid #ccc;
 }
 
 #methodCol {
 	flex: 1;
 	overflow: auto;
 	padding: 10px;
+	border-left: 1px solid #ccc;
 }
 
 #rightCol {
