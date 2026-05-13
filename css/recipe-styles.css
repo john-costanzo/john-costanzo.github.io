@@ -293,10 +293,8 @@ amount {
 	font-size: 26px;
 }
 
-}
-
 .keystroke {
-    color: gray !important;
+	color: gray !important;
 }
 
 @media (max-width: 480px) {
