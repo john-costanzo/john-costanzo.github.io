@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-05-13 08:22:08";
+const eventDataVersion = "Wednesday, 2026-05-13 14:51:05";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2416,7 +2416,7 @@ const events = [
         name: `Dog Day In The Park`,
         sort_time: "2026-05-23 13:00:00",
         end_time_formatted: "2026-05-23 18:00",
-        detail: "We’re celebrating dogs in Lower Park today! Bring your pup and grab a pint! \nThis event follows the FASCat 100-yard dash races taking place at 6 Row Field earlier in the day. Pup Cups are available while they last!\nJoining the party:\n* Charlies Angels Animal Rescue (@charliesangelsanimalrescue) with pets available for adoption\n* Mountain Pet Rescue (@moutainpetrescueavl) \n* The Working K9 (@thewk9) specialty training for your dog\n* K9 Workout AVL (k9workoutavl) bringing their unique mobile dog gym\nDogs must remain on leash at all times",
+        detail: "This is a Lower Park Event",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4106,7 +4106,7 @@ const events = [
         name: `Summer In The Park`,
         sort_time: "2026-06-13 14:00:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "We’re celebrating summer in Lower Park with live music, BBQ, and inflatable water games! And, we are very excited to partner with Zen Tubing, who will be offering floats down the river before the festivities begin! \nFeaturing:\nEmpire Strikes Brass, Dr. Bacon & DJ Brandon Manitoba\nInflatable Water Obstacle Course & Axe Throwing\nBBQ Plates available for purchase! \nFloat Trip Details\nCheck-In Location: Sierra Nevada Brewing Co (front parking lot) \nCheck in: 11:00 AM and 11:30 AM to\nFloat Time: 12:00 PM\nDuration: ~2 hours on the water (timing may vary slightly depending on water level)\nGuests off the river before 3:00 PM The return shuttle leaves at 3:15 PM (If you miss the return shuttle you will be responsible for your own transportation)",
+        detail: "This is a Lower Park Event featuring Empire Strikes Brass & Dr. Bacon",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4145,7 +4145,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4457,7 +4457,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
