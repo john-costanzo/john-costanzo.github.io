@@ -210,20 +210,17 @@
 						domStyle.get(rightCol, "display") !== "none";
 
 					if (searchBtn && searchVisible !== searchShowing) {
-						if (searchVisible) coreFx.wipeIn({ node: searchCol }).play();
-						else coreFx.wipeOut({ node: searchCol }).play();
+						domStyle.set(searchCol, "display", searchVisible ? "" : "none");
 						updatePaneHeader("search", searchVisible);
 					}
 
 					if (methodBtn && methodVisible !== methodShowing) {
-						if (methodVisible) coreFx.wipeIn({ node: methodCol }).play();
-						else coreFx.wipeOut({ node: methodCol }).play();
+						domStyle.set(methodCol, "display", methodVisible ? "" : "none");
 						updatePaneHeader("method", methodVisible);
 					}
 
 					if (ingredientsBtn && ingredientsVisible !== ingredientsShowing) {
-						if (ingredientsVisible) coreFx.wipeIn({ node: rightCol }).play();
-						else coreFx.wipeOut({ node: rightCol }).play();
+						domStyle.set(rightCol, "display", ingredientsVisible ? "" : "none");
 						updatePaneHeader("ingredients", ingredientsVisible);
 					}
 
@@ -510,7 +507,8 @@
 					circularTimers.forEach((timer) => {
 						timer.cleanUp();
 					});
-					require(["dojo/dom"], function (dom) {
+					require(["dojo/dom", "dijit/registry", "dojo/ready"], function (dom, registry, ready) {
+						ready(function() {
 						let topHeader = dom.byId("topHeader");
 						topHeader.innerHTML = title;
 						addIngredients(id);
@@ -520,6 +518,16 @@
 						window.scrollTo(0, 0);
 						const recipeColumns = dom.byId("recipeColumns");
 						if (recipeColumns) recipeColumns.scrollTop = 0;
+
+						// Hide search panel when a recipe is selected
+						const sBtn = registry.byId("searchToggleButton");
+						if (sBtn) {
+
+							sBtn.set("checked", false);
+						} else {
+
+						}
+						});
 					});
 					currentRecipeId = id;
 					document.title = title;
@@ -787,7 +795,8 @@
 			 * @param {boolean} [forceOpen=false] - Whether to force the drawer open.
 			 */
 			function toggleDrawer(drawer, forceOpen = false) {
-				require(["dijit/registry", "dojo/domReady!"], function (registry) {
+				require(["dijit/registry", "dojo/ready"], function (registry, ready) {
+					ready(function() {
 					if (rbDebug) console.log("toggleDrawer: starting...");
 					const button = registry.byId("searchToggleButton");
 					if (button) {
@@ -796,10 +805,9 @@
 						} else {
 							button.set("checked", !button.get("checked"));
 						}
-						focusOn("searchBox");
-						searchKeyboardHandler(null);
 					}
-					if (rbDebug) console.log("toggleDrawer: finished.");
+						if (rbDebug) console.log("toggleDrawer: finished.");
+					});
 				});
 			}
 
@@ -1442,6 +1450,10 @@
 						if (sBtn) {
 							sBtn.watch("checked", function (name, oldVal, newVal) {
 								updateLayout();
+								if (newVal) {
+									focusOn("searchBox");
+									searchKeyboardHandler();
+								}
 							});
 						}
 						const mBtn = registry.byId("methodToggleButton");
