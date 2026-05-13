@@ -904,7 +904,7 @@
 						<input
 							id="searchToggleButton"
 							data-dojo-type="dijit/form/CheckBox"
-							data-dojo-props="checked: false"
+							data-dojo-props="checked: true"
 						/>
 						<label for="searchToggleButton">Search</label>
 					</div>
@@ -956,6 +956,23 @@
 						</div>
 					</div>
 
+					<div id="methodCol">
+						<div id="methodHeader">
+							<center>
+								<h2
+									id="header-section-method"
+									onclick="toggleSection('method')"
+									class="clickable-header"
+								>
+									Method<span id="heading-ellipses-method"></span>
+								</h2>
+							</center>
+						</div>
+						<div id="heading-content-method">
+							<div id="recipe_method"></div>
+						</div>
+					</div>
+
 					<div id="rightCol" class="edgePanel">
 						<div id="ingredientsHeader">
 							<center>
@@ -971,23 +988,6 @@
 						</div>
 						<div id="heading-content-ingredients">
 							<div id="recipe_ingredients"></div>
-						</div>
-					</div>
-
-					<div id="methodCol">
-						<div id="methodHeader">
-							<center>
-								<h2
-									id="header-section-method"
-									onclick="toggleSection('method')"
-									class="clickable-header"
-								>
-									Method<span id="heading-ellipses-method"></span>
-								</h2>
-							</center>
-						</div>
-						<div id="heading-content-method">
-							<div id="recipe_method"></div>
 						</div>
 					</div>
 				</div>
@@ -1545,6 +1545,9 @@
 						where = "_blank";
 					});
 				}
+
+				updateLayout();
+				focusOn("searchBox");
 			});
 		</script>
 	</body>
