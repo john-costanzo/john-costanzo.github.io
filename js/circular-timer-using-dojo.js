@@ -1,4 +1,4 @@
-const circularTimerVersion = "Monday, 2025-08-11 @ 21:59:37";
+const circularTimerVersion = "Thursday, 2026-05-14 @ 13:20:49";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 

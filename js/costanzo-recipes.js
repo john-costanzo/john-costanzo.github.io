@@ -1,4 +1,4 @@
-const recipeDataVersion = "Wednesday, 2026-05-13 @ 21:23:21";
+const recipeDataVersion = "Thursday, 2026-05-14 @ 13:20:49";
 const tagsArray = [ ];
 const creditsArray = [ ];
 const yieldsArray = [ ];
