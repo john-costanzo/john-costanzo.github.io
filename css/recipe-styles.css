@@ -314,6 +314,15 @@ amount {
 		height: auto !important;
 		overflow: visible !important;
 	}
+	#searchCol {
+		order: 1;
+	}
+	#rightCol {
+		order: 2;
+	}
+	#methodCol {
+		order: 3;
+	}
 	#searchCol,
 	#methodCol,
 	#rightCol {
@@ -322,6 +331,10 @@ amount {
 		overflow: visible !important;
 		height: auto !important;
 		border-left: none !important;
+	}
+	.keystroke,
+	.text-align-right {
+		display: none;
 	}
 	.small-text {
 		font-size: 12px;
@@ -379,5 +392,9 @@ amount {
 	}
 	.recipe-clock {
 		display: none !important;
+	}
+	.keystroke,
+	.text-align-right {
+		display: none;
 	}
 }
