@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Thursday, 2026-05-14 @ 13:20:49";
+			const recipeBrowserVersion = "Saturday, 2026-05-16 @ 21:00:00";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -512,6 +512,7 @@
 					circularTimers.forEach((timer) => {
 						timer.cleanUp();
 					});
+					circularTimers.length = 0;
 					require(["dojo/dom", "dijit/registry", "dojo/ready"], function (
 						dom,
 						registry,
