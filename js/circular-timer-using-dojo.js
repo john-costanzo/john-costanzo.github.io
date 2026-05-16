@@ -6,8 +6,13 @@ const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
  * Toggles the display of an element.
  * @param {string} elementId The ID of the element to toggle.
  * @param {string} [displayStyle] The display style to set. If not provided, it toggles between "none" and "flex".
+ * @param {Event} [event] The event that triggered the toggle.
  */
-function toggleElement( elementId, displayStyle ) {
+function toggleElement( elementId, displayStyle, event ) {
+    if ( event ) {
+        event.stopPropagation( );
+    }
+
     // Set the style.display to DISPLAYSTYLE if provided.
     // Else toggle its state between "none" and "flex".
     const element = document.getElementById( elementId );
@@ -159,7 +164,7 @@ class CircularTimer {
                         hours.old = hours.recent;
                         hours.recent = hours.value;
 
-                        self.totalTime = ( parseInt( hours.value ) || 0 ) * 3660 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                        self.totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
                         self.expirationTime += ( hours.recent - hours.old ) * 3600000;
                         if ( self.isRunning ) {
                             self.remainingTime += ( hours.recent - hours.old );
