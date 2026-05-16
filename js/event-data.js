@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2026-05-16 08:07:57";
+const eventDataVersion = "Saturday, 2026-05-16 14:09:21";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2455,7 +2455,7 @@ const events = [
         name: `Auspicious Golden Fish`,
         sort_time: "2026-05-24 18:30:00",
         end_time_formatted: "2026-05-24 21:00",
-        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson (The Fritz/ElectroLust) assembles a revolving lineup of all-star musicians that bring his compositions to life. The result is a sonic journey- one that invites listeners to dissolve the ego, embrace the present moment, and dance into higher states of consciousness.",
+        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3820,7 +3820,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4210,7 +4210,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4327,7 +4327,7 @@ const events = [
         name: `Jamie McLean Band`,
         sort_time: "2026-06-20 18:30:00",
         end_time_formatted: "2026-06-20 21:00",
-        detail: "Jamie McLean Band creates a musical gumbo that incorporates New Orleans soul, middle Americana roots, Delta blues and New York City swagger. Jamie McLean Band is a triple threat. The ...\nRead More",
+        detail: "Jamie McLean Band creates a musical gumbo that incorporates New Orleans soul, middle Americana roots, Delta blues and New York City swagger. Jamie McLean Band is a triple threat. The group’s energetic and captivating live show is undeniable. McLean’s fiery guitar has joined the ranks of Derek Trucks, Gregg Allman, Aaron Neville, Dr. John and more on stages from Madison Square Garden to Japan’s Fuji Rock. His blue-eyed southern soul vocals ooze real emotion. And his top line songwriting chops have crafted profound, honest and heartfelt songs that will keep you singing along, dancing along and feeling like the song was written about you.\nJamie McLean Band is touring behind a fantastic new album “One Step Forward” on Harmonized Records. The album was recorded at the legendary Grand Street Studios in Brooklyn NY and features the band’s strongest and most mainstream songwriting to date. It also marks the return of original JMB member Jon Solo on keyboards! “Summer of Who Knows When” is an immediate summer anthem. “Calendar Girl” and “New York Penny Lane” are musical love letters. And the band kicks into full gear on “Too Little Too Late” and “I Believe in Love”!\nThe live show is where Jamie McLean Band excels and the band has shared the stage with the likes of Gregg Allman, Aaron Neville, Dr. John, Taj Mahal, Tedeschi Trucks Band, Trombone Shorty, Los Lobos, Blues Traveler, Marc Broussard and many more. Jamie Mclean Band has appeared at festivals such as Bonnaroo, Mountain Jam, Targhee Fest, Okeechobee Fest, Ottawa Blues Fest, Quebec City Summer Fest, and Warren Haynes’ Christmas Jam to name a few. McLean has also enjoyed the sponsorship of Gibson Guitars, Fuchs Amplifiers, D’Addario Strings, Blue Microphones, John Varvatos and Esquire Magazine.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
