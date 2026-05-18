@@ -535,6 +535,7 @@
 								sBtn.set("checked", false);
 							} else {
 							}
+							scaleRecipe(currentScalingPercentage);
 						});
 					});
 					currentRecipeId = id;
@@ -547,7 +548,6 @@
 				printMenuItem.setDisabled(false);
 				emailLinkMenuItem.setDisabled(false);
 				commentMenuItem.setDisabled(false);
-				scaleRecipe(currentScalingPercentage);
 			}
 
 			/**
@@ -1531,6 +1531,9 @@
 				changeFontSize("body", fontSizeDescriptionToValue(targetFontSize));
 				currentScalingPercentage = targetScalingPercentage;
 				changeSearchTerm(targetSearchTerm);
+				if (targetSearchTerm !== "") {
+					searchKeyboardHandler();
+				}
 
 				if (recipesToBeViewed.length == 0 && recipesToBePrinted.length == 0) {
 					toggleDrawer("searchCol", true);

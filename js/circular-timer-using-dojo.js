@@ -196,12 +196,12 @@ class CircularTimer {
                     minutes.recent = minutes.value;
                     minutes.value = zeroPad( minutes.value, 2 );
 
-                    self.totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-                    self.expirationTime += ( minutes.recent - minutes.old ) * 60000;
-                    if ( self.isRunning ) {
-                        self.remainingTime += ( minutes.recent - minutes.old );
+                        self.totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                        self.expirationTime += ( minutes.recent - minutes.old ) * 60000;
+                        if ( self.isRunning ) {
+                            self.remainingTime += ( minutes.recent - minutes.old );
                     } else {
-                        self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
+                            self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
                     }
                 } );
 
@@ -225,12 +225,12 @@ class CircularTimer {
                     seconds.recent = seconds.value;
                     seconds.value = zeroPad( seconds.value, 2 );
 
-                    self.totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-                    self.expirationTime += ( seconds.recent - seconds.old ) * 1000;
-                    if ( self.isRunning ) {
-                        self.remainingTime += ( seconds.recent - seconds.old );
+                        self.totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                        self.expirationTime += ( seconds.recent - seconds.old ) * 1000;
+                        if ( self.isRunning ) {
+                            self.remainingTime += ( seconds.recent - seconds.old );
                     } else {
-                        self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
+                            self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
                     }
                 } );
 
