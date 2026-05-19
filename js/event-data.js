@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-05-19 08:07:30";
+const eventDataVersion = "Tuesday, 2026-05-19 14:08:30";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1558,7 +1558,7 @@ const events = [
         name: `Dog Day In The Park`,
         sort_time: "2026-05-23 13:00:00",
         end_time_formatted: "2026-05-23 18:00",
-        detail: "This is a Lower Park Event",
+        detail: "We’re celebrating dogs in Lower Park today! Bring your pup and grab a pint! \nThis event follows the FASTCat 100-yard dash races taking place at 6 Row Field earlier in the day. Pup Cups are available while they last!\nJoining the party:\n* Charlies Angels Animal Rescue (@charliesangelsanimalrescue) with pets available for adoption\n* Mountain Pet Rescue (@moutainpetrescueavl) \n* The Working K9 (@thewk9) specialty training for your dog\n* K9 Workout AVL (k9workoutavl) bringing their unique mobile dog gym\nDogs must remain on leash at all times",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2325,7 +2325,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-29 18:00:00",
         end_time_formatted: "2026-05-29 22:00",
-        detail: "Sold Out - Tickets still Available Thursday, May 28th",
+        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2468,7 +2468,7 @@ const events = [
         name: `Magnolia Boulevard`,
         sort_time: "2026-05-30 14:00:00",
         end_time_formatted: "2026-05-30 17:00",
-        detail: "With a southern rock tinged flavor of soulful americana, and a powerful female vocalist reminiscent of Tedeschi Trucks Band, Magnolia Boulevard has blossomed through devastation since forming in 2017. They ...\nRead More",
+        detail: "With a southern rock tinged flavor of soulful americana, and a powerful female vocalist reminiscent of Tedeschi Trucks Band, Magnolia Boulevard has bl...",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2574,6 +2574,19 @@ const events = [
         end_time_formatted: "2026-05-31 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://www.sabrewery.com/events/2026-05",
+        venue: "Southern App",
+        event_date: "2026-05-31",
+        event_time: "12:00 pm - 5:00 pm",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: `Happy Almost Summer Pop-Up Market`,
+        sort_time: "2026-05-31 12:00:00",
+        end_time_formatted: "2026-05-31 17:00",
+        detail: "We are a smallish art, craft and vintage market that pops up once a month at Southern Appalachian Brewery where there is great beer, live music and a foodtruck!\nCome sip…",
+        location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
         url: "https://southerwilliams.com/events",
@@ -3092,7 +3105,7 @@ const events = [
         name: `Earl Scruggs Music Festival Battle of the Banjos`,
         sort_time: "2026-06-06 14:00:00",
         end_time_formatted: "2026-06-06 17:00",
-        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show.\nThe top 3 finalists from the Earl Scruggs Music Festival Battle of the Banjos online competition will battle it out live to see who makes the cut.\nVote for your favorite band, and help them win the Grandprize!\n• TWO live performance slots at the 2026 Earl Scruggs Music Festival (9/3 and 9/6)\n• $1,000 grand prize honorarium\n• A feature interview on WNCW\n• Plus More!\nFor more information click here: https://www.earlscruggsmusicfest.com",
+        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show. The top 3 finalists from the Earl Scruggs Music Festival Battle ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3534,7 +3547,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4119,7 +4132,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4223,7 +4236,7 @@ const events = [
         name: `The Headtones`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage ...\nRead More",
+        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage sounds, complemented by electronic elements and echoing horn lines to thrill and chill the listener. Hi-energy charts, mixed with a chill vibe, will keep your heart and feet beating, as Tampa Bay’s leading experimental Funk and Soul 6-piece band takes over the stages and airwaves near and far.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4314,7 +4327,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
