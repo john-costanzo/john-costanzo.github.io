@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-05-19 21:55:06";
+const eventDataVersion = "Wednesday, 2026-05-20 08:13:49";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -938,32 +938,6 @@ const events = [
         location: "Festival Net Ooh La La Curiosity Market - May",
     },
     {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-05-19",
-        event_time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `BINGO with Hendersonville Rotary Club`,
-        sort_time: "2026-05-19 18:00:00",
-        end_time_formatted: "2026-05-19 20:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-05-19",
-        event_time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
-        sort_time: "2026-05-19 18:00:00",
-        end_time_formatted: "2026-05-19 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-05-20",
@@ -1545,7 +1519,7 @@ const events = [
         name: `Dog Day In The Park`,
         sort_time: "2026-05-23 13:00:00",
         end_time_formatted: "2026-05-23 18:00",
-        detail: "We’re celebrating dogs in Lower Park today! Bring your pup and grab a pint! \nThis event follows the FASTCat 100-yard dash races taking place at 6 Row Field earlier in the day. Pup Cups are available while they last!\nJoining the party:\n* Charlies Angels Animal Rescue (@charliesangelsanimalrescue) with pets available for adoption\n* Mountain Pet Rescue (@moutainpetrescueavl) \n* The Working K9 (@thewk9) specialty training for your dog\n* K9 Workout AVL (k9workoutavl) bringing their unique mobile dog gym\nDogs must remain on leash at all times",
+        detail: "This is a Lower Park Event",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1558,7 +1532,7 @@ const events = [
         name: `Reedy River String Band`,
         sort_time: "2026-05-23 14:00:00",
         end_time_formatted: "2026-05-23 17:00",
-        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s ...\nRead More",
+        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s multi-instrumental prowess, this trio’s larger than life sound defies their numbers and transcends their bluegrass influences and instrumentation.\nFlying high from the success of their first European tour and with dates to be announced for their second, the Reedy River String Band recently flew back to the US to close out the 30th Albino Skunk Music Festival. Other notable festivals include The Earl Scruggs Music Festival, Merlefest, Charleston Bluegrass Festival, Birdfest and more.\nReedy River String Band released their debut self-titled album in 2022 and has since released two singles, “My Grass is Blue,” and “Punkin Brown” in 2023. Their studio releases and live performances have been played on multiple radio stations in the United States and Europe. Currently they are in preproduction for a 2025 release.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1935,7 +1909,7 @@ const events = [
         name: `Auspicious Golden Fish`,
         sort_time: "2026-05-24 18:30:00",
         end_time_formatted: "2026-05-24 21:00",
-        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson (The Fritz/ElectroLust) assembles a revolving lineup of all-star musicians that bring his compositions to life. The result is a sonic journey- one that invites listeners to dissolve the ego, embrace the present moment, and dance into higher states of consciousness.",
+        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3092,7 +3066,7 @@ const events = [
         name: `Earl Scruggs Music Festival Battle of the Banjos`,
         sort_time: "2026-06-06 14:00:00",
         end_time_formatted: "2026-06-06 17:00",
-        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show.\nThe top 3 finalists from the Earl Scruggs Music Festival Battle of the Banjos online competition will battle it out live to see who makes the cut.\nVote for your favorite band, and help them win the Grandprize!\n• TWO live performance slots at the 2026 Earl Scruggs Music Festival (9/3 and 9/6)\n• $1,000 grand prize honorarium\n• A feature interview on WNCW\n• Plus More!\nFor more information click here: https://www.earlscruggsmusicfest.com",
+        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show. The top 3 finalists from the Earl Scruggs Music Festival Battle ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3534,7 +3508,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3768,7 +3742,7 @@ const events = [
         name: `Summer In The Park`,
         sort_time: "2026-06-13 14:00:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "We’re celebrating summer in Lower Park with live music, BBQ, and inflatable water games!\nAnd, we are very excited to partner with Zen Tubing, who will be offering floats down the river before the festivities begin! \nFeaturing:\nEmpire Strikes Brass, Dr. Bacon & DJ Brandon Manitoba\nInflatable Water Obstacle Course & Axe Throwing\nBBQ Plates available for purchase! \nFloat Trip Details:\nCheck-In Location: Sierra Nevada Brewing Co (front parking lot) \nCheck-In Times: 11:00am and 11:30am\nFloat Time: 12:00pm\nDuration: ~2 hours on the water (timing may vary slightly depending on water level)\n* Guests off the river before 3:00pm \n* The return shuttle leaves at 3:15pm (If you miss the return shuttle you will be responsible for your own transportation)",
+        detail: "This is a Lower Park Event featuring Empire Strikes Brass & Dr. Bacon",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3796,6 +3770,19 @@ const events = [
         end_time_formatted: "2026-06-13 22:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-06-13",
+        event_time: "8:00 pm - 9:30 pm",
+        start_time: "8:00 pm",
+        end_time: "9:30 pm",
+        name: `Live Comedy Show`,
+        sort_time: "2026-06-13 20:00:00",
+        end_time_formatted: "2026-06-13 21:30",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
