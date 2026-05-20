@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-05-19 20:09:24";
+const eventDataVersion = "Tuesday, 2026-05-19 21:55:06";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1545,7 +1545,7 @@ const events = [
         name: `Dog Day In The Park`,
         sort_time: "2026-05-23 13:00:00",
         end_time_formatted: "2026-05-23 18:00",
-        detail: "This is a Lower Park Event",
+        detail: "We’re celebrating dogs in Lower Park today! Bring your pup and grab a pint! \nThis event follows the FASTCat 100-yard dash races taking place at 6 Row Field earlier in the day. Pup Cups are available while they last!\nJoining the party:\n* Charlies Angels Animal Rescue (@charliesangelsanimalrescue) with pets available for adoption\n* Mountain Pet Rescue (@moutainpetrescueavl) \n* The Working K9 (@thewk9) specialty training for your dog\n* K9 Workout AVL (k9workoutavl) bringing their unique mobile dog gym\nDogs must remain on leash at all times",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1935,7 +1935,7 @@ const events = [
         name: `Auspicious Golden Fish`,
         sort_time: "2026-05-24 18:30:00",
         end_time_formatted: "2026-05-24 21:00",
-        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson ...\nRead More",
+        detail: "Swimming in an ocean of sound, Auspicious Golden Fish weaves together searing guitar riffs, hypnotic synth textures, and deep funk grooves into a transcendent musical experience. American guitarist/producer Jamie Hendrickson (The Fritz/ElectroLust) assembles a revolving lineup of all-star musicians that bring his compositions to life. The result is a sonic journey- one that invites listeners to dissolve the ego, embrace the present moment, and dance into higher states of consciousness.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2072,27 +2072,14 @@ const events = [
         url: "https://www.facebook.com/profile.php?id=61559567825343#",
         venue: "Carriage Park",
         event_date: "2026-05-27",
-        event_time: "3:30 PM - 7:30 PM",
-        start_time: "3:30 PM",
-        end_time: "7:30 PM",
-        name: `Food Truck: Bistro Betty`,
-        sort_time: "2026-05-27 15:30:00",
-        end_time_formatted: "2026-05-27 19:30:00",
-        detail: "None",
-        location: "Carriage Park clubhouse",
-    },
-    {
-        url: "https://www.cphassn.org/home",
-        venue: "Carriage Park",
-        event_date: "2026-05-27",
         event_time: "4:00 PM - 7:00 PM",
         start_time: "4:00 PM",
         end_time: "7:00 PM",
         name: `Bisto Betty food truck`,
         sort_time: "2026-05-27 16:00:00",
         end_time_formatted: "2026-05-27 19:00:00",
-        detail: "The Social Committee will sponsor Bisto Betty food truck on May 27, 4-7pm at the clubhouse. Beverages will be available inside the clubhouse. Bistro Betty's menu offers something for everyone. Sandwiches, bowls, vegetarian options.",
-        location: "Clubhouse",
+        detail: "The Social Committee will sponsor Bistro Betty food truck on May 27, 4-7pm at the clubhouse. Beverages will be available inside the clubhouse. Bistro Betty's menu offers something for everyone. Sandwiches, bowls, vegetarian options.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -3105,7 +3092,7 @@ const events = [
         name: `Earl Scruggs Music Festival Battle of the Banjos`,
         sort_time: "2026-06-06 14:00:00",
         end_time_formatted: "2026-06-06 17:00",
-        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show. The top 3 finalists from the Earl Scruggs Music Festival Battle ...\nRead More",
+        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show.\nThe top 3 finalists from the Earl Scruggs Music Festival Battle of the Banjos online competition will battle it out live to see who makes the cut.\nVote for your favorite band, and help them win the Grandprize!\n• TWO live performance slots at the 2026 Earl Scruggs Music Festival (9/3 and 9/6)\n• $1,000 grand prize honorarium\n• A feature interview on WNCW\n• Plus More!\nFor more information click here: https://www.earlscruggsmusicfest.com",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3547,7 +3534,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3781,7 +3768,7 @@ const events = [
         name: `Summer In The Park`,
         sort_time: "2026-06-13 14:00:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "This is a Lower Park Event featuring Empire Strikes Brass & Dr. Bacon",
+        detail: "We’re celebrating summer in Lower Park with live music, BBQ, and inflatable water games!\nAnd, we are very excited to partner with Zen Tubing, who will be offering floats down the river before the festivities begin! \nFeaturing:\nEmpire Strikes Brass, Dr. Bacon & DJ Brandon Manitoba\nInflatable Water Obstacle Course & Axe Throwing\nBBQ Plates available for purchase! \nFloat Trip Details:\nCheck-In Location: Sierra Nevada Brewing Co (front parking lot) \nCheck-In Times: 11:00am and 11:30am\nFloat Time: 12:00pm\nDuration: ~2 hours on the water (timing may vary slightly depending on water level)\n* Guests off the river before 3:00pm \n* The return shuttle leaves at 3:15pm (If you miss the return shuttle you will be responsible for your own transportation)",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6654,7 +6641,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
+        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
