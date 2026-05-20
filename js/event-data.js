@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-05-20 08:13:49";
+const eventDataVersion = "Wednesday, 2026-05-20 14:09:32";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1532,7 +1532,7 @@ const events = [
         name: `Reedy River String Band`,
         sort_time: "2026-05-23 14:00:00",
         end_time_formatted: "2026-05-23 17:00",
-        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s multi-instrumental prowess, this trio’s larger than life sound defies their numbers and transcends their bluegrass influences and instrumentation.\nFlying high from the success of their first European tour and with dates to be announced for their second, the Reedy River String Band recently flew back to the US to close out the 30th Albino Skunk Music Festival. Other notable festivals include The Earl Scruggs Music Festival, Merlefest, Charleston Bluegrass Festival, Birdfest and more.\nReedy River String Band released their debut self-titled album in 2022 and has since released two singles, “My Grass is Blue,” and “Punkin Brown” in 2023. Their studio releases and live performances have been played on multiple radio stations in the United States and Europe. Currently they are in preproduction for a 2025 release.",
+        detail: "Named for the river that runs through their hometown, Greenville, SC’s three-year-old Reedy River String Band, features three writers, three lead singers, and three-part harmonies. Combined with frontman Sterling Waite’s ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2793,7 +2793,7 @@ const events = [
         name: `Live Music by Ken Morgan`,
         sort_time: "2026-06-03 18:00:00",
         end_time_formatted: "2026-06-03 21:00",
-        detail: "Doors open at 5:30",
+        detail: "Tickets are $15 and include cheese and veggie platters as well as beer, wine and soft drinks.\nJoin Ken for playing guitar and keyboard covering rock & pop to country folk and Americana.",
         location: "Carriage Park clubhouse",
     },
     {
@@ -3703,7 +3703,7 @@ const events = [
         name: `Mike Harbin speaks on the geology of Western North Carolina`,
         sort_time: "2026-06-13 10:00:00",
         end_time_formatted: "2026-06-13 12:00:00",
-        detail: "None",
+        detail: " ",
         location: "Carriage Park clubhouse",
     },
     {
@@ -6628,7 +6628,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
+        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
