@@ -1,4 +1,4 @@
-const circularTimerVersion = "Monday, 2025-08-11 @ 21:59:37";
+const circularTimerVersion = "Saturday, 2026-05-16 @ 21:00:00";
 
 const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
 
@@ -6,8 +6,13 @@ const zeroPad = ( num, places ) => String( num ).padStart( places, '0' );
  * Toggles the display of an element.
  * @param {string} elementId The ID of the element to toggle.
  * @param {string} [displayStyle] The display style to set. If not provided, it toggles between "none" and "flex".
+ * @param {Event} [event] The event that triggered the toggle.
  */
-function toggleElement( elementId, displayStyle ) {
+function toggleElement( elementId, displayStyle, event ) {
+    if ( event ) {
+        event.stopPropagation( );
+    }
+
     // Set the style.display to DISPLAYSTYLE if provided.
     // Else toggle its state between "none" and "flex".
     const element = document.getElementById( elementId );
@@ -35,6 +40,15 @@ function toggleElement( elementId, displayStyle ) {
             'timer_id': elementId,
             'recipe_id': recipeId
         } );
+
+        // Automatically start all of those exposed CircularTimers.
+        if ( typeof circularTimers !== 'undefined' ) {
+            circularTimers.forEach( ( timer ) => {
+                if ( timer.containerId === elementId ) {
+                    timer.start( );
+                }
+            } );
+        }
     }
 }
 
@@ -64,17 +78,19 @@ class CircularTimer {
      */
     constructor( timerContainer, initialTime, alertTime = 30, sounds, position = -1 ) {
         const self = this; // Capture the value of 'this'
+        self.containerId = timerContainer;
         self.timerInterval = undefined;
         self.audios = [ ]; // an array of Audio media that have been played
         self.timerControls = undefined;
 
-        var circularTimer;
         var initialSeconds = initialTime % 60;
         var initialMinutes = Math.floor( ( initialTime % 3600 ) / 60 );
         var initialHours = Math.floor( initialTime / 3600 );
-        var expirationTime;
-        var timeAtPause = 0; // capture the time pause was clicked
-        var isRunning = false;
+        self.expirationTime = undefined;
+        self.timeAtPause = 0; // capture the time pause was clicked
+        self.isRunning = false;
+        self.totalTime = 0; // in seconds
+        self.remainingTime = 0; // in seconds
 
 
         require( [
@@ -148,12 +164,12 @@ class CircularTimer {
                         hours.old = hours.recent;
                         hours.recent = hours.value;
 
-                        totalTime = ( parseInt( hours.value ) || 0 ) * 3660 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-                        expirationTime += ( hours.recent - hours.old ) * 3600000;
-                        if ( isRunning ) {
-                            remainingTime += ( hours.recent - hours.old );
+                        self.totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                        self.expirationTime += ( hours.recent - hours.old ) * 3600000;
+                        if ( self.isRunning ) {
+                            self.remainingTime += ( hours.recent - hours.old );
                         } else {
-                            remainingTime = ( expirationTime - Date.now( ) ) / 1000;
+                            self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
                         }
                     } );
                     domConstruct.create( "span", {
@@ -180,12 +196,12 @@ class CircularTimer {
                     minutes.recent = minutes.value;
                     minutes.value = zeroPad( minutes.value, 2 );
 
-                    totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-                    expirationTime += ( minutes.recent - minutes.old ) * 60000;
-                    if ( isRunning ) {
-                        remainingTime += ( minutes.recent - minutes.old );
+                        self.totalTime = ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                        self.expirationTime += ( minutes.recent - minutes.old ) * 60000;
+                        if ( self.isRunning ) {
+                            self.remainingTime += ( minutes.recent - minutes.old );
                     } else {
-                        remainingTime = ( expirationTime - Date.now( ) ) / 1000;
+                            self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
                     }
                 } );
 
@@ -209,12 +225,12 @@ class CircularTimer {
                     seconds.recent = seconds.value;
                     seconds.value = zeroPad( seconds.value, 2 );
 
-                    totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-                    expirationTime += ( seconds.recent - seconds.old ) * 1000;
-                    if ( isRunning ) {
-                        remainingTime += ( seconds.recent - seconds.old );
+                        self.totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                        self.expirationTime += ( seconds.recent - seconds.old ) * 1000;
+                        if ( self.isRunning ) {
+                            self.remainingTime += ( seconds.recent - seconds.old );
                     } else {
-                        remainingTime = ( expirationTime - Date.now( ) ) / 1000;
+                            self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
                     }
                 } );
 
@@ -271,23 +287,22 @@ class CircularTimer {
                 const radius = circle.r.baseVal.value;
                 const circumference = 2 * Math.PI * radius;
 
-                var totalTime = 0; // in seconds
-                var remainingTime = 0; // in seconds
-
                 startButtonHandler = on( startButton, "click", startTimer );
+                self.start = startTimer;
 
                 /**
                  * The main timer loop, called every second.
                  */
                 function commenceTicking( ) {
-                    if ( remainingTime <= 0 ) {
+                    if ( self.remainingTime <= 0 ) {
                         clearInterval( self.timerInterval );
+                        self.isRunning = false;
                         startButton.innerHTML = "Start";
                         startButtonHandler.remove( );
                         startButtonHandler = on( startButton, "click", startTimer );
                     }
 
-                    if ( remainingTime <= alertTime ) {
+                    if ( self.remainingTime <= alertTime ) {
                         svg.classList.add( "pulse-element" );
                         text.classList.remove( "normal-style" );
                         text.classList.add( "alert-style" );
@@ -301,8 +316,8 @@ class CircularTimer {
                  */
                 function pauseTimer( ) {
                     clearInterval( self.timerInterval );
-                    timeAtPause = Date.now( );
-                    isRunning = false;
+                    self.timeAtPause = Date.now( );
+                    self.isRunning = false;
                     startButton.innerHTML = "Resume";
                     startButtonHandler.remove( );
                     startButtonHandler = on( startButton, "click", resumeTimer );
@@ -313,9 +328,9 @@ class CircularTimer {
                  */
                 function resumeTimer( ) {
                     clearInterval( self.timerInterval );
-                    expirationTime += Date.now( ) - timeAtPause;
+                    self.expirationTime += Date.now( ) - self.timeAtPause;
                     updateDisplay( );
-                    isRunning = true;
+                    self.isRunning = true;
                     startButton.innerHTML = "Pause";
                     startButtonHandler.remove( );
                     startButtonHandler = on( startButton, "click", pauseTimer );
@@ -327,10 +342,11 @@ class CircularTimer {
                  * Starts the timer from the beginning.
                  */
                 function startTimer( ) {
-                    totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
-                    expirationTime = Date.now( ) + ( totalTime * 1000 );
+                    if ( self.isRunning ) return;
+                    self.totalTime = ( parseInt( hours.value ) || 0 ) * 3600 + ( parseInt( minutes.value ) || 0 ) * 60 + ( parseInt( seconds.value ) || 0 );
+                    self.expirationTime = Date.now( ) + ( self.totalTime * 1000 );
                     clearInterval( self.timerInterval );
-                    isRunning = true;
+                    self.isRunning = true;
                     startButton.innerHTML = "Pause";
                     startButtonHandler.remove( );
                     startButtonHandler = on( startButton, "click", pauseTimer );
@@ -372,12 +388,12 @@ class CircularTimer {
                  */
                 function resetTimer( ) {
                     clearInterval( self.timerInterval );
-                    timeAtPause = Date.now( );
-                    isRunning = false;
+                    self.timeAtPause = Date.now( );
+                    self.isRunning = false;
                     startButton.innerHTML = "Start";
                     startButtonHandler.remove( );
                     startButtonHandler = on( startButton, "click", startTimer );
-                    expirationTime = Date.now( );
+                    self.expirationTime = Date.now( );
                     svg.classList.remove( "pulse-element" );
                     text.classList.remove( "alert-style" );
                     updateDisplay( true );
@@ -390,12 +406,12 @@ class CircularTimer {
                  * @param {boolean} [silently=false] - If true, do not play sounds.
                  */
                 function updateDisplay( siliently = false ) {
-                    remainingTime = ( expirationTime - Date.now( ) ) / 1000;
-                    if ( !siliently ) playSounds( remainingTime );
+                    self.remainingTime = ( self.expirationTime - Date.now( ) ) / 1000;
+                    if ( !siliently ) playSounds( self.remainingTime );
 
-                    var hr = Math.floor( remainingTime / 3600 );
-                    var min = Math.floor( ( remainingTime % 3600 ) / 60 );
-                    var sec = Math.round( remainingTime % 60 );
+                    var hr = Math.floor( self.remainingTime / 3600 );
+                    var min = Math.floor( ( self.remainingTime % 3600 ) / 60 );
+                    var sec = Math.round( self.remainingTime % 60 );
                     if ( sec < 0 ) sec = 0;
                     if ( min < 0 ) min = 0;
                     if ( hr < 0 ) hr = 0;
@@ -417,7 +433,7 @@ class CircularTimer {
                     }
 
                     // Update the SVG timer arc
-                    let fractionRemaining = ( ( remainingTime / totalTime ) * circumference );
+                    let fractionRemaining = ( ( self.remainingTime / self.totalTime ) * circumference );
                     if ( fractionRemaining < 1 ) fractionRemaining = 0;
                     circle.style.strokeDasharray = fractionRemaining + " " + circumference;
                 }
@@ -460,7 +476,6 @@ class CircularTimer {
             } );
         } );
         toggleElement( timerContainer, "none" );
-        return ( circularTimer );
     }
 
     /**

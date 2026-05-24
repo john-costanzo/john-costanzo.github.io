@@ -1,4 +1,4 @@
-const searchRecipesVersion = "Monday, 2025-08-11 @ 21:59:23";
+const searchRecipesVersion = "Thursday, 2026-05-14 @ 13:20:49";
 
 var debugSearchRecipes = false;
 
