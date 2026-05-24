@@ -39,15 +39,22 @@ h2 {
 
 #recipeColumns {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	height: 100%;
 	width: 100%;
+}
+
+#searchCol {
+	width: 25%;
+	overflow: auto;
+	padding: 10px;
 }
 
 #methodCol {
 	flex: 1;
 	overflow: auto;
 	padding: 10px;
+	border-left: 1px solid #ccc;
 }
 
 #rightCol {
@@ -188,19 +195,7 @@ h8 {
 }
 
 #recipeDrawer {
-	width: 390px;
-	height: 999%;
-	background-color: #f0f0f0;
-	position: absolute;
-	top: 0;
-	left: -400px;
-	border: double;
-	transition: left 0.3s ease;
-}
-
-.hidden {
-	left: 0;
-	height: 100%;
+	display: none;
 }
 
 .gearsButtonIcon {
@@ -298,6 +293,10 @@ amount {
 	font-size: 26px;
 }
 
+.keystroke {
+	color: gray !important;
+}
+
 @media (max-width: 480px) {
 	html,
 	body,
@@ -315,6 +314,16 @@ amount {
 		height: auto !important;
 		overflow: visible !important;
 	}
+	#searchCol {
+		order: 1;
+	}
+	#rightCol {
+		order: 2;
+	}
+	#methodCol {
+		order: 3;
+	}
+	#searchCol,
 	#methodCol,
 	#rightCol {
 		width: 100% !important;
@@ -322,6 +331,10 @@ amount {
 		overflow: visible !important;
 		height: auto !important;
 		border-left: none !important;
+	}
+	.keystroke,
+	.text-align-right {
+		display: none;
 	}
 	.small-text {
 		font-size: 12px;
@@ -379,5 +392,9 @@ amount {
 	}
 	.recipe-clock {
 		display: none !important;
+	}
+	.keystroke,
+	.text-align-right {
+		display: none;
 	}
 }
