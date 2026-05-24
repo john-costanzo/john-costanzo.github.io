@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Saturday, 2026-05-16 @ 21:00:00";
+			const recipeBrowserVersion = "Sunday, 2026-05-24 @ 10:55:58";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -211,17 +211,23 @@
 						domStyle.get(rightCol, "display") !== "none";
 
 					if (searchBtn && searchVisible !== searchShowing) {
-						domStyle.set(searchCol, "display", searchVisible ? "" : "none");
+						if (searchVisible)
+							coreFx.wipeIn({ node: searchCol, duration: 750 }).play();
+						else coreFx.wipeOut({ node: searchCol, duration: 750 }).play();
 						updatePaneHeader("search", searchVisible);
 					}
 
 					if (methodBtn && methodVisible !== methodShowing) {
-						domStyle.set(methodCol, "display", methodVisible ? "" : "none");
+						if (methodVisible)
+							coreFx.wipeIn({ node: methodCol, duration: 750 }).play();
+						else coreFx.wipeOut({ node: methodCol, duration: 750 }).play();
 						updatePaneHeader("method", methodVisible);
 					}
 
 					if (ingredientsBtn && ingredientsVisible !== ingredientsShowing) {
-						domStyle.set(rightCol, "display", ingredientsVisible ? "" : "none");
+						if (ingredientsVisible)
+							coreFx.wipeIn({ node: rightCol, duration: 750 }).play();
+						else coreFx.wipeOut({ node: rightCol, duration: 750 }).play();
 						updatePaneHeader("ingredients", ingredientsVisible);
 					}
 
@@ -306,24 +312,14 @@
 						const ellipsesNode = dom.byId("heading-ellipses-" + id);
 
 						if (newVisible) {
-							coreFx.wipeIn({ node: contentNode }).play();
+							coreFx.wipeIn({ node: contentNode, duration: 750 }).play();
 							if (headerNode) domClass.remove(headerNode, "itemClicked");
 							if (ellipsesNode) ellipsesNode.innerHTML = "";
-							wipe = fx.wipeIn({
-								node: contentNode,
-								duration: 750,
-							});
 						} else {
-							coreFx.wipeOut({ node: contentNode }).play();
+							coreFx.wipeOut({ node: contentNode, duration: 750 }).play();
 							if (headerNode) domClass.add(headerNode, "itemClicked");
 							if (ellipsesNode) ellipsesNode.innerHTML = "...";
-							wipe = fx.wipeOut({
-								node: contentNode,
-								duration: 750,
-							});
 						}
-						fx.combine([wipe]).play();
-						domStyle.set(contentNode, "display", newVisible ? "" : "none");
 					}
 				});
 			}
