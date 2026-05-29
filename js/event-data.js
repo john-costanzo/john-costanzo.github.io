@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-05-28 14:09:13";
+const eventDataVersion = "Thursday, 2026-05-28 20:16:42";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -629,19 +629,6 @@ const events = [
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-05-28",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taste of Pea Ridge`,
-        sort_time: "2026-05-28 16:00:00",
-        end_time_formatted: "2026-05-28 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-05-28",
         event_time: "6:00 pm - 9:00 pm",
         start_time: "6:00 pm",
         end_time: "9:00 pm",
@@ -663,32 +650,6 @@ const events = [
         end_time_formatted: "2026-05-28 21:00",
         detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
-    },
-    {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
-        event_date: "2026-05-28",
-        event_time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Cody Gentry`,
-        sort_time: "2026-05-28 18:00:00",
-        end_time_formatted: "2026-05-28 20:00",
-        detail: "Music starts @ 6pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-05-28",
-        event_time: "6:00 pm - 9:30 pm",
-        start_time: "6:00 pm",
-        end_time: "9:30 pm",
-        name: `Steep Canyon Rangers`,
-        sort_time: "2026-05-28 18:00:00",
-        end_time_formatted: "2026-05-28 21:30",
-        detail: "Second Night Added Due to Demand",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://www.sabrewery.com/events/2026-05",
@@ -804,7 +765,7 @@ const events = [
         name: `Steep Canyon Rangers`,
         sort_time: "2026-05-29 18:00:00",
         end_time_formatted: "2026-05-29 22:00",
-        detail: "Sold Out - Tickets still Available Thursday, May 28th",
+        detail: "These local bluegrass legends are making their Sierra Nevada debut this summer on the amphitheater!\nHeralds of the Carolina sound for more than two decades, Steep Canyon Rangers find themselves in a unique seat at the table for their new release, Morning Shift, released September 8, 2023. On this record, the GRAMMY-winners tell stories that both honor their roots, and expand upon the living art of bluegrass music, all while solidifying their reputation as some of the most influential songwriters in Americana today.\nThe Steep Canyon Rangers recently recorded their 14th studio album in Bat Cave, NC, at the Hickory Nut Gap Inn, a historical refuge settled near a long-forgotten crossroads of Southern Appalachia. Much like the story of bluegrass music, the conversations surrounding this area are shared, fluid, and greatly affected by a simple matter of perspective. This was the perfect space to feel confident in expanding upon that Carolina sound, the perfect runway to let their well-oiled machine do what it does best- craft stories from the ground up, as a unit.\nGraham Sharp writes of similar fluidity on the album’s opening track, “Hominy Valley,” a moving story about the layers of human history in his West Asheville neighborhood.\n“It’s not just a shared history, but a living history. Nothing is stamped and finished.” said Sharp, also likening this to the Rangers’ musical journey over the years. “We’re a product of who the band was in the past as well as who we want to be in the present and future. This recording session felt really good, because there was no pressure to be anything but ourselves in that moment. It was important that we came in without any preordained expectations about what kind of record this would be, and Darrell Scott was the perfect producer to provide guidance from an open perspective. ”\nWith a sure hand at the wheel was the distinguished Darrell Scott, whom the Rangers put full faith in to navigate the waters of producing their most important record to date. “It was like going to recording camp,” said Scott, “We ate together, we stayed at the Inn together the whole time, and we recorded. Going about it that way made for a very organic record. We had a great engineer with Dave Sinko, who could in essence create a studio space in a rustic, historic home.”\nHailing from both the Appalachian and Piedmont regions of North Carolina, the Rangers have long held traditional bluegrass paramount, while possessing an exceptional ability to bring it down the mountain, and to incorporate accessible influence from all walks of the region. With the band’s last few albums, they have gained recognition from well beyond the world of bluegrass, earning a reputation as some of the most influential songwriters in Americana today.\nNewcomer to this ship, Aaron Burdett, brings a soul-stirring element to the Rangers’ mastery of mountain music. Burdett is an award-winning singer-songwriter, and a student of folk tradition. He provides a fresh, emotional context to the songbook, which “can reach out and touch your heart or slap you in the face,” to use the praise of drummer and multi-instrumentalist, Mike Ashworth.\n“I’ve always loved traditional Old Time and Bluegrass, and the concept of neo-traditional re-visitations and interpretations of those styles.” says Burdett about the track “Above My Burdens.”\n“Once I started singing with the Rangers,” continues Burdett, “I saw an opportunity to try to write some songs for the band that brought in the traditional sounds and structures that I grew up hearing here in western North Carolina.”\nA thoughtful approach to collaboration, ironclad creative trust, and a collective drive towards authentic storytelling, makes for not only a quintessential Rangers record, but a modern North Carolina classic.\nSteep Canyon Rangers is made up of Graham Sharp on banjo and vocals, Mike Guggino on mandolin/mandola and vocals, Aaron Burdett on guitar and vocals, Nicky Sanders on fiddle and vocals, Mike Ashworth on drums and vocals, and Barrett Smith on bass, guitar, and vocals.\nOver the band’s esteemed career, the three-time Grammy nominees have released 14 studio albums, three collaborative albums with actor and banjoist Steve Martin, been inducted into the North Carolina Music Hall of Fame, and appeared on some of music’s biggest stages. In 2013, Nobody Knows You won the GRAMMY Award for Best Bluegrass Album, while 2012’s Rare Bird and 2020’s North Carolina Songbook garnered nominations in the same category.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1805,7 +1766,7 @@ const events = [
         name: `Earl Scruggs Music Festival Battle of the Banjos`,
         sort_time: "2026-06-06 14:00:00",
         end_time_formatted: "2026-06-06 17:00",
-        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show.\nThe top 3 finalists from the Earl Scruggs Music Festival Battle of the Banjos online competition will battle it out live to see who makes the cut.\nVote for your favorite band, and help them win the Grandprize!\n• TWO live performance slots at the 2026 Earl Scruggs Music Festival (9/3 and 9/6)\n• $1,000 grand prize honorarium\n• A feature interview on WNCW\n• Plus More!\nFor more information click here: https://www.earlscruggsmusicfest.com",
+        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show. The top 3 finalists from the Earl Scruggs Music Festival Battle ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1857,7 +1818,7 @@ const events = [
         name: `The New Variants with Doss Church & The Unholy Noise`,
         sort_time: "2026-06-06 18:30:00",
         end_time_formatted: "2026-06-06 21:00",
-        detail: "New Variants is an Asheville-based band known for blending classic rock, alternative rock, and modern favorites into an energetic live performance. Doss Church & the Unholy Noise is an Asheville-based ...\nRead More",
+        detail: "New Variants is an Asheville-based band known for blending classic rock, alternative rock, and modern favorites into an energetic live performance.\nDoss Church & the Unholy Noise is an Asheville-based Americana Rock & Roll band that plays a mix of originals written by singer/songwriter Doss Church, along with a wide range of crowd-pleasing cover songs.\nDoss Church is a seasoned songwriter who fuses soulful, heartfelt vocals with warm, expressive acoustic guitar. His deeply storied, personal lyrics are filled with hope found and love lost. The Unholy Noise combines Americana, Country, and Folk Rock influences that range from the 60’s to today and delivers a sound that feels both new and old at the same time. The honest songwriting, veteran musicianship, and electric stage presence of the entire group make for a truly moving live performance.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2689,7 +2650,7 @@ const events = [
         name: `Summer In The Park`,
         sort_time: "2026-06-13 14:00:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "This is a Lower Park Event featuring Empire Strikes Brass & Dr. Bacon",
+        detail: "We’re celebrating summer in Lower Park with live music, BBQ, and inflatable water games!\nAnd, we are very excited to partner with Zen Tubing, who will be offering floats down the river before the festivities begin! \nFeaturing:\nEmpire Strikes Brass, Dr. Bacon & DJ Brandon Manitoba\nInflatable Water Obstacle Course & Axe Throwing\nBBQ Plates available for purchase! \nFloat Trip Details:\nCheck-In Location: Sierra Nevada Brewing Co (front parking lot) \nCheck-In Times: 11:00am and 11:30am\nFloat Time: 12:00pm\nDuration: ~2 hours on the water (timing may vary slightly depending on water level)\n* Guests off the river before 3:00pm \n* The return shuttle leaves at 3:15pm (If you miss the return shuttle you will be responsible for your own transportation)",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2860,6 +2821,19 @@ const events = [
         end_time_formatted: "2026-06-14 17:00",
         detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-06-14",
+        event_time: "3:00 pm - 6:00 pm",
+        start_time: "3:00 pm",
+        end_time: "6:00 pm",
+        name: `J-Dunks`,
+        sort_time: "2026-06-14 15:00:00",
+        end_time_formatted: "2026-06-14 18:00",
+        detail: "Music starts @3pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
@@ -3326,7 +3300,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3560,7 +3534,7 @@ const events = [
         name: `The Headtones`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage sounds, complemented by electronic elements and echoing horn lines to thrill and chill the listener. Hi-energy charts, mixed with a chill vibe, will keep your heart and feet beating, as Tampa Bay’s leading experimental Funk and Soul 6-piece band takes over the stages and airwaves near and far.",
+        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3599,7 +3573,7 @@ const events = [
         name: `Jamie McLean Band`,
         sort_time: "2026-06-20 18:30:00",
         end_time_formatted: "2026-06-20 21:00",
-        detail: "Jamie McLean Band creates a musical gumbo that incorporates New Orleans soul, middle Americana roots, Delta blues and New York City swagger. Jamie McLean Band is a triple threat. The ...\nRead More",
+        detail: "Jamie McLean Band creates a musical gumbo that incorporates New Orleans soul, middle Americana roots, Delta blues and New York City swagger. Jamie McLean Band is a triple threat. The group’s energetic and captivating live show is undeniable. McLean’s fiery guitar has joined the ranks of Derek Trucks, Gregg Allman, Aaron Neville, Dr. John and more on stages from Madison Square Garden to Japan’s Fuji Rock. His blue-eyed southern soul vocals ooze real emotion. And his top line songwriting chops have crafted profound, honest and heartfelt songs that will keep you singing along, dancing along and feeling like the song was written about you.\nJamie McLean Band is touring behind a fantastic new album “One Step Forward” on Harmonized Records. The album was recorded at the legendary Grand Street Studios in Brooklyn NY and features the band’s strongest and most mainstream songwriting to date. It also marks the return of original JMB member Jon Solo on keyboards! “Summer of Who Knows When” is an immediate summer anthem. “Calendar Girl” and “New York Penny Lane” are musical love letters. And the band kicks into full gear on “Too Little Too Late” and “I Believe in Love”!\nThe live show is where Jamie McLean Band excels and the band has shared the stage with the likes of Gregg Allman, Aaron Neville, Dr. John, Taj Mahal, Tedeschi Trucks Band, Trombone Shorty, Los Lobos, Blues Traveler, Marc Broussard and many more. Jamie Mclean Band has appeared at festivals such as Bonnaroo, Mountain Jam, Targhee Fest, Okeechobee Fest, Ottawa Blues Fest, Quebec City Summer Fest, and Warren Haynes’ Christmas Jam to name a few. McLean has also enjoyed the sponsorship of Gibson Guitars, Fuchs Amplifiers, D’Addario Strings, Blue Microphones, John Varvatos and Esquire Magazine.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4381,6 +4355,19 @@ const events = [
         end_time_formatted: "2026-06-28 23:59",
         detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-06-28",
+        event_time: "12:00 pm - 8:00 pm",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Papa's Express`,
+        sort_time: "2026-06-28 12:00:00",
+        end_time_formatted: "2026-06-28 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
