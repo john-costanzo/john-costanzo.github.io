@@ -264,6 +264,10 @@ h8 {
 }
 amount {
 	color: slateblue;
+	cursor: pointer;
+}
+amount:hover {
+	text-decoration: underline;
 }
 .dijitMenuItem {
 	font-size: 18px !important;
