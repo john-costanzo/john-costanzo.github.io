@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Sunday, 2026-05-24 @ 10:55:58";
+			const recipeBrowserVersion = "Tuesday, 2026-06-02 @ 16:00:00";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -471,9 +471,35 @@
 
 			/**
 			 * Toggles the 'itemClicked' class on an element and its children to de-emphasize it.
+			 * Also handles scaling if the click was on an amount or the bullet.
 			 * @param {HTMLElement} element - The element that was clicked.
 			 */
 			function handleItemClick(element) {
+				const event = window.event;
+				if (event) {
+					const target = event.target;
+					let amountElement = undefined;
+
+					// If we clicked on an <amount> tag, use it.
+					if (target.tagName.toLowerCase() === "amount") {
+						amountElement = target;
+					}
+					// If we clicked on the bullet (offsetX < 0) of an LI, find its first <amount> child.
+					else if (
+						element.tagName.toLowerCase() === "li" &&
+						event.offsetX < 0
+					) {
+						amountElement = element.querySelector("amount");
+					}
+
+					if (amountElement) {
+						if (scaleRecipeByIngredient(amountElement)) {
+							redirectHere();
+						}
+						return;
+					}
+				}
+
 				element.classList.toggle("itemClicked");
 
 				// Now apply styles to all child elements
