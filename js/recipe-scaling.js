@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Tuesday, 2026-06-02 @ 16:00:00";
+const recipeScalingVersion = "Tuesday, 2026-06-02 @ 16:57:13";
 
 /*
  *    In response to this prompt:
@@ -22,55 +22,55 @@ const recipeScalingVersion = "Tuesday, 2026-06-02 @ 16:00:00";
  * Prompts the user for a scaling percentage and validates the input.
  * @returns {number|null} The user-provided scaling percentage, or null if cancelled.
  */
-function promptForScalingPercentage() {
-	// Prompt the user for a scalingPercentage
-	let scalingPercentageText = prompt(
-		"Please enter a percentage with which to scale the recipe:",
-	);
+function promptForScalingPercentage( ) {
+    // Prompt the user for a scalingPercentage
+    let scalingPercentageText = prompt(
+        "Please enter a percentage with which to scale the recipe:",
+    );
 
-	if (scalingPercentageText !== null) {
-		scalingPercentageText = scalingPercentageText.replace(/\s+/g, "");
-		if (scalingPercentageText === "") {
-			scalingPercentageText = "100";
-		}
-		if (!/^[\d.]+$/.test(scalingPercentageText)) {
-			alert("Invalid input! Please enter (only) a number.");
-			return;
-		}
+    if ( scalingPercentageText !== null ) {
+        scalingPercentageText = scalingPercentageText.replace( /\s+/g, "" );
+        if ( scalingPercentageText === "" ) {
+            scalingPercentageText = "100";
+        }
+        if ( !/^[\d.]+$/.test( scalingPercentageText ) ) {
+            alert( "Invalid input! Please enter (only) a number." );
+            return;
+        }
 
-		// Convert the input to a number
-		const targetScalingPercentage = parseFloat(scalingPercentageText);
+        // Convert the input to a number
+        const targetScalingPercentage = parseFloat( scalingPercentageText );
 
-		// Validate the input
-		if (isNaN(targetScalingPercentage) || targetScalingPercentage < 0) {
-			alert("Invalid input! Please enter a number greater than 0.");
-			return;
-		}
-		return (currentScalingPercentage = targetScalingPercentage);
-	} else {
-		return null;
-	}
+        // Validate the input
+        if ( isNaN( targetScalingPercentage ) || targetScalingPercentage < 0 ) {
+            alert( "Invalid input! Please enter a number greater than 0." );
+            return;
+        }
+        return ( currentScalingPercentage = targetScalingPercentage );
+    } else {
+        return null;
+    }
 }
 
 const fractionalTextToGlyphMap = {
-	"1/2": "½",
-	"1/3": "⅓",
-	"2/3": "⅔",
-	"1/4": "¼",
-	"3/4": "¾",
-	"1/5": "⅕",
-	"2/5": "⅖",
-	"3/5": "⅗",
-	"4/5": "⅘",
-	"1/6": "⅙",
-	"5/6": "⅚",
-	"1/7": "⅐",
-	"1/8": "⅛",
-	"3/8": "⅜",
-	"5/8": "⅝",
-	"7/8": "⅞",
-	"1/9": "⅑",
-	"1/10": "⅒",
+    "1/2": "½",
+    "1/3": "⅓",
+    "2/3": "⅔",
+    "1/4": "¼",
+    "3/4": "¾",
+    "1/5": "⅕",
+    "2/5": "⅖",
+    "3/5": "⅗",
+    "4/5": "⅘",
+    "1/6": "⅙",
+    "5/6": "⅚",
+    "1/7": "⅐",
+    "1/8": "⅛",
+    "3/8": "⅜",
+    "5/8": "⅝",
+    "7/8": "⅞",
+    "1/9": "⅑",
+    "1/10": "⅒",
 };
 
 /**
@@ -78,37 +78,37 @@ const fractionalTextToGlyphMap = {
  * @param {string} text - The text to parse.
  * @returns {number} The parsed amount as a decimal, or NaN if invalid.
  */
-function parseAmount(text) {
-	text = text.trim();
-	// Replace glyphs with their fractional text
-	for (const [key, value] of Object.entries(fractionalTextToGlyphMap)) {
-		text = text.replace(value, " " + key + " ");
-	}
+function parseAmount( text ) {
+    text = text.trim( );
+    // Replace glyphs with their fractional text
+    for ( const [ key, value ] of Object.entries( fractionalTextToGlyphMap ) ) {
+        text = text.replace( value, " " + key + " " );
+    }
 
-	// Split by spaces and process parts
-	const parts = text.split(/\s+/).filter((p) => p.length > 0);
-	let total = 0;
-	let hasValidPart = false;
-	for (const part of parts) {
-		if (part.includes("/")) {
-			const subparts = part.split("/");
-			if (subparts.length === 2) {
-				const num = parseFloat(subparts[0]);
-				const den = parseFloat(subparts[1]);
-				if (!isNaN(num) && !isNaN(den) && den !== 0) {
-					total += num / den;
-					hasValidPart = true;
-				}
-			}
-		} else {
-			const val = parseFloat(part);
-			if (!isNaN(val)) {
-				total += val;
-				hasValidPart = true;
-			}
-		}
-	}
-	return hasValidPart ? total : NaN;
+    // Split by spaces and process parts
+    const parts = text.split( /\s+/ ).filter( ( p ) => p.length > 0 );
+    let total = 0;
+    let hasValidPart = false;
+    for ( const part of parts ) {
+        if ( part.includes( "/" ) ) {
+            const subparts = part.split( "/" );
+            if ( subparts.length === 2 ) {
+                const num = parseFloat( subparts[ 0 ] );
+                const den = parseFloat( subparts[ 1 ] );
+                if ( !isNaN( num ) && !isNaN( den ) && den !== 0 ) {
+                    total += num / den;
+                    hasValidPart = true;
+                }
+            }
+        } else {
+            const val = parseFloat( part );
+            if ( !isNaN( val ) ) {
+                total += val;
+                hasValidPart = true;
+            }
+        }
+    }
+    return hasValidPart ? total : NaN;
 }
 
 /**
@@ -116,32 +116,32 @@ function parseAmount(text) {
  * @param {HTMLElement} amountElement - The <amount> element representing the ingredient.
  * @returns {boolean} True if the recipe was scaled, false otherwise.
  */
-function scaleRecipeByIngredient(amountElement) {
-	const originalAmount = parseFloat(amountElement.getAttribute("fraction"));
-	if (isNaN(originalAmount)) return false;
+function scaleRecipeByIngredient( amountElement ) {
+    const originalAmount = parseFloat( amountElement.getAttribute( "fraction" ) );
+    if ( isNaN( originalAmount ) ) return false;
 
-	const units = amountElement.getAttribute("units") || "";
-	const currentAmount = originalAmount * (currentScalingPercentage / 100.0);
-	const currentAmountStr = numberToFraction(currentAmount);
+    const units = amountElement.getAttribute( "units" ) || "";
+    const currentAmount = originalAmount * ( currentScalingPercentage / 100.0 );
+    const currentAmountStr = numberToFraction( currentAmount );
 
-	const promptMsg =
-		"Enter a new amount for this ingredient (current: " +
-		currentAmountStr +
-		" " +
-		units +
-		"):";
-	let newAmountText = prompt(promptMsg);
-	if (newAmountText === null) return false;
+    const promptMsg =
+        "Enter a new amount for this ingredient (current: " +
+        currentAmountStr +
+        " " +
+        units +
+        "):";
+    let newAmountText = prompt( promptMsg );
+    if ( newAmountText === null ) return false;
 
-	const parsedNewAmount = parseAmount(newAmountText);
-	if (isNaN(parsedNewAmount) || parsedNewAmount <= 0) {
-		alert("Invalid amount entered.");
-		return false;
-	}
+    const parsedNewAmount = parseAmount( newAmountText );
+    if ( isNaN( parsedNewAmount ) || parsedNewAmount <= 0 ) {
+        alert( "Invalid amount entered." );
+        return false;
+    }
 
-	const newScalingFactor = parsedNewAmount / originalAmount;
-	currentScalingPercentage = newScalingFactor * 100;
-	return true;
+    const newScalingFactor = parsedNewAmount / originalAmount;
+    currentScalingPercentage = newScalingFactor * 100;
+    return true;
 }
 
 /**
@@ -171,7 +171,7 @@ function scaleRecipe( newScalingPercentage ) {
             if ( scaling_factor === 1 ) {
                 sf.innerHTML = "";
             } else {
-                sf.innerHTML = "scaled to " + ( scaling_factor * 100 ) + "%";
+                sf.innerHTML = "scaled to " + Math.round( scaling_factor * 100 ) + "%";
             }
         }
     }
