@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-06-02 08:06:28";
+const eventDataVersion = "Tuesday, 2026-06-02 14:33:37";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1029,6 +1029,19 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
+        url: "https://www.millsriverbrewingco.com/events",
+        venue: "Mills River Brewing",
+        event_date: "2026-06-05",
+        event_time: "6:30 pm - 9:30 pm",
+        start_time: "6:30 pm",
+        end_time: "9:30 pm",
+        name: `Country Pour will be playing country!`,
+        sort_time: "2026-06-05 18:30:00",
+        end_time_formatted: "2026-06-05 21:30",
+        detail: "None",
+        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
+    },
+    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-06-05",
@@ -1038,7 +1051,7 @@ const events = [
         name: `The Psycodelics`,
         sort_time: "2026-06-05 19:00:00",
         end_time_formatted: "2026-06-05 21:30",
-        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift is The Psycodelics. The group embodies and glorifies Black American Music. Elements from Funk, Blues, Gospel and R&B leave the audience in awe with sounds that hit you like a freight train. Audience members and fans have compared the band to the likes of Parliament Funkadelic, Prince and Morris Day & The Time. Their debut album “Please Keep Off The Grass” has already garnered Grammy Recording Academy attention and is set to release Easter Sunday, April 20th.\nThe band has already established a buzz amongst the festival scene by capturing audiences at Peach Fest, Joshua Tree Music Festival, Jam Cruise and many more. The Psycodelics have traveled the country supporting Neal Francis, Fearless Flyers and Durand Jones and the Indications. \nThe Psycodelics are Cameron Wescott (bass, vox), Sean Bing (drum, vox), Noah Jones (keys), Whitt Burn (guitar) and Chris Barnwell (percussion).",
+        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1194,7 +1207,7 @@ const events = [
         name: `Earl Scruggs Music Festival Battle of the Banjos`,
         sort_time: "2026-06-06 14:00:00",
         end_time_formatted: "2026-06-06 17:00",
-        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show.\nThe top 3 finalists from the Earl Scruggs Music Festival Battle of the Banjos online competition will battle it out live to see who makes the cut.\nVote for your favorite band, and help them win the Grandprize!\n• TWO live performance slots at the 2026 Earl Scruggs Music Festival (9/3 and 9/6)\n• $1,000 grand prize honorarium\n• A feature interview on WNCW\n• Plus More!\nFor more information click here: https://www.earlscruggsmusicfest.com",
+        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show. The top 3 finalists from the Earl Scruggs Music Festival Battle ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1376,7 +1389,7 @@ const events = [
         name: `Ryan Taylor Price`,
         sort_time: "2026-06-07 14:00:00",
         end_time_formatted: "2026-06-07 17:00",
-        detail: "Ryan Taylor Price crafts richly layered Americana with a songwriter’s precision and a roots musician’s soul. His album The Axe & The Tree blends pedal steel, mandolin, and warm folk-rock textures into songs that feel both cinematic and deeply personal. With a voice that carries grit and grace in equal measure, Price leans into thoughtful lyrics, strong melodies, and dynamic arrangements that move from intimate acoustic moments to sweeping, full-band sound. Honest, resonant, and beautifully crafted—his music lingers long after the last chord fades.",
+        detail: "Ryan Taylor Price crafts richly layered Americana with a songwriter’s precision and a roots musician’s soul. His album The Axe & The Tree blends pedal steel, mandolin, and warm folk-rock ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3482,7 +3495,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4301,7 +4314,7 @@ const events = [
         name: `CarolinAloha`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian music tradition. CarolinAloha has been featured at the Waikiki Steel Guitar Festival in Oahu, the Kona Steel Guitar Festival in Kona, and The Station Inn in Nashville, TN; Billy’s playing has been featured within a wide variety of genres from gypsy jazz to bluegrass all over North America, India, and Europe on stages such as Bonnaroo, The Grand Ole Opry, MerleFest, Carnegie Hall, The Ryman Auditorium and Rockygrass, to name a few. Surrounded by an alternating cast of stellar, emotive and joyful musicians, CarolinAloha brings heartfelt Hawaiian vibes to the mountains of North Carolina and beyond.",
+        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7360,6 +7373,19 @@ const events = [
         location: "Festival Net Asheville Downtown After Five - August",
     },
     {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-08-21",
+        event_time: "2:00 pm - 10:00 pm",
+        start_time: "2:00 pm",
+        end_time: "10:00 pm",
+        name: `The Hazy Hideaway`,
+        sort_time: "2026-08-21 14:00:00",
+        end_time_formatted: "2026-08-21 22:00",
+        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
         venue: "Festival Net",
         event_date: "2026-08-22",
@@ -7384,6 +7410,19 @@ const events = [
         end_time_formatted: "2026-08-22 17:00",
         detail: "None",
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-08-22",
+        event_time: "1:00 pm - 10:00 pm",
+        start_time: "1:00 pm",
+        end_time: "10:00 pm",
+        name: `The Hazy Hideaway`,
+        sort_time: "2026-08-22 13:00:00",
+        end_time_formatted: "2026-08-22 22:00",
+        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://secured.brevardmusic.org",
