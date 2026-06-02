@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Tuesday, 2026-06-02 @ 16:57:13";
+const recipeScalingVersion = "Tuesday, 2026-06-02 @ 19:22:39";
 
 /*
  *    In response to this prompt:
