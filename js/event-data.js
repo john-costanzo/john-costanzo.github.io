@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-06-02 14:33:37";
+const eventDataVersion = "Tuesday, 2026-06-02 20:02:55";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -665,19 +665,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-02",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-06-02 16:00:00",
-        end_time_formatted: "2026-06-02 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-06-02",
@@ -1051,7 +1038,7 @@ const events = [
         name: `The Psycodelics`,
         sort_time: "2026-06-05 19:00:00",
         end_time_formatted: "2026-06-05 21:30",
-        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift ...\nRead More",
+        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift is The Psycodelics. The group embodies and glorifies Black American Music. Elements from Funk, Blues, Gospel and R&B leave the audience in awe with sounds that hit you like a freight train. Audience members and fans have compared the band to the likes of Parliament Funkadelic, Prince and Morris Day & The Time. Their debut album “Please Keep Off The Grass” has already garnered Grammy Recording Academy attention and is set to release Easter Sunday, April 20th.\nThe band has already established a buzz amongst the festival scene by capturing audiences at Peach Fest, Joshua Tree Music Festival, Jam Cruise and many more. The Psycodelics have traveled the country supporting Neal Francis, Fearless Flyers and Durand Jones and the Indications. \nThe Psycodelics are Cameron Wescott (bass, vox), Sean Bing (drum, vox), Noah Jones (keys), Whitt Burn (guitar) and Chris Barnwell (percussion).",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2936,7 +2923,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3495,7 +3482,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4680,6 +4667,19 @@ const events = [
         end_time_formatted: "2026-07-03 23:59",
         detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Americana, Bluegrass, Blues, Country, Folk, Jazz, R & B/Soul and Rock, and there will be other activities like kids bike parade, fireworks.<a href='https://festivalnet.com/30302/Brevard-North-Carolina/Holiday-Celebrations/Shindig-on-Main-Fireworks-Extravaganza' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on Main & Fireworks Extravaganza",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-03",
+        event_time: "12:00 pm - 8:00 pm",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Beefy Boys`,
+        sort_time: "2026-07-03 12:00:00",
+        end_time_formatted: "2026-07-03 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://secured.brevardmusic.org",
@@ -7421,7 +7421,7 @@ const events = [
         name: `The Hazy Hideaway`,
         sort_time: "2026-08-22 13:00:00",
         end_time_formatted: "2026-08-22 22:00",
-        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
+        detail: "The Hazy Hideaway transforms Sierra Nevada’s Mills River brewery into a two-day music and arts festival made for exploring new music, experiencing good vibes, and embracing the haze.\nDiscover live music, interactive art, DJ sets, great food, local vendors, and exclusive merch all day long, while sipping on legendary Sierra Nevada brews straight from the source.\nHeadliners Phantogram and Toro y Moi close each night with genre-blending performances. Supporting and local artists fill The Hazy Hideaway with energy, discovery, and unexpected moments all weekend long.\nCome get lost in the haze, discover something unexpected, and experience Hazy Little Thing the way it was meant to be. \nWelcome to The Hazy Hideaway.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
