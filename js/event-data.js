@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-06-02 20:02:55";
+const eventDataVersion = "Wednesday, 2026-06-03 08:04:41";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -665,19 +665,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-06-02",
-        event_time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
-        sort_time: "2026-06-02 18:00:00",
-        end_time_formatted: "2026-06-02 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-06-03",
@@ -1259,7 +1246,7 @@ const events = [
         name: `The New Variants with Doss Church & The Unholy Noise`,
         sort_time: "2026-06-06 18:30:00",
         end_time_formatted: "2026-06-06 21:00",
-        detail: "New Variants is an Asheville-based band known for blending classic rock, alternative rock, and modern favorites into an energetic live performance. Doss Church & the Unholy Noise is an Asheville-based ...\nRead More",
+        detail: "New Variants is an Asheville-based band known for blending classic rock, alternative rock, and modern favorites into an energetic live performance.\nDoss Church & the Unholy Noise is an Asheville-based Americana Rock & Roll band that plays a mix of originals written by singer/songwriter Doss Church, along with a wide range of crowd-pleasing cover songs.\nDoss Church is a seasoned songwriter who fuses soulful, heartfelt vocals with warm, expressive acoustic guitar. His deeply storied, personal lyrics are filled with hope found and love lost. The Unholy Noise combines Americana, Country, and Folk Rock influences that range from the 60’s to today and delivers a sound that feels both new and old at the same time. The honest songwriting, veteran musicianship, and electric stage presence of the entire group make for a truly moving live performance.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1818,7 +1805,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2364,7 +2351,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2923,7 +2910,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3482,7 +3469,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7421,7 +7408,7 @@ const events = [
         name: `The Hazy Hideaway`,
         sort_time: "2026-08-22 13:00:00",
         end_time_formatted: "2026-08-22 22:00",
-        detail: "The Hazy Hideaway transforms Sierra Nevada’s Mills River brewery into a two-day music and arts festival made for exploring new music, experiencing good vibes, and embracing the haze.\nDiscover live music, interactive art, DJ sets, great food, local vendors, and exclusive merch all day long, while sipping on legendary Sierra Nevada brews straight from the source.\nHeadliners Phantogram and Toro y Moi close each night with genre-blending performances. Supporting and local artists fill The Hazy Hideaway with energy, discovery, and unexpected moments all weekend long.\nCome get lost in the haze, discover something unexpected, and experience Hazy Little Thing the way it was meant to be. \nWelcome to The Hazy Hideaway.",
+        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
