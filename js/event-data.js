@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-06-04 08:18:33";
+const eventDataVersion = "Thursday, 2026-06-04 14:22:51";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1103,7 +1103,7 @@ const events = [
         name: `Earl Scruggs Music Festival Battle of the Banjos`,
         sort_time: "2026-06-06 14:00:00",
         end_time_formatted: "2026-06-06 17:00",
-        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show.\nThe top 3 finalists from the Earl Scruggs Music Festival Battle of the Banjos online competition will battle it out live to see who makes the cut.\nVote for your favorite band and help them win the Grand prize!\n• TWO live performance slots at the 2026 Earl Scruggs Music Festival (9/3 and 9/6)\n• $1,000 grand prize honorarium\n• A feature interview on WNCW\n• Plus, More!\nFor more information click here: https://www.earlscruggsmusicfest.com\nTop Finalists:\n* Billy Fortune Unit\n* The Blue Bridge Boys\n* Redbud Bluegrass",
+        detail: "Join us at The Sierra Nevada Amphitheatre on Saturday, June 6 from 2-5pm for a FREE, ALL AGES show. The top 3 finalists from the Earl Scruggs Music Festival Battle ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1727,7 +1727,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3170,7 +3170,7 @@ const events = [
         name: `The Headtones`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage sounds, complemented by electronic elements and echoing horn lines to thrill and chill the listener. Hi-energy charts, mixed with a chill vibe, will keep your heart and feet beating, as Tampa Bay’s leading experimental Funk and Soul 6-piece band takes over the stages and airwaves near and far.",
+        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3575,6 +3575,19 @@ const events = [
         end_time_formatted: "2026-06-23 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://sierranevada.com/events?location+=mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-06-23",
+        event_time: "5:00 pm - 9:00 pm",
+        start_time: "5:00 pm",
+        end_time: "9:00 pm",
+        name: `TERRAOKE | Free Karaoke Night!`,
+        sort_time: "2026-06-23 17:00:00",
+        end_time_formatted: "2026-06-23 21:00",
+        detail: "Join us Tuesday, June 23rd from 5-9pm in the Sierra Nevada High Gravity Room for Terraoke! Free and family friendly Karaoke!",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -4249,7 +4262,7 @@ const events = [
         name: `CarolinAloha`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian music tradition. CarolinAloha has been featured at the Waikiki Steel Guitar Festival in Oahu, the Kona Steel Guitar Festival in Kona, and The Station Inn in Nashville, TN; Billy’s playing has been featured within a wide variety of genres from gypsy jazz to bluegrass all over North America, India, and Europe on stages such as Bonnaroo, The Grand Ole Opry, MerleFest, Carnegie Hall, The Ryman Auditorium and Rockygrass, to name a few. Surrounded by an alternating cast of stellar, emotive and joyful musicians, CarolinAloha brings heartfelt Hawaiian vibes to the mountains of North Carolina and beyond.",
+        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5185,7 +5198,7 @@ const events = [
         name: `Africa Unplugged`,
         sort_time: "2026-07-11 14:00:00",
         end_time_formatted: "2026-07-11 17:00",
-        detail: "Africa Unplugged is a dynamic group, led by djembe master, guitarist and songwriter, Atiba Rorie. The band uses traditional percussion instruments fro...",
+        detail: "Africa Unplugged is a dynamic group, led by djembe master, guitarist and songwriter, Atiba Rorie. The band uses traditional percussion instruments from West Africa in combination with guitars and bass ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7603,7 +7616,7 @@ const events = [
         name: `The Hazy Hideaway`,
         sort_time: "2026-08-21 14:00:00",
         end_time_formatted: "2026-08-21 22:00",
-        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
+        detail: "The Hazy Hideaway transforms Sierra Nevada’s Mills River brewery into a two-day music and arts festival made for exploring new music, experiencing good vibes, and embracing the haze.\nDiscover live music, interactive art, DJ sets, great food, local vendors, and exclusive merch all day long, while sipping on legendary Sierra Nevada brews straight from the source.\nHeadliners Phantogram and Toro y Moi close each night with genre-blending performances. Supporting and local artists fill The Hazy Hideaway with energy, discovery, and unexpected moments all weekend long.\nCome get lost in the haze, discover something unexpected, and experience Hazy Little Thing the way it was meant to be. \nWelcome to The Hazy Hideaway.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7824,7 +7837,7 @@ const events = [
         name: `Tanasi`,
         sort_time: "2026-08-30 14:00:00",
         end_time_formatted: "2026-08-30 17:00",
-        detail: "TANASI is a worldgrass trio from Asheville, North Carolina, bringing together three internationally respected roots musicians whose work bridges Appalachian tradition and global musical exchange. Featuring Billy Cardine on dobro ...\nRead More",
+        detail: "TANASI is a worldgrass trio from Asheville, North Carolina, bringing together three internationally respected roots musicians whose work bridges Appalachian tradition and global musical exchange. Featuring Billy Cardine on dobro and slide instruments with the close, expressive harmonies of Anya Hinkle and Mary Lucey, TANASI has earned a reputation for music that is adventurous, deeply rooted, and grounded in collaboration. Members of TANASI have appeared on some of the world’s most revered stages, including Carnegie Hall, the Kennedy Center, and the Ryman Auditorium, and have toured extensively throughout the U.S., Europe, and Asia. Their individual work has been praised by outlets including No Depression, PopMatters, Americana UK, and NPR-affiliated programs, and collectively they have performed at major festivals such as Bonnaroo, MerleFest, Grey Fox Bluegrass Festival, Earl Scruggs Music Festival, RockyGrass, and leading international roots festivals across Scandinavia and Europe. In 2025, TANASI was named a recipient of the National Endowment for the Arts USArtists International Grant, recognizing the trio’s dedication to meaningful cross-cultural artistic collaboration.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
