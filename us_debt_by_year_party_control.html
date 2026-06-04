@@ -1,0 +1,404 @@
+<h2 class="sr-only">
+	US national debt by year from 1950 to present, colored by presidential and
+	congressional party control
+</h2>
+
+<div style="padding: 1rem 0 0.5rem">
+	<div
+		style="
+			font-size: 13px;
+			color: var(--color-text-secondary);
+			margin-bottom: 12px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 14px;
+			align-items: center;
+		"
+	>
+		<span style="display: flex; align-items: center; gap: 5px"
+			><span
+				style="
+					display: inline-block;
+					width: 14px;
+					height: 6px;
+					background: #b22222;
+					border-radius: 2px;
+				"
+			></span
+			>Republican president</span
+		>
+		<span style="display: flex; align-items: center; gap: 5px"
+			><span
+				style="
+					display: inline-block;
+					width: 14px;
+					height: 6px;
+					background: pink;
+					border-radius: 2px;
+				"
+			></span
+			>Republican president + split Congress</span
+		>
+		<span style="display: flex; align-items: center; gap: 5px"
+			><span
+				style="
+					display: inline-block;
+					width: 14px;
+					height: 6px;
+					background: #003d99;
+					border-radius: 2px;
+				"
+			></span
+			>Democratic president</span
+		>
+		<span style="display: flex; align-items: center; gap: 5px"
+			><span
+				style="
+					display: inline-block;
+					width: 14px;
+					height: 6px;
+					background: #6699ff;
+					border-radius: 2px;
+				"
+			></span
+			>Democratic president + split Congress</span
+		>
+	</div>
+	<div style="position: relative; width: 100%; height: 380px">
+		<canvas
+			id="debtChart"
+			role="img"
+			aria-label="Line chart of US national debt from 1950 to 2024. Debt grew slowly through the 1970s, accelerated in the 1980s, and has risen steeply since 2000, surpassing $35 trillion by 2024."
+			>US national debt rose from about $257 billion in 1950 to over $35
+			trillion in 2024.</canvas
+		>
+	</div>
+	<div
+		style="font-size: 11px; color: var(--color-text-secondary); margin-top: 6px"
+	>
+		Sources: US Treasury / OMB historical debt data. Segment color reflects
+		party holding the presidency; shade reflects congressional alignment.
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+	const debtData = [
+		{ y: 1950, d: 257.4 },
+		{ y: 1951, d: 255.3 },
+		{ y: 1952, d: 259.1 },
+		{ y: 1953, d: 266.1 },
+		{ y: 1954, d: 270.8 },
+		{ y: 1955, d: 274.4 },
+		{ y: 1956, d: 272.8 },
+		{ y: 1957, d: 272.4 },
+		{ y: 1958, d: 279.7 },
+		{ y: 1959, d: 287.5 },
+		{ y: 1960, d: 290.5 },
+		{ y: 1961, d: 292.6 },
+		{ y: 1962, d: 302.9 },
+		{ y: 1963, d: 310.3 },
+		{ y: 1964, d: 316.1 },
+		{ y: 1965, d: 322.3 },
+		{ y: 1966, d: 328.5 },
+		{ y: 1967, d: 340.4 },
+		{ y: 1968, d: 369.0 },
+		{ y: 1969, d: 365.8 },
+		{ y: 1970, d: 380.9 },
+		{ y: 1971, d: 408.2 },
+		{ y: 1972, d: 435.9 },
+		{ y: 1973, d: 466.3 },
+		{ y: 1974, d: 483.9 },
+		{ y: 1975, d: 541.9 },
+		{ y: 1976, d: 629.0 },
+		{ y: 1977, d: 706.4 },
+		{ y: 1978, d: 776.6 },
+		{ y: 1979, d: 829.5 },
+		{ y: 1980, d: 907.7 },
+		{ y: 1981, d: 994.8 },
+		{ y: 1982, d: 1137.3 },
+		{ y: 1983, d: 1371.7 },
+		{ y: 1984, d: 1564.7 },
+		{ y: 1985, d: 1817.5 },
+		{ y: 1986, d: 2120.6 },
+		{ y: 1987, d: 2346.1 },
+		{ y: 1988, d: 2601.3 },
+		{ y: 1989, d: 2868.0 },
+		{ y: 1990, d: 3233.3 },
+		{ y: 1991, d: 3665.3 },
+		{ y: 1992, d: 4064.6 },
+		{ y: 1993, d: 4411.5 },
+		{ y: 1994, d: 4692.8 },
+		{ y: 1995, d: 4974.0 },
+		{ y: 1996, d: 5224.8 },
+		{ y: 1997, d: 5413.1 },
+		{ y: 1998, d: 5526.2 },
+		{ y: 1999, d: 5656.3 },
+		{ y: 2000, d: 5674.2 },
+		{ y: 2001, d: 5807.5 },
+		{ y: 2002, d: 6228.2 },
+		{ y: 2003, d: 6783.2 },
+		{ y: 2004, d: 7379.1 },
+		{ y: 2005, d: 7932.7 },
+		{ y: 2006, d: 8507.0 },
+		{ y: 2007, d: 9007.7 },
+		{ y: 2008, d: 10024.7 },
+		{ y: 2009, d: 11909.8 },
+		{ y: 2010, d: 13561.6 },
+		{ y: 2011, d: 14790.3 },
+		{ y: 2012, d: 16066.2 },
+		{ y: 2013, d: 16738.2 },
+		{ y: 2014, d: 17824.1 },
+		{ y: 2015, d: 18151.0 },
+		{ y: 2016, d: 19976.8 },
+		{ y: 2017, d: 20244.9 },
+		{ y: 2018, d: 21516.1 },
+		{ y: 2019, d: 22719.4 },
+		{ y: 2020, d: 27748.0 },
+		{ y: 2021, d: 28428.9 },
+		{ y: 2022, d: 30928.9 },
+		{ y: 2023, d: 33167.5 },
+		{ y: 2024, d: 35465.0 },
+	];
+
+	// Party control per year
+	// president: D = Democrat, R = Republican
+	// congress: D = Dem controlled both chambers, R = Rep controlled both, S = split
+	const control = {
+		1950: { p: "D", c: "D" },
+		1951: { p: "D", c: "D" },
+		1952: { p: "D", c: "D" },
+		1953: { p: "R", c: "R" },
+		1954: { p: "R", c: "R" },
+		1955: { p: "R", c: "D" },
+		1956: { p: "R", c: "D" },
+		1957: { p: "R", c: "D" },
+		1958: { p: "R", c: "D" },
+		1959: { p: "R", c: "D" },
+		1960: { p: "R", c: "D" },
+		1961: { p: "D", c: "D" },
+		1962: { p: "D", c: "D" },
+		1963: { p: "D", c: "D" },
+		1964: { p: "D", c: "D" },
+		1965: { p: "D", c: "D" },
+		1966: { p: "D", c: "D" },
+		1967: { p: "D", c: "D" },
+		1968: { p: "D", c: "D" },
+		1969: { p: "R", c: "D" },
+		1970: { p: "R", c: "D" },
+		1971: { p: "R", c: "D" },
+		1972: { p: "R", c: "D" },
+		1973: { p: "R", c: "D" },
+		1974: { p: "R", c: "D" },
+		1975: { p: "R", c: "D" },
+		1976: { p: "R", c: "D" },
+		1977: { p: "D", c: "D" },
+		1978: { p: "D", c: "D" },
+		1979: { p: "D", c: "D" },
+		1980: { p: "D", c: "D" },
+		1981: { p: "R", c: "S" },
+		1982: { p: "R", c: "S" },
+		1983: { p: "R", c: "S" },
+		1984: { p: "R", c: "S" },
+		1985: { p: "R", c: "S" },
+		1986: { p: "R", c: "S" },
+		1987: { p: "R", c: "D" },
+		1988: { p: "R", c: "D" },
+		1989: { p: "R", c: "D" },
+		1990: { p: "R", c: "D" },
+		1991: { p: "R", c: "D" },
+		1992: { p: "R", c: "D" },
+		1993: { p: "D", c: "D" },
+		1994: { p: "D", c: "D" },
+		1995: { p: "D", c: "R" },
+		1996: { p: "D", c: "R" },
+		1997: { p: "D", c: "R" },
+		1998: { p: "D", c: "R" },
+		1999: { p: "D", c: "R" },
+		2000: { p: "D", c: "R" },
+		2001: { p: "R", c: "S" },
+		2002: { p: "R", c: "R" },
+		2003: { p: "R", c: "R" },
+		2004: { p: "R", c: "R" },
+		2005: { p: "R", c: "R" },
+		2006: { p: "R", c: "R" },
+		2007: { p: "R", c: "D" },
+		2008: { p: "R", c: "D" },
+		2009: { p: "D", c: "D" },
+		2010: { p: "D", c: "D" },
+		2011: { p: "D", c: "S" },
+		2012: { p: "D", c: "S" },
+		2013: { p: "D", c: "S" },
+		2014: { p: "D", c: "S" },
+		2015: { p: "D", c: "R" },
+		2016: { p: "D", c: "R" },
+		2017: { p: "R", c: "R" },
+		2018: { p: "R", c: "R" },
+		2019: { p: "R", c: "S" },
+		2020: { p: "R", c: "S" },
+		2021: { p: "D", c: "D" },
+		2022: { p: "D", c: "D" },
+		2023: { p: "D", c: "S" },
+		2024: { p: "D", c: "S" },
+	};
+
+	function getColor(year) {
+		const ctrl = control[year];
+		if (!ctrl) return "#888";
+		const { p, c } = ctrl;
+		if (p === "D") {
+			if (c === "D") return "#003d99";
+			if (c === "R") return "#6699ff";
+			return "#4d79cc";
+		} else {
+			if (c === "R") return "#b22222";
+			if (c === "D") return "pink";
+			return "#cc5555";
+		}
+	}
+
+	const labels = debtData.map((d) => d.y);
+	const values = debtData.map((d) => d.d);
+
+	const pointColors = labels.map((y) => getColor(y));
+
+	const segmentColors = [];
+	for (let i = 0; i < labels.length - 1; i++) {
+		segmentColors.push(getColor(labels[i]));
+	}
+
+	Chart.register({
+		id: "segmentColor",
+		beforeDatasetsDraw(chart) {
+			const { ctx, data, chartArea, scales } = chart;
+			const dataset = chart.data.datasets[0];
+			const meta = chart.getDatasetMeta(0);
+			if (!meta.data.length) return;
+			ctx.save();
+			ctx.lineWidth = 3;
+			for (let i = 0; i < meta.data.length - 1; i++) {
+				const x0 = meta.data[i].x,
+					y0 = meta.data[i].y;
+				const x1 = meta.data[i + 1].x,
+					y1 = meta.data[i + 1].y;
+				const yr = chart.data.labels[i];
+				ctx.beginPath();
+				ctx.strokeStyle = getColor(yr);
+				ctx.moveTo(x0, y0);
+				ctx.lineTo(x1, y1);
+				ctx.stroke();
+			}
+			ctx.restore();
+		},
+	});
+
+	const ctx = document.getElementById("debtChart").getContext("2d");
+	new Chart(ctx, {
+		type: "line",
+		data: {
+			labels,
+			datasets: [
+				{
+					data: values,
+					borderColor: "transparent",
+					backgroundColor: "transparent",
+					pointBackgroundColor: pointColors,
+					pointBorderColor: pointColors,
+					pointRadius: 3,
+					pointHoverRadius: 5,
+					tension: 0.3,
+					borderWidth: 0,
+				},
+			],
+		},
+		options: {
+			responsive: true,
+			maintainAspectRatio: false,
+			plugins: {
+				legend: { display: false },
+				tooltip: {
+					callbacks: {
+						label(ctx) {
+							const yr = ctx.label;
+							const ctrl = control[yr];
+							const debt = ctx.parsed.y;
+							const pres = ctrl
+								? ctrl.p === "D"
+									? "Democratic president"
+									: "Republican president"
+								: "";
+							const cong = ctrl
+								? ctrl.c === "D"
+									? ", Dem Congress"
+									: ctrl.c === "R"
+										? ", Rep Congress"
+										: ", split Congress"
+								: "";
+							const fmt =
+								debt >= 1000
+									? `$${(debt / 1000).toFixed(1)}T`
+									: `$${debt.toFixed(0)}B`;
+							return [`Debt: ${fmt}`, pres + cong];
+						},
+					},
+				},
+			},
+			scales: {
+				x: {
+					ticks: {
+						maxTicksLimit: 15,
+						color: "#888",
+						font: { size: 11 },
+					},
+					grid: { color: "rgba(128,128,128,0.1)" },
+				},
+				y: {
+					ticks: {
+						color: "#888",
+						font: { size: 11 },
+						callback(v) {
+							if (v >= 1000) return `$${(v / 1000).toFixed(0)}T`;
+							return `$${v}B`;
+						},
+					},
+					grid: { color: "rgba(128,128,128,0.1)" },
+				},
+			},
+		},
+	});
+</script>
+
+<style type="text/css">
+	li {
+		margin-bottom: 0.4em;
+	}
+</style>
+
+<center><h2>Notes</h2></center>
+<ul>
+	<li>
+		<b>Dark blue</b>: Democratic president + Democratic House & Senate (e.g.
+		Kennedy/LBJ era, early Clinton, Obama's first two years, Biden 2021–22)
+	</li>
+	<li>
+		<b>Light blue</b>: Democratic president with a split Congress (e.g. Clinton
+		1995–2000 with a Republican Congress, Obama's last six years)
+	</li>
+	<li>
+		<b>Dark red</b>: Republican president + Republican House & Senate (e.g.
+		Eisenhower 1953–54, most of the George W. Bush years, Trump 2017–18)
+	</li>
+	<li>
+		<b>Pink</b>: Republican president with a split or Democrat-controlled
+		Congress (e.g. Reagan with a Dem-held House, Nixon/Ford years, Trump
+		2019–20)
+	</li>
+	<li>
+		A few historical patterns stand out: debt grew slowly in real terms through
+		most of the postwar period, began accelerating sharply under Reagan, dipped
+		modestly (as a growth rate) during the Clinton surplus years of the late
+		1990s, then climbed steeply through the Bush-era wars and tax cuts, the
+		2008–09 financial crisis response, and the COVID-19 pandemic spending surge.
+	</li>
+	<li>Hover over any point for the exact figure and party control detail.</li>
+</ul>
