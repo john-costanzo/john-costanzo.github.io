@@ -264,10 +264,6 @@ h8 {
 }
 amount {
 	color: slateblue;
-	cursor: pointer;
-}
-amount:hover {
-	text-decoration: underline;
 }
 .dijitMenuItem {
 	font-size: 18px !important;
@@ -401,4 +397,8 @@ amount:hover {
 	.text-align-right {
 		display: none;
 	}
+}
+
+#recipe_ingredients li::marker {
+	color: blue;
 }

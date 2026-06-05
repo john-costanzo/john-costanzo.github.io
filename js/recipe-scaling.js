@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Tuesday, 2026-06-02 @ 19:22:39";
+const recipeScalingVersion = "Thursday, 2026-06-04 @ 20:13:16";
 
 /*
  *    In response to this prompt:
@@ -120,15 +120,11 @@ function scaleRecipeByIngredient( amountElement ) {
     const originalAmount = parseFloat( amountElement.getAttribute( "fraction" ) );
     if ( isNaN( originalAmount ) ) return false;
 
-    const units = amountElement.getAttribute( "units" ) || "";
-    const currentAmount = originalAmount * ( currentScalingPercentage / 100.0 );
-    const currentAmountStr = numberToFraction( currentAmount );
+    const ingredientText = amountElement.parentElement.textContent.trim( );
 
     const promptMsg =
-        "Enter a new amount for this ingredient (current: " +
-        currentAmountStr +
-        " " +
-        units +
+        "Enter a new amount for this ingredient (currently " +
+        ingredientText +
         "):";
     let newAmountText = prompt( promptMsg );
     if ( newAmountText === null ) return false;

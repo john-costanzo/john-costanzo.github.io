@@ -10,7 +10,7 @@
 		/>
 		<title>Recipe Browser</title>
 		<script>
-			const recipeBrowserVersion = "Tuesday, 2026-06-02 @ 16:00:00";
+			const recipeBrowserVersion = "Tuesday, 2026-06-02 @ 16:30:00";
 		</script>
 
 		<!-- Google tag (gtag.js) -->
@@ -477,18 +477,10 @@
 			function handleItemClick(element) {
 				const event = window.event;
 				if (event) {
-					const target = event.target;
 					let amountElement = undefined;
 
-					// If we clicked on an <amount> tag, use it.
-					if (target.tagName.toLowerCase() === "amount") {
-						amountElement = target;
-					}
 					// If we clicked on the bullet (offsetX < 0) of an LI, find its first <amount> child.
-					else if (
-						element.tagName.toLowerCase() === "li" &&
-						event.offsetX < 0
-					) {
+					if (element.tagName.toLowerCase() === "li" && event.offsetX < 0) {
 						amountElement = element.querySelector("amount");
 					}
 
