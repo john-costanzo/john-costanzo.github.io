@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-06-05 08:09:27";
+const eventDataVersion = "Friday, 2026-06-05 14:24:17";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -843,7 +843,7 @@ const events = [
         name: `The Psycodelics`,
         sort_time: "2026-06-05 19:00:00",
         end_time_formatted: "2026-06-05 21:30",
-        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift is The Psycodelics. The group embodies and glorifies Black American Music. Elements from Funk, Blues, Gospel and R&B leave the audience in awe with sounds that hit you like a freight train. Audience members and fans have compared the band to the likes of Parliament Funkadelic, Prince and Morris Day & The Time. Their debut album “Please Keep Off The Grass” has already garnered Grammy Recording Academy attention and is set to release Easter Sunday, April 20th.\nThe band has already established a buzz amongst the festival scene by capturing audiences at Peach Fest, Joshua Tree Music Festival, Jam Cruise and many more. The Psycodelics have traveled the country supporting Neal Francis, Fearless Flyers and Durand Jones and the Indications. \nThe Psycodelics are Cameron Wescott (bass, vox), Sean Bing (drum, vox), Noah Jones (keys), Whitt Burn (guitar) and Chris Barnwell (percussion).",
+        detail: "Once every millennia, the forces of nature and the stars above, align to give the human race a gift from the Gods. For this chapter in our existence, that gift ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1636,7 +1636,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2780,7 +2780,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3352,7 +3352,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4262,7 +4262,7 @@ const events = [
         name: `CarolinAloha`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian music tradition. CarolinAloha has been featured at the Waikiki Steel Guitar Festival in Oahu, the Kona Steel Guitar Festival in Kona, and The Station Inn in Nashville, TN; Billy’s playing has been featured within a wide variety of genres from gypsy jazz to bluegrass all over North America, India, and Europe on stages such as Bonnaroo, The Grand Ole Opry, MerleFest, Carnegie Hall, The Ryman Auditorium and Rockygrass, to name a few. Surrounded by an alternating cast of stellar, emotive and joyful musicians, CarolinAloha brings heartfelt Hawaiian vibes to the mountains of North Carolina and beyond.",
+        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7083,7 +7083,7 @@ const events = [
         name: `Anchors Away`,
         sort_time: "2026-08-02 14:00:00",
         end_time_formatted: "2026-08-02 17:00",
-        detail: "Anchors Away is the Southeast’s Premier Yacht Rock Experience!\nJoin American Idol Golden Ticket Winner and Grammy Member: Blake Ellege and his band as they take you on a musical journey playing all of your favorite hits from Steely Dan, The Doobie Brothers, Hall and Oates, TOTO, The Eagles, Journey AND MORE!\nWear your best sailor hat and Hawaiian shirt and join us as we “shove off” into a musical experience you’ll never forget!",
+        detail: "Anchors Away is the Southeast’s Premier Yacht Rock Experience! Join American Idol Golden Ticket Winner and Grammy Member: Blake Ellege and his band as they take you on a musical ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7681,7 +7681,7 @@ const events = [
         name: `The Hazy Hideaway`,
         sort_time: "2026-08-21 14:00:00",
         end_time_formatted: "2026-08-21 22:00",
-        detail: "The Hazy Hideaway transforms Sierra Nevada’s Mills River brewery into a two-day music and arts festival made for exploring new music, experiencing good vibes, and embracing the haze.\nDiscover live music, interactive art, DJ sets, great food, local vendors, and exclusive merch all day long, while sipping on legendary Sierra Nevada brews straight from the source.\nHeadliners Phantogram and Toro y Moi close each night with genre-blending performances. Supporting and local artists fill The Hazy Hideaway with energy, discovery, and unexpected moments all weekend long.\nCome get lost in the haze, discover something unexpected, and experience Hazy Little Thing the way it was meant to be. \nWelcome to The Hazy Hideaway.",
+        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
