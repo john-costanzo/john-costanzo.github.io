@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-06-08 14:16:32";
+const eventDataVersion = "Monday, 2026-06-08 20:22:31";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -795,19 +795,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-08",
-        event_time: "4:00 pm - 8:00 pm",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Blue Sky Cafe`,
-        sort_time: "2026-06-08 16:00:00",
-        end_time_formatted: "2026-06-08 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-06-08",
@@ -1142,7 +1129,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1350,7 +1337,7 @@ const events = [
         name: `The Bright Light Social Hour`,
         sort_time: "2026-06-12 19:00:00",
         end_time_formatted: "2026-06-12 21:30",
-        detail: "Austin’s The Bright Light Social Hour are widely recognized as the essence of Texas psych rock - no one better captures or defies the genre, twisting southern blues, hypnotic grooves, and pulsing synths into sweaty, ecstatic journeys that linger long after the lights go up.\nFrom retro-futurist masterpieces like Space Is Still the Place and Emergency Leisure to composing for HBO, MTV, Nintendo, and the award-winning theme for Sneaky Pete at Bryan Cranston’s request, their music drifts between cosmic psychedelia and late-night dancefloor heat, weaving fat basslines, ecstatic percussion, and three-part harmonies that sting and soothe at once.\nLive, they’re a full-body experience: part revival, part warehouse party, part cosmic trip - music that hits the chest, drops the booty and tears the fabric of the understood.\n“Their expansive sound, penchant for experimentation and incredible shows combine a psychedelic southern blues-rock aesthetic with danceable electronics… Continually exhilarating.” -David Dye, NPR’s World Cafe",
+        detail: "Austin’s The Bright Light Social Hour are widely recognized as the essence of Texas psych rock - no one better captures or defies the genre, twisting southern blues, hypnotic grooves, ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1462,8 +1449,8 @@ const events = [
         venue: "Carriage Park",
         event_date: "2026-06-13",
         event_time: "10:00 AM - noon",
-        start_time: "10:00 am",
-        end_time: "12:00 pm",
+        start_time: "10:00 AM",
+        end_time: "12:00 PM",
         name: `Mike Harbin speaks on The Geology of North Carolina: From the Coast to the Mountains with a Few Stops Along the Way`,
         sort_time: "2026-06-13 10:00:00",
         end_time_formatted: "2026-06-13 12:00:00",
@@ -2377,7 +2364,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who writes and produces music in between travel excursions and touring. Live shows morph into a versatile musical ensemble consisting of Matt Poynter (drums), Chris Powers(bass), Justino Walker (guitar, vocals, ngoni), and Cody Moore (keys, sax); each of whom have a mutual appreciation for African (Afrobeat/Soukous/Malian Blues), Reggae, and American (jam/electronic/indie) music. Since 2012, the band has played almost every noteworthy music festival in the country, has landed major TV/Movie syncs and Sirius XM radio spins, have 750k+ listeners on Spotify, have provided direct cross country tour support for artists like Dirty Heads, Galactic, Slightly Stoopid, The Revivalists, and who’s highly energized live show have landed the 5-piece a sizable fanbase across the US and Canada.",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2949,7 +2936,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3833,7 +3820,7 @@ const events = [
         name: `Dulci`,
         sort_time: "2026-06-27 18:30:00",
         end_time_formatted: "2026-06-27 21:00",
-        detail: "Dulci brings an ageless, classic style to pop music with her smooth vocals and warm melodies. With repertoire of original songs and updated covers, Dulci is where classic vocal beauty meets 60s pop nostalgia. Fans of Sara Bareilles, Carole King, and Joni Mitchell find similarities in Dulci’s smooth and earthy tone.\nDulci Ellenberger is an American Singer-Songwriter and recording artist who has been touring nationally and singing on the Western North Carolina scene since 2008, performing and recording with regional and national favorites like Scott McMicken and THE EVER EXPANDING, Holy Ghost Tent Revival, Fwuit, Cowboy Judy, and Dr. Dog. She tells her stories with thoughtful lyrics and an engaging balance of upbeat and heartfelt. Dulci’s vocals sound smooth and easy, while navigating intricate melodies and rhythms seamlessly. Striving to create meaningful, powerful music that’s also relatable, playful, and fun, her goal as an artist is to create a more connected world through shared experiences. Dulci makes memories in real time- and makes joyful music that nods to an optimistic place and era.",
+        detail: "Dulci brings an ageless, classic style to pop music with her smooth vocals and warm melodies. With repertoire of original songs and updated covers, Dulci is where classic vocal beauty ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5081,7 +5068,7 @@ const events = [
         name: `Africa Unplugged`,
         sort_time: "2026-07-11 14:00:00",
         end_time_formatted: "2026-07-11 17:00",
-        detail: "Africa Unplugged is a dynamic group, led by djembe master, guitarist and songwriter, Atiba Rorie. The band uses traditional percussion instruments from West Africa in combination with guitars and bass to play traditional rhythms while drawing from influences across the world. Their creativity results in a funky, soulful blues and dance music that keeps you moving as they tell stories from the old world and the new!",
+        detail: "Africa Unplugged is a dynamic group, led by djembe master, guitarist and songwriter, Atiba Rorie. The band uses traditional percussion instruments from West Africa in combination with guitars and bass ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5187,6 +5174,19 @@ const events = [
         end_time_formatted: "2026-07-12 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-12",
+        event_time: "12:00 pm - 8:00 pm",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Papa's Express`,
+        sort_time: "2026-07-12 12:00:00",
+        end_time_formatted: "2026-07-12 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -5848,7 +5848,7 @@ const events = [
         name: `SHEBAD`,
         sort_time: "2026-07-19 14:00:00",
         end_time_formatted: "2026-07-19 17:00",
-        detail: "SHEBAD is the creative spirit of visual artist and vocalist Claire Voy and multi-instrumentalist Ciccio Spagnolo. Hailing from Guelph, Ontario, Canada, their music plays on the exploratory realm of Indie-Soul, characterized by jazz-influenced melodies, danceable basslines, and transcendent layered vocals. Their sound is a synthesis of influences like Stevie Wonder, Hiatus Kaiyote, Amy Winehouse, Daft Punk, and Erykah Badu, making the music compelling and curious with lyrics from the heart. CBC’s Laila Biali aptly describes their sound as “Music that exists in a sonic world of its own”.",
+        detail: "SHEBAD is the creative spirit of visual artist and vocalist Claire Voy and multi-instrumentalist Ciccio Spagnolo. Hailing from Guelph, Ontario, Canada, their music plays on the exploratory realm of Indie-Soul, ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
