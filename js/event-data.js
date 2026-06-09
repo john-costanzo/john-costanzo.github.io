@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-06-08 20:22:31";
+const eventDataVersion = "Tuesday, 2026-06-09 14:37:20";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -795,45 +795,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-06-08",
-        event_time: "4:00 pm - 6:00 pm",
-        start_time: "4:00 pm",
-        end_time: "6:00 pm",
-        name: `Traditional Irish Music Session`,
-        sort_time: "2026-06-08 16:00:00",
-        end_time_formatted: "2026-06-08 18:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-06-08",
-        event_time: "6:00 pm - 9:00 pm",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Board Game Club`,
-        sort_time: "2026-06-08 18:00:00",
-        end_time_formatted: "2026-06-08 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-06-08",
-        event_time: "6:00 pm - 8:00 pm",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Chess Club`,
-        sort_time: "2026-06-08 18:00:00",
-        end_time_formatted: "2026-06-08 20:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-06-09",
@@ -1532,7 +1493,7 @@ const events = [
         name: `Summer In The Park`,
         sort_time: "2026-06-13 14:00:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "This is a Lower Park Event featuring Empire Strikes Brass & Dr. Bacon",
+        detail: "We’re celebrating summer in Lower Park with live music, BBQ, and inflatable water games!\nAnd, we are very excited to partner with Zen Tubing, who will be offering floats down the river before the festivities begin! \nFeaturing:\nEmpire Strikes Brass, Dr. Bacon & DJ Brandon Manitoba\nInflatable Water Obstacle Course & Axe Throwing\nBBQ Plates available for purchase! \nFloat Trip Details:\nCheck-In Location: Sierra Nevada Brewing Co (front parking lot) \nCheck-In Times: 11:00am and 11:30am\nFloat Time: 12:00pm\nDuration: ~2 hours on the water (timing may vary slightly depending on water level)\n* Guests off the river before 3:00pm \n* The return shuttle leaves at 3:15pm (If you miss the return shuttle you will be responsible for your own transportation)",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3950,7 +3911,7 @@ const events = [
         name: `CarolinAloha`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian ...\nRead More",
+        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian music tradition. CarolinAloha has been featured at the Waikiki Steel Guitar Festival in Oahu, the Kona Steel Guitar Festival in Kona, and The Station Inn in Nashville, TN; Billy’s playing has been featured within a wide variety of genres from gypsy jazz to bluegrass all over North America, India, and Europe on stages such as Bonnaroo, The Grand Ole Opry, MerleFest, Carnegie Hall, The Ryman Auditorium and Rockygrass, to name a few. Surrounded by an alternating cast of stellar, emotive and joyful musicians, CarolinAloha brings heartfelt Hawaiian vibes to the mountains of North Carolina and beyond.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4160,6 +4121,19 @@ const events = [
         end_time_formatted: "2026-06-30 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-06-30",
+        event_time: "6:00 pm - 9:00 pm",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
+        sort_time: "2026-06-30 18:00:00",
+        end_time_formatted: "2026-06-30 21:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://secured.brevardmusic.org",
@@ -7642,7 +7616,7 @@ const events = [
         name: `The Hazy Hideaway`,
         sort_time: "2026-08-21 14:00:00",
         end_time_formatted: "2026-08-21 22:00",
-        detail: "The Hazy Hideaway transforms Sierra Nevada’s Mills River brewery into a two-day music and arts festival made for exploring new music, experiencing good vibes, and embracing the haze.\nDiscover live music, interactive art, DJ sets, great food, local vendors, and exclusive merch all day long, while sipping on legendary Sierra Nevada brews straight from the source.\nHeadliners Phantogram and Toro y Moi close each night with genre-blending performances. Supporting and local artists fill The Hazy Hideaway with energy, discovery, and unexpected moments all weekend long.\nCome get lost in the haze, discover something unexpected, and experience Hazy Little Thing the way it was meant to be. \nWelcome to The Hazy Hideaway.",
+        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
