@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-06-10 08:13:42";
+const eventDataVersion = "Wednesday, 2026-06-10 14:16:47";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1051,7 +1051,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck!\nIn the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments and many other local partners stepped in to deploy solar and battery storage microgrid systems with a focus on restoring power, telecommunications, and clean drinking water to communities across Western North Carolina. In the months since this storm devastated the region, these partners continue to install clean energy solutions, with more than 60 operational battery and solar projects on the ground serving North Carolinians.\nAnd as part of plans for long-term regional resilience, the NC Department of Environmental Quality, through the State Energy Office, has also invested in a network of planned stationary microgrids and mobile “Beehive” microgrids in Western and Eastern North Carolina. Even with all of this momentum, the continued recovery needs far outmatch the available resources. Join us for an evening of music at Sierra Nevada’s High Gravity Room to enjoy local artists and support long-term regional recovery through clean energy. Proceeds from this event benefit Footprint Project and Land of Sky Regional Council of Governments and their efforts to serve western North Carolina.\nThe event will also feature short remarks from local leaders and recovery organizations about efforts made to date and future recovery needs that can be supported through clean energy.\nJoin us at Sierra Nevada’s High Gravity Room for a benefit concert to remember.",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1701,7 +1701,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6446,7 +6446,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
+        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
