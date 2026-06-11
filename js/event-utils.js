@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Thursday, 2026-06-11 @ 16:42:47";
+const eventUtilsVersion = "Thursday, 2026-06-11 @ 17:43:47";
 console.log( `[${currentTime()}] eventUtilsVersion = ${eventUtilsVersion}` );
 
 function msUntilMidnight( ) {
@@ -400,7 +400,6 @@ function formatTime( timeStr ) {
     }
 
     // Handle different time formats or return original if can't parse
-    console.log( `formatTime: timeStr=${timeStr}` );
     if ( !timeStr ) return "";
 
     try {
@@ -417,13 +416,10 @@ function formatTime( timeStr ) {
             if ( ampm === "pm" && hours < 12 ) hours += 12;
             if ( ampm === "am" && hours === 12 ) hours = 0;
 
-            console.log( `formatTime: returning1 ${hours.toString().padStart(2, "0")}:${minutes} ${ampm.toUpperCase()}` );
             return `${hours.toString().padStart(2, "0")}:${minutes} ${ampm.toLowerCase()}`;
         }
-        console.log( `formatTime: returning2 ${cleanTime(timeStr)}` );
         return cleanTime( timeStr );
     } catch ( e ) {
-        console.log( `formatTime: returning3 ${cleanTime(timeStr)}` );
         return cleanTime( timeStr );
     }
 }
