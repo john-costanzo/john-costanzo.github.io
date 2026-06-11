@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Saturday, 2026-01-10 @ 13:49:16";
+const eventUtilsVersion = "Thursday, 2026-06-11 @ 16:42:47";
 console.log( `[${currentTime()}] eventUtilsVersion = ${eventUtilsVersion}` );
 
 function msUntilMidnight( ) {
@@ -394,7 +394,13 @@ function formatDateUTC( date ) {
  * @returns {string} The formatted time string.
  */
 function formatTime( timeStr ) {
+
+    function cleanTime( t ) {
+        return ( t.replace( /(\S)([apAP][mM])/, "$1 $2" ).toLowerCase( ) );
+    }
+
     // Handle different time formats or return original if can't parse
+    console.log( `formatTime: timeStr=${timeStr}` );
     if ( !timeStr ) return "";
 
     try {
@@ -411,11 +417,14 @@ function formatTime( timeStr ) {
             if ( ampm === "pm" && hours < 12 ) hours += 12;
             if ( ampm === "am" && hours === 12 ) hours = 0;
 
-            return `${hours.toString().padStart(2, "0")}:${minutes} ${ampm.toUpperCase()}`;
+            console.log( `formatTime: returning1 ${hours.toString().padStart(2, "0")}:${minutes} ${ampm.toUpperCase()}` );
+            return `${hours.toString().padStart(2, "0")}:${minutes} ${ampm.toLowerCase()}`;
         }
-        return timeStr;
+        console.log( `formatTime: returning2 ${cleanTime(timeStr)}` );
+        return cleanTime( timeStr );
     } catch ( e ) {
-        return timeStr;
+        console.log( `formatTime: returning3 ${cleanTime(timeStr)}` );
+        return cleanTime( timeStr );
     }
 }
 
@@ -618,8 +627,9 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
             venueElement.textContent = event.venue;
 
             const timeElement = document.createElement( "span" );
+            const event_time = event.start_time + " - " + event.end_time;
             timeElement.className = "time";
-            timeElement.textContent = formatTime( event.event_time ) + ":    ";
+            timeElement.textContent = formatTime( event_time ) + ":    ";
 
             const nameElement = document.createElement( "span" );
             nameElement.className = "event-name";
