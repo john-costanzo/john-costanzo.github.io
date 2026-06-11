@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-06-11 17:26:31";
+const eventDataVersion = "Thursday, 2026-06-11 18:07:08";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -10,7 +10,7 @@ const events = [
         name: `Wine and Chocolate Pairing (While Supplies Last)`,
         sort_time: "2025-05-02 00:00:00",
         end_time_formatted: "2025-05-02 23:59",
-        detail: "2025-05-02 23:59",
+        detail: "Share a box of curated chocolates and 3 amazing wines that pair perfectly! Don’t miss this!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -22,7 +22,7 @@ const events = [
         name: `Wine Blending Workshop`,
         sort_time: "2025-05-03 14:00:00",
         end_time_formatted: "2025-05-03 16:00",
-        detail: "2025-05-03 16:00",
+        detail: "None",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -34,7 +34,7 @@ const events = [
         name: `Closed for Private Event`,
         sort_time: "2025-07-12 11:00:00",
         end_time_formatted: "2025-07-12 18:00",
-        detail: "2025-07-12 18:00",
+        detail: "Closed for Private Event Saturday, July 12th",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -46,7 +46,7 @@ const events = [
         name: `Harvest Party`,
         sort_time: "2025-08-16 13:00:00",
         end_time_formatted: "2025-08-16 17:00",
-        detail: "2025-08-16 17:00",
+        detail: "Come join the party! Enjoy a complimentary tasting of our new release! Special pricing on Fume’ Blanc bottles to go! A special surprise on the patio! Exclusive tours and tasting sample in our winery!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -58,7 +58,7 @@ const events = [
         name: `Closed Thanksgiving Day`,
         sort_time: "2025-11-27 11:00:00",
         end_time_formatted: "2025-11-27 18:00",
-        detail: "2025-11-27 18:00",
+        detail: "None",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -70,7 +70,7 @@ const events = [
         name: `Closed for Private Event`,
         sort_time: "2025-12-19 11:00:00",
         end_time_formatted: "2025-12-19 18:00",
-        detail: "2025-12-19 18:00",
+        detail: "Closed for Staff Christmas Party",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -82,7 +82,7 @@ const events = [
         name: `Closed for Christmas`,
         sort_time: "2025-12-25 12:00:00",
         end_time_formatted: "2025-12-25 18:00",
-        detail: "2025-12-25 18:00",
+        detail: "Merry Christmas! See you tomorrow!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -94,7 +94,7 @@ const events = [
         name: `Closed for Winter Break`,
         sort_time: "2026-01-01 00:00:00",
         end_time_formatted: "2026-01-01 23:59",
-        detail: "2026-01-01 23:59",
+        detail: "Closed for Winter Break. See you January 15th!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -106,7 +106,7 @@ const events = [
         name: `Weekly Wed at 2:00 pm - 9:00 pm`,
         sort_time: "2026-01-28 14:00:00",
         end_time_formatted: "2026-01-28 Can't convert Tue",
-        detail: "2026-01-28 Can't convert Tue",
+        detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -118,7 +118,7 @@ const events = [
         name: `Closed for Private Event`,
         sort_time: "2026-02-28 11:00:00",
         end_time_formatted: "2026-02-28 18:00",
-        detail: "2026-02-28 18:00",
+        detail: "Closed for Private Event. We will reopen Sunday at 12:00.",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -130,7 +130,7 @@ const events = [
         name: `Showboat Band`,
         sort_time: "2026-03-14 17:00:00",
         end_time_formatted: "2026-03-14 20:00",
-        detail: "2026-03-14 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -142,7 +142,7 @@ const events = [
         name: `Mini Cupcake & Flight Pairing`,
         sort_time: "2026-03-19 17:00:00",
         end_time_formatted: "2026-03-19 20:00",
-        detail: "2026-03-19 20:00",
+        detail: "Treat yourself to the perfect midweek indulgence! Join us on Thursday, March 19 starting at 5PM for a delicious Mini Cupcake & Cider Flight Pairing experience.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -154,7 +154,7 @@ const events = [
         name: `Craig St. John`,
         sort_time: "2026-03-20 17:00:00",
         end_time_formatted: "2026-03-20 20:00",
-        detail: "2026-03-20 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -166,7 +166,7 @@ const events = [
         name: `Tracy Davis & The TMI Band`,
         sort_time: "2026-03-21 17:00:00",
         end_time_formatted: "2026-03-21 20:00",
-        detail: "2026-03-21 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -178,7 +178,7 @@ const events = [
         name: `National Puppy Day Celebration`,
         sort_time: "2026-03-22 11:00:00",
         end_time_formatted: "2026-03-22 16:00",
-        detail: "2026-03-22 16:00",
+        detail: "Calling all dog lovers! Join us on Sunday, March 22 from 11AM-4PM as we celebrate National Puppy Day a day early with cold pints and a great cause.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -190,7 +190,7 @@ const events = [
         name: `Paint & Sip`,
         sort_time: "2026-03-22 14:00:00",
         end_time_formatted: "2026-03-22 16:00",
-        detail: "2026-03-22 16:00",
+        detail: "Unleash your creativity with us at Bold Rock (Mills River) on Sunday, March 22nd, at 2:00 pm! No experience is needed. Our skilled instructors will guide you through each step, helping you recreate this portrait of a Blue Jay!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -202,7 +202,7 @@ const events = [
         name: `Fine Line Band`,
         sort_time: "2026-03-27 17:00:00",
         end_time_formatted: "2026-03-27 20:00",
-        detail: "2026-03-27 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -214,7 +214,7 @@ const events = [
         name: `Closing Early for Private Event`,
         sort_time: "2026-03-28 16:00:00",
         end_time_formatted: "2026-03-28 20:00",
-        detail: "2026-03-28 20:00",
+        detail: "We will be closing at 4:00 for our Spring Wine Dinner. See you tomorrow.",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -226,7 +226,7 @@ const events = [
         name: `Mike Hollon`,
         sort_time: "2026-03-28 17:00:00",
         end_time_formatted: "2026-03-28 20:00",
-        detail: "2026-03-28 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 5PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -238,7 +238,7 @@ const events = [
         name: `Patty M`,
         sort_time: "2026-04-03 18:00:00",
         end_time_formatted: "2026-04-03 20:00",
-        detail: "2026-04-03 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -250,7 +250,7 @@ const events = [
         name: `Easter Egg Giveaway`,
         sort_time: "2026-04-04 11:00:00",
         end_time_formatted: "2026-04-04 21:00",
-        detail: "2026-04-04 21:00",
+        detail: "Hop into spring with us! We’re hosting a full day of Easter festivities on Saturday, April 4th, and there is something for everyone, from the little ones to the cider lovers.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -262,7 +262,7 @@ const events = [
         name: `Closed Easter Sunday`,
         sort_time: "2026-04-05 12:00:00",
         end_time_formatted: "2026-04-05 18:00",
-        detail: "2026-04-05 18:00",
+        detail: "We will be closed Easter Sunday to spend time with family. Enjoy your day!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
@@ -274,7 +274,7 @@ const events = [
         name: `Blackwater Voodoo`,
         sort_time: "2026-04-11 18:00:00",
         end_time_formatted: "2026-04-11 18:00",
-        detail: "2026-04-11 18:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -286,7 +286,7 @@ const events = [
         name: `Macarons & Flight Pairing`,
         sort_time: "2026-04-16 17:00:00",
         end_time_formatted: "2026-04-16 19:00",
-        detail: "2026-04-16 19:00",
+        detail: "Looking for the ultimate Thursday treat? Join us on April 16th for a curated tasting experience that hits all the right notes. We’ve paried four handcrafted macarons with four of our favorite ciders.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -298,7 +298,7 @@ const events = [
         name: `Finklestein 3`,
         sort_time: "2026-04-17 18:00:00",
         end_time_formatted: "2026-04-17 20:00",
-        detail: "2026-04-17 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -310,7 +310,7 @@ const events = [
         name: `Tracy Davis`,
         sort_time: "2026-04-18 18:00:00",
         end_time_formatted: "2026-04-18 20:00",
-        detail: "2026-04-18 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -322,7 +322,7 @@ const events = [
         name: `Showboat Band`,
         sort_time: "2026-04-24 18:00:00",
         end_time_formatted: "2026-04-24 20:00",
-        detail: "2026-04-24 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -334,7 +334,7 @@ const events = [
         name: `Danny Sharpe`,
         sort_time: "2026-04-25 18:00:00",
         end_time_formatted: "2026-04-25 20:00",
-        detail: "2026-04-25 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -346,7 +346,7 @@ const events = [
         name: `Fine Line Band`,
         sort_time: "2026-05-01 18:00:00",
         end_time_formatted: "2026-05-01 20:00",
-        detail: "2026-05-01 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -358,7 +358,7 @@ const events = [
         name: `Golden Palooza`,
         sort_time: "2026-05-02 11:00:00",
         end_time_formatted: "2026-05-02 16:00",
-        detail: "2026-05-02 16:00",
+        detail: "Calling all Goldens (and Golden lovers) Golden Palooza is happening Saturday, May 2nd from 11AM-4PM! Bring your fluffy friends and join us for a tail-wagging meetup hosted by Appalachian Dog Training full of good vibes, new friends, and plenty of cider.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -370,7 +370,7 @@ const events = [
         name: `Kristen Toole & The tool Shed`,
         sort_time: "2026-05-08 18:00:00",
         end_time_formatted: "2026-05-08 20:00",
-        detail: "2026-05-08 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -382,7 +382,7 @@ const events = [
         name: `The Blue Stump Band`,
         sort_time: "2026-05-09 18:00:00",
         end_time_formatted: "2026-05-09 20:00",
-        detail: "2026-05-09 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -394,7 +394,7 @@ const events = [
         name: `Mother\'s Day at Bold Rock`,
         sort_time: "2026-05-10 11:00:00",
         end_time_formatted: "2026-05-10 14:00",
-        detail: "2026-05-10 14:00",
+        detail: "Treat Mom to a relaxing day at Bold Rock Mills River this Mother’s Day",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -406,8 +406,20 @@ const events = [
         name: `Sound Invasion`,
         sort_time: "2026-05-15 18:00:00",
         end_time_formatted: "2026-05-15 20:00",
-        detail: "2026-05-15 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
+        url: "https://www.cphassn.org/home",
+        venue: "Carriage Park",
+        event_date: "2026-05-16",
+        start_time: "9:00 AM",
+        end_time: "5:00 PM",
+        name: `Day of Caring`,
+        sort_time: "2026-05-16 09:00:00",
+        end_time_formatted: "2026-05-16 17:00:00",
+        detail: "Volunteer to help keep Carriage Park looking great!",
+        location: "All around Carriage Park",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -418,7 +430,7 @@ const events = [
         name: `Live Bold JeeperFest`,
         sort_time: "2026-05-16 11:00:00",
         end_time_formatted: "2026-05-16 18:00",
-        detail: "2026-05-16 18:00",
+        detail: "Join us on Saturday, May 16 for an all-day JeeperFest at Bold Rock Mills River! Cruise in, show off your ride, and check out an awesome lineup of Jeeps from fellow enthusiasts.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -430,7 +442,7 @@ const events = [
         name: `Crumbl Cookie Flight Pairing`,
         sort_time: "2026-05-21 17:00:00",
         end_time_formatted: "2026-05-21 19:00",
-        detail: "2026-05-21 19:00",
+        detail: "Join us at our Bold Rock taproom on May 21 at 5PM for a Crumbl Cookie Flight Pairing featuring 4 delicious cookies perfectly paired with 4 of our ciders for the ultimate sweet + sippable experience.",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -442,7 +454,7 @@ const events = [
         name: `Myron Hyman`,
         sort_time: "2026-05-22 18:00:00",
         end_time_formatted: "2026-05-22 20:00",
-        detail: "2026-05-22 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -454,8 +466,20 @@ const events = [
         name: `Showboat Band`,
         sort_time: "2026-05-23 18:00:00",
         end_time_formatted: "2026-05-23 20:00",
-        detail: "2026-05-23 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
+        url: "https://www.facebook.com/profile.php?id=61559567825343#",
+        venue: "Carriage Park",
+        event_date: "2026-05-27",
+        start_time: "4:00 PM",
+        end_time: "7:00 PM",
+        name: `Bisto Betty food truck`,
+        sort_time: "2026-05-27 16:00:00",
+        end_time_formatted: "2026-05-27 19:00:00",
+        detail: "The Social Committee will sponsor Bistro Betty food truck on May 27, 4-7pm at the clubhouse. Beverages will be available inside the clubhouse. Bistro Betty's menu offers something for everyone. Sandwiches, bowls, vegetarian options.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -466,7 +490,7 @@ const events = [
         name: `Finklestein 3`,
         sort_time: "2026-05-29 18:00:00",
         end_time_formatted: "2026-05-29 20:00",
-        detail: "2026-05-29 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -478,7 +502,7 @@ const events = [
         name: `80s Night at Bold Rock`,
         sort_time: "2026-05-30 18:00:00",
         end_time_formatted: "2026-05-30 21:00",
-        detail: "2026-05-30 21:00",
+        detail: "The ULTIMATE 80\'s PaRtY is coming to Bold Rock!!! Time to break Out the leg warmers and Tease that Hair ~ Our 80\'s PaRtY is about to hit Full Blast!! Sing along with the band Club Rewind, Dance and soak up all the 80\'s magic!!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -490,7 +514,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-01 00:00:00",
         end_time_formatted: "2026-06-01 23:59",
-        detail: "2026-06-01 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -502,7 +526,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-02 00:00:00",
         end_time_formatted: "2026-06-02 23:59",
-        detail: "2026-06-02 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -514,7 +538,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-02 00:00:00",
         end_time_formatted: "2026-06-02 23:59",
-        detail: "2026-06-02 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -526,7 +550,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-03 00:00:00",
         end_time_formatted: "2026-06-03 23:59",
-        detail: "2026-06-03 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -538,8 +562,20 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-03 00:00:00",
         end_time_formatted: "2026-06-03 23:59",
-        detail: "2026-06-03 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-06-03",
+        start_time: "6:00 PM",
+        end_time: "9:00 PM",
+        name: `Live Music by Ken Morgan`,
+        sort_time: "2026-06-03 18:00:00",
+        end_time_formatted: "2026-06-03 21:00",
+        detail: "Tickets are $15 and include cheese and veggie platters as well as beer, wine and soft drinks.\nJoin Ken for playing guitar and keyboard covering rock & pop to country folk and Americana.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
@@ -550,7 +586,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-04 00:00:00",
         end_time_formatted: "2026-06-04 23:59",
-        detail: "2026-06-04 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -562,7 +598,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-04 00:00:00",
         end_time_formatted: "2026-06-04 23:59",
-        detail: "2026-06-04 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -574,7 +610,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-05 00:00:00",
         end_time_formatted: "2026-06-05 23:59",
-        detail: "2026-06-05 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -586,7 +622,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-05 00:00:00",
         end_time_formatted: "2026-06-05 23:59",
-        detail: "2026-06-05 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -598,7 +634,7 @@ const events = [
         name: `Tracy Davis`,
         sort_time: "2026-06-05 18:00:00",
         end_time_formatted: "2026-06-05 20:00",
-        detail: "2026-06-05 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -610,7 +646,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-06 00:00:00",
         end_time_formatted: "2026-06-06 23:59",
-        detail: "2026-06-06 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -622,7 +658,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-06 00:00:00",
         end_time_formatted: "2026-06-06 23:59",
-        detail: "2026-06-06 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -634,7 +670,7 @@ const events = [
         name: `Iggy Radio`,
         sort_time: "2026-06-06 18:00:00",
         end_time_formatted: "2026-06-06 20:00",
-        detail: "2026-06-06 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -646,7 +682,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-07 00:00:00",
         end_time_formatted: "2026-06-07 23:59",
-        detail: "2026-06-07 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -658,7 +694,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-07 00:00:00",
         end_time_formatted: "2026-06-07 23:59",
-        detail: "2026-06-07 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -670,7 +706,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-08 00:00:00",
         end_time_formatted: "2026-06-08 23:59",
-        detail: "2026-06-08 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -682,7 +718,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-08 00:00:00",
         end_time_formatted: "2026-06-08 23:59",
-        detail: "2026-06-08 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -694,7 +730,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-09 00:00:00",
         end_time_formatted: "2026-06-09 23:59",
-        detail: "2026-06-09 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -706,7 +742,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-09 00:00:00",
         end_time_formatted: "2026-06-09 23:59",
-        detail: "2026-06-09 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -718,7 +754,7 @@ const events = [
         name: `Theme: Picnic on the Green`,
         sort_time: "2026-06-10 00:00:00",
         end_time_formatted: "2026-06-10 23:59",
-        detail: "2026-06-10 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -730,7 +766,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-10 00:00:00",
         end_time_formatted: "2026-06-10 23:59",
-        detail: "2026-06-10 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -742,7 +778,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-10 00:00:00",
         end_time_formatted: "2026-06-10 23:59",
-        detail: "2026-06-10 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -754,7 +790,7 @@ const events = [
         name: `Momma Molasses (Classic country, folk, jazz)`,
         sort_time: "2026-06-10 17:30:00",
         end_time_formatted: "2026-06-10 20:30",
-        detail: "2026-06-10 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -766,7 +802,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-11 00:00:00",
         end_time_formatted: "2026-06-11 23:59",
-        detail: "2026-06-11 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -778,7 +814,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-11 00:00:00",
         end_time_formatted: "2026-06-11 23:59",
-        detail: "2026-06-11 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -790,7 +826,7 @@ const events = [
         name: `The Notebook (2026-06-11 -> 2026-06-14)`,
         sort_time: "2026-06-11 00:00:00",
         end_time_formatted: "2026-06-11 23:59",
-        detail: "2026-06-11 23:59",
+        detail: "Based on the best-selling novel that inspired the iconic film, THE NOTEBOOK tells the story of Allie and Noah, both from different worlds, who share a lifetime of love despite the forces that threaten to pull them apart. “Full of butterfly-inducing highs and beautiful songs” (Entertainment Weekly), THE NOTEBOOK is a deeply moving portrait of the enduring power of love, and features music by singer-songwriter Ingrid Michaelson and a book by TV’s Bekah Brunstetter (“This Is Us”).\nChris Jones of The Chicago Tribune says THE NOTEBOOK is “absolutely gorgeous, not to be missed,” and The New York Daily News calls it “a love story for the ages.”",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -802,7 +838,7 @@ const events = [
         name: `Food Truck: Appalachian Chick`,
         sort_time: "2026-06-11 16:00:00",
         end_time_formatted: "2026-06-11 20:00",
-        detail: "2026-06-11 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -814,7 +850,7 @@ const events = [
         name: `Thomas Kozak (Mythology, spirituality, and poetry woven into his songs.)`,
         sort_time: "2026-06-11 17:30:00",
         end_time_formatted: "2026-06-11 20:30",
-        detail: "2026-06-11 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -826,7 +862,7 @@ const events = [
         name: `Event: Open Mic Night`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "2026-06-11 21:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -838,7 +874,7 @@ const events = [
         name: `Anna Stamato will be playing country!`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "2026-06-11 21:00",
+        detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -850,7 +886,7 @@ const events = [
         name: `Coopers Creek`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 20:00",
-        detail: "2026-06-11 20:00",
+        detail: "Live Bluegrass!",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -862,7 +898,7 @@ const events = [
         name: `Trailside Run Club`,
         sort_time: "2026-06-11 18:00:00",
         end_time_formatted: "2026-06-11 19:00",
-        detail: "2026-06-11 19:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -874,7 +910,7 @@ const events = [
         name: `Amplify Appalachia ft. Anders Osborne & Duck`,
         sort_time: "2026-06-11 18:30:00",
         end_time_formatted: "2026-06-11 21:00",
-        detail: "2026-06-11 21:00",
+        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -886,7 +922,7 @@ const events = [
         name: `Trailside Trivia`,
         sort_time: "2026-06-11 18:30:00",
         end_time_formatted: "2026-06-11 20:30",
-        detail: "2026-06-11 20:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -898,7 +934,7 @@ const events = [
         name: `Fly Fishing Film Tour`,
         sort_time: "2026-06-11 19:00:00",
         end_time_formatted: "2026-06-11 20:30",
-        detail: "2026-06-11 20:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -910,7 +946,7 @@ const events = [
         name: `BMC Presents: Branford Marsalis with Jazz@Brevard`,
         sort_time: "2026-06-11 19:30:00",
         end_time_formatted: "2026-06-11 23:59",
-        detail: "2026-06-11 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -922,7 +958,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-12 00:00:00",
         end_time_formatted: "2026-06-12 23:59",
-        detail: "2026-06-12 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -934,7 +970,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-12 00:00:00",
         end_time_formatted: "2026-06-12 23:59",
-        detail: "2026-06-12 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -946,7 +982,7 @@ const events = [
         name: `The Notebook (2026-06-11 -> 2026-06-14)`,
         sort_time: "2026-06-12 00:00:00",
         end_time_formatted: "2026-06-12 23:59",
-        detail: "2026-06-12 23:59",
+        detail: "Based on the best-selling novel that inspired the iconic film, THE NOTEBOOK tells the story of Allie and Noah, both from different worlds, who share a lifetime of love despite the forces that threaten to pull them apart. “Full of butterfly-inducing highs and beautiful songs” (Entertainment Weekly), THE NOTEBOOK is a deeply moving portrait of the enduring power of love, and features music by singer-songwriter Ingrid Michaelson and a book by TV’s Bekah Brunstetter (“This Is Us”).\nChris Jones of The Chicago Tribune says THE NOTEBOOK is “absolutely gorgeous, not to be missed,” and The New York Daily News calls it “a love story for the ages.”",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -958,7 +994,7 @@ const events = [
         name: `Food Truck: Toasted Cuban`,
         sort_time: "2026-06-12 12:00:00",
         end_time_formatted: "2026-06-12 20:00",
-        detail: "2026-06-12 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -970,7 +1006,7 @@ const events = [
         name: `SETH AND SARA`,
         sort_time: "2026-06-12 16:00:00",
         end_time_formatted: "2026-06-12 19:00",
-        detail: "2026-06-12 19:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -982,7 +1018,7 @@ const events = [
         name: `Closing Early at 4:00pm`,
         sort_time: "2026-06-12 16:00:00",
         end_time_formatted: "2026-06-12 19:00",
-        detail: "2026-06-12 19:00",
+        detail: "We will be closing early to prepare for the Blue Ridge Orchestra.\n \nWe will reopen Saturday, June 13th at 11:00am.",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -994,7 +1030,7 @@ const events = [
         name: `3 Shades of Gray Friday Night for Summer Music at the Ridge -`,
         sort_time: "2026-06-12 18:00:00",
         end_time_formatted: "2026-06-12 21:00",
-        detail: "2026-06-12 21:00",
+        detail: "Enjoy great music and great cider, wine, beer & Haus heidelberg! 3 Shades of Gray play at the Appalachian Friday Night Summer Music Series. Food truck on site. Bring a chair just in case. See you at the Ridge this Friday and every Friday night this summer!!!!!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -1006,7 +1042,7 @@ const events = [
         name: `Todd Cecil & The Dirt Yard Choir`,
         sort_time: "2026-06-12 18:00:00",
         end_time_formatted: "2026-06-12 20:00",
-        detail: "2026-06-12 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -1018,7 +1054,7 @@ const events = [
         name: `Live Music: Fun Size`,
         sort_time: "2026-06-12 18:00:00",
         end_time_formatted: "2026-06-12 21:00",
-        detail: "2026-06-12 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1030,7 +1066,7 @@ const events = [
         name: `Come celebrate 11 years of making MRB brews w/ Flashback Band, playing arena rock from 6:30-9:30pm!`,
         sort_time: "2026-06-12 18:30:00",
         end_time_formatted: "2026-06-12 21:30",
-        detail: "2026-06-12 21:30",
+        detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -1042,7 +1078,7 @@ const events = [
         name: `Music: Brown Mountain Lightning Bugs`,
         sort_time: "2026-06-12 19:00:00",
         end_time_formatted: "2026-06-12 22:00",
-        detail: "2026-06-12 22:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1054,7 +1090,7 @@ const events = [
         name: `The Bright Light Social Hour`,
         sort_time: "2026-06-12 19:00:00",
         end_time_formatted: "2026-06-12 21:30",
-        detail: "2026-06-12 21:30",
+        detail: "Austin’s The Bright Light Social Hour are widely recognized as the essence of Texas psych rock - no one better captures or defies the genre, twisting southern blues, hypnotic grooves, and pulsing synths into sweaty, ecstatic journeys that linger long after the lights go up.\nFrom retro-futurist masterpieces like Space Is Still the Place and Emergency Leisure to composing for HBO, MTV, Nintendo, and the award-winning theme for Sneaky Pete at Bryan Cranston’s request, their music drifts between cosmic psychedelia and late-night dancefloor heat, weaving fat basslines, ecstatic percussion, and three-part harmonies that sting and soothe at once.\nLive, they’re a full-body experience: part revival, part warehouse party, part cosmic trip - music that hits the chest, drops the booty and tears the fabric of the understood.\n“Their expansive sound, penchant for experimentation and incredible shows combine a psychedelic southern blues-rock aesthetic with danceable electronics… Continually exhilarating.” -David Dye, NPR’s World Cafe",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1066,7 +1102,7 @@ const events = [
         name: `Kindred Spirit`,
         sort_time: "2026-06-12 19:00:00",
         end_time_formatted: "2026-06-12 21:00",
-        detail: "2026-06-12 21:00",
+        detail: "Kindred Spirit - All Female 5 piece Bluescentric band feat Peggy Ratusz!",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -1078,7 +1114,7 @@ const events = [
         name: `Blue Ridge Orchestra - Live Music`,
         sort_time: "2026-06-12 19:15:00",
         end_time_formatted: "2026-06-12 21:30",
-        detail: "2026-06-12 21:30",
+        detail: "Blue Ridge Orchestra’s Summer Soirée\n\n\n\n\n\n\n\n\n\n\nFriday Evening, June 12th, 2026\nDr. Emily Mariko Eng, Music Director\nJoin us for a Summer Soirée on Friday, June 12th, 2026, at the Souther Williams Vineyard.\nSummer Soirée is a fundraiser to help the Blue Ridge Orchestra continue its performances at varied venues while our concert hall home - Lipinsky Auditorium - is under its exciting renovation.\nTicket details are provided below. Thank you for your support. You keep us thriving.\nSouther Williams is located at 655 Hoopers Creek Rd, Fletcher, NC 28732. For more information, please contact Priscilla Anderson at [email protected].\nVineyard Lawn Seating: Entry to Venue between 7:00 - 7:30pm - $20.00 - show begins at 7:30pm\n*All Guests must be 21 years of age or older to enter the vineyard. Please bring a lawn chair or blanket for the lawn seating. Glasses of Wine or Bottles will be available during the show. No coolers or outside alcohol is permitted.",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -1090,7 +1126,7 @@ const events = [
         name: `Astro Sauce`,
         sort_time: "2026-06-12 20:00:00",
         end_time_formatted: "2026-06-12 23:00",
-        detail: "2026-06-12 23:00",
+        detail: "Music starts @8pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -1102,7 +1138,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-13 00:00:00",
         end_time_formatted: "2026-06-13 23:59",
-        detail: "2026-06-13 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -1114,7 +1150,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-13 00:00:00",
         end_time_formatted: "2026-06-13 23:59",
-        detail: "2026-06-13 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -1126,7 +1162,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-13 00:00:00",
         end_time_formatted: "2026-06-13 23:59",
-        detail: "2026-06-13 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -1138,7 +1174,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-13 00:00:00",
         end_time_formatted: "2026-06-13 23:59",
-        detail: "2026-06-13 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -1150,8 +1186,20 @@ const events = [
         name: `The Notebook (2026-06-11 -> 2026-06-14)`,
         sort_time: "2026-06-13 00:00:00",
         end_time_formatted: "2026-06-13 23:59",
-        detail: "2026-06-13 23:59",
+        detail: "Based on the best-selling novel that inspired the iconic film, THE NOTEBOOK tells the story of Allie and Noah, both from different worlds, who share a lifetime of love despite the forces that threaten to pull them apart. “Full of butterfly-inducing highs and beautiful songs” (Entertainment Weekly), THE NOTEBOOK is a deeply moving portrait of the enduring power of love, and features music by singer-songwriter Ingrid Michaelson and a book by TV’s Bekah Brunstetter (“This Is Us”).\nChris Jones of The Chicago Tribune says THE NOTEBOOK is “absolutely gorgeous, not to be missed,” and The New York Daily News calls it “a love story for the ages.”",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-06-13",
+        start_time: "10:00 AM",
+        end_time: "12:00 PM",
+        name: `Mike Harbin speaks on The Geology of North Carolina: From the Coast to the Mountains with a Few Stops Along the Way`,
+        sort_time: "2026-06-13 10:00:00",
+        end_time_formatted: "2026-06-13 12:00:00",
+        detail: "Coffee and bagels with Carriage Park resident Mike Harbin sharing his knowledge on “The Geology of North Carolina: From the Coast to the Mountains with a Few Stops Along the Way”. \nMike is an 11-year resident of Carriage Park and was an Exploration Geophysicist in the oil and gas industry for 35 years. He began researching the geology of North Carolina and decided to share his knowledge by creating a presentation for other interested residents in the community. He plans to talk about the geologic reasons why we love this state. He will help us understand plate tectonics and how North Carolina came into being, followed by geologic highlights from the coast to the piedmont to the mountains. He will discuss processes that continually shape our landscape and lives, including floods, landslides, and earthquakes.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -1162,7 +1210,7 @@ const events = [
         name: `Food Truck: Taste of Pea Ridge`,
         sort_time: "2026-06-13 12:00:00",
         end_time_formatted: "2026-06-13 20:00",
-        detail: "2026-06-13 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1174,7 +1222,7 @@ const events = [
         name: `Saturday Yoga Class`,
         sort_time: "2026-06-13 12:00:00",
         end_time_formatted: "2026-06-13 13:00",
-        detail: "2026-06-13 13:00",
+        detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -1186,7 +1234,7 @@ const events = [
         name: `El Bodegon - Food Truck`,
         sort_time: "2026-06-13 12:00:00",
         end_time_formatted: "2026-06-13 17:00",
-        detail: "2026-06-13 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -1198,7 +1246,7 @@ const events = [
         name: `THE JACKTOWN RAMBLERS`,
         sort_time: "2026-06-13 13:00:00",
         end_time_formatted: "2026-06-13 16:00",
-        detail: "2026-06-13 16:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -1210,7 +1258,7 @@ const events = [
         name: `Come out for a full day of ROCK to support the Blue Ridge Humane Society. Build your own Bloody Mary Bar from 11:30-3pm.Annual benefit fundraiser for non-profit Blue Ridge Humane...`,
         sort_time: "2026-06-13 13:30:00",
         end_time_formatted: "2026-06-13 22:00",
-        detail: "2026-06-13 22:00",
+        detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -1222,7 +1270,7 @@ const events = [
         name: `Summer In The Park`,
         sort_time: "2026-06-13 14:00:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "2026-06-13 21:00",
+        detail: "We’re celebrating summer in Lower Park with live music, BBQ, and inflatable water games!\nAnd, we are very excited to partner with Zen Tubing, who will be offering floats down the river before the festivities begin! \nFeaturing:\nEmpire Strikes Brass, Dr. Bacon & DJ Brandon Manitoba\nInflatable Water Obstacle Course & Axe Throwing\nBBQ Plates available for purchase! \nFloat Trip Details:\nCheck-In Location: Sierra Nevada Brewing Co (front parking lot) \nCheck-In Times: 11:00am and 11:30am\nFloat Time: 12:00pm\nDuration: ~2 hours on the water (timing may vary slightly depending on water level)\n* Guests off the river before 3:00pm \n* The return shuttle leaves at 3:15pm (If you miss the return shuttle you will be responsible for your own transportation)",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1234,7 +1282,7 @@ const events = [
         name: `Bill and Tad’s Excellent Duo - Live Music`,
         sort_time: "2026-06-13 14:00:00",
         end_time_formatted: "2026-06-13 17:00",
-        detail: "2026-06-13 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -1246,7 +1294,7 @@ const events = [
         name: `Highway 52 at Saint Paul Mountain Vineyards`,
         sort_time: "2026-06-13 15:00:00",
         end_time_formatted: "2026-06-13 18:00",
-        detail: "2026-06-13 18:00",
+        detail: "Highway 52 is where Doc Watson meets Tom Waits meets Muddy Waters meets John Prine. With this band genre takes a back seat to just finding a good quality song and making it their own. Come enjoy great music with great Saint Paul Wine and Great Friends! ! Grass Roots Pizza Truck.Charcuterie avail.",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -1258,7 +1306,7 @@ const events = [
         name: `Live Music: Mike Hollon`,
         sort_time: "2026-06-13 17:00:00",
         end_time_formatted: "2026-06-13 20:00",
-        detail: "2026-06-13 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1270,7 +1318,7 @@ const events = [
         name: `Blackwater Voodoo`,
         sort_time: "2026-06-13 18:00:00",
         end_time_formatted: "2026-06-13 20:00",
-        detail: "2026-06-13 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -1282,7 +1330,7 @@ const events = [
         name: `Music: Danny Sharpe`,
         sort_time: "2026-06-13 19:00:00",
         end_time_formatted: "2026-06-13 22:00",
-        detail: "2026-06-13 22:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1294,7 +1342,7 @@ const events = [
         name: `Unpaid Bill & The Bad Czechs`,
         sort_time: "2026-06-13 19:00:00",
         end_time_formatted: "2026-06-13 21:00",
-        detail: "2026-06-13 21:00",
+        detail: "Independent Folk / Ragtime band based in Brevard, NC. Playin’ music from the 1840’s - present day!\nUnpaidBillandtheBadCzechs",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -1306,7 +1354,7 @@ const events = [
         name: `Carolina Drifters`,
         sort_time: "2026-06-13 20:00:00",
         end_time_formatted: "2026-06-13 23:00",
-        detail: "2026-06-13 23:00",
+        detail: "Music starts @8pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -1318,7 +1366,7 @@ const events = [
         name: `Live Comedy Show`,
         sort_time: "2026-06-13 20:00:00",
         end_time_formatted: "2026-06-13 21:30",
-        detail: "2026-06-13 21:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1330,7 +1378,7 @@ const events = [
         name: `Food Truck: `,
         sort_time: "2026-06-14 00:00:00",
         end_time_formatted: "2026-06-14 00:00",
-        detail: "2026-06-14 00:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1342,7 +1390,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-14 00:00:00",
         end_time_formatted: "2026-06-14 23:59",
-        detail: "2026-06-14 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -1354,7 +1402,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-14 00:00:00",
         end_time_formatted: "2026-06-14 23:59",
-        detail: "2026-06-14 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -1366,7 +1414,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-14 00:00:00",
         end_time_formatted: "2026-06-14 23:59",
-        detail: "2026-06-14 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -1378,7 +1426,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-14 00:00:00",
         end_time_formatted: "2026-06-14 23:59",
-        detail: "2026-06-14 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -1390,7 +1438,7 @@ const events = [
         name: `The Notebook (2026-06-11 -> 2026-06-14)`,
         sort_time: "2026-06-14 00:00:00",
         end_time_formatted: "2026-06-14 23:59",
-        detail: "2026-06-14 23:59",
+        detail: "Based on the best-selling novel that inspired the iconic film, THE NOTEBOOK tells the story of Allie and Noah, both from different worlds, who share a lifetime of love despite the forces that threaten to pull them apart. “Full of butterfly-inducing highs and beautiful songs” (Entertainment Weekly), THE NOTEBOOK is a deeply moving portrait of the enduring power of love, and features music by singer-songwriter Ingrid Michaelson and a book by TV’s Bekah Brunstetter (“This Is Us”).\nChris Jones of The Chicago Tribune says THE NOTEBOOK is “absolutely gorgeous, not to be missed,” and The New York Daily News calls it “a love story for the ages.”",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -1402,7 +1450,7 @@ const events = [
         name: `Happy June Pop-Up Market`,
         sort_time: "2026-06-14 12:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "2026-06-14 17:00",
+        detail: "We are a smallish art, craft and vintage market that pops up once a month at Southern Appalachian Brewery where there is great beer, live music and a foodtruck!\nCome sip…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -1414,7 +1462,7 @@ const events = [
         name: `THE SUITCASE TRIO`,
         sort_time: "2026-06-14 13:00:00",
         end_time_formatted: "2026-06-14 16:00",
-        detail: "2026-06-14 16:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -1426,7 +1474,7 @@ const events = [
         name: `Apple Country String Band`,
         sort_time: "2026-06-14 13:00:00",
         end_time_formatted: "2026-06-14 16:00",
-        detail: "2026-06-14 16:00",
+        detail: "Since 2017, Apple Country String Band (ACSB) has been playing Americana music around Hendersonville, NC.\nMixing folk, blues, country, rock and bluegrass the group of veteran musicians play music people like…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -1438,7 +1486,7 @@ const events = [
         name: `The Pond Brothers, a psychedelic bluegrass art rock band, will be playing!`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "2026-06-14 17:00",
+        detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -1450,7 +1498,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "2026-06-14 17:00",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1462,7 +1510,7 @@ const events = [
         name: `Frances Eliza - Live Music`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "2026-06-14 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -1474,7 +1522,7 @@ const events = [
         name: `Live Music with the Hummingtree Band at the Ridge`,
         sort_time: "2026-06-14 14:30:00",
         end_time_formatted: "2026-06-14 17:30",
-        detail: "2026-06-14 17:30",
+        detail: "Join as for another wonderful Saturday at Appalachian Ridge Artisan Cidery. Great Cider, Wine & Beer are on tap for you to enjoy! We\'ll play the background music for you to sing and dance too!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -1486,7 +1534,7 @@ const events = [
         name: `Live Music With Raphael Graves and guest`,
         sort_time: "2026-06-14 14:30:00",
         end_time_formatted: "2026-06-14 17:30",
-        detail: "2026-06-14 17:30",
+        detail: "Sunday afternoon at the Vineyard, Great Music, Great Wine to enjoy with Great Friends. Charcuterie available or bring your own picnic. See you the the Saint Paul Food Grass Roots Pizza Truck on site",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -1498,7 +1546,7 @@ const events = [
         name: `J-Dunks`,
         sort_time: "2026-06-14 15:00:00",
         end_time_formatted: "2026-06-14 18:00",
-        detail: "2026-06-14 18:00",
+        detail: "Music starts @3pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -1510,7 +1558,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-15 00:00:00",
         end_time_formatted: "2026-06-15 23:59",
-        detail: "2026-06-15 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -1522,7 +1570,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-15 00:00:00",
         end_time_formatted: "2026-06-15 23:59",
-        detail: "2026-06-15 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -1534,7 +1582,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-15 00:00:00",
         end_time_formatted: "2026-06-15 23:59",
-        detail: "2026-06-15 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -1546,7 +1594,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-15 00:00:00",
         end_time_formatted: "2026-06-15 23:59",
-        detail: "2026-06-15 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -1558,7 +1606,7 @@ const events = [
         name: `Mah Jongg Beginners Class`,
         sort_time: "2026-06-15 11:00:00",
         end_time_formatted: "2026-06-15 13:00",
-        detail: "2026-06-15 13:00",
+        detail: "Join us at Souther Williams Vineyard for an elevated Mah Jongg Beginners Class set among the vines. With Mahj Made Easy coaches leading the way, you’ll learn the game with ease—complete with boards provided, insider tips & tricks, and a relaxed, social atmosphere.\n\nJune 15th | 11:00am - 1:00pm\n$65.00 per person (Includes a glass of wine)\nGather with friends (and make new ones), sip your favorite wines, and take in the vineyard views as you play.\nWhere the Tiles Click and the Wine Pours.\nSeats are intentionally limited for a more intimate experience.\nCLICK HERE to Reserve your spot today.\nMust reserve your spot by June 14th.",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -1570,7 +1618,7 @@ const events = [
         name: `Food Truck: Toasted Cuban`,
         sort_time: "2026-06-15 16:00:00",
         end_time_formatted: "2026-06-15 20:00",
-        detail: "2026-06-15 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1582,7 +1630,7 @@ const events = [
         name: `Traditional Irish Music Session`,
         sort_time: "2026-06-15 16:00:00",
         end_time_formatted: "2026-06-15 18:00",
-        detail: "2026-06-15 18:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1594,7 +1642,7 @@ const events = [
         name: `Come sing and dance the night away with DJ Jason from 6-8pm. Gift cards for winners!`,
         sort_time: "2026-06-15 18:00:00",
         end_time_formatted: "2026-06-15 20:00",
-        detail: "2026-06-15 20:00",
+        detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -1606,7 +1654,7 @@ const events = [
         name: `Board Game Club`,
         sort_time: "2026-06-15 18:00:00",
         end_time_formatted: "2026-06-15 21:00",
-        detail: "2026-06-15 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1618,7 +1666,7 @@ const events = [
         name: `Chess Club`,
         sort_time: "2026-06-15 18:00:00",
         end_time_formatted: "2026-06-15 20:00",
-        detail: "2026-06-15 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1630,7 +1678,7 @@ const events = [
         name: `Paint and Sip`,
         sort_time: "2026-06-15 18:00:00",
         end_time_formatted: "2026-06-15 20:00",
-        detail: "2026-06-15 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1642,7 +1690,7 @@ const events = [
         name: `An Evening of Classical Guitar`,
         sort_time: "2026-06-15 19:30:00",
         end_time_formatted: "2026-06-15 23:59",
-        detail: "2026-06-15 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -1654,7 +1702,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-16 00:00:00",
         end_time_formatted: "2026-06-16 23:59",
-        detail: "2026-06-16 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -1666,7 +1714,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-16 00:00:00",
         end_time_formatted: "2026-06-16 23:59",
-        detail: "2026-06-16 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -1678,7 +1726,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-16 00:00:00",
         end_time_formatted: "2026-06-16 23:59",
-        detail: "2026-06-16 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -1690,7 +1738,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-16 00:00:00",
         end_time_formatted: "2026-06-16 23:59",
-        detail: "2026-06-16 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -1702,7 +1750,7 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-06-16 16:00:00",
         end_time_formatted: "2026-06-16 20:00",
-        detail: "2026-06-16 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1714,7 +1762,7 @@ const events = [
         name: `Round Robin Open Mic Hosted by Letters To Abigail`,
         sort_time: "2026-06-16 18:00:00",
         end_time_formatted: "2026-06-16 21:00",
-        detail: "2026-06-16 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1726,7 +1774,7 @@ const events = [
         name: `BINGO with Hendersonville Rotary Club`,
         sort_time: "2026-06-16 18:00:00",
         end_time_formatted: "2026-06-16 20:00",
-        detail: "2026-06-16 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1738,7 +1786,7 @@ const events = [
         name: `Theme: Ragin’ Cajun`,
         sort_time: "2026-06-17 00:00:00",
         end_time_formatted: "2026-06-17 23:59",
-        detail: "2026-06-17 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -1750,7 +1798,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-17 00:00:00",
         end_time_formatted: "2026-06-17 23:59",
-        detail: "2026-06-17 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -1762,7 +1810,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-17 00:00:00",
         end_time_formatted: "2026-06-17 23:59",
-        detail: "2026-06-17 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -1774,7 +1822,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-17 00:00:00",
         end_time_formatted: "2026-06-17 23:59",
-        detail: "2026-06-17 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -1786,7 +1834,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-17 00:00:00",
         end_time_formatted: "2026-06-17 23:59",
-        detail: "2026-06-17 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -1798,7 +1846,7 @@ const events = [
         name: `Food Truck: Carolina Ace`,
         sort_time: "2026-06-17 16:00:00",
         end_time_formatted: "2026-06-17 20:00",
-        detail: "2026-06-17 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1810,7 +1858,7 @@ const events = [
         name: `Bayou Diesel (Cajun, zydeco, and old school country music)`,
         sort_time: "2026-06-17 17:30:00",
         end_time_formatted: "2026-06-17 20:30",
-        detail: "2026-06-17 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -1822,7 +1870,7 @@ const events = [
         name: `Event: Opinionary`,
         sort_time: "2026-06-17 18:00:00",
         end_time_formatted: "2026-06-17 20:00",
-        detail: "2026-06-17 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1834,7 +1882,7 @@ const events = [
         name: `Jason DeCristofaro’s Jazz Night`,
         sort_time: "2026-06-17 18:00:00",
         end_time_formatted: "2026-06-17 20:00",
-        detail: "2026-06-17 20:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -1846,7 +1894,7 @@ const events = [
         name: `FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell`,
         sort_time: "2026-06-17 18:00:00",
         end_time_formatted: "2026-06-17 20:00",
-        detail: "2026-06-17 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1858,7 +1906,7 @@ const events = [
         name: `Hendersonville Outfitters: Fly Tying Night`,
         sort_time: "2026-06-17 18:00:00",
         end_time_formatted: "2026-06-17 20:00",
-        detail: "2026-06-17 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -1870,7 +1918,7 @@ const events = [
         name: `Cowboy Junkies - Celebrating 40 Years and Beyond`,
         sort_time: "2026-06-17 19:30:00",
         end_time_formatted: "2026-06-17 23:59",
-        detail: "2026-06-17 23:59",
+        detail: "​​​​​\n“One of the most unique and enduring bands in alternative rock”\nAll Music\n\"Margo Timmins\'s voice is as melancholy and enchanting as ever”\nThe New York Times\n\"There’s something that is nearly miraculous about the way Margo Timmins’ beautiful voice fits with those pained lyrics written by her brother Michael Timmins…the result is some truly transformative music.\"\nThe Mercury News\nCowboy Junkies will be performing a career-spanning show from The Trinity Session to their recent album, Such Ferocious Beauty!\nAbout Cowboy Junkies\nSometimes revolutions begin quietly.\nIn 1988, Cowboy Junkies proved that there was an audience waiting for something quiet, beautiful and reflective. The Trinity Session was like a whisper that cut through the noise -- and it was compelling. It stood out in the midst of the flash and bombast that came to define the late 80\'s. The now classic recording combined folk, blues and rock in a way that had never been heard before and went on to sell more than a million copies. \nFormed in Toronto in 1985 with siblings Michael Timmins on guitar, Margo Timmins on vocals, Peter Timmins on drums, and Michael’s lifelong friend Alan Anton on bass, the band has sparkled over the course of 29 albums. “I’ve known Alan longer than I’ve known Pete,” says Michael. “We were friends before Pete was born.”\nUnlike most long-lasting groups, Cowboy Junkies have never had a break up or taken a sanity-saving hiatus. There’s an appreciation of each other that keeps them constantly working. “It’s that intimacy and understanding of what each one of us brings to the table,” says Michael.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -1882,7 +1930,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-18 00:00:00",
         end_time_formatted: "2026-06-18 23:59",
-        detail: "2026-06-18 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -1894,7 +1942,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-18 00:00:00",
         end_time_formatted: "2026-06-18 23:59",
-        detail: "2026-06-18 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -1906,7 +1954,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-18 00:00:00",
         end_time_formatted: "2026-06-18 23:59",
-        detail: "2026-06-18 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -1918,7 +1966,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-18 00:00:00",
         end_time_formatted: "2026-06-18 23:59",
-        detail: "2026-06-18 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -1930,7 +1978,7 @@ const events = [
         name: `Food Truck: Lobster Dogs`,
         sort_time: "2026-06-18 17:00:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "2026-06-18 21:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1942,7 +1990,7 @@ const events = [
         name: `Raphael Graves/Paul McIntire (Americana, acoustic, folk, rock)`,
         sort_time: "2026-06-18 17:30:00",
         end_time_formatted: "2026-06-18 20:30",
-        detail: "2026-06-18 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -1954,7 +2002,7 @@ const events = [
         name: `Firecracker Jazz Band (Jazz) with The Mojo Brothers Blues Band (Blues)`,
         sort_time: "2026-06-18 17:30:00",
         end_time_formatted: "2026-06-18 22:00",
-        detail: "2026-06-18 22:00",
+        detail: "None",
         location: "Rhythm & Brews Main St. Hendersonville",
     },
     {
@@ -1966,7 +2014,7 @@ const events = [
         name: `Event: Open Mic Night`,
         sort_time: "2026-06-18 18:00:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "2026-06-18 21:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -1978,7 +2026,7 @@ const events = [
         name: `BJ Cates Duo will be playing southern rock!`,
         sort_time: "2026-06-18 18:00:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "2026-06-18 21:00",
+        detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
@@ -1990,7 +2038,7 @@ const events = [
         name: `Trailside Run Club`,
         sort_time: "2026-06-18 18:00:00",
         end_time_formatted: "2026-06-18 19:00",
-        detail: "2026-06-18 19:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2002,7 +2050,7 @@ const events = [
         name: `The Hip Abduction`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 21:00",
-        detail: "2026-06-18 21:00",
+        detail: "Evoking the ocean and guided by the spirit of travel, The Hip Abduction pilot a sonic expedition past genre barriers. The band is the moniker for singer/songwriter David New who ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2014,7 +2062,7 @@ const events = [
         name: `Trailside Trivia`,
         sort_time: "2026-06-18 18:30:00",
         end_time_formatted: "2026-06-18 20:30",
-        detail: "2026-06-18 20:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2026,7 +2074,7 @@ const events = [
         name: `Billy Litz`,
         sort_time: "2026-06-18 20:00:00",
         end_time_formatted: "2026-06-18 22:00",
-        detail: "2026-06-18 22:00",
+        detail: "It\'s the unofficial after party of Rhythm and Brews! Music start @8pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -2038,7 +2086,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-19 00:00:00",
         end_time_formatted: "2026-06-19 23:59",
-        detail: "2026-06-19 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -2050,7 +2098,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-19 00:00:00",
         end_time_formatted: "2026-06-19 23:59",
-        detail: "2026-06-19 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -2062,7 +2110,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-19 00:00:00",
         end_time_formatted: "2026-06-19 23:59",
-        detail: "2026-06-19 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -2074,7 +2122,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-19 00:00:00",
         end_time_formatted: "2026-06-19 23:59",
-        detail: "2026-06-19 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -2086,7 +2134,7 @@ const events = [
         name: `Asheville Downtown After Five - June`,
         sort_time: "2026-06-19 00:00:00",
         end_time_formatted: "2026-06-19 23:59",
-        detail: "2026-06-19 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Beach, Bluegrass, Blues, Country, Jazz, Rock and Variety.<a href='https://festivalnet.com/101586/Asheville-North-Carolina/Festival-Concerts/Asheville-Downtown-After-Five-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Downtown After Five - June",
     },
     {
@@ -2098,7 +2146,7 @@ const events = [
         name: `Song Sessions: Maia Sharp with Randy Sharp and Don Henry (2026-06-19 -> 2026-06-20)`,
         sort_time: "2026-06-19 00:00:00",
         end_time_formatted: "2026-06-19 23:59",
-        detail: "2026-06-19 23:59",
+        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis June, Maia Sharp is joined by her dad Randy Sharp and Don Henry. \nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\n\nRandy Sharp is a legendary Nashville songwriter, producer, and artist with seven No. 1 country singles and a catalog recorded by icons such as Emmylou Harris, Reba McEntire, Patty Loveless, Clay Walker, Alabama, and The Chicks. His songs include major hits like “A Tender Lie,” “Why Does It Have to Be Wrong or Right,” “Then What,” and “The Cheap Seats,” with multiple Million-Air Club honors and credits spanning film, television, and acclaimed production work. A Grammy winner and longtime leader within the songwriting community, Sharp is widely respected as both a hitmaker and mentor.\n\nDon Henry is a Grammy-winning songwriter best known for the timeless classic “Where’ve You Been,” the first country song to win Song of the Year from the Grammy Awards, ACM, CMA, and NSAI in the same year. His songs have been recorded by artists ranging from Ray Charles and Conway Twitty to Blake Shelton, Miranda Lambert, and Lonestar, and his work is celebrated for its wit, depth, and emotional storytelling. A compelling performer as well, Henry has shared stages with everyone from Joey Ramone to Keith Urban, cementing his reputation as one of Nashville’s most revered songwriters.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2110,7 +2158,7 @@ const events = [
         name: `Food Truck: Blue Sky Cafe`,
         sort_time: "2026-06-19 12:00:00",
         end_time_formatted: "2026-06-19 20:00",
-        detail: "2026-06-19 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2122,7 +2170,7 @@ const events = [
         name: `SETH AND SARA`,
         sort_time: "2026-06-19 16:00:00",
         end_time_formatted: "2026-06-19 19:00",
-        detail: "2026-06-19 19:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -2134,7 +2182,7 @@ const events = [
         name: `Beginning of Summer Kick-Off with Showboat - Haus Heidelberg Food Truck`,
         sort_time: "2026-06-19 18:00:00",
         end_time_formatted: "2026-06-19 21:00",
-        detail: "2026-06-19 21:00",
+        detail: "Come Dance the night away with the Showboat- Summer Kick-off Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -2146,7 +2194,7 @@ const events = [
         name: `Country Pour`,
         sort_time: "2026-06-19 18:00:00",
         end_time_formatted: "2026-06-19 20:00",
-        detail: "2026-06-19 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -2158,7 +2206,7 @@ const events = [
         name: `Beginning of Summer Kick-Off with Showboat - Haus Heidelberg Food Truck`,
         sort_time: "2026-06-19 18:00:00",
         end_time_formatted: "2026-06-19 21:00",
-        detail: "2026-06-19 21:00",
+        detail: "Come Dance the night away with the Showboat- Summer Kick-off Friday night June 20th from 6:00 till 9:00. Haus Heidelberg Food Truck on Site. Start the season off with our Dance party, enjoy Great Wine, Cider and Beer along with Great Friends and Great Food. See you on the Dance Floor",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -2170,7 +2218,7 @@ const events = [
         name: `Live Music: Sleeping Dogz`,
         sort_time: "2026-06-19 18:00:00",
         end_time_formatted: "2026-06-19 21:00",
-        detail: "2026-06-19 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2182,7 +2230,7 @@ const events = [
         name: `Music: Skyler Jacobson`,
         sort_time: "2026-06-19 19:00:00",
         end_time_formatted: "2026-06-19 22:00",
-        detail: "2026-06-19 22:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2194,7 +2242,7 @@ const events = [
         name: `Fairlight and the Magick`,
         sort_time: "2026-06-19 19:00:00",
         end_time_formatted: "2026-06-19 21:00",
-        detail: "2026-06-19 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -2206,7 +2254,7 @@ const events = [
         name: `Big Radio`,
         sort_time: "2026-06-19 20:00:00",
         end_time_formatted: "2026-06-19 23:00",
-        detail: "2026-06-19 23:00",
+        detail: "Music starts @8pm! $5 cover!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -2218,7 +2266,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-20 00:00:00",
         end_time_formatted: "2026-06-20 23:59",
-        detail: "2026-06-20 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -2230,7 +2278,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-20 00:00:00",
         end_time_formatted: "2026-06-20 23:59",
-        detail: "2026-06-20 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -2242,7 +2290,7 @@ const events = [
         name: `Ooh La La Curiosity Market - June (Jun 13 -> Jun 20)`,
         sort_time: "2026-06-20 00:00:00",
         end_time_formatted: "2026-06-20 23:59",
-        detail: "2026-06-20 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85794/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - June",
     },
     {
@@ -2254,7 +2302,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-20 00:00:00",
         end_time_formatted: "2026-06-20 23:59",
-        detail: "2026-06-20 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -2266,7 +2314,7 @@ const events = [
         name: `Song Sessions: Maia Sharp with Randy Sharp and Don Henry (2026-06-19 -> 2026-06-20)`,
         sort_time: "2026-06-20 00:00:00",
         end_time_formatted: "2026-06-20 23:59",
-        detail: "2026-06-20 23:59",
+        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis June, Maia Sharp is joined by her dad Randy Sharp and Don Henry. \nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\n\nRandy Sharp is a legendary Nashville songwriter, producer, and artist with seven No. 1 country singles and a catalog recorded by icons such as Emmylou Harris, Reba McEntire, Patty Loveless, Clay Walker, Alabama, and The Chicks. His songs include major hits like “A Tender Lie,” “Why Does It Have to Be Wrong or Right,” “Then What,” and “The Cheap Seats,” with multiple Million-Air Club honors and credits spanning film, television, and acclaimed production work. A Grammy winner and longtime leader within the songwriting community, Sharp is widely respected as both a hitmaker and mentor.\n\nDon Henry is a Grammy-winning songwriter best known for the timeless classic “Where’ve You Been,” the first country song to win Song of the Year from the Grammy Awards, ACM, CMA, and NSAI in the same year. His songs have been recorded by artists ranging from Ray Charles and Conway Twitty to Blake Shelton, Miranda Lambert, and Lonestar, and his work is celebrated for its wit, depth, and emotional storytelling. A compelling performer as well, Henry has shared stages with everyone from Joey Ramone to Keith Urban, cementing his reputation as one of Nashville’s most revered songwriters.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2278,7 +2326,7 @@ const events = [
         name: `Blue Ridge Artisan Summer Solstice Market`,
         sort_time: "2026-06-20 11:30:00",
         end_time_formatted: "2026-06-20 16:30",
-        detail: "2026-06-20 16:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2290,7 +2338,7 @@ const events = [
         name: `Food Truck: Beefy Boys`,
         sort_time: "2026-06-20 12:00:00",
         end_time_formatted: "2026-06-20 20:00",
-        detail: "2026-06-20 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2302,7 +2350,7 @@ const events = [
         name: `Saturday Yoga Class`,
         sort_time: "2026-06-20 12:00:00",
         end_time_formatted: "2026-06-20 13:00",
-        detail: "2026-06-20 13:00",
+        detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -2314,7 +2362,7 @@ const events = [
         name: `Bistro Betty - Food Truck`,
         sort_time: "2026-06-20 12:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "2026-06-20 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -2326,7 +2374,7 @@ const events = [
         name: `STEVE WEAMS & THE CARIBBEAN COWBOYS`,
         sort_time: "2026-06-20 13:00:00",
         end_time_formatted: "2026-06-20 16:00",
-        detail: "2026-06-20 16:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -2338,7 +2386,7 @@ const events = [
         name: `The Headtones`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "2026-06-20 17:00",
+        detail: "The HeadTones, comprising top talent from the Tampa Bay reggae scene, came together to redefine the sound of funk and soul. The band combines new school vibes with funky vintage ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2350,7 +2398,7 @@ const events = [
         name: `Seth and Sara - Live Music`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "2026-06-20 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -2362,7 +2410,7 @@ const events = [
         name: `Live Music: Mike Pauer`,
         sort_time: "2026-06-20 14:00:00",
         end_time_formatted: "2026-06-20 17:00",
-        detail: "2026-06-20 17:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2374,7 +2422,7 @@ const events = [
         name: `Bill and Tad Amazing Duo at the Ridge!`,
         sort_time: "2026-06-20 15:00:00",
         end_time_formatted: "2026-06-20 18:00",
-        detail: "2026-06-20 18:00",
+        detail: "An afternoon with Bill and Tad! Doesn\'t get any better than that, great music, great cider and great friends! See you at the Ridge",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -2386,7 +2434,7 @@ const events = [
         name: `First time at Saint Paul..The Backyard Revival! Mountain Man BBQ Truck on site`,
         sort_time: "2026-06-20 15:00:00",
         end_time_formatted: "2026-06-20 18:00",
-        detail: "2026-06-20 18:00",
+        detail: "The Backyard Revival is a Soulful Americana duo of singer-songwriters Sarah Little Drum and Brian Bingham. Blending acoustic folk, bluegrass, and jazz influences, and their heartfelt harmonies. Mountain Man BBQ truck on site. Don\'t miss this show!",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -2398,7 +2446,7 @@ const events = [
         name: `Rockin’ on the Rock with Asheville Junction`,
         sort_time: "2026-06-20 17:00:00",
         end_time_formatted: "2026-06-20 23:59",
-        detail: "2026-06-20 23:59",
+        detail: "None",
         location: "Jump Off Rock, Laurel Park, NC and Laurel Green Park",
     },
     {
@@ -2410,7 +2458,7 @@ const events = [
         name: `Myron Hyman`,
         sort_time: "2026-06-20 18:00:00",
         end_time_formatted: "2026-06-20 20:00",
-        detail: "2026-06-20 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -2422,7 +2470,7 @@ const events = [
         name: `Live Music: Purrbox`,
         sort_time: "2026-06-20 18:00:00",
         end_time_formatted: "2026-06-20 21:00",
-        detail: "2026-06-20 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2434,7 +2482,7 @@ const events = [
         name: `Jamie McLean Band`,
         sort_time: "2026-06-20 18:30:00",
         end_time_formatted: "2026-06-20 21:00",
-        detail: "2026-06-20 21:00",
+        detail: "Jamie McLean Band creates a musical gumbo that incorporates New Orleans soul, middle Americana roots, Delta blues and New York City swagger. Jamie McLean Band is a triple threat. The ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2446,7 +2494,7 @@ const events = [
         name: `Hendersonville Street Dance: White Water Bluegrass Company`,
         sort_time: "2026-06-20 19:00:00",
         end_time_formatted: "2026-06-20 21:00",
-        detail: "2026-06-20 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -2458,7 +2506,7 @@ const events = [
         name: `The Mattocks-Johnson Band`,
         sort_time: "2026-06-20 19:00:00",
         end_time_formatted: "2026-06-20 21:00",
-        detail: "2026-06-20 21:00",
+        detail: "The Mattocks - Johnson Band rocks Southern Appalachian Brewery once again with our brand of Blues and Classic Rock.",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -2470,7 +2518,7 @@ const events = [
         name: `Kayla McKinney`,
         sort_time: "2026-06-20 20:00:00",
         end_time_formatted: "2026-06-20 23:00",
-        detail: "2026-06-20 23:00",
+        detail: "Music starts @8pm! $5 cover!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -2482,7 +2530,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-21 00:00:00",
         end_time_formatted: "2026-06-21 23:59",
-        detail: "2026-06-21 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -2494,7 +2542,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-21 00:00:00",
         end_time_formatted: "2026-06-21 23:59",
-        detail: "2026-06-21 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -2506,7 +2554,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-21 00:00:00",
         end_time_formatted: "2026-06-21 23:59",
-        detail: "2026-06-21 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -2518,7 +2566,7 @@ const events = [
         name: `Food Truck: Papa's Express`,
         sort_time: "2026-06-21 12:00:00",
         end_time_formatted: "2026-06-21 20:00",
-        detail: "2026-06-21 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2530,7 +2578,7 @@ const events = [
         name: `Grass Roots Pizza - Food Truck`,
         sort_time: "2026-06-21 12:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "2026-06-21 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -2542,7 +2590,7 @@ const events = [
         name: `Hendo Jam Brunch w/Highway 52 - Father’s Day Edition`,
         sort_time: "2026-06-21 13:00:00",
         end_time_formatted: "2026-06-21 16:00",
-        detail: "2026-06-21 16:00",
+        detail: "In January of 2014 Todd Hoke, Mare Carmody and Michael Carver played the first Gospel Brunch at Southern Appalachian Brewery. The Gospel Brunch became a popular Hendersonville community event held…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -2554,7 +2602,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "2026-06-21 17:00",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2566,7 +2614,7 @@ const events = [
         name: `Three Shades of Grey - Live Music`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "2026-06-21 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -2578,7 +2626,7 @@ const events = [
         name: `Live Music: Collin Cheek`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "2026-06-21 17:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2590,7 +2638,7 @@ const events = [
         name: `Live Music With Jarret Forrester at Appalachian Ridge`,
         sort_time: "2026-06-21 14:30:00",
         end_time_formatted: "2026-06-21 17:30",
-        detail: "2026-06-21 17:30",
+        detail: "Sunday afternoon at the Ridge, Live Music with Jared Forrester. Enjoy great music with our Great cider, wine or beer",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -2602,7 +2650,7 @@ const events = [
         name: `Craig St John live at Saint Paul Mountain Vineyards`,
         sort_time: "2026-06-21 14:30:00",
         end_time_formatted: "2026-06-21 17:30",
-        detail: "2026-06-21 17:30",
+        detail: "Saint Paul Mountain Vineyards welcomes Craig St John to the vineyard! Craig St John is a former lead vocalist for ‘the Super 60s’ and is sure to impress, with his wide range of vocal abilities. Music genres of all types! Charcuterie available or bring your own snacks.",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -2614,7 +2662,7 @@ const events = [
         name: `THE JACKTOWN RAMBLERS`,
         sort_time: "2026-06-21 15:00:00",
         end_time_formatted: "2026-06-21 18:00",
-        detail: "2026-06-21 18:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -2626,7 +2674,7 @@ const events = [
         name: `Kate Leigh Bryant`,
         sort_time: "2026-06-21 15:00:00",
         end_time_formatted: "2026-06-21 18:00",
-        detail: "2026-06-21 18:00",
+        detail: "Music starts @3pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -2638,7 +2686,7 @@ const events = [
         name: `Allen Stone`,
         sort_time: "2026-06-21 19:30:00",
         end_time_formatted: "2026-06-21 23:59",
-        detail: "2026-06-21 23:59",
+        detail: "Allen Stone, a soul/R&B luminary, has enraptured global audiences with his electrifying performances and soulful melodies, embodying the essence of classic soul legends. His genre-defying style, blending funk, gospel, folk-rock, and soul, has garnered critical acclaim and a devoted following. Stone\'s journey to musical stardom commenced in Chewelah, Washington, where his upbringing immersed him in gospel music as a pastor\'s son.\n\nRelocating to Seattle, he tirelessly toured the West Coast in his \'87 Buick, swiftly gaining acclaim for his dynamic live shows, often playing up to 200 dates annually alongside luminaries such as Stevie Wonder, Al Green, Dave Matthews Band, Erykah Badu, Gary Clark Jr., and Chris Stapleton, further solidifying his status as a tour de force in the music industry. Alongside his prolific touring schedule, Stone has graced national television screens, including The Kelly Clarkson Show, Jimmy Kimmel Live, The Today Show, and a celebrity mentor on ABC\'s American Idol.\n\nStone continues to garner critical acclaim with his latest body of work, Mystery, featuring the title track in collaboration with PJ Morton. This release brings infectious rhythms and emotional depth, solidifying Stone’s place as a powerful voice in modern soul music.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2650,7 +2698,7 @@ const events = [
         name: `Bird and Byron`,
         sort_time: "2026-06-21 19:30:00",
         end_time_formatted: "2026-06-21 23:59",
-        detail: "2026-06-21 23:59",
+        detail: "Bird and Byron are an indie rock and soul duo based in Nashville, TN. After launching their careers in Los Angeles, Blake (Bird) and Nick (Byron) returned to their hometown of Columbus, OH during the pandemic. There, they released their first four singles, a music video for Life Is a Bore, and began their One Take Tuesday series, which drew attention from artists such as James Taylor, Willow Smith, Coldplay, and Noah Kahan.\n\n \nThe success of One Take Tuesday led to the recording of their debut EP at Nashville’s Bomb Shelter with producer Andrija Tokic, followed by sold-out shows and festival appearances.\nSince relocating to Nashville in 2022, Bird and Byron have headlined national tours, supported acts like Ocean Alley, Durand Jones, and Old Crow Medicine Show, released two additional EPs, and grown their audience to over 250,000 monthly Spotify listeners and 100,000+ TikTok followers.\n\n \nThey’ve secured sync placements in film and television, became the flagship artist for Lions Gate Records, and released their debut album in July 2023.\nBe there as the duo takes The Mockingbird stage this summer.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2662,7 +2710,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-22 00:00:00",
         end_time_formatted: "2026-06-22 23:59",
-        detail: "2026-06-22 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -2674,7 +2722,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-22 00:00:00",
         end_time_formatted: "2026-06-22 23:59",
-        detail: "2026-06-22 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -2686,7 +2734,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-22 00:00:00",
         end_time_formatted: "2026-06-22 23:59",
-        detail: "2026-06-22 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -2698,7 +2746,7 @@ const events = [
         name: `Food Truck: Toasted Cuban`,
         sort_time: "2026-06-22 16:00:00",
         end_time_formatted: "2026-06-22 20:00",
-        detail: "2026-06-22 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2710,7 +2758,7 @@ const events = [
         name: `Traditional Irish Music Session`,
         sort_time: "2026-06-22 16:00:00",
         end_time_formatted: "2026-06-22 18:00",
-        detail: "2026-06-22 18:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2722,7 +2770,7 @@ const events = [
         name: `Board Game Club`,
         sort_time: "2026-06-22 18:00:00",
         end_time_formatted: "2026-06-22 21:00",
-        detail: "2026-06-22 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2734,7 +2782,7 @@ const events = [
         name: `Chess Club`,
         sort_time: "2026-06-22 18:00:00",
         end_time_formatted: "2026-06-22 20:00",
-        detail: "2026-06-22 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2746,7 +2794,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-23 00:00:00",
         end_time_formatted: "2026-06-23 23:59",
-        detail: "2026-06-23 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -2758,7 +2806,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-23 00:00:00",
         end_time_formatted: "2026-06-23 23:59",
-        detail: "2026-06-23 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -2770,7 +2818,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-23 00:00:00",
         end_time_formatted: "2026-06-23 23:59",
-        detail: "2026-06-23 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -2782,7 +2830,7 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-06-23 16:00:00",
         end_time_formatted: "2026-06-23 20:00",
-        detail: "2026-06-23 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2794,7 +2842,7 @@ const events = [
         name: `TERRAOKE | Free Karaoke Night!`,
         sort_time: "2026-06-23 17:00:00",
         end_time_formatted: "2026-06-23 21:00",
-        detail: "2026-06-23 21:00",
+        detail: "Join us Tuesday, June 23rd from 5-9pm in the Sierra Nevada High Gravity Room for Terraoke! Free and family friendly Karaoke!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -2806,7 +2854,7 @@ const events = [
         name: `Round Robin Open Mic Hosted by Letters To Abigail`,
         sort_time: "2026-06-23 18:00:00",
         end_time_formatted: "2026-06-23 21:00",
-        detail: "2026-06-23 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2818,7 +2866,7 @@ const events = [
         name: `Balourdet Quartet`,
         sort_time: "2026-06-23 19:30:00",
         end_time_formatted: "2026-06-23 23:59",
-        detail: "2026-06-23 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -2830,7 +2878,7 @@ const events = [
         name: `Theme: Bark n’ Brew`,
         sort_time: "2026-06-24 00:00:00",
         end_time_formatted: "2026-06-24 23:59",
-        detail: "2026-06-24 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -2842,7 +2890,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-24 00:00:00",
         end_time_formatted: "2026-06-24 23:59",
-        detail: "2026-06-24 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -2854,7 +2902,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-24 00:00:00",
         end_time_formatted: "2026-06-24 23:59",
-        detail: "2026-06-24 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -2866,7 +2914,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-24 00:00:00",
         end_time_formatted: "2026-06-24 23:59",
-        detail: "2026-06-24 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -2878,7 +2926,7 @@ const events = [
         name: `Food Truck: Carolina Ace`,
         sort_time: "2026-06-24 16:00:00",
         end_time_formatted: "2026-06-24 20:00",
-        detail: "2026-06-24 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2890,7 +2938,7 @@ const events = [
         name: `Holler & Crow (Joyful folk fusion magic, Alt-Celtic, Newgrass)`,
         sort_time: "2026-06-24 17:30:00",
         end_time_formatted: "2026-06-24 20:30",
-        detail: "2026-06-24 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -2902,7 +2950,7 @@ const events = [
         name: `Event: Opinionary`,
         sort_time: "2026-06-24 18:00:00",
         end_time_formatted: "2026-06-24 20:00",
-        detail: "2026-06-24 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -2914,7 +2962,7 @@ const events = [
         name: `Jason DeCristofaro’s Jazz Night`,
         sort_time: "2026-06-24 18:00:00",
         end_time_formatted: "2026-06-24 20:00",
-        detail: "2026-06-24 20:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -2926,7 +2974,7 @@ const events = [
         name: `FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell`,
         sort_time: "2026-06-24 18:00:00",
         end_time_formatted: "2026-06-24 20:00",
-        detail: "2026-06-24 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2938,7 +2986,7 @@ const events = [
         name: `Hendersonville Outfitters: Fly Tying Night`,
         sort_time: "2026-06-24 18:00:00",
         end_time_formatted: "2026-06-24 20:00",
-        detail: "2026-06-24 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -2950,7 +2998,7 @@ const events = [
         name: `World of Schumann`,
         sort_time: "2026-06-24 19:30:00",
         end_time_formatted: "2026-06-24 23:59",
-        detail: "2026-06-24 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -2962,7 +3010,7 @@ const events = [
         name: `Theme:`,
         sort_time: "2026-06-25 00:00:00",
         end_time_formatted: "2026-06-25 23:59",
-        detail: "2026-06-25 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -2974,7 +3022,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-25 00:00:00",
         end_time_formatted: "2026-06-25 23:59",
-        detail: "2026-06-25 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -2986,7 +3034,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-25 00:00:00",
         end_time_formatted: "2026-06-25 23:59",
-        detail: "2026-06-25 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -2998,7 +3046,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-25 00:00:00",
         end_time_formatted: "2026-06-25 23:59",
-        detail: "2026-06-25 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -3010,8 +3058,20 @@ const events = [
         name: `Food Truck:  Sunrise Eats`,
         sort_time: "2026-06-25 16:00:00",
         end_time_formatted: "2026-06-25 20:00",
-        detail: "2026-06-25 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-06-25",
+        start_time: "4:30 PM",
+        end_time: "6:00 PM",
+        name: `Thirsty Thursdays`,
+        sort_time: "2026-06-25 16:30:00",
+        end_time_formatted: "2026-06-25 18:00:00",
+        detail: "A one-a-month happy hour.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -3022,7 +3082,7 @@ const events = [
         name: `Cheesecake & Flight Pairing`,
         sort_time: "2026-06-25 17:00:00",
         end_time_formatted: "2026-06-25 20:00",
-        detail: "2026-06-25 20:00",
+        detail: "Treat yourself to the perfect sweet-and-sip experience! Join us for a delicious pairing featuring: 4 mini cheesecakes paired with a flight of 4 ciders for just $18",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -3034,7 +3094,7 @@ const events = [
         name: `Anne Coombs Jazz Trio (Jazz and Originals)`,
         sort_time: "2026-06-25 17:30:00",
         end_time_formatted: "2026-06-25 20:30",
-        detail: "2026-06-25 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -3046,7 +3106,7 @@ const events = [
         name: `Event: Open Mic Night`,
         sort_time: "2026-06-25 18:00:00",
         end_time_formatted: "2026-06-25 21:00",
-        detail: "2026-06-25 21:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3058,7 +3118,7 @@ const events = [
         name: `Ellen, Howie, and Woody`,
         sort_time: "2026-06-25 18:00:00",
         end_time_formatted: "2026-06-25 20:00",
-        detail: "2026-06-25 20:00",
+        detail: "We’re excited to welcome back a favorite trio comprised of Ellen Trnka, Howie Johnson, and Craig “Woody”.\nAlways a rocking night!",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -3070,7 +3130,7 @@ const events = [
         name: `Trailside Run Club`,
         sort_time: "2026-06-25 18:00:00",
         end_time_formatted: "2026-06-25 19:00",
-        detail: "2026-06-25 19:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3082,7 +3142,7 @@ const events = [
         name: `Trailside Trivia`,
         sort_time: "2026-06-25 18:30:00",
         end_time_formatted: "2026-06-25 20:30",
-        detail: "2026-06-25 20:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3094,7 +3154,7 @@ const events = [
         name: `The Marriage of Figaro`,
         sort_time: "2026-06-25 19:30:00",
         end_time_formatted: "2026-06-25 23:59",
-        detail: "2026-06-25 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -3106,7 +3166,7 @@ const events = [
         name: `Paul McDonald & The Mourning Doves`,
         sort_time: "2026-06-25 19:30:00",
         end_time_formatted: "2026-06-25 23:59",
-        detail: "2026-06-25 23:59",
+        detail: "Born in Alabama and baptized in the dive bars of the southeast, Paul McDonald first made noise with the Grand Magnolias, a roots-rock outfit, before catching fire in the public eye during American Idol’s 2011 run. When the bright lights blurred and the cameras turned, the man behind the voice slipped into the shadows where he did what real artists do: he lived, he lost, and he wrote. Retreating to Nashville, that holy city of reinvention, Paul stitched himself back together with worn boots, hard songs, and a new band called the Mourning Doves.\n \n\n \nNow, the giant has stirred with the release of So Long to the Dark Side-a gospel-tinged reckoning wrapped in cosmic Americana and lit with songs that sound like they were scribbled on the edge of a breakdown and sung back from the brink. Raised on Petty, Parsons, and pain, Paul McDonald is not chasing trends; he’s conjuring something older and truer. His live performances are equal parts revival and rock séance.\n \n\n \nIn a breakthrough moment, Paul McDonald & the Mourning Doves brought the songs of So Long to the Dark Side and more to the headline stage at the 17th Annual 30A Songwriters Festival in front of a wildly enthusiastic crowd that followed him to a couple of evening performances over the weekend and established him as the 2026 Festival buzz band. Throughout 2026, Paul will tour every market in the U.S. in support of the new record.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -3118,7 +3178,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-26 00:00:00",
         end_time_formatted: "2026-06-26 23:59",
-        detail: "2026-06-26 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3130,7 +3190,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-26 00:00:00",
         end_time_formatted: "2026-06-26 23:59",
-        detail: "2026-06-26 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -3142,7 +3202,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-26 00:00:00",
         end_time_formatted: "2026-06-26 23:59",
-        detail: "2026-06-26 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -3154,7 +3214,7 @@ const events = [
         name: `Food Truck: Los 3 Jalapeno's`,
         sort_time: "2026-06-26 12:00:00",
         end_time_formatted: "2026-06-26 20:00",
-        detail: "2026-06-26 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3166,7 +3226,7 @@ const events = [
         name: `LETTERS TO ABIGAIL`,
         sort_time: "2026-06-26 16:00:00",
         end_time_formatted: "2026-06-26 19:00",
-        detail: "2026-06-26 19:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -3178,7 +3238,7 @@ const events = [
         name: `Friday Night Music series Lewendahl - Laura and Tim Levene - Appalachian Ridge Artisan Cidery`,
         sort_time: "2026-06-26 18:00:00",
         end_time_formatted: "2026-06-26 21:00",
-        detail: "2026-06-26 21:00",
+        detail: "Friday night of the season! Enjoy Lewendahl to start our music series off! Great music, Cider, Wine and Beer. See you at the Ridge! Food will be available Mountain Man BBQ Food truck on site for your dining pleasure!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -3190,7 +3250,7 @@ const events = [
         name: `Finklestein 3`,
         sort_time: "2026-06-26 18:00:00",
         end_time_formatted: "2026-06-26 20:00",
-        detail: "2026-06-26 20:00",
+        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -3202,7 +3262,7 @@ const events = [
         name: `Live Music: Andrew Thelston Band`,
         sort_time: "2026-06-26 18:00:00",
         end_time_formatted: "2026-06-26 21:00",
-        detail: "2026-06-26 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3214,7 +3274,7 @@ const events = [
         name: `Music: The Loudes`,
         sort_time: "2026-06-26 19:00:00",
         end_time_formatted: "2026-06-26 22:00",
-        detail: "2026-06-26 22:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3226,7 +3286,7 @@ const events = [
         name: `Opening Night: Garrick Ohlsson Plays Rachmaninoff`,
         sort_time: "2026-06-26 19:30:00",
         end_time_formatted: "2026-06-26 23:59",
-        detail: "2026-06-26 23:59",
+        detail: "Brevard Music Center Orchestra\nKeith Lockhart, conductor\nGarrick Ohlsson, piano",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -3238,7 +3298,7 @@ const events = [
         name: `Scenic Radio LIVE @ Oklawha!`,
         sort_time: "2026-06-26 20:00:00",
         end_time_formatted: "2026-06-26 23:00",
-        detail: "2026-06-26 23:00",
+        detail: "Music starts @8pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -3250,7 +3310,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-27 00:00:00",
         end_time_formatted: "2026-06-27 23:59",
-        detail: "2026-06-27 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3262,7 +3322,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-27 00:00:00",
         end_time_formatted: "2026-06-27 23:59",
-        detail: "2026-06-27 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -3274,7 +3334,7 @@ const events = [
         name: `Asheville Art in the Park - June (Jun 13 -> Jun 27)`,
         sort_time: "2026-06-27 00:00:00",
         end_time_formatted: "2026-06-27 23:59",
-        detail: "2026-06-27 23:59",
+        detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
     },
     {
@@ -3286,7 +3346,7 @@ const events = [
         name: `Reptiday Asheville Reptile & Exotic Animal Show (Jun 27 -> Jun 28)`,
         sort_time: "2026-06-27 00:00:00",
         end_time_formatted: "2026-06-27 23:59",
-        detail: "2026-06-27 23:59",
+        detail: "<a href='https://festivalnet.com/68468/Fletcher-North-Carolina/Pet-themed-Events/Reptiday-Asheville-Reptile-Exotic-Animal-Show' target='_blank'> <em>link</em></a>",
         location: "Festival Net Reptiday Asheville Reptile & Exotic Animal Show",
     },
     {
@@ -3298,7 +3358,7 @@ const events = [
         name: `Summer Session Race - Kick it Events`,
         sort_time: "2026-06-27 07:45:00",
         end_time_formatted: "2026-06-27 10:30",
-        detail: "2026-06-27 10:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3310,7 +3370,7 @@ const events = [
         name: `Bold Birthday Bash`,
         sort_time: "2026-06-27 12:00:00",
         end_time_formatted: "2026-06-27 21:00",
-        detail: "2026-06-27 21:00",
+        detail: "We’re celebrating 14 years of Bold Rock the best way we know how, with cider, cake, music, and an all-day party!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
@@ -3322,7 +3382,7 @@ const events = [
         name: `Food Truck: Magik Eye Pizza`,
         sort_time: "2026-06-27 12:00:00",
         end_time_formatted: "2026-06-27 20:00",
-        detail: "2026-06-27 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3334,7 +3394,7 @@ const events = [
         name: `Saturday Yoga Class`,
         sort_time: "2026-06-27 12:00:00",
         end_time_formatted: "2026-06-27 13:00",
-        detail: "2026-06-27 13:00",
+        detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -3346,7 +3406,7 @@ const events = [
         name: `El Bodegon - Food Truck`,
         sort_time: "2026-06-27 12:00:00",
         end_time_formatted: "2026-06-27 17:00",
-        detail: "2026-06-27 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -3358,7 +3418,7 @@ const events = [
         name: `THE PAPER CROWNS`,
         sort_time: "2026-06-27 13:00:00",
         end_time_formatted: "2026-06-27 16:00",
-        detail: "2026-06-27 16:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -3370,7 +3430,7 @@ const events = [
         name: `TrancEnd Band`,
         sort_time: "2026-06-27 14:00:00",
         end_time_formatted: "2026-06-27 17:00",
-        detail: "2026-06-27 17:00",
+        detail: "TrancEnd is an alt-rock band based out of Western NC / Upstate SC, covering 90’s, 2000’s AND MORE!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3382,7 +3442,7 @@ const events = [
         name: `Raphael Graves - Live Music`,
         sort_time: "2026-06-27 14:00:00",
         end_time_formatted: "2026-06-27 17:00",
-        detail: "2026-06-27 17:00",
+        detail: "",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -3394,7 +3454,7 @@ const events = [
         name: `Craig St John live at Appalachian Ridge Cidery`,
         sort_time: "2026-06-27 15:00:00",
         end_time_formatted: "2026-06-27 18:00",
-        detail: "2026-06-27 18:00",
+        detail: "Appalachian Ridge welcomes Craig St John to the Barn! Craig St John is a former lead vocalist for ‘the Super 60s’ and is sure to impress, with his wide range of vocal abilities. Music genres of all types! Charcuterie options available or bring your own snacks!",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -3406,7 +3466,7 @@ const events = [
         name: `Dulci`,
         sort_time: "2026-06-27 18:30:00",
         end_time_formatted: "2026-06-27 21:00",
-        detail: "2026-06-27 21:00",
+        detail: "Dulci brings an ageless, classic style to pop music with her smooth vocals and warm melodies. With repertoire of original songs and updated covers, Dulci is where classic vocal beauty ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3418,7 +3478,7 @@ const events = [
         name: `An Evening of John Prine Music by Highway 52`,
         sort_time: "2026-06-27 19:00:00",
         end_time_formatted: "2026-06-27 21:00",
-        detail: "2026-06-27 21:00",
+        detail: "ighway 52 will do a repeat performance of the songs of John Prine spanning his entire career. You’ll hear favorites as well as some lesser known songs that will become…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -3430,7 +3490,7 @@ const events = [
         name: `BMC Presents: Nathan Chester and The Old Souls Motown Revival`,
         sort_time: "2026-06-27 19:30:00",
         end_time_formatted: "2026-06-27 23:59",
-        detail: "2026-06-27 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -3442,7 +3502,7 @@ const events = [
         name: `Raphael Graves Band`,
         sort_time: "2026-06-27 20:00:00",
         end_time_formatted: "2026-06-27 23:00",
-        detail: "2026-06-27 23:00",
+        detail: "Music starts @8pm! $7 cover",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -3454,7 +3514,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-28 00:00:00",
         end_time_formatted: "2026-06-28 23:59",
-        detail: "2026-06-28 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3466,7 +3526,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-28 00:00:00",
         end_time_formatted: "2026-06-28 23:59",
-        detail: "2026-06-28 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -3478,7 +3538,7 @@ const events = [
         name: `Reptiday Asheville Reptile & Exotic Animal Show (Jun 27 -> Jun 28)`,
         sort_time: "2026-06-28 00:00:00",
         end_time_formatted: "2026-06-28 23:59",
-        detail: "2026-06-28 23:59",
+        detail: "<a href='https://festivalnet.com/68468/Fletcher-North-Carolina/Pet-themed-Events/Reptiday-Asheville-Reptile-Exotic-Animal-Show' target='_blank'> <em>link</em></a>",
         location: "Festival Net Reptiday Asheville Reptile & Exotic Animal Show",
     },
     {
@@ -3490,7 +3550,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-06-28 00:00:00",
         end_time_formatted: "2026-06-28 23:59",
-        detail: "2026-06-28 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -3502,7 +3562,7 @@ const events = [
         name: `Food Truck: Papa's Express`,
         sort_time: "2026-06-28 12:00:00",
         end_time_formatted: "2026-06-28 20:00",
-        detail: "2026-06-28 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3514,7 +3574,7 @@ const events = [
         name: `J STEPHENS`,
         sort_time: "2026-06-28 13:00:00",
         end_time_formatted: "2026-06-28 16:00",
-        detail: "2026-06-28 16:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -3526,7 +3586,7 @@ const events = [
         name: `CarolinAloha`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "2026-06-28 17:00",
+        detail: "CarolinAloha is the melding of three loves: the Mountains, the Ocean, and Music. Founded by Billy Cardine, a master of all things slide, Billy finds inspiration from the beautiful Hawaiian ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3538,7 +3598,7 @@ const events = [
         name: `Live Music: Steve Robinson`,
         sort_time: "2026-06-28 14:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "2026-06-28 17:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3550,7 +3610,7 @@ const events = [
         name: `Daniel Sage at Appalachian Ridge Sunday on the Deck!`,
         sort_time: "2026-06-28 14:30:00",
         end_time_formatted: "2026-06-28 17:30",
-        detail: "2026-06-28 17:30",
+        detail: "Enjoy live tunes with Daniel Sage while enjoying a delicious glass of wine, cider or beer! Please feel free to bring your own food. A great way to spend Sunday afternoon",
         location: "Appalachian Ridge 749 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -3562,7 +3622,7 @@ const events = [
         name: `America 250`,
         sort_time: "2026-06-28 15:00:00",
         end_time_formatted: "2026-06-28 23:59",
-        detail: "2026-06-28 23:59",
+        detail: "Brevard Sinfonia\nKeith Lockhart, conductor\nCharles Vernon, trombone\nDavid Jackson, trombone\nScott Hartman, bass trombone\nAubrey Foard, tuba",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -3574,7 +3634,7 @@ const events = [
         name: `Watercoloring Workshop`,
         sort_time: "2026-06-28 15:00:00",
         end_time_formatted: "2026-06-28 17:00",
-        detail: "2026-06-28 17:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3586,7 +3646,7 @@ const events = [
         name: `Music by the Lake: Asheville Junction`,
         sort_time: "2026-06-28 17:00:00",
         end_time_formatted: "2026-06-28 19:00",
-        detail: "2026-06-28 19:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -3598,7 +3658,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-29 00:00:00",
         end_time_formatted: "2026-06-29 23:59",
-        detail: "2026-06-29 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3610,7 +3670,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-29 00:00:00",
         end_time_formatted: "2026-06-29 23:59",
-        detail: "2026-06-29 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -3622,7 +3682,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-06-29 00:00:00",
         end_time_formatted: "2026-06-29 23:59",
-        detail: "2026-06-29 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -3634,7 +3694,7 @@ const events = [
         name: `Food Truck: Heidi Ho`,
         sort_time: "2026-06-29 16:00:00",
         end_time_formatted: "2026-06-29 20:00",
-        detail: "2026-06-29 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3646,7 +3706,7 @@ const events = [
         name: `Traditional Irish Music Session`,
         sort_time: "2026-06-29 16:00:00",
         end_time_formatted: "2026-06-29 18:00",
-        detail: "2026-06-29 18:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3658,7 +3718,7 @@ const events = [
         name: `Board Game Club`,
         sort_time: "2026-06-29 18:00:00",
         end_time_formatted: "2026-06-29 21:00",
-        detail: "2026-06-29 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3670,7 +3730,7 @@ const events = [
         name: `Chess Club`,
         sort_time: "2026-06-29 18:00:00",
         end_time_formatted: "2026-06-29 20:00",
-        detail: "2026-06-29 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3682,7 +3742,7 @@ const events = [
         name: `Beethoven\'s Ghost Trio`,
         sort_time: "2026-06-29 19:30:00",
         end_time_formatted: "2026-06-29 23:59",
-        detail: "2026-06-29 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -3694,7 +3754,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-06-30 00:00:00",
         end_time_formatted: "2026-06-30 23:59",
-        detail: "2026-06-30 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3706,7 +3766,7 @@ const events = [
         name: `West Asheville Tailgate Market - June (Jun 2 -> Jun 30)`,
         sort_time: "2026-06-30 00:00:00",
         end_time_formatted: "2026-06-30 23:59",
-        detail: "2026-06-30 23:59",
+        detail: "<a href='https://festivalnet.com/95038/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - June",
     },
     {
@@ -3718,7 +3778,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-06-30 00:00:00",
         end_time_formatted: "2026-06-30 23:59",
-        detail: "2026-06-30 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -3730,7 +3790,7 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-06-30 16:00:00",
         end_time_formatted: "2026-06-30 20:00",
-        detail: "2026-06-30 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3742,7 +3802,7 @@ const events = [
         name: `Round Robin Open Mic Hosted by Letters To Abigail`,
         sort_time: "2026-06-30 18:00:00",
         end_time_formatted: "2026-06-30 21:00",
-        detail: "2026-06-30 21:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3754,7 +3814,7 @@ const events = [
         name: `BMC Presents: Shannon Whitworth and Woody Platt with Orchestra`,
         sort_time: "2026-06-30 19:30:00",
         end_time_formatted: "2026-06-30 23:59",
-        detail: "2026-06-30 23:59",
+        detail: "Brevard Festival Orchestra\nKen Lam, conductor\nShannon Whitworth, guest artist\nWoody Platt, guest artist",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -3766,7 +3826,7 @@ const events = [
         name: `Theme: Founder’s Day Picnic`,
         sort_time: "2026-07-01 00:00:00",
         end_time_formatted: "2026-07-01 23:59",
-        detail: "2026-07-01 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -3778,7 +3838,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-01 00:00:00",
         end_time_formatted: "2026-07-01 23:59",
-        detail: "2026-07-01 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3790,7 +3850,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-01 00:00:00",
         end_time_formatted: "2026-07-01 23:59",
-        detail: "2026-07-01 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -3802,7 +3862,7 @@ const events = [
         name: `Food Truck: Carolina Ace`,
         sort_time: "2026-07-01 16:00:00",
         end_time_formatted: "2026-07-01 20:00",
-        detail: "2026-07-01 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3814,7 +3874,7 @@ const events = [
         name: `Jackson Grimm (Acoustic indie bluegrass and folk, and singing with some pop influences)`,
         sort_time: "2026-07-01 17:30:00",
         end_time_formatted: "2026-07-01 20:30",
-        detail: "2026-07-01 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -3826,7 +3886,7 @@ const events = [
         name: `Event: Opinionary`,
         sort_time: "2026-07-01 18:00:00",
         end_time_formatted: "2026-07-01 20:00",
-        detail: "2026-07-01 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3838,7 +3898,7 @@ const events = [
         name: `FBVMA Mountain Music jam Session with hosts Carol Rifkin & John Mitchell`,
         sort_time: "2026-07-01 18:00:00",
         end_time_formatted: "2026-07-01 20:00",
-        detail: "2026-07-01 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3850,7 +3910,7 @@ const events = [
         name: `Hendersonville Outfitters: Fly Tying Night`,
         sort_time: "2026-07-01 18:00:00",
         end_time_formatted: "2026-07-01 20:00",
-        detail: "2026-07-01 20:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3862,7 +3922,7 @@ const events = [
         name: `Shostakovich Piano Quintet`,
         sort_time: "2026-07-01 19:30:00",
         end_time_formatted: "2026-07-01 23:59",
-        detail: "2026-07-01 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -3874,7 +3934,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-02 00:00:00",
         end_time_formatted: "2026-07-02 23:59",
-        detail: "2026-07-02 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3886,7 +3946,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-02 00:00:00",
         end_time_formatted: "2026-07-02 23:59",
-        detail: "2026-07-02 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -3898,7 +3958,7 @@ const events = [
         name: `Food Truck: Los 3 Jalapeno's`,
         sort_time: "2026-07-02 16:00:00",
         end_time_formatted: "2026-07-02 20:00",
-        detail: "2026-07-02 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3910,7 +3970,7 @@ const events = [
         name: `Seth & Sara (Americana, Western originals, and Covers of all kinds)`,
         sort_time: "2026-07-02 17:30:00",
         end_time_formatted: "2026-07-02 20:30",
-        detail: "2026-07-02 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -3922,7 +3982,7 @@ const events = [
         name: `Event: Open Mic Night`,
         sort_time: "2026-07-02 18:00:00",
         end_time_formatted: "2026-07-02 21:00",
-        detail: "2026-07-02 21:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -3934,7 +3994,7 @@ const events = [
         name: `Trailside Run Club`,
         sort_time: "2026-07-02 18:00:00",
         end_time_formatted: "2026-07-02 19:00",
-        detail: "2026-07-02 19:00",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3946,7 +4006,7 @@ const events = [
         name: `Trailside Trivia`,
         sort_time: "2026-07-02 18:30:00",
         end_time_formatted: "2026-07-02 20:30",
-        detail: "2026-07-02 20:30",
+        detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
@@ -3958,7 +4018,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-03 00:00:00",
         end_time_formatted: "2026-07-03 23:59",
-        detail: "2026-07-03 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -3970,7 +4030,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-03 00:00:00",
         end_time_formatted: "2026-07-03 23:59",
-        detail: "2026-07-03 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -3982,7 +4042,7 @@ const events = [
         name: `Shindig on Main & Fireworks Extravaganza (Jul 3 -> Jul 4)`,
         sort_time: "2026-07-03 00:00:00",
         end_time_formatted: "2026-07-03 23:59",
-        detail: "2026-07-03 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Americana, Bluegrass, Blues, Country, Folk, Jazz, R & B/Soul and Rock, and there will be other activities like kids bike parade, fireworks.<a href='https://festivalnet.com/30302/Brevard-North-Carolina/Holiday-Celebrations/Shindig-on-Main-Fireworks-Extravaganza' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on Main & Fireworks Extravaganza",
     },
     {
@@ -3994,7 +4054,7 @@ const events = [
         name: `Food Truck: Beefy Boys`,
         sort_time: "2026-07-03 12:00:00",
         end_time_formatted: "2026-07-03 20:00",
-        detail: "2026-07-03 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4006,7 +4066,7 @@ const events = [
         name: `SETH AND SARA`,
         sort_time: "2026-07-03 16:00:00",
         end_time_formatted: "2026-07-03 19:00",
-        detail: "2026-07-03 19:00",
+        detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
@@ -4018,7 +4078,7 @@ const events = [
         name: `Congdon Griffin Band`,
         sort_time: "2026-07-03 18:30:00",
         end_time_formatted: "2026-07-03 21:00",
-        detail: "2026-07-03 21:00",
+        detail: "The Congdon Griffin Band features the original songs of Eric Congdon and Hope Griffin. Both are award winning musicians from Western North Carolina. Featuring beautiful vocals, soaring harmonies and searing ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4030,7 +4090,7 @@ const events = [
         name: `Brahms Symphony No. 4`,
         sort_time: "2026-07-03 19:30:00",
         end_time_formatted: "2026-07-03 23:59",
-        detail: "2026-07-03 23:59",
+        detail: "Brevard Music Center Orchestra\nAnna Rakitina, conductor\nNancy Zhou, violin",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4042,7 +4102,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-04 00:00:00",
         end_time_formatted: "2026-07-04 23:59",
-        detail: "2026-07-04 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4054,7 +4114,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-04 00:00:00",
         end_time_formatted: "2026-07-04 23:59",
-        detail: "2026-07-04 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4066,7 +4126,7 @@ const events = [
         name: `Shindig on Main & Fireworks Extravaganza (Jul 3 -> Jul 4)`,
         sort_time: "2026-07-04 00:00:00",
         end_time_formatted: "2026-07-04 23:59",
-        detail: "2026-07-04 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Americana, Bluegrass, Blues, Country, Folk, Jazz, R & B/Soul and Rock, and there will be other activities like kids bike parade, fireworks.<a href='https://festivalnet.com/30302/Brevard-North-Carolina/Holiday-Celebrations/Shindig-on-Main-Fireworks-Extravaganza' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on Main & Fireworks Extravaganza",
     },
     {
@@ -4078,7 +4138,7 @@ const events = [
         name: `4th of July Celebration + Parade`,
         sort_time: "2026-07-04 10:00:00",
         end_time_formatted: "2026-07-04 22:00",
-        detail: "2026-07-04 22:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -4090,8 +4150,20 @@ const events = [
         name: `Food Truck:  Taste of Pea Ridge`,
         sort_time: "2026-07-04 12:00:00",
         end_time_formatted: "2026-07-04 20:00",
-        detail: "2026-07-04 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-07-04",
+        start_time: "1:00 PM",
+        end_time: "4:00 PM",
+        name: `July 4th Barbeque`,
+        sort_time: "2026-07-04 13:00:00",
+        end_time_formatted: "2026-07-04 16:00:00",
+        detail: "This will be a catered affair.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://secured.brevardmusic.org",
@@ -4102,7 +4174,7 @@ const events = [
         name: `Pendergrast Family Patriotic Pops`,
         sort_time: "2026-07-04 14:00:00",
         end_time_formatted: "2026-07-04 23:59",
-        detail: "2026-07-04 23:59",
+        detail: "Brevard Symphonic Winds\nKraig Alan Williams, conductor\nBrevard Concert Orchestra\nKen Lam, conductor",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4114,7 +4186,7 @@ const events = [
         name: `5 O’Clock Somewhere`,
         sort_time: "2026-07-04 19:00:00",
         end_time_formatted: "2026-07-04 21:00",
-        detail: "2026-07-04 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -4126,7 +4198,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-05 00:00:00",
         end_time_formatted: "2026-07-05 23:59",
-        detail: "2026-07-05 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4138,7 +4210,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-05 00:00:00",
         end_time_formatted: "2026-07-05 23:59",
-        detail: "2026-07-05 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4150,7 +4222,7 @@ const events = [
         name: `Food Truck: Papa's Express`,
         sort_time: "2026-07-05 12:00:00",
         end_time_formatted: "2026-07-05 20:00",
-        detail: "2026-07-05 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4162,7 +4234,7 @@ const events = [
         name: `BoogiTherapi`,
         sort_time: "2026-07-05 14:00:00",
         end_time_formatted: "2026-07-05 17:00",
-        detail: "2026-07-05 17:00",
+        detail: "BoogiTherapi is an all-star Funky dance band based in Asheville, headed by frontman Ryan Barber.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4174,7 +4246,7 @@ const events = [
         name: `Bruckner\'s Romantic Symphony`,
         sort_time: "2026-07-05 15:00:00",
         end_time_formatted: "2026-07-05 23:59",
-        detail: "2026-07-05 23:59",
+        detail: "Brevard Sinfonia\nNaomi Woo, conductor\nLeonardo Soto, timpani",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4186,7 +4258,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-06 00:00:00",
         end_time_formatted: "2026-07-06 23:59",
-        detail: "2026-07-06 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4198,7 +4270,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-06 00:00:00",
         end_time_formatted: "2026-07-06 23:59",
-        detail: "2026-07-06 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4210,7 +4282,7 @@ const events = [
         name: `Food Truck: Appalachian Chick`,
         sort_time: "2026-07-06 16:00:00",
         end_time_formatted: "2026-07-06 16:00",
-        detail: "2026-07-06 16:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4222,7 +4294,7 @@ const events = [
         name: `Imani Winds`,
         sort_time: "2026-07-06 19:30:00",
         end_time_formatted: "2026-07-06 23:59",
-        detail: "2026-07-06 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4234,7 +4306,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-07 00:00:00",
         end_time_formatted: "2026-07-07 23:59",
-        detail: "2026-07-07 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4246,7 +4318,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-07 00:00:00",
         end_time_formatted: "2026-07-07 23:59",
-        detail: "2026-07-07 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4258,7 +4330,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-07 00:00:00",
         end_time_formatted: "2026-07-07 23:59",
-        detail: "2026-07-07 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4270,7 +4342,7 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-07-07 16:00:00",
         end_time_formatted: "2026-07-07 20:00",
-        detail: "2026-07-07 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4282,7 +4354,7 @@ const events = [
         name: `An Evening with Harry Connick, Jr.`,
         sort_time: "2026-07-07 19:30:00",
         end_time_formatted: "2026-07-07 23:59",
-        detail: "2026-07-07 23:59",
+        detail: "Harry Connick, Jr.’s career has exemplified excellence across music, theater, and entertainment. He has earned multiple Grammy and Emmy awards, along with Tony nominations, for his live and recorded musical performances and his work on Broadway.\n\nRooted in the music of his native New Orleans, Connick began performing as a pianist and vocalist at age five. His music career includes several multi-platinum albums, including When Harry Met Sally, Blue Light, Red Light, When My Heart Finds Christmas, Come By Me, and Only You. In 2019, he released the Grammy-nominated True Love: A Celebration of Cole Porter, alongside a Broadway production he wrote and directed honoring the legendary songwriter.\nExplore Harry Connick, Jr.\'s extensive catalog of hits ⬇️\n\n\nDuring the pandemic, Connick created Alone With My Faith, an album of original songs and spirituals showcasing his talents as a writer, arranger, vocalist, and instrumentalist, earning his 16th Grammy nomination. In January 2025, he made his debut at the Metropolitan Opera with the relaunch of A Celebration of Cole Porter.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -4294,7 +4366,7 @@ const events = [
         name: `Theme: Backyard BBQ`,
         sort_time: "2026-07-08 00:00:00",
         end_time_formatted: "2026-07-08 23:59",
-        detail: "2026-07-08 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4306,7 +4378,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-08 00:00:00",
         end_time_formatted: "2026-07-08 23:59",
-        detail: "2026-07-08 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4318,7 +4390,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-08 00:00:00",
         end_time_formatted: "2026-07-08 23:59",
-        detail: "2026-07-08 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4330,7 +4402,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-08 00:00:00",
         end_time_formatted: "2026-07-08 23:59",
-        detail: "2026-07-08 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4342,7 +4414,7 @@ const events = [
         name: `Food Truck: Carolina Ace`,
         sort_time: "2026-07-08 16:00:00",
         end_time_formatted: "2026-07-08 20:00",
-        detail: "2026-07-08 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4354,7 +4426,7 @@ const events = [
         name: `Event: Hendersonville Young Professionals`,
         sort_time: "2026-07-08 17:00:00",
         end_time_formatted: "2026-07-08 18:30",
-        detail: "2026-07-08 18:30",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4366,7 +4438,7 @@ const events = [
         name: `Jacob Donham and Allie Fox (Fantastical Folk/Soul)`,
         sort_time: "2026-07-08 17:30:00",
         end_time_formatted: "2026-07-08 20:30",
-        detail: "2026-07-08 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4378,7 +4450,7 @@ const events = [
         name: `Event: Opinionary`,
         sort_time: "2026-07-08 18:00:00",
         end_time_formatted: "2026-07-08 20:00",
-        detail: "2026-07-08 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4390,7 +4462,7 @@ const events = [
         name: `Mozart Piano Trio`,
         sort_time: "2026-07-08 19:30:00",
         end_time_formatted: "2026-07-08 23:59",
-        detail: "2026-07-08 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4402,7 +4474,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-09 00:00:00",
         end_time_formatted: "2026-07-09 23:59",
-        detail: "2026-07-09 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4414,7 +4486,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-09 00:00:00",
         end_time_formatted: "2026-07-09 23:59",
-        detail: "2026-07-09 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4426,7 +4498,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-09 00:00:00",
         end_time_formatted: "2026-07-09 23:59",
-        detail: "2026-07-09 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4438,7 +4510,7 @@ const events = [
         name: `Food Truck: Appalachian Chick`,
         sort_time: "2026-07-09 16:00:00",
         end_time_formatted: "2026-07-09 20:00",
-        detail: "2026-07-09 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4450,7 +4522,7 @@ const events = [
         name: `Asheville Junction (Bluegrass, Americana, and Country)`,
         sort_time: "2026-07-09 17:30:00",
         end_time_formatted: "2026-07-09 20:30",
-        detail: "2026-07-09 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4462,7 +4534,7 @@ const events = [
         name: `Event: Open Mic Night`,
         sort_time: "2026-07-09 18:00:00",
         end_time_formatted: "2026-07-09 21:00",
-        detail: "2026-07-09 21:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4474,7 +4546,7 @@ const events = [
         name: `The Falling and The Rising`,
         sort_time: "2026-07-09 19:30:00",
         end_time_formatted: "2026-07-09 23:59",
-        detail: "2026-07-09 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4486,7 +4558,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-10 00:00:00",
         end_time_formatted: "2026-07-10 23:59",
-        detail: "2026-07-10 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4498,7 +4570,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-10 00:00:00",
         end_time_formatted: "2026-07-10 23:59",
-        detail: "2026-07-10 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4510,7 +4582,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-10 00:00:00",
         end_time_formatted: "2026-07-10 23:59",
-        detail: "2026-07-10 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4522,7 +4594,7 @@ const events = [
         name: `Food Truck: Toasted Cuban`,
         sort_time: "2026-07-10 12:00:00",
         end_time_formatted: "2026-07-10 20:00",
-        detail: "2026-07-10 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4534,7 +4606,7 @@ const events = [
         name: `Shades of Grey`,
         sort_time: "2026-07-10 19:00:00",
         end_time_formatted: "2026-07-10 21:00",
-        detail: "2026-07-10 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -4546,7 +4618,7 @@ const events = [
         name: `Tchaikovsky\'s Rococo Variations`,
         sort_time: "2026-07-10 19:30:00",
         end_time_formatted: "2026-07-10 23:59",
-        detail: "2026-07-10 23:59",
+        detail: "Brevard Music Center Orchestra\nJoAnn Falletta, conductor\nCamille Thomas, cello",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4558,7 +4630,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-11 00:00:00",
         end_time_formatted: "2026-07-11 23:59",
-        detail: "2026-07-11 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4570,7 +4642,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-11 00:00:00",
         end_time_formatted: "2026-07-11 23:59",
-        detail: "2026-07-11 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4582,7 +4654,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-11 00:00:00",
         end_time_formatted: "2026-07-11 23:59",
-        detail: "2026-07-11 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4594,7 +4666,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-11 00:00:00",
         end_time_formatted: "2026-07-11 23:59",
-        detail: "2026-07-11 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -4606,7 +4678,7 @@ const events = [
         name: `Food Truck: Blue Sky Cafe`,
         sort_time: "2026-07-11 12:00:00",
         end_time_formatted: "2026-07-11 20:00",
-        detail: "2026-07-11 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4618,8 +4690,20 @@ const events = [
         name: `Africa Unplugged`,
         sort_time: "2026-07-11 14:00:00",
         end_time_formatted: "2026-07-11 17:00",
-        detail: "2026-07-11 17:00",
+        detail: "Africa Unplugged is a dynamic group, led by djembe master, guitarist and songwriter, Atiba Rorie. The band uses traditional percussion instruments from West Africa in combination with guitars and bass ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://kiitosfineart.art/news-events",
+        venue: "Kiitos Fine Art",
+        event_date: "2026-07-11",
+        start_time: "5:00 PM",
+        end_time: "8:00 PM",
+        name: `Kiitos Fine Art Grand Opening (Fred Stack-backed gallery)`,
+        sort_time: "2026-07-11 17:00:00",
+        end_time_formatted: "2026-07-11 20:00:00",
+        detail: "Kiitos Fine Art is the newest gallery to open in the RAD (River Arts District). We combine exhibition space with active working studios, providing a place where customers can experience the creation of fine art. By fostering direct interactions between customers and artists, we hope to open pathways to unique, custom-commissioned pieces that blend the customer's emotion with the artist's visionary artistry.\nThe gallery showcases more than ten artists — including four live studios — presenting an eclectic range of styles and genres aimed at moving and inspiring visitors. Highlights Over 10 featured artists, with all but one based in Western North Carolina Four working studios where visitors can watch artists create A diverse program of painting, sculpture, mixed media, and more Light snacks and refreshments served during the event.",
+        location: "146 Roberts St, Suite 104, Asheville, NC 28801",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -4630,7 +4714,7 @@ const events = [
         name: `Lyric`,
         sort_time: "2026-07-11 18:30:00",
         end_time_formatted: "2026-07-11 21:00",
-        detail: "2026-07-11 21:00",
+        detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in December of 2015. She is a Western North ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4642,7 +4726,7 @@ const events = [
         name: `Music: Garden Variety`,
         sort_time: "2026-07-11 19:00:00",
         end_time_formatted: "2026-07-11 22:00",
-        detail: "2026-07-11 22:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4654,7 +4738,7 @@ const events = [
         name: `Hendersonville Street Dance: Jeter Mountain Band`,
         sort_time: "2026-07-11 19:00:00",
         end_time_formatted: "2026-07-11 21:00",
-        detail: "2026-07-11 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -4666,7 +4750,7 @@ const events = [
         name: `BMC Presents: Buena Vista Orchestra`,
         sort_time: "2026-07-11 19:30:00",
         end_time_formatted: "2026-07-11 23:59",
-        detail: "2026-07-11 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4678,7 +4762,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-12 00:00:00",
         end_time_formatted: "2026-07-12 23:59",
-        detail: "2026-07-12 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4690,7 +4774,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-12 00:00:00",
         end_time_formatted: "2026-07-12 23:59",
-        detail: "2026-07-12 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4702,7 +4786,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-12 00:00:00",
         end_time_formatted: "2026-07-12 23:59",
-        detail: "2026-07-12 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4714,7 +4798,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-12 00:00:00",
         end_time_formatted: "2026-07-12 23:59",
-        detail: "2026-07-12 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -4726,7 +4810,7 @@ const events = [
         name: `Food Truck: Papa's Express`,
         sort_time: "2026-07-12 12:00:00",
         end_time_formatted: "2026-07-12 20:00",
-        detail: "2026-07-12 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4738,7 +4822,7 @@ const events = [
         name: `Max Hightower`,
         sort_time: "2026-07-12 14:00:00",
         end_time_formatted: "2026-07-12 17:00",
-        detail: "2026-07-12 17:00",
+        detail: "Max Hightower was born and raised in the Upstate of South Carolina. At age 12, he bought his first Blues cassette tape, ‘Muddy Mississippi Live’ by Muddy Waters. The new ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -4750,7 +4834,7 @@ const events = [
         name: `Daphnis and Chloé`,
         sort_time: "2026-07-12 15:00:00",
         end_time_formatted: "2026-07-12 23:59",
-        detail: "2026-07-12 23:59",
+        detail: "Brevard Sinfonia\nJoAnn Falletta, conductor\nPaul Neubauer, viola",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4762,7 +4846,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-13 00:00:00",
         end_time_formatted: "2026-07-13 23:59",
-        detail: "2026-07-13 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4774,7 +4858,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-13 00:00:00",
         end_time_formatted: "2026-07-13 23:59",
-        detail: "2026-07-13 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4786,7 +4870,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-13 00:00:00",
         end_time_formatted: "2026-07-13 23:59",
-        detail: "2026-07-13 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4798,7 +4882,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-13 00:00:00",
         end_time_formatted: "2026-07-13 23:59",
-        detail: "2026-07-13 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -4810,7 +4894,7 @@ const events = [
         name: `Food Truck: Cactus Rainbow`,
         sort_time: "2026-07-13 16:00:00",
         end_time_formatted: "2026-07-13 20:00",
-        detail: "2026-07-13 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4822,7 +4906,7 @@ const events = [
         name: `Shanghai Quartet`,
         sort_time: "2026-07-13 19:30:00",
         end_time_formatted: "2026-07-13 23:59",
-        detail: "2026-07-13 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4834,7 +4918,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-14 00:00:00",
         end_time_formatted: "2026-07-14 23:59",
-        detail: "2026-07-14 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4846,7 +4930,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-14 00:00:00",
         end_time_formatted: "2026-07-14 23:59",
-        detail: "2026-07-14 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4858,7 +4942,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-14 00:00:00",
         end_time_formatted: "2026-07-14 23:59",
-        detail: "2026-07-14 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4870,7 +4954,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-14 00:00:00",
         end_time_formatted: "2026-07-14 23:59",
-        detail: "2026-07-14 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -4882,7 +4966,7 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-07-14 16:00:00",
         end_time_formatted: "2026-07-14 20:00",
-        detail: "2026-07-14 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4894,7 +4978,7 @@ const events = [
         name: `Sir Stephen Hough in Recital`,
         sort_time: "2026-07-14 19:30:00",
         end_time_formatted: "2026-07-14 23:59",
-        detail: "2026-07-14 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -4906,7 +4990,7 @@ const events = [
         name: `Theme: Sweet ‘n Soulful`,
         sort_time: "2026-07-15 00:00:00",
         end_time_formatted: "2026-07-15 23:59",
-        detail: "2026-07-15 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4918,7 +5002,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-15 00:00:00",
         end_time_formatted: "2026-07-15 23:59",
-        detail: "2026-07-15 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -4930,7 +5014,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-15 00:00:00",
         end_time_formatted: "2026-07-15 23:59",
-        detail: "2026-07-15 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -4942,7 +5026,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-15 00:00:00",
         end_time_formatted: "2026-07-15 23:59",
-        detail: "2026-07-15 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -4954,7 +5038,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-15 00:00:00",
         end_time_formatted: "2026-07-15 23:59",
-        detail: "2026-07-15 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -4966,7 +5050,7 @@ const events = [
         name: `Food Truck: Carolina Ace`,
         sort_time: "2026-07-15 16:00:00",
         end_time_formatted: "2026-07-15 20:00",
-        detail: "2026-07-15 20:00",
+        detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
@@ -4978,7 +5062,7 @@ const events = [
         name: `Rhythm Rockets (Americana, R&R, Blues, and Country)`,
         sort_time: "2026-07-15 17:30:00",
         end_time_formatted: "2026-07-15 20:30",
-        detail: "2026-07-15 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -4990,7 +5074,7 @@ const events = [
         name: `Music of Five`,
         sort_time: "2026-07-15 19:30:00",
         end_time_formatted: "2026-07-15 23:59",
-        detail: "2026-07-15 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5002,7 +5086,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-16 00:00:00",
         end_time_formatted: "2026-07-16 23:59",
-        detail: "2026-07-16 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5014,7 +5098,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-16 00:00:00",
         end_time_formatted: "2026-07-16 23:59",
-        detail: "2026-07-16 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5026,7 +5110,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-16 00:00:00",
         end_time_formatted: "2026-07-16 23:59",
-        detail: "2026-07-16 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5038,7 +5122,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-16 00:00:00",
         end_time_formatted: "2026-07-16 23:59",
-        detail: "2026-07-16 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5050,7 +5134,7 @@ const events = [
         name: `Craft Fair of the Southern Highlands - July (Jul 16 -> Jul 19)`,
         sort_time: "2026-07-16 00:00:00",
         end_time_formatted: "2026-07-16 23:59",
-        detail: "2026-07-16 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Bluegrass and Folk, and there will be other activities like demonstrating crafters, children's workshops.<a href='https://festivalnet.com/2764/Asheville-North-Carolina/Art-Shows/Craft-Fair-of-the-Southern-Highlands-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net Craft Fair of the Southern Highlands - July",
     },
     {
@@ -5062,7 +5146,7 @@ const events = [
         name: `Trippin Up the Stairs (Traditional Celtic, some Old Time, with a flat-foot dancer)`,
         sort_time: "2026-07-16 17:30:00",
         end_time_formatted: "2026-07-16 20:30",
-        detail: "2026-07-16 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5074,7 +5158,7 @@ const events = [
         name: `Canaan Cox (Country) with Highway 52 (Blues/Americana)`,
         sort_time: "2026-07-16 17:30:00",
         end_time_formatted: "2026-07-16 22:00",
-        detail: "2026-07-16 22:00",
+        detail: "None",
         location: "Rhythm & Brews Main St. Hendersonville",
     },
     {
@@ -5086,7 +5170,7 @@ const events = [
         name: `Shostakovich 10`,
         sort_time: "2026-07-16 19:30:00",
         end_time_formatted: "2026-07-16 23:59",
-        detail: "2026-07-16 23:59",
+        detail: "Brevard Concert Orchestra\nKen Lam, conductor",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5098,7 +5182,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-17 00:00:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "2026-07-17 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5110,7 +5194,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-17 00:00:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "2026-07-17 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5122,7 +5206,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-17 00:00:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "2026-07-17 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5134,7 +5218,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-17 00:00:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "2026-07-17 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5146,7 +5230,7 @@ const events = [
         name: `Craft Fair of the Southern Highlands - July (Jul 16 -> Jul 19)`,
         sort_time: "2026-07-17 00:00:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "2026-07-17 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Bluegrass and Folk, and there will be other activities like demonstrating crafters, children's workshops.<a href='https://festivalnet.com/2764/Asheville-North-Carolina/Art-Shows/Craft-Fair-of-the-Southern-Highlands-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net Craft Fair of the Southern Highlands - July",
     },
     {
@@ -5158,7 +5242,7 @@ const events = [
         name: `Song Sessions: Maia Sharp with Gabe Dixon & Lucie Silvas (2026-07-17 -> 2026-07-18)`,
         sort_time: "2026-07-17 00:00:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "2026-07-17 23:59",
+        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis July, Maia Sharp is joined by Gabe Dixon & Lucie Silvas.\nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\nGabe Dixon is a Nashville-based singer-songwriter and multi-instrumentalist known for his honest, heartfelt songs since 1999. His work has been covered by artists like Garth Brooks and Taj Mahal & Keb’ Mo’, and featured in films like The Proposal and shows including Grey’s Anatomy and Nashville. He has performed with Paul McCartney and Alison Krauss, and is a member of Tedeschi Trucks Band, contributing to their I Am The Moon project. His latest album, Parts I’ve Played, continues to showcase his evolving sound.\nLearn more about Gabe Dixon at gabedixon.com\n\n \nLucie Silvas is a British-born, Nashville-based singer-songwriter celebrated for her soulful voice and genre-blending style. Her debut album Breathe In sold over a million copies worldwide, launching an acclaimed career. Now a key part of Nashville’s music scene, she has toured with artists like Chris Stapleton and Brandi Carlile, and released several praised albums including EGO. As a songwriter, her work has been recorded by Miranda Lambert, Reba McEntire, and Kelly Clarkson, with music featured in major TV shows and films.\nLearn more about Lucie Silvas at luciesilvas.com",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -5170,7 +5254,7 @@ const events = [
         name: `Blake Ellege’s Saddletramp`,
         sort_time: "2026-07-17 19:00:00",
         end_time_formatted: "2026-07-17 21:30",
-        detail: "2026-07-17 21:30",
+        detail: "Saddletramp is a premier Asheville-based classic and outlaw country show band, covering the best ’70s, ’80s, and ’90s country hits.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5182,7 +5266,7 @@ const events = [
         name: `An Alpine Symphony`,
         sort_time: "2026-07-17 19:30:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "2026-07-17 23:59",
+        detail: "Brevard Music Center Orchestra\nRune Bergmann, conductor\nStephen Hough, piano",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5194,7 +5278,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-18 00:00:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "2026-07-18 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5206,7 +5290,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-18 00:00:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "2026-07-18 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5218,7 +5302,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-18 00:00:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "2026-07-18 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5230,7 +5314,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-18 00:00:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "2026-07-18 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5242,7 +5326,7 @@ const events = [
         name: `Craft Fair of the Southern Highlands - July (Jul 16 -> Jul 19)`,
         sort_time: "2026-07-18 00:00:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "2026-07-18 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Bluegrass and Folk, and there will be other activities like demonstrating crafters, children's workshops.<a href='https://festivalnet.com/2764/Asheville-North-Carolina/Art-Shows/Craft-Fair-of-the-Southern-Highlands-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net Craft Fair of the Southern Highlands - July",
     },
     {
@@ -5254,7 +5338,7 @@ const events = [
         name: `Song Sessions: Maia Sharp with Gabe Dixon & Lucie Silvas (2026-07-17 -> 2026-07-18)`,
         sort_time: "2026-07-18 00:00:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "2026-07-18 23:59",
+        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis July, Maia Sharp is joined by Gabe Dixon & Lucie Silvas.\nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\nGabe Dixon is a Nashville-based singer-songwriter and multi-instrumentalist known for his honest, heartfelt songs since 1999. His work has been covered by artists like Garth Brooks and Taj Mahal & Keb’ Mo’, and featured in films like The Proposal and shows including Grey’s Anatomy and Nashville. He has performed with Paul McCartney and Alison Krauss, and is a member of Tedeschi Trucks Band, contributing to their I Am The Moon project. His latest album, Parts I’ve Played, continues to showcase his evolving sound.\nLearn more about Gabe Dixon at gabedixon.com\n\n \nLucie Silvas is a British-born, Nashville-based singer-songwriter celebrated for her soulful voice and genre-blending style. Her debut album Breathe In sold over a million copies worldwide, launching an acclaimed career. Now a key part of Nashville’s music scene, she has toured with artists like Chris Stapleton and Brandi Carlile, and released several praised albums including EGO. As a songwriter, her work has been recorded by Miranda Lambert, Reba McEntire, and Kelly Clarkson, with music featured in major TV shows and films.\nLearn more about Lucie Silvas at luciesilvas.com",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -5266,7 +5350,7 @@ const events = [
         name: `Life Like Water`,
         sort_time: "2026-07-18 14:00:00",
         end_time_formatted: "2026-07-18 17:00",
-        detail: "2026-07-18 17:00",
+        detail: "“Life Like Water is a multi-colored tapestry of sounds and influences. With a focus on hypnotic rhythms, heartfelt lyrics, and melodies that contain flavors of Appalachia, Africa and the Middle ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5278,7 +5362,7 @@ const events = [
         name: `Isaac Hadden`,
         sort_time: "2026-07-18 18:30:00",
         end_time_formatted: "2026-07-18 21:00",
-        detail: "2026-07-18 21:00",
+        detail: "It’s as though some people are just born to be musicians. That certainly seems to be the case for guitarist and vocalist, Isaac Hadden. Born and raised in the southeast ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5290,7 +5374,7 @@ const events = [
         name: `The Catalinas 2026`,
         sort_time: "2026-07-18 19:00:00",
         end_time_formatted: "2026-07-18 22:00",
-        detail: "2026-07-18 22:00",
+        detail: "None",
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
@@ -5302,7 +5386,7 @@ const events = [
         name: `Mendelssohn\'s Italian Symphony`,
         sort_time: "2026-07-18 19:30:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "2026-07-18 23:59",
+        detail: "Brevard Sinfonia\nEarl Lee, conductor\nAmaryn Olmeda, violin",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5314,7 +5398,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-19 00:00:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "2026-07-19 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5326,7 +5410,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-19 00:00:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "2026-07-19 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5338,7 +5422,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-19 00:00:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "2026-07-19 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5350,7 +5434,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-19 00:00:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "2026-07-19 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5362,7 +5446,7 @@ const events = [
         name: `Craft Fair of the Southern Highlands - July (Jul 16 -> Jul 19)`,
         sort_time: "2026-07-19 00:00:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "2026-07-19 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Bluegrass and Folk, and there will be other activities like demonstrating crafters, children's workshops.<a href='https://festivalnet.com/2764/Asheville-North-Carolina/Art-Shows/Craft-Fair-of-the-Southern-Highlands-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net Craft Fair of the Southern Highlands - July",
     },
     {
@@ -5374,7 +5458,7 @@ const events = [
         name: `SHEBAD`,
         sort_time: "2026-07-19 14:00:00",
         end_time_formatted: "2026-07-19 17:00",
-        detail: "2026-07-19 17:00",
+        detail: "SHEBAD is the creative spirit of visual artist and vocalist Claire Voy and multi-instrumentalist Ciccio Spagnolo. Hailing from Guelph, Ontario, Canada, their music plays on the exploratory realm of Indie-Soul, ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5386,7 +5470,7 @@ const events = [
         name: `BMC Presents: An Evening With Jason Isbell`,
         sort_time: "2026-07-19 19:30:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "2026-07-19 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5398,7 +5482,7 @@ const events = [
         name: `The Fretliners`,
         sort_time: "2026-07-19 19:30:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "2026-07-19 23:59",
+        detail: "The Fretliners are a band defined by their songwriting—stories carried by powerful harmonies, dynamic arrangements, and a sound that feels both timeless and new. Their music leans into the tradition of acoustic string instruments but reaches well beyond genre, resonating with listeners through honesty and craft.\n\n \nIn 2023, they swept both the Telluride Bluegrass and RockyGrass band competitions—an achievement matched only once before. That fall, their debut self-titled album earned widespread acclaim, praised for its originality and heartfelt lyricism.\n\n \nWith songs that balance tradition and innovation, The Fretliners continue to chart a bold path forward, creating music that connects as deeply on record as it does on stage.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -5410,7 +5494,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-20 00:00:00",
         end_time_formatted: "2026-07-20 23:59",
-        detail: "2026-07-20 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5422,7 +5506,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-20 00:00:00",
         end_time_formatted: "2026-07-20 23:59",
-        detail: "2026-07-20 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5434,7 +5518,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-20 00:00:00",
         end_time_formatted: "2026-07-20 23:59",
-        detail: "2026-07-20 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5446,7 +5530,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-20 00:00:00",
         end_time_formatted: "2026-07-20 23:59",
-        detail: "2026-07-20 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5458,7 +5542,7 @@ const events = [
         name: `Chamber Voices of BMC`,
         sort_time: "2026-07-20 19:30:00",
         end_time_formatted: "2026-07-20 23:59",
-        detail: "2026-07-20 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5470,7 +5554,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-21 00:00:00",
         end_time_formatted: "2026-07-21 23:59",
-        detail: "2026-07-21 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5482,7 +5566,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-21 00:00:00",
         end_time_formatted: "2026-07-21 23:59",
-        detail: "2026-07-21 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5494,7 +5578,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-21 00:00:00",
         end_time_formatted: "2026-07-21 23:59",
-        detail: "2026-07-21 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5506,7 +5590,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-21 00:00:00",
         end_time_formatted: "2026-07-21 23:59",
-        detail: "2026-07-21 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5518,7 +5602,7 @@ const events = [
         name: `Theme: A Celtic Evening`,
         sort_time: "2026-07-22 00:00:00",
         end_time_formatted: "2026-07-22 23:59",
-        detail: "2026-07-22 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5530,7 +5614,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-22 00:00:00",
         end_time_formatted: "2026-07-22 23:59",
-        detail: "2026-07-22 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5542,7 +5626,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-22 00:00:00",
         end_time_formatted: "2026-07-22 23:59",
-        detail: "2026-07-22 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5554,7 +5638,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-22 00:00:00",
         end_time_formatted: "2026-07-22 23:59",
-        detail: "2026-07-22 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5566,7 +5650,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-22 00:00:00",
         end_time_formatted: "2026-07-22 23:59",
-        detail: "2026-07-22 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5578,7 +5662,7 @@ const events = [
         name: `Celtic Road (Irish/Scottish instrumentals and songs)`,
         sort_time: "2026-07-22 17:30:00",
         end_time_formatted: "2026-07-22 20:30",
-        detail: "2026-07-22 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5590,7 +5674,7 @@ const events = [
         name: `A Steinway Celebration`,
         sort_time: "2026-07-22 19:30:00",
         end_time_formatted: "2026-07-22 23:59",
-        detail: "2026-07-22 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5602,7 +5686,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-23 00:00:00",
         end_time_formatted: "2026-07-23 23:59",
-        detail: "2026-07-23 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5614,7 +5698,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-23 00:00:00",
         end_time_formatted: "2026-07-23 23:59",
-        detail: "2026-07-23 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5626,7 +5710,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-23 00:00:00",
         end_time_formatted: "2026-07-23 23:59",
-        detail: "2026-07-23 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5638,8 +5722,20 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-23 00:00:00",
         end_time_formatted: "2026-07-23 23:59",
-        detail: "2026-07-23 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-07-23",
+        start_time: "4:30 PM",
+        end_time: "6:00 PM",
+        name: `Thirsty Thursdays`,
+        sort_time: "2026-07-23 16:30:00",
+        end_time_formatted: "2026-07-23 18:00:00",
+        detail: "A one-a-month happy hour.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
@@ -5650,7 +5746,7 @@ const events = [
         name: `Thomas Kozak (Mythology, spirituality, and poetry woven into his songs)`,
         sort_time: "2026-07-23 17:30:00",
         end_time_formatted: "2026-07-23 20:30",
-        detail: "2026-07-23 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -5662,7 +5758,7 @@ const events = [
         name: `H.M.S. Pinafore`,
         sort_time: "2026-07-23 19:30:00",
         end_time_formatted: "2026-07-23 23:59",
-        detail: "2026-07-23 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5674,7 +5770,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-24 00:00:00",
         end_time_formatted: "2026-07-24 23:59",
-        detail: "2026-07-24 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5686,7 +5782,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-24 00:00:00",
         end_time_formatted: "2026-07-24 23:59",
-        detail: "2026-07-24 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5698,7 +5794,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-24 00:00:00",
         end_time_formatted: "2026-07-24 23:59",
-        detail: "2026-07-24 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5710,7 +5806,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-24 00:00:00",
         end_time_formatted: "2026-07-24 23:59",
-        detail: "2026-07-24 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5722,7 +5818,7 @@ const events = [
         name: `The Night Move Band`,
         sort_time: "2026-07-24 19:00:00",
         end_time_formatted: "2026-07-24 21:00",
-        detail: "2026-07-24 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -5734,7 +5830,7 @@ const events = [
         name: `Chicago Rewired 26`,
         sort_time: "2026-07-24 19:00:00",
         end_time_formatted: "2026-07-24 22:00",
-        detail: "2026-07-24 22:00",
+        detail: "None",
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
@@ -5746,7 +5842,7 @@ const events = [
         name: `Gil Shaham + Mahler 4`,
         sort_time: "2026-07-24 19:30:00",
         end_time_formatted: "2026-07-24 23:59",
-        detail: "2026-07-24 23:59",
+        detail: "Brevard Music Center Orchestra\nKeith Lockhart, conductor\nGil Shaham, violin\nEmma Marhefka, soprano",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5758,7 +5854,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-25 00:00:00",
         end_time_formatted: "2026-07-25 23:59",
-        detail: "2026-07-25 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5770,7 +5866,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-25 00:00:00",
         end_time_formatted: "2026-07-25 23:59",
-        detail: "2026-07-25 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5782,7 +5878,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-25 00:00:00",
         end_time_formatted: "2026-07-25 23:59",
-        detail: "2026-07-25 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5794,7 +5890,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-25 00:00:00",
         end_time_formatted: "2026-07-25 23:59",
-        detail: "2026-07-25 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5806,7 +5902,7 @@ const events = [
         name: `Vince Gill - 50 Years from Home (2026-07-25 -> 2026-07-26)`,
         sort_time: "2026-07-25 00:00:00",
         end_time_formatted: "2026-07-25 23:59",
-        detail: "2026-07-25 23:59",
+        detail: "One of the most popular artists in modern country music, Vince Gill is famous for his top-notch songwriting, world-class guitar playing and warm, soaring tenor, all wrapped up in a quick and easy wit.\nGill achieved his big breakthrough in 1990 with “When I Call Your Name,” which won both the Country Music Association’s (CMA) Single and Song of the Year awards as well as a Grammy for Best Country Vocal Performance, Male.\nIn total, Gill has won 18 CMA Awards, 22 Grammy Awards, and 8 Academy of Country Music Awards and in 2025 was presented with the CMA Willie Nelson Lifetime Achievement Award.\nIn 1991, Gill was invited to become a member of the Grand Ole Opry and in 2007 was inducted into the Country Music Hall of Fame. In 2012 he was honored with a star on the Hollywood Walk of Fame. A gifted songwriter, Gill’s compositions earned him entry into the Nashville Songwriters Hall of Fame in 2005 and the prestigious BMI Icon award in 2014.\nThroughout his career, he has released 21 albums, sold over 30 million albums, and charted 45 singles. In 2022, Gill was inducted into the Musicians Hall of Fame. Always considering himself a musician above all else, Gill has over the years been a part of some iconic bands, including Pure Prairie League, The Notorious Cherry Bombs, and The Time Jumpers. In 2017, Gill was asked to join the Eagles on the road, and he continues to be a part of that historic band’s tour.\n2025 marked the 50th anniversary of Gill leaving home to pursue a career in music. To honor that milestone, he signed a lifetime recording contract with his longstanding label MCA and is releasing an EP series of brand-new music every month for a year, titled 50 Years from Home.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -5818,7 +5914,7 @@ const events = [
         name: `Moon and You`,
         sort_time: "2026-07-25 14:00:00",
         end_time_formatted: "2026-07-25 17:00",
-        detail: "2026-07-25 17:00",
+        detail: "At its core, The Moon and You is a charismatic husband-and-wife team. Melissa Hyman plays cello, Ryan Furstenberg plays guitar and banjo, and both sing in “voices that sound like ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5830,7 +5926,7 @@ const events = [
         name: `Tru Phonic`,
         sort_time: "2026-07-25 18:30:00",
         end_time_formatted: "2026-07-25 21:00",
-        detail: "2026-07-25 21:00",
+        detail: "The original music of Jake Salter & a unique group of talented musicians come together in Tru Phonic. Sounds of Jam, Funk, Blues, Rock, Soul, Jazz and Hip-Hop & more ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5842,7 +5938,7 @@ const events = [
         name: `Star Wars: Return of the Jedi in Concert`,
         sort_time: "2026-07-25 20:30:00",
         end_time_formatted: "2026-07-25 23:59",
-        detail: "2026-07-25 23:59",
+        detail: "Brevard Sinfonia\nShih-Hung Young, conductor",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5854,7 +5950,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-26 00:00:00",
         end_time_formatted: "2026-07-26 23:59",
-        detail: "2026-07-26 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5866,7 +5962,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-26 00:00:00",
         end_time_formatted: "2026-07-26 23:59",
-        detail: "2026-07-26 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5878,7 +5974,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-26 00:00:00",
         end_time_formatted: "2026-07-26 23:59",
-        detail: "2026-07-26 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5890,7 +5986,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-26 00:00:00",
         end_time_formatted: "2026-07-26 23:59",
-        detail: "2026-07-26 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5902,7 +5998,7 @@ const events = [
         name: `Vince Gill - 50 Years from Home (2026-07-25 -> 2026-07-26)`,
         sort_time: "2026-07-26 00:00:00",
         end_time_formatted: "2026-07-26 23:59",
-        detail: "2026-07-26 23:59",
+        detail: "One of the most popular artists in modern country music, Vince Gill is famous for his top-notch songwriting, world-class guitar playing and warm, soaring tenor, all wrapped up in a quick and easy wit.\nGill achieved his big breakthrough in 1990 with “When I Call Your Name,” which won both the Country Music Association’s (CMA) Single and Song of the Year awards as well as a Grammy for Best Country Vocal Performance, Male.\nIn total, Gill has won 18 CMA Awards, 22 Grammy Awards, and 8 Academy of Country Music Awards and in 2025 was presented with the CMA Willie Nelson Lifetime Achievement Award.\nIn 1991, Gill was invited to become a member of the Grand Ole Opry and in 2007 was inducted into the Country Music Hall of Fame. In 2012 he was honored with a star on the Hollywood Walk of Fame. A gifted songwriter, Gill’s compositions earned him entry into the Nashville Songwriters Hall of Fame in 2005 and the prestigious BMI Icon award in 2014.\nThroughout his career, he has released 21 albums, sold over 30 million albums, and charted 45 singles. In 2022, Gill was inducted into the Musicians Hall of Fame. Always considering himself a musician above all else, Gill has over the years been a part of some iconic bands, including Pure Prairie League, The Notorious Cherry Bombs, and The Time Jumpers. In 2017, Gill was asked to join the Eagles on the road, and he continues to be a part of that historic band’s tour.\n2025 marked the 50th anniversary of Gill leaving home to pursue a career in music. To honor that milestone, he signed a lifetime recording contract with his longstanding label MCA and is releasing an EP series of brand-new music every month for a year, titled 50 Years from Home.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -5914,7 +6010,7 @@ const events = [
         name: `Lockhart Conducts Soloists of Tomorrow`,
         sort_time: "2026-07-26 15:00:00",
         end_time_formatted: "2026-07-26 23:59",
-        detail: "2026-07-26 23:59",
+        detail: "Brevard Music Center Orchestra\nKeith Lockhart, conductor\nWinners of the Jan and Beattie Wood Concert Competition",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5926,7 +6022,7 @@ const events = [
         name: `Music by the Lake: The Julie McConnell Jazz Quartet`,
         sort_time: "2026-07-26 17:00:00",
         end_time_formatted: "2026-07-26 19:00",
-        detail: "2026-07-26 19:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -5938,7 +6034,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "2026-07-26 21:30",
+        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5950,7 +6046,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-27 00:00:00",
         end_time_formatted: "2026-07-27 23:59",
-        detail: "2026-07-27 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -5962,7 +6058,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-27 00:00:00",
         end_time_formatted: "2026-07-27 23:59",
-        detail: "2026-07-27 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -5974,7 +6070,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-27 00:00:00",
         end_time_formatted: "2026-07-27 23:59",
-        detail: "2026-07-27 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -5986,7 +6082,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-27 00:00:00",
         end_time_formatted: "2026-07-27 23:59",
-        detail: "2026-07-27 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -5998,7 +6094,7 @@ const events = [
         name: `Horszowski Piano Trio`,
         sort_time: "2026-07-27 19:30:00",
         end_time_formatted: "2026-07-27 23:59",
-        detail: "2026-07-27 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6010,7 +6106,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-28 00:00:00",
         end_time_formatted: "2026-07-28 23:59",
-        detail: "2026-07-28 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -6022,7 +6118,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-28 00:00:00",
         end_time_formatted: "2026-07-28 23:59",
-        detail: "2026-07-28 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -6034,7 +6130,7 @@ const events = [
         name: `West Asheville Tailgate Market - July (Jul 7 -> Jul 28)`,
         sort_time: "2026-07-28 00:00:00",
         end_time_formatted: "2026-07-28 23:59",
-        detail: "2026-07-28 23:59",
+        detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
@@ -6046,7 +6142,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-28 00:00:00",
         end_time_formatted: "2026-07-28 23:59",
-        detail: "2026-07-28 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6058,7 +6154,7 @@ const events = [
         name: `Spamalot (2026-07-28 -> 2026-08-02)`,
         sort_time: "2026-07-28 00:00:00",
         end_time_formatted: "2026-07-28 23:59",
-        detail: "2026-07-28 23:59",
+        detail: "SPAMALOT gallops back to the Peace Center in a hilarious new revival direct from Broadway. Featuring a book and lyrics by Eric Idle and music by John Du Prez and Eric Idle, the original production won three Tony Awards® in 2005, including Best Musical.\nThe side-splitting musical comedy is lovingly ripped off from the film classic, Monty Python and the Holy Grail, and has everything that makes a great knight at the theater, from flying cows to killer rabbits, British royalty to French taunters, dancing girls, rubbery shrubbery, and of course, the Lady of the Lake.\nSpamalot is recommended for ages 8+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6070,7 +6166,7 @@ const events = [
         name: `BMC Piano Competition Finals`,
         sort_time: "2026-07-28 19:00:00",
         end_time_formatted: "2026-07-28 23:59",
-        detail: "2026-07-28 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6082,7 +6178,7 @@ const events = [
         name: `Theme: Swing into the Night`,
         sort_time: "2026-07-29 00:00:00",
         end_time_formatted: "2026-07-29 23:59",
-        detail: "2026-07-29 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6094,7 +6190,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-29 00:00:00",
         end_time_formatted: "2026-07-29 23:59",
-        detail: "2026-07-29 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -6106,7 +6202,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-29 00:00:00",
         end_time_formatted: "2026-07-29 23:59",
-        detail: "2026-07-29 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -6118,7 +6214,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-29 00:00:00",
         end_time_formatted: "2026-07-29 23:59",
-        detail: "2026-07-29 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6130,7 +6226,7 @@ const events = [
         name: `Spamalot (2026-07-28 -> 2026-08-02)`,
         sort_time: "2026-07-29 00:00:00",
         end_time_formatted: "2026-07-29 23:59",
-        detail: "2026-07-29 23:59",
+        detail: "SPAMALOT gallops back to the Peace Center in a hilarious new revival direct from Broadway. Featuring a book and lyrics by Eric Idle and music by John Du Prez and Eric Idle, the original production won three Tony Awards® in 2005, including Best Musical.\nThe side-splitting musical comedy is lovingly ripped off from the film classic, Monty Python and the Holy Grail, and has everything that makes a great knight at the theater, from flying cows to killer rabbits, British royalty to French taunters, dancing girls, rubbery shrubbery, and of course, the Lady of the Lake.\nSpamalot is recommended for ages 8+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6142,7 +6238,7 @@ const events = [
         name: `Swing/Jazz renditions of popular tunes)`,
         sort_time: "2026-07-29 17:30:00",
         end_time_formatted: "2026-07-29 20:30",
-        detail: "2026-07-29 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6154,7 +6250,7 @@ const events = [
         name: `The Last Round`,
         sort_time: "2026-07-29 19:30:00",
         end_time_formatted: "2026-07-29 23:59",
-        detail: "2026-07-29 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6166,7 +6262,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-30 00:00:00",
         end_time_formatted: "2026-07-30 23:59",
-        detail: "2026-07-30 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -6178,7 +6274,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-30 00:00:00",
         end_time_formatted: "2026-07-30 23:59",
-        detail: "2026-07-30 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -6190,7 +6286,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-30 00:00:00",
         end_time_formatted: "2026-07-30 23:59",
-        detail: "2026-07-30 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6202,7 +6298,7 @@ const events = [
         name: `Mountain Dance and Folk Festival (Jul 30 -> Aug 1)`,
         sort_time: "2026-07-30 00:00:00",
         end_time_formatted: "2026-07-30 23:59",
-        detail: "2026-07-30 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Folk, Gospel and Old-time, and there will be other activities like youth talent celebration, aug. 1,  2:00-4:00<a href='https://festivalnet.com/4693/Asheville-North-Carolina/Festival-Concerts/Mountain-Dance-and-Folk-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Mountain Dance and Folk Festival",
     },
     {
@@ -6214,7 +6310,7 @@ const events = [
         name: `Spamalot (2026-07-28 -> 2026-08-02)`,
         sort_time: "2026-07-30 00:00:00",
         end_time_formatted: "2026-07-30 23:59",
-        detail: "2026-07-30 23:59",
+        detail: "SPAMALOT gallops back to the Peace Center in a hilarious new revival direct from Broadway. Featuring a book and lyrics by Eric Idle and music by John Du Prez and Eric Idle, the original production won three Tony Awards® in 2005, including Best Musical.\nThe side-splitting musical comedy is lovingly ripped off from the film classic, Monty Python and the Holy Grail, and has everything that makes a great knight at the theater, from flying cows to killer rabbits, British royalty to French taunters, dancing girls, rubbery shrubbery, and of course, the Lady of the Lake.\nSpamalot is recommended for ages 8+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6226,7 +6322,7 @@ const events = [
         name: `Life Like Water (Earthy, uplifting, and mystical with focus on rhythms, heartfelt lyrics, and melodies with flavors of Appalachia, Africa and the Middle East)`,
         sort_time: "2026-07-30 17:30:00",
         end_time_formatted: "2026-07-30 20:30",
-        detail: "2026-07-30 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6238,7 +6334,7 @@ const events = [
         name: `An Evening of Lerner & Loewe`,
         sort_time: "2026-07-30 19:30:00",
         end_time_formatted: "2026-07-30 23:59",
-        detail: "2026-07-30 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6250,7 +6346,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-07-31 00:00:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "2026-07-31 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -6262,7 +6358,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-07-31 00:00:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "2026-07-31 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -6274,7 +6370,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-07-31 00:00:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "2026-07-31 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6286,7 +6382,7 @@ const events = [
         name: `Mountain Dance and Folk Festival (Jul 30 -> Aug 1)`,
         sort_time: "2026-07-31 00:00:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "2026-07-31 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Folk, Gospel and Old-time, and there will be other activities like youth talent celebration, aug. 1,  2:00-4:00<a href='https://festivalnet.com/4693/Asheville-North-Carolina/Festival-Concerts/Mountain-Dance-and-Folk-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Mountain Dance and Folk Festival",
     },
     {
@@ -6298,7 +6394,7 @@ const events = [
         name: `Spamalot (2026-07-28 -> 2026-08-02)`,
         sort_time: "2026-07-31 00:00:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "2026-07-31 23:59",
+        detail: "SPAMALOT gallops back to the Peace Center in a hilarious new revival direct from Broadway. Featuring a book and lyrics by Eric Idle and music by John Du Prez and Eric Idle, the original production won three Tony Awards® in 2005, including Best Musical.\nThe side-splitting musical comedy is lovingly ripped off from the film classic, Monty Python and the Holy Grail, and has everything that makes a great knight at the theater, from flying cows to killer rabbits, British royalty to French taunters, dancing girls, rubbery shrubbery, and of course, the Lady of the Lake.\nSpamalot is recommended for ages 8+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6310,7 +6406,7 @@ const events = [
         name: `Fletcher Park Summer Concert Series: Gotcha Groove`,
         sort_time: "2026-07-31 18:00:00",
         end_time_formatted: "2026-07-31 20:00",
-        detail: "2026-07-31 20:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -6322,7 +6418,7 @@ const events = [
         name: `Rachmaninoff Symphony No. 2`,
         sort_time: "2026-07-31 19:30:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "2026-07-31 23:59",
+        detail: "Brevard Symphonic Winds\nKraig Alan Williams, conductor\nBrevard Concert Orchestra\nKeith Lockhart, conductor",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6334,7 +6430,7 @@ const events = [
         name: `Quinn Sullivan`,
         sort_time: "2026-07-31 19:30:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "2026-07-31 23:59",
+        detail: "26 Year old Quinn Sullivan is an acclaimed singer, songwriter, and guitarist who rose to prominence in the early 2000’s and continues to amaze audiences worldwide. Born and raised in New Bedford Massachusetts, Quinn grew up in a musical household listening to classic rock, jazz and blues. Quinn credits his early obsession with The Beatles as the impetus for him to pursue music as a career. He received his first guitar at the tender age of three and quickly demonstrated exceptional talent. He gained national attention with appearances on afternoon and late night television shows (The Tonight Show Starring Jimmy Fallon, The Ellen DeGeneres Show, Jimmy Kimmel Live!, and Conan). In 2007, Quinn met music legend Buddy Guy, who invited him onstage and would later invite him to tour and record with him throughout the next decade.\n \n\n \nOver the years, Quinn has evolved from a remarkable young talent into a mature, emotive artist known for blending blues, rock, and classic influences. His discography includes multiple albums, with his fifth release, Salvation, recognized as his most personal work, exploring themes of loss, love, and resilience. He has been praised not only for his exceptional guitar skills but also for his songwriting, drawing inspiration from both his musical roots and his own life experiences.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6346,7 +6442,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-08-01 00:00:00",
         end_time_formatted: "2026-08-01 23:59",
-        detail: "2026-08-01 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -6358,7 +6454,7 @@ const events = [
         name: `Swannanoa Gathering (Jun 28 -> Aug 1)`,
         sort_time: "2026-08-01 00:00:00",
         end_time_formatted: "2026-08-01 23:59",
-        detail: "2026-08-01 23:59",
+        detail: "There will be 2 stages with International, National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Country, Folk, Gospel, Jazz, Old-time, Swing, Variety and World.<a href='https://festivalnet.com/4681/Swannanoa-North-Carolina/Festival-Concerts/Swannanoa-Gathering' target='_blank'> <em>link</em></a>",
         location: "Festival Net Swannanoa Gathering",
     },
     {
@@ -6370,7 +6466,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-01 00:00:00",
         end_time_formatted: "2026-08-01 23:59",
-        detail: "2026-08-01 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6382,7 +6478,7 @@ const events = [
         name: `Mountain Dance and Folk Festival (Jul 30 -> Aug 1)`,
         sort_time: "2026-08-01 00:00:00",
         end_time_formatted: "2026-08-01 23:59",
-        detail: "2026-08-01 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Folk, Gospel and Old-time, and there will be other activities like youth talent celebration, aug. 1,  2:00-4:00<a href='https://festivalnet.com/4693/Asheville-North-Carolina/Festival-Concerts/Mountain-Dance-and-Folk-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Mountain Dance and Folk Festival",
     },
     {
@@ -6394,7 +6490,7 @@ const events = [
         name: `Spamalot (2026-07-28 -> 2026-08-02)`,
         sort_time: "2026-08-01 00:00:00",
         end_time_formatted: "2026-08-01 23:59",
-        detail: "2026-08-01 23:59",
+        detail: "SPAMALOT gallops back to the Peace Center in a hilarious new revival direct from Broadway. Featuring a book and lyrics by Eric Idle and music by John Du Prez and Eric Idle, the original production won three Tony Awards® in 2005, including Best Musical.\nThe side-splitting musical comedy is lovingly ripped off from the film classic, Monty Python and the Holy Grail, and has everything that makes a great knight at the theater, from flying cows to killer rabbits, British royalty to French taunters, dancing girls, rubbery shrubbery, and of course, the Lady of the Lake.\nSpamalot is recommended for ages 8+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6406,7 +6502,7 @@ const events = [
         name: `Natti Love Joys`,
         sort_time: "2026-08-01 14:00:00",
         end_time_formatted: "2026-08-01 17:00",
-        detail: "2026-08-01 17:00",
+        detail: "Reggae band. Co-bills include Joan Jett, Three Dog Nights, The Band, The Clash, The Ramones and more.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6418,7 +6514,7 @@ const events = [
         name: `Liszt Piano Concerto No. 1`,
         sort_time: "2026-08-01 19:30:00",
         end_time_formatted: "2026-08-01 23:59",
-        detail: "2026-08-01 23:59",
+        detail: "Brevard Sinfonia\nKen Lam, conductor\nSophia Liu, piano",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6430,7 +6526,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-08-02 00:00:00",
         end_time_formatted: "2026-08-02 23:59",
-        detail: "2026-08-02 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -6442,7 +6538,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-02 00:00:00",
         end_time_formatted: "2026-08-02 23:59",
-        detail: "2026-08-02 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6454,7 +6550,7 @@ const events = [
         name: `Spamalot (2026-07-28 -> 2026-08-02)`,
         sort_time: "2026-08-02 00:00:00",
         end_time_formatted: "2026-08-02 23:59",
-        detail: "2026-08-02 23:59",
+        detail: "SPAMALOT gallops back to the Peace Center in a hilarious new revival direct from Broadway. Featuring a book and lyrics by Eric Idle and music by John Du Prez and Eric Idle, the original production won three Tony Awards® in 2005, including Best Musical.\nThe side-splitting musical comedy is lovingly ripped off from the film classic, Monty Python and the Holy Grail, and has everything that makes a great knight at the theater, from flying cows to killer rabbits, British royalty to French taunters, dancing girls, rubbery shrubbery, and of course, the Lady of the Lake.\nSpamalot is recommended for ages 8+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6466,7 +6562,7 @@ const events = [
         name: `Anchors Away`,
         sort_time: "2026-08-02 14:00:00",
         end_time_formatted: "2026-08-02 17:00",
-        detail: "2026-08-02 17:00",
+        detail: "Anchors Away is the Southeast’s Premier Yacht Rock Experience!\nJoin American Idol Golden Ticket Winner and Grammy Member: Blake Ellege and his band as they take you on a musical journey playing all of your favorite hits from Steely Dan, The Doobie Brothers, Hall and Oates, TOTO, The Eagles, Journey AND MORE!\nWear your best sailor hat and Hawaiian shirt and join us as we “shove off” into a musical experience you’ll never forget!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6478,7 +6574,7 @@ const events = [
         name: `Season Finale: Legendary Artist Yo-Yo Ma with Keith Lockhart`,
         sort_time: "2026-08-02 15:00:00",
         end_time_formatted: "2026-08-02 23:59",
-        detail: "2026-08-02 23:59",
+        detail: "Brevard Music Center Orchestra\nKeith Lockhart, conductor\nYo-Yo Ma, cello\nReginald Smith, Jr., baritone\nThis event has a 4-ticket per household limit.",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6490,7 +6586,7 @@ const events = [
         name: `Summer Institute and Festival (Jun 1 -> Aug 3)`,
         sort_time: "2026-08-03 00:00:00",
         end_time_formatted: "2026-08-03 23:59",
-        detail: "2026-08-03 23:59",
+        detail: "There will be 3 stages with International, National and Regional talent. The entertainment will be Classical/Symphony and Jazz.<a href='https://festivalnet.com/37796/Brevard-North-Carolina/Classical-Music-Festivals/Summer-Institute-and-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Summer Institute and Festival",
     },
     {
@@ -6502,7 +6598,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-03 00:00:00",
         end_time_formatted: "2026-08-03 23:59",
-        detail: "2026-08-03 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6514,7 +6610,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-04 00:00:00",
         end_time_formatted: "2026-08-04 23:59",
-        detail: "2026-08-04 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6526,7 +6622,7 @@ const events = [
         name: `Theme: Member Appreciation & Music`,
         sort_time: "2026-08-05 00:00:00",
         end_time_formatted: "2026-08-05 23:59",
-        detail: "2026-08-05 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6538,7 +6634,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-05 00:00:00",
         end_time_formatted: "2026-08-05 23:59",
-        detail: "2026-08-05 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6550,7 +6646,7 @@ const events = [
         name: `Old Sap (Banjo, stomp on a stompbox, and song. Folk, Folk Rock, Country Blues, Americana.)`,
         sort_time: "2026-08-05 17:30:00",
         end_time_formatted: "2026-08-05 20:30",
-        detail: "2026-08-05 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6562,7 +6658,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-06 00:00:00",
         end_time_formatted: "2026-08-06 23:59",
-        detail: "2026-08-06 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6574,7 +6670,7 @@ const events = [
         name: `Adrianne Blanks & The Oracles (Sultry Jazz / Cocktail Noir)`,
         sort_time: "2026-08-06 17:30:00",
         end_time_formatted: "2026-08-06 20:30",
-        detail: "2026-08-06 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6586,7 +6682,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-07 00:00:00",
         end_time_formatted: "2026-08-07 23:59",
-        detail: "2026-08-07 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6598,7 +6694,7 @@ const events = [
         name: `Rock and Roll Reunion`,
         sort_time: "2026-08-07 19:00:00",
         end_time_formatted: "2026-08-07 21:00",
-        detail: "2026-08-07 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -6610,7 +6706,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-08 00:00:00",
         end_time_formatted: "2026-08-08 23:59",
-        detail: "2026-08-08 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6622,7 +6718,7 @@ const events = [
         name: `Sourwood Festival (Aug 8 -> Aug 9)`,
         sort_time: "2026-08-08 00:00:00",
         end_time_formatted: "2026-08-08 23:59",
-        detail: "2026-08-08 23:59",
+        detail: "There will be 2 stages with Regional and Local talent. The entertainment will be Alternative, Americana, Beach, Bluegrass, Blues, Children's, Christian, Country, DJ/Dance/Techno, Ethnic, Folk, Gospel, Jazz, Old-time, R & B/Soul, Reggae, Rock, Rockabilly, Swing, Top Forty/Pop and Variety, and there will be other activities like large children's area.<a href='https://festivalnet.com/11738/Black-Mountain-North-Carolina/Festivals/Sourwood-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Sourwood Festival",
     },
     {
@@ -6634,7 +6730,7 @@ const events = [
         name: `The Embers at Point Lookout Vineyards`,
         sort_time: "2026-08-08 08:00:00",
         end_time_formatted: "2026-08-08 17:00",
-        detail: "2026-08-08 17:00",
+        detail: "None",
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
@@ -6646,7 +6742,7 @@ const events = [
         name: `Hendersonville Street Dance: Band TBD`,
         sort_time: "2026-08-08 19:00:00",
         end_time_formatted: "2026-08-08 21:00",
-        detail: "2026-08-08 21:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -6658,7 +6754,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-09 00:00:00",
         end_time_formatted: "2026-08-09 23:59",
-        detail: "2026-08-09 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6670,7 +6766,7 @@ const events = [
         name: `Sourwood Festival (Aug 8 -> Aug 9)`,
         sort_time: "2026-08-09 00:00:00",
         end_time_formatted: "2026-08-09 23:59",
-        detail: "2026-08-09 23:59",
+        detail: "There will be 2 stages with Regional and Local talent. The entertainment will be Alternative, Americana, Beach, Bluegrass, Blues, Children's, Christian, Country, DJ/Dance/Techno, Ethnic, Folk, Gospel, Jazz, Old-time, R & B/Soul, Reggae, Rock, Rockabilly, Swing, Top Forty/Pop and Variety, and there will be other activities like large children's area.<a href='https://festivalnet.com/11738/Black-Mountain-North-Carolina/Festivals/Sourwood-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Sourwood Festival",
     },
     {
@@ -6682,7 +6778,7 @@ const events = [
         name: `Peggy Ratusz and the Daddy Longlegs`,
         sort_time: "2026-08-09 14:00:00",
         end_time_formatted: "2026-08-09 17:00",
-        detail: "2026-08-09 17:00",
+        detail: "Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives back to the ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6694,7 +6790,7 @@ const events = [
         name: `Music by the Lake: Nicholas Edward Williams`,
         sort_time: "2026-08-09 17:00:00",
         end_time_formatted: "2026-08-09 19:00",
-        detail: "2026-08-09 19:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -6706,7 +6802,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-10 00:00:00",
         end_time_formatted: "2026-08-10 23:59",
-        detail: "2026-08-10 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6718,7 +6814,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-11 00:00:00",
         end_time_formatted: "2026-08-11 23:59",
-        detail: "2026-08-11 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6730,7 +6826,7 @@ const events = [
         name: `Theme: Hospitality Appreciation Evening`,
         sort_time: "2026-08-12 00:00:00",
         end_time_formatted: "2026-08-12 23:59",
-        detail: "2026-08-12 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6742,7 +6838,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-12 00:00:00",
         end_time_formatted: "2026-08-12 23:59",
-        detail: "2026-08-12 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6754,7 +6850,7 @@ const events = [
         name: `Wabi Sabi (Acoustic instrumental Celtic & Jazz)`,
         sort_time: "2026-08-12 17:30:00",
         end_time_formatted: "2026-08-12 20:30",
-        detail: "2026-08-12 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6766,7 +6862,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-13 00:00:00",
         end_time_formatted: "2026-08-13 23:59",
-        detail: "2026-08-13 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6778,7 +6874,7 @@ const events = [
         name: `Raphael Graves Duo (Award winning WNC vocalist Rapheal & guest perform acoustic folk, and rock.)`,
         sort_time: "2026-08-13 17:30:00",
         end_time_formatted: "2026-08-13 20:30",
-        detail: "2026-08-13 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6790,7 +6886,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-14 00:00:00",
         end_time_formatted: "2026-08-14 23:59",
-        detail: "2026-08-14 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6802,7 +6898,7 @@ const events = [
         name: `ReUnion Weekend 2026`,
         sort_time: "2026-08-14 12:00:00",
         end_time_formatted: "2026-08-14 18:00",
-        detail: "2026-08-14 18:00",
+        detail: "None",
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
@@ -6814,7 +6910,7 @@ const events = [
         name: `LAZRLUVR`,
         sort_time: "2026-08-14 19:00:00",
         end_time_formatted: "2026-08-14 21:30",
-        detail: "2026-08-14 21:30",
+        detail: "Voted WNC’s #1 All-Round favorite Band! We deliver the BEST tributes to your timeless 80’s favorites.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6826,7 +6922,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-15 00:00:00",
         end_time_formatted: "2026-08-15 23:59",
-        detail: "2026-08-15 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6838,7 +6934,7 @@ const events = [
         name: `Brian Felix Trio`,
         sort_time: "2026-08-15 14:00:00",
         end_time_formatted: "2026-08-15 17:00",
-        detail: "2026-08-15 17:00",
+        detail: "Rooted in the deep traditions of organ-driven jazz, funk, and soul, the Brian Felix Organ Trio blends reggae, samba, surf rock, gospel, and ambient soundscapes into a unified and forward-looking ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6850,7 +6946,7 @@ const events = [
         name: `BMC Presents: Béla Fleck\'s Blue Ridge Banjo Concert`,
         sort_time: "2026-08-15 19:30:00",
         end_time_formatted: "2026-08-15 23:59",
-        detail: "2026-08-15 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -6862,7 +6958,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-16 00:00:00",
         end_time_formatted: "2026-08-16 23:59",
-        detail: "2026-08-16 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6874,7 +6970,7 @@ const events = [
         name: `Sidecar Honey`,
         sort_time: "2026-08-16 14:00:00",
         end_time_formatted: "2026-08-16 17:00",
-        detail: "2026-08-16 17:00",
+        detail: "Down home roots with a modern edge. Lead vocalist/guitarist and songwriter, Dave Dribbon started the band in 2015. Kimberly Tzakos is also on lead vocals, adding beautiful tone, range and ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6886,7 +6982,7 @@ const events = [
         name: `Music by the Lake: Free Flow Band`,
         sort_time: "2026-08-16 17:00:00",
         end_time_formatted: "2026-08-16 19:00",
-        detail: "2026-08-16 19:00",
+        detail: "None",
         location: "Music on Main Main St. Hendersonville",
     },
     {
@@ -6898,7 +6994,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-17 00:00:00",
         end_time_formatted: "2026-08-17 23:59",
-        detail: "2026-08-17 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6910,7 +7006,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-18 00:00:00",
         end_time_formatted: "2026-08-18 23:59",
-        detail: "2026-08-18 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6922,7 +7018,7 @@ const events = [
         name: `Theme: Ice Cream Social`,
         sort_time: "2026-08-19 00:00:00",
         end_time_formatted: "2026-08-19 23:59",
-        detail: "2026-08-19 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6934,7 +7030,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-19 00:00:00",
         end_time_formatted: "2026-08-19 23:59",
-        detail: "2026-08-19 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6946,7 +7042,7 @@ const events = [
         name: `Paul McIntire Trio (Paul, a long-time professional violinist, takes the audience on a musical journey crossing many genres. He is joined by Zack on bass, and Bob, singer/guitaristRock, Jazz, Swing, Folk)`,
         sort_time: "2026-08-19 17:30:00",
         end_time_formatted: "2026-08-19 20:30",
-        detail: "2026-08-19 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6958,7 +7054,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-20 00:00:00",
         end_time_formatted: "2026-08-20 23:59",
-        detail: "2026-08-20 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -6970,7 +7066,7 @@ const events = [
         name: `Bayou Diesel (Cajun, zydeco, and old school country music)`,
         sort_time: "2026-08-20 17:30:00",
         end_time_formatted: "2026-08-20 20:30",
-        detail: "2026-08-20 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -6982,7 +7078,7 @@ const events = [
         name: `Andrew Scotchie (Southern Rock) with Random Animals (Indie/Soul)`,
         sort_time: "2026-08-20 17:30:00",
         end_time_formatted: "2026-08-20 22:00",
-        detail: "2026-08-20 22:00",
+        detail: "None",
         location: "Rhythm & Brews Main St. Hendersonville",
     },
     {
@@ -6994,7 +7090,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-21 00:00:00",
         end_time_formatted: "2026-08-21 23:59",
-        detail: "2026-08-21 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7006,7 +7102,7 @@ const events = [
         name: `Asheville Downtown After Five - August`,
         sort_time: "2026-08-21 00:00:00",
         end_time_formatted: "2026-08-21 23:59",
-        detail: "2026-08-21 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Beach, Bluegrass, Blues, Country, Jazz, Rock and Variety.<a href='https://festivalnet.com/101587/Asheville-North-Carolina/Festival-Concerts/Asheville-Downtown-After-Five-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Downtown After Five - August",
     },
     {
@@ -7018,7 +7114,7 @@ const events = [
         name: `The Hazy Hideaway`,
         sort_time: "2026-08-21 14:00:00",
         end_time_formatted: "2026-08-21 22:00",
-        detail: "2026-08-21 22:00",
+        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7030,7 +7126,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-22 00:00:00",
         end_time_formatted: "2026-08-22 23:59",
-        detail: "2026-08-22 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7042,7 +7138,7 @@ const events = [
         name: `Too Much Sylvia 26`,
         sort_time: "2026-08-22 08:00:00",
         end_time_formatted: "2026-08-22 17:00",
-        detail: "2026-08-22 17:00",
+        detail: "None",
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
@@ -7054,7 +7150,7 @@ const events = [
         name: `The Hazy Hideaway`,
         sort_time: "2026-08-22 13:00:00",
         end_time_formatted: "2026-08-22 22:00",
-        detail: "2026-08-22 22:00",
+        detail: "The Hazy Hideaway is a two-day music & arts festival at Sierra Nevada’s Mills River Brewery with live music, art, food and our select brews.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7066,7 +7162,7 @@ const events = [
         name: `BMC Presents: Fiddle Forward with Casey Driessen`,
         sort_time: "2026-08-22 19:30:00",
         end_time_formatted: "2026-08-22 23:59",
-        detail: "2026-08-22 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -7078,7 +7174,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-23 00:00:00",
         end_time_formatted: "2026-08-23 23:59",
-        detail: "2026-08-23 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7090,7 +7186,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-24 00:00:00",
         end_time_formatted: "2026-08-24 23:59",
-        detail: "2026-08-24 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7102,7 +7198,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-25 00:00:00",
         end_time_formatted: "2026-08-25 23:59",
-        detail: "2026-08-25 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7114,7 +7210,7 @@ const events = [
         name: `Theme: Backyard BBQ`,
         sort_time: "2026-08-26 00:00:00",
         end_time_formatted: "2026-08-26 23:59",
-        detail: "2026-08-26 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7126,7 +7222,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-26 00:00:00",
         end_time_formatted: "2026-08-26 23:59",
-        detail: "2026-08-26 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7138,7 +7234,7 @@ const events = [
         name: `Holler & Crow (Joyful folk fusion magic)`,
         sort_time: "2026-08-26 17:30:00",
         end_time_formatted: "2026-08-26 20:30",
-        detail: "2026-08-26 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7150,8 +7246,20 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-27 00:00:00",
         end_time_formatted: "2026-08-27 23:59",
-        detail: "2026-08-27 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-08-27",
+        start_time: "4:30 PM",
+        end_time: "6:00 PM",
+        name: `Thirsty Thursdays`,
+        sort_time: "2026-08-27 16:30:00",
+        end_time_formatted: "2026-08-27 18:00:00",
+        detail: "A one-a-month happy hour.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
@@ -7162,7 +7270,7 @@ const events = [
         name: `Momma Molasses (Classic country, folk, and jazz)`,
         sort_time: "2026-08-27 17:30:00",
         end_time_formatted: "2026-08-27 20:30",
-        detail: "2026-08-27 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7174,7 +7282,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-28 00:00:00",
         end_time_formatted: "2026-08-28 23:59",
-        detail: "2026-08-28 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7186,7 +7294,7 @@ const events = [
         name: `Shindig on the Green (Jul 11 -> Aug 29)`,
         sort_time: "2026-08-29 00:00:00",
         end_time_formatted: "2026-08-29 23:59",
-        detail: "2026-08-29 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
     },
     {
@@ -7198,7 +7306,7 @@ const events = [
         name: `Log Noggins`,
         sort_time: "2026-08-29 14:00:00",
         end_time_formatted: "2026-08-29 17:00",
-        detail: "2026-08-29 17:00",
+        detail: "The Log Noggins are a 3-piece progressive southern rock band based in Asheville, NC. Embedded in their southern roots are strains of fusion, blues, progressive rock, and much more.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7210,7 +7318,7 @@ const events = [
         name: `Tanasi`,
         sort_time: "2026-08-30 14:00:00",
         end_time_formatted: "2026-08-30 17:00",
-        detail: "2026-08-30 17:00",
+        detail: "TANASI is a worldgrass trio from Asheville, North Carolina, bringing together three internationally respected roots musicians whose work bridges Appalachian tradition and global musical exchange. Featuring Billy Cardine on dobro ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -7222,7 +7330,7 @@ const events = [
         name: `Theme: Bark & Brew`,
         sort_time: "2026-09-02 00:00:00",
         end_time_formatted: "2026-09-02 23:59",
-        detail: "2026-09-02 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7234,7 +7342,7 @@ const events = [
         name: `Anne Coombs Jazz Trio (Soulful Jazz standards , soft pop, and originals)`,
         sort_time: "2026-09-02 17:30:00",
         end_time_formatted: "2026-09-02 20:30",
-        detail: "2026-09-02 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7246,7 +7354,7 @@ const events = [
         name: `5J Barrow (Americana/Roots music)`,
         sort_time: "2026-09-03 17:30:00",
         end_time_formatted: "2026-09-03 20:30",
-        detail: "2026-09-03 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7258,7 +7366,7 @@ const events = [
         name: `North Carolina Apple Festival (Sep 4 -> Sep 7)`,
         sort_time: "2026-09-04 00:00:00",
         end_time_formatted: "2026-09-04 23:59",
-        detail: "2026-09-04 23:59",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7270,7 +7378,7 @@ const events = [
         name: `North Carolina Apple Festival (Sep 4 -> Sep 7)`,
         sort_time: "2026-09-05 00:00:00",
         end_time_formatted: "2026-09-05 23:59",
-        detail: "2026-09-05 23:59",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7282,7 +7390,7 @@ const events = [
         name: `North Carolina Apple Festival (Sep 4 -> Sep 7)`,
         sort_time: "2026-09-06 00:00:00",
         end_time_formatted: "2026-09-06 23:59",
-        detail: "2026-09-06 23:59",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7294,7 +7402,7 @@ const events = [
         name: `North Carolina Apple Festival (Sep 4 -> Sep 7)`,
         sort_time: "2026-09-07 00:00:00",
         end_time_formatted: "2026-09-07 23:59",
-        detail: "2026-09-07 23:59",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
     },
     {
@@ -7306,7 +7414,7 @@ const events = [
         name: `Theme: Romance & Roses`,
         sort_time: "2026-09-09 00:00:00",
         end_time_formatted: "2026-09-09 23:59",
-        detail: "2026-09-09 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7318,7 +7426,7 @@ const events = [
         name: `Angela Easterling & Brandon Turner (Not quite country & not quite folk! Angela, a unique and engaging songwriter, brings rootsy, refreshing, and homespun tunes with her duo partner, Brandon)`,
         sort_time: "2026-09-09 17:30:00",
         end_time_formatted: "2026-09-09 20:30",
-        detail: "2026-09-09 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7330,7 +7438,7 @@ const events = [
         name: `5:30 - 8:30:Elizabeth McCorvey & Lefty Carmean (Mixing fiddle, violin, banjo, and the cello)`,
         sort_time: "2026-09-10 17:30:00",
         end_time_formatted: "2026-09-10 Can't convert 8:30:Elizabeth McCorvey & Lefty Carmean (Mixing fiddle, violin, banjo, and the cello) pm",
-        detail: "2026-09-10 Can't convert 8:30:Elizabeth McCorvey & Lefty Carmean (Mixing fiddle, violin, banjo, and the cello) pm",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7342,7 +7450,7 @@ const events = [
         name: `Goombay Festival (Sep 11 -> Sep 13)`,
         sort_time: "2026-09-11 00:00:00",
         end_time_formatted: "2026-09-11 23:59",
-        detail: "2026-09-11 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Goombay Festival",
     },
     {
@@ -7354,7 +7462,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-11 00:00:00",
         end_time_formatted: "2026-09-11 23:59",
-        detail: "2026-09-11 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7366,7 +7474,7 @@ const events = [
         name: `2026 Mountain Song Festival`,
         sort_time: "2026-09-11 15:00:00",
         end_time_formatted: "2026-09-11 23:59",
-        detail: "2026-09-11 23:59",
+        detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -7378,7 +7486,7 @@ const events = [
         name: `Goombay Festival (Sep 11 -> Sep 13)`,
         sort_time: "2026-09-12 00:00:00",
         end_time_formatted: "2026-09-12 23:59",
-        detail: "2026-09-12 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Goombay Festival",
     },
     {
@@ -7390,7 +7498,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-12 00:00:00",
         end_time_formatted: "2026-09-12 23:59",
-        detail: "2026-09-12 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7402,7 +7510,7 @@ const events = [
         name: `Rockin’ on the Rock with Showboat Band`,
         sort_time: "2026-09-12 17:00:00",
         end_time_formatted: "2026-09-12 23:59",
-        detail: "2026-09-12 23:59",
+        detail: "None",
         location: "Jump Off Rock, Laurel Park, NC and Laurel Green Park",
     },
     {
@@ -7414,7 +7522,7 @@ const events = [
         name: `Goombay Festival (Sep 11 -> Sep 13)`,
         sort_time: "2026-09-13 00:00:00",
         end_time_formatted: "2026-09-13 23:59",
-        detail: "2026-09-13 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Blues, Gospel, R & B/Soul, Reggae and Variety, and there will be other activities like african american/caribbean cultural activities.<a href='https://festivalnet.com/8150/Asheville-North-Carolina/Ethnic-Festivals/Goombay-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Goombay Festival",
     },
     {
@@ -7426,7 +7534,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-13 00:00:00",
         end_time_formatted: "2026-09-13 23:59",
-        detail: "2026-09-13 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7438,7 +7546,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-14 00:00:00",
         end_time_formatted: "2026-09-14 23:59",
-        detail: "2026-09-14 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7450,7 +7558,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-15 00:00:00",
         end_time_formatted: "2026-09-15 23:59",
-        detail: "2026-09-15 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7462,7 +7570,7 @@ const events = [
         name: `Theme: Speakeasy Evening`,
         sort_time: "2026-09-16 00:00:00",
         end_time_formatted: "2026-09-16 23:59",
-        detail: "2026-09-16 23:59",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7474,7 +7582,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-16 00:00:00",
         end_time_formatted: "2026-09-16 23:59",
-        detail: "2026-09-16 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7486,7 +7594,7 @@ const events = [
         name: `Nicole Kestler Duo (Lively jazz standards)`,
         sort_time: "2026-09-16 17:30:00",
         end_time_formatted: "2026-09-16 20:30",
-        detail: "2026-09-16 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7498,7 +7606,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-17 00:00:00",
         end_time_formatted: "2026-09-17 23:59",
-        detail: "2026-09-17 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7510,7 +7618,7 @@ const events = [
         name: `The Fabulous DB Cooper (Americana, Classic Rock, and Classic Country)`,
         sort_time: "2026-09-17 17:30:00",
         end_time_formatted: "2026-09-17 20:30",
-        detail: "2026-09-17 20:30",
+        detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
@@ -7522,7 +7630,7 @@ const events = [
         name: `Brennen Leigh (Country) with The Dudes (String band)`,
         sort_time: "2026-09-17 17:30:00",
         end_time_formatted: "2026-09-17 22:00",
-        detail: "2026-09-17 22:00",
+        detail: "None",
         location: "Rhythm & Brews Main St. Hendersonville",
     },
     {
@@ -7534,7 +7642,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-18 00:00:00",
         end_time_formatted: "2026-09-18 23:59",
-        detail: "2026-09-18 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7546,7 +7654,7 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-19 00:00:00",
         end_time_formatted: "2026-09-19 23:59",
-        detail: "2026-09-19 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
@@ -7558,7 +7666,7 @@ const events = [
         name: `Brevard Plein Air Festival`,
         sort_time: "2026-09-19 00:00:00",
         end_time_formatted: "2026-09-19 23:59",
-        detail: "2026-09-19 23:59",
+        detail: "<a href='https://festivalnet.com/101204/Brevard-North-Carolina/Festivals/Brevard-Plein-Air-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net Brevard Plein Air Festival",
     },
     {
@@ -7570,8 +7678,20 @@ const events = [
         name: `North Carolina Mountain State Fair (Sep 11 -> Sep 20)`,
         sort_time: "2026-09-20 00:00:00",
         end_time_formatted: "2026-09-20 23:59",
-        detail: "2026-09-20 23:59",
+        detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-09-24",
+        start_time: "4:30 PM",
+        end_time: "6:00 PM",
+        name: `Thirsty Thursdays`,
+        sort_time: "2026-09-24 16:30:00",
+        end_time_formatted: "2026-09-24 18:00:00",
+        detail: "A one-a-month happy hour.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
@@ -7582,7 +7702,7 @@ const events = [
         name: `Thirty-Seventh Fall Doll Show and Sale`,
         sort_time: "2026-09-26 00:00:00",
         end_time_formatted: "2026-09-26 23:59",
-        detail: "2026-09-26 23:59",
+        detail: "<a href='https://festivalnet.com/93756/East-Flat-Rock-North-Carolina/Antiques-Collectibles-Shows/Thirty-Seventh-Fall-Doll-Show-and-Sale' target='_blank'> <em>link</em></a>",
         location: "Festival Net Thirty-Seventh Fall Doll Show and Sale",
     },
     {
@@ -7594,7 +7714,7 @@ const events = [
         name: `Art on Main: Fine Art & Fine Craft Fair (Sep 26 -> Sep 27)`,
         sort_time: "2026-09-26 00:00:00",
         end_time_formatted: "2026-09-26 23:59",
-        detail: "2026-09-26 23:59",
+        detail: "<a href='https://festivalnet.com/53087/Hendersonville-North-Carolina/Festivals/Art-on-Main-Fine-Art-Fine-Craft-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net Art on Main: Fine Art & Fine Craft Fair",
     },
     {
@@ -7606,7 +7726,7 @@ const events = [
         name: `Art on Main: Fine Art & Fine Craft Fair (Sep 26 -> Sep 27)`,
         sort_time: "2026-09-27 00:00:00",
         end_time_formatted: "2026-09-27 23:59",
-        detail: "2026-09-27 23:59",
+        detail: "<a href='https://festivalnet.com/53087/Hendersonville-North-Carolina/Festivals/Art-on-Main-Fine-Art-Fine-Craft-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net Art on Main: Fine Art & Fine Craft Fair",
     },
     {
@@ -7618,7 +7738,7 @@ const events = [
         name: `Farm City Day`,
         sort_time: "2026-10-03 00:00:00",
         end_time_formatted: "2026-10-03 23:59",
-        detail: "2026-10-03 23:59",
+        detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Bluegrass, Country and Folk, and there will be other activities like all listed below.<a href='https://festivalnet.com/50118/Hendersonville-North-Carolina/Family-Kids-Festivals/Farm-City-Day' target='_blank'> <em>link</em></a>",
         location: "Festival Net Farm City Day",
     },
     {
@@ -7630,7 +7750,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-03 00:00:00",
         end_time_formatted: "2026-10-03 23:59",
-        detail: "2026-10-03 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7642,7 +7762,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-04 00:00:00",
         end_time_formatted: "2026-10-04 23:59",
-        detail: "2026-10-04 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7654,7 +7774,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-05 00:00:00",
         end_time_formatted: "2026-10-05 23:59",
-        detail: "2026-10-05 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7666,7 +7786,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-06 00:00:00",
         end_time_formatted: "2026-10-06 23:59",
-        detail: "2026-10-06 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7678,7 +7798,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-07 00:00:00",
         end_time_formatted: "2026-10-07 23:59",
-        detail: "2026-10-07 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7690,7 +7810,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-08 00:00:00",
         end_time_formatted: "2026-10-08 23:59",
-        detail: "2026-10-08 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7702,7 +7822,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-09 00:00:00",
         end_time_formatted: "2026-10-09 23:59",
-        detail: "2026-10-09 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7714,7 +7834,7 @@ const events = [
         name: `Rockin’ on the Rock with Autumnwood`,
         sort_time: "2026-10-09 17:00:00",
         end_time_formatted: "2026-10-09 23:59",
-        detail: "2026-10-09 23:59",
+        detail: "None",
         location: "Jump Off Rock, Laurel Park, NC and Laurel Green Park",
     },
     {
@@ -7726,7 +7846,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-10 00:00:00",
         end_time_formatted: "2026-10-10 23:59",
-        detail: "2026-10-10 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7738,7 +7858,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-11 00:00:00",
         end_time_formatted: "2026-10-11 23:59",
-        detail: "2026-10-11 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7750,7 +7870,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-12 00:00:00",
         end_time_formatted: "2026-10-12 23:59",
-        detail: "2026-10-12 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7762,7 +7882,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-13 00:00:00",
         end_time_formatted: "2026-10-13 23:59",
-        detail: "2026-10-13 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7774,7 +7894,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-14 00:00:00",
         end_time_formatted: "2026-10-14 23:59",
-        detail: "2026-10-14 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7786,7 +7906,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-15 00:00:00",
         end_time_formatted: "2026-10-15 23:59",
-        detail: "2026-10-15 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7798,7 +7918,7 @@ const events = [
         name: `Unspoken Tradition (Bluegrassl) with Finkelstein Three (Bluegrass/Jazzgrass)`,
         sort_time: "2026-10-15 17:30:00",
         end_time_formatted: "2026-10-15 22:00",
-        detail: "2026-10-15 22:00",
+        detail: "None",
         location: "Rhythm & Brews Main St. Hendersonville",
     },
     {
@@ -7810,7 +7930,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-16 00:00:00",
         end_time_formatted: "2026-10-16 23:59",
-        detail: "2026-10-16 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7822,7 +7942,7 @@ const events = [
         name: `LEAF Global Arts Festival (Oct 16 -> Oct 18)`,
         sort_time: "2026-10-16 00:00:00",
         end_time_formatted: "2026-10-16 23:59",
-        detail: "2026-10-16 23:59",
+        detail: "There will be 2 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Horse-Shoe-North-Carolina/Festivals/LEAF-Global-Arts-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net LEAF Global Arts Festival",
     },
     {
@@ -7834,7 +7954,7 @@ const events = [
         name: `Asheville Art in the Park - October (Oct 3 -> Oct 17)`,
         sort_time: "2026-10-17 00:00:00",
         end_time_formatted: "2026-10-17 23:59",
-        detail: "2026-10-17 23:59",
+        detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
@@ -7846,7 +7966,7 @@ const events = [
         name: `LEAF Global Arts Festival (Oct 16 -> Oct 18)`,
         sort_time: "2026-10-17 00:00:00",
         end_time_formatted: "2026-10-17 23:59",
-        detail: "2026-10-17 23:59",
+        detail: "There will be 2 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Horse-Shoe-North-Carolina/Festivals/LEAF-Global-Arts-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net LEAF Global Arts Festival",
     },
     {
@@ -7858,8 +7978,20 @@ const events = [
         name: `LEAF Global Arts Festival (Oct 16 -> Oct 18)`,
         sort_time: "2026-10-18 00:00:00",
         end_time_formatted: "2026-10-18 23:59",
-        detail: "2026-10-18 23:59",
+        detail: "There will be 2 stages with National, Regional and Local talent. The entertainment will be Bluegrass, Blues, Cajun/Zydeco, Children's, DJ/Dance/Techno, Folk, Funk, Gospel, Jazz, Latin, Old-time, R & B/Soul, Reggae, Roots, Salsa, Spoken Word, Swing, Variety and World, and there will be other activities like poetry slam, children's workshops, drumming, fire spinning, healing arts workshops.<a href='https://festivalnet.com/8945/Horse-Shoe-North-Carolina/Festivals/LEAF-Global-Arts-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net LEAF Global Arts Festival",
+    },
+    {
+        url: "https://www.cphassn.org/calendar",
+        venue: "Carriage Park",
+        event_date: "2026-10-22",
+        start_time: "4:30 PM",
+        end_time: "6:00 PM",
+        name: `Thirsty Thursdays`,
+        sort_time: "2026-10-22 16:30:00",
+        end_time_formatted: "2026-10-22 18:00:00",
+        detail: "A one-a-month happy hour.",
+        location: "Carriage Park clubhouse",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
@@ -7870,7 +8002,7 @@ const events = [
         name: `Art by the Tracks - Fall`,
         sort_time: "2026-10-24 00:00:00",
         end_time_formatted: "2026-10-24 23:59",
-        detail: "2026-10-24 23:59",
+        detail: "<a href='https://festivalnet.com/98680/Black-Mountain-North-Carolina/Craft-Shows/Art-by-the-Tracks-Fall' target='_blank'> <em>link</em></a>",
         location: "Festival Net Art by the Tracks - Fall",
     },
     {
@@ -7882,7 +8014,7 @@ const events = [
         name: `Halloweenfest`,
         sort_time: "2026-10-24 00:00:00",
         end_time_formatted: "2026-10-24 23:59",
-        detail: "2026-10-24 23:59",
+        detail: "<a href='https://festivalnet.com/30176/Brevard-North-Carolina/Holiday-Celebrations/Halloweenfest' target='_blank'> <em>link</em></a>",
         location: "Festival Net Halloweenfest",
     },
     {
@@ -7894,7 +8026,7 @@ const events = [
         name: `Light Up the Night`,
         sort_time: "2026-12-05 00:00:00",
         end_time_formatted: "2026-12-05 23:59",
-        detail: "2026-12-05 23:59",
+        detail: "There will be 1 stage with Local talent. The entertainment will be Variety, and there will be other activities like chamber of commerce holiday parade, ice skating, caroling and music.<a href='https://festivalnet.com/39839/Brevard-North-Carolina/Holiday-Celebrations/Light-Up-the-Night' target='_blank'> <em>link</em></a>",
         location: "Festival Net Light Up the Night",
     },
     {
@@ -7906,7 +8038,7 @@ const events = [
         name: `Sunday Memorial Weekend Paul McIntire & Bob Zullo at the Vineyard...Mountain Man BBQ Truck on site!`,
         sort_time: "2027-05-24 14:30:00",
         end_time_formatted: "2027-05-24 17:30",
-        detail: "2027-05-24 17:30",
+        detail: "Sunday Memorial Weekend.....Bob Zullo on Guitar and Paul on the electric violin, produce amazing music. It\'s going to be a great day at the vineyard! Mountain Mann BBQ Food Truck onsite or Charcuterie available! See you at the Vineyard",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -7918,7 +8050,7 @@ const events = [
         name: `Jason DeCristofaro’s Jazz Night`,
         sort_time: "2027-06-03 18:00:00",
         end_time_formatted: "2027-06-03 20:00",
-        detail: "2027-06-03 20:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -7930,7 +8062,7 @@ const events = [
         name: `Possum Royale`,
         sort_time: "2027-06-04 18:00:00",
         end_time_formatted: "2027-06-04 20:00",
-        detail: "2027-06-04 20:00",
+        detail: "Just a couple of guys who happen to like possums.\n\nAnd fortunately for us, they’re also really talented musicians.\n\nJoined by the also talented Jason Sharp.",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -7942,7 +8074,7 @@ const events = [
         name: `Lewendahl`,
         sort_time: "2027-06-05 19:00:00",
         end_time_formatted: "2027-06-05 21:00",
-        detail: "2027-06-05 21:00",
+        detail: "Original music inspired by RnB, Neo-Soul and Rock.\nFull band show!\nlewendahl.com",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -7954,7 +8086,7 @@ const events = [
         name: `Saturday Yoga Class`,
         sort_time: "2027-06-06 12:00:00",
         end_time_formatted: "2027-06-06 13:00",
-        detail: "2027-06-06 13:00",
+        detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -7966,7 +8098,7 @@ const events = [
         name: `Bob Zullo performs at Saint Paul Saturday 6/6 Grass Roots Pizza Truck on site!!`,
         sort_time: "2027-06-06 15:00:00",
         end_time_formatted: "2027-06-06 18:00",
-        detail: "2027-06-06 18:00",
+        detail: "Enjoy great music and great wine with Bob Zullo at the Vineyard. Sipping wine, Enjoying friends and listening to Bob, Sit on our patio next the the vines and enjoy all our award winning wines! Bring all your friends and family. New Pizza Truck in town! Come out and welcome Grass Roots Pizza",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -7978,7 +8110,7 @@ const events = [
         name: `Enjoy Sunday at the Vineyard with AUTUMNWÜD this Sunday 6/7`,
         sort_time: "2027-06-07 14:30:00",
         end_time_formatted: "2027-06-07 17:30",
-        detail: "2027-06-07 17:30",
+        detail: "Eric Congdon\'s acoustic supergroup AUTUMNWÜD is playing a year long residency at the beautiful and fun Saint Paul Vineyards. Every first Sunday, they will be filling the air with beautiful 3 part harmonies and jams as only Autumnwüd can. Grass Roots Pizza Truck onsite. NEW truck in town",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
@@ -7990,7 +8122,7 @@ const events = [
         name: `The Dan Keller Trio`,
         sort_time: "2027-06-07 16:00:00",
         end_time_formatted: "2027-06-07 18:00",
-        detail: "2027-06-07 18:00",
+        detail: "Dan Keller’s band puts their own spin on timeless standards and melodies, without losing the grit and authenticity of jazz.\nMany eras from early swing, latin jazz, bebop, and soul-jazz are…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
@@ -8002,7 +8134,7 @@ const events = [
         name: `Jason DeCristofaro’s Jazz Night`,
         sort_time: "2027-06-10 18:00:00",
         end_time_formatted: "2027-06-10 20:00",
-        detail: "2027-06-10 20:00",
+        detail: "Jazz Night at SAB will be a jazz jam every week from 6 PM to 8 PM.\nNo cover.\nFor more information, please contact Jason DeCristofaro at (828)273-8254",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
 ];
