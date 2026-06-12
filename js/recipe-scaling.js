@@ -1,4 +1,4 @@
-const recipeScalingVersion = "Thursday, 2026-06-04 @ 20:13:16";
+const recipeScalingVersion = "Friday, 2026-06-12 @ 14:45:49";
 
 /*
  *    In response to this prompt:
@@ -241,6 +241,9 @@ function numberToFraction( number ) {
         wholePart = Math.floor( numerator / denominator );
         numerator = numerator - ( wholePart * denominator );
     }
+
+    if ( numerator < precision )
+        return ( wholePart );
 
     let fraction = numerator + "/" + denominator;
     if ( fraction in fractionalTextToGlyphMap ) {
