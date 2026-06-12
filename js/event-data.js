@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-06-11 18:07:08";
+const eventDataVersion = "Thursday, 2026-06-11 20:26:20";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -830,18 +830,6 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-11",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Appalachian Chick`,
-        sort_time: "2026-06-11 16:00:00",
-        end_time_formatted: "2026-06-11 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-06-11",
@@ -900,18 +888,6 @@ const events = [
         end_time_formatted: "2026-06-11 19:00",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-06-11",
-        start_time: "6:30 pm",
-        end_time: "9:00 pm",
-        name: `Amplify Appalachia ft. Anders Osborne & Duck`,
-        sort_time: "2026-06-11 18:30:00",
-        end_time_formatted: "2026-06-11 21:00",
-        detail: "Join us for Amplify Appalachia 2026 ft. live performances from Anders Osborne & Duck! In the immediate aftermath of Hurricane Helene, Footprint Project, Land of Sky Regional Council of Governments ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -1090,7 +1066,7 @@ const events = [
         name: `The Bright Light Social Hour`,
         sort_time: "2026-06-12 19:00:00",
         end_time_formatted: "2026-06-12 21:30",
-        detail: "Austin’s The Bright Light Social Hour are widely recognized as the essence of Texas psych rock - no one better captures or defies the genre, twisting southern blues, hypnotic grooves, and pulsing synths into sweaty, ecstatic journeys that linger long after the lights go up.\nFrom retro-futurist masterpieces like Space Is Still the Place and Emergency Leisure to composing for HBO, MTV, Nintendo, and the award-winning theme for Sneaky Pete at Bryan Cranston’s request, their music drifts between cosmic psychedelia and late-night dancefloor heat, weaving fat basslines, ecstatic percussion, and three-part harmonies that sting and soothe at once.\nLive, they’re a full-body experience: part revival, part warehouse party, part cosmic trip - music that hits the chest, drops the booty and tears the fabric of the understood.\n“Their expansive sound, penchant for experimentation and incredible shows combine a psychedelic southern blues-rock aesthetic with danceable electronics… Continually exhilarating.” -David Dye, NPR’s World Cafe",
+        detail: "Austin’s The Bright Light Social Hour are widely recognized as the essence of Texas psych rock - no one better captures or defies the genre, twisting southern blues, hypnotic grooves, ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1370,18 +1346,6 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-14",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck: `,
-        sort_time: "2026-06-14 00:00:00",
-        end_time_formatted: "2026-06-14 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-06-14",
@@ -1466,6 +1430,18 @@ const events = [
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-06-14",
+        start_time: "1:00 pm",
+        end_time: "7:00 pm",
+        name: `Food Truck: La Jarochita`,
+        sort_time: "2026-06-14 13:00:00",
+        end_time_formatted: "2026-06-14 19:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://www.sabrewery.com/events/2026-06",
         venue: "Southern App",
         event_date: "2026-06-14",
@@ -1498,7 +1474,7 @@ const events = [
         name: `Wax Monkey`,
         sort_time: "2026-06-14 14:00:00",
         end_time_formatted: "2026-06-14 17:00",
-        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in 2023 while attending the University of Alabama. Rooted in the spirit of musical exploration, Wax Monkey draws inspiration from legends such as The Grateful Dead, Phish, and The Allman Brothers Band—blending aspects of Southern rock, psychedelic rock, and improvisational jams.",
+        detail: "Wax Monkey is a 5-piece jam band composed of childhood friends hailing from Birmingham, Alabama. The members first started jamming together in high school before officially forming the band in ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -1968,6 +1944,18 @@ const events = [
         end_time_formatted: "2026-06-18 23:59",
         detail: "<a href='https://festivalnet.com/48479/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - June",
+    },
+    {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
+        venue: "Festival Net",
+        event_date: "2026-06-18",
+        start_time: "¿",
+        end_time: "?",
+        name: `Rhythm & Brews Concert Series - June`,
+        sort_time: "2026-06-18 00:00:00",
+        end_time_formatted: "2026-06-18 23:59",
+        detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Americana, Bluegrass, Folk, Funk, Rock, Roots and Variety.<a href='https://festivalnet.com/98384/Hendersonville-North-Carolina/Music-Festivals/Rhythm-Brews-Concert-Series-June' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Rhythm & Brews Concert Series - June",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -4690,7 +4678,7 @@ const events = [
         name: `Africa Unplugged`,
         sort_time: "2026-07-11 14:00:00",
         end_time_formatted: "2026-07-11 17:00",
-        detail: "Africa Unplugged is a dynamic group, led by djembe master, guitarist and songwriter, Atiba Rorie. The band uses traditional percussion instruments from West Africa in combination with guitars and bass ...\nRead More",
+        detail: "Africa Unplugged is a dynamic group, led by djembe master, guitarist and songwriter, Atiba Rorie. The band uses traditional percussion instruments from West Africa in combination with guitars and bass to play traditional rhythms while drawing from influences across the world. Their creativity results in a funky, soulful blues and dance music that keeps you moving as they tell stories from the old world and the new!",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5064,6 +5052,18 @@ const events = [
         end_time_formatted: "2026-07-15 20:30",
         detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-15",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Event: Opinionary`,
+        sort_time: "2026-07-15 18:00:00",
+        end_time_formatted: "2026-07-15 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://secured.brevardmusic.org",
@@ -6562,7 +6562,7 @@ const events = [
         name: `Anchors Away`,
         sort_time: "2026-08-02 14:00:00",
         end_time_formatted: "2026-08-02 17:00",
-        detail: "Anchors Away is the Southeast’s Premier Yacht Rock Experience!\nJoin American Idol Golden Ticket Winner and Grammy Member: Blake Ellege and his band as they take you on a musical journey playing all of your favorite hits from Steely Dan, The Doobie Brothers, Hall and Oates, TOTO, The Eagles, Journey AND MORE!\nWear your best sailor hat and Hawaiian shirt and join us as we “shove off” into a musical experience you’ll never forget!",
+        detail: "Anchors Away is the Southeast’s Premier Yacht Rock Experience! Join American Idol Golden Ticket Winner and Grammy Member: Blake Ellege and his band as they take you on a musical ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
