@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-06-16 08:11:31";
+const eventDataVersion = "Tuesday, 2026-06-16 14:20:26";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -120,18 +120,6 @@ const events = [
         end_time_formatted: "2026-02-28 18:00",
         detail: "Closed for Private Event. We will reopen Sunday at 12:00.",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2026-03-19",
-        start_time: "5:00 PM",
-        end_time: "8:00 PM",
-        name: `Mini Cupcake & Flight Pairing`,
-        sort_time: "2026-03-19 17:00:00",
-        end_time_formatted: "2026-03-19 20:00",
-        detail: "Treat yourself to the perfect midweek indulgence! Join us on Thursday, March 19 starting at 5PM for a delicious Mini Cupcake & Cider Flight Pairing experience.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -2014,7 +2002,7 @@ const events = [
         name: `Ska City`,
         sort_time: "2026-06-21 14:00:00",
         end_time_formatted: "2026-06-21 17:00",
-        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of ...\nRead More",
+        detail: "Hailing from both England and the United States, this high-energy nine-piece ska band brings the infectious rhythms of over six decades of ska music to life, blending the best of rocksteady, dancehall, two-tone, third-wave ska, and punk. \nBased in Asheville, North Carolina, the band infuses each performance with a passion and authenticity that honors the genre’s rich history while keeping the dancefloor moving with fresh, dynamic sounds. From the laid-back grooves of rocksteady to the sharp, punchy energy of 3rd wave ska, Ska City offers something for all ska lovers, spreading their love for ska across the southeastern United States. \nWith their infectious energy, tight instrumentation, killer horn section, and love for the genre, this band is a must-see for anyone who loves the ever-evolving world of ska music",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -3602,6 +3590,18 @@ const events = [
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-07-03",
+        start_time: "8:30 pm",
+        end_time: "10:30 pm",
+        name: `Get Right Band LIVE @ Oklawaha`,
+        sort_time: "2026-07-03 20:30:00",
+        end_time_formatted: "2026-07-03 22:30",
+        detail: "Music starts @ 8:30 $8 cover",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-07-04",
@@ -3768,6 +3768,18 @@ const events = [
         end_time_formatted: "2026-07-05 16:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-07-05",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Nikki Talley and Jason Sharp`,
+        sort_time: "2026-07-05 14:00:00",
+        end_time_formatted: "2026-07-05 17:00",
+        detail: "Music starts @2pm",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -5086,7 +5098,7 @@ const events = [
         name: `Isaac Hadden`,
         sort_time: "2026-07-18 18:30:00",
         end_time_formatted: "2026-07-18 21:00",
-        detail: "It’s as though some people are just born to be musicians. That certainly seems to be the case for guitarist and vocalist, Isaac Hadden. Born and raised in the southeast musical festival scene, Hadden is pushing boundaries and carving out a unique voice in the rock, funk, and jam idiom. Isaac’s shows are known for their raw energy, spontaneous creativity, and deep musical chemistry. With a fearless approach to blending genres, he delivers sets that are as dynamic as they are unforgettable. His touring unit is an all-star quartet that is quickly gaining notoriety on the music festival circuit and the East Coast jam scene for its high-energy performances and tight, dynamic improvisation. His cutting-edge playing style and animated stage presence, combined with his passion and talent, have built him a dedicated fan base in the United States and abroad and solidified him as one of the southeast’s fastest-growing young talents.",
+        detail: "It’s as though some people are just born to be musicians. That certainly seems to be the case for guitarist and vocalist, Isaac Hadden. Born and raised in the southeast ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -5806,7 +5818,7 @@ const events = [
         name: `The Dip`,
         sort_time: "2026-07-26 18:00:00",
         end_time_formatted: "2026-07-26 21:30",
-        detail: "With Special Guests Parlor Greens!\nThe Dip is a Seattle-based Rhythm and Blues band that is known for its poignant songwriting, detailed arrangements, and vintage sound. Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundations that brought the band’s members together.\nWith a distinct sonic character that has drawn in millions of listeners to date, The Dip released their latest, fourth full-length studio album ‘Love Direction’ in July 2024. It is their second with Dualtone Records, the follow-up to 2022’s ‘Sticking With It’ which landed at #1 on the Billboard Current R&B Albums Chart.\nThe band headlined and sold out shows at iconic venues across the country last year including San Francisco’s legendary Fillmore, Washington DC’s 9:30 Club, Webster Hall in New York, Austin’s historic Scoot Inn, two nights at Thalia Hall in Chicago and two hometown shows at The Showbox in Seattle. They have also had the opportunity to support new friends like The Black Pumas and The Teskey Brothers, while also appearing at major festivals including Bonnaroo and Outside Lands.\n“One of the most exciting and joyous acts to emerge in recent years”\n- KEXP\n“For those who think the finer days of brass, rock, jazz and funk are behind us, be schooled by The Dip”\n- Entertainment Today\n“Signature head-bobbing rhythms and vein-shaking guitars”\n- American Songwriter",
+        detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
@@ -6482,6 +6494,18 @@ const events = [
         location: "Music on Main Main St. Hendersonville",
     },
     {
+        url: "https://www.peacecenter.org/events",
+        venue: "Peace Center",
+        event_date: "2026-08-07",
+        start_time: "7:30PM",
+        end_time: "?",
+        name: `Riley Roth`,
+        sort_time: "2026-08-07 19:30:00",
+        end_time_formatted: "2026-08-07 23:59",
+        detail: "Up-and-coming country singer-songwriter Riley Roth’s heartfelt lyrics and gentle voice earned her a legion of fans and the attention of Nashville producer busbee. Of Roth, busbee states “Riley has that rare ability to communicate directly to listeners at every level, and to her peers in particular.” \n \n\n\nRiley Roth started writing songs at 10 years old. \nShe is the first artist who signed with busbee’s new label, Altadena\nDescribing her music, Roth says \"When people listen to my songs, I hope my conversational, honest lyrics make them feel understood - as though they\'re hearing the words straight from a friend.\" \n\n\n\nWith Support from Zoe Jean Fowler\nKnown for her honest songwriting and loyal fanbase, Appalachia-raised country artist Zoe Jean Fowler is carving out her place as a standout independent talent in Nashville, Tennessee. With over 2 million worldwide streams, Zoe’s deluxe album, Cry Baby, received 28 editorial playlist adds, premiered on WSM at The Grand Ole Opry, and led to a feature on CMT. Zoe has opened for Kix Brooks, Randy Houser, Flatland Cavalry, and Sam Barber. In 2026, Zoe is releasing her EP, Written By A Woman, which is penned exclusively by female songwriters while bringing the Cry Baby Tour to 20 cities across the US and UK.",
+        location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
         venue: "Festival Net",
         event_date: "2026-08-08",
@@ -6732,18 +6756,6 @@ const events = [
         end_time_formatted: "2026-08-15 23:59",
         detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
-    },
-    {
-        url: "https://www.peacecenter.org/events",
-        venue: "Peace Center",
-        event_date: "2026-08-15",
-        start_time: "7:30PM",
-        end_time: "?",
-        name: `Augustana: All The Stars and Boulevards 20th Anniversary`,
-        sort_time: "2026-08-15 19:30:00",
-        end_time_formatted: "2026-08-15 23:59",
-        detail: "Platinum-selling American pop-rock artist Augustana emerged as one of the defining voices of mid-2000s alternative rock with their 2005 debut All the Stars and Boulevards. The album\'s breakout single \"Boston\" became a cultural touchstone, amassing over 200 million streams and earning placements in countless films and TV shows. The band followed with successful albums including Can\'t Love, Can\'t Hurt (2008) and Augustana (2011), cementing their place in the hearts of fans worldwide.\n\nLed by the distinctive voice and songwriting of Dan Layus, Augustana has always prioritized authentic connection over trends. In recent years, Layus has breathed new life into the project with innovative approaches to both recording and performing. He\'s released intimate reimagined versions of classic Augustana songs, explored solo material that pushes creative boundaries, and collaborated with the Indianapolis Symphony Orchestra to reimagine Augustana\'s music with lush classical and string arrangements—a testament to the depth and versatility of his songwriting. He\'s also launched special anniversary tour experiences where he performs beloved albums in full as stripped-down solo shows.\n\nWhether playing sold-out theaters or intimate venues, Augustana continues to evolve while honoring the emotional core that first connected with millions. The music remains timeless—raw, honest, and deeply human.",
-        location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
