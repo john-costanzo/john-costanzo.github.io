@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-06-18 08:01:33";
+const eventDataVersion = "Thursday, 2026-06-18 14:11:26";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1188,6 +1188,18 @@ const events = [
         end_time_formatted: "2026-06-18 23:59",
         detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Americana, Bluegrass, Folk, Funk, Rock, Roots and Variety.<a href='https://festivalnet.com/98384/Hendersonville-North-Carolina/Music-Festivals/Rhythm-Brews-Concert-Series-June' target='_blank'> <em>link</em></a>",
         location: "Festival Net Rhythm & Brews Concert Series - June",
+    },
+    {
+        url: "https://www.stoneashevineyards.com/events",
+        venue: "Stoneashe",
+        event_date: "2026-06-18",
+        start_time: "¿",
+        end_time: "?",
+        name: `New wine releases ‘Tether’ and Primrose`,
+        sort_time: "2026-06-18 00:00:00",
+        end_time_formatted: "2026-06-18 23:59",
+        detail: "Come by and enjoy our 2 new releases! ‘Tether’ is a crisp white blend. Perfect for a summer day! Primrose is always a fan favorite! Lightly oaked Merlot Rose’ refreshing and smooth!",
+        location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
         url: "https://dryfallsbrewing.com",
