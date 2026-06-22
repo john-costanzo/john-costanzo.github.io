@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-06-22 08:01:28";
+const eventDataVersion = "Monday, 2026-06-22 14:01:28";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1380,18 +1380,6 @@ const events = [
         end_time_formatted: "2026-06-22 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass and Old-time.<a href='https://festivalnet.com/31522/Hendersonville-North-Carolina/Bluegrass-Festivals/Street-Dance' target='_blank'> <em>link</em></a>",
         location: "Festival Net Street Dance",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-06-22",
-        start_time: "11:00 am",
-        end_time: "1:00 pm",
-        name: `Mah Jongg Monday Open Play`,
-        sort_time: "2026-06-22 11:00:00",
-        end_time_formatted: "2026-06-22 13:00",
-        detail: "Who says Mondays have to be boring?\nTrade the office chair for a vineyard view and join us for Mah Jongg Open Play on Monday, June 22nd from 11:00am-1:00pm at Souther Williams Vineyard.\nBring your board, bring your friends, or pull up a chair and meet some new ones. Between the clack of the tiles and the swirl of a wine glass, Mondays suddenly become something to look forward to.\n Open Play 11-1pm\n Award-Winning NC Wines\n New Friends Welcome\n Relaxing Vineyard Setting\nLet us know you’re coming so we can have tables set up for you and your crew. ([email protected])\nMust be 21+ to play.\nMah Jongg, mountain views, and a glass of wine in hand—now that’s how you Monday.",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -4164,6 +4152,18 @@ const events = [
         end_time_formatted: "2026-07-12 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-07-12",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: `Grass Roots Pizza - Food Truck`,
+        sort_time: "2026-07-12 12:00:00",
+        end_time_formatted: "2026-07-12 17:00",
+        detail: "",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
