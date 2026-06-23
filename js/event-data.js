@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-06-22 14:25:05";
+const eventDataVersion = "Monday, 2026-06-22 20:01:30";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1368,18 +1368,6 @@ const events = [
         end_time_formatted: "2026-06-22 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass and Old-time.<a href='https://festivalnet.com/31522/Hendersonville-North-Carolina/Bluegrass-Festivals/Street-Dance' target='_blank'> <em>link</em></a>",
         location: "Festival Net Street Dance",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-22",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Toasted Cuban`,
-        sort_time: "2026-06-22 16:00:00",
-        end_time_formatted: "2026-06-22 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -3487,7 +3475,7 @@ const events = [
         event_date: "2026-07-07",
         start_time: "4:00 pm",
         end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
+        name: `Food Truck: La Jarochita`,
         sort_time: "2026-07-07 16:00:00",
         end_time_formatted: "2026-07-07 20:00",
         detail: "None",
@@ -4694,18 +4682,6 @@ const events = [
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-17",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck:`,
-        sort_time: "2026-07-17 00:00:00",
-        end_time_formatted: "2026-07-17 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-07-17",
@@ -4788,6 +4764,18 @@ const events = [
         end_time_formatted: "2026-07-17 23:59",
         detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis July, Maia Sharp is joined by Gabe Dixon & Lucie Silvas.\nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\nGabe Dixon is a Nashville-based singer-songwriter and multi-instrumentalist known for his honest, heartfelt songs since 1999. His work has been covered by artists like Garth Brooks and Taj Mahal & Keb’ Mo’, and featured in films like The Proposal and shows including Grey’s Anatomy and Nashville. He has performed with Paul McCartney and Alison Krauss, and is a member of Tedeschi Trucks Band, contributing to their I Am The Moon project. His latest album, Parts I’ve Played, continues to showcase his evolving sound.\nLearn more about Gabe Dixon at gabedixon.com\n\n \nLucie Silvas is a British-born, Nashville-based singer-songwriter celebrated for her soulful voice and genre-blending style. Her debut album Breathe In sold over a million copies worldwide, launching an acclaimed career. Now a key part of Nashville’s music scene, she has toured with artists like Chris Stapleton and Brandi Carlile, and released several praised albums including EGO. As a songwriter, her work has been recorded by Miranda Lambert, Reba McEntire, and Kelly Clarkson, with music featured in major TV shows and films.\nLearn more about Lucie Silvas at luciesilvas.com",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-17",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: La Jarochita`,
+        sort_time: "2026-07-17 12:00:00",
+        end_time_formatted: "2026-07-17 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
@@ -5282,6 +5270,18 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-22",
+        start_time: "12:00 am",
+        end_time: "12:00 am",
+        name: `Food Truck:`,
+        sort_time: "2026-07-22 00:00:00",
+        end_time_formatted: "2026-07-22 00:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-07-22",
@@ -5352,18 +5352,6 @@ const events = [
         end_time_formatted: "2026-07-22 19:30:00",
         detail: "",
         location: "Carriage Park clubhouse",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-22",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Carolina Ace`,
-        sort_time: "2026-07-22 16:00:00",
-        end_time_formatted: "2026-07-22 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
@@ -5868,6 +5856,18 @@ const events = [
         end_time_formatted: "2026-07-26 21:30",
         detail: "Featuring a three-piece horn section, the group’s music harkens back to earlier soul and funk influences while hinting at the jazz foundation",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-27",
+        start_time: "12:00 am",
+        end_time: "12:00 am",
+        name: `Food Truck:`,
+        sort_time: "2026-07-27 00:00:00",
+        end_time_formatted: "2026-07-27 00:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
