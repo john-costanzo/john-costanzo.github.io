@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-06-23 14:01:36";
+const eventDataVersion = "Tuesday, 2026-06-23 20:01:41";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1416,18 +1416,6 @@ const events = [
         end_time_formatted: "2026-06-23 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass and Old-time.<a href='https://festivalnet.com/31522/Hendersonville-North-Carolina/Bluegrass-Festivals/Street-Dance' target='_blank'> <em>link</em></a>",
         location: "Festival Net Street Dance",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-23",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-06-23 16:00:00",
-        end_time_formatted: "2026-06-23 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -6108,6 +6096,18 @@ const events = [
         end_time_formatted: "2026-07-28 23:59",
         detail: "SPAMALOT gallops back to the Peace Center in a hilarious new revival direct from Broadway. Featuring a book and lyrics by Eric Idle and music by John Du Prez and Eric Idle, the original production won three Tony Awards® in 2005, including Best Musical.\nThe side-splitting musical comedy is lovingly ripped off from the film classic, Monty Python and the Holy Grail, and has everything that makes a great knight at the theater, from flying cows to killer rabbits, British royalty to French taunters, dancing girls, rubbery shrubbery, and of course, the Lady of the Lake.\nSpamalot is recommended for ages 8+.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-28",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Taco Bus`,
+        sort_time: "2026-07-28 16:00:00",
+        end_time_formatted: "2026-07-28 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://secured.brevardmusic.org",
