@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-06-25 08:01:20";
+const eventDataVersion = "Thursday, 2026-06-25 14:01:23";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2323,7 +2323,7 @@ const events = [
         event_date: "2026-06-28",
         start_time: "3:00 pm",
         end_time: "5:00 pm",
-        name: `Watercoloring Workshop`,
+        name: `World Cup Watch Party: Canada vs. South Africa`,
         sort_time: "2026-06-28 15:00:00",
         end_time_formatted: "2026-06-28 17:00",
         detail: "None",
