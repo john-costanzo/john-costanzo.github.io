@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-06-24 08:01:33";
+const eventDataVersion = "Wednesday, 2026-06-24 20:01:31";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1490,18 +1490,6 @@ const events = [
         location: "Festival Net Street Dance",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-24",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Carolina Ace`,
-        sort_time: "2026-06-24 16:00:00",
-        end_time_formatted: "2026-06-24 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-06-24",
@@ -1512,18 +1500,6 @@ const events = [
         end_time_formatted: "2026-06-24 20:30",
         detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-06-24",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Event: Opinionary`,
-        sort_time: "2026-06-24 18:00:00",
-        end_time_formatted: "2026-06-24 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.sabrewery.com/events/2026-06",
@@ -6230,6 +6206,18 @@ const events = [
         location: "Carriage Park clubhouse",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-29",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Carolina Ace`,
+        sort_time: "2026-07-29 16:00:00",
+        end_time_formatted: "2026-07-29 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-07-29",
@@ -6240,6 +6228,18 @@ const events = [
         end_time_formatted: "2026-07-29 20:30",
         detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-29",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Event: Opinionary`,
+        sort_time: "2026-07-29 18:00:00",
+        end_time_formatted: "2026-07-29 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.sabrewery.com/events/2026-07",
