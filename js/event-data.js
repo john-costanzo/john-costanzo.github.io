@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-07-01 08:01:27";
+const eventDataVersion = "Wednesday, 2026-07-01 14:01:14";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -6286,7 +6286,7 @@ const events = [
         name: `Quinn Sullivan`,
         sort_time: "2026-07-31 19:30:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "26 Year old Quinn Sullivan is an acclaimed singer, songwriter, and guitarist who rose to prominence in the early 2000’s and continues to amaze audiences worldwide. Born and raised in New Bedford Massachusetts, Quinn grew up in a musical household listening to classic rock, jazz and blues. Quinn credits his early obsession with The Beatles as the impetus for him to pursue music as a career. He received his first guitar at the tender age of three and quickly demonstrated exceptional talent. He gained national attention with appearances on afternoon and late night television shows (The Tonight Show Starring Jimmy Fallon, The Ellen DeGeneres Show, Jimmy Kimmel Live!, and Conan). In 2007, Quinn met music legend Buddy Guy, who invited him onstage and would later invite him to tour and record with him throughout the next decade.\n \n\n \nOver the years, Quinn has evolved from a remarkable young talent into a mature, emotive artist known for blending blues, rock, and classic influences. His discography includes multiple albums, with his fifth release, Salvation, recognized as his most personal work, exploring themes of loss, love, and resilience. He has been praised not only for his exceptional guitar skills but also for his songwriting, drawing inspiration from both his musical roots and his own life experiences.",
+        detail: "26 Year old Quinn Sullivan is an acclaimed singer, songwriter, and guitarist who rose to prominence in the early 2000’s and continues to amaze audiences worldwide. Born and raised in New Bedford Massachusetts, Quinn grew up in a musical household listening to classic rock, jazz and blues. Quinn credits his early obsession with The Beatles as the impetus for him to pursue music as a career. He received his first guitar at the tender age of three and quickly demonstrated exceptional talent. He gained national attention with appearances on afternoon and late night television shows (The Tonight Show Starring Jimmy Fallon, The Ellen DeGeneres Show, Jimmy Kimmel Live!, and Conan). In 2007, Quinn met music legend Buddy Guy, who invited him onstage and would later invite him to tour and record with him throughout the next decade.\n \nOver the years, Quinn has evolved from a remarkable young talent into a mature, emotive artist known for blending blues, rock, and classic influences. His discography includes multiple albums, with his fifth release, Salvation, recognized as his most personal work, exploring themes of loss, love, and resilience. He has been praised not only for his exceptional guitar skills but also for his songwriting, drawing inspiration from both his musical roots and his own life experiences.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6384,18 +6384,6 @@ const events = [
         end_time_formatted: "2026-08-01 17:00",
         detail: "Reggae band. Co-bills include Joan Jett, Three Dog Nights, The Band, The Clash, The Ramones and more.",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-08-01",
-        start_time: "7:00 pm",
-        end_time: "9:00 pm",
-        name: `Caitlin Krisko Acoustic Duo`,
-        sort_time: "2026-08-01 19:00:00",
-        end_time_formatted: "2026-08-01 21:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://secured.brevardmusic.org",
@@ -6612,6 +6600,18 @@ const events = [
         end_time_formatted: "2026-08-05 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-05",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Carolina Ace`,
+        sort_time: "2026-08-05 16:00:00",
+        end_time_formatted: "2026-08-05 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
