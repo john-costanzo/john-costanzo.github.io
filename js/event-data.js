@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-07-01 14:01:14";
+const eventDataVersion = "Wednesday, 2026-07-01 20:01:14";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1370,18 +1370,6 @@ const events = [
         location: "Festival Net Swannanoa Gathering",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-01",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Carolina Ace`,
-        sort_time: "2026-07-01 16:00:00",
-        end_time_formatted: "2026-07-01 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-07-01",
@@ -1392,18 +1380,6 @@ const events = [
         end_time_formatted: "2026-07-01 20:30",
         detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-01",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Event: Opinionary`,
-        sort_time: "2026-07-01 18:00:00",
-        end_time_formatted: "2026-07-01 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.millsriverbrewingco.com/events",
@@ -2494,7 +2470,7 @@ const events = [
         name: `An Evening with Harry Connick, Jr.`,
         sort_time: "2026-07-07 19:30:00",
         end_time_formatted: "2026-07-07 23:59",
-        detail: "Harry Connick, Jr.’s career has exemplified excellence across music, theater, and entertainment. He has earned multiple Grammy and Emmy awards, along with Tony nominations, for his live and recorded musical performances and his work on Broadway.\n\nRooted in the music of his native New Orleans, Connick began performing as a pianist and vocalist at age five. His music career includes several multi-platinum albums, including When Harry Met Sally, Blue Light, Red Light, When My Heart Finds Christmas, Come By Me, and Only You. In 2019, he released the Grammy-nominated True Love: A Celebration of Cole Porter, alongside a Broadway production he wrote and directed honoring the legendary songwriter.\nExplore Harry Connick, Jr.\'s extensive catalog of hits ⬇️\n\n\nDuring the pandemic, Connick created Alone With My Faith, an album of original songs and spirituals showcasing his talents as a writer, arranger, vocalist, and instrumentalist, earning his 16th Grammy nomination. In January 2025, he made his debut at the Metropolitan Opera with the relaunch of A Celebration of Cole Porter.",
+        detail: "Harry Connick, Jr.’s career has exemplified excellence across music, theater, and entertainment. He has earned multiple Grammy and Emmy awards, along with Tony nominations, for his live and recorded musical performances and his work on Broadway.\nRooted in the music of his native New Orleans, Connick began performing as a pianist and vocalist at age five. His music career includes several multi-platinum albums, including When Harry Met Sally, Blue Light, Red Light, When My Heart Finds Christmas, Come By Me, and Only You. In 2019, he released the Grammy-nominated True Love: A Celebration of Cole Porter, alongside a Broadway production he wrote and directed honoring the legendary songwriter.\nExplore Harry Connick, Jr.\'s extensive catalog of hits ⬇️\n\n\nDuring the pandemic, Connick created Alone With My Faith, an album of original songs and spirituals showcasing his talents as a writer, arranger, vocalist, and instrumentalist, earning his 16th Grammy nomination. In January 2025, he made his debut at the Metropolitan Opera with the relaunch of A Celebration of Cole Porter.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -4174,7 +4150,7 @@ const events = [
         name: `Song Sessions: Maia Sharp with Gabe Dixon & Lucie Silvas (2026-07-17 -> 2026-07-18)`,
         sort_time: "2026-07-17 00:00:00",
         end_time_formatted: "2026-07-17 23:59",
-        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis July, Maia Sharp is joined by Gabe Dixon & Lucie Silvas.\nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\nGabe Dixon is a Nashville-based singer-songwriter and multi-instrumentalist known for his honest, heartfelt songs since 1999. His work has been covered by artists like Garth Brooks and Taj Mahal & Keb’ Mo’, and featured in films like The Proposal and shows including Grey’s Anatomy and Nashville. He has performed with Paul McCartney and Alison Krauss, and is a member of Tedeschi Trucks Band, contributing to their I Am The Moon project. His latest album, Parts I’ve Played, continues to showcase his evolving sound.\nLearn more about Gabe Dixon at gabedixon.com\n\n \nLucie Silvas is a British-born, Nashville-based singer-songwriter celebrated for her soulful voice and genre-blending style. Her debut album Breathe In sold over a million copies worldwide, launching an acclaimed career. Now a key part of Nashville’s music scene, she has toured with artists like Chris Stapleton and Brandi Carlile, and released several praised albums including EGO. As a songwriter, her work has been recorded by Miranda Lambert, Reba McEntire, and Kelly Clarkson, with music featured in major TV shows and films.\nLearn more about Lucie Silvas at luciesilvas.com",
+        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis July, Maia Sharp is joined by Gabe Dixon & Lucie Silvas.\nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\nGabe Dixon is a Nashville-based singer-songwriter and multi-instrumentalist known for his honest, heartfelt songs since 1999. His work has been covered by artists like Garth Brooks and Taj Mahal & Keb’ Mo’, and featured in films like The Proposal and shows including Grey’s Anatomy and Nashville. He has performed with Paul McCartney and Alison Krauss, and is a member of Tedeschi Trucks Band, contributing to their I Am The Moon project. His latest album, Parts I’ve Played, continues to showcase his evolving sound.\nLearn more about Gabe Dixon at gabedixon.com\n \nLucie Silvas is a British-born, Nashville-based singer-songwriter celebrated for her soulful voice and genre-blending style. Her debut album Breathe In sold over a million copies worldwide, launching an acclaimed career. Now a key part of Nashville’s music scene, she has toured with artists like Chris Stapleton and Brandi Carlile, and released several praised albums including EGO. As a songwriter, her work has been recorded by Miranda Lambert, Reba McEntire, and Kelly Clarkson, with music featured in major TV shows and films.\nLearn more about Lucie Silvas at luciesilvas.com",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -4390,7 +4366,7 @@ const events = [
         name: `Song Sessions: Maia Sharp with Gabe Dixon & Lucie Silvas (2026-07-17 -> 2026-07-18)`,
         sort_time: "2026-07-18 00:00:00",
         end_time_formatted: "2026-07-18 23:59",
-        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis July, Maia Sharp is joined by Gabe Dixon & Lucie Silvas.\nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\nGabe Dixon is a Nashville-based singer-songwriter and multi-instrumentalist known for his honest, heartfelt songs since 1999. His work has been covered by artists like Garth Brooks and Taj Mahal & Keb’ Mo’, and featured in films like The Proposal and shows including Grey’s Anatomy and Nashville. He has performed with Paul McCartney and Alison Krauss, and is a member of Tedeschi Trucks Band, contributing to their I Am The Moon project. His latest album, Parts I’ve Played, continues to showcase his evolving sound.\nLearn more about Gabe Dixon at gabedixon.com\n\n \nLucie Silvas is a British-born, Nashville-based singer-songwriter celebrated for her soulful voice and genre-blending style. Her debut album Breathe In sold over a million copies worldwide, launching an acclaimed career. Now a key part of Nashville’s music scene, she has toured with artists like Chris Stapleton and Brandi Carlile, and released several praised albums including EGO. As a songwriter, her work has been recorded by Miranda Lambert, Reba McEntire, and Kelly Clarkson, with music featured in major TV shows and films.\nLearn more about Lucie Silvas at luciesilvas.com",
+        detail: "Welcome to Song Sessions, your singer-songwriter concert series in The Mockingbird. Led by Nashville musician and Greenville fan favorite Maia Sharp, these intimate sessions of stories and songs feature a rotating lineup of guest songwriters each month. This is the place to be for anyone who deeply connects with music and enjoys tales about the musician\'s life.\n\nThis July, Maia Sharp is joined by Gabe Dixon & Lucie Silvas.\nMaia Sharp is an acclaimed songwriter whose work has been recorded by artists including Bonnie Raitt, The Chicks, Cher, and Trisha Yearwood. She has released nine solo albums, collaborated with Art Garfunkel and Buddy Mondlock, and performs with her duo Roscoe & Etta. An adjunct professor at NYU and longtime collaborator with Songwriting With: Soldiers, her latest album Tomboy was released in September 2025.\nGabe Dixon is a Nashville-based singer-songwriter and multi-instrumentalist known for his honest, heartfelt songs since 1999. His work has been covered by artists like Garth Brooks and Taj Mahal & Keb’ Mo’, and featured in films like The Proposal and shows including Grey’s Anatomy and Nashville. He has performed with Paul McCartney and Alison Krauss, and is a member of Tedeschi Trucks Band, contributing to their I Am The Moon project. His latest album, Parts I’ve Played, continues to showcase his evolving sound.\nLearn more about Gabe Dixon at gabedixon.com\n \nLucie Silvas is a British-born, Nashville-based singer-songwriter celebrated for her soulful voice and genre-blending style. Her debut album Breathe In sold over a million copies worldwide, launching an acclaimed career. Now a key part of Nashville’s music scene, she has toured with artists like Chris Stapleton and Brandi Carlile, and released several praised albums including EGO. As a songwriter, her work has been recorded by Miranda Lambert, Reba McEntire, and Kelly Clarkson, with music featured in major TV shows and films.\nLearn more about Lucie Silvas at luciesilvas.com",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -4762,7 +4738,7 @@ const events = [
         name: `The Fretliners`,
         sort_time: "2026-07-19 19:30:00",
         end_time_formatted: "2026-07-19 23:59",
-        detail: "The Fretliners are a band defined by their songwriting—stories carried by powerful harmonies, dynamic arrangements, and a sound that feels both timeless and new. Their music leans into the tradition of acoustic string instruments but reaches well beyond genre, resonating with listeners through honesty and craft.\n\n \nIn 2023, they swept both the Telluride Bluegrass and RockyGrass band competitions—an achievement matched only once before. That fall, their debut self-titled album earned widespread acclaim, praised for its originality and heartfelt lyricism.\n\n \nWith songs that balance tradition and innovation, The Fretliners continue to chart a bold path forward, creating music that connects as deeply on record as it does on stage.",
+        detail: "The Fretliners are a band defined by their songwriting—stories carried by powerful harmonies, dynamic arrangements, and a sound that feels both timeless and new. Their music leans into the tradition of acoustic string instruments but reaches well beyond genre, resonating with listeners through honesty and craft.\nIn 2023, they swept both the Telluride Bluegrass and RockyGrass band competitions—an achievement matched only once before. That fall, their debut self-titled album earned widespread acclaim, praised for its originality and heartfelt lyricism.\n\n \nWith songs that balance tradition and innovation, The Fretliners continue to chart a bold path forward, creating music that connects as deeply on record as it does on stage.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -4963,7 +4939,7 @@ const events = [
         event_date: "2026-07-21",
         start_time: "4:00 pm",
         end_time: "8:00 pm",
-        name: `Food Truck: `,
+        name: `Food Truck: La Jarochita`,
         sort_time: "2026-07-21 16:00:00",
         end_time_formatted: "2026-07-21 20:00",
         detail: "None",
@@ -5738,18 +5714,6 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-27",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck:`,
-        sort_time: "2026-07-27 00:00:00",
-        end_time_formatted: "2026-07-27 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
         venue: "Festival Net",
         event_date: "2026-07-27",
@@ -5808,6 +5772,18 @@ const events = [
         end_time_formatted: "2026-07-27 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-07-27",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Taste of Pea Ridge`,
+        sort_time: "2026-07-27 16:00:00",
+        end_time_formatted: "2026-07-27 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://secured.brevardmusic.org",
@@ -6286,7 +6262,7 @@ const events = [
         name: `Quinn Sullivan`,
         sort_time: "2026-07-31 19:30:00",
         end_time_formatted: "2026-07-31 23:59",
-        detail: "26 Year old Quinn Sullivan is an acclaimed singer, songwriter, and guitarist who rose to prominence in the early 2000’s and continues to amaze audiences worldwide. Born and raised in New Bedford Massachusetts, Quinn grew up in a musical household listening to classic rock, jazz and blues. Quinn credits his early obsession with The Beatles as the impetus for him to pursue music as a career. He received his first guitar at the tender age of three and quickly demonstrated exceptional talent. He gained national attention with appearances on afternoon and late night television shows (The Tonight Show Starring Jimmy Fallon, The Ellen DeGeneres Show, Jimmy Kimmel Live!, and Conan). In 2007, Quinn met music legend Buddy Guy, who invited him onstage and would later invite him to tour and record with him throughout the next decade.\n \nOver the years, Quinn has evolved from a remarkable young talent into a mature, emotive artist known for blending blues, rock, and classic influences. His discography includes multiple albums, with his fifth release, Salvation, recognized as his most personal work, exploring themes of loss, love, and resilience. He has been praised not only for his exceptional guitar skills but also for his songwriting, drawing inspiration from both his musical roots and his own life experiences.",
+        detail: "26-year-old Quinn Sullivan is an acclaimed singer, songwriter, and guitarist who rose to prominence in the early 2000’s and continues to amaze audiences worldwide. Born and raised in New Bedford, Massachusetts, Quinn grew up in a musical household listening to classic rock, jazz and blues. Quinn credits his early obsession with The Beatles as the impetus for him to pursue music as a career. He received his first guitar at the tender age of three and quickly demonstrated exceptional talent. He gained national attention with appearances on afternoon and late night television shows (The Tonight Show Starring Jimmy Fallon, The Ellen DeGeneres Show, Jimmy Kimmel Live!, and Conan). In 2007, Quinn met music legend Buddy Guy, who invited him onstage and would later invite him to tour and record with him throughout the next decade.\n \nOver the years, Quinn has evolved from a remarkable young talent into a mature, emotive artist known for blending blues, rock, and classic influences. His discography includes multiple albums, with his fifth release, Salvation, recognized as his most personal work, exploring themes of loss, love, and resilience. He has been praised not only for his exceptional guitar skills but also for his songwriting, drawing inspiration from both his musical roots and his own life experiences.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6626,6 +6602,18 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-05",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Event: Opinionary`,
+        sort_time: "2026-08-05 18:00:00",
+        end_time_formatted: "2026-08-05 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
         venue: "Festival Net",
         event_date: "2026-08-06",
@@ -6648,6 +6636,18 @@ const events = [
         end_time_formatted: "2026-08-06 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-06",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Heidi Ho `,
+        sort_time: "2026-08-06 16:00:00",
+        end_time_formatted: "2026-08-06 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
@@ -6706,7 +6706,7 @@ const events = [
         name: `Riley Roth`,
         sort_time: "2026-08-07 19:30:00",
         end_time_formatted: "2026-08-07 23:59",
-        detail: "Up-and-coming country singer-songwriter Riley Roth’s heartfelt lyrics and gentle voice earned her a legion of fans and the attention of Nashville producer busbee. Of Roth, busbee states “Riley has that rare ability to communicate directly to listeners at every level, and to her peers in particular.” \n \n\n\nRiley Roth started writing songs at 10 years old. \nShe is the first artist who signed with busbee’s new label, Altadena\nDescribing her music, Roth says \"When people listen to my songs, I hope my conversational, honest lyrics make them feel understood - as though they\'re hearing the words straight from a friend.\" \n\n\n\nWith Support from Zoe Jean Fowler\nKnown for her honest songwriting and loyal fanbase, Appalachia-raised country artist Zoe Jean Fowler is carving out her place as a standout independent talent in Nashville, Tennessee. With over 2 million worldwide streams, Zoe’s deluxe album, Cry Baby, received 28 editorial playlist adds, premiered on WSM at The Grand Ole Opry, and led to a feature on CMT. Zoe has opened for Kix Brooks, Randy Houser, Flatland Cavalry, and Sam Barber. In 2026, Zoe is releasing her EP, Written By A Woman, which is penned exclusively by female songwriters while bringing the Cry Baby Tour to 20 cities across the US and UK.",
+        detail: "Up-and-coming country singer-songwriter Riley Roth’s heartfelt lyrics and gentle voice earned her a legion of fans and the attention of Nashville producer busbee. Of Roth, busbee states “Riley has that rare ability to communicate directly to listeners at every level, and to her peers in particular.” \n\nRiley Roth started writing songs at 10 years old. \nShe is the first artist who signed with busbee’s new label, Altadena\nDescribing her music, Roth says \"When people listen to my songs, I hope my conversational, honest lyrics make them feel understood - as though they\'re hearing the words straight from a friend.\" \n\n\n\nWith Support from Zoe Jean Fowler\nKnown for her honest songwriting and loyal fanbase, Appalachia-raised country artist Zoe Jean Fowler is carving out her place as a standout independent talent in Nashville, Tennessee. With over 2 million worldwide streams, Zoe’s deluxe album, Cry Baby, received 28 editorial playlist adds, premiered on WSM at The Grand Ole Opry, and led to a feature on CMT. Zoe has opened for Kix Brooks, Randy Houser, Flatland Cavalry, and Sam Barber. In 2026, Zoe is releasing her EP, Written By A Woman, which is penned exclusively by female songwriters while bringing the Cry Baby Tour to 20 cities across the US and UK.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6922,7 +6922,7 @@ const events = [
         name: `Selwyn Birchwood`,
         sort_time: "2026-08-14 19:30:00",
         end_time_formatted: "2026-08-14 23:59",
-        detail: "Selwyn Birchwood is a “remarkable contemporary bluesman ... a powerhouse guitarist and soulful vocalist” (Rolling Stone). His Florida upbringing shows up in his swamp-funky style, an intoxicating mix of deep blues, blistering vocals, psychedelic-tinged rock, booty-shaking funk, and sweet Southern soul, played and sung with true blues passion. \n \n\n \n\nSelwyn Birchwood is a singer-songwriter, guitarist, lap steel expert, and magnetic stage presence. \nGuitartist Joe Bonamassa touts Birchwood as “one of my favorite discoveries.” \nHeavily influenced by Jimi Hendrix, Buddy Guy, Albert Collins, Lightin’ Hopkins, and Muddy Waters.",
+        detail: "Selwyn Birchwood is a “remarkable contemporary bluesman ... a powerhouse guitarist and soulful vocalist” (Rolling Stone). His Florida upbringing shows up in his swamp-funky style, an intoxicating mix of deep blues, blistering vocals, psychedelic-tinged rock, booty-shaking funk, and sweet Southern soul, played and sung with true blues passion. \n\nSelwyn Birchwood is a singer-songwriter, guitarist, lap steel expert, and magnetic stage presence. \nGuitartist Joe Bonamassa touts Birchwood as “one of my favorite discoveries.” \nHeavily influenced by Jimi Hendrix, Buddy Guy, Albert Collins, Lightin’ Hopkins, and Muddy Waters.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -6970,7 +6970,7 @@ const events = [
         name: `Augustana: All The Stars and Boulevards 20th Anniversary`,
         sort_time: "2026-08-15 19:30:00",
         end_time_formatted: "2026-08-15 23:59",
-        detail: "Platinum-selling American pop-rock artist Augustana emerged as one of the defining voices of mid-2000s alternative rock with their 2005 debut All the Stars and Boulevards. The album\'s breakout single \"Boston\" became a cultural touchstone, amassing over 200 million streams and earning placements in countless films and TV shows. The band followed with successful albums including Can\'t Love, Can\'t Hurt (2008) and Augustana (2011), cementing their place in the hearts of fans worldwide.\n\nLed by the distinctive voice and songwriting of Dan Layus, Augustana has always prioritized authentic connection over trends. In recent years, Layus has breathed new life into the project with innovative approaches to both recording and performing. He\'s released intimate reimagined versions of classic Augustana songs, explored solo material that pushes creative boundaries, and collaborated with the Indianapolis Symphony Orchestra to reimagine Augustana\'s music with lush classical and string arrangements—a testament to the depth and versatility of his songwriting. He\'s also launched special anniversary tour experiences where he performs beloved albums in full as stripped-down solo shows.\n\nWhether playing sold-out theaters or intimate venues, Augustana continues to evolve while honoring the emotional core that first connected with millions. The music remains timeless—raw, honest, and deeply human.",
+        detail: "Platinum-selling American pop-rock artist Augustana emerged as one of the defining voices of mid-2000s alternative rock with their 2005 debut All the Stars and Boulevards. The album\'s breakout single \"Boston\" became a cultural touchstone, amassing over 200 million streams and earning placements in countless films and TV shows. The band followed with successful albums including Can\'t Love, Can\'t Hurt (2008) and Augustana (2011), cementing their place in the hearts of fans worldwide.\nLed by the distinctive voice and songwriting of Dan Layus, Augustana has always prioritized authentic connection over trends. In recent years, Layus has breathed new life into the project with innovative approaches to both recording and performing. He\'s released intimate reimagined versions of classic Augustana songs, explored solo material that pushes creative boundaries, and collaborated with the Indianapolis Symphony Orchestra to reimagine Augustana\'s music with lush classical and string arrangements—a testament to the depth and versatility of his songwriting. He\'s also launched special anniversary tour experiences where he performs beloved albums in full as stripped-down solo shows.\n\nWhether playing sold-out theaters or intimate venues, Augustana continues to evolve while honoring the emotional core that first connected with millions. The music remains timeless—raw, honest, and deeply human.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -7006,7 +7006,7 @@ const events = [
         name: `Andy Frasco & The U.N. and Kitchen Dwellers with support from Mihali`,
         sort_time: "2026-08-16 18:00:00",
         end_time_formatted: "2026-08-16 23:59",
-        detail: "Andy Frasco & The U.N.\nWith curly tufts of a recognizable ‘fro peeking out from his omnipresent knit cap, Andy Frasco is a cross between John Belushi’s “Joliet” Jake Blues and Jimmy Buffett. He’s a band-fronting, songwriting party animal who turns into a swirling rock ‘n’ roll Tasmanian Devil onstage leading his U.N., not unlike Bruce Springsteen and the E-Street Band. From switching instruments mid-song to Frasco stagediving into the crowd or kibitzing with them, an Andy Frasco & The U.N. show is a celebration of inclusivity and tolerance where “You do You” and “let us do us.”\nCheck out Andy Frasco & The U.N.\'s newest release \"DANCE! DANCE! DANCE! DANCE\" ⬇️\n\nThe band has grown from playing bars to touring more than 250 days a year all over the country, with Frasco describing that 15-year journey on Growing Pains, the group’s landmark 10th studio album and first full-length effort since 2023’s L’Optimist, showcasing Andy’s growth as a tunesmith in his own right.\nStream Growing Pains along with other hits and grab your tickets!\n\nProduced by Frasco himself for the first time, the collection’s centerpiece is the anthemic “Try Not to Die,” a glass half-full anthem to seizing the day that combines country twang with an easy island breeze in its affirmative message. Other tracks include:\n\n“Life is Easy” — a folk protest anthem featuring Billy Strings, Daniel Donato’s Cosmic Country, Steve Poltz (Rugburns, Jewel), and Chris Gelbuda (Meghan Trainor)\n“Swinging for the Fences” — a Motown-flavored tribute to dating out of your league, with camoes by G. Love and Eric Krasno (Lettuce, Tedeschi Trucks Band Soulive)\n“They Call Me Hollywood (But I’m from LA)” — co-written with frequent partner Kenny Carkeet, features rapper ProbCause, while the title track is a sing-song, hip-hop-influenced rhyme about embracing change and taking it day-to-day\n\n“I came into this life wanting to write songs,” said Frasco. “It took 15 years, but I feel I’m starting to get credit for it. My cup is full. I’m really starting to see my dreams come true.”\n\nKitchen Dwellers\nKitchen Dwellers continue carving their own lane in progressive roots music, blending bluegrass, folk, and psychedelic grit into a sound as expansive as their Montana home. Formed in Bozeman, the quartet — Shawn Swain (mandolin), Torrin Daniels (banjo), Joe Funk (upright bass), and Max Davies (acoustic guitar) — has grown into one of the most forward-thinking bands in modern string music, pairing instrumental virtuosity with emotional storytelling and a deep connection to the American West.\nCheck out their unique sound and dive into their latest EP on Spotify.\n\nIn 2024, they released Seven Devils, which debuted at No. 1 on the Billboard Bluegrass Albums chart and expanded their creative reach. Their latest project, The Katabatic EP, captures a vivid snapshot of winter in Montana, blending mythic lyricism and atmospheric interplay across three tracks. The song “Madison” reflects on love and the rhythms of the Madison River, while the instrumentals “Mimas and Ida” and “Katabatic” feature guest trumpeter Eric \"Benny\" Bloom of Lettuce, adding bold brass textures to the band’s evolving sound.\n\nTheir discography — Ghost in the Bottle (2017), Muir Maid (2019), Wise River (2022), and Seven Devils (2024) — has amassed more than 15 million streams. Known for a dynamic live show, they’ve appeared at major festivals including Bonnaroo Music Festival and Telluride Bluegrass Festival, and have headlined both Red Rocks Amphitheatre and Ryman Auditorium.\nWith Seven Devils marking a milestone and The Katabatic EP showcasing another facet of their artistry, Kitchen Dwellers remain committed to pushing the boundaries of modern bluegrass while staying rooted in the landscapes that shaped them.",
+        detail: "Andy Frasco & The U.N.\nWith curly tufts of a recognizable ‘fro peeking out from his omnipresent knit cap, Andy Frasco is a cross between John Belushi’s “Joliet” Jake Blues and Jimmy Buffett. He’s a band-fronting, songwriting party animal who turns into a swirling rock ‘n’ roll Tasmanian Devil onstage leading his U.N., not unlike Bruce Springsteen and the E-Street Band. From switching instruments mid-song to Frasco stagediving into the crowd or kibitzing with them, an Andy Frasco & The U.N. show is a celebration of inclusivity and tolerance where “You do You” and “let us do us.”\nCheck out Andy Frasco & The U.N.\'s newest release \"DANCE! DANCE! DANCE! DANCE\" ⬇️\nThe band has grown from playing bars to touring more than 250 days a year all over the country, with Frasco describing that 15-year journey on Growing Pains, the group’s landmark 10th studio album and first full-length effort since 2023’s L’Optimist, showcasing Andy’s growth as a tunesmith in his own right.\nStream Growing Pains along with other hits and grab your tickets!\n\nProduced by Frasco himself for the first time, the collection’s centerpiece is the anthemic “Try Not to Die,” a glass half-full anthem to seizing the day that combines country twang with an easy island breeze in its affirmative message. Other tracks include:\n\n“Life is Easy” — a folk protest anthem featuring Billy Strings, Daniel Donato’s Cosmic Country, Steve Poltz (Rugburns, Jewel), and Chris Gelbuda (Meghan Trainor)\n“Swinging for the Fences” — a Motown-flavored tribute to dating out of your league, with camoes by G. Love and Eric Krasno (Lettuce, Tedeschi Trucks Band Soulive)\n“They Call Me Hollywood (But I’m from LA)” — co-written with frequent partner Kenny Carkeet, features rapper ProbCause, while the title track is a sing-song, hip-hop-influenced rhyme about embracing change and taking it day-to-day\n\n“I came into this life wanting to write songs,” said Frasco. “It took 15 years, but I feel I’m starting to get credit for it. My cup is full. I’m really starting to see my dreams come true.”\n\nKitchen Dwellers\nKitchen Dwellers continue carving their own lane in progressive roots music, blending bluegrass, folk, and psychedelic grit into a sound as expansive as their Montana home. Formed in Bozeman, the quartet — Shawn Swain (mandolin), Torrin Daniels (banjo), Joe Funk (upright bass), and Max Davies (acoustic guitar) — has grown into one of the most forward-thinking bands in modern string music, pairing instrumental virtuosity with emotional storytelling and a deep connection to the American West.\nCheck out their unique sound and dive into their latest EP on Spotify.\n\nIn 2024, they released Seven Devils, which debuted at No. 1 on the Billboard Bluegrass Albums chart and expanded their creative reach. Their latest project, The Katabatic EP, captures a vivid snapshot of winter in Montana, blending mythic lyricism and atmospheric interplay across three tracks. The song “Madison” reflects on love and the rhythms of the Madison River, while the instrumentals “Mimas and Ida” and “Katabatic” feature guest trumpeter Eric \"Benny\" Bloom of Lettuce, adding bold brass textures to the band’s evolving sound.\nTheir discography — Ghost in the Bottle (2017), Muir Maid (2019), Wise River (2022), and Seven Devils (2024) — has amassed more than 15 million streams. Known for a dynamic live show, they’ve appeared at major festivals including Bonnaroo Music Festival and Telluride Bluegrass Festival, and have headlined both Red Rocks Amphitheatre and Ryman Auditorium.\nWith Seven Devils marking a milestone and The Katabatic EP showcasing another facet of their artistry, Kitchen Dwellers remain committed to pushing the boundaries of modern bluegrass while staying rooted in the landscapes that shaped them.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -7114,7 +7114,7 @@ const events = [
         name: `George Porter Jr.`,
         sort_time: "2026-08-20 19:30:00",
         end_time_formatted: "2026-08-20 23:59",
-        detail: "New Orleans music royalty, George Porter Jr. played bass for The Meters, The Funky Meters, and was the most sought-after sessions bassist during and after the funk revolution of the 70s and 80s. Porter launched his own quartet, Runnin’ Pardners, in the late 80s. They released their latest album, Porter’s Pockets, in 2025. A king of Crescent City, Porter’s contribution to the evolution of funk music profoundly influenced rap, R&B, and rock ‘n’ roll. \n\n \n\nThe Meters are considered the progenitors of funk along with Sly & The Family Stone and Parliament-Funkadelic. \nConsidered “one of the greatest bass players who has ever lived” (Pitchfork). \nYou’ve heard Porter play bass in Patty LaBelle’s “Lady Marmalade” as well as sampled in hip-hop hits from RUN-DMC, A Tribe Called Quest, and Queen Latifah.",
+        detail: "New Orleans music royalty, George Porter Jr. played bass for The Meters, The Funky Meters, and was the most sought-after sessions bassist during and after the funk revolution of the 70s and 80s. Porter launched his own quartet, Runnin’ Pardners, in the late 80s. They released their latest album, Porter’s Pockets, in 2025. A king of Crescent City, Porter’s contribution to the evolution of funk music profoundly influenced rap, R&B, and rock ‘n’ roll. \n\nThe Meters are considered the progenitors of funk along with Sly & The Family Stone and Parliament-Funkadelic. \nConsidered “one of the greatest bass players who has ever lived” (Pitchfork). \nYou’ve heard Porter play bass in Patti LaBelle’s “Lady Marmalade” as well as sampled in hip-hop hits from RUN-DMC, A Tribe Called Quest, and Queen Latifah.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
