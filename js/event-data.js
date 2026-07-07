@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-07-06 14:02:32";
+const eventDataVersion = "Monday, 2026-07-06 20:01:30";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1632,18 +1632,6 @@ const events = [
         end_time_formatted: "2026-07-06 23:59",
         detail: "There will be 1 stage with Local talent. The entertainment will be Variety.<a href='https://festivalnet.com/85795/Asheville-North-Carolina/Craft-Shows/Ooh-La-La-Curiosity-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net Ooh La La Curiosity Market - July",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-06",
-        start_time: "4:00 pm",
-        end_time: "4:00 pm",
-        name: `Food Truck: Appalachian Chick`,
-        sort_time: "2026-07-06 16:00:00",
-        end_time_formatted: "2026-07-06 16:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -6432,6 +6420,18 @@ const events = [
         end_time_formatted: "2026-08-07 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-07",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Madrona`,
+        sort_time: "2026-08-07 12:00:00",
+        end_time_formatted: "2026-08-07 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.hendersonville.com/music-on-main-street",
