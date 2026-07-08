@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-07-07 20:01:15";
+const eventDataVersion = "Wednesday, 2026-07-08 14:36:28";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1694,30 +1694,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-07-07",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
-        sort_time: "2026-07-07 18:00:00",
-        end_time_formatted: "2026-07-07 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://www.peacecenter.org/events",
-        venue: "Peace Center",
-        event_date: "2026-07-07",
-        start_time: "7:30PM",
-        end_time: "?",
-        name: `An Evening with Harry Connick, Jr.`,
-        sort_time: "2026-07-07 19:30:00",
-        end_time_formatted: "2026-07-07 23:59",
-        detail: "Harry Connick, Jr.’s career has exemplified excellence across music, theater, and entertainment. He has earned multiple Grammy and Emmy awards, along with Tony nominations, for his live and recorded musical performances and his work on Broadway.\nRooted in the music of his native New Orleans, Connick began performing as a pianist and vocalist at age five. His music career includes several multi-platinum albums, including When Harry Met Sally, Blue Light, Red Light, When My Heart Finds Christmas, Come By Me, and Only You. In 2019, he released the Grammy-nominated True Love: A Celebration of Cole Porter, alongside a Broadway production he wrote and directed honoring the legendary songwriter.\nExplore Harry Connick, Jr.\'s extensive catalog of hits ⬇️\n\n\nDuring the pandemic, Connick created Alone With My Faith, an album of original songs and spirituals showcasing his talents as a writer, arranger, vocalist, and instrumentalist, earning his 16th Grammy nomination. In January 2025, he made his debut at the Metropolitan Opera with the relaunch of A Celebration of Cole Porter.",
-        location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-07-08",
@@ -2724,6 +2700,18 @@ const events = [
         end_time_formatted: "2026-07-12 17:00",
         detail: "Max Hightower was born and raised in the Upstate of South Carolina. At age 12, he bought his first Blues cassette tape, ‘Muddy Mississippi Live’ by Muddy Waters. The new ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://www.millsriverbrewingco.com/events",
+        venue: "Mills River Brewing",
+        event_date: "2026-07-12",
+        start_time: "2:00 pm",
+        end_time: "",
+        name: `Will Hartz will be playing groovy soul, rock n roll!`,
+        sort_time: "2026-07-12 14:00:00",
+        end_time_formatted: "2026-07-12 Can't convert ",
+        detail: "None",
+        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
         url: "https://southerwilliams.com/events",
@@ -5558,6 +5546,18 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-07-28",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
+        sort_time: "2026-07-28 18:00:00",
+        end_time_formatted: "2026-07-28 21:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
         url: "https://secured.brevardmusic.org",
         venue: "BMC",
         event_date: "2026-07-28",
@@ -7128,6 +7128,18 @@ const events = [
         end_time_formatted: "2026-08-28 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://www.peacecenter.org/events",
+        venue: "Peace Center",
+        event_date: "2026-08-28",
+        start_time: "7:00PM",
+        end_time: "?",
+        name: `Fortune Feimster: Takin\' Care of Biscuits Tour`,
+        sort_time: "2026-08-28 19:00:00",
+        end_time_formatted: "2026-08-28 23:59",
+        detail: "Stand-up comedy standout Fortune Feimster keeps audiences rolling on her latest tour, Takin’ Care of Biscuits. This stand-up show includes Feimster’s charismatic confessional humor with plenty of new stories, howlingly funny jokes, and undeniable Southern charm. \n\n\nFeimster voiced the beaver Nibbles Maplestick in Zootopia 2. \n\n\n\n\nFortune is her real name, taken from her great-grandmother\'s maiden name. \n\n\n\n\nShe starred as a CIA operative in the Netflix action comedy series FUBAR with Arnold Schwarzenegger.",
+        location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
