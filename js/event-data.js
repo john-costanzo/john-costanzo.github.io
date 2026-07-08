@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-07-07 14:32:13";
+const eventDataVersion = "Tuesday, 2026-07-07 20:01:15";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1694,18 +1694,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - July",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-07",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: La Jarochita`,
-        sort_time: "2026-07-07 16:00:00",
-        end_time_formatted: "2026-07-07 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-07-07",
@@ -2352,6 +2340,18 @@ const events = [
         end_time_formatted: "2026-07-11 23:59",
         detail: "<a href='https://festivalnet.com/95039/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - July",
+    },
+    {
+        url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
+        venue: "Festival Net",
+        event_date: "2026-07-11",
+        start_time: "¿",
+        end_time: "?",
+        name: `Coon Dog Day Festival`,
+        sort_time: "2026-07-11 00:00:00",
+        end_time_formatted: "2026-07-11 23:59",
+        detail: "There will be 1 stage with Regional talent. The entertainment will be Country, Face Painting and Variety, and there will be other activities like parade, akc event, contest, kid's area.<a href='https://festivalnet.com/97881/Saluda-North-Carolina/Festivals/Coon-Dog-Day-Festival' target='_blank'> <em>link</em></a>",
+        location: "Festival Net Coon Dog Day Festival",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
@@ -6432,6 +6432,18 @@ const events = [
         end_time_formatted: "2026-08-07 20:00",
         detail: "None",
         location: "Music on Main Main St. Hendersonville",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-07",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: `Event: Knowledge Knockout`,
+        sort_time: "2026-08-07 19:00:00",
+        end_time_formatted: "2026-08-07 21:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.peacecenter.org/events",
