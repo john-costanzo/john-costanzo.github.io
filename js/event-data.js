@@ -1,4 +1,4 @@
-const eventDataVersion = "Sunday, 2026-07-12 08:01:15";
+const eventDataVersion = "Sunday, 2026-07-12 14:07:02";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1992,18 +1992,6 @@ const events = [
         end_time_formatted: "2026-07-11 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
-    },
-    {
-        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
-        venue: "Burnt Shirt",
-        event_date: "2026-07-11",
-        start_time: "1:00 pm",
-        end_time: "4:00 pm",
-        name: `LYRISMITH`,
-        sort_time: "2026-07-11 13:00:00",
-        end_time_formatted: "2026-07-11 16:00",
-        detail: "None",
-        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
@@ -5712,6 +5700,18 @@ const events = [
         end_time_formatted: "2026-08-01 13:00",
         detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-08-01",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: `HIGH LONESOME VELVET`,
+        sort_time: "2026-08-01 13:00:00",
+        end_time_formatted: "2026-08-01 16:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
