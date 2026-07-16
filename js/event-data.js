@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-07-15 08:01:22";
+const eventDataVersion = "Wednesday, 2026-07-15 20:01:51";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2318,18 +2318,6 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-15",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Carolina Ace`,
-        sort_time: "2026-07-15 16:00:00",
-        end_time_formatted: "2026-07-15 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://www.ncarboretum.org/arborevenings",
         venue: "Arboretum",
         event_date: "2026-07-15",
@@ -2340,18 +2328,6 @@ const events = [
         end_time_formatted: "2026-07-15 20:30",
         detail: "None",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-15",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Event: Opinionary`,
-        sort_time: "2026-07-15 18:00:00",
-        end_time_formatted: "2026-07-15 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.sabrewery.com/events/2026-07",
@@ -3847,7 +3823,7 @@ const events = [
         event_date: "2026-07-22",
         start_time: "5:30 pm",
         end_time: "8:30 pm",
-        name: `Celtic Road (Irish/Scottish instrumentals and songs)`,
+        name: `Lenoir Sax (folk tunes, hymns, as well as the cool jazz of the 1950s and world music from all around the globe)`,
         sort_time: "2026-07-22 17:30:00",
         end_time_formatted: "2026-07-22 20:30",
         detail: "None",
@@ -5923,7 +5899,7 @@ const events = [
         event_date: "2026-08-06",
         start_time: "5:30 pm",
         end_time: "8:30 pm",
-        name: `Adrianne Blanks & The Oracles (Sultry Jazz / Cocktail Noir)`,
+        name: `Laurel Canyon East (Folk, Rock)`,
         sort_time: "2026-08-06 17:30:00",
         end_time_formatted: "2026-08-06 20:30",
         detail: "None",
@@ -6518,6 +6494,18 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-15",
+        start_time: "7:00 pm",
+        end_time: "10:00 pm",
+        name: `Music: AppleAtcha`,
+        sort_time: "2026-08-15 19:00:00",
+        end_time_formatted: "2026-08-15 22:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://secured.brevardmusic.org",
         venue: "BMC",
         event_date: "2026-08-15",
@@ -6552,6 +6540,18 @@ const events = [
         end_time_formatted: "2026-08-16 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-16",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Papa's Express`,
+        sort_time: "2026-08-16 12:00:00",
+        end_time_formatted: "2026-08-16 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
