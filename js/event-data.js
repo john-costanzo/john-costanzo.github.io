@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-07-16 14:01:23";
+const eventDataVersion = "Thursday, 2026-07-16 20:13:27";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2400,18 +2400,6 @@ const events = [
         end_time_formatted: "2026-07-16 23:59",
         detail: "There will be 1 stage with Regional and Local talent. The entertainment will be Bluegrass and Folk, and there will be other activities like demonstrating crafters, children's workshops.<a href='https://festivalnet.com/2764/Asheville-North-Carolina/Art-Shows/Craft-Fair-of-the-Southern-Highlands-July' target='_blank'> <em>link</em></a>",
         location: "Festival Net Craft Fair of the Southern Highlands - July",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-16",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Lobster Dogs`,
-        sort_time: "2026-07-16 16:00:00",
-        end_time_formatted: "2026-07-16 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
@@ -6564,6 +6552,18 @@ const events = [
         end_time_formatted: "2026-08-17 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-17",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Heidi Ho`,
+        sort_time: "2026-08-17 16:00:00",
+        end_time_formatted: "2026-08-17 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
