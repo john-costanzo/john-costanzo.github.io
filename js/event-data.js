@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-07-20 20:01:30";
+const eventDataVersion = "Monday, 2026-07-20 21:35:41";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2908,7 +2908,7 @@ const events = [
     {
         url: "https://www.cphassn.org/calendar",
         venue: "Carriage Park",
-        event_date: "2026-07-23",
+        event_date: "2025-07-23",
         start_time: "4:30 PM",
         end_time: "6:00 PM",
         name: `Thirsty Thursdays`,
@@ -6832,7 +6832,7 @@ const events = [
     {
         url: "https://www.cphassn.org/calendar",
         venue: "Carriage Park",
-        event_date: "2026-09-24",
+        event_date: "3026-09-24",
         start_time: "4:30 PM",
         end_time: "6:00 PM",
         name: `Thirsty Thursdays`,
@@ -7144,7 +7144,7 @@ const events = [
     {
         url: "https://www.cphassn.org/calendar",
         venue: "Carriage Park",
-        event_date: "2026-10-22",
+        event_date: "3026-10-22",
         start_time: "4:30 PM",
         end_time: "6:00 PM",
         name: `Thirsty Thursdays`,
