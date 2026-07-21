@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-07-20 14:01:29";
+const eventDataVersion = "Monday, 2026-07-20 20:01:30";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -144,30 +144,6 @@ const events = [
         end_time_formatted: "2026-04-05 18:00",
         detail: "We will be closed Easter Sunday to spend time with family. Enjoy your day!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2026-04-16",
-        start_time: "5:00 PM",
-        end_time: "7:00 PM",
-        name: `Macarons & Flight Pairing`,
-        sort_time: "2026-04-16 17:00:00",
-        end_time_formatted: "2026-04-16 19:00",
-        detail: "Looking for the ultimate Thursday treat? Join us on April 16th for a curated tasting experience that hits all the right notes. We’ve paried four handcrafted macarons with four of our favorite ciders.",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2026-04-17",
-        start_time: "6:00 PM",
-        end_time: "8:00 PM",
-        name: `Finklestein 3`,
-        sort_time: "2026-04-17 18:00:00",
-        end_time_formatted: "2026-04-17 20:00",
-        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -756,18 +732,6 @@ const events = [
         end_time_formatted: "2026-06-20 21:00",
         detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-06-20",
-        start_time: "6:30 pm",
-        end_time: "9:00 pm",
-        name: `Jamie McLean Band`,
-        sort_time: "2026-06-20 18:30:00",
-        end_time_formatted: "2026-06-20 21:00",
-        detail: "Jamie McLean Band creates a musical gumbo that incorporates New Orleans soul, middle Americana roots, Delta blues and New York City swagger. Jamie McLean Band is a triple threat. The ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=1",
@@ -2520,18 +2484,6 @@ const events = [
         end_time_formatted: "2026-07-20 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-07-20",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Blue Sky Cafe`,
-        sort_time: "2026-07-20 16:00:00",
-        end_time_formatted: "2026-07-20 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -6252,6 +6204,18 @@ const events = [
         end_time_formatted: "2026-08-21 19:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-08-21",
+        start_time: "7:00 pm",
+        end_time: "9:00 pm",
+        name: `Event: Knowledge Knockout`,
+        sort_time: "2026-08-21 19:00:00",
+        end_time_formatted: "2026-08-21 21:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
