@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-07-21 20:01:30";
+const eventDataVersion = "Wednesday, 2026-07-22 08:01:28";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2520,30 +2520,6 @@ const events = [
         end_time_formatted: "2026-07-21 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-07-21",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
-        sort_time: "2026-07-21 18:00:00",
-        end_time_formatted: "2026-07-21 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-07-21",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `BINGO with Hendersonville Rotary Club`,
-        sort_time: "2026-07-21 18:00:00",
-        end_time_formatted: "2026-07-21 20:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://www.ncarboretum.org/arborevenings",
@@ -6194,6 +6170,30 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-08-18",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
+        sort_time: "2026-08-18 18:00:00",
+        end_time_formatted: "2026-08-18 21:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-08-18",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `BINGO with Hendersonville Rotary Club`,
+        sort_time: "2026-08-18 18:00:00",
+        end_time_formatted: "2026-08-18 20:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
         venue: "Festival Net",
         event_date: "2026-08-19",
@@ -6492,6 +6492,18 @@ const events = [
         end_time_formatted: "2026-08-22 17:00",
         detail: "None",
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://millsriver.boldrock.com/taproomevents",
+        venue: "Boldrock",
+        event_date: "2026-08-22",
+        start_time: "11:00 AM",
+        end_time: "4:00 PM",
+        name: `BEE BOLD Bee Fest`,
+        sort_time: "2026-08-22 11:00:00",
+        end_time_formatted: "2026-08-22 16:00",
+        detail: "Buzz on over to Bold Rock Mills River for our BEE BOLD Bee Fest on Saturday, August 22!",
+        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://dryfallsbrewing.com",
