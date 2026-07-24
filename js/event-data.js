@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-07-24 09:40:58";
+const eventDataVersion = "Friday, 2026-07-24 14:01:17";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3746,7 +3746,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-07-29",
         start_time: "4:00 PM",
@@ -4366,7 +4366,7 @@ const events = [
         name: `Liszt Piano Concerto No. 1`,
         sort_time: "2026-08-01 19:30:00",
         end_time_formatted: "2026-08-01 23:59",
-        detail: "Brevard Sinfonia\nKen Lam, conductor\nSophia Liu, piano",
+        detail: "Brevard Sinfonia\nKen Lam, conductor\nYing Li, piano",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
     },
     {
@@ -5582,7 +5582,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-08-12",
         start_time: "6:00 PM",
@@ -6806,12 +6806,12 @@ const events = [
         location: "Festival Net Shindig on the Green",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-08-27",
         start_time: "4:00 PM",
         end_time: "6:00 PM",
-        name: `Thirsty Thursday (with string quartet!)`,
+        name: `Thirsty Thursday (w string quartet!) - $5 at the door`,
         sort_time: "2026-08-27 16:00:00",
         end_time_formatted: "2026-08-27 18:00:00",
         detail: "A once-a-month happy hour. But this one features live background music by a quartet that includes a Carriage Park resident.",
@@ -6998,7 +6998,7 @@ const events = [
         location: "Festival Net North Carolina Apple Festival",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-09-09",
         start_time: "2:00 PM",
@@ -7238,7 +7238,7 @@ const events = [
         location: "Festival Net Brevard Plein Air Festival",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-09-19",
         start_time: "1:00 PM",
@@ -7262,12 +7262,12 @@ const events = [
         location: "Festival Net North Carolina Mountain State Fair",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-09-23",
         start_time: "6:00 PM",
         end_time: "8:30 PM",
-        name: `Music Bingo with Craig St. John`,
+        name: `Music Bingo with Craig St. John - $10 registration required`,
         sort_time: "2026-09-23 18:00:00",
         end_time_formatted: "2026-09-23 20:30:00",
         detail: "",
@@ -7454,7 +7454,7 @@ const events = [
         location: "Festival Net Asheville Art in the Park - October",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-10-13",
         start_time: "6:00 PM",
