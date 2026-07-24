@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-07-24 08:53:20";
+const eventDataVersion = "Friday, 2026-07-24 09:40:58";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3734,18 +3734,6 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://www.cphassn.org/calendar",
-        venue: "CPHA Social events",
-        event_date: "2026-07-29",
-        start_time: "4:00 PM",
-        end_time: "6:00 PM",
-        name: `Travel Trends and Opportunities`,
-        sort_time: "2026-07-29 16:00:00",
-        end_time_formatted: "2026-07-29 18:00:00",
-        detail: "Greg Sutter with Globe Treks- Travel Trends and Opportunities",
-        location: "CPHA Social events",
-    },
-    {
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-07-29",
@@ -5546,18 +5534,6 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
-        url: "https://www.cphassn.org/calendar",
-        venue: "CPHA Social events",
-        event_date: "2026-08-12",
-        start_time: "6:00 PM",
-        end_time: "8:00 PM",
-        name: `Existing with Black Bears`,
-        sort_time: "2026-08-12 18:00:00",
-        end_time_formatted: "2026-08-12 20:00:00",
-        detail: "The Social Committee is pleased to announce another presentation in our Speaker Series, \"Existing with Black Bears\". The presentation will take place on Wednesday, August 12 @ 6 p.m. at the Clubhouse. Ashley Hobbs, a bear biologist with the N.C. Wildlife Resources Commission, will discuss the natural history of black bears in Western North Carolina and how you can use that information to safely coexist with these North Carolina treasures. Among the topics covered will be:\n\n Bear behavior and biology in North Carolina; the Bear/Wise Initiative, which provides ways to prevent conflicts , provides resources to resolve problems, and encourages community initiatives to keep bears wild; and What to do in a bear encounter. A question and answer session will follow this presentation.\n\n There is no registration and no fee to attend. Water will be provided but no food is planned for this event. Come learn more about these animals we see right here in Carriage Park!",
-        location: "CPHA Social events",
-    },
-    {
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-08-12",
@@ -6830,18 +6806,6 @@ const events = [
         location: "Festival Net Shindig on the Green",
     },
     {
-        url: "https://www.cphassn.org/calendar",
-        venue: "CPHA Social events",
-        event_date: "2026-08-27",
-        start_time: "4:00 PM",
-        end_time: "6:00 PM",
-        name: `Thirsty Thursday (with string quartet!)`,
-        sort_time: "2026-08-27 16:00:00",
-        end_time_formatted: "2026-08-27 18:00:00",
-        detail: "A one-a-month happy hour. But this one features live background music by a quartet that includes a Carriage Park resident.",
-        location: "CPHA Social events",
-    },
-    {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-08-27",
@@ -7032,18 +6996,6 @@ const events = [
         end_time_formatted: "2026-09-07 23:59",
         detail: "There will be 1 stage with National, Regional and Local talent. The entertainment will be Beach, Bluegrass, Classical/Symphony, Country, Folk, Gospel, Jazz, Rock and Variety, and there will be other activities like road race, parades, bike tour, gem and mineral show.<a href='https://festivalnet.com/2767/Hendersonville-North-Carolina/Festivals/North-Carolina-Apple-Festival' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Apple Festival",
-    },
-    {
-        url: "https://www.cphassn.org/calendar",
-        venue: "CPHA Social events",
-        event_date: "2026-09-09",
-        start_time: "2:00 PM",
-        end_time: "4:00 PM",
-        name: `Waste Diversion in Henderson County`,
-        sort_time: "2026-09-09 14:00:00",
-        end_time_formatted: "2026-09-09 16:00:00",
-        detail: "<table><tbody><tr><td>Paulina Jones, Hendersonville County Environmental Planner-Waste Diversion in Henderson County</td></tr></tbody></table>",
-        location: "CPHA Social events",
     },
     {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
@@ -7286,18 +7238,6 @@ const events = [
         location: "Festival Net Brevard Plein Air Festival",
     },
     {
-        url: "https://www.cphassn.org/calendar",
-        venue: "CPHA Social events",
-        event_date: "2026-09-19",
-        start_time: "1:00 PM",
-        end_time: "5:00 PM",
-        name: `Arts in the Park`,
-        sort_time: "2026-09-19 13:00:00",
-        end_time_formatted: "2026-09-19 17:00:00",
-        detail: "View arts and crafts created by your neighbors--with a chance to purchase some. $15 for \"table space\". \n\nFree admission for attendees.\n\nAuction to benefit IAM.",
-        location: "CPHA Social events",
-    },
-    {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-09-19",
@@ -7320,18 +7260,6 @@ const events = [
         end_time_formatted: "2026-09-20 23:59",
         detail: "<a href='https://festivalnet.com/12628/Fletcher-North-Carolina/State-Fairs/North-Carolina-Mountain-State-Fair' target='_blank'> <em>link</em></a>",
         location: "Festival Net North Carolina Mountain State Fair",
-    },
-    {
-        url: "https://www.cphassn.org/calendar",
-        venue: "CPHA Social events",
-        event_date: "2026-09-23",
-        start_time: "6:00 PM",
-        end_time: "8:30 PM",
-        name: `Music Bingo with Craig St. John`,
-        sort_time: "2026-09-23 18:00:00",
-        end_time_formatted: "2026-09-23 20:30:00",
-        detail: "",
-        location: "CPHA Social events",
     },
     {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
@@ -7524,18 +7452,6 @@ const events = [
         end_time_formatted: "2026-10-13 23:59",
         detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
-    },
-    {
-        url: "https://www.cphassn.org/calendar",
-        venue: "CPHA Social events",
-        event_date: "2026-10-13",
-        start_time: "6:00 PM",
-        end_time: "8:00 PM",
-        name: `Henderson County Library, Beyond the Stacks`,
-        sort_time: "2026-10-13 18:00:00",
-        end_time_formatted: "2026-10-13 20:00:00",
-        detail: "",
-        location: "CPHA Social events",
     },
     {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
