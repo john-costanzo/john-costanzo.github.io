@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-07-24 08:42:45";
+const eventDataVersion = "Friday, 2026-07-24 08:53:20";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3758,7 +3758,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://www.cphassn.org/calendar",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-07-29",
         start_time: "4:00 PM",
@@ -5606,7 +5606,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://www.cphassn.org/calendar",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-08-12",
         start_time: "6:00 PM",
@@ -6842,7 +6842,7 @@ const events = [
         location: "CPHA Social events",
     },
     {
-        url: "https://www.cphassn.org/calendar",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-08-27",
         start_time: "4:00 PM",
@@ -6850,7 +6850,7 @@ const events = [
         name: `Thirsty Thursday (with string quartet!)`,
         sort_time: "2026-08-27 16:00:00",
         end_time_formatted: "2026-08-27 18:00:00",
-        detail: "A one-a-month happy hour. But this one features live background music by a quartet that includes a Carriage Park resident.",
+        detail: "A once-a-month happy hour. But this one features live background music by a quartet that includes a Carriage Park resident.",
         location: "Carriage Park",
     },
     {
@@ -7046,7 +7046,7 @@ const events = [
         location: "CPHA Social events",
     },
     {
-        url: "https://www.cphassn.org/calendar",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-09-09",
         start_time: "2:00 PM",
@@ -7298,7 +7298,7 @@ const events = [
         location: "CPHA Social events",
     },
     {
-        url: "https://www.cphassn.org/calendar",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-09-19",
         start_time: "1:00 PM",
@@ -7334,7 +7334,7 @@ const events = [
         location: "CPHA Social events",
     },
     {
-        url: "https://www.cphassn.org/calendar",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-09-23",
         start_time: "6:00 PM",
@@ -7538,7 +7538,7 @@ const events = [
         location: "CPHA Social events",
     },
     {
-        url: "https://www.cphassn.org/calendar",
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York",
         venue: "Carriage Park",
         event_date: "2026-10-13",
         start_time: "6:00 PM",
