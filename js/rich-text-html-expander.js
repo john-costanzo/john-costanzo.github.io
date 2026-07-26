@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-07-26_10-14
+// @version      2026-07-26_10-32
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -73,12 +73,8 @@
         ";john": "<font color=\\\"#ff0000\\\">➢</font>&nbsp;<font color=\\\"#0000ff\\\">John Costanzo </font><i><font color=\\\"#999999\\\">${DATE \"DDDD, D MMMM YYYY\"}</font><font color=\\\"#0000ff\\\">:</font></i><font color=\\\"#0000ff\\\">&nbsp;</font> ",
         ";kiss": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/face-blowing-a-kiss_1f618.gif\" width=\"42\" height=\"42\" alt=\"Face Blowing a Kiss on Noto Color Emoji, Animated 14.0\"/>",
         ";laugh": "<img src=\"https://em-content.zobj.net/source/skype/289/rolling-on-the-floor-laughing_1f923.png\" width=\"42\" height=\"42 alt=\"Rolling on the Floor Laughing on Skype Emoticons 1.2\"/>",
-        ";ld": "newer_than:1d ",
         ";lips": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/kiss-mark_1f48b.gif\" width=\"42\" height=\"42\" alt=\"Kiss Mark on Noto Color Emoji, Animated 14.0\"/>",
-        ";lm": "newer_than:32d",
         ";lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        ";lw": "newer_than:8d",
-        ";ly": "newer_than:366d",
         ";mad": "<img src=\"https://em-content.zobj.net/source/skype/289/angry-face_1f620.png\" width=\"42\" height=\"42\" alt=\"Angry Face on Skype Emoticons 1.2\"/>",
         ";mo": "#motion(<p>  first: \"\",<p>  second: \"\",<p>  motion_text: [I move that],<p>  ayes: 0,<p>  nayes: 0,<p>  abstains: 0,<p>  chair_overrides: 0<p>)",
         ";moo": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/cow-face_1f42e.png\" width=\"66\" height=\"66\" alt=\"Cow Face on Microsoft Teams 1.0\"/>",
@@ -107,7 +103,6 @@
         ";ta4": "#align(center)[<p>#warm-table(<p>  columns: 4,<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>)<p>]",
         ";ta5": "#align(center)[<p>#styled-table(<p>  columns: 5,<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>)<p>]",
         ";tcell": "9086420532",
-        ";te": "[tentative]",
         ";thanks": "<img src=\"https://i.pinimg.com/originals/db/03/b3/db03b3642db8f07c4bbc0b9ff2822ce0.png\" width=\"64\" height=\"64\" alt=\"Angry Face on Skype Emoticons 1.2\"/><p>",
         ";thinking": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/thinking-face_1f914.png\" width=\"42\" height=\"42\" alt=\"Thinking Face on Microsoft Teams 1.0\"/>",
         ";thumbsdown": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/thumbs-down_1f44e.png\" width=\"42\" height=\"42\" alt=\"Thumbs Down on Microsoft Teams 1.0\"/>",
@@ -116,9 +111,7 @@
         ";tip": "<img src=\"https://www.nicepng.com/png/detail/242-2425894_tip-tip-png.png\" width=\"96\" height=\"48 alt=\"Tip\"/>",
         ";tm": "&trade;",
         ";todo": "<img src=\"https://4.bp.blogspot.com/-cQ7tZ56cvfU/ThSFJgw32pI/AAAAAAAAABU/sYFMkdGNaC8/s1600/todo-manager-icon.png\" width=\"42\" height=\"42\" alt=\"To Do\"/>",
-        ";tp": "Talking Points",
         ";ts": "${DATE \"h:mm a\"}",
-        ";tu": "[time uncertain]",
         ";uf": "Please unsubscribe jncostanzo+flatrock@gmail.com from the Playhouse\'s list.<p>Please unsubscribe jncostanzo+flatrock@gmail.com from the Playhouse\'s list.<p>Please unsubscribe jncostanzo+flatrock@gmail.com from the Playhouse\'s list.<p><p>",
         ";visit": "cphaguardhouse@gmail.com<style type=\"text/css\">div, li, p {font-size:large;}</style><p>VISITOR to visit the Costanzos at 25 Bay Magnolia Court<p><p>John and Tracey Costanzo expect <b>VISITORS</b> to visit us at 25 Bay Magnolia Court on <b>DATE</b>.",
         ";whateva": "¯\\\\_(ツ)_/¯",
