@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-07-27_16-01
+// @version      2026-07-28_12-04
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -11,8 +11,6 @@
     'use strict';
 
     const EXPANSIONS = {
-        "<<<<": "❮❮❮❮",
-        ">>>>": "❯❯❯❯",
         "--": "—",
         "->": "→",
         "...": "…",
@@ -37,6 +35,8 @@
         ";bod": "Board of Directors",
         ";bpa": "<style type=\"text/css\">div, li, p {font-size:large;}</style>CPHA Budget Planning spreadsheet for next year<p>Here is a link to the XXX CPHA Budget Planning spreadsheet for next year.<p><p>As a reminder, you will be expected to work with your Budget and Finance committee liaison following the July 17th board meeting and complete your budget  by August 31.<p><p>Feel to contact me with any questions about using the spreadsheet.<p><p>Thanks for your efforts!<p><p><font color=\\\"#0000ff\\\">-jc</font>",
         ";bwm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\"}<p><p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\"}. I welcome your comments.<p>I plan to post  them to the Board-only\'s File Cabinet, under “Workshops” by <b>${DATE \"DDDD, MMMM D, YYYY\"  +3D}</b>.<p>",
+        ";caution": "<span style=\"font-size: x-large;\">⚠️</span>",
+        ";checkmark": "<span style=\"font-size: x-large;\">✅</span>",
         ";confused": "<img src=\"https://em-content.zobj.net/source/skype/289/confused-face_1f615.png\" width=\"42\" height=\"42\" alt=\"Confused Face on Skype Emoticons 1.2\"/>",
         ";cow": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/cow-face_1f42e.png\" width=\"66\" height=\"66\" alt=\"Cow Face on Microsoft Teams 1.0\"/>",
         ";cp": "Carriage Park",
@@ -58,6 +58,7 @@
         ";fear": "<img src=\"https://em-content.zobj.net/source/skype/289/face-screaming-in-fear_1f631.png\" width=\"42\" height=\"42\" alt=\"Face Screaming in Fear on Skype Emoticons 1.2\"/>",
         ";fi ": "for instance,",
         ";filmplay": "The film itself was terrific.<p><p>The film player itself could be improved by removing the distracting controls at the bottom of the screen… or at the very least by preventing the controls from disappearing and then reappearing. ",
+        ";flame": "<span style=\"font-size: x-large;\">🔥</span>",
         ";happy": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/grinning-face-with-big-eyes_1f603.gif\" width=\"42\" height=\"42 alt=\"Grinning Face with Big Eyes on Noto Color Emoji, Animated 14.0\"/>",
         ";hearteyes": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/smiling-face-with-heart-eyes_1f60d.gif\" width=\"42\" height=\"42\" alt=\"Smiling Face with Heart-Eyes on Noto Color Emoji, Animated 14.0\"/>",
         ";hmm": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/thinking-face_1f914.png\" width=\"42\" height=\"42\" alt=\"Thinking Face on Microsoft Teams 1.0\"/>",
@@ -91,12 +92,13 @@
         ";pcfu": "<style type=\"text/css\">div, li, p {font-size:large;}</style><span style=\"color:rgb(0,0,0);font-family:Georgia,serif\">I\'m checking whether this is something you\'d be interested in doing.<p>If not, I\'d be happy to remove your name from the list.<p><p>Thanks.<p><p><font color=\\\"#0000ff\\\">— jc</font><p></span>",
         ";pcr": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Henderson County Democrats postcard drive reminder<p>As a reminder, we were looking for your assigned postcards to be sent out by the end of <span style=\"color:red; font-weight: bold;\">${DATE \"MMMM\"}</span> and to email me when you have completed this.<p><p>If you are having difficulties sending them out, please let me know.<p><p>And thanks for all you do!",
         ";pig": "<img src=\"https://em-content.zobj.net/source/skype/289/pig_1f416.png\" width=\"66\" height=\"66\" alt=\"Pig on Skype Emoticons 1.2\"/>",
-        "pointd": "<span style=\"font-size: x-large;\">👇</span>",
-        "pointl": "<span style=\"font-size: x-large;\">👈</span>",
-        "pointr": "<span style=\"font-size: x-large;\">👉</span>",
-        "pointu": "<span style=\"font-size: x-large;\">👆</span>",
+        ";pointd": "<span style=\"font-size: x-large;\">👇</span>",
+        ";pointl": "<span style=\"font-size: x-large;\">👈</span>",
+        ";pointr": "<span style=\"font-size: x-large;\">👉</span>",
+        ";pointu": "<span style=\"font-size: x-large;\">👆</span>",
         ";pray": "<img src=\"https://www.pikpng.com/pngl/m/246-2463960_praying-hands-prayer-emoji-yellow-joint-png-image.png\" width=\"42\" height=\"42\" alt=\"Angry Face on Skype Emoticons 1.2\"/>",
         ";redflag": "<img src=\"https://www.pngrepo.com/png/289489/512/red-flag.png\" width=\"42\" height=\"42\" alt=\"Red Flag\"/>",
+        ";redx": "❌",
         ";roll": "<img src=\"https://gifdb.com/images/high/eye-roll-emoji-singing-cartoon-animation-ixx9s6eqp7vh86cz.gif\" width=\"42\" height=\"42\"  alt=\"Eye Roll Emoji GIFs | GIFDB.com\"/>",
         ";rro": "<a href=\"https://oapff.org/wp-content/uploads/2024/03/Roberts-Rules-of-Order-Newly-Revised-12th-Edt.pdf\">Roberts Rules of Order</a>",
         ";sad": "<img src=\"https://em-content.zobj.net/source/skype/289/pensive-face_1f614.png\" width=\"42\" height=\"42 alt=\"Pensive Face on Skype Emoticons 1.2\"/>",
@@ -118,8 +120,7 @@
         ";tm": "&trade;",
         ";todo": "<img src=\"https://4.bp.blogspot.com/-cQ7tZ56cvfU/ThSFJgw32pI/AAAAAAAAABU/sYFMkdGNaC8/s1600/todo-manager-icon.png\" width=\"42\" height=\"42\" alt=\"To Do\"/>",
         ";ts": "${DATE \"h:mm a\"}",
-        ";uf": "Please unsubscribe jncostanzo+flatrock@gmail.com from the Playhouse\'s list.<p>Please unsubscribe jncostanzo+flatrock@gmail.com from the Playhouse\'s list.<p>Please unsubscribe jncostanzo+flatrock@gmail.com from the Playhouse\'s list.<p><p>",
-        ";visit": "cphaguardhouse@gmail.com<style type=\"text/css\">div, li, p {font-size:large;}</style><p>VISITOR to visit the Costanzos at 25 Bay Magnolia Court<p><p>John and Tracey Costanzo expect <b>VISITORS</b> to visit us at 25 Bay Magnolia Court on <b>DATE</b>.",
+        ";visit": "cphaguardhouse@gmail.com<style type=\"text/css\">div, li, p {font-size:large;}</style><br>VISITOR to visit the Costanzos at 25 Bay Magnolia Court<br>John and Tracey Costanzo expect <b>VISITORS</b> to visit us at 25 Bay Magnolia Court on <b>DATE</b>.",
         ";whateva": "¯\\\\_(ツ)_/¯",
         ";wink": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/winking-face_1f609.gif\" width=\"42\" height=\"42\"  alt=\"Winking Face on Noto Color Emoji, Animated 14.0\"/>",
         ";wir": "When I run this, I receive the error \"\".",
@@ -128,8 +129,10 @@
         ";xx": "Smiling Face with Smiling Eyes on Noto Color Emoji, Animated 14.0",
         ";yum": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/face-savoring-food_1f60b.gif\" width=\"42\" height=\"42\" alt=\"Face Savoring Food on Noto Color Emoji, Animated 14.0\"/>",
         "<-": "←",
+        "<<<<": "❮❮❮❮",
         "<=": "⇦",
         "=>": "⇨",
+        ">>>>": "❯❯❯❯",
         "@bm": "Bonny Marsh",
         "@dh": "Doreen Herina",
         "@dm": "Dan Mahoney",
@@ -148,11 +151,8 @@
         "alright": "all right",
         "aobut": "about",
         "arent": "aren\'t",
-        "b@": "CPHA.John.Costanzo@gmail.com",
         "bnf": "the Budget and Finance committee",
         "cant": "can\'t",
-        "caution": "⚠️",
-        "checkmark": "✅",
         "comitment": "commitment",
         "comittment": "commitment",
         "committment": "commitment",
@@ -165,7 +165,6 @@
         "doesnt": "doesn\'t",
         "dont": "don\'t",
         "emigre": "émigré",
-        "flame": "🔥",
         "gauge": "guage",
         "gaurd": "guard",
         "hadnt": "hadn\'t",
@@ -177,7 +176,6 @@
         "isnt": "isn\'t",
         "itl": "it\'ll",
         "itno": "into",
-        "j@": "jncostanzo@gmail.com",
         "keepign": "keeping",
         "liek": "like",
         "naive": "naïve",
@@ -186,7 +184,6 @@
         "pehraps": "perhaps",
         "puree": "purée",
         "qqq": "in:all label:quora ",
-        "redx": "❌",
         "saute": "sauté",
         "shes": "she\'s",
         "shouldnt": "shouldn\'t",
