@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-07-28_12-04
+// @version      2026-07-28_13-24
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -174,7 +174,6 @@
         "hpny": "happy new year!",
         "hte": "the",
         "isnt": "isn\'t",
-        "itl": "it\'ll",
         "itno": "into",
         "keepign": "keeping",
         "liek": "like",
