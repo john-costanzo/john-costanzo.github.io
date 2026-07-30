@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-07-28_13-24
+// @version      2026-07-29_20-08
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -46,6 +46,7 @@
         ";cwsol": "<style type=\"text/css\">div, li, p {font-size:large;}</style>“TITLE” crossword puzzle solution<p>Attached, please find a solution to “TITLE”: the crossword puzzle that appeared in the SEASON edition of the Carriage Post.<p><p><p>— jc",
         ";cwsub": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Crossword puzzle submission for the ${DATE \"MMMM YYYY\" +3W} Carriage Post<p>Sue,<p><p>Please find a puzzle for the ${DATE \"MMMM YYYY\" +3W} <i>Carriage Post</i>, attached.<p><p><p>Thanks.<p>",
         ";date": "${DATE \"YYYY-MM-D\"}: ",
+        ";dmm": "Request to post draft ${DATE \"MMMM YYYY\"}) CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\") meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";dmm": "Request to post draft ${DATE \"MMMM YYYY\"}) CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\") meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";dtime": "${DATE \"DDDD, MMMM D YYYY, h:mm:ss a\"}",
         ";emb": "<img src=\"https://www.kindpng.com/picc/m/47-476214_embarrassed-emoji-png-download-embarrassment-embarrassed-emoji-gif.png\" width=\"42\" height=\"42\" alt=\"Embarrassed Face\"/>",
