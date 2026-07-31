@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-07-31 10:27:14";
+const eventDataVersion = "Friday, 2026-07-31 15:11:11";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3338,18 +3338,6 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
-        venue: "Carriage Park",
-        event_date: "2026-08-03",
-        start_time: "5:15 PM",
-        end_time: "6:15 PM",
-        name: `Leadership mtg`,
-        sort_time: "2026-08-03 17:15:00",
-        end_time_formatted: "2026-08-03 18:15:00",
-        detail: "None",
-        location: "Carriage Park",
-    },
-    {
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
         event_date: "2026-08-03",
@@ -6660,6 +6648,18 @@ const events = [
         end_time_formatted: "2026-09-23 20:30:00",
         detail: "None",
         location: "Carriage Park",
+    },
+    {
+        url: "https://www.stoneashevineyards.com/events",
+        venue: "Stoneashe",
+        event_date: "2026-09-24",
+        start_time: "12:00 PM",
+        end_time: "6:00 PM",
+        name: `Closed Today`,
+        sort_time: "2026-09-24 12:00:00",
+        end_time_formatted: "2026-09-24 18:00",
+        detail: "We are closed today! Our team is out supporting our favorite cause, the Blue Ridge Human Society, at their annual Fur Ball. We look forward to seeing you tomorrow.",
+        location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
