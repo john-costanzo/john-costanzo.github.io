@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-08-04 22:04:45";
+const eventDataVersion = "Wednesday, 2026-08-05 08:01:17";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1610,18 +1610,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-08-04",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
-        sort_time: "2026-08-04 18:00:00",
-        end_time_formatted: "2026-08-04 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
         venue: "Festival Net",
         event_date: "2026-08-05",
@@ -1942,7 +1930,7 @@ const events = [
         name: `Wine Down with Buzz - Live Music`,
         sort_time: "2026-08-07 15:00:00",
         end_time_formatted: "2026-08-07 18:00",
-        detail: "Time Machine Music - Old to New",
+        detail: "Time Machine Music - Old to New\nKick off the weekend early with Buzz on the Vineyard Vibes stage and Bistro Betty cooking up garden goodness. We are staying open an hour later to enjoy the wines and the views.\nDog Friendly on a Leash\n21+ Venue",
         location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
@@ -2388,6 +2376,18 @@ const events = [
         end_time_formatted: "2026-08-09 17:00",
         detail: "Peggy “Blues Chanteuse” Ratusz, has won best in Blues awards for the past 17 years as well as best vocalist and most notable local musician who gives back to the ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://www.millsriverbrewingco.com/events",
+        venue: "Mills River Brewing",
+        event_date: "2026-08-09",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Kid Billy Litz, a multi-instrumentalist & singer early American Roots music, Blues, and Ragtime will be playing`,
+        sort_time: "2026-08-09 14:00:00",
+        end_time_formatted: "2026-08-09 17:00",
+        detail: "None",
+        location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
         url: "https://southerwilliams.com/events",
