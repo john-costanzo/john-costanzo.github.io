@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-08-05 08:01:17";
+const eventDataVersion = "Wednesday, 2026-08-05 14:01:38";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1819,10 +1819,10 @@ const events = [
         event_date: "2026-08-06",
         start_time: "6:00 pm",
         end_time: "8:00 pm",
-        name: `Mr Jimmy & Bill Loftus - John Lee Hooker Birthday Tribute Show`,
+        name: `Event Change: Bill & Country NOT Unplugged`,
         sort_time: "2026-08-06 18:00:00",
         end_time_formatted: "2026-08-06 20:00",
-        detail: "Mr Jimmy & Bill Loftus grew up a mile away from each other on the south side of Chicago and were connected in North Carolina by a mutual friend. They…",
+        detail: "The John Lee Hooker Tribute with Mr Jimmy and Bill Loftus will be rescheduled soon. Watch for details.\n\nIn the meantime Bill Loftus and Mike “Country” Carver will be pulling out…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
