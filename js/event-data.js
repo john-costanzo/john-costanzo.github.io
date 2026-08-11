@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-08-10 20:01:30";
+const eventDataVersion = "Tuesday, 2026-08-11 10:26:25";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -480,18 +480,6 @@ const events = [
         end_time_formatted: "2026-07-12 23:59",
         detail: "There will be 1 stage with Regional talent. The entertainment will be Bluegrass, Country, Folk, Gospel and Old-time.<a href='https://festivalnet.com/4862/Asheville-North-Carolina/Festivals/Shindig-on-the-Green' target='_blank'> <em>link</em></a>",
         location: "Festival Net Shindig on the Green",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-07-12",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `Max Hightower`,
-        sort_time: "2026-07-12 14:00:00",
-        end_time_formatted: "2026-07-12 17:00",
-        detail: "Max Hightower was born and raised in the Upstate of South Carolina. At age 12, he bought his first Blues cassette tape, ‘Muddy Mississippi Live’ by Muddy Waters. The new ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
@@ -1260,42 +1248,6 @@ const events = [
         end_time_formatted: "2026-08-10 23:59",
         detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-08-10",
-        start_time: "4:00 pm",
-        end_time: "6:00 pm",
-        name: `Traditional Irish Music Session`,
-        sort_time: "2026-08-10 16:00:00",
-        end_time_formatted: "2026-08-10 18:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-08-10",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Board Game Club`,
-        sort_time: "2026-08-10 18:00:00",
-        end_time_formatted: "2026-08-10 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-08-10",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Chess Club`,
-        sort_time: "2026-08-10 18:00:00",
-        end_time_formatted: "2026-08-10 20:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
@@ -3852,6 +3804,18 @@ const events = [
         end_time_formatted: "2026-09-01 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-09-01",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
+        sort_time: "2026-09-01 18:00:00",
+        end_time_formatted: "2026-09-01 21:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://dryfallsbrewing.com",
