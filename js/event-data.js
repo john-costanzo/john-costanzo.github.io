@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-08-11 10:26:25";
+const eventDataVersion = "Tuesday, 2026-08-11 14:08:43";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2150,6 +2150,18 @@ const events = [
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
     },
     {
+        url: "https://oklawahabrewing.com/events",
+        venue: "Oklawaha",
+        event_date: "2026-08-16",
+        start_time: "3:00 pm",
+        end_time: "6:00 pm",
+        name: `Grateful Family Band`,
+        sort_time: "2026-08-16 15:00:00",
+        end_time_formatted: "2026-08-16 18:00",
+        detail: "Music starts @3pm!",
+        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
+    },
+    {
         url: "https://www.peacecenter.org/events",
         venue: "Peace Center",
         event_date: "2026-08-16",
@@ -3067,10 +3079,10 @@ const events = [
         event_date: "2026-08-23",
         start_time: "3:00 pm",
         end_time: "5:00 pm",
-        name: `J Dunks LIVE Oklawaha!`,
+        name: `Oklawaha Anniversary Party with Drunks and Drifters!!`,
         sort_time: "2026-08-23 15:00:00",
         end_time_formatted: "2026-08-23 17:00",
-        detail: "Music starts @3pm!",
+        detail: "Come celebrate our birthday with great beer, live music and good times! Music starts @3pm!",
         location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
@@ -3672,18 +3684,6 @@ const events = [
         end_time_formatted: "2026-08-30 17:30",
         detail: "Wiregrass at Saint Paul Mountain Vineyards! It\'s going to be a great day at the Vineyard! Amazing music to pair with our amazing wine wine. See you at Saint Paul! Faithful Flames BBQ truck on site. Come Dance, Sing and bring friends! Cheers!!!",
         location: "St. Paul 588 Chestnut Gap Rd, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://oklawahabrewing.com/events",
-        venue: "Oklawaha",
-        event_date: "2026-08-30",
-        start_time: "3:00 pm",
-        end_time: "?",
-        name: `Nikki Talley and Jason Sharp`,
-        sort_time: "2026-08-30 15:00:00",
-        end_time_formatted: "2026-08-30 23:59",
-        detail: "Music starts @3pm!",
-        location: "Oklawaha 147 1st Ave E Hendersonville, NC 28792",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
