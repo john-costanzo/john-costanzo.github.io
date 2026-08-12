@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-08-11 14:08:43";
+const eventDataVersion = "Tuesday, 2026-08-11 21:52:37";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1284,18 +1284,6 @@ const events = [
         end_time_formatted: "2026-08-11 23:59",
         detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-08-11",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-08-11 16:00:00",
-        end_time_formatted: "2026-08-11 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -4272,6 +4260,18 @@ const events = [
         end_time_formatted: "2026-09-11 19:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-09-11",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Toasted Cuban`,
+        sort_time: "2026-09-11 16:00:00",
+        end_time_formatted: "2026-09-11 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://secured.brevardmusic.org",
