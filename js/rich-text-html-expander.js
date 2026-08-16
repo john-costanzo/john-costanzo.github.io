@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-08-15_10-59
+// @version      2026-08-16_15-58
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -12,7 +12,7 @@
 
     const EXPANSIONS = {
         ";-": "<hr><br>",
-        ";ag": "CPHA Board of Directors Meeting - Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of the month\"} @ 1 pm<p>Please join us at the clubhouse for our monthly meeting. <p> <p>The agenda is attached and is, as always, subject to change.<div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">—</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">John Costanzo</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">CPHA Board of Directors</font></div>",
+        ";ag": "CPHA Board of Directors Meeting - Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of this month\"} @ 1 pm<p>Please join us at the clubhouse for our monthly meeting. <p> <p>The agenda is attached and is, as always, subject to change.<div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">—</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">John Costanzo</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">CPHA Board of Directors</font></div>",
         ";amm": "Request to post approved CPHA Board meeting minutes for ${DATE \"MMMM YYYY\" -1M}<p><p>Attached are approved CPHA Board meeting minutes for its ${DATE \"MMMM YYYY\" -1M} meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";angry": "<img src=\"https://em-content.zobj.net/source/skype/289/angry-face_1f620.png\" width=\"42\" height=\"42\" alt=\"Angry Face on Skype Emoticons 1.2\"/>",
         ";ap": "Does the following passage meet the AP style guide?<p><p><p>",
