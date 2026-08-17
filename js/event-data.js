@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-08-17 07:51:43";
+const eventDataVersion = "Monday, 2026-08-17 14:17:28";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -576,18 +576,6 @@ const events = [
         end_time_formatted: "2026-07-18 13:00",
         detail: "We will be opening at 1:00 today. See you then!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-07-18",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `Life Like Water`,
-        sort_time: "2026-07-18 14:00:00",
-        end_time_formatted: "2026-07-18 17:00",
-        detail: "“Life Like Water is a multi-colored tapestry of sounds and influences. With a focus on hypnotic rhythms, heartfelt lyrics, and melodies that contain flavors of Appalachia, Africa and the Middle ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -1536,18 +1524,6 @@ const events = [
         end_time_formatted: "2026-08-17 23:59",
         detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-08-17",
-        start_time: "11:00 am",
-        end_time: "1:00 pm",
-        name: `Mah Jongg Open Play`,
-        sort_time: "2026-08-17 11:00:00",
-        end_time_formatted: "2026-08-17 13:00",
-        detail: "Who says Mondays have to be boring?\nTrade the office chair for a vineyard view and join us for Mah Jongg Open Play on Monday, August 10th from 11:00am-1:00pm at Souther Williams Vineyard.\nBring your board, bring your friends, or pull up a chair and meet some new ones. Between the clack of the tiles and the swirl of a wine glass, Mondays suddenly become something to look forward to. If you don’t have a board no worries, there is always a table to play at with friends.\nOpen Play 11-1pm\nAward-Winning NC Wines\nNew Friends Welcome\nRelaxing Vineyard Setting\nLet us know you’re coming so we can have tables set up for you and your crew. ([email protected]) also let us know if you are a beginner or experienced player.\nMust be 21+ to play.",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -3648,6 +3624,18 @@ const events = [
         end_time_formatted: "2026-09-05 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-09-05",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: `Bistro Betty - Food Truck`,
+        sort_time: "2026-09-05 12:00:00",
+        end_time_formatted: "2026-09-05 17:00",
+        detail: "None",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://www.ncarboretum.org/events/month/2026-08",
