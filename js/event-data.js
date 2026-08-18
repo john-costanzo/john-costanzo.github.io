@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-08-17 14:17:28";
+const eventDataVersion = "Monday, 2026-08-17 20:01:39";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -588,18 +588,6 @@ const events = [
         end_time_formatted: "2026-07-18 19:00",
         detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-07-18",
-        start_time: "6:30 pm",
-        end_time: "9:00 pm",
-        name: `Isaac Hadden`,
-        sort_time: "2026-07-18 18:30:00",
-        end_time_formatted: "2026-07-18 21:00",
-        detail: "It’s as though some people are just born to be musicians. That certainly seems to be the case for guitarist and vocalist, Isaac Hadden. Born and raised in the southeast ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
@@ -1524,18 +1512,6 @@ const events = [
         end_time_formatted: "2026-08-17 23:59",
         detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-08-17",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Heidi Ho`,
-        sort_time: "2026-08-17 16:00:00",
-        end_time_formatted: "2026-08-17 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -4452,6 +4428,18 @@ const events = [
         end_time_formatted: "2026-09-17 22:00",
         detail: "None",
         location: "Rhythm & Brews Main St. Hendersonville",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-09-17",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Event: Open Mic Night`,
+        sort_time: "2026-09-17 18:00:00",
+        end_time_formatted: "2026-09-17 21:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.peacecenter.org/events",
