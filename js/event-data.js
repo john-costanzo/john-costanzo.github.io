@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-08-19 07:32:26";
+const eventDataVersion = "Wednesday, 2026-08-19 10:04:25";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2539,7 +2539,7 @@ const events = [
         event_date: "2026-08-27",
         start_time: "4:00 pm",
         end_time: "8:00 pm",
-        name: `Food Truck: Mehfil Indian Cuisine`,
+        name: `Food Truck: Los 3 Jalapeno's`,
         sort_time: "2026-08-27 16:00:00",
         end_time_formatted: "2026-08-27 20:00",
         detail: "None",
