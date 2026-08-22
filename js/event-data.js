@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2026-08-22 14:45:05";
+const eventDataVersion = "Saturday, 2026-08-22 15:13:11";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -5681,8 +5681,8 @@ const events = [
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-11-11",
-        start_time: "time not specified",
-        end_time: "time not specified",
+        start_time: "¿",
+        end_time: "?",
         name: `Veteran's Day Celebration`,
         sort_time: "2026-11-11 00:00:00",
         end_time_formatted: "2026-10-31 23:59:59",
