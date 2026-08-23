@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2026-08-22 15:13:11";
+const eventDataVersion = "Saturday, 2026-08-22 20:01:14";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1742,18 +1742,6 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-08-22",
-        start_time: "12:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck:  Let's Cook`,
-        sort_time: "2026-08-22 12:00:00",
-        end_time_formatted: "2026-08-22 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
         event_date: "2026-08-22",
@@ -1778,18 +1766,6 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-08-22",
-        start_time: "12:00 pm",
-        end_time: "5:00 pm",
-        name: `Grass Roots Pizza - Food Truck`,
-        sort_time: "2026-08-22 12:00:00",
-        end_time_formatted: "2026-08-22 17:00",
-        detail: "None",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-08-22",
@@ -1812,18 +1788,6 @@ const events = [
         end_time_formatted: "2026-08-22 16:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-08-22",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `Mike Pauer - Live Music`,
-        sort_time: "2026-08-22 14:00:00",
-        end_time_formatted: "2026-08-22 17:00",
-        detail: "None",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://www.saintpaulfarms.com/vineyard-events",
@@ -3434,6 +3398,18 @@ const events = [
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
     },
     {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-09-05",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Tim Nave - Live Music`,
+        sort_time: "2026-09-05 14:00:00",
+        end_time_formatted: "2026-09-05 17:00",
+        detail: "None",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-09-05",
@@ -3516,6 +3492,18 @@ const events = [
         end_time_formatted: "2026-09-06 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-09-06",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: `Mëhfil Indian Cuisine - Food Truck`,
+        sort_time: "2026-09-06 12:00:00",
+        end_time_formatted: "2026-09-06 17:00",
+        detail: "None",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
@@ -5112,6 +5100,18 @@ const events = [
         end_time_formatted: "2026-09-23 23:59",
         detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-09-23",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Carolina Ace`,
+        sort_time: "2026-09-23 16:00:00",
+        end_time_formatted: "2026-09-23 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
