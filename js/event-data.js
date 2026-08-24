@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-08-24 07:43:46";
+const eventDataVersion = "Monday, 2026-08-24 18:03:25";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -686,18 +686,6 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-07-25",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `Moon and You`,
-        sort_time: "2026-07-25 14:00:00",
-        end_time_formatted: "2026-07-25 17:00",
-        detail: "At its core, The Moon and You is a charismatic husband-and-wife team. Melissa Hyman plays cello, Ryan Furstenberg plays guitar and banjo, and both sing in “voices that sound like ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
-    },
-    {
         url: "https://www.stoneashevineyards.com/events",
         venue: "Stoneashe",
         event_date: "2026-07-25",
@@ -708,18 +696,6 @@ const events = [
         end_time_formatted: "2026-07-25 20:30",
         detail: "None",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events?location+=mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-07-25",
-        start_time: "6:30 pm",
-        end_time: "9:00 pm",
-        name: `Tru Phonic`,
-        sort_time: "2026-07-25 18:30:00",
-        end_time_formatted: "2026-07-25 21:00",
-        detail: "The original music of Jake Salter & a unique group of talented musicians come together in Tru Phonic. Sounds of Jam, Funk, Blues, Rock, Soul, Jazz and Hip-Hop & more ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
