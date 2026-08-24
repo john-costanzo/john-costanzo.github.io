@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-08-16_15-58
+// @version      2026-08-24_19-50
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -28,14 +28,14 @@
         ";cow": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/cow-face_1f42e.png\" width=\"66\" height=\"66\" alt=\"Cow Face on Microsoft Teams 1.0\"/>",
         ";crazy": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/winking-face-with-tongue_1f61c.gif\" width=\"42\" height=\"42\" alt=\"Winking Face with Tongue on Noto Color Emoji, Animated 14.0\"/>",
         ";cry": "<img src=\"https://em-content.zobj.net/source/skype/289/crying-face_1f622.png\" width=\"42\" height=\"42 alt=\"Crying Face on Skype Emoticons 1.2\"/>",
-        ";cwpuz": "Crossword Puzzle feedback<p>Sue,<p><p>Attached, please find a draft crossword puzzle for the next edition of the <i>Carriage Post</i>. I look forward (as always) to your comments.<p><p>Thanks.<p>",
+        ";cwpuz": "Crossword Puzzle feedback<p>Sue,<p><font size=large face=\"georgia, serif\">Attached, please find a draft crossword puzzle for the next edition of the <i>Carriage Post</i>. I look forward (as always) to your comments.<p><p>Thanks.<p>",
         ";cwsol": "<style type=\"text/css\">div, li, p {font-size:large;}</style>“TITLE” crossword puzzle solution<p>Attached, please find a solution to “TITLE”: the crossword puzzle that appeared in the SEASON edition of the Carriage Post.<p><p><p>— jc",
         ";cwsub": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Crossword puzzle submission for the ${DATE \"MMMM YYYY\" +3W} Carriage Post<p>Sue,<p><p>Please find a puzzle for the ${DATE \"MMMM YYYY\" +3W} <i>Carriage Post</i>, attached.<p><p><p>Thanks.<p>",
         ";date": "${DATE \"YYYY-MM-D\"}: ",
         ";dmm": "Request to post draft ${DATE \"MMMM YYYY\"}) CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\") meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";dmm": "Request to post draft ${DATE \"MMMM YYYY\"}) CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\") meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";dtime": "${DATE \"DDDD, MMMM D YYYY, h:mm:ss a\"}",
-        ";emb": "<img src=\"https://www.kindpng.com/picc/m/47-476214_embarrassed-emoji-png-download-embarrassment-embarrassed-emoji-gif.png\" width=\"42\" height=\"42\" alt=\"Embarrassed Face\"/>",
+        ";emb": "<span style=\"font-size: x-large;\">🫢</span>",
         ";explode": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/exploding-head_1f92f.gif\" width=\"42\" height=\"42\" alt=\"Exploding Head on Noto Color Emoji, Animated 14.0\"/>",
         ";eyeroll": "<img src=\"https://gifdb.com/images/high/eye-roll-emoji-singing-cartoon-animation-ixx9s6eqp7vh86cz.gif\" width=\"42\" height=\"42\"  alt=\"Eye Roll Emoji GIFs | GIFDB.com\"/>",
         ";eyes": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/eyes_1f440.gif\" width=\"42\" height=\"42\" alt=\"Eyes on Noto Color Emoji, Animated 14.0\"/>",
@@ -95,6 +95,7 @@
         ";warn": "<span style=\"font-size: x-large;\">⚠️</span>",
         ";wink": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/winking-face_1f609.gif\" width=\"42\" height=\"42\"  alt=\"Winking Face on Noto Color Emoji, Animated 14.0\"/>",
         ";woohoo": "<span style=\"font-size: x-large;\">🎉🙌🥳</span>",
+        ";woozy": "<span style=\"font-size: x-large;\">🥴</span>",
         ";wow": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/exploding-head_1f92f.gif\" width=\"42\" height=\"42\" alt=\"Exploding Head on Noto Color Emoji, Animated 14.0\"/>",
         ";yum": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/face-savoring-food_1f60b.gif\" width=\"42\" height=\"42\" alt=\"Face Savoring Food on Noto Color Emoji, Animated 14.0\"/>",
     };
