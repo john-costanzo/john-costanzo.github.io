@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-08-24 20:01:31";
+const eventDataVersion = "Tuesday, 2026-08-25 08:01:12";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -806,7 +806,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-01",
         start_time: "7:00 PM",
@@ -878,7 +878,7 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-04",
         start_time: "6:30 PM",
@@ -914,7 +914,7 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-05",
         start_time: "7:00 PM",
@@ -974,7 +974,7 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-07",
         start_time: "6:30 PM",
@@ -1010,7 +1010,7 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-08",
         start_time: "6:00 PM",
@@ -1106,7 +1106,7 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-11",
         start_time: "6:30 PM",
@@ -1142,7 +1142,7 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-12",
         start_time: "7:00 PM",
@@ -1214,7 +1214,7 @@ const events = [
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-14",
         start_time: "6:30 PM",
@@ -1274,7 +1274,7 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-15",
         start_time: "7:00 PM",
@@ -1394,7 +1394,7 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - August",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-19",
         start_time: "7:00 PM",
@@ -1490,7 +1490,7 @@ const events = [
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-21",
         start_time: "6:30 PM",
@@ -1562,7 +1562,7 @@ const events = [
         location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-22",
         start_time: "7:00 PM",
@@ -1620,42 +1620,6 @@ const events = [
         end_time_formatted: "2026-08-24 23:59",
         detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-08-24",
-        start_time: "4:00 pm",
-        end_time: "6:00 pm",
-        name: `Traditional Irish Music Session`,
-        sort_time: "2026-08-24 16:00:00",
-        end_time_formatted: "2026-08-24 18:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-08-24",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Board Game Club`,
-        sort_time: "2026-08-24 18:00:00",
-        end_time_formatted: "2026-08-24 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-08-24",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Chess Club`,
-        sort_time: "2026-08-24 18:00:00",
-        end_time_formatted: "2026-08-24 20:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
@@ -1790,7 +1754,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-26",
         start_time: "7:00 PM",
@@ -1982,7 +1946,7 @@ const events = [
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-28",
         start_time: "6:30 PM",
@@ -2198,7 +2162,7 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
-        url: "https://guidonbrewing.com/events",
+        url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-08-29",
         start_time: "7:00 PM",
@@ -4706,6 +4670,18 @@ const events = [
         location: "WNC Agriculture Center in Fletcher",
     },
     {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-09-19",
+        start_time: "11:00 am",
+        end_time: "5:00 pm",
+        name: `Artisan market`,
+        sort_time: "2026-09-19 11:00:00",
+        end_time_formatted: "2026-09-19 17:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
         url: "https://dryfallsbrewing.com",
         venue: "Dry Falls",
         event_date: "2026-09-19",
@@ -4884,6 +4860,42 @@ const events = [
         end_time_formatted: "2026-09-21 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-09-21",
+        start_time: "4:00 pm",
+        end_time: "6:00 pm",
+        name: `Traditional Irish Music Session`,
+        sort_time: "2026-09-21 16:00:00",
+        end_time_formatted: "2026-09-21 18:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-09-21",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Board Game Club`,
+        sort_time: "2026-09-21 18:00:00",
+        end_time_formatted: "2026-09-21 21:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
+    },
+    {
+        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
+        venue: "Trailside",
+        event_date: "2026-09-21",
+        start_time: "6:00 pm",
+        end_time: "8:00 pm",
+        name: `Chess Club`,
+        sort_time: "2026-09-21 18:00:00",
+        end_time_formatted: "2026-09-21 20:00",
+        detail: "None",
+        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
