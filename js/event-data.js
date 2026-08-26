@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-08-25 14:01:32";
+const eventDataVersion = "Tuesday, 2026-08-25 20:01:21";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1632,18 +1632,6 @@ const events = [
         end_time_formatted: "2026-08-25 23:59",
         detail: "<a href='https://festivalnet.com/95040/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-August' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - August",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-08-25",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-08-25 16:00:00",
-        end_time_formatted: "2026-08-25 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -5064,6 +5052,18 @@ const events = [
         end_time_formatted: "2026-09-25 23:59",
         detail: "<a href='https://festivalnet.com/95041/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-September' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - September",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-09-25",
+        start_time: "3:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Let's Cook`,
+        sort_time: "2026-09-25 15:00:00",
+        end_time_formatted: "2026-09-25 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
