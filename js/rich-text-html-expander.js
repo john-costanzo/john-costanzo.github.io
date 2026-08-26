@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-08-24_19-50
+// @version      2026-08-25_22-33
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -13,9 +13,8 @@
     const EXPANSIONS = {
         ";-": "<hr><br>",
         ";ag": "CPHA Board of Directors Meeting - Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of this month\"} @ 1 pm<p>Please join us at the clubhouse for our monthly meeting. <p> <p>The agenda is attached and is, as always, subject to change.<div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">—</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">John Costanzo</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">CPHA Board of Directors</font></div>",
-        ";amm": "Request to post approved CPHA Board meeting minutes for ${DATE \"MMMM YYYY\" -1M}<p><p>Attached are approved CPHA Board meeting minutes for its ${DATE \"MMMM YYYY\" -1M} meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
+        ";amm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Request to post approved CPHA Board meeting minutes for ${DATE \"MMMM YYYY\" -1M}<p><p>Attached are approved CPHA Board meeting minutes for its ${DATE \"MMMM YYYY\" -1M} meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";angry": "<img src=\"https://em-content.zobj.net/source/skype/289/angry-face_1f620.png\" width=\"42\" height=\"42\" alt=\"Angry Face on Skype Emoticons 1.2\"/>",
-        ";ap": "Does the following passage meet the AP style guide?<p><p><p>",
         ";bam": "<span style=\"font-size: x-large;\">💥</span>",
         ";beatingheart": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/beating-heart_1f493.gif\" width=\"42\" height=\"42\" alt=\"Beating Heart on Noto Color Emoji, Animated 14.0\"/>",
         ";bem": "​<style type=\"text/css\">div, li, p {font-size:large;}</style>Draft executive session minutes for ${DATE \"DDDD, MMMM D, YYYY\"}<p><p>Attached, please find draft executive session minutes for ${DATE \"DDDD, MMMM D, YYYY\"}. I welcome your comments.<p>I plan to post them to the Board-only\'s File Cabinet, under “Executive Sessions” by <b>${DATE \"DDDD, MMMM D, YYYY\"  +3D}</b>.<p>",
@@ -32,8 +31,7 @@
         ";cwsol": "<style type=\"text/css\">div, li, p {font-size:large;}</style>“TITLE” crossword puzzle solution<p>Attached, please find a solution to “TITLE”: the crossword puzzle that appeared in the SEASON edition of the Carriage Post.<p><p><p>— jc",
         ";cwsub": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Crossword puzzle submission for the ${DATE \"MMMM YYYY\" +3W} Carriage Post<p>Sue,<p><p>Please find a puzzle for the ${DATE \"MMMM YYYY\" +3W} <i>Carriage Post</i>, attached.<p><p><p>Thanks.<p>",
         ";date": "${DATE \"YYYY-MM-D\"}: ",
-        ";dmm": "Request to post draft ${DATE \"MMMM YYYY\"}) CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\") meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
-        ";dmm": "Request to post draft ${DATE \"MMMM YYYY\"}) CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\") meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
+        ";dmm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Request to post draft ${DATE \"MMMM YYYY\"}) CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\") meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";dtime": "${DATE \"DDDD, MMMM D YYYY, h:mm:ss a\"}",
         ";emb": "<span style=\"font-size: x-large;\">🫢</span>",
         ";explode": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/exploding-head_1f92f.gif\" width=\"42\" height=\"42\" alt=\"Exploding Head on Noto Color Emoji, Animated 14.0\"/>",
