@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-08-26_09-41
+// @version      2026-08-27_19-56
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -33,7 +33,7 @@
         ";date": "${DATE \"YYYY-MM-D\"}: ",
         ";dmm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Request to post draft ${DATE \"MMMM YYYY\"} CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\"} meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";dtime": "${DATE \"DDDD, MMMM D YYYY, h:mm:ss a\"}",
-        ";emb": "<span style=\"font-size: x-large;\">🫢</span>",
+        ";emb": "<span style=\"font-size: 2em;\">🫢</span>",
         ";explode": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/exploding-head_1f92f.gif\" width=\"42\" height=\"42\" alt=\"Exploding Head on Noto Color Emoji, Animated 14.0\"/>",
         ";eyeroll": "<img src=\"https://gifdb.com/images/high/eye-roll-emoji-singing-cartoon-animation-ixx9s6eqp7vh86cz.gif\" width=\"42\" height=\"42\"  alt=\"Eye Roll Emoji GIFs | GIFDB.com\"/>",
         ";eyes": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/eyes_1f440.gif\" width=\"42\" height=\"42\" alt=\"Eyes on Noto Color Emoji, Animated 14.0\"/>",
