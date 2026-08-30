@@ -1,4 +1,4 @@
-const eventDataVersion = "Saturday, 2026-08-29 14:31:44";
+const eventDataVersion = "Saturday, 2026-08-29 20:34:39";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1466,18 +1466,6 @@ const events = [
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
     },
     {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-08-29",
-        start_time: "12:00 pm",
-        end_time: "4:00 pm",
-        name: `Bistro Betty - Food Truck`,
-        sort_time: "2026-08-29 12:00:00",
-        end_time_formatted: "2026-08-29 16:00",
-        detail: "None",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
         event_date: "2026-08-29",
@@ -1502,18 +1490,6 @@ const events = [
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-08-29",
-        start_time: "2:00 pm",
-        end_time: "6:00 pm",
-        name: `Food Truck: Madrona`,
-        sort_time: "2026-08-29 14:00:00",
-        end_time_formatted: "2026-08-29 18:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://www.millsriverbrewingco.com/events",
         venue: "Mills River Brewing",
         event_date: "2026-08-29",
@@ -1524,18 +1500,6 @@ const events = [
         end_time_formatted: "2026-08-29 17:00",
         detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-08-29",
-        start_time: "2:00 pm",
-        end_time: "5:00 pm",
-        name: `Raphael Graves - Live Music`,
-        sort_time: "2026-08-29 14:00:00",
-        end_time_formatted: "2026-08-29 17:00",
-        detail: "None",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://www.saintpaulfarms.com/cidery-events",
@@ -2822,6 +2786,18 @@ const events = [
         location: "Downtown Hendersonville",
     },
     {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-09-07",
+        start_time: "11:00 am",
+        end_time: "1:00 pm",
+        name: `Mah Jongg Monday Open Play`,
+        sort_time: "2026-09-07 11:00:00",
+        end_time_formatted: "2026-09-07 13:00",
+        detail: "Who says Mondays have to be boring?\nTrade the office chair for a vineyard view and join us for Mah Jongg Open Play on Monday’s from 11:00am-1:00pm at Souther Williams Vineyard.\nBring your board, bring your friends, or pull up a chair and meet some new ones. Between the clack of the tiles and the swirl of a wine glass, Mondays suddenly become something to look forward to. If you don’t have a board no worries, there is always a table to play at with friends.\nOpen Play 11-1pm\nAward-Winning NC Wines\nNew Friends Welcome\nRelaxing Vineyard Setting\nLet us know you’re coming so we can have tables set up for you and your crew. ([email protected]) also let us know if you are a beginner or experienced player.\nMust be 21+ to play.",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
         url: "https://pointlookoutvineyards.com/whats-happening",
         venue: "Point Lookout",
         event_date: "2026-09-07",
@@ -3396,6 +3372,18 @@ const events = [
         end_time_formatted: "2026-09-12 13:00",
         detail: "Get your weekend off to a great start with our Saturday yoga class at the brewery!\nBring your own yoga mat and props and enjoy a great workout and stress relief.\nClass…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-09-12",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: `El Bodegon - Food Truck`,
+        sort_time: "2026-09-12 12:00:00",
+        end_time_formatted: "2026-09-12 17:00",
+        detail: "None",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
@@ -4980,6 +4968,18 @@ const events = [
         end_time_formatted: "2026-09-30 21:00",
         detail: "None",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-09-30",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Carolina Ace`,
+        sort_time: "2026-09-30 16:00:00",
+        end_time_formatted: "2026-09-30 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
