@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-08-31 14:01:32";
+const eventDataVersion = "Monday, 2026-08-31 14:50:24";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -830,6 +830,18 @@ const events = [
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-08-29",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: `THE PAPER CROWNS`,
+        sort_time: "2026-08-29 13:00:00",
+        end_time_formatted: "2026-08-29 16:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
         url: "https://sierranevada.com/events?location+=mills-river",
         venue: "Sierra Nevada",
         event_date: "2026-08-29",
@@ -852,6 +864,18 @@ const events = [
         end_time_formatted: "2026-08-29 21:00",
         detail: "WNC duo, Seth and Sara, have put the van-life music tour on hold for another year and are playing regionally in 2026! For the past 7 years they’ve been chasing their dreams in 49 states, while performing their campfire-written originals (along with covers like Tyler Childers, The Beatles, Colter Wall, Brooks & Dunn, Radiohead, Johnny Cash, etc.) to anyone who will listen. With Seth praised on his mesmerizing vocals, guitar, and an ever-evolving suitcase kick, Sara lays down percussion with delicate vocals accompanying their cowboy-inspired tunes. “If you enjoy a night filled with love, humor, heartbreak, dancing, and a rootsy kind of edge, then Seth and Sara is a show not to be missed!” Full details, gigs, bio, music, and booking info available at www.sethandsaramusic.com",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://burntshirtvineyards.com/3400-club/events-calendar",
+        venue: "Burnt Shirt",
+        event_date: "2026-08-30",
+        start_time: "1:00 pm",
+        end_time: "4:00 pm",
+        name: `SAMMY HATCHELL`,
+        sort_time: "2026-08-30 13:00:00",
+        end_time_formatted: "2026-08-30 16:00",
+        detail: "None",
+        location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
         url: "https://sierranevada.com/events?location+=mills-river",
