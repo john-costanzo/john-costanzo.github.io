@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-09-03 16:15:38";
+const eventDataVersion = "Thursday, 2026-09-03 20:06:44";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -804,18 +804,6 @@ const events = [
         end_time_formatted: "2026-09-03 15:00",
         detail: "There are many ways that nature hides wildlife, join naturalist/environmental educator, Eric Young, and come find out the many adaptations wildlife employs to stay alive.",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-09-03",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-09-03 16:00:00",
-        end_time_formatted: "2026-09-03 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.ncarboretum.org/events/month/2026-08",
@@ -4404,6 +4392,18 @@ const events = [
         end_time_formatted: "2026-10-03 12:00",
         detail: "Hit the trails and learn more about The North Carolina Arboretum’s botanically diverse forest with a guided trail walk! April through October, this free hiking program is led by trained …",
         location: "Arboretum 100 Frederick Law Olmsted Way Asheville, NC 28806-9315",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-10-03",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Magik Eye Pizza`,
+        sort_time: "2026-10-03 12:00:00",
+        end_time_formatted: "2026-10-03 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.ncarboretum.org/events/month/2026-09",
