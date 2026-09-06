@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-08-27_19-56
+// @version      2026-09-06_13-22
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -12,6 +12,19 @@
 
     const EXPANSIONS = {
         ";-": "<hr><br>",
+        "1st": "1<sup>st</sup>",
+        "2nd": "2<sup>nd</sup>",
+        "3rd": "3<sup>rd</sup>",
+        "4th": "4<sup>th</sup>",
+        "5th": "5<sup>th</sup>",
+        "6th": "6<sup>th</sup>",
+        "7th": "7<sup>th</sup>",
+        "8th": "8<sup>th</sup>",
+        "9th": "9<sup>th</sup>",
+        "0th": "0<sup>th</sup>",
+        "1th": "1<sup>th</sup>",
+        "2th": "2<sup>th</sup>",
+        "3th": "3<sup>th</sup>",
         ";ag": "CPHA Board of Directors Meeting - Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of this month\"} @ 1 pm<p>Please join us at the clubhouse for our monthly meeting. <p> <p>The agenda is attached and is, as always, subject to change.<div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">—</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">John Costanzo</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">CPHA Board of Directors</font></div>",
         ";amm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Request to post approved CPHA Board meeting minutes for ${DATE \"MMMM YYYY\" -1M}<p><p>Attached are approved CPHA Board meeting minutes for its ${DATE \"MMMM YYYY\" -1M} meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
         ";angry": "<img src=\"https://em-content.zobj.net/source/skype/289/angry-face_1f620.png\" width=\"42\" height=\"42\" alt=\"Angry Face on Skype Emoticons 1.2\"/>",
@@ -72,6 +85,7 @@
         ";pray": "<img src=\"https://www.pikpng.com/pngl/m/246-2463960_praying-hands-prayer-emoji-yellow-joint-png-image.png\" width=\"42\" height=\"42\" alt=\"Angry Face on Skype Emoticons 1.2\"/>",
         ";redflag": "<img src=\"https://www.pngrepo.com/png/289489/512/red-flag.png\" width=\"42\" height=\"42\" alt=\"Red Flag\"/>",
         ";roll": "<img src=\"https://gifdb.com/images/high/eye-roll-emoji-singing-cartoon-animation-ixx9s6eqp7vh86cz.gif\" width=\"42\" height=\"42\"  alt=\"Eye Roll Emoji GIFs | GIFDB.com\"/>",
+        ";reg": "®",
         ";rro": "<a href=\"https://oapff.org/wp-content/uploads/2024/03/Roberts-Rules-of-Order-Newly-Revised-12th-Edt.pdf\">Roberts Rules of Order</a>",
         ";sad": "<img src=\"https://em-content.zobj.net/source/skype/289/pensive-face_1f614.png\" width=\"42\" height=\"42 alt=\"Pensive Face on Skype Emoticons 1.2\"/>",
         ";scared": "<img src=\"https://em-content.zobj.net/source/skype/289/fearful-face_1f628.png\"width=\"42\" height=\"42\"  alt=\"Fearful Face on Skype Emoticons 1.2\"/>",
