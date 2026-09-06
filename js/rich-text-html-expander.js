@@ -5,7 +5,7 @@
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
-// ==/UserScript==
+// ==UserScript==
 
 ( function( ) {
     'use strict';
@@ -115,7 +115,122 @@
     let buffer = '';
     const maxKeyLength = Math.max( ...Object.keys( EXPANSIONS ).map( k => k.length ) );
 
+    function ensureCursorAfterExpandedText() {
+        const activeEl = document.activeElement;
+        if ( !activeEl ) return;
+
+        if ( activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' ) {
+            return;
+        }
+
+        const sel = window.getSelection();
+        if ( !sel || !sel.rangeCount ) return;
+
+        let range = sel.getRangeAt( 0 );
+        let node = range.endContainer;
+        let offset = range.endOffset;
+
+        function isInline( el ) {
+            if ( !el || el.nodeType !== Node.ELEMENT_NODE ) return false;
+            const tag = el.tagName.toUpperCase();
+            const inlineTags = [ 'SUP', 'SUB', 'B', 'I', 'U', 'SPAN', 'FONT', 'A', 'STRONG', 'EM', 'STRIKE', 'CODE', 'S', 'MARK', 'SMALL' ];
+            if ( inlineTags.includes( tag ) ) return true;
+            try {
+                const display = window.getComputedStyle( el ).display;
+                return display.includes( 'inline' );
+            } catch ( e ) {
+                return false;
+            }
+        }
+
+        if ( node.nodeType === Node.ELEMENT_NODE && node.lastChild ) {
+            let last = node.lastChild;
+            if ( last.nodeType === Node.ELEMENT_NODE ) {
+                const tag = last.tagName.toUpperCase();
+                if ( tag === 'P' || tag === 'DIV' ) {
+                    if ( last.childNodes.length === 0 ) {
+                        last.appendChild( document.createTextNode( '\u200B' ) );
+                    }
+                    const newRange = document.createRange();
+                    newRange.selectNodeContents( last );
+                    newRange.collapse( false );
+                    sel.removeAllRanges();
+                    sel.addRange( newRange );
+                    range = sel.getRangeAt( 0 );
+                    node = range.endContainer;
+                    offset = range.endOffset;
+                } else {
+                    const newRange = document.createRange();
+                    newRange.setStartAfter( last );
+                    newRange.collapse( true );
+                    sel.removeAllRanges();
+                    sel.addRange( newRange );
+                    range = sel.getRangeAt( 0 );
+                    node = range.endContainer;
+                    offset = range.endOffset;
+                }
+            }
+        }
+
+        let isAtEnd = false;
+        if ( node.nodeType === Node.TEXT_NODE ) {
+            isAtEnd = ( offset === node.textContent.length );
+        } else if ( node.nodeType === Node.ELEMENT_NODE ) {
+            isAtEnd = ( offset === node.childNodes.length );
+        }
+
+        if ( !isAtEnd ) return;
+
+        let curr = node;
+        let highestInlineToExit = null;
+
+        while ( curr && curr !== activeEl ) {
+            let parent = curr.parentNode;
+            if ( !parent ) break;
+
+            let isLast = ( curr === parent.lastChild );
+            if ( !isLast ) break;
+
+            if ( parent !== activeEl && isInline( parent ) ) {
+                highestInlineToExit = parent;
+                curr = parent;
+            } else {
+                break;
+            }
+        }
+
+        if ( highestInlineToExit ) {
+            let next = highestInlineToExit.nextSibling;
+            if ( !next || next.nodeType !== Node.TEXT_NODE ) {
+                next = document.createTextNode( '\u200B' );
+                if ( highestInlineToExit.parentNode ) {
+                    highestInlineToExit.parentNode.insertBefore( next, highestInlineToExit.nextSibling );
+                }
+            }
+            const newRange = document.createRange();
+            newRange.setStart( next, next.textContent.length );
+            newRange.collapse( true );
+            sel.removeAllRanges();
+            sel.addRange( newRange );
+        }
+    }
+
     function triggerNativePaste( htmlContent, triggerLength ) {
+        const activeEl = document.activeElement;
+
+        if ( activeEl && ( activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' ) ) {
+            const start = activeEl.selectionStart;
+            const end = activeEl.selectionEnd;
+            const val = activeEl.value;
+            const charsToDelete = triggerLength - 1;
+            const plainText = htmlContent.replace( /<[^>]*>/g, '' );
+            const newStart = Math.max( 0, start - charsToDelete );
+            activeEl.value = val.slice( 0, newStart ) + plainText + val.slice( end );
+            const newPos = newStart + plainText.length;
+            activeEl.setSelectionRange( newPos, newPos );
+            return;
+        }
+
         // 1. Clear the trigger text (;lin) from the screen
         const charsToDelete = triggerLength - 1; // Last char was blocked via preventDefault
         for ( let i = 0; i < charsToDelete; i++ ) {
@@ -143,10 +258,17 @@
         } );
 
         // 4. Dispatch directly to the focused input/editable element
-        const activeEl = document.activeElement;
+        let isHandled = false;
         if ( activeEl ) {
-            activeEl.dispatchEvent( pasteEvent );
+            isHandled = !activeEl.dispatchEvent( pasteEvent );
         }
+
+        if ( !isHandled ) {
+            document.execCommand( 'insertHTML', false, htmlContent );
+        }
+
+        ensureCursorAfterExpandedText();
+        setTimeout( ensureCursorAfterExpandedText, 0 );
     }
 
     window.addEventListener( 'keydown', ( e ) => {
