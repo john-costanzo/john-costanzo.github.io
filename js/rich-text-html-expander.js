@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-06_14-44
+// @version      2026-09-06_14-52
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -129,6 +129,43 @@
         return ancestors;
     }
 
+    function cleanUpAddedAttributes( container ) {
+        if ( !container ) return;
+        const elements = container.querySelectorAll ? container.querySelectorAll( '[style], span' ) : [];
+        const all = [ container, ...Array.from( elements ) ];
+
+        for ( const el of all ) {
+            if ( !el || !el.style ) continue;
+
+            let styleStr = el.getAttribute( 'style' ) || '';
+
+            if ( styleStr ) {
+                if ( el.style.backgroundColor === 'transparent' || styleStr.includes( 'background-color: transparent' ) || styleStr.includes( 'background-color:transparent' ) || styleStr.includes( 'background-color: rgba(0, 0, 0, 0)' ) ) {
+                    el.style.backgroundColor = '';
+                }
+
+                if ( el.style.fontSize === 'small' || styleStr.includes( 'font-size: small' ) || styleStr.includes( 'font-size:small' ) ) {
+                    el.style.fontSize = '';
+                }
+
+                let newStyle = el.getAttribute( 'style' ) || '';
+                if ( !newStyle.trim() || newStyle.trim() === ';' ) {
+                    el.removeAttribute( 'style' );
+                }
+            }
+
+            if ( el.tagName === 'SPAN' && !el.attributes.length ) {
+                const parent = el.parentNode;
+                if ( parent ) {
+                    while ( el.firstChild ) {
+                        parent.insertBefore( el.firstChild, el );
+                    }
+                    parent.removeChild( el );
+                }
+            }
+        }
+    }
+
     function ensureCursorAfterExpandedText( preExistingAncestors ) {
         const activeEl = document.activeElement;
         if ( !activeEl ) return;
@@ -136,6 +173,8 @@
         if ( activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' ) {
             return;
         }
+
+        cleanUpAddedAttributes( activeEl );
 
         const sel = window.getSelection();
         if ( !sel || !sel.rangeCount ) return;
