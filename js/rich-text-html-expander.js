@@ -5,7 +5,7 @@
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
-// ==UserScript==
+// ==/UserScript==
 
 ( function( ) {
     'use strict';
@@ -115,7 +115,21 @@
     let buffer = '';
     const maxKeyLength = Math.max( ...Object.keys( EXPANSIONS ).map( k => k.length ) );
 
-    function ensureCursorAfterExpandedText() {
+    function getPreExistingAncestors( activeEl ) {
+        const ancestors = new Set();
+        const sel = window.getSelection();
+        if ( !sel || !sel.rangeCount ) return ancestors;
+        let curr = sel.anchorNode;
+        while ( curr && curr !== activeEl ) {
+            if ( curr.nodeType === Node.ELEMENT_NODE ) {
+                ancestors.add( curr );
+            }
+            curr = curr.parentNode;
+        }
+        return ancestors;
+    }
+
+    function ensureCursorAfterExpandedText( preExistingAncestors ) {
         const activeEl = document.activeElement;
         if ( !activeEl ) return;
 
@@ -143,55 +157,50 @@
             }
         }
 
-        if ( node.nodeType === Node.ELEMENT_NODE && node.lastChild ) {
-            let last = node.lastChild;
-            if ( last.nodeType === Node.ELEMENT_NODE ) {
-                const tag = last.tagName.toUpperCase();
-                if ( tag === 'P' || tag === 'DIV' ) {
-                    if ( last.childNodes.length === 0 ) {
-                        last.appendChild( document.createTextNode( '\u200B' ) );
-                    }
-                    const newRange = document.createRange();
-                    newRange.selectNodeContents( last );
-                    newRange.collapse( false );
-                    sel.removeAllRanges();
-                    sel.addRange( newRange );
-                    range = sel.getRangeAt( 0 );
-                    node = range.endContainer;
-                    offset = range.endOffset;
-                } else {
-                    const newRange = document.createRange();
-                    newRange.setStartAfter( last );
-                    newRange.collapse( true );
-                    sel.removeAllRanges();
-                    sel.addRange( newRange );
-                    range = sel.getRangeAt( 0 );
-                    node = range.endContainer;
-                    offset = range.endOffset;
-                }
+        function isLastContent( currNode ) {
+            let sibling = currNode.nextSibling;
+            while ( sibling ) {
+                if ( sibling.nodeType === Node.ELEMENT_NODE ) return false;
+                if ( sibling.nodeType === Node.TEXT_NODE && sibling.textContent.length > 0 ) return false;
+                sibling = sibling.nextSibling;
+            }
+            return true;
+        }
+
+        let targetInline = null;
+        if ( node.nodeType === Node.TEXT_NODE ) {
+            if ( offset === node.textContent.length ) {
+                targetInline = node;
+            }
+        } else if ( node.nodeType === Node.ELEMENT_NODE ) {
+            if ( offset > 0 && node.childNodes[ offset - 1 ] ) {
+                targetInline = node.childNodes[ offset - 1 ];
+            } else if ( node.lastChild ) {
+                targetInline = node.lastChild;
             }
         }
 
-        let isAtEnd = false;
-        if ( node.nodeType === Node.TEXT_NODE ) {
-            isAtEnd = ( offset === node.textContent.length );
-        } else if ( node.nodeType === Node.ELEMENT_NODE ) {
-            isAtEnd = ( offset === node.childNodes.length );
-        }
+        if ( !targetInline ) return;
 
-        if ( !isAtEnd ) return;
-
-        let curr = node;
+        let curr = targetInline;
         let highestInlineToExit = null;
 
         while ( curr && curr !== activeEl ) {
+            if ( isInline( curr ) && ( !preExistingAncestors || !preExistingAncestors.has( curr ) ) ) {
+                highestInlineToExit = curr;
+            } else if ( preExistingAncestors && preExistingAncestors.has( curr ) ) {
+                break;
+            }
+
             let parent = curr.parentNode;
             if ( !parent ) break;
 
-            let isLast = ( curr === parent.lastChild );
-            if ( !isLast ) break;
+            if ( !isLastContent( curr ) ) break;
 
             if ( parent !== activeEl && isInline( parent ) ) {
+                if ( preExistingAncestors && preExistingAncestors.has( parent ) ) {
+                    break;
+                }
                 highestInlineToExit = parent;
                 curr = parent;
             } else {
@@ -201,10 +210,14 @@
 
         if ( highestInlineToExit ) {
             let next = highestInlineToExit.nextSibling;
-            if ( !next || next.nodeType !== Node.TEXT_NODE ) {
-                next = document.createTextNode( '\u200B' );
-                if ( highestInlineToExit.parentNode ) {
-                    highestInlineToExit.parentNode.insertBefore( next, highestInlineToExit.nextSibling );
+            if ( !next || next.nodeType !== Node.TEXT_NODE || next.textContent.length === 0 ) {
+                if ( next && next.nodeType === Node.TEXT_NODE ) {
+                    next.textContent = '\u200B';
+                } else {
+                    next = document.createTextNode( '\u200B' );
+                    if ( highestInlineToExit.parentNode ) {
+                        highestInlineToExit.parentNode.insertBefore( next, highestInlineToExit.nextSibling );
+                    }
                 }
             }
             const newRange = document.createRange();
@@ -230,6 +243,8 @@
             activeEl.setSelectionRange( newPos, newPos );
             return;
         }
+
+        const preExistingAncestors = getPreExistingAncestors( activeEl );
 
         // 1. Clear the trigger text (;lin) from the screen
         const charsToDelete = triggerLength - 1; // Last char was blocked via preventDefault
@@ -264,11 +279,27 @@
         }
 
         if ( !isHandled ) {
-            document.execCommand( 'insertHTML', false, htmlContent );
+            const sel = window.getSelection();
+            if ( sel && sel.rangeCount ) {
+                const range = sel.getRangeAt( 0 );
+                range.deleteContents();
+                const fragment = range.createContextualFragment( htmlContent );
+                const lastNode = fragment.lastChild;
+                range.insertNode( fragment );
+                if ( lastNode ) {
+                    const newRange = document.createRange();
+                    newRange.setStartAfter( lastNode );
+                    newRange.collapse( true );
+                    sel.removeAllRanges();
+                    sel.addRange( newRange );
+                }
+            } else {
+                document.execCommand( 'insertHTML', false, htmlContent );
+            }
         }
 
-        ensureCursorAfterExpandedText();
-        setTimeout( ensureCursorAfterExpandedText, 0 );
+        ensureCursorAfterExpandedText( preExistingAncestors );
+        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors ), 0 );
     }
 
     window.addEventListener( 'keydown', ( e ) => {
