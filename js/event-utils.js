@@ -1,4 +1,4 @@
-const eventUtilsVersion = "Thursday, 2026-06-11 @ 17:43:47";
+const eventUtilsVersion = "Monday, 2026-09-07 @ 07:41:06";
 console.log( `[${currentTime()}] eventUtilsVersion = ${eventUtilsVersion}` );
 
 function msUntilMidnight( ) {
@@ -639,12 +639,12 @@ function renderEvents( eventsByDate, clusterVenues = false ) {
             const start_time_string =
                 event.event_date +
                 " " +
-                ( isTimeString( event.start_time ) ? event.start_time : "12:00" );
+                ( isTimeString( event.start_time ) ? event.start_time : "00:01" );
             const start = toUTCFormat( start_time_string );
             const end_time_string =
                 event.event_date +
                 " " +
-                ( isTimeString( event.end_time ) ? event.end_time : "12:00" );
+                ( isTimeString( event.end_time ) ? event.end_time : "23:59" );
             const end = toUTCFormat( end_time_string );
 
             addCalendarElement = createCalendarDispatcher(
