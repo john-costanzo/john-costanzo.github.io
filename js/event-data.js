@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-09-07 16:14:11";
+const eventDataVersion = "Monday, 2026-09-07 21:10:16";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1116,18 +1116,6 @@ const events = [
         end_time_formatted: "2026-09-07 15:00",
         detail: "None",
         location: "Mills River Brewing 336 Banner Farm Road Mills River, NC 28759",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-09-07",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Let's Cook`,
-        sort_time: "2026-09-07 16:00:00",
-        end_time_formatted: "2026-09-07 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -2542,7 +2530,7 @@ const events = [
         name: `The Queen Sessions V3 | Featuring Abby Bryant`,
         sort_time: "2026-09-16 19:00:00",
         end_time_formatted: "2026-09-16 23:59",
-        detail: "The Queen Sessions V3 | Featuring Abby Bryant Wed, Sep 16 The Queen Sessions at Hotel Eve | A celebration of the legendary women who shaped jazz. \n \n Hotel Eve proudly presents The Queen Sessions , a concert series curated by Melissa McKinney, honoring the iconic voices that defined generations of jazz. \n \n Each Wednesday evening features a rotating lineup of Asheville\'s premier vocalists, each bringing their own style, artistry, and interpretation to the music of legends like Ella Fitzgerald, Billie Holiday, Nina Simone, Sarah Vaughan, Dinah Washington, Abbey Lincoln, and more. \n \n No two performances are alike. Every week offers a fresh cast of artists & new collaborations. \n \n Reserve your seats here ~ capacity is limited. \n \n Curated by Melissa McKinney. \n \n 07:00 PM SHOW 08:30 PM SHOW",
+        detail: "The Queen Sessions V3 | Featuring Abby Bryant Wed, Sep 16 The Queen Sessions at Hotel Eve | A celebration of the legendary women who shaped jazz. \n \n Hotel Eve proudly presents The Queen Sessions , a concert series curated by Melissa McKinney, honoring the iconic voices that defined generations of jazz. \n \n Abby Bryant: A music minister’s daughter turned fierce frontwoman on the festival scene, Abby Bryant \n learned early how to turn faith into fire, fusing Sunday spirit with Saturday night energy. Bryant \n enchants audiences with a unique best-of-both-worlds edge that proves beautifully-crafted \n songs and the living pulse of the jam world can synergize into one unforgettable experience. \n Her striking stage presence and electrifying five-piece band bring palpable energy and groove to \n the last note. \n \n Bryant found her true love for performing while attending Appalachian State University and \n quickly formed a touring band that carried her original music across the Southeast and beyond. \n During her first year on the road, FloydFest named Bryant winner of the festival’s 2019 \n “On-the-Rise” competition. She went on to release her debut album Not Your Little Girl in 2021 \n which garnered critical acclaim and Americana chart success with themes of growing up, \n leaving home, and finding her own identity outside her traditional upbringing. \n \n Produced by Dave Schools of Widespread Panic, Bryant’s highly anticipated sophomore album \n Glowing, released fall 2024, includes a cast of heavy-hitting session musicians including Adam \n MacDougall (Circles Around the Sun, Chris Robinson Brotherhood) and John Kimock (Mike \n Gordon Band, Oteil Burbridge & Friends). Glowing features a collection of dynamic and \n contemplative tracks that highlight Bryant\'s artistic growth and evolving sonic landscapes as she \n comes into her own and ventures into ever-bolder explorations. \n \n Reserve your seats here ~ capacity is limited. \n Read More 07:00 PM SHOW 08:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
@@ -2566,7 +2554,7 @@ const events = [
         name: `The Queen Sessions V3 | Featuring Abby Bryant`,
         sort_time: "2026-09-16 20:30:00",
         end_time_formatted: "2026-09-16 23:59",
-        detail: "The Queen Sessions V3 | Featuring Abby Bryant Wed, Sep 16 The Queen Sessions at Hotel Eve | A celebration of the legendary women who shaped jazz. \n \n Hotel Eve proudly presents The Queen Sessions , a concert series curated by Melissa McKinney, honoring the iconic voices that defined generations of jazz. \n \n Each Wednesday evening features a rotating lineup of Asheville\'s premier vocalists, each bringing their own style, artistry, and interpretation to the music of legends like Ella Fitzgerald, Billie Holiday, Nina Simone, Sarah Vaughan, Dinah Washington, Abbey Lincoln, and more. \n \n No two performances are alike. Every week offers a fresh cast of artists & new collaborations. \n \n Reserve your seats here ~ capacity is limited. \n \n Curated by Melissa McKinney. \n \n 07:00 PM SHOW 08:30 PM SHOW",
+        detail: "The Queen Sessions V3 | Featuring Abby Bryant Wed, Sep 16 The Queen Sessions at Hotel Eve | A celebration of the legendary women who shaped jazz. \n \n Hotel Eve proudly presents The Queen Sessions , a concert series curated by Melissa McKinney, honoring the iconic voices that defined generations of jazz. \n \n Abby Bryant: A music minister’s daughter turned fierce frontwoman on the festival scene, Abby Bryant \n learned early how to turn faith into fire, fusing Sunday spirit with Saturday night energy. Bryant \n enchants audiences with a unique best-of-both-worlds edge that proves beautifully-crafted \n songs and the living pulse of the jam world can synergize into one unforgettable experience. \n Her striking stage presence and electrifying five-piece band bring palpable energy and groove to \n the last note. \n \n Bryant found her true love for performing while attending Appalachian State University and \n quickly formed a touring band that carried her original music across the Southeast and beyond. \n During her first year on the road, FloydFest named Bryant winner of the festival’s 2019 \n “On-the-Rise” competition. She went on to release her debut album Not Your Little Girl in 2021 \n which garnered critical acclaim and Americana chart success with themes of growing up, \n leaving home, and finding her own identity outside her traditional upbringing. \n \n Produced by Dave Schools of Widespread Panic, Bryant’s highly anticipated sophomore album \n Glowing, released fall 2024, includes a cast of heavy-hitting session musicians including Adam \n MacDougall (Circles Around the Sun, Chris Robinson Brotherhood) and John Kimock (Mike \n Gordon Band, Oteil Burbridge & Friends). Glowing features a collection of dynamic and \n contemplative tracks that highlight Bryant\'s artistic growth and evolving sonic landscapes as she \n comes into her own and ventures into ever-bolder explorations. \n \n Reserve your seats here ~ capacity is limited. \n Read More 07:00 PM SHOW 08:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
@@ -4846,6 +4834,18 @@ const events = [
         name: `Food Truck: Maiz Y Amor`,
         sort_time: "2026-10-08 16:00:00",
         end_time_formatted: "2026-10-08 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-10-08",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Event: Open Mic Night`,
+        sort_time: "2026-10-08 18:00:00",
+        end_time_formatted: "2026-10-08 21:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
