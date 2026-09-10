@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-09-10 12:54:51";
+const eventDataVersion = "Thursday, 2026-09-10 14:14:47";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -3350,18 +3350,6 @@ const events = [
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-09-24",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck:`,
-        sort_time: "2026-09-24 00:00:00",
-        end_time_formatted: "2026-09-24 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=2",
         venue: "Festival Net",
         event_date: "2026-09-24",
@@ -3384,6 +3372,18 @@ const events = [
         end_time_formatted: "2026-09-24 18:00",
         detail: "We are closed today! Our team is out supporting our favorite cause, the Blue Ridge Human Society, at their annual Fur Ball. We look forward to seeing you tomorrow.",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-09-24",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Mehfil Indian Cuisine`,
+        sort_time: "2026-09-24 16:00:00",
+        end_time_formatted: "2026-09-24 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -4598,18 +4598,6 @@ const events = [
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-10-09",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck:`,
-        sort_time: "2026-10-09 00:00:00",
-        end_time_formatted: "2026-10-09 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
         venue: "Festival Net",
         event_date: "2026-10-09",
@@ -4620,6 +4608,18 @@ const events = [
         end_time_formatted: "2026-10-09 23:59",
         detail: "<a href='https://festivalnet.com/48477/Asheville-North-Carolina/Craft-Shows/Asheville-Art-in-the-Park-October' target='_blank'> <em>link</em></a>",
         location: "Festival Net Asheville Art in the Park - October",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-10-09",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Mehfil Indian Cuisine`,
+        sort_time: "2026-10-09 16:00:00",
+        end_time_formatted: "2026-10-09 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://guidonbrewing.com/event",
