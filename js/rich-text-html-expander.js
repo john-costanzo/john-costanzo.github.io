@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-06_14-52
+// @version      2026-09-10_16-09
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -129,6 +129,69 @@
         return ancestors;
     }
 
+    function getPreExpansionFontSettings( activeEl ) {
+        const sel = window.getSelection();
+        if ( !sel || !sel.rangeCount ) return null;
+        let el = sel.anchorNode;
+        if ( el && el.nodeType === Node.TEXT_NODE ) {
+            el = el.parentNode;
+        }
+        if ( !el || el.nodeType !== Node.ELEMENT_NODE ) return null;
+        try {
+            const computed = window.getComputedStyle( el );
+            return {
+                color: computed.color,
+                fontSize: computed.fontSize,
+                fontFamily: computed.fontFamily,
+                fontWeight: computed.fontWeight,
+                fontStyle: computed.fontStyle
+            };
+        } catch ( e ) {
+            return null;
+        }
+    }
+
+    function applyPreservedFontSettings( preSettings ) {
+        if ( !preSettings ) return;
+        const sel = window.getSelection();
+        if ( !sel || !sel.rangeCount ) return;
+
+        let el = sel.anchorNode;
+        if ( el && el.nodeType === Node.TEXT_NODE ) {
+            el = el.parentNode;
+        }
+        if ( !el || el.nodeType !== Node.ELEMENT_NODE ) return;
+
+        try {
+            const current = window.getComputedStyle( el );
+            const colorDiff = ( preSettings.color && current.color !== preSettings.color );
+            const sizeDiff = ( preSettings.fontSize && current.fontSize !== preSettings.fontSize );
+            const familyDiff = ( preSettings.fontFamily && current.fontFamily !== preSettings.fontFamily );
+            const weightDiff = ( preSettings.fontWeight && current.fontWeight !== preSettings.fontWeight );
+            const styleDiff = ( preSettings.fontStyle && current.fontStyle !== preSettings.fontStyle );
+
+            if ( colorDiff || sizeDiff || familyDiff || weightDiff || styleDiff ) {
+                const span = document.createElement( 'span' );
+                if ( colorDiff && preSettings.color ) span.style.color = preSettings.color;
+                if ( sizeDiff && preSettings.fontSize ) span.style.fontSize = preSettings.fontSize;
+                if ( familyDiff && preSettings.fontFamily ) span.style.fontFamily = preSettings.fontFamily;
+                if ( weightDiff && preSettings.fontWeight ) span.style.fontWeight = preSettings.fontWeight;
+                if ( styleDiff && preSettings.fontStyle ) span.style.fontStyle = preSettings.fontStyle;
+
+                span.appendChild( document.createTextNode( '\u200B' ) );
+
+                const range = sel.getRangeAt( 0 );
+                range.insertNode( span );
+
+                const newRange = document.createRange();
+                newRange.setStart( span.firstChild, 1 );
+                newRange.collapse( true );
+                sel.removeAllRanges();
+                sel.addRange( newRange );
+            }
+        } catch ( e ) {}
+    }
+
     function cleanUpAddedAttributes( container ) {
         if ( !container ) return;
         const elements = container.querySelectorAll ? container.querySelectorAll( '[style], span' ) : [];
@@ -166,7 +229,7 @@
         }
     }
 
-    function ensureCursorAfterExpandedText( preExistingAncestors ) {
+    function ensureCursorAfterExpandedText( preExistingAncestors, preSettings ) {
         const activeEl = document.activeElement;
         if ( !activeEl ) return;
 
@@ -265,6 +328,8 @@
             sel.removeAllRanges();
             sel.addRange( newRange );
         }
+
+        applyPreservedFontSettings( preSettings );
     }
 
     function triggerNativePaste( htmlContent, triggerLength ) {
@@ -284,6 +349,7 @@
         }
 
         const preExistingAncestors = getPreExistingAncestors( activeEl );
+        const preSettings = getPreExpansionFontSettings( activeEl );
 
         // 1. Clear the trigger text (;lin) from the screen
         const charsToDelete = triggerLength - 1; // Last char was blocked via preventDefault
@@ -337,8 +403,8 @@
             }
         }
 
-        ensureCursorAfterExpandedText( preExistingAncestors );
-        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors ), 0 );
+        ensureCursorAfterExpandedText( preExistingAncestors, preSettings );
+        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors, preSettings ), 0 );
     }
 
     window.addEventListener( 'keydown', ( e ) => {
