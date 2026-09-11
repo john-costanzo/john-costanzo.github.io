@@ -1,13 +1,13 @@
-const eventDataVersion = "Friday, 2026-09-11 08:04:49";
+const eventDataVersion = "Friday, 2026-09-11 13:52:22";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
-        url: "https://sierranevada.com/events?location+=mills-river",
+        url: "https://sierranevada.com/events?location=mills-river",
         venue: "Sierra Nevada",
         event_date: "1961-08-23",
         start_time: "",
         end_time: "",
-        name: `Failed to fetch events: 403 Client Error: Forbidden for url: https://sierranevada.com/events?location+=mills-river`,
+        name: `Failed to fetch events: 403 Client Error: Forbidden for url: https://sierranevada.com/events?location=mills-river`,
         sort_time: "1961-08-23 00:00:00",
         end_time_formatted: "1961-08-23 00:00:00",
         detail: "",
