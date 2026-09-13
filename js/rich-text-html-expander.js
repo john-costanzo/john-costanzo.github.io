@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-10_16-09
+// @version      2026-09-13_16-43
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -151,45 +151,19 @@
         }
     }
 
-    function applyPreservedFontSettings( preSettings ) {
-        if ( !preSettings ) return;
-        const sel = window.getSelection();
-        if ( !sel || !sel.rangeCount ) return;
+    function applyFontSettingsToHtml( htmlContent, preSettings ) {
+        if ( !preSettings ) return htmlContent;
 
-        let el = sel.anchorNode;
-        if ( el && el.nodeType === Node.TEXT_NODE ) {
-            el = el.parentNode;
-        }
-        if ( !el || el.nodeType !== Node.ELEMENT_NODE ) return;
+        const styleParts = [];
+        if ( preSettings.color ) styleParts.push( "color: " + preSettings.color + ";" );
+        if ( preSettings.fontSize ) styleParts.push( "font-size: " + preSettings.fontSize + ";" );
+        if ( preSettings.fontFamily ) styleParts.push( "font-family: " + preSettings.fontFamily + ";" );
+        if ( preSettings.fontWeight && preSettings.fontWeight !== "normal" && preSettings.fontWeight !== "400" ) styleParts.push( "font-weight: " + preSettings.fontWeight + ";" );
+        if ( preSettings.fontStyle && preSettings.fontStyle !== "normal" ) styleParts.push( "font-style: " + preSettings.fontStyle + ";" );
 
-        try {
-            const current = window.getComputedStyle( el );
-            const colorDiff = ( preSettings.color && current.color !== preSettings.color );
-            const sizeDiff = ( preSettings.fontSize && current.fontSize !== preSettings.fontSize );
-            const familyDiff = ( preSettings.fontFamily && current.fontFamily !== preSettings.fontFamily );
-            const weightDiff = ( preSettings.fontWeight && current.fontWeight !== preSettings.fontWeight );
-            const styleDiff = ( preSettings.fontStyle && current.fontStyle !== preSettings.fontStyle );
+        if ( styleParts.length === 0 ) return htmlContent;
 
-            if ( colorDiff || sizeDiff || familyDiff || weightDiff || styleDiff ) {
-                const span = document.createElement( 'span' );
-                if ( colorDiff && preSettings.color ) span.style.color = preSettings.color;
-                if ( sizeDiff && preSettings.fontSize ) span.style.fontSize = preSettings.fontSize;
-                if ( familyDiff && preSettings.fontFamily ) span.style.fontFamily = preSettings.fontFamily;
-                if ( weightDiff && preSettings.fontWeight ) span.style.fontWeight = preSettings.fontWeight;
-                if ( styleDiff && preSettings.fontStyle ) span.style.fontStyle = preSettings.fontStyle;
-
-                span.appendChild( document.createTextNode( '\u200B' ) );
-
-                const range = sel.getRangeAt( 0 );
-                range.insertNode( span );
-
-                const newRange = document.createRange();
-                newRange.setStart( span.firstChild, 1 );
-                newRange.collapse( true );
-                sel.removeAllRanges();
-                sel.addRange( newRange );
-            }
-        } catch ( e ) {}
+        return "<span style=\"" + styleParts.join( " " ) + "\">" + htmlContent + "</span>";
     }
 
     function cleanUpAddedAttributes( container ) {
@@ -229,7 +203,7 @@
         }
     }
 
-    function ensureCursorAfterExpandedText( preExistingAncestors, preSettings ) {
+    function ensureCursorAfterExpandedText( preExistingAncestors ) {
         const activeEl = document.activeElement;
         if ( !activeEl ) return;
 
@@ -328,8 +302,6 @@
             sel.removeAllRanges();
             sel.addRange( newRange );
         }
-
-        applyPreservedFontSettings( preSettings );
     }
 
     function triggerNativePaste( htmlContent, triggerLength ) {
@@ -350,6 +322,7 @@
 
         const preExistingAncestors = getPreExistingAncestors( activeEl );
         const preSettings = getPreExpansionFontSettings( activeEl );
+        const styledHtml = applyFontSettingsToHtml( htmlContent, preSettings );
 
         // 1. Clear the trigger text (;lin) from the screen
         const charsToDelete = triggerLength - 1; // Last char was blocked via preventDefault
@@ -362,15 +335,15 @@
             bubbles: true,
             cancelable: true,
             dataType: 'text/html',
-            data: htmlContent
+            data: styledHtml
         } );
 
         // 3. Override clipboardData getter so rich text editors read the HTML payload
         Object.defineProperty( pasteEvent, 'clipboardData', {
             value: {
                 getData: ( type ) => {
-                    if ( type === 'text/html' ) return htmlContent;
-                    if ( type === 'text/plain' ) return htmlContent.replace( /<[^>]*>/g, '' );
+                    if ( type === 'text/html' ) return styledHtml;
+                    if ( type === 'text/plain' ) return styledHtml.replace( /<[^>]*>/g, '' );
                     return '';
                 },
                 types: [ 'text/html', 'text/plain' ]
@@ -388,7 +361,7 @@
             if ( sel && sel.rangeCount ) {
                 const range = sel.getRangeAt( 0 );
                 range.deleteContents();
-                const fragment = range.createContextualFragment( htmlContent );
+                const fragment = range.createContextualFragment( styledHtml );
                 const lastNode = fragment.lastChild;
                 range.insertNode( fragment );
                 if ( lastNode ) {
@@ -399,12 +372,12 @@
                     sel.addRange( newRange );
                 }
             } else {
-                document.execCommand( 'insertHTML', false, htmlContent );
+                document.execCommand( 'insertHTML', false, styledHtml );
             }
         }
 
-        ensureCursorAfterExpandedText( preExistingAncestors, preSettings );
-        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors, preSettings ), 0 );
+        ensureCursorAfterExpandedText( preExistingAncestors );
+        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors ), 0 );
     }
 
     window.addEventListener( 'keydown', ( e ) => {
