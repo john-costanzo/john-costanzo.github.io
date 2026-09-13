@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-13_18-24
+// @version      2026-09-13_18-38
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -151,6 +151,20 @@
         }
     }
 
+    function applyFontSettingsToHtml( htmlContent, preSettings ) {
+        if ( !preSettings ) return htmlContent;
+
+        const styleParts = [];
+        if ( preSettings.color ) styleParts.push( "color: " + preSettings.color + ";" );
+        if ( preSettings.fontSize ) styleParts.push( "font-size: " + preSettings.fontSize + ";" );
+        if ( preSettings.fontFamily ) styleParts.push( "font-family: " + preSettings.fontFamily + ";" );
+        if ( preSettings.fontWeight && preSettings.fontWeight !== "normal" && preSettings.fontWeight !== "400" ) styleParts.push( "font-weight: " + preSettings.fontWeight + ";" );
+        if ( preSettings.fontStyle && preSettings.fontStyle !== "normal" ) styleParts.push( "font-style: " + preSettings.fontStyle + ";" );
+
+        const styleAttr = styleParts.length > 0 ? " style=\"" + styleParts.join( " " ) + "\"" : "";
+        return "<span data-expansion-font-wrapper=\"true\"" + styleAttr + ">" + htmlContent + "</span>";
+    }
+
     function cleanUpAddedAttributes( container ) {
         if ( !container ) return;
         const elements = container.querySelectorAll ? container.querySelectorAll( '[style], span' ) : [];
@@ -159,7 +173,7 @@
         for ( const el of all ) {
             if ( !el || !el.style ) continue;
 
-            if ( el.getAttribute && el.getAttribute( 'data-post-expansion-font' ) === 'true' ) {
+            if ( el.getAttribute && ( el.getAttribute( 'data-expansion-font-wrapper' ) === 'true' || el.getAttribute( 'data-post-expansion-font' ) === 'true' ) ) {
                 continue;
             }
 
@@ -333,6 +347,7 @@
 
         const preExistingAncestors = getPreExistingAncestors( activeEl );
         const preSettings = getPreExpansionFontSettings( activeEl );
+        const styledHtml = applyFontSettingsToHtml( htmlContent, preSettings );
 
         // 1. Clear the trigger text (;lin) from the screen
         const charsToDelete = triggerLength - 1; // Last char was blocked via preventDefault
@@ -345,15 +360,15 @@
             bubbles: true,
             cancelable: true,
             dataType: 'text/html',
-            data: htmlContent
+            data: styledHtml
         } );
 
         // 3. Override clipboardData getter so rich text editors read the HTML payload
         Object.defineProperty( pasteEvent, 'clipboardData', {
             value: {
                 getData: ( type ) => {
-                    if ( type === 'text/html' ) return htmlContent;
-                    if ( type === 'text/plain' ) return htmlContent.replace( /<[^>]*>/g, '' );
+                    if ( type === 'text/html' ) return styledHtml;
+                    if ( type === 'text/plain' ) return styledHtml.replace( /<[^>]*>/g, '' );
                     return '';
                 },
                 types: [ 'text/html', 'text/plain' ]
@@ -371,7 +386,7 @@
             if ( sel && sel.rangeCount ) {
                 const range = sel.getRangeAt( 0 );
                 range.deleteContents();
-                const fragment = range.createContextualFragment( htmlContent );
+                const fragment = range.createContextualFragment( styledHtml );
                 const lastNode = fragment.lastChild;
                 range.insertNode( fragment );
                 if ( lastNode ) {
@@ -382,7 +397,7 @@
                     sel.addRange( newRange );
                 }
             } else {
-                document.execCommand( 'insertHTML', false, htmlContent );
+                document.execCommand( 'insertHTML', false, styledHtml );
             }
         }
 
