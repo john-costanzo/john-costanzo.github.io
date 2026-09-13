@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-13_16-43
+// @version      2026-09-13_17-36
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -161,9 +161,8 @@
         if ( preSettings.fontWeight && preSettings.fontWeight !== "normal" && preSettings.fontWeight !== "400" ) styleParts.push( "font-weight: " + preSettings.fontWeight + ";" );
         if ( preSettings.fontStyle && preSettings.fontStyle !== "normal" ) styleParts.push( "font-style: " + preSettings.fontStyle + ";" );
 
-        if ( styleParts.length === 0 ) return htmlContent;
-
-        return "<span style=\"" + styleParts.join( " " ) + "\">" + htmlContent + "</span>";
+        const styleAttr = styleParts.length > 0 ? " style=\"" + styleParts.join( " " ) + "\"" : "";
+        return "<span data-expansion-font-wrapper=\"true\"" + styleAttr + ">" + htmlContent + "</span>";
     }
 
     function cleanUpAddedAttributes( container ) {
@@ -220,6 +219,47 @@
         let node = range.endContainer;
         let offset = range.endOffset;
 
+        // 1. Check if there is a wrapper span with data-expansion-font-wrapper="true"
+        let fontWrapper = null;
+        function isFontWrapper( el ) {
+            return el && el.nodeType === Node.ELEMENT_NODE && el.getAttribute && el.getAttribute( 'data-expansion-font-wrapper' ) === 'true';
+        }
+
+        let currFont = node.nodeType === Node.TEXT_NODE ? node.parentNode : node;
+        while ( currFont && currFont !== activeEl ) {
+            if ( isFontWrapper( currFont ) ) {
+                fontWrapper = currFont;
+                break;
+            }
+            currFont = currFont.parentNode;
+        }
+
+        if ( !fontWrapper && node.nodeType === Node.ELEMENT_NODE ) {
+            if ( offset > 0 && isFontWrapper( node.childNodes[ offset - 1 ] ) ) {
+                fontWrapper = node.childNodes[ offset - 1 ];
+            } else {
+                const wrappers = activeEl.querySelectorAll ? activeEl.querySelectorAll( 'span[data-expansion-font-wrapper="true"]' ) : [];
+                if ( wrappers.length > 0 ) {
+                    fontWrapper = wrappers[ wrappers.length - 1 ];
+                }
+            }
+        }
+
+        if ( fontWrapper ) {
+            let last = fontWrapper.lastChild;
+            if ( !last || last.nodeType !== Node.TEXT_NODE ) {
+                last = document.createTextNode( '\u200B' );
+                fontWrapper.appendChild( last );
+            }
+            const newRange = document.createRange();
+            newRange.setStart( last, last.textContent.length );
+            newRange.collapse( true );
+            sel.removeAllRanges();
+            sel.addRange( newRange );
+            return;
+        }
+
+        // Fallback exit inline tags logic if no font wrapper span exists
         function isInline( el ) {
             if ( !el || el.nodeType !== Node.ELEMENT_NODE ) return false;
             const tag = el.tagName.toUpperCase();
