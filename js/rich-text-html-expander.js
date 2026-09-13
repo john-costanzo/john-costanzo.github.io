@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-13_18-09
+// @version      2026-09-13_18-24
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -94,7 +94,7 @@
         ";smirk": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/smirking-face_1f60f.gif\" width=\"42\" height=\"42\" alt=\"Smirking Face on Noto Color Emoji, Animated 14.0\"/>",
         ";ta3": "#align(center)[<p>#warm-table(<p>  columns: 3,<p>  [], [], [],<p>  [], [], [],<p>  [], [], [],<p>  [], [], [],<p>  [], [], [],<p>)<p>]",
         ";ta4": "#align(center)[<p>#warm-table(<p>  columns: 4,<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>)<p>]",
-        ";ta5": "#align(center)[<p>#styled-table(<p>  columns: 5,<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>)<p>]",
+        ";ta5": "#align(center)[<p>#styled-table(<p>  columns: 5,<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>)<p>]",
         ";tcell": "9086420532",
         ";thanks": "<img src=\"https://i.pinimg.com/originals/db/03/b3/db03b3642db8f07c4bbc0b9ff2822ce0.png\" width=\"64\" height=\"64\" alt=\"Angry Face on Skype Emoticons 1.2\"/><p>",
         ";thinking": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/thinking-face_1f914.png\" width=\"42\" height=\"42\" alt=\"Thinking Face on Microsoft Teams 1.0\"/>",
@@ -151,20 +151,6 @@
         }
     }
 
-    function applyFontSettingsToHtml( htmlContent, preSettings ) {
-        if ( !preSettings ) return htmlContent;
-
-        const styleParts = [];
-        if ( preSettings.color ) styleParts.push( "color: " + preSettings.color + ";" );
-        if ( preSettings.fontSize ) styleParts.push( "font-size: " + preSettings.fontSize + ";" );
-        if ( preSettings.fontFamily ) styleParts.push( "font-family: " + preSettings.fontFamily + ";" );
-        if ( preSettings.fontWeight && preSettings.fontWeight !== "normal" && preSettings.fontWeight !== "400" ) styleParts.push( "font-weight: " + preSettings.fontWeight + ";" );
-        if ( preSettings.fontStyle && preSettings.fontStyle !== "normal" ) styleParts.push( "font-style: " + preSettings.fontStyle + ";" );
-
-        const styleAttr = styleParts.length > 0 ? " style=\"" + styleParts.join( " " ) + "\"" : "";
-        return "<span data-expansion-font-wrapper=\"true\"" + styleAttr + ">" + htmlContent + "</span>";
-    }
-
     function cleanUpAddedAttributes( container ) {
         if ( !container ) return;
         const elements = container.querySelectorAll ? container.querySelectorAll( '[style], span' ) : [];
@@ -172,6 +158,10 @@
 
         for ( const el of all ) {
             if ( !el || !el.style ) continue;
+
+            if ( el.getAttribute && el.getAttribute( 'data-post-expansion-font' ) === 'true' ) {
+                continue;
+            }
 
             let styleStr = el.getAttribute( 'style' ) || '';
 
@@ -202,7 +192,7 @@
         }
     }
 
-    function ensureCursorAfterExpandedText( preExistingAncestors ) {
+    function ensureCursorAfterExpandedText( preExistingAncestors, preSettings ) {
         const activeEl = document.activeElement;
         if ( !activeEl ) return;
 
@@ -218,6 +208,31 @@
         let range = sel.getRangeAt( 0 );
         let node = range.endContainer;
         let offset = range.endOffset;
+
+        // If selection is already inside an existing data-post-expansion-font span, reuse it
+        let existingPostSpan = null;
+        let currNode = node.nodeType === Node.TEXT_NODE ? node.parentNode : node;
+        while ( currNode && currNode !== activeEl ) {
+            if ( currNode.nodeType === Node.ELEMENT_NODE && currNode.getAttribute && currNode.getAttribute( 'data-post-expansion-font' ) === 'true' ) {
+                existingPostSpan = currNode;
+                break;
+            }
+            currNode = currNode.parentNode;
+        }
+
+        if ( existingPostSpan ) {
+            let zNode = existingPostSpan.lastChild;
+            if ( !zNode || zNode.nodeType !== Node.TEXT_NODE ) {
+                zNode = document.createTextNode( '\u200B' );
+                existingPostSpan.appendChild( zNode );
+            }
+            const newRange = document.createRange();
+            newRange.setStart( zNode, zNode.textContent.length );
+            newRange.collapse( true );
+            sel.removeAllRanges();
+            sel.addRange( newRange );
+            return;
+        }
 
         // Find the last content leaf node / element of the selection
         let targetNode = null;
@@ -240,68 +255,64 @@
             targetNode = targetNode.lastChild;
         }
 
-        // Positional inline tags that should be exited so subsequent typing isn't superscript/subscript
-        const positionalTags = [ 'SUP', 'SUB' ];
-
         let curr = targetNode.nodeType === Node.TEXT_NODE ? targetNode.parentNode : targetNode;
-        let highestPositionalToExit = null;
+        let highestExpansionInlineToExit = null;
 
         while ( curr && curr !== activeEl ) {
-            if ( curr.nodeType === Node.ELEMENT_NODE && positionalTags.includes( curr.tagName.toUpperCase() ) ) {
-                highestPositionalToExit = curr;
-            }
             if ( preExistingAncestors && preExistingAncestors.has( curr ) ) {
                 break;
+            }
+            if ( curr.nodeType === Node.ELEMENT_NODE ) {
+                highestExpansionInlineToExit = curr;
             }
             curr = curr.parentNode;
         }
 
-        let targetContainer = null;
+        let parentContainer = null;
         let insertAfterNode = null;
 
-        if ( highestPositionalToExit ) {
-            targetContainer = highestPositionalToExit.parentNode;
-            insertAfterNode = highestPositionalToExit;
+        if ( highestExpansionInlineToExit ) {
+            parentContainer = highestExpansionInlineToExit.parentNode;
+            insertAfterNode = highestExpansionInlineToExit;
         } else if ( targetNode.nodeType === Node.TEXT_NODE ) {
-            targetContainer = targetNode.parentNode;
-            insertAfterNode = null; // will append or set range inside text node
+            parentContainer = targetNode.parentNode;
+            insertAfterNode = targetNode;
         } else {
-            targetContainer = targetNode;
+            parentContainer = targetNode;
             insertAfterNode = null;
         }
 
-        if ( !targetContainer ) return;
+        if ( !parentContainer ) return;
 
-        if ( insertAfterNode ) {
-            let next = insertAfterNode.nextSibling;
-            if ( !next || next.nodeType !== Node.TEXT_NODE ) {
-                next = document.createTextNode( '\u200B' );
-                if ( insertAfterNode.nextSibling ) {
-                    targetContainer.insertBefore( next, insertAfterNode.nextSibling );
-                } else {
-                    targetContainer.appendChild( next );
-                }
-            } else if ( !next.textContent.startsWith( '\u200B' ) ) {
-                next.textContent = '\u200B' + next.textContent;
-            }
-            const newRange = document.createRange();
-            newRange.setStart( next, 1 );
-            newRange.collapse( true );
-            sel.removeAllRanges();
-            sel.addRange( newRange );
-        } else if ( targetNode.nodeType === Node.TEXT_NODE ) {
-            const newRange = document.createRange();
-            newRange.setStart( targetNode, targetNode.textContent.length );
-            newRange.collapse( true );
-            sel.removeAllRanges();
-            sel.addRange( newRange );
-        } else {
-            const newRange = document.createRange();
-            newRange.selectNodeContents( targetContainer );
-            newRange.collapse( false );
-            sel.removeAllRanges();
-            sel.addRange( newRange );
+        // Build the post-expansion span carrying pre-expansion font styles
+        const postSpan = document.createElement( 'span' );
+        postSpan.setAttribute( 'data-post-expansion-font', 'true' );
+        if ( preSettings ) {
+            if ( preSettings.color ) postSpan.style.color = preSettings.color;
+            if ( preSettings.fontSize ) postSpan.style.fontSize = preSettings.fontSize;
+            if ( preSettings.fontFamily ) postSpan.style.fontFamily = preSettings.fontFamily;
+            if ( preSettings.fontWeight && preSettings.fontWeight !== 'normal' && preSettings.fontWeight !== '400' ) postSpan.style.fontWeight = preSettings.fontWeight;
+            if ( preSettings.fontStyle && preSettings.fontStyle !== 'normal' ) postSpan.style.fontStyle = preSettings.fontStyle;
         }
+
+        const zeroWidthNode = document.createTextNode( '\u200B' );
+        postSpan.appendChild( zeroWidthNode );
+
+        if ( insertAfterNode && insertAfterNode.parentNode === parentContainer ) {
+            if ( insertAfterNode.nextSibling ) {
+                parentContainer.insertBefore( postSpan, insertAfterNode.nextSibling );
+            } else {
+                parentContainer.appendChild( postSpan );
+            }
+        } else {
+            parentContainer.appendChild( postSpan );
+        }
+
+        const newRange = document.createRange();
+        newRange.setStart( zeroWidthNode, 1 );
+        newRange.collapse( true );
+        sel.removeAllRanges();
+        sel.addRange( newRange );
     }
 
     function triggerNativePaste( htmlContent, triggerLength ) {
@@ -322,7 +333,6 @@
 
         const preExistingAncestors = getPreExistingAncestors( activeEl );
         const preSettings = getPreExpansionFontSettings( activeEl );
-        const styledHtml = applyFontSettingsToHtml( htmlContent, preSettings );
 
         // 1. Clear the trigger text (;lin) from the screen
         const charsToDelete = triggerLength - 1; // Last char was blocked via preventDefault
@@ -335,15 +345,15 @@
             bubbles: true,
             cancelable: true,
             dataType: 'text/html',
-            data: styledHtml
+            data: htmlContent
         } );
 
         // 3. Override clipboardData getter so rich text editors read the HTML payload
         Object.defineProperty( pasteEvent, 'clipboardData', {
             value: {
                 getData: ( type ) => {
-                    if ( type === 'text/html' ) return styledHtml;
-                    if ( type === 'text/plain' ) return styledHtml.replace( /<[^>]*>/g, '' );
+                    if ( type === 'text/html' ) return htmlContent;
+                    if ( type === 'text/plain' ) return htmlContent.replace( /<[^>]*>/g, '' );
                     return '';
                 },
                 types: [ 'text/html', 'text/plain' ]
@@ -361,7 +371,7 @@
             if ( sel && sel.rangeCount ) {
                 const range = sel.getRangeAt( 0 );
                 range.deleteContents();
-                const fragment = range.createContextualFragment( styledHtml );
+                const fragment = range.createContextualFragment( htmlContent );
                 const lastNode = fragment.lastChild;
                 range.insertNode( fragment );
                 if ( lastNode ) {
@@ -372,12 +382,12 @@
                     sel.addRange( newRange );
                 }
             } else {
-                document.execCommand( 'insertHTML', false, styledHtml );
+                document.execCommand( 'insertHTML', false, htmlContent );
             }
         }
 
-        ensureCursorAfterExpandedText( preExistingAncestors );
-        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors ), 0 );
+        ensureCursorAfterExpandedText( preExistingAncestors, preSettings );
+        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors, preSettings ), 0 );
     }
 
     window.addEventListener( 'keydown', ( e ) => {
