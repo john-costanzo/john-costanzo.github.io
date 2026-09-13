@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-13_17-36
+// @version      2026-09-13_18-09
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -94,7 +94,7 @@
         ";smirk": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/smirking-face_1f60f.gif\" width=\"42\" height=\"42\" alt=\"Smirking Face on Noto Color Emoji, Animated 14.0\"/>",
         ";ta3": "#align(center)[<p>#warm-table(<p>  columns: 3,<p>  [], [], [],<p>  [], [], [],<p>  [], [], [],<p>  [], [], [],<p>  [], [], [],<p>)<p>]",
         ";ta4": "#align(center)[<p>#warm-table(<p>  columns: 4,<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>  [], [], [], [],<p>)<p>]",
-        ";ta5": "#align(center)[<p>#styled-table(<p>  columns: 5,<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>)<p>]",
+        ";ta5": "#align(center)[<p>#styled-table(<p>  columns: 5,<p>[], [], [], [], [],<p>[], [], [], [], [],<p>[], [], [], [], [],<p>)<p>]",
         ";tcell": "9086420532",
         ";thanks": "<img src=\"https://i.pinimg.com/originals/db/03/b3/db03b3642db8f07c4bbc0b9ff2822ce0.png\" width=\"64\" height=\"64\" alt=\"Angry Face on Skype Emoticons 1.2\"/><p>",
         ";thinking": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/thinking-face_1f914.png\" width=\"42\" height=\"42\" alt=\"Thinking Face on Microsoft Teams 1.0\"/>",
@@ -219,126 +219,86 @@
         let node = range.endContainer;
         let offset = range.endOffset;
 
-        // 1. Check if there is a wrapper span with data-expansion-font-wrapper="true"
-        let fontWrapper = null;
-        function isFontWrapper( el ) {
-            return el && el.nodeType === Node.ELEMENT_NODE && el.getAttribute && el.getAttribute( 'data-expansion-font-wrapper' ) === 'true';
+        // Find the last content leaf node / element of the selection
+        let targetNode = null;
+        if ( node.nodeType === Node.TEXT_NODE ) {
+            targetNode = node;
+        } else if ( node.nodeType === Node.ELEMENT_NODE ) {
+            if ( offset > 0 && node.childNodes[ offset - 1 ] ) {
+                targetNode = node.childNodes[ offset - 1 ];
+            } else if ( node.lastChild ) {
+                targetNode = node.lastChild;
+            } else {
+                targetNode = node;
+            }
         }
 
-        let currFont = node.nodeType === Node.TEXT_NODE ? node.parentNode : node;
-        while ( currFont && currFont !== activeEl ) {
-            if ( isFontWrapper( currFont ) ) {
-                fontWrapper = currFont;
+        if ( !targetNode ) return;
+
+        // Trace down to the deepest last child if targetNode is an element
+        while ( targetNode && targetNode.nodeType === Node.ELEMENT_NODE && targetNode.lastChild ) {
+            targetNode = targetNode.lastChild;
+        }
+
+        // Positional inline tags that should be exited so subsequent typing isn't superscript/subscript
+        const positionalTags = [ 'SUP', 'SUB' ];
+
+        let curr = targetNode.nodeType === Node.TEXT_NODE ? targetNode.parentNode : targetNode;
+        let highestPositionalToExit = null;
+
+        while ( curr && curr !== activeEl ) {
+            if ( curr.nodeType === Node.ELEMENT_NODE && positionalTags.includes( curr.tagName.toUpperCase() ) ) {
+                highestPositionalToExit = curr;
+            }
+            if ( preExistingAncestors && preExistingAncestors.has( curr ) ) {
                 break;
             }
-            currFont = currFont.parentNode;
+            curr = curr.parentNode;
         }
 
-        if ( !fontWrapper && node.nodeType === Node.ELEMENT_NODE ) {
-            if ( offset > 0 && isFontWrapper( node.childNodes[ offset - 1 ] ) ) {
-                fontWrapper = node.childNodes[ offset - 1 ];
-            } else {
-                const wrappers = activeEl.querySelectorAll ? activeEl.querySelectorAll( 'span[data-expansion-font-wrapper="true"]' ) : [];
-                if ( wrappers.length > 0 ) {
-                    fontWrapper = wrappers[ wrappers.length - 1 ];
+        let targetContainer = null;
+        let insertAfterNode = null;
+
+        if ( highestPositionalToExit ) {
+            targetContainer = highestPositionalToExit.parentNode;
+            insertAfterNode = highestPositionalToExit;
+        } else if ( targetNode.nodeType === Node.TEXT_NODE ) {
+            targetContainer = targetNode.parentNode;
+            insertAfterNode = null; // will append or set range inside text node
+        } else {
+            targetContainer = targetNode;
+            insertAfterNode = null;
+        }
+
+        if ( !targetContainer ) return;
+
+        if ( insertAfterNode ) {
+            let next = insertAfterNode.nextSibling;
+            if ( !next || next.nodeType !== Node.TEXT_NODE ) {
+                next = document.createTextNode( '\u200B' );
+                if ( insertAfterNode.nextSibling ) {
+                    targetContainer.insertBefore( next, insertAfterNode.nextSibling );
+                } else {
+                    targetContainer.appendChild( next );
                 }
-            }
-        }
-
-        if ( fontWrapper ) {
-            let last = fontWrapper.lastChild;
-            if ( !last || last.nodeType !== Node.TEXT_NODE ) {
-                last = document.createTextNode( '\u200B' );
-                fontWrapper.appendChild( last );
+            } else if ( !next.textContent.startsWith( '\u200B' ) ) {
+                next.textContent = '\u200B' + next.textContent;
             }
             const newRange = document.createRange();
-            newRange.setStart( last, last.textContent.length );
+            newRange.setStart( next, 1 );
             newRange.collapse( true );
             sel.removeAllRanges();
             sel.addRange( newRange );
-            return;
-        }
-
-        // Fallback exit inline tags logic if no font wrapper span exists
-        function isInline( el ) {
-            if ( !el || el.nodeType !== Node.ELEMENT_NODE ) return false;
-            const tag = el.tagName.toUpperCase();
-            const inlineTags = [ 'SUP', 'SUB', 'B', 'I', 'U', 'SPAN', 'FONT', 'A', 'STRONG', 'EM', 'STRIKE', 'CODE', 'S', 'MARK', 'SMALL' ];
-            if ( inlineTags.includes( tag ) ) return true;
-            try {
-                const display = window.getComputedStyle( el ).display;
-                return display.includes( 'inline' );
-            } catch ( e ) {
-                return false;
-            }
-        }
-
-        function isLastContent( currNode ) {
-            let sibling = currNode.nextSibling;
-            while ( sibling ) {
-                if ( sibling.nodeType === Node.ELEMENT_NODE ) return false;
-                if ( sibling.nodeType === Node.TEXT_NODE && sibling.textContent.length > 0 ) return false;
-                sibling = sibling.nextSibling;
-            }
-            return true;
-        }
-
-        let targetInline = null;
-        if ( node.nodeType === Node.TEXT_NODE ) {
-            if ( offset === node.textContent.length ) {
-                targetInline = node;
-            }
-        } else if ( node.nodeType === Node.ELEMENT_NODE ) {
-            if ( offset > 0 && node.childNodes[ offset - 1 ] ) {
-                targetInline = node.childNodes[ offset - 1 ];
-            } else if ( node.lastChild ) {
-                targetInline = node.lastChild;
-            }
-        }
-
-        if ( !targetInline ) return;
-
-        let curr = targetInline;
-        let highestInlineToExit = null;
-
-        while ( curr && curr !== activeEl ) {
-            if ( isInline( curr ) && ( !preExistingAncestors || !preExistingAncestors.has( curr ) ) ) {
-                highestInlineToExit = curr;
-            } else if ( preExistingAncestors && preExistingAncestors.has( curr ) ) {
-                break;
-            }
-
-            let parent = curr.parentNode;
-            if ( !parent ) break;
-
-            if ( !isLastContent( curr ) ) break;
-
-            if ( parent !== activeEl && isInline( parent ) ) {
-                if ( preExistingAncestors && preExistingAncestors.has( parent ) ) {
-                    break;
-                }
-                highestInlineToExit = parent;
-                curr = parent;
-            } else {
-                break;
-            }
-        }
-
-        if ( highestInlineToExit ) {
-            let next = highestInlineToExit.nextSibling;
-            if ( !next || next.nodeType !== Node.TEXT_NODE || next.textContent.length === 0 ) {
-                if ( next && next.nodeType === Node.TEXT_NODE ) {
-                    next.textContent = '\u200B';
-                } else {
-                    next = document.createTextNode( '\u200B' );
-                    if ( highestInlineToExit.parentNode ) {
-                        highestInlineToExit.parentNode.insertBefore( next, highestInlineToExit.nextSibling );
-                    }
-                }
-            }
+        } else if ( targetNode.nodeType === Node.TEXT_NODE ) {
             const newRange = document.createRange();
-            newRange.setStart( next, next.textContent.length );
+            newRange.setStart( targetNode, targetNode.textContent.length );
             newRange.collapse( true );
+            sel.removeAllRanges();
+            sel.addRange( newRange );
+        } else {
+            const newRange = document.createRange();
+            newRange.selectNodeContents( targetContainer );
+            newRange.collapse( false );
             sel.removeAllRanges();
             sel.addRange( newRange );
         }
