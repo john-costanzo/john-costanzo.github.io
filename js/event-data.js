@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-09-14 08:05:45";
+const eventDataVersion = "Monday, 2026-09-14 15:39:44";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1272,18 +1272,6 @@ const events = [
         end_time_formatted: "2026-09-14 22:00:00",
         detail: "N.C. Department of Agriculture & Consumer Services said the following four rides are being added:\n\n    * The Dairy - A spinning ride with flying cow cars.\n    * Horror Hotel - A walk-through spooky house.\n    * The Aeromax - which lifts riders in brightly colored airplanes 40 feet for a high-altitude spin.\n    * Crazy Cars - geared for kids.\n\nAlso debuting this year is an interactive kid cooking show, where kids can prepare a dish, and an immersive butterfly experience where fairgoers can walk through an enclosure and feed butterflies.",
         location: "WNC Agriculture Center in Fletcher",
-    },
-    {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-09-14",
-        start_time: "11:00 am",
-        end_time: "1:00 pm",
-        name: `Mah Jongg Monday Open Play`,
-        sort_time: "2026-09-14 11:00:00",
-        end_time_formatted: "2026-09-14 13:00",
-        detail: "Who says Mondays have to be boring?\nTrade the office chair for a vineyard view and join us for Mah Jongg Open Play on Monday’s from 11:00am-1:00pm at Souther Williams Vineyard.\nBring your board, bring your friends, or pull up a chair and meet some new ones. Between the clack of the tiles and the swirl of a wine glass, Mondays suddenly become something to look forward to. If you don’t have a board no worries, there is always a table to play at with friends.\nOpen Play 11-1pm\nAward-Winning NC Wines\nNew Friends Welcome\nRelaxing Vineyard Setting\nLet us know you’re coming so we can have tables set up for you and your crew. ([email protected]) also let us know if you are a beginner or experienced player.\nMust be 21+ to play.",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -3259,7 +3247,7 @@ const events = [
         event_date: "2026-09-26",
         start_time: "2:00 pm",
         end_time: "5:00 pm",
-        name: `Raphael Graves - Live Music`,
+        name: `Raphael Graves and Dylan Hannan- Live Music`,
         sort_time: "2026-09-26 14:00:00",
         end_time_formatted: "2026-09-26 17:00",
         detail: "None",
@@ -4032,6 +4020,18 @@ const events = [
         end_time_formatted: "2026-10-03 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-10-03",
+        start_time: "12:00 pm",
+        end_time: "5:00 pm",
+        name: `Grass Roots Pizza - Food Truck`,
+        sort_time: "2026-10-03 12:00:00",
+        end_time_formatted: "2026-10-03 17:00",
+        detail: "None",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
     },
     {
         url: "https://www.ncarboretum.org/events/month/2026-09",
