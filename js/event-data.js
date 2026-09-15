@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-09-14 15:39:44";
+const eventDataVersion = "Monday, 2026-09-14 20:07:26";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -144,30 +144,6 @@ const events = [
         end_time_formatted: "2026-04-05 18:00",
         detail: "We will be closed Easter Sunday to spend time with family. Enjoy your day!",
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2026-05-23",
-        start_time: "6:00 PM",
-        end_time: "8:00 PM",
-        name: `Showboat Band`,
-        sort_time: "2026-05-23 18:00:00",
-        end_time_formatted: "2026-05-23 20:00",
-        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://millsriver.boldrock.com/taproomevents",
-        venue: "Boldrock",
-        event_date: "2026-05-29",
-        start_time: "6:00 PM",
-        end_time: "8:00 PM",
-        name: `Finklestein 3`,
-        sort_time: "2026-05-29 18:00:00",
-        end_time_formatted: "2026-05-29 20:00",
-        detail: "Join us in the taproom for a fun night of live music, your favorite cider & a good time starting at 6PM!",
-        location: "Boldrock 72 School House Road, Mills River, NC 28759",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -1272,18 +1248,6 @@ const events = [
         end_time_formatted: "2026-09-14 22:00:00",
         detail: "N.C. Department of Agriculture & Consumer Services said the following four rides are being added:\n\n    * The Dairy - A spinning ride with flying cow cars.\n    * Horror Hotel - A walk-through spooky house.\n    * The Aeromax - which lifts riders in brightly colored airplanes 40 feet for a high-altitude spin.\n    * Crazy Cars - geared for kids.\n\nAlso debuting this year is an interactive kid cooking show, where kids can prepare a dish, and an immersive butterfly experience where fairgoers can walk through an enclosure and feed butterflies.",
         location: "WNC Agriculture Center in Fletcher",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-09-14",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck:  Toasted Cuban`,
-        sort_time: "2026-09-14 16:00:00",
-        end_time_formatted: "2026-09-14 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -5160,6 +5124,18 @@ const events = [
         end_time_formatted: "2026-10-18 23:59",
         detail: "None",
         location: "BMC 349 Andante Ln, Brevard, NC 28712",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-10-19",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Toasted Cuban`,
+        sort_time: "2026-10-19 16:00:00",
+        end_time_formatted: "2026-10-19 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.sabrewery.com/events/2026-10",
