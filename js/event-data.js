@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-09-22 08:05:39";
+const eventDataVersion = "Tuesday, 2026-09-22 14:06:49";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1366,7 +1366,7 @@ const events = [
         name: `Morgan Wade w/ Susto`,
         sort_time: "2026-09-23 18:00:00",
         end_time_formatted: "2026-09-23 22:00",
-        detail: "Rather than smoothing over life’s rough edges, Morgan Wade leans directly into them. Never one to mince words or play coy, the celebrated singer-songwriter has built her career around undeniable ...\nRead More",
+        detail: "Due to weather this show has moved to the High Gravity Room",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
