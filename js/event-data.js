@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-09-23 08:06:33";
+const eventDataVersion = "Wednesday, 2026-09-23 14:17:48";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -4151,6 +4151,18 @@ const events = [
         sort_time: "2026-10-17 14:00:00",
         end_time_formatted: "2026-10-17 17:00",
         detail: "Luke, an award-winning singer-songwriter hailing from the picturesque Carolina mountains, has become a beloved figure in the country music scene. Known for his incredible voice and proficiency in multiple instruments, ...\nRead More",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://sierranevada.com/events/mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-10-17",
+        start_time: "4:00 pm",
+        end_time: "9:00 pm",
+        name: `Celebration in the Park featuring The Last Revel`,
+        sort_time: "2026-10-17 16:00:00",
+        end_time_formatted: "2026-10-17 21:00",
+        detail: "Celebration in the Park Ft. The Last Revel. Fresh hop season begins! Join us in Lower Park for the release of our Celebration Fresh Hop IPA with live music ft. ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
