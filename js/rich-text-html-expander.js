@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-13_18-38
+// @version      2026-09-29_01-22
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -52,6 +52,8 @@
         ";eyes": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/eyes_1f440.gif\" width=\"42\" height=\"42\" alt=\"Eyes on Noto Color Emoji, Animated 14.0\"/>",
         ";fear": "<img src=\"https://em-content.zobj.net/source/skype/289/face-screaming-in-fear_1f631.png\" width=\"42\" height=\"42\" alt=\"Face Screaming in Fear on Skype Emoticons 1.2\"/>",
         ";flame": "<span style=\"font-size: x-large;\">🔥</span>",
+        ";gotv1": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Henderson County Democrats really need your help!<p>Thank you for volunteering to help write and send postcards <span style=\"font-size: x-large; font-weight: bold;\">📬</span>. You don't need me to tell you how important this upcoming election will be. Now is your chance to do something about it.<p>The Henderson County Democratic Party has been busy knocking on doors and making phone calls and sending text messages to encourage voters to get to the polls. We'd like you to play your part now.<p>Over the next couple of weeks, we\'d like you to write 25 (or more?) postcards encouraging our neighbors to get to the polls and vote. During the last week in September, I would provide the postcards, addresses, and a script. You would write and mail postcards by October 10th</span>. It would be great if you could supply your own stamps. Otherwise, we may have some available at Democratic headquarters… or you can purchase them yourself and request reimbursement.<p><p><center><span style=\"font-size: x-large; font-weight: bold;\">👉&nbsp;Can we count on you to send out some postcards now?&nbsp;👈</span></center><p>Please let me know your decision by end of day ${DATE \"DDDD, MMMM D, YYYY\" +3D}.<p>Oh, and if you would like to be <i>removed</i> from this email list, please respond and I\'d be happy to make that happen.<p><p>Either way, thank you for your support.<p><p><span style=\"color:blue;\">John Costanzo<br>Henderson County Democrats<br>Postcard Drive Coordinator</span>",
+        ";gotvi": "<style type=\"text/css\">div, li, p {font-size:large;}</style><div class=\"gmail_default\" style=\"font-size:large;color:rgb(0,0,0)\">Thanks again for volunteering to help motivate our fellow citizens to vote. And also for your patience, since we had an unforeseen delay in getting the postcards. <p>Here\'s what you\'ll need:</div> <ol> <li style=\"margin-left:15px\">You can pick up a packet of 25 postcards at the office of the Henderson County Democrats at our (new) office location at <a href=\"https://www.google.com/maps/place/2024+Asheville+Hwy+suite+f,+Hendersonville,+NC+28791/@35.3380422,-82.4735369,17z/data=!3m1!4b1!4m6!3m5!1s0x8859e9f8c3f773eb:0x1b647bb6746bbb4c!8m2!3d35.3380422!4d-82.4735369!16s%2Fg%2F11rnfb0tmf!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.google.com/maps/place/2024%2BAsheville%2BHwy%2Bsuite%2Bf,%2BHendersonville,%2BNC%2B28791/@35.3380422,-82.4735369,17z/data%3D!3m1!4b1!4m6!3m5!1s0x8859e9f8c3f773eb:0x1b647bb6746bbb4c!8m2!3d35.3380422!4d-82.4735369!16s%252Fg%252F11rnfb0tmf!5m1!1e1?entry%3Dttu%26g_ep%3DEgoyMDI1MTAyMC4wIKXMDSoASAFQAw%253D%253D&amp;source=gmail&amp;ust=1769258547192000&amp;usg=AOvVaw1AK3NE7fV8_XbjRRIWZR_4\">2024 Asheville Highway, Suite F, Hendersonville, NC 28791</a> (near Monte's and the Ugly Mug). <ul> <li style=\"margin-left:15px\">The office is open from 11am to 2pm, Monday through Saturday. <i>Although if there is inclement weather, you may want to check our website (<a href=\"http://myhcdp.com/\" target=\"_blank\">myhcdp.com</a>) before you head out.</i></li></ul> </li> <li style=\"margin-left:15px\">Please pick up your postcards no later than <b>Wednesday, October 7th</b>.</li><li style=\"margin-left:15px\">Attached to this note are the addresses you will use to address the postcards.</li> <li style=\"margin-left:15px\"> Please use the following message on your postcards: <div style=\"margin-bottom:10px;padding:10px;background-color:rgb(255,248,220);border-left:6px solid rgb(255,228,102)\">The headlines tell us how important this election is.<p>Please be sure to vote early (October 15th - 31st) or on Election Day (November 3rd) and encourage your friends and family to do the same.<p>Thank you.</div> </li> <li style=\"margin-left:15px\">You may sign the note with your first name and last initial <i>(optional)</i>.</li> <li style=\"margin-left:15px\">Please try to mail all postcards no later than <b>October 10th</b>... although it would be okay to be a few days late.</li></ol> <p>Thanks for all your efforts!</p> <div dir=\"ltr\" class=\"gmail_signature\" data-lt-sig=\"1\">  <span style=\"color:blue;\">John Costanzo <br>Henderson County Democrats<br>Postcard Drive Coordinator</span>  </div>",
         ";happy": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/grinning-face-with-big-eyes_1f603.gif\" width=\"42\" height=\"42 alt=\"Grinning Face with Big Eyes on Noto Color Emoji, Animated 14.0\"/>",
         ";hearteyes": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/smiling-face-with-heart-eyes_1f60d.gif\" width=\"42\" height=\"42\" alt=\"Smiling Face with Heart-Eyes on Noto Color Emoji, Animated 14.0\"/>",
         ";hmm": "<img src=\"https://em-content.zobj.net/source/microsoft-teams/337/thinking-face_1f914.png\" width=\"42\" height=\"42\" alt=\"Thinking Face on Microsoft Teams 1.0\"/>",
@@ -72,10 +74,10 @@
         ";nafy": "<i style=\"color: grey; font-size: medium;\">(No action for you.)</i><p>",
         ";notes": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/musical-notes_1f3b6.gif\" width=\"42\" height=\"42 alt=\"Musical Notes on Noto Color Emoji, Animated 14.0\"/>",
         ";ontarget": "<span style=\"font-size: x-large;\">🎯</span>",
-        ";pc1": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Henderson County Democrats could use your help!<p>Thank you for volunteering to help write and send postcards <span style=\"font-size: x-large; font-weight: bold;\">📬</span>. This is an important activity to help build momentum for future Democratic victories.<p><p>Over the next couple of weeks, we\'d like you to write about 25 postcards welcoming newly registered voters and encouraging them to be active with the Henderson County Democrats. I would provide the postcards, addresses, and a script. You would write and mail postcards no later than the end of <span style=\"font-weight: bold;\">${DATE \"MMMM\" +2W}</span>. It would be great if you could supply your own stamps. Otherwise, we may have some available at Democratic headquarters… or you can purchase them yourself and request reimbursement.<p><p><center><span style=\"font-size: x-large; font-weight: bold;\">👉&nbsp;Can we count on you to send out some postcards now?&nbsp;👈</span></center><p>And if you are interested (instead or additionally) in volunteering a small amount of time to work our phone bank 📞—which you can do from the comfort of your own home—please let me know. We could sure use the help.<p>Please let me know your decision by end of day ${DATE \"DDDD, MMMM D, YYYY\" +3D}.<p>Oh, and if you would like to be <i>removed</i> from this email list, please respond and I\'d be happy to make that happen.<p><p>Either way, thank you for your support.<p><p><span style=\"color:blue;\">John Costanzo<br>Henderson County Democrats Postcard Drive Coordinator</span>",
+        ";pc1": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Henderson County Democrats could use your help!<p>Thank you for volunteering to help write and send postcards <span style=\"font-size: x-large; font-weight: bold;\">📬</span>. This is an important activity to help build momentum for future Democratic victories.<p><p>Over the next couple of weeks, we\'d like you to write about 25 postcards welcoming newly registered voters and encouraging them to be active with the Henderson County Democrats. I would provide the postcards, addresses, and a script. You would write and mail postcards no later than the end of <span style=\"font-weight: bold;\">${DATE \"MMMM\" +2W}</span>. It would be great if you could supply your own stamps. Otherwise, we may have some available at Democratic headquarters… or you can purchase them yourself and request reimbursement.<p><p><center><span style=\"font-size: x-large; font-weight: bold;\">👉&nbsp;Can we count on you to send out some postcards now?&nbsp;👈</span></center><p>And if you are interested (instead or additionally) in volunteering a small amount of time to work our phone bank 📞—which you can do from the comfort of your own home—please let me know. We could sure use the help.<p>Please let me know your decision by end of day ${DATE \"DDDD, MMMM D, YYYY\" +3D}.<p>Oh, and if you would like to be <i>removed</i> from this email list, please respond and I\'d be happy to make that happen.<p><p>Either way, thank you for your support.<p><p><span style=\"color:blue;\">John Costanzo<br>Henderson County Democrats<br>Postcard Drive Coordinator</span>",
         ";pc2": "<span style=\"color:rgb(0,0,0);font-family:Georgia,serif;font-size:large\">I\'m checking whether this is something you\'d still be interested in doing.<p>If not, I\'d be happy to remove your name from the list.<p><p>Thanks.<p><p><font color=\\\"#0000ff\\\">— jc</font><p></span>",
-        ";pca": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Henderson County Democrats: postcard instructions<br class=\"gmail_default\" style=\"font-size:large;color:rgb(0,0,0)\"><div>Thanks again for volunteering to help motivate our fellow citizens to become more politically active. Here\'s what you\'ll need:</div> <ol> <li style=\"margin-left:15px\">A packet containing your postcards is waiting for you at the office of the Henderson County Democrats at their (new) office location at <a href=\"https://www.google.com/maps/place/2024+Asheville+Hwy+suite+f,+Hendersonville,+NC+28791/@35.3380422,-82.4735369,17z/data=!3m1!4b1!4m6!3m5!1s0x8859e9f8c3f773eb:0x1b647bb6746bbb4c!8m2!3d35.3380422!4d-82.4735369!16s%2Fg%2F11rnfb0tmf!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.google.com/maps/place/2024%2BAsheville%2BHwy%2Bsuite%2Bf,%2BHendersonville,%2BNC%2B28791/@35.3380422,-82.4735369,17z/data%3D!3m1!4b1!4m6!3m5!1s0x8859e9f8c3f773eb:0x1b647bb6746bbb4c!8m2!3d35.3380422!4d-82.4735369!16s%252Fg%252F11rnfb0tmf!5m1!1e1?entry%3Dttu%26g_ep%3DEgoyMDI1MTAyMC4wIKXMDSoASAFQAw%253D%253D&amp;source=gmail&amp;ust=1769258547192000&amp;usg=AOvVaw1AK3NE7fV8_XbjRRIWZR_4\">2024 Asheville Highway, Suite F, Hendersonville, NC 28791</a>. <ol type=\"a\"> <li style=\"margin-left:15px\">The office is open from 11am to 2pm, Monday through Saturday. <i>Although if there is inclement weather, you may want to check their website (<a href=\"http://myhcdp.com/\" target=\"_blank\">myhcdp.com</a>) before you head out.</i></li> <li style=\"margin-left:15px\">A packet with your name on it should be waiting for you on a table behind the partition in back of the desk on your left as you enter the office.</li> <li style=\"margin-left:15px\">If you cannot pick up your packet during office hours or have any issues, please let me know, and we\'ll make other arrangements.</li> </ol> </li> <li style=\"margin-left:15px\">Attached to this note are the addresses you will use to address the cards. Note: names shaded in <span style=\"background-color:rgb(182,215,168)\">green</span> belong to a single address and therefore should receive a single postcard.</li> <li style=\"margin-left:15px\"> Please use the following message on your postcards: <div style=\"margin-bottom:10px;padding:10px;background-color:rgb(255,248,220);border-left:6px solid rgb(255,228,102)\">Thanks for registering as a Democrat. Henderson County Democrats have many fun and effective gatherings in the works for you and your family, as you can see from our website <a href=\"http://myhcdp.com/\" target=\"_blank\">myhcdp.com</a>.<br><br>We\'d love to see you at an event!  </div> </li> <li style=\"margin-left:15px\">You can sign the note with your first name and last initial <i>(optional)</i>.</li> <li style=\"margin-left:15px\">As I mentioned previously, it would be great if you could provide postcard stamps. But if not, the office may have some, or you could be reimbursed after you purchase some. Ask the person at the desk.</li> <li style=\"margin-left:15px\">Please mail all postcards no later than the <b>end of ${DATE \"MMMM\" +2W}</b>.</li> <li style=\"margin-left:15px\">Finally, please email me when you are finished.</li> </ol> <p>Thanks for all your efforts!</p> <div dir=\"ltr\" class=\"gmail_signature\" data-lt-sig=\"1\">  <span style=\"color:blue;\">John Costanzo <br>Henderson County Democrats Postcard Drive Coordinator</span>  </div> <br clear=\"all\">",
-        ";pcfu": "<span style=\"color:rgb(0,0,0);font-family:Georgia,serif;font-size:large;\">I\'m checking whether this is something you\'d still be interested in doing.<p>If not, I\'d be happy to remove your name from the list.<p><p>Thanks.<p><p><font color=\\\"#0000ff\\\">— jc</font><p></span>",
+        ";pca": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Henderson County Democrats: postcard instructions<br class=\"gmail_default\" style=\"font-size:large;color:rgb(0,0,0)\"><div>Thanks again for volunteering to help motivate our fellow citizens to become more politically active. Here\'s what you\'ll need:</div> <ol> <li style=\"margin-left:15px\">A packet containing your postcards is waiting for you at the office of the Henderson County Democrats at our (new) office location at <a href=\"https://www.google.com/maps/place/2024+Asheville+Hwy+suite+f,+Hendersonville,+NC+28791/@35.3380422,-82.4735369,17z/data=!3m1!4b1!4m6!3m5!1s0x8859e9f8c3f773eb:0x1b647bb6746bbb4c!8m2!3d35.3380422!4d-82.4735369!16s%2Fg%2F11rnfb0tmf!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.google.com/maps/place/2024%2BAsheville%2BHwy%2Bsuite%2Bf,%2BHendersonville,%2BNC%2B28791/@35.3380422,-82.4735369,17z/data%3D!3m1!4b1!4m6!3m5!1s0x8859e9f8c3f773eb:0x1b647bb6746bbb4c!8m2!3d35.3380422!4d-82.4735369!16s%252Fg%252F11rnfb0tmf!5m1!1e1?entry%3Dttu%26g_ep%3DEgoyMDI1MTAyMC4wIKXMDSoASAFQAw%253D%253D&amp;source=gmail&amp;ust=1769258547192000&amp;usg=AOvVaw1AK3NE7fV8_XbjRRIWZR_4\">2024 Asheville Highway, Suite F, Hendersonville, NC 28791</a> (near Monte's and the Ugly Mug). <ol type=\"a\"> <li style=\"margin-left:15px\">The office is open from 11am to 2pm, Monday through Saturday. <i>Although if there is inclement weather, you may want to check our website (<a href=\"http://myhcdp.com/\" target=\"_blank\">myhcdp.com</a>) before you head out.</i></li> <li style=\"margin-left:15px\">A packet with your name on it should be waiting for you on a table behind the partition in back of the desk on your left as you enter the office.</li> <li style=\"margin-left:15px\">If you cannot pick up your packet during office hours or have any issues, please let me know, and we\'ll make other arrangements.</li> </ol> </li> <li style=\"margin-left:15px\">Attached to this note are the addresses you will use to address the postcards. Note: names shaded in <span style=\"background-color:rgb(182,215,168)\">green</span> belong to a single address and therefore should receive a single postcard.</li> <li style=\"margin-left:15px\"> Please use the following message on your postcards: <div style=\"margin-bottom:10px;padding:10px;background-color:rgb(255,248,220);border-left:6px solid rgb(255,228,102)\">Thanks for registering as a Democrat. Henderson County Democrats have many fun and effective gatherings in the works for you and your family, as you can see from our website <a href=\"http://myhcdp.com/\" target=\"_blank\">myhcdp.com</a>.<br><br>We\'d love to see you at an event!  </div> </li> <li style=\"margin-left:15px\">You can sign the note with your first name and last initial <i>(optional)</i>.</li> <li style=\"margin-left:15px\">As I mentioned previously, it would be great if you could provide postcard stamps. But if not, the office may have some, or you could be reimbursed after you purchase some. Ask the person at the desk.</li> <li style=\"margin-left:15px\">Please mail all postcards no later than the <b>end of ${DATE \"MMMM\" +2W}</b>.</li> <li style=\"margin-left:15px\">Finally, please email me when you are finished.</li> </ol> <p>Thanks for all your efforts!</p> <div dir=\"ltr\" class=\"gmail_signature\" data-lt-sig=\"1\">  <span style=\"color:blue;\">John Costanzo <br>Henderson County Democrats<br>Postcard Drive Coordinator</span>  </div> <br clear=\"all\">",
+        ";pcfu": "<span style=\"color:rgb(0,0,0);font-family:Georgia,serif;font-size:large;\">I\'m checking whether this is something you\'d still be interested in doing.<p>If not, I\'d be happy to remove your name from the list. Please reply to me.<p>Thanks.<p><font color=\\\"#0000ff\\\">— jc</font><p></span>",
         ";pcr": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Henderson County Democrats postcard drive reminder<p>As a reminder, we were looking for your assigned postcards to be sent out by the end of <span style=\"color:red; font-weight: bold;\">${DATE \"MMMM\"}</span> and to email me when you have completed this.<p><p>If you are having difficulties sending them out, please let me know.<p><p>And thanks for all you do!",
         ";pig": "<img src=\"https://em-content.zobj.net/source/skype/289/pig_1f416.png\" width=\"66\" height=\"66\" alt=\"Pig on Skype Emoticons 1.2\"/>",
         ";pointd": "<span style=\"font-size: x-large;\">👇</span>",
@@ -116,8 +118,8 @@
     const maxKeyLength = Math.max( ...Object.keys( EXPANSIONS ).map( k => k.length ) );
 
     function getPreExistingAncestors( activeEl ) {
-        const ancestors = new Set();
-        const sel = window.getSelection();
+        const ancestors = new Set( );
+        const sel = window.getSelection( );
         if ( !sel || !sel.rangeCount ) return ancestors;
         let curr = sel.anchorNode;
         while ( curr && curr !== activeEl ) {
@@ -130,7 +132,7 @@
     }
 
     function getPreExpansionFontSettings( activeEl ) {
-        const sel = window.getSelection();
+        const sel = window.getSelection( );
         if ( !sel || !sel.rangeCount ) return null;
         let el = sel.anchorNode;
         if ( el && el.nodeType === Node.TEXT_NODE ) {
@@ -154,7 +156,7 @@
     function applyFontSettingsToHtml( htmlContent, preSettings ) {
         if ( !preSettings ) return htmlContent;
 
-        const styleParts = [];
+        const styleParts = [ ];
         if ( preSettings.color ) styleParts.push( "color: " + preSettings.color + ";" );
         if ( preSettings.fontSize ) styleParts.push( "font-size: " + preSettings.fontSize + ";" );
         if ( preSettings.fontFamily ) styleParts.push( "font-family: " + preSettings.fontFamily + ";" );
@@ -167,7 +169,7 @@
 
     function cleanUpAddedAttributes( container ) {
         if ( !container ) return;
-        const elements = container.querySelectorAll ? container.querySelectorAll( '[style], span' ) : [];
+        const elements = container.querySelectorAll ? container.querySelectorAll( '[style], span' ) : [ ];
         const all = [ container, ...Array.from( elements ) ];
 
         for ( const el of all ) {
@@ -189,7 +191,7 @@
                 }
 
                 let newStyle = el.getAttribute( 'style' ) || '';
-                if ( !newStyle.trim() || newStyle.trim() === ';' ) {
+                if ( !newStyle.trim( ) || newStyle.trim( ) === ';' ) {
                     el.removeAttribute( 'style' );
                 }
             }
@@ -216,7 +218,7 @@
 
         cleanUpAddedAttributes( activeEl );
 
-        const sel = window.getSelection();
+        const sel = window.getSelection( );
         if ( !sel || !sel.rangeCount ) return;
 
         let range = sel.getRangeAt( 0 );
@@ -240,10 +242,10 @@
                 zNode = document.createTextNode( '\u200B' );
                 existingPostSpan.appendChild( zNode );
             }
-            const newRange = document.createRange();
+            const newRange = document.createRange( );
             newRange.setStart( zNode, zNode.textContent.length );
             newRange.collapse( true );
-            sel.removeAllRanges();
+            sel.removeAllRanges( );
             sel.addRange( newRange );
             return;
         }
@@ -322,10 +324,10 @@
             parentContainer.appendChild( postSpan );
         }
 
-        const newRange = document.createRange();
+        const newRange = document.createRange( );
         newRange.setStart( zeroWidthNode, 1 );
         newRange.collapse( true );
-        sel.removeAllRanges();
+        sel.removeAllRanges( );
         sel.addRange( newRange );
     }
 
@@ -382,18 +384,18 @@
         }
 
         if ( !isHandled ) {
-            const sel = window.getSelection();
+            const sel = window.getSelection( );
             if ( sel && sel.rangeCount ) {
                 const range = sel.getRangeAt( 0 );
-                range.deleteContents();
+                range.deleteContents( );
                 const fragment = range.createContextualFragment( styledHtml );
                 const lastNode = fragment.lastChild;
                 range.insertNode( fragment );
                 if ( lastNode ) {
-                    const newRange = document.createRange();
+                    const newRange = document.createRange( );
                     newRange.setStartAfter( lastNode );
                     newRange.collapse( true );
-                    sel.removeAllRanges();
+                    sel.removeAllRanges( );
                     sel.addRange( newRange );
                 }
             } else {
@@ -402,7 +404,7 @@
         }
 
         ensureCursorAfterExpandedText( preExistingAncestors, preSettings );
-        setTimeout( () => ensureCursorAfterExpandedText( preExistingAncestors, preSettings ), 0 );
+        setTimeout( ( ) => ensureCursorAfterExpandedText( preExistingAncestors, preSettings ), 0 );
     }
 
     window.addEventListener( 'keydown', ( e ) => {
