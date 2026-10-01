@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-10-01 08:08:11";
+const eventDataVersion = "Thursday, 2026-10-01 14:05:37";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -336,18 +336,6 @@ const events = [
         end_time_formatted: "2026-08-22 16:00",
         detail: "Buzz on over to Bold Rock Mills River for our BEE BOLD Bee Fest on Saturday, August 22!",
         location: "Boldrock 72 School House Road, Mills River, NC 28759",
-    },
-    {
-        url: "https://pointlookoutvineyards.com/whats-happening",
-        venue: "Point Lookout",
-        event_date: "2026-08-22",
-        start_time: "7:00 pm",
-        end_time: "10:00 pm",
-        name: `Too Much Sylvia 26`,
-        sort_time: "2026-08-22 19:00:00",
-        end_time_formatted: "2026-08-22 22:00",
-        detail: "None",
-        location: "Point Lookout 408 Appleola Rd, Hendersonville, NC 28792",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -1903,7 +1891,7 @@ const events = [
         event_date: "2026-10-07",
         start_time: "6:00 pm",
         end_time: "9:00 pm",
-        name: `STRFKR w/ Happy Sad Face`,
+        name: `STRFKR w/ Maggie FM`,
         sort_time: "2026-10-07 18:00:00",
         end_time_formatted: "2026-10-07 21:00",
         detail: "On Sale Now",
@@ -4476,6 +4464,18 @@ const events = [
         end_time_formatted: "2026-11-06 13:30",
         detail: "Join us every Friday from 11:30am-1:30pm Come on out and have some fun. Laid back acoustic jam. All abilities welcome. Anything goes.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://sierranevada.com/events/mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-11-06",
+        start_time: "3:00 pm",
+        end_time: "6:00 pm",
+        name: `Celly Drippins Release 2026`,
+        sort_time: "2026-11-06 15:00:00",
+        end_time_formatted: "2026-11-06 18:00",
+        detail: "Our most coveted beer released just once each year. Taste the legend at our annual Celly Drippins release. Once a secret among brewers, this beer is gold in a glass. ...\nRead More",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://guidonbrewing.com/event",
