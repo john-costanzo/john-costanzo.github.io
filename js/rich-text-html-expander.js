@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-10-01_12-17
+// @version      2026-10-04_07-57
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -41,7 +41,6 @@
         ";crazy": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/winking-face-with-tongue_1f61c.gif\" width=\"42\" height=\"42\" alt=\"Winking Face with Tongue on Noto Color Emoji, Animated 14.0\"/>",
         ";cry": "<img src=\"https://em-content.zobj.net/source/skype/289/crying-face_1f622.png\" width=\"42\" height=\"42 alt=\"Crying Face on Skype Emoticons 1.2\"/>",
         ";cwpuz": "Crossword Puzzle feedback<p>Sue,<p><font size=large face=\"georgia, serif\">Attached, please find a draft crossword puzzle for the next edition of the <i>Carriage Post</i>. I look forward (as always) to your comments.<p><p>Thanks.<p>",
-        ";cwsol": "<style type=\"text/css\">div, li, p {font-size:large;}</style>“TITLE” crossword puzzle solution<p>Attached, please find a solution to “TITLE”: the crossword puzzle that appeared in the SEASON edition of the Carriage Post.<p><p><p>— jc",
         ";cwsub": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Crossword puzzle submission for the ${DATE \"MMMM YYYY\" +3W} Carriage Post<p>Sue,<p><p>Please find a puzzle for the ${DATE \"MMMM YYYY\" +3W} <i>Carriage Post</i>, attached.<p><p><p>Thanks.<p>",
         ";date": "${DATE \"YYYY-MM-D\"}: ",
         ";dmm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Request to post draft ${DATE \"MMMM YYYY\"} CPHA Board meeting minutes<p><p>Attached are draft CPHA Board minutes for its ${DATE \"MMMM YYYY\"} meeting.<p><p>Please post them to the CPHA website.<p><p>​Thanks.<p>",
