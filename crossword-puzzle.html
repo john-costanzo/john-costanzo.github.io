@@ -2,6 +2,20 @@
 <html>
 	<head>
 		<title>Redirecting to a specified crossword puzzle...</title>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-PD1SGH4S3D"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-PD1SGH4S3D");
+		</script>
 
 		<script>
 			const PARAMS = {};
@@ -38,8 +52,17 @@
 					puzzle_name +
 					".ipuz";
 				console.log(`url=${url}`);
+				gtag("event", "page_view", {
+					page_title: `Crossword Puzzle (${puzzle_name})`,
+					page_location: window.location.href,
+				});
+
 				window.location.href = url;
 			} else {
+				gtag("event", "no_such_parameter", {
+					page_title: `Crossword Puzzle: no 'cp' parameter given`,
+					page_location: window.location.href,
+				});
 				console.error(
 					`No 'cp' parameter given as the location of a crossword puzzle in ipuz format.`,
 				);
