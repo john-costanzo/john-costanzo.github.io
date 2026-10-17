@@ -53,7 +53,8 @@
 					".ipuz";
 				console.log(`url=${url}`);
 				gtag("event", "page_view", {
-					page_title: `Crossword Puzzle (${puzzle_name})`,
+					page_title: `Crossword Puzzle`,
+					puzzle_name: `${puzzle_name}`,
 					page_location: window.location.href,
 				});
 
