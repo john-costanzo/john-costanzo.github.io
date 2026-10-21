@@ -52,10 +52,15 @@
 					puzzle_name +
 					".ipuz";
 				console.log(`url=${url}`);
-				gtag("event", "page_view", {
-					page_title: `Crossword Puzzle`,
-					puzzle_name: `${puzzle_name}`,
-					page_location: window.location.href,
+				<!-- gtag("event", "page_view", { -->
+				<!-- 	page_title: `Crossword Puzzle`, -->
+				<!-- 	puzzle_name: `${puzzle_name}`, -->
+				<!-- 	page_location: window.location.href, -->
+				<!-- }); -->
+				gtag("event", "crossword_puzzle_visited", {
+					event_category: "Page",
+					event_label: `Crossword Puzzle Name`,
+					value: `${puzzle_name}`,
 				});
 
 				window.location.href = url;
