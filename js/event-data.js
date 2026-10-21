@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-10-21 07:21:33";
+const eventDataVersion = "Wednesday, 2026-10-21 08:51:17";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -8,6 +8,18 @@ const events = [
         start_time: "",
         end_time: "",
         name: `Failed to fetch events: 404 Client Error: Not Found for url: https://claywoodnc.com/weekly-events`,
+        sort_time: "1961-08-23 00:00:00",
+        end_time_formatted: "1961-08-23 00:00:00",
+        detail: "",
+        location: "",
+    },
+    {
+        url: "https://www.thecrowandquill.com/events",
+        venue: "Crow and Quill",
+        event_date: "1961-08-23",
+        start_time: "",
+        end_time: "",
+        name: `Failed to fetch events: 500 Server Error: Internal Server Error for url: https://www.thecrowandquill.com/events`,
         sort_time: "1961-08-23 00:00:00",
         end_time_formatted: "1961-08-23 00:00:00",
         detail: "",
