@@ -58,11 +58,9 @@
 				<!-- 	page_location: window.location.href, -->
 				<!-- }); -->
 				gtag("event", "crossword_puzzle_visited", {
-					event_category: "Page",
-					event_label: `CrosswordPuzzleName`,
-					value: `${puzzle_name}`,
+					puzzle_name: puzzle_name,
+					debug_mode: true,
 				});
-
 				window.location.href = url;
 			} else {
 				gtag("event", "no_such_parameter", {
