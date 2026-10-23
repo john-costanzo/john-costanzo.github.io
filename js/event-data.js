@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-10-23 08:05:21";
+const eventDataVersion = "Friday, 2026-10-23 17:36:52";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2568,6 +2568,19 @@ const events = [
         end_time_formatted: "2026-10-30 21:00",
         detail: "Come join us on 10/30/26 for the festivities at Southern Appalachian Brewery with a night full of Grateful Dead covers.\nThere will be a costume contest with prizes!\nWe look forward to…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://highlandbrewing.com/calendar/lazrluvrs-4th-annual-halloween-party",
+        venue: "Highland Brewing",
+        event_date: "2026-10-30",
+        start_time: "08:00 PM",
+        end_time: "11:00 PM",
+        name: `LazrLuvr’s 4th Annual Halloween Party
+`,
+        sort_time: "2026-10-30 20:00:00",
+        end_time_formatted: "2026-10-30 23:00",
+        detail: "Get ready to party like it’s the ’80s at LazrLuvr’s 4th Annual Halloween Party at Highland Brewing!\nLazrLuvr brings the biggest hits and iconic sounds of the ’80s to the stage for a high-energy night of live music, dancing, and Halloween fun. Grab your best costume, gather your friends, and get ready to celebrate Halloween with Asheville’s favorite ’80s tribute band.\nTickets: $10 in advance | $12 at the door\nGet Tix at https://app.anyroad.com/tours/lazrluvr-4th-annual-halloween-party/s-4a24fb03",
+        location: "12 Old Charlotte Highway, Asheville, NC",
     },
     {
         url: "https://hotel-eve-jazz.turntabletickets.com",
