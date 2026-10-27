@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-10-26 08:05:19";
+const eventDataVersion = "Monday, 2026-10-26 20:05:25";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1454,18 +1454,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - October",
     },
     {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-10-26",
-        start_time: "11:00 am",
-        end_time: "1:00 pm",
-        name: `Mah Jongg Monday Open Play`,
-        sort_time: "2026-10-26 11:00:00",
-        end_time_formatted: "2026-10-26 13:00",
-        detail: "Who says Mondays have to be boring?\nTrade the office chair for a vineyard view and join us for Mah Jongg Open Play on Monday’s from 11:00am-1:00pm at Souther Williams Vineyard.\nBring your board, bring your friends, or pull up a chair and meet some new ones. Between the clack of the tiles and the swirl of a wine glass, Mondays suddenly become something to look forward to. If you don’t have a board no worries, there is always a table to play at with friends.\nOpen Play 11-1pm\nAward-Winning NC Wines\nNew Friends Welcome\nRelaxing Vineyard Setting\nLet us know you’re coming so we can have tables set up for you and your crew. ([email protected]) also let us know if you are a beginner or experienced player.\nMust be 21+ to play.",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-10-26",
@@ -1874,6 +1862,18 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-10-30",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Denis Coleman - Live Music`,
+        sort_time: "2026-10-30 14:00:00",
+        end_time_formatted: "2026-10-30 17:00",
+        detail: "None",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
         url: "https://burntshirtvineyards.com/3400-club/events-calendar",
         venue: "Burnt Shirt",
         event_date: "2026-10-30",
@@ -2207,7 +2207,7 @@ const events = [
         name: `Big Something`,
         sort_time: "2026-10-31 19:30:00",
         end_time_formatted: "2026-10-31 23:59",
-        detail: "Big Something takes over Coach Music Factory this Halloween with an Animal Farm-themed concert inspired by George Orwell\'s classic. Expect a transformed stage, themed song covers, and spooky cocktails. \nThe six-headed musical monster known as Big Something has steadily become one of the most unique and exciting rock bands to emerge from the Southeast. Hailing from the North Carolina countryside, their musical alchemy is deeply rooted in the strong bond of its members—Nick MacDaniels (lead vocals/guitar), Jesse Hensley (lead guitar/vocals), Casey Cranford (saxophone/E.W.I. “Electronic Wind Instrument”), Ben Vinograd (drums), Nolan Tecklenberg (keys), and Matt Laird (bass). They appear at the Peace Center as part of their HEADSPACE tour. \nJoining as the band\'s opener is Jones Todd, an up-and-coming guitarist from Myrtle Beach, SC, making his jam band debut this Halloween.",
+        detail: "Halloween Is a Big Something Tradition. \nWhen it comes to Halloween, Big Something goes all out. Known for their high-energy performances, unexpected covers and elaborate themes, the North Carolina jam band has made Halloween shows a tradition.\nPast celebrations have included a Talking Heads tribute in 2021, a Freddy Krueger-inspired “Nightmare on Broad Street” in 2024, and a Grateful Dead-themed “UnDead Something” in 2025.\nThis year, they\'re taking over Coach Music Factory with ANIMAL FARM. \nInspired by George Orwell\'s classic novel, this one-night-only Halloween night celebration features a transformed stage, themed cocktails, and creative covers. With a history of unforgettable Halloween shows, this is one party you\'ll want to say you were at.\nThe six-headed musical monster known as Big Something has steadily become one of the most unique and exciting rock bands to emerge from the Southeast. Hailing from the North Carolina countryside, their musical alchemy is deeply rooted in the strong bond of its members—Nick MacDaniels (lead vocals/guitar), Jesse Hensley (lead guitar/vocals), Casey Cranford (saxophone/E.W.I. “Electronic Wind Instrument”), Ben Vinograd (drums), Nolan Tecklenberg (keys), and Matt Laird (bass). They appear at the Peace Center as part of their HEADSPACE tour. \nJoining as the band\'s opener is Jones Todd, an up-and-coming guitarist from Myrtle Beach, SC, making his jam band debut this Halloween.",
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
@@ -2231,7 +2231,7 @@ const events = [
         name: `Reggie Headen Quintet`,
         sort_time: "2026-10-31 20:00:00",
         end_time_formatted: "2026-10-31 23:59",
-        detail: "Reggie Headen Quintet Sat, Oct 31 Reggie Headen Quintet: Halloween Masquerade Ball \n \n Celebrate Halloween at Hotel Eve with the Reggie Headen Quintet, featuring Asheville vocalist Reggie Headen for a special night of jazz, soul, and Halloween atmosphere. \n \n A dynamic vocalist and performer, Reggie Headen is a familiar presence in Asheville’s music scene, known for his expressive voice, commanding stage presence, and ability to move comfortably across jazz, soul, R&B, and related traditions. For this Halloween performance, Headen leads a quintet of accomplished musicians for two intimate sets at Hotel Eve. \n \n The evening will have a Halloween masquerade theme, and guests are encouraged to join in with masks, costumes, or Halloween attire, but dressing up is entirely optional. Come festive or come as you are. \n \n Reggie Headen: Vocals \n Jacob Bruner: Keys \n Eli Kahn: Guitar \n Danny Iannucci: Bass \n Joe Enright: Drums \n \n $15/Advance Reservations are Recommended. \n Read More 08:00 PM SHOW 09:30 PM SHOW",
+        detail: "Reggie Headen Quintet Sat, Oct 31 Reggie Headen Quintet: Halloween Masquerade Ball \n \n Celebrate Halloween at Hotel Eve with the Reggie Headen Quintet, featuring Asheville vocalist Reggie Headen for a special night of jazz, soul, and Halloween atmosphere. \n \n A dynamic vocalist and performer, Reggie Headen is a familiar presence in Asheville’s music scene, known for his expressive voice, commanding stage presence, and ability to move comfortably across jazz, soul, R&B, and related traditions. For this Halloween performance, Headen leads a quintet of accomplished musicians for two intimate sets at Hotel Eve. \n \n The evening will have a Halloween masquerade theme, and guests are encouraged to join in with masks, costumes, or Halloween attire, but dressing up is entirely optional. Come festive or come as you are. \n \n Reggie Headen: Vocals \n Jacob Bruner: Keys \n Eli Kahn: Guitar \n Danny Iannucci: Bass \n Joe Enright: Drums \n \n $15/Advance Reservations are Recommended. \n 08:00 PM SHOW 09:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
@@ -2255,7 +2255,7 @@ const events = [
         name: `Reggie Headen Quintet`,
         sort_time: "2026-10-31 21:30:00",
         end_time_formatted: "2026-10-31 23:59",
-        detail: "Reggie Headen Quintet Sat, Oct 31 Reggie Headen Quintet: Halloween Masquerade Ball \n \n Celebrate Halloween at Hotel Eve with the Reggie Headen Quintet, featuring Asheville vocalist Reggie Headen for a special night of jazz, soul, and Halloween atmosphere. \n \n A dynamic vocalist and performer, Reggie Headen is a familiar presence in Asheville’s music scene, known for his expressive voice, commanding stage presence, and ability to move comfortably across jazz, soul, R&B, and related traditions. For this Halloween performance, Headen leads a quintet of accomplished musicians for two intimate sets at Hotel Eve. \n \n The evening will have a Halloween masquerade theme, and guests are encouraged to join in with masks, costumes, or Halloween attire, but dressing up is entirely optional. Come festive or come as you are. \n \n Reggie Headen: Vocals \n Jacob Bruner: Keys \n Eli Kahn: Guitar \n Danny Iannucci: Bass \n Joe Enright: Drums \n \n $15/Advance Reservations are Recommended. \n Read More 08:00 PM SHOW 09:30 PM SHOW",
+        detail: "Reggie Headen Quintet Sat, Oct 31 Reggie Headen Quintet: Halloween Masquerade Ball \n \n Celebrate Halloween at Hotel Eve with the Reggie Headen Quintet, featuring Asheville vocalist Reggie Headen for a special night of jazz, soul, and Halloween atmosphere. \n \n A dynamic vocalist and performer, Reggie Headen is a familiar presence in Asheville’s music scene, known for his expressive voice, commanding stage presence, and ability to move comfortably across jazz, soul, R&B, and related traditions. For this Halloween performance, Headen leads a quintet of accomplished musicians for two intimate sets at Hotel Eve. \n \n The evening will have a Halloween masquerade theme, and guests are encouraged to join in with masks, costumes, or Halloween attire, but dressing up is entirely optional. Come festive or come as you are. \n \n Reggie Headen: Vocals \n Jacob Bruner: Keys \n Eli Kahn: Guitar \n Danny Iannucci: Bass \n Joe Enright: Drums \n \n $15/Advance Reservations are Recommended. \n 08:00 PM SHOW 09:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
