@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-10-30 08:05:20";
+const eventDataVersion = "Friday, 2026-10-30 14:05:23";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -2751,18 +2751,6 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-09",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck:`,
-        sort_time: "2026-11-09 00:00:00",
-        end_time_formatted: "2026-11-09 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2026-11-09",
@@ -2773,6 +2761,18 @@ const events = [
         end_time_formatted: "2026-11-09 19:00:00",
         detail: "None",
         location: "Carriage Park",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-11-09",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Toasted Cuban`,
+        sort_time: "2026-11-09 16:00:00",
+        end_time_formatted: "2026-11-09 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -3205,18 +3205,6 @@ const events = [
         end_time_formatted: "2026-11-13 22:30",
         detail: "Karaoke every Friday night from 6:30pm – 10:30pm. All ages are welcome.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
-    },
-    {
-        url: "https://sierranevada.com/events/mills-river",
-        venue: "Sierra Nevada",
-        event_date: "2026-11-13",
-        start_time: "6:30 pm",
-        end_time: "9:00 pm",
-        name: `Florencia and the Feeling`,
-        sort_time: "2026-11-13 18:30:00",
-        end_time_formatted: "2026-11-13 21:00",
-        detail: "Johnson City, Tennessee-based pop-funk band Florencia & the Feeling independently released their crowd-funded debut album Birthday in March 2023, which Vents Magazine hailed as “pure, unadulterated fun.” Since forming in ...\nRead More",
-        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://dryfallsbrewing.com",
@@ -3843,18 +3831,6 @@ const events = [
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-20",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck:  `,
-        sort_time: "2026-11-20 00:00:00",
-        end_time_formatted: "2026-11-20 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
         venue: "Festival Net",
         event_date: "2026-11-20",
@@ -3877,6 +3853,18 @@ const events = [
         end_time_formatted: "2026-11-20 13:30",
         detail: "Join us every Friday from 11:30am-1:30pm Come on out and have some fun. Laid back acoustic jam. All abilities welcome. Anything goes.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-11-20",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck:  Toasted Cuban`,
+        sort_time: "2026-11-20 16:00:00",
+        end_time_formatted: "2026-11-20 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
