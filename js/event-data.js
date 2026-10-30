@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-10-29 14:11:06";
+const eventDataVersion = "Thursday, 2026-10-29 20:05:23";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1373,24 +1373,12 @@ const events = [
         url: "https://hotel-eve-jazz.turntabletickets.com",
         venue: "Hotel Eve",
         event_date: "2026-10-29",
-        start_time: "7:00 PM",
-        end_time: "?",
-        name: `Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page`,
-        sort_time: "2026-10-29 19:00:00",
-        end_time_formatted: "2026-10-29 23:59",
-        detail: "Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page Thu, Oct 29 Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page \n \n Acclaimed guitarist Jorge Garcia brings his unmistakable touch to Hotel Eve for an evening of soulful jazz, melodic improvisation, and rhythmic exploration.Known for his expressive playing, original compositions, and remarkable precision, Garcia has performed alongside legendary artists including Tony Bennett, Andrea Bocelli, Jon Faddis, Cécile McLorin Salvant, Candido Camero, and Richie Cole. \n \n His extensive discography includes The Color of Notes , Crossover , Dedicated to You , and his latest release, Still Crossing (2025), which has surpassed 100,000 streams. His recordings have earned recognition from DownBeat and Vintage Guitar Magazine , reflecting a career that bridges jazz tradition with a distinctive contemporary voice. \n \n Joining Garcia for this special performance is internationally acclaimed Ivorian-American drummer Yakou Daniel N’Guessan, whose dynamic playing draws from West African rhythms, jazz, soul, and contemporary improvisation. A 2026 Global Music Awards Silver Medal recipient for his composition Tchapalo , N’Guessan brings a rich rhythmic sensibility and an unmistakable energy to the ensemble. \n \n Asheville bassist Zack Page is a respected and versatile fixture in the regional jazz scene, known for his deep musicality and collaborations with an impressive range of jazz artists. \n \n Advance reservations recommended. $10 at the door. \n 07:00 PM SHOW 08:30 PM SHOW",
-        location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
-    },
-    {
-        url: "https://hotel-eve-jazz.turntabletickets.com",
-        venue: "Hotel Eve",
-        event_date: "2026-10-29",
         start_time: "8:30 PM",
         end_time: "?",
         name: `Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page`,
         sort_time: "2026-10-29 20:30:00",
         end_time_formatted: "2026-10-29 23:59",
-        detail: "Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page Thu, Oct 29 Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page \n \n Acclaimed guitarist Jorge Garcia brings his unmistakable touch to Hotel Eve for an evening of soulful jazz, melodic improvisation, and rhythmic exploration.Known for his expressive playing, original compositions, and remarkable precision, Garcia has performed alongside legendary artists including Tony Bennett, Andrea Bocelli, Jon Faddis, Cécile McLorin Salvant, Candido Camero, and Richie Cole. \n \n His extensive discography includes The Color of Notes , Crossover , Dedicated to You , and his latest release, Still Crossing (2025), which has surpassed 100,000 streams. His recordings have earned recognition from DownBeat and Vintage Guitar Magazine , reflecting a career that bridges jazz tradition with a distinctive contemporary voice. \n \n Joining Garcia for this special performance is internationally acclaimed Ivorian-American drummer Yakou Daniel N’Guessan, whose dynamic playing draws from West African rhythms, jazz, soul, and contemporary improvisation. A 2026 Global Music Awards Silver Medal recipient for his composition Tchapalo , N’Guessan brings a rich rhythmic sensibility and an unmistakable energy to the ensemble. \n \n Asheville bassist Zack Page is a respected and versatile fixture in the regional jazz scene, known for his deep musicality and collaborations with an impressive range of jazz artists. \n \n Advance reservations recommended. $10 at the door. \n 07:00 PM SHOW 08:30 PM SHOW",
+        detail: "Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page Thu, Oct 29 Jorge Garcia Trio featuring Yakou Daniel N’Guessan & Zack Page \n \n Acclaimed guitarist Jorge Garcia brings his unmistakable touch to Hotel Eve for an evening of soulful jazz, melodic improvisation, and rhythmic exploration.Known for his expressive playing, original compositions, and remarkable precision, Garcia has performed alongside legendary artists including Tony Bennett, Andrea Bocelli, Jon Faddis, Cécile McLorin Salvant, Candido Camero, and Richie Cole. \n \n His extensive discography includes The Color of Notes , Crossover , Dedicated to You , and his latest release, Still Crossing (2025), which has surpassed 100,000 streams. His recordings have earned recognition from DownBeat and Vintage Guitar Magazine , reflecting a career that bridges jazz tradition with a distinctive contemporary voice. \n \n Joining Garcia for this special performance is internationally acclaimed Ivorian-American drummer Yakou Daniel N’Guessan, whose dynamic playing draws from West African rhythms, jazz, soul, and contemporary improvisation. A 2026 Global Music Awards Silver Medal recipient for his composition Tchapalo , N’Guessan brings a rich rhythmic sensibility and an unmistakable energy to the ensemble. \n \n Asheville bassist Zack Page is a respected and versatile fixture in the regional jazz scene, known for his deep musicality and collaborations with an impressive range of jazz artists. \n \n Advance reservations recommended. $10 at the door. \n 08:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
