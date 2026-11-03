@@ -65,8 +65,9 @@
 				window.location.href = url;
 			} else {
 				gtag("event", "no_such_parameter", {
-					page_title: `Crossword Puzzle: no 'cp' parameter given`,
+					no_such_parameter: `Crossword Puzzle: no 'cp' parameter given`,
 					page_location: window.location.href,
+					debug_mode: true,
 				});
 				console.error(
 					`No 'cp' parameter given as the location of a crossword puzzle in ipuz format.`,
