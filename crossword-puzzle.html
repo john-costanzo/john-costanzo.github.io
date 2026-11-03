@@ -51,19 +51,18 @@
 					"https://frozenpandaman.github.io/puz/?file=https://raw.githubusercontent.com/john-costanzo/john-costanzo.github.io/refs/heads/master/crossword-puzzles/" +
 					puzzle_name +
 					".ipuz";
-				console.log(
-					`url=${url}; decoded(puzzle_name)=${decodeURIComponent(puzzle_name)}`,
-				);
+				let decoded = decodeURIComponent(puzzle_name.replace(/\+/g, " "));
+				console.log(`url=${url}; decoded(puzzle_name)=${decoded}`);
 				<!-- gtag("event", "page_view", { -->
 				<!-- 	page_title: `Crossword Puzzle`, -->
 				<!-- 	puzzle_name: `${puzzle_name}`, -->
 				<!-- 	page_location: window.location.href, -->
 				<!-- }); -->
 				gtag("event", "crossword_puzzle_visited", {
-					puzzle_name: decodeURIComponent(puzzle_name),
+					puzzle_name: decoded,
 					debug_mode: true,
 				});
-				window.location.href = url;
+				<!-- window.location.href = url; -->
 			} else {
 				gtag("event", "no_such_parameter", {
 					page_title: `Crossword Puzzle: no 'cp' parameter given`,
