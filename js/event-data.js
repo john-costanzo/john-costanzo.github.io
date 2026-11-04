@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-11-03 15:58:07";
+const eventDataVersion = "Wednesday, 2026-11-04 08:05:20";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -697,30 +697,6 @@ const events = [
         end_time_formatted: "2026-11-03 23:59",
         detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-03",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-11-03 16:00:00",
-        end_time_formatted: "2026-11-03 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
-        url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
-        venue: "Trailside",
-        event_date: "2026-11-03",
-        start_time: "6:00 pm",
-        end_time: "9:00 pm",
-        name: `Round Robin Open Mic Hosted by Letters To Abigail`,
-        sort_time: "2026-11-03 18:00:00",
-        end_time_formatted: "2026-11-03 21:00",
-        detail: "None",
-        location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
     {
         url: "https://festivalnet.com/fairs-and-festivals?miles=25&zip=28791&page=3",
@@ -4235,6 +4211,18 @@ const events = [
         name: `Food Truck: Taco Bus`,
         sort_time: "2026-12-08 16:00:00",
         end_time_formatted: "2026-12-08 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-12-09",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Carolina Ace`,
+        sort_time: "2026-12-09 16:00:00",
+        end_time_formatted: "2026-12-09 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
