@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-11-05 08:28:56";
+const eventDataVersion = "Thursday, 2026-11-05 14:30:47";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -4141,6 +4141,18 @@ const events = [
         end_time_formatted: "2026-12-06 18:00",
         detail: "Dan Keller’s band puts their own spin on timeless standards and melodies, without losing the grit and authenticity of jazz.\nMany eras from early swing, latin jazz, bebop, and soul-jazz are…",
         location: "Southern App 822 Locust St, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
+        venue: "Carriage Park",
+        event_date: "2026-12-06",
+        start_time: "5:00 PM",
+        end_time: "7:00 PM",
+        name: `"Jingle and Mingle" holiday party`,
+        sort_time: "2026-12-06 17:00:00",
+        end_time_formatted: "2026-12-06 19:00:00",
+        detail: "None",
+        location: "Carriage Park",
     },
     {
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
