@@ -1,4 +1,4 @@
-const eventDataVersion = "Wednesday, 2026-11-11 08:04:59";
+const eventDataVersion = "Wednesday, 2026-11-11 20:12:02";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -891,18 +891,6 @@ const events = [
         location: "Peace Center SW corner of Broad St. and Main St. Downtown Greenville, South Carolina",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-11",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Carolina Ace`,
-        sort_time: "2026-11-11 16:00:00",
-        end_time_formatted: "2026-11-11 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-11-11",
@@ -913,30 +901,6 @@ const events = [
         end_time_formatted: "2026-11-11 19:30",
         detail: "Come out every Wednesday for the best tasting and best priced wings in town. Several flavors to choose from. 10 large wings for $7.50.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
-    },
-    {
-        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
-        venue: "Carriage Park",
-        event_date: "2026-11-11",
-        start_time: "4:00 PM",
-        end_time: "7:00 PM",
-        name: `Food Truck - Heidi Ho on the Go`,
-        sort_time: "2026-11-11 16:00:00",
-        end_time_formatted: "2026-11-11 19:00:00",
-        detail: "None",
-        location: "Carriage Park",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-11",
-        start_time: "5:00 pm",
-        end_time: "6:30 pm",
-        name: `Event: Hendersonville Young Professionals`,
-        sort_time: "2026-11-11 17:00:00",
-        end_time_formatted: "2026-11-11 18:30",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.sabrewery.com/events/2026-11",
@@ -987,18 +951,6 @@ const events = [
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
     },
     {
-        url: "https://hotel-eve-jazz.turntabletickets.com",
-        venue: "Hotel Eve",
-        event_date: "2026-11-11",
-        start_time: "7:00 PM",
-        end_time: "?",
-        name: `The Queen Sessions | Julianna Jade Celebrates Blossom Dearie`,
-        sort_time: "2026-11-11 19:00:00",
-        end_time_formatted: "2026-11-11 23:59",
-        detail: "The Queen Sessions | Julianna Jade Celebrates Blossom Dearie Wed, Nov 11 The Queen Sessions at Hotel Eve | A celebration of the legendary women who shaped jazz. \n \n Asheville singer-songwriter Julianna Jade brings her ethereal voice and personal storytelling to Hotel Eve’s Queen Sessions. A self-taught musician whose sound moves between softness and power, Jade pairs expressive vocals with songwriting rooted in vulnerability and connection. \n \n For this performance, Jade celebrates Blossom Dearie, the jazz vocalist and pianist whose delicate voice, dry wit, and sophisticated interpretations made her one of jazz’s most distinctive artists. Known for her intimate delivery and playful approach to the Great American Songbook, Dearie brought charm, intelligence, and understated swing to every song. \n \n The Queen Sessions is curated by Melissa McKinney, celebrating the remarkable women whose voices shaped jazz. \n \n $10/door. Reserve your seats here ~ capacity is limited. \n 07:00 PM SHOW 08:30 PM SHOW",
-        location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
-    },
-    {
         url: "https://www.peacecenter.org/events",
         venue: "Peace Center",
         event_date: "2026-11-11",
@@ -1019,7 +971,7 @@ const events = [
         name: `The Queen Sessions | Julianna Jade Celebrates Blossom Dearie`,
         sort_time: "2026-11-11 20:30:00",
         end_time_formatted: "2026-11-11 23:59",
-        detail: "The Queen Sessions | Julianna Jade Celebrates Blossom Dearie Wed, Nov 11 The Queen Sessions at Hotel Eve | A celebration of the legendary women who shaped jazz. \n \n Asheville singer-songwriter Julianna Jade brings her ethereal voice and personal storytelling to Hotel Eve’s Queen Sessions. A self-taught musician whose sound moves between softness and power, Jade pairs expressive vocals with songwriting rooted in vulnerability and connection. \n \n For this performance, Jade celebrates Blossom Dearie, the jazz vocalist and pianist whose delicate voice, dry wit, and sophisticated interpretations made her one of jazz’s most distinctive artists. Known for her intimate delivery and playful approach to the Great American Songbook, Dearie brought charm, intelligence, and understated swing to every song. \n \n The Queen Sessions is curated by Melissa McKinney, celebrating the remarkable women whose voices shaped jazz. \n \n $10/door. Reserve your seats here ~ capacity is limited. \n 07:00 PM SHOW 08:30 PM SHOW",
+        detail: "The Queen Sessions | Julianna Jade Celebrates Blossom Dearie Wed, Nov 11 The Queen Sessions at Hotel Eve | A celebration of the legendary women who shaped jazz. \n \n Asheville singer-songwriter Julianna Jade brings her ethereal voice and personal storytelling to Hotel Eve’s Queen Sessions. A self-taught musician whose sound moves between softness and power, Jade pairs expressive vocals with songwriting rooted in vulnerability and connection. \n \n For this performance, Jade celebrates Blossom Dearie, the jazz vocalist and pianist whose delicate voice, dry wit, and sophisticated interpretations made her one of jazz’s most distinctive artists. Known for her intimate delivery and playful approach to the Great American Songbook, Dearie brought charm, intelligence, and understated swing to every song. \n \n The Queen Sessions is curated by Melissa McKinney, celebrating the remarkable women whose voices shaped jazz. \n \n $10/door. Reserve your seats here ~ capacity is limited. \n 08:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
@@ -4311,6 +4263,18 @@ const events = [
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-12-17",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Event: Open Mic Night`,
+        sort_time: "2026-12-17 18:00:00",
+        end_time_formatted: "2026-12-17 21:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://www.sabrewery.com/events/2026-12",
         venue: "Southern App",
         event_date: "2026-12-17",
@@ -4357,6 +4321,18 @@ const events = [
         end_time_formatted: "2026-12-18 13:30",
         detail: "Join us every Friday from 11:30am-1:30pm Come on out and have some fun. Laid back acoustic jam. All abilities welcome. Anything goes.",
         location: "Guidon 415 8th Avenue E., Hendersonville, NC 28792",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-12-18",
+        start_time: "4:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck:  Toasted Cuban`,
+        sort_time: "2026-12-18 16:00:00",
+        end_time_formatted: "2026-12-18 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://guidonbrewing.com/event",
