@@ -1,4 +1,4 @@
-const eventDataVersion = "Monday, 2026-11-16 08:09:02";
+const eventDataVersion = "Monday, 2026-11-16 20:05:22";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -927,30 +927,6 @@ const events = [
         location: "Festival Net West Asheville Tailgate Market - November",
     },
     {
-        url: "https://southerwilliams.com/events",
-        venue: "Souther Williams",
-        event_date: "2026-11-16",
-        start_time: "11:00 am",
-        end_time: "1:00 pm",
-        name: `Mah Jongg Monday Open Play`,
-        sort_time: "2026-11-16 11:00:00",
-        end_time_formatted: "2026-11-16 13:00",
-        detail: "Who says Mondays have to be boring?\nTrade the office chair for a vineyard view and join us for Mah Jongg Open Play on Monday’s from 11:00am-1:00pm at Souther Williams Vineyard.\nBring your board, bring your friends, or pull up a chair and meet some new ones. Between the clack of the tiles and the swirl of a wine glass, Mondays suddenly become something to look forward to. If you don’t have a board no worries, there is always a table to play at with friends.\nOpen Play 11-1pm\nAward-Winning NC Wines\nNew Friends Welcome\nRelaxing Vineyard Setting\nLet us know you’re coming so we can have tables set up for you and your crew. ([email protected]) also let us know if you are a beginner or experienced player.\nMust be 21+ to play.",
-        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-16",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Cactus Rainbow`,
-        sort_time: "2026-11-16 16:00:00",
-        end_time_formatted: "2026-11-16 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-11-16",
@@ -1439,7 +1415,7 @@ const events = [
         name: `Queen Bee and the Honeylovers`,
         sort_time: "2026-11-20 20:00:00",
         end_time_formatted: "2026-11-20 23:59",
-        detail: "Queen Bee and the Honeylovers Fri, Nov 20 Queen Bee and the Honeylovers are rooted in the jazz and blues of the 1930\'s and 40\'s. Their original compositions nod to these classic styles with lyrical content that explores modern themes that feel both timeless and immediate. Their debut album, \'Asheville\', celebrated their hometown\'s history and won them #41 on WNCW\'s listener-voted poll of Best Albums of 2019 as well as features on The State of Things with Frank Stasio and PBS Woodsongs. Their video for \"Beacham\'s Curve\" won Best Soundtrack at the 2019 Music Video Asheville Awards. The Honeylovers approach early jazz not as a static genre but as a living language. Their work reflects an ongoing dialogue between past and present, using the forms of early American music to explore contemporary questions of place, identity, and cultural memory. The result is a sound that is both historically informed and distinctly of the moment, delivering equal parts vintage swing, original storytelling, and high-energy connection with the audience. \n \n Featuring: \n Justin Ray - Trumpet \n Taylor Pierson - Keys \n Danny Iannucci - Bass \n Whitney Moore - Vocals \n 08:00 PM SHOW 09:30 PM SHOW",
+        detail: "Queen Bee and the Honeylovers Fri, Nov 20 Queen Bee and the Honeylovers are rooted in the jazz and blues of the 1930\'s and 40\'s. Their original compositions nod to these classic styles with lyrical content that explores modern themes that feel both timeless and immediate. Their debut album, \'Asheville\', celebrated their hometown\'s history and won them #41 on WNCW\'s listener-voted poll of Best Albums of 2019 as well as features on The State of Things with Frank Stasio and PBS Woodsongs. Their video for \"Beacham\'s Curve\" won Best Soundtrack at the 2019 Music Video Asheville Awards. The Honeylovers approach early jazz not as a static genre but as a living language. Their work reflects an ongoing dialogue between past and present, using the forms of early American music to explore contemporary questions of place, identity, and cultural memory. The result is a sound that is both historically informed and distinctly of the moment, delivering equal parts vintage swing, original storytelling, and high-energy connection with the audience. \n \n Featuring: \n Justin Ray - Trumpet \n Taylor Pierson - Keys \n Danny Iannucci - Bass \n Whitney Moore - Vocals \n (SOLD OUT) 08:00 PM SHOW 09:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
@@ -1463,7 +1439,7 @@ const events = [
         name: `Queen Bee and the Honeylovers`,
         sort_time: "2026-11-20 21:30:00",
         end_time_formatted: "2026-11-20 23:59",
-        detail: "Queen Bee and the Honeylovers Fri, Nov 20 Queen Bee and the Honeylovers are rooted in the jazz and blues of the 1930\'s and 40\'s. Their original compositions nod to these classic styles with lyrical content that explores modern themes that feel both timeless and immediate. Their debut album, \'Asheville\', celebrated their hometown\'s history and won them #41 on WNCW\'s listener-voted poll of Best Albums of 2019 as well as features on The State of Things with Frank Stasio and PBS Woodsongs. Their video for \"Beacham\'s Curve\" won Best Soundtrack at the 2019 Music Video Asheville Awards. The Honeylovers approach early jazz not as a static genre but as a living language. Their work reflects an ongoing dialogue between past and present, using the forms of early American music to explore contemporary questions of place, identity, and cultural memory. The result is a sound that is both historically informed and distinctly of the moment, delivering equal parts vintage swing, original storytelling, and high-energy connection with the audience. \n \n Featuring: \n Justin Ray - Trumpet \n Taylor Pierson - Keys \n Danny Iannucci - Bass \n Whitney Moore - Vocals \n 08:00 PM SHOW 09:30 PM SHOW",
+        detail: "Queen Bee and the Honeylovers Fri, Nov 20 Queen Bee and the Honeylovers are rooted in the jazz and blues of the 1930\'s and 40\'s. Their original compositions nod to these classic styles with lyrical content that explores modern themes that feel both timeless and immediate. Their debut album, \'Asheville\', celebrated their hometown\'s history and won them #41 on WNCW\'s listener-voted poll of Best Albums of 2019 as well as features on The State of Things with Frank Stasio and PBS Woodsongs. Their video for \"Beacham\'s Curve\" won Best Soundtrack at the 2019 Music Video Asheville Awards. The Honeylovers approach early jazz not as a static genre but as a living language. Their work reflects an ongoing dialogue between past and present, using the forms of early American music to explore contemporary questions of place, identity, and cultural memory. The result is a sound that is both historically informed and distinctly of the moment, delivering equal parts vintage swing, original storytelling, and high-energy connection with the audience. \n \n Featuring: \n Justin Ray - Trumpet \n Taylor Pierson - Keys \n Danny Iannucci - Bass \n Whitney Moore - Vocals \n (SOLD OUT) 08:00 PM SHOW 09:30 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
@@ -3195,6 +3171,18 @@ const events = [
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
     },
     {
+        url: "https://southerwilliams.com/events",
+        venue: "Souther Williams",
+        event_date: "2026-12-06",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Frances Eliza - Live Music`,
+        sort_time: "2026-12-06 14:00:00",
+        end_time_formatted: "2026-12-06 17:00",
+        detail: "None",
+        location: "Souther Williams 655 Hoopers Creek Rd. Fletcher, NC 28732",
+    },
+    {
         url: "https://oklawahabrewing.com/events",
         venue: "Oklawaha",
         event_date: "2026-12-06",
@@ -4273,6 +4261,18 @@ const events = [
         end_time_formatted: "2026-12-24 16:00",
         detail: "None",
         location: "Burnt Shirt 2695 Sugarloaf Road Vintners Table, Hendersonville, NC 28792",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-12-24",
+        start_time: "6:00 pm",
+        end_time: "9:00 pm",
+        name: `Event: Open Mic Night`,
+        sort_time: "2026-12-24 18:00:00",
+        end_time_formatted: "2026-12-24 21:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://hotel-eve-jazz.turntabletickets.com",
