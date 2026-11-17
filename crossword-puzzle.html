@@ -2,6 +2,14 @@
 <html>
 	<head>
 		<title>Redirecting to a specified crossword puzzle...</title>
+		<script>
+			const params = new URLSearchParams(window.location.search);
+			const cp = params.get("cp");
+			if (cp !== null && cp.trim() !== "") {
+				let decoded = decodeURIComponent(cp.replace(/\+/g, " "));
+				document.title = decoded;
+			}
+		</script>
 		<!-- Google tag (gtag.js) -->
 		<script
 			async
