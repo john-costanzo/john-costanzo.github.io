@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-11-17 14:57:47";
+const eventDataVersion = "Tuesday, 2026-11-17 20:04:59";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -19,7 +19,7 @@ const events = [
         event_date: "1961-08-23",
         start_time: "",
         end_time: "",
-        name: `Failed to fetch events: HTTPSConnectionPool(host='claywoodnc.com', port=443): Max retries exceeded with url: /weekly-events (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'claywoodnc.com'. (_ssl.c:992)")))`,
+        name: `Failed to fetch events: 404 Client Error: Not Found for url: https://claywoodnc.com/weekly-events`,
         sort_time: "1961-08-23 00:00:00",
         end_time_formatted: "1961-08-23 00:00:00",
         detail: "",
@@ -937,18 +937,6 @@ const events = [
         end_time_formatted: "2026-11-17 23:59",
         detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-17",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Taco Bus`,
-        sort_time: "2026-11-17 16:00:00",
-        end_time_formatted: "2026-11-17 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -4287,6 +4275,18 @@ const events = [
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-12-25",
+        start_time: "12:00 am",
+        end_time: "12:00 am",
+        name: `Closed for Christmas`,
+        sort_time: "2026-12-25 00:00:00",
+        end_time_formatted: "2026-12-25 00:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
         url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-12-25",
@@ -4602,11 +4602,11 @@ const events = [
         url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
         venue: "Carriage Park",
         event_date: "2027-01-21",
-        start_time: "1:00 PM",
-        end_time: "2:00 PM",
+        start_time: "6:30 PM",
+        end_time: "9:00 PM",
         name: `Bingo!`,
-        sort_time: "2027-01-21 13:00:00",
-        end_time_formatted: "2027-01-21 14:00:00",
+        sort_time: "2027-01-21 18:30:00",
+        end_time_formatted: "2027-01-21 21:00:00",
         detail: "None",
         location: "Carriage Park",
     },
@@ -4645,6 +4645,18 @@ const events = [
         end_time_formatted: "2027-01-22 22:00",
         detail: "Tickets on sale Friday, November 13th",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://calendar.google.com/calendar/embed?src=cpha.social.chair%40gmail.com&ctz=America%2FNew_York&mode=agenda",
+        venue: "Carriage Park",
+        event_date: "2027-01-26",
+        start_time: "2:00 PM",
+        end_time: "3:30 PM",
+        name: `Nutrition and Aging Gracefully presentation`,
+        sort_time: "2027-01-26 14:00:00",
+        end_time_formatted: "2027-01-26 15:30:00",
+        detail: "None",
+        location: "Carriage Park",
     },
     {
         url: "https://guidonbrewing.com/event",
