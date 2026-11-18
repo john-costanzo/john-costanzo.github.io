@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-11-15_16-44
+// @version      2026-11-17_21-02
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -25,15 +25,15 @@
         "1th": "1<sup>th</sup>",
         "2th": "2<sup>th</sup>",
         "3th": "3<sup>th</sup>",
-        ";ag": "CPHA Board of Directors Meeting - Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of this month\"} @ 1 pm<p>Please join us at the clubhouse on Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of this month\"} at 1 pm for our monthly meeting. <p> <p>The agenda is attached and is, as always, subject to change.<div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">—</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">John Costanzo</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">CPHA Board of Directors</font></div>",
+        ";ag": "CPHA Board of Directors Meeting - Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of this month\"} at 1 pm<p>Please join us at the clubhouse on Wednesday, ${DATE \"MMMM D\" \"the third Wednesday of this month\"} at 1 pm for a meeting of the CPHA Board of Directors. <p> <p>The agenda is attached and is, as always, subject to change.<div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">—</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">John Costanzo</font></div> <div><font size=\"4\" color=\"#0000ff\" face=\"georgia, serif\">CPHA Board of Directors</font></div>",
         ";amm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Request to post approved CPHA Board meeting minutes for its ${DATE \"MMMM D, YYYY\" \"third Wednesday of last month\"}meeting<p>Attached are approved CPHA Board meeting minutes for its ${DATE \"MMMM D, YYYY\" \"third Wednesday of last month\"} meeting.<p>Please post them to the CPHA website.<p>​Thanks.<p>",
         ";angry": "<img src=\"https://em-content.zobj.net/source/skype/289/angry-face_1f620.png\" width=\"42\" height=\"42\" alt=\"Angry Face on Skype Emoticons 1.2\"/>",
         ";bam": "<span style=\"font-size: x-large;\">💥</span>",
         ";beatingheart": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/beating-heart_1f493.gif\" width=\"42\" height=\"42\" alt=\"Beating Heart on Noto Color Emoji, Animated 14.0\"/>",
         ";bdm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Draft minutes from the ${DATE \"MMMM D, YYYY\" \"third Wednesday of this month\"} board meeting<p>Attached are draft meeting minutes for the ${DATE \"MMMM D, YYYY\" \"third Wednesday of this month\"} board meeting. Feel free to review them and provide comments to me.<p>I'll post them by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>Thanks.​",
-        ";bem": "​<style type=\"text/css\">div, li, p {font-size:large;}</style>Draft executive session minutes for ${DATE \"DDDD, MMMM D, YYYY\"}<p>Attached, please find draft executive session minutes for ${DATE \"DDDD, MMMM D, YYYY\"}. I welcome your comments.<p>I plan to post them to the Board-only\'s File Cabinet, under “Executive Sessions” by <b>${DATE \"DDDD, MMMM D, YYYY\"  +3D}</b>.<p>",
+        ";bem": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft executive session minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}<p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}. They are attached as well as posted to the Board-only's File Cabinet under “Executive Sessions.”​ ​​I welcome your feedback.<p>I'll reflect your comments and remove the draft status by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>",
         ";bh": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/beating-heart_1f493.gif\" width=\"42\" height=\"42\" alt=\"Beating Heart on Noto Color Emoji, Animated 14.0\"/>",
-        ";bwm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}<p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\"}. I welcome your comments.<p>I plan to post them to the Board-only\'s File Cabinet under “Workshops,” by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>",
+        ";bwm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}<p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}. They are attached as well as posted to the Board-only's File Cabinet under “Workshops.”​ ​​I welcome your feedback.<p>I'll reflect your comments and remove the draft status by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>",
         ";caution": "<span style=\"font-size: x-large;\">⚠️</span>",
         ";checkmark": "<span style=\"font-size: x-large;\">✅</span>",
         ";confused": "<img src=\"https://em-content.zobj.net/source/skype/289/confused-face_1f615.png\" width=\"42\" height=\"42\" alt=\"Confused Face on Skype Emoticons 1.2\"/>",
