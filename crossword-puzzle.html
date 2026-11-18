@@ -3,29 +3,6 @@
 	<head>
 		<title>Redirecting to a specified crossword puzzle...</title>
 		<script>
-			const params = new URLSearchParams(window.location.search);
-			const cp = params.get("cp");
-			if (cp !== null && cp.trim() !== "") {
-				let decoded = decodeURIComponent(cp.replace(/\+/g, " "));
-				document.title = decoded;
-			}
-		</script>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-PD1SGH4S3D"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-PD1SGH4S3D");
-		</script>
-
-		<script>
 			const PARAMS = {};
 
 			function getAllUrlParams(url) {
@@ -46,28 +23,45 @@
 			// Usage
 			const params = getAllUrlParams();
 			console.log(params);
+
+			getAllUrlParams();
+			var puzzle_name = PARAMS["cp"];
+
+			if (puzzle_name !== null && puzzle_name.trim() !== "") {
+				let puzzle_name = puzzle_name.replace(/\+/g, " ");
+				document.title = puzzle_name;
+			}
+		</script>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-PD1SGH4S3D"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-PD1SGH4S3D");
 		</script>
 	</head>
 
 	<body>
 		<script>
-			getAllUrlParams();
-			var puzzle_name = PARAMS["cp"];
-
 			if (puzzle_name !== undefined) {
 				var url =
 					"https://frozenpandaman.github.io/puz/?file=https://raw.githubusercontent.com/john-costanzo/john-costanzo.github.io/refs/heads/master/crossword-puzzles/" +
 					puzzle_name +
 					".ipuz";
-				let decoded = decodeURIComponent(puzzle_name.replace(/\+/g, " "));
-				console.log(`url=${url}; decoded(puzzle_name)=${decoded}`);
 				<!-- gtag("event", "page_view", { -->
 				<!-- 	page_title: `Crossword Puzzle`, -->
 				<!-- 	puzzle_name: `${puzzle_name}`, -->
 				<!-- 	page_location: window.location.href, -->
 				<!-- }); -->
 				gtag("event", "crossword_puzzle_visited", {
-					puzzle_name: decoded,
+					puzzle_name: puzzle_name,
 					debug_mode: true,
 				});
 				window.location.href = url;
