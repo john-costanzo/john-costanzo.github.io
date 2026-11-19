@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-11-19 09:48:00";
+const eventDataVersion = "Thursday, 2026-11-19 15:17:31";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1842,11 +1842,11 @@ const events = [
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
         venue: "Trailside",
         event_date: "2026-11-25",
-        start_time: "6:00 pm",
-        end_time: "8:00 pm",
-        name: `Traditional Mountain Music Session with hosts Carol Rifkin & John Mitchell`,
-        sort_time: "2026-11-25 18:00:00",
-        end_time_formatted: "2026-11-25 20:00",
+        start_time: "6:30 pm",
+        end_time: "7:30 pm",
+        name: `Thanksgiving Trivia`,
+        sort_time: "2026-11-25 18:30:00",
+        end_time_formatted: "2026-11-25 19:30",
         detail: "None",
         location: "Trailside 873 Lennox Park Drive Hendersonville NC 28739",
     },
