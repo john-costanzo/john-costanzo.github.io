@@ -1,4 +1,4 @@
-const eventDataVersion = "Thursday, 2026-11-19 15:17:31";
+const eventDataVersion = "Thursday, 2026-11-19 20:04:55";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -973,18 +973,6 @@ const events = [
         end_time_formatted: "2026-11-19 23:59",
         detail: "<a href='https://festivalnet.com/95043/Asheville-North-Carolina/Farmers-Markets/West-Asheville-Tailgate-Market-November' target='_blank'> <em>link</em></a>",
         location: "Festival Net West Asheville Tailgate Market - November",
-    },
-    {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-19",
-        start_time: "4:00 pm",
-        end_time: "8:00 pm",
-        name: `Food Truck: Lobster Dogs`,
-        sort_time: "2026-11-19 16:00:00",
-        end_time_formatted: "2026-11-19 20:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://millsriver.boldrock.com/taproomevents",
@@ -4429,6 +4417,18 @@ const events = [
         end_time_formatted: "2026-12-26 23:59",
         detail: "Brad Walker\'s 2nd Annual Homecoming Show & Special Guests Sat, Dec 26 One of New Orleans\' most sought-after saxophonists, composers, and bandleaders, Brad Walker returns to Asheville for his second annual Homecoming Show at Hotel Eve. A celebrated performer with an extensive career spanning jazz, soul, and contemporary music, Walker reunites with some of the region\'s finest musicians for a special evening featuring an expanded ensemble and exceptional guest artists. \n \n A celebrated figure in the New Orleans music scene, Walker has performed and recorded with artists including Sturgill Simpson, PJ Morton, Anders Osborne, George Porter Jr., Stanton Moore, and The Revivalists. His career includes appearances on Saturday Night Live , The Tonight Show , and the Grammy Awards, as well as performances at Red Rocks, the Ryman Auditorium, and the New Orleans Jazz & Heritage Festival. \n \n A multiple OffBeat Best of the Beat nominee, Walker has released an acclaimed catalog of original music, including A Sliver of Catharsis and Quintet , the latter earning a four-star review in DownBeat . \n \n FEATURING \n Brad Walker: Saxophone, Loops & Effects \n Alex Taub: Keys \n Zack Page: Bass \n Al Sergel: Drums \n \n SPECIAL GUESTS \n Don Mikkelsen: Trombone \n Peter Dimery: Tenor Saxophone \n Justin Ray: Trumpet \n Naomie April: Vocals \n \n Join us for a special homecoming performance bringing together Walker\'s New Orleans musical influences and Asheville roots for an evening of exceptional live jazz. \n \n $20/Advance reservations strongly recommended. Limited seating. \n Read More 07:00 PM SHOW 09:00 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-12-27",
+        start_time: "12:00 pm",
+        end_time: "8:00 pm",
+        name: `Food Truck: Papa's Express`,
+        sort_time: "2026-12-27 12:00:00",
+        end_time_formatted: "2026-12-27 20:00",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://www.sabrewery.com/events/2026-12",
