@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rich Text HTML Expander
 // @namespace    http://tampermonkey.net/
-// @version      2026-11-17_21-02
+// @version      2026-11-20_13-30
 // @description  Intercepts typing and inserts an expansion text via native HTML paste handling
 // @match        *://*/*
 // @grant        none
@@ -31,9 +31,9 @@
         ";bam": "<span style=\"font-size: x-large;\">💥</span>",
         ";beatingheart": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/beating-heart_1f493.gif\" width=\"42\" height=\"42\" alt=\"Beating Heart on Noto Color Emoji, Animated 14.0\"/>",
         ";bdm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>Draft minutes from the ${DATE \"MMMM D, YYYY\" \"third Wednesday of this month\"} board meeting<p>Attached are draft meeting minutes for the ${DATE \"MMMM D, YYYY\" \"third Wednesday of this month\"} board meeting. Feel free to review them and provide comments to me.<p>I'll post them by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>Thanks.​",
-        ";bem": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft executive session minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}<p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}. They are attached as well as posted to the Board-only's File Cabinet under “Executive Sessions.”​ ​​I welcome your feedback.<p>I'll reflect your comments and remove the draft status by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>",
+        ";bem": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft executive session minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"most recent Tuesday\"}<p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"most recent Tuesday\"}. They are attached as well as posted to the Board-only's File Cabinet under “Executive Sessions.”​ ​​I welcome your feedback.<p>I'll reflect your comments and remove the draft status by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>",
         ";bh": "<img src=\"https://em-content.zobj.net/source/noto-emoji-animations/344/beating-heart_1f493.gif\" width=\"42\" height=\"42\" alt=\"Beating Heart on Noto Color Emoji, Animated 14.0\"/>",
-        ";bwm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}<p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"last Tuesday\"}. They are attached as well as posted to the Board-only's File Cabinet under “Workshops.”​ ​​I welcome your feedback.<p>I'll reflect your comments and remove the draft status by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>",
+        ";bwm": "<style type=\"text/css\">div, li, p {font-size:large;}</style>​Draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"most recent Tuesday\"}<p>Attached, please find draft workshop minutes for ${DATE \"DDDD, MMMM D, YYYY\" \"most recent Tuesday\"}. They are attached as well as posted to the Board-only's File Cabinet under “Workshops.”​ ​​I welcome your feedback.<p>I'll reflect your comments and remove the draft status by <b>${DATE \"DDDD, MMMM D, YYYY\" +3D}</b>.<p>",
         ";caution": "<span style=\"font-size: x-large;\">⚠️</span>",
         ";checkmark": "<span style=\"font-size: x-large;\">✅</span>",
         ";confused": "<img src=\"https://em-content.zobj.net/source/skype/289/confused-face_1f615.png\" width=\"42\" height=\"42\" alt=\"Confused Face on Skype Emoticons 1.2\"/>",
