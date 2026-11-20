@@ -1,4 +1,4 @@
-const eventDataVersion = "Friday, 2026-11-20 08:04:54";
+const eventDataVersion = "Friday, 2026-11-20 14:04:57";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -1851,18 +1851,6 @@ const events = [
         location: "Stoneashe 736 Green Mountain Rd. Hendersonville, NC 28792",
     },
     {
-        url: "https://dryfallsbrewing.com",
-        venue: "Dry Falls",
-        event_date: "2026-11-27",
-        start_time: "12:00 am",
-        end_time: "12:00 am",
-        name: `Food Truck:  Amazing BBQ`,
-        sort_time: "2026-11-27 00:00:00",
-        end_time_formatted: "2026-11-27 00:00",
-        detail: "None",
-        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
-    },
-    {
         url: "https://guidonbrewing.com/event",
         venue: "Guidon",
         event_date: "2026-11-27",
@@ -1897,6 +1885,18 @@ const events = [
         end_time_formatted: "2026-11-27 17:00",
         detail: "Leeda “Lyric” Jones, best known as Lyric is a singer-songwriter, musician, and music teacher. Her latest EP titled “Perspective” was released in December of 2015. She is a Western North ...\nRead More",
         location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
+    },
+    {
+        url: "https://dryfallsbrewing.com",
+        venue: "Dry Falls",
+        event_date: "2026-11-27",
+        start_time: "3:30 pm",
+        end_time: "7:30 pm",
+        name: `Food Truck:  Amazing BBQ`,
+        sort_time: "2026-11-27 15:30:00",
+        end_time_formatted: "2026-11-27 19:30",
+        detail: "None",
+        location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
     },
     {
         url: "https://calendar.google.com/calendar/u/0/embed?mode=agenda&src=trailsidebrewingco@gmail.com&ctz=America/New_York",
@@ -4364,10 +4364,10 @@ const events = [
         event_date: "2026-12-26",
         start_time: "7:00 PM",
         end_time: "?",
-        name: `Brad Walker\'s 2nd Annual Homecoming Show & Special Guests`,
+        name: `Brad Walker\'s 2nd Annual Holiday Homecoming Show & Special Guests`,
         sort_time: "2026-12-26 19:00:00",
         end_time_formatted: "2026-12-26 23:59",
-        detail: "Brad Walker\'s 2nd Annual Homecoming Show & Special Guests Sat, Dec 26 One of New Orleans\' most sought-after saxophonists, composers, and bandleaders, Brad Walker returns to Asheville for his second annual Homecoming Show at Hotel Eve. A celebrated performer with an extensive career spanning jazz, soul, and contemporary music, Walker reunites with some of the region\'s finest musicians for a special evening featuring an expanded ensemble and exceptional guest artists. \n \n A celebrated figure in the New Orleans music scene, Walker has performed and recorded with artists including Sturgill Simpson, PJ Morton, Anders Osborne, George Porter Jr., Stanton Moore, and The Revivalists. His career includes appearances on Saturday Night Live , The Tonight Show , and the Grammy Awards, as well as performances at Red Rocks, the Ryman Auditorium, and the New Orleans Jazz & Heritage Festival. \n \n A multiple OffBeat Best of the Beat nominee, Walker has released an acclaimed catalog of original music, including A Sliver of Catharsis and Quintet , the latter earning a four-star review in DownBeat . \n \n FEATURING \n Brad Walker: Saxophone, Loops & Effects \n Alex Taub: Keys \n Zack Page: Bass \n Al Sergel: Drums \n \n SPECIAL GUESTS \n Don Mikkelsen: Trombone \n Peter Dimery: Tenor Saxophone \n Justin Ray: Trumpet \n Naomie April: Vocals \n \n Join us for a special homecoming performance bringing together Walker\'s New Orleans musical influences and Asheville roots for an evening of exceptional live jazz. \n \n $20/Advance reservations strongly recommended. Limited seating. \n Read More 07:00 PM SHOW 09:00 PM SHOW",
+        detail: "Brad Walker\'s 2nd Annual Holiday Homecoming Show & Special Guests Sat, Dec 26 One of New Orleans\' most sought-after saxophonists, composers, and bandleaders, Brad Walker returns to Asheville for his second annual Homecoming Show at Hotel Eve. A celebrated performer with an extensive career spanning jazz, soul, and contemporary music, Walker reunites with some of the region\'s finest musicians for a special evening featuring an expanded ensemble and exceptional guest artists. \n \n A celebrated figure in the New Orleans music scene, Walker has performed and recorded with artists including Sturgill Simpson, PJ Morton, Anders Osborne, George Porter Jr., Stanton Moore, and The Revivalists. His career includes appearances on Saturday Night Live , The Tonight Show , and the Grammy Awards, as well as performances at Red Rocks, the Ryman Auditorium, and the New Orleans Jazz & Heritage Festival. \n \n A multiple OffBeat Best of the Beat nominee, Walker has released an acclaimed catalog of original music, including A Sliver of Catharsis and Quintet , the latter earning a four-star review in DownBeat . \n \n FEATURING \n Brad Walker: Saxophone, Loops & Effects \n Alex Taub: Keys \n Zack Page: Bass \n Al Sergel: Drums \n \n SPECIAL GUESTS \n Don Mikkelsen: Trombone \n Peter Dimery: Tenor Saxophone \n Justin Ray: Trumpet \n Naomie April: Vocals \n \n Join us for a special homecoming performance bringing together Walker\'s New Orleans musical influences and Asheville roots for an evening of exceptional live jazz. \n \n $20/Advance reservations strongly recommended. Limited seating. \n Read More 07:00 PM SHOW 09:00 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
@@ -4376,10 +4376,10 @@ const events = [
         event_date: "2026-12-26",
         start_time: "9:00 PM",
         end_time: "?",
-        name: `Brad Walker\'s 2nd Annual Homecoming Show & Special Guests`,
+        name: `Brad Walker\'s 2nd Annual Holiday Homecoming Show & Special Guests`,
         sort_time: "2026-12-26 21:00:00",
         end_time_formatted: "2026-12-26 23:59",
-        detail: "Brad Walker\'s 2nd Annual Homecoming Show & Special Guests Sat, Dec 26 One of New Orleans\' most sought-after saxophonists, composers, and bandleaders, Brad Walker returns to Asheville for his second annual Homecoming Show at Hotel Eve. A celebrated performer with an extensive career spanning jazz, soul, and contemporary music, Walker reunites with some of the region\'s finest musicians for a special evening featuring an expanded ensemble and exceptional guest artists. \n \n A celebrated figure in the New Orleans music scene, Walker has performed and recorded with artists including Sturgill Simpson, PJ Morton, Anders Osborne, George Porter Jr., Stanton Moore, and The Revivalists. His career includes appearances on Saturday Night Live , The Tonight Show , and the Grammy Awards, as well as performances at Red Rocks, the Ryman Auditorium, and the New Orleans Jazz & Heritage Festival. \n \n A multiple OffBeat Best of the Beat nominee, Walker has released an acclaimed catalog of original music, including A Sliver of Catharsis and Quintet , the latter earning a four-star review in DownBeat . \n \n FEATURING \n Brad Walker: Saxophone, Loops & Effects \n Alex Taub: Keys \n Zack Page: Bass \n Al Sergel: Drums \n \n SPECIAL GUESTS \n Don Mikkelsen: Trombone \n Peter Dimery: Tenor Saxophone \n Justin Ray: Trumpet \n Naomie April: Vocals \n \n Join us for a special homecoming performance bringing together Walker\'s New Orleans musical influences and Asheville roots for an evening of exceptional live jazz. \n \n $20/Advance reservations strongly recommended. Limited seating. \n Read More 07:00 PM SHOW 09:00 PM SHOW",
+        detail: "Brad Walker\'s 2nd Annual Holiday Homecoming Show & Special Guests Sat, Dec 26 One of New Orleans\' most sought-after saxophonists, composers, and bandleaders, Brad Walker returns to Asheville for his second annual Homecoming Show at Hotel Eve. A celebrated performer with an extensive career spanning jazz, soul, and contemporary music, Walker reunites with some of the region\'s finest musicians for a special evening featuring an expanded ensemble and exceptional guest artists. \n \n A celebrated figure in the New Orleans music scene, Walker has performed and recorded with artists including Sturgill Simpson, PJ Morton, Anders Osborne, George Porter Jr., Stanton Moore, and The Revivalists. His career includes appearances on Saturday Night Live , The Tonight Show , and the Grammy Awards, as well as performances at Red Rocks, the Ryman Auditorium, and the New Orleans Jazz & Heritage Festival. \n \n A multiple OffBeat Best of the Beat nominee, Walker has released an acclaimed catalog of original music, including A Sliver of Catharsis and Quintet , the latter earning a four-star review in DownBeat . \n \n FEATURING \n Brad Walker: Saxophone, Loops & Effects \n Alex Taub: Keys \n Zack Page: Bass \n Al Sergel: Drums \n \n SPECIAL GUESTS \n Don Mikkelsen: Trombone \n Peter Dimery: Tenor Saxophone \n Justin Ray: Trumpet \n Naomie April: Vocals \n \n Join us for a special homecoming performance bringing together Walker\'s New Orleans musical influences and Asheville roots for an evening of exceptional live jazz. \n \n $20/Advance reservations strongly recommended. Limited seating. \n Read More 07:00 PM SHOW 09:00 PM SHOW",
         location: "Hotel Eve 56 N Lexington Ave, Asheville, NC 28801",
     },
     {
