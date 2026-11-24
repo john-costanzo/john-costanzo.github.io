@@ -1,4 +1,4 @@
-const eventDataVersion = "Tuesday, 2026-11-24 08:04:58";
+const eventDataVersion = "Tuesday, 2026-11-24 14:05:06";
 console.log(`eventDataVersion = ${eventDataVersion}`);
 const events = [
     {
@@ -4237,6 +4237,18 @@ const events = [
         end_time_formatted: "2026-12-27 20:00",
         detail: "None",
         location: "Dry Falls 425 Kanuga Rd, Hendersonville, NC 28739",
+    },
+    {
+        url: "https://sierranevada.com/events/mills-river",
+        venue: "Sierra Nevada",
+        event_date: "2026-12-27",
+        start_time: "2:00 pm",
+        end_time: "5:00 pm",
+        name: `Jamie Hendrickson Trio`,
+        sort_time: "2026-12-27 14:00:00",
+        end_time_formatted: "2026-12-27 17:00",
+        detail: "Jamie Hendrickson is an Asheville-based guitarist, composer, songwriter and producer whose work moves fluidly through jazz, funk, soul and improvisational music. A co-founder, longtime guitarist and musical director of Asheville’s ...\nRead More",
+        location: "Sierra Nevada 100 Sierra Nevada Way Mills River, NC 28732",
     },
     {
         url: "https://www.sabrewery.com/events/2026-12",
